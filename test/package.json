@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Unit tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test_burrito_error"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "esm": "^3.2.25",
+    "fs": "0.0.1-security",
+    "mocha": "^5.2.0"
+  }
+}

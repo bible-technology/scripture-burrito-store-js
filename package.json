@@ -1,0 +1,13 @@
+{
+    "name": "scripture-burrito-store",
+    "version": "0.0.0",
+    "description": "",
+    "license": "Apache-2.0",
+    "main": "run_burrito.js",
+    "dependencies": {
+        "ajv": "^6.10.2",
+        "esm": "^3.2.25",
+        "fs-extra": "^8.1.0",
+        "semver": "^6.3.0"
+    }
+}
