@@ -1,0 +1,4 @@
+#!/bin/bash
+
+jsdoc -r -R doc_intro.md -c jsdoc_config.json -d ../doc ../code/*
+
