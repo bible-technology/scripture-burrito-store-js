@@ -4,14 +4,17 @@
   "description": "Unit tests",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test_burrito_error"
+      "testAll": "mocha test_all.js",
+      "testSmoke": "mocha test_smoke.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.26.3",
     "chai": "^4.2.0",
     "esm": "^3.2.25",
     "fs": "0.0.1-security",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "tape": "^4.12.1"
   }
 }
