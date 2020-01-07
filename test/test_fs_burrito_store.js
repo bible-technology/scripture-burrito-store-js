@@ -19,4 +19,14 @@ describe("FS Burrito Class", function() {
 	assert.equal(b.config.allowXFlavors, false);
 	assert.equal(b.config.FSBurritoStoreSettings.foo, "baa");
     });
+
+    it("Requires storeClass to match class", function() {
+	try {
+	    const b = new FSBurritoStore({"storeClass": "banana"});
+	    throw Error("Too Far");
+	} catch (err) {
+	    assert.equal(err.message, "ConfigJsonForWrongClass");
+	}
+    });
+
 });
