@@ -1,4 +1,5 @@
 import {BurritoError} from './burrito_error.js';
+import {ConfigReader} from './config_reader.js';
 
 class BurritoStore {
     /**
@@ -10,6 +11,7 @@ class BurritoStore {
 	if (new.target == BurritoStore) {
 	    throw new BurritoError("CannotConstructDirectly");
 	}
+	this.config = new ConfigReader(configJson);
     }
 
     /* STATE CHANGES */

@@ -7,7 +7,16 @@ const FSBurritoStore = require('../fs_burrito_store.js').FSBurritoStore;
 describe("FS Burrito Class", function() {
 
     it("Constructs successfully", function() {
-	const b = new FSBurritoStore({});
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "validation": "burrito",
+	    "FSBurritoStoreSettings": {"foo": "baa"}
+	});
 	assert.exists(b);
+	assert.equal(b.config.storeClass, "FSBurritoStore");
+	assert.equal(b.config.validation, "burrito");
+	assert.equal(b.config.acceptedVersion, "*");
+	assert.equal(b.config.allowXFlavors, false);
+	assert.equal(b.config.FSBurritoStoreSettings.foo, "baa");
     });
 });
