@@ -8,10 +8,15 @@ class ConfigReader {
 
        Values of "*" mean "any".
     */
-    constructor(configJson) {
+    constructor(burritoStore, configJson) {
+	this.burritoStore = burritoStore;
 	this.storeClass = configJson["storeClass"];
 	if (!this.storeClass) {
 	    throw new BurritoError("NoStoreClassInConfig");
+	}
+	const validationReport = burritoStore._validator.schemaValidate("config", configJson);
+	if (validationReport["result"] != "accepted") {
+	    throw new BurritoError("ConfigFileInvalid", validationReport["schemaErrors"]);
 	}
 	const standardKeys = [
 	    ["acceptedVersion", "*"],
@@ -21,7 +26,8 @@ class ConfigReader {
 	    ["acceptedIdServers", "*"],
 	    ["creatableDerivedVariants", []],
 	    ["acceptedDerivedVariants", "*"],
-	    ["validation", "catalog"]
+	    ["validation", "catalog"],
+	    ["subclassSettings", {}]
 	    ];
 	standardKeys.forEach(key => {
 	    if (key[0] in configJson) {
@@ -30,10 +36,6 @@ class ConfigReader {
 		this[key[0]] = key[1];
 	    }
 	});
-	const storeClassSettingsKey = this.storeClass + "Settings";
-	if (storeClassSettingsKey in configJson) {
-	    this[storeClassSettingsKey] = configJson[storeClassSettingsKey];
-	}
     }
 }
 

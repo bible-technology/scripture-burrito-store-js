@@ -16,18 +16,22 @@ import {BurritoError} from './burrito_error.js';
 class BurritoValidator {
     constructor() {
 	this.schemas = new Ajv({schemas: schemaIndex.schemas});
-	this.validator = this.schemas.getSchema(schemaIndex.schemaId);
     }
 
-    schemaValidate(data) {
-	if (this.validator(data)) {
-	    return {"result": "accepted"};
+    schemaValidate(schemaId, data) {
+	var validator = this.schemas.getSchema(schemaIndex.schemaIds[schemaId]);
+	if (validator(data)) {
+	    return {
+		"schemaId": schemaId,
+		"result": "accepted"
+	    };
 	} else {
 	    return {
+		"schemaId": schemaId,
 		"result": "rejected",
 		"reason": "SchemaInvalid",
-		"message": this.validator.errors.toString(),
-		"schemaErrors": this.validator.errors
+		"message": JSON.stringify(validator.errors),
+		"schemaErrors": validator.errors
 	    };
 	}
     }

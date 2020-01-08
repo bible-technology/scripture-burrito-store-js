@@ -1,5 +1,8 @@
 module.exports = {
-    schemaId: "https://burrito.bible/schema/metadata.schema.json",
+    schemaIds: {
+	"metadata": "https://burrito.bible/schema/metadata.schema.json",
+	"config": "https://burrito.bible/schema/store/config.schema.json"
+    },
     schemas: [
         require('./agency.schema.json'),
         require('./common.schema.json'),
@@ -23,5 +26,7 @@ module.exports = {
         require('./scripture/scripturePrint.schema.json'),
         require('./scripture/scriptureSignLanguageVideo.schema.json'),
         require('./scripture/scriptureText.schema.json'),
-    ],
+
+	require('./config.schema.json')
+    ]
 };

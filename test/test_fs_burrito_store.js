@@ -10,14 +10,14 @@ describe("FS Burrito Class", function() {
 	const b = new FSBurritoStore({
 	    "storeClass": "FSBurritoStore",
 	    "validation": "burrito",
-	    "FSBurritoStoreSettings": {"foo": "baa"}
+	    "subclassSettings": {"foo": "baa"}
 	});
 	assert.exists(b);
 	assert.equal(b._config.storeClass, "FSBurritoStore");
 	assert.equal(b._config.validation, "burrito");
 	assert.equal(b._config.acceptedVersion, "*");
 	assert.equal(b._config.allowXFlavors, false);
-	assert.equal(b._config.FSBurritoStoreSettings.foo, "baa");
+	assert.equal(b._config.subclassSettings.foo, "baa");
     });
 
     it("Requires storeClass to match class", function() {
@@ -26,6 +26,19 @@ describe("FS Burrito Class", function() {
 	    throw Error("Too Far");
 	} catch (err) {
 	    assert.equal(err.message, "ConfigJsonForWrongClass");
+	}
+    });
+
+    it("Throws error on invalid config", function() {
+	try {
+	    const b = new FSBurritoStore({"storeClass": "FSBurrito", "foo": "baa"});
+	    throw Error("Too Far");
+	} catch (err) {
+	    assert.equal(err.message, "ConfigFileInvalid");
+	    const report = err.arg[0];
+	    assert.isTrue("params" in report);
+	    assert.isTrue("additionalProperty" in report.params);
+	    assert.equal(report.params.additionalProperty, "foo");
 	}
     });
 
