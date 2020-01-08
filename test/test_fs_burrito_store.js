@@ -13,11 +13,11 @@ describe("FS Burrito Class", function() {
 	    "FSBurritoStoreSettings": {"foo": "baa"}
 	});
 	assert.exists(b);
-	assert.equal(b.config.storeClass, "FSBurritoStore");
-	assert.equal(b.config.validation, "burrito");
-	assert.equal(b.config.acceptedVersion, "*");
-	assert.equal(b.config.allowXFlavors, false);
-	assert.equal(b.config.FSBurritoStoreSettings.foo, "baa");
+	assert.equal(b._config.storeClass, "FSBurritoStore");
+	assert.equal(b._config.validation, "burrito");
+	assert.equal(b._config.acceptedVersion, "*");
+	assert.equal(b._config.allowXFlavors, false);
+	assert.equal(b._config.FSBurritoStoreSettings.foo, "baa");
     });
 
     it("Requires storeClass to match class", function() {

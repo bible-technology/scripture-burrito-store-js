@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://burrito.bible/schema/some_path/config.schema.json",
+    "title": "Scripture Burrito Store Config File",
+    "type": "object",
+    "description": "Config root metadata object.",
+    "properties": {
+	"storeClass": {
+	    "type": "string",
+	    "minItems": 1
+	}
+    }
+}

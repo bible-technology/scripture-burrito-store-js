@@ -12,9 +12,9 @@ class BurritoStore {
 	if (new.target == BurritoStore) {
 	    throw new BurritoError("CannotConstructDirectly");
 	}
-	this.validator = new BurritoValidator();
-	this.config = new ConfigReader(configJson);
-	if (this.config.storeClass != new.target.name) {
+	this._validator = new BurritoValidator();
+	this._config = new ConfigReader(configJson);
+	if (this._config.storeClass != new.target.name) {
 	    throw new BurritoError("ConfigJsonForWrongClass");
 	}
     }
