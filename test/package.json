@@ -4,8 +4,8 @@
   "description": "Unit tests",
   "main": "index.js",
   "scripts": {
-      "testAll": "mocha test_all.js",
-      "testSmoke": "mocha test_smoke.js"
+    "testAll": "mocha test_all.js",
+    "testSmoke": "mocha test_smoke.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "chai": "^4.2.0",
     "esm": "^3.2.25",
     "fs": "0.0.1-security",
+    "fs-extra": "^8.1.0",
     "mocha": "^5.2.0",
     "tape": "^4.12.1"
   }

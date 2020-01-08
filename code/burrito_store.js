@@ -1,5 +1,6 @@
 import {BurritoError} from './burrito_error.js';
 import {ConfigReader} from './config_reader.js';
+import {BurritoValidator} from './burrito_validator.js';
 
 class BurritoStore {
     /**
@@ -11,6 +12,7 @@ class BurritoStore {
 	if (new.target == BurritoStore) {
 	    throw new BurritoError("CannotConstructDirectly");
 	}
+	this.validator = new BurritoValidator();
 	this.config = new ConfigReader(configJson);
 	if (this.config.storeClass != new.target.name) {
 	    throw new BurritoError("ConfigJsonForWrongClass");
