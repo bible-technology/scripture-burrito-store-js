@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: metadata_store.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,36 +17,60 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: metadata_store.js</h1>
 
     
 
 
 
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
     <section>
-        <article><p>This module is a reference implementation of the Scripture Burrito processing model.</p></article>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+
+import {BurritoError} from './burrito_error.js';
+
+class MetadataStore {
+    /**
+    */
+    constructor(burritoStore) {
+	this._burritoStore = burritoStore;
+    }
+
+    /** Returns [idServer, id, revision] if exactly one systemID with a revision is found, otherwise returns [null, null, null].
+	* @param {Object} metadata - metadata for a Burrito
+	*@return {Array}
+	*/
+    idFromMetadataObject(metadata) {
+	try {
+	    const idServers = metadata.idServers;
+	    const systemIds = metadata.identification.systemId;
+	    var sysUrl, entryId, revisionId = null;
+	    Object.keys(systemIds).forEach(
+		function(systemAbbr) {
+		    const systemId = systemIds[systemAbbr];
+		    if ("revision" in systemId) {
+			if (sysUrl) {
+			    throw new BurritoError("UnableToFindMetadataId");
+			}
+			entryId = systemId.id;
+			revisionId = systemId.revision;
+			sysUrl = idServers[systemAbbr];
+		    }
+		}
+	    );
+	    return [sysUrl, entryId, revisionId];
+	} catch (err) {
+	    return [null, null, null];
+	}
+    }
+
+}
+
+export {MetadataStore}
+</code></pre>
+        </article>
     </section>
-
-
 
 
 

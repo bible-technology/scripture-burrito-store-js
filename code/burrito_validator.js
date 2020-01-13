@@ -10,14 +10,22 @@ import schemaIndex from '../schema';
 import {BurritoError} from './burrito_error.js';
 
 /**
-* @type module:BurritoValidator
-* @requires BurritoError
-*/
+ * @type module:BurritoValidator
+ * @requires BurritoError
+ */
 class BurritoValidator {
+    /**
+       Sets up schemas
+    */
     constructor() {
 	this.schemas = new Ajv({schemas: schemaIndex.schemas});
     }
 
+    /**
+       Validate against a JSON schema.
+       * @param {string} schemaId - the id of the schema
+       * @param {Object} data - an object containing the data to be validated
+     */
     schemaValidate(schemaId, data) {
 	var validator = this.schemas.getSchema(schemaIndex.schemaIds[schemaId]);
 	if (validator(data)) {

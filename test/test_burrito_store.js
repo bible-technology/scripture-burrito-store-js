@@ -15,4 +15,5 @@ describe("Burrito Class", function() {
 	}
 
     });
+
 });

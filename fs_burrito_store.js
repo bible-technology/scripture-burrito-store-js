@@ -10,8 +10,8 @@ class FSBurritoStore extends BurritoStore {
     */
     constructor(configJson) {
 	super(configJson);
-	this._metadata_store = new FSMetadataStore(this);
-	this._ingredients_store = new FSIngredientsStore(this);
+	this._metadataStore = new FSMetadataStore(this);
+	this._ingredientsStore = new FSIngredientsStore(this);
     }
 }
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: burrito_validator.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,36 +17,66 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: burrito_validator.js</h1>
 
     
 
 
 
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
     <section>
-        <article><p>This module is a reference implementation of the Scripture Burrito processing model.</p></article>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* Borrowed from Dan De Blois on Scripture Burrito, then hacked. */
+
+'use strict';
+
+import * as fse from 'fs-extra';
+import * as path from 'path';
+import * as semver from 'semver';
+import Ajv from 'ajv';
+import schemaIndex from '../schema';
+import {BurritoError} from './burrito_error.js';
+
+/**
+ * @type module:BurritoValidator
+ * @requires BurritoError
+ */
+class BurritoValidator {
+    /**
+       Sets up schemas
+    */
+    constructor() {
+	this.schemas = new Ajv({schemas: schemaIndex.schemas});
+    }
+
+    /**
+       Validate against a JSON schema.
+       * @param {string} schemaId - the id of the schema
+       * @param {Object} data - an object containing the data to be validated
+     */
+    schemaValidate(schemaId, data) {
+	var validator = this.schemas.getSchema(schemaIndex.schemaIds[schemaId]);
+	if (validator(data)) {
+	    return {
+		"schemaId": schemaId,
+		"result": "accepted"
+	    };
+	} else {
+	    return {
+		"schemaId": schemaId,
+		"result": "rejected",
+		"reason": "SchemaInvalid",
+		"message": JSON.stringify(validator.errors),
+		"schemaErrors": validator.errors
+	    };
+	}
+    }
+}
+
+export {BurritoValidator}
+</code></pre>
+        </article>
     </section>
-
-
 
 
 

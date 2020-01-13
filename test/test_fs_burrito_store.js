@@ -42,4 +42,48 @@ describe("FS Burrito Class", function() {
 	}
     });
 
+
+    it("Implements importFromObject", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "validation": "burrito",
+	    "subclassSettings": {"foo": "baa"}
+	});
+	var metadata = require("./test_data/metadata/scriptureText.json");
+	b.importFromObject(metadata);
+	assert.exists(b);
+    });
+
+    it("Throws exception from importFromObject on multiple revisions", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "validation": "burrito",
+	    "subclassSettings": {"foo": "baa"}
+	});
+	var metadata = require("./test_data/metadata/scriptureTextDupRevision.json");
+	try {
+	    b.importFromObject(metadata);
+	    assert.exists(b);
+	    throw Error("Too Far");
+	} catch (err) {
+	    assert.equal(err.message, "UnableToFindMetadataId");
+	}
+    });
+
+    it("Throws exception from importFromObject on no revision", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "validation": "burrito",
+	    "subclassSettings": {"foo": "baa"}
+	});
+	var metadata = require("./test_data/metadata/scriptureTextNoRevision.json");
+	try {
+	    b.importFromObject(metadata);
+	    assert.exists(b);
+	    throw Error("Too Far");
+	} catch (err) {
+	    assert.equal(err.message, "UnableToFindMetadataId");
+	}
+    });
+
 });
