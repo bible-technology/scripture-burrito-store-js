@@ -25,6 +25,7 @@ class BurritoValidator {
        Validate against a JSON schema.
        * @param {string} schemaId - the id of the schema
        * @param {Object} data - an object containing the data to be validated
+       * @return {Object}
      */
     schemaValidate(schemaId, data) {
 	var validator = this.schemas.getSchema(schemaIndex.schemaIds[schemaId]);
@@ -42,6 +43,15 @@ class BurritoValidator {
 		"schemaErrors": validator.errors
 	    };
 	}
+    }
+
+    /**
+       Checks that the metadata is compatible with the burrito store config
+       * @param {Object} data - an object containing the data to be validated
+       * @return {Object}
+     */
+    configCompatible(data) {
+	return {"result": "accepted"}
     }
 }
 

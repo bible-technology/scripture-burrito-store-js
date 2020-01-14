@@ -22,6 +22,8 @@ class BurritoStore {
 	if (this._config.storeClass != new.target.name) {
 	    throw new BurritoError("ConfigJsonForWrongClass");
 	}
+	this._metadataStore = null;
+	this._ingredientsStore = null;
     }
 
     /* STATE CHANGES */
@@ -43,6 +45,13 @@ class BurritoStore {
 	if (!sysUrl) {
 	    throw new BurritoError("UnableToFindMetadataId");
 	}
+	const configCompatibleResult = this._validator.configCompatible(metadata);
+	if (configCompatibleResult.result != "accepted") {
+	    console.log(configCompatibleResult);
+	    throw new BurritoError("ImportedMetadataNotConfigCompatible", configCompatibleResult.reason);
+	}
+	this._metadataStore.addEntryRevisionVariant(metadata, "default");
+	this._ingredientsStore.touchEntry(sysUrl, entryId);
     }
 
     importFromDir(path) {
