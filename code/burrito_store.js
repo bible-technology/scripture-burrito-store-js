@@ -36,19 +36,19 @@ class BurritoStore {
        * @return {undefined}
        */
     importFromObject(metadata) {
-	const schemaValidationResult = this._validator.schemaValidate("metadata", metadata);
-	if (schemaValidationResult.result != "accepted") {
-	    console.log(schemaValidationResult);
-	    throw new BurritoError("ImportedMetadataNotSchemaValid", schemaValidationResult.schemaErrors);
-	}
 	const [sysUrl, entryId, entryRevision] = this._metadataStore.idFromMetadataObject(metadata);
 	if (!sysUrl) {
 	    throw new BurritoError("UnableToFindMetadataId");
 	}
-	const configCompatibleResult = this._validator.configCompatible(metadata);
+	const configCompatibleResult = this._config.metadataCompatible(metadata);
 	if (configCompatibleResult.result != "accepted") {
-	    console.log(configCompatibleResult);
+	    /* console.log(configCompatibleResult); */
 	    throw new BurritoError("ImportedMetadataNotConfigCompatible", configCompatibleResult.reason);
+	}
+	const schemaValidationResult = this._validator.schemaValidate("metadata", metadata);
+	if (schemaValidationResult.result != "accepted") {
+	    /* console.log(schemaValidationResult); */
+	    throw new BurritoError("ImportedMetadataNotSchemaValid", schemaValidationResult.schemaErrors);
 	}
 	this._metadataStore.addEntryRevisionVariant(metadata, "default");
 	this._ingredientsStore.touchEntry(sysUrl, entryId);

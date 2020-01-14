@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "version": "0.2.0"
+    },
+    "type": {
+        "flavor": "scriptureAudio",
+        "flavorType": "scripture"
+    },
+    "idServers": {
+        "dbl": "https://thedigitalbiblelibrary.org"
+    },
+    "identification": {
+        "systemId": {
+            "dbl": "0123456789abcdef:23"
+	}
+    }
+}

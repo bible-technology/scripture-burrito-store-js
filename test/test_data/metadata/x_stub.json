@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "version": "0.2.0"
+    },
+    "type": {
+        "flavor": "x-myflavor",
+        "flavorType": "scripture"
+    },
+    "idServers": {
+        "dbl": "https://thedigitalbiblelibrary.org"
+    },
+    "identification": {
+        "systemId": {
+            "dbl": {
+		"id": "0123456789abcdef",
+		"revision": "23"
+	    }
+	}
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "version": "0.2.0"
+    },
+    "type": {
+        "flavor": "scriptureText",
+        "flavorType": "scripture"
+    },
+    "idServers": {
+        "notdbl": "https://notthedigitalbiblelibrary.org"
+    },
+    "identification": {
+        "systemId": {
+            "notdbl": {
+		"id": "0123456789abcdef",
+		"revision": "23"
+	    }
+	}
+    }
+}
