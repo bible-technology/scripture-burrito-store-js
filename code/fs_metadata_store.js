@@ -7,6 +7,7 @@ class FSMetadataStore extends MetadataStore {
     */
     constructor(burritoStore) {
 	super(burritoStore);
+	this._urls = {};
     }
 
     /**
@@ -14,7 +15,13 @@ class FSMetadataStore extends MetadataStore {
        * @param {string} sysUrl
      */
     __sysUrlRecord(sysUrl) {
-	return {"sysUrl": sysUrl};
+	if (sysUrl in this._urls) {
+	    return {
+		"idServer": {"id": sysUrl}
+	    };
+	} else {
+	    return null;
+	}
     }
 
     /**
@@ -23,7 +30,15 @@ class FSMetadataStore extends MetadataStore {
        * @param {string} entryId
      */
     __entryRecord(sysUrl, entryId) {
-	return {"sysUrl": sysUrl, "entryId": entryId};
+	if ((sysUrl in this._urls) &&
+	    (entryId in this._urls[sysUrl])) {
+	    return {
+		"idServer": {"id": sysUrl},
+		"entry": {"id": entryId}
+	    }
+	} else {
+	    return null;
+	}
     }
 
     /**
@@ -33,32 +48,44 @@ class FSMetadataStore extends MetadataStore {
        * @param {string} revisionId
      */
     __revisionRecord(sysUrl, entryId, revisionId) {
-	return {"sysUrl": sysUrl, "entryId": entryId, "revisionId": revisionId};
+	if ((sysUrl in this._urls) &&
+	    (entryId in this._urls[sysUrl]) &&
+	    (revisionId in this._urls[sysUrl][entryId])) {
+	    return {
+		"idServer": {"id": sysUrl},
+		"entry": {"id": entryId},
+		"revision": {"id": revisionId}
+	    }
+	} else {
+	    return null;
+	}
     }
 
     /**
-       Returns record for sysUrl or null
+       Adds a Url record
        * @param {string} sysUrl
      */
     __addSysUrlRecord(sysUrl) {
+	this._urls[sysUrl] = {}
     }
 
     /**
-       Returns record for entryId or null
+       Adds an entry record
        * @param {string} sysUrl
        * @param {string} entryId
      */
     __addEntryRecord(sysUrl, entryId) {
-
+	this._urls[sysUrl][entryId] = {}
     }
 
     /**
-       Returns record for revisionId or null
+       Adds a revision record
        * @param {string} sysUrl
        * @param {string} entryId
        * @param {string} revisionId
      */
     __addRevisionRecord(sysUrl, entryId, revisionId) {
+	this._urls[sysUrl][entryId][revisionId] = {}
     }
 
     /**
@@ -67,7 +94,8 @@ class FSMetadataStore extends MetadataStore {
        * @param {string} revisionId
        * @param {string} metadata
      */
-    __addEntryRevisionVariant(sysUrl, entryId, revisionId, metadata) {
+    __addEntryRevisionVariant(sysUrl, entryId, revisionId, variant, metadata) {
+	this._urls[sysUrl][entryId][revisionId][variant] = metadata;
     }
 
 }

@@ -43,13 +43,14 @@ class MetadataStore {
        checksum.
        * @param {Object} metadata
        */
-    addEntryRevisionVariant(metadata) {
+    addEntryRevisionVariant(metadata, variant) {
+	/* Get variant from metadata once schema is updated */
 	const [sysUrl, entryId, revisionId] = this.idFromMetadataObject(metadata);
 	if (!sysUrl) {
 	    throw new BurritoError("UnableToFindMetadataId");
 	}
 	this.touchEntryRevision(sysUrl, entryId, revisionId);
-	this.__addEntryRevisionVariant(sysUrl, entryId, revisionId, metadata);
+	this.__addEntryRevisionVariant(sysUrl, entryId, revisionId, variant, metadata);
     }
 
     /**
@@ -60,13 +61,13 @@ class MetadataStore {
      */
     touchEntryRevision(sysUrl, entryId, revisionId) {
 	if (!this.__sysUrlRecord(sysUrl)) {
-	    this.__addsysUrlRecord(sysUrl);
+	    this.__addSysUrlRecord(sysUrl);
 	}
 	if (!this.__entryRecord(entryId)) {
-	    this.__addEntryRecord(sysUrl);
+	    this.__addEntryRecord(sysUrl, entryId);
 	}
 	if (!this.__revisionRecord(revisionId)) {
-	    this.__addRevisionRecord(revisionId);
+	    this.__addRevisionRecord(sysUrl, entryId, revisionId);
 	}
     }
 

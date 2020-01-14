@@ -45,14 +45,6 @@ class BurritoValidator {
 	}
     }
 
-    /**
-       Checks that the metadata is compatible with the burrito store config
-       * @param {Object} data - an object containing the data to be validated
-       * @return {Object}
-     */
-    configCompatible(data) {
-	return {"result": "accepted"}
-    }
 }
 
 export {BurritoValidator}
