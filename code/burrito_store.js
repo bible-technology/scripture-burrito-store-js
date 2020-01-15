@@ -127,11 +127,11 @@ class BurritoStore {
     /* List */
 
     idServers() {
-	throw new BurritoError("MethodNotYetImplemented");
+	return this._metadataStore.__idServerKeys();
     }
 
     idServersDetails() {
-	throw new BurritoError("MethodNotYetImplemented");
+	return this._metadataStore.__idServersDetails();
     }
 
     entries(idServerId, requiredVariant=null) {

@@ -193,4 +193,24 @@ describe("FS Burrito Class", function() {
 	assert.exists(b);
     });
 
+    it("Implements idServers()", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore"
+	});
+	assert.equal(b.idServers().length, 0);
+	b.importFromObject(this.metadata["validScriptureText"]);	
+	assert.equal(b.idServers().length, 1);
+	assert.equal(b.idServers()[0], "https://thedigitalbiblelibrary.org");
+    });
+
+    it("Implements idServersDetails()", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore"
+	});
+	assert.equal(Object.keys(b.idServersDetails()).length, 0);
+	b.importFromObject(this.metadata["validScriptureText"]);	
+	assert.equal(Object.keys(b.idServersDetails()).length, 1);
+	assert.equal(Object.keys(b.idServersDetails())[0], "https://thedigitalbiblelibrary.org");
+    });
+
 });

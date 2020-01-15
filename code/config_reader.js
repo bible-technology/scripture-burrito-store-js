@@ -27,7 +27,7 @@ class ConfigReader {
 	    ["ownedEntryIDServers", []],
 	    ["acceptedIdServers", ["*"]],
 	    ["creatableDerivedVariants", []],
-	    ["acceptedDerivedVariants", ["*"]],
+	    ["acceptedDerivedVariants", []],
 	    ["validation", "catalog"],
 	    ["subclassSettings", {}]
 	    ];
