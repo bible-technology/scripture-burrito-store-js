@@ -12,6 +12,7 @@
   "dependencies": {
     "babel-core": "^6.26.3",
     "chai": "^4.2.0",
+    "deepcopy": "^2.0.0",
     "esm": "^3.2.25",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",

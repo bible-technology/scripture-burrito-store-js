@@ -1,7 +1,8 @@
 'use strict';
 
 require = require("esm")(module/*, options*/);
-const fse =require('fs-extra');
+const deepcopy = require('deepcopy');
+const fse = require('fs-extra');
 const path = require('path');
 const assert = require('chai').assert;
 const FSBurritoStore = require('../fs_burrito_store.js').FSBurritoStore;
@@ -68,7 +69,33 @@ describe("FS Burrito Class", function() {
 	    "subclassSettings": {"foo": "baa"}
 	});
 	b.importFromObject(this.metadata["validScriptureText"]);
-	assert.exists(b);
+    });
+
+    it("Allow import of identical metadata twice", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "validation": "burrito",
+	    "subclassSettings": {"foo": "baa"}
+	});
+	b.importFromObject(this.metadata["validScriptureText"]);
+	b.importFromObject(this.metadata["validScriptureText"]);
+    });
+
+    it("Do not allow import of different metadata for existing variant", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "validation": "burrito",
+	    "subclassSettings": {"foo": "baa"}
+	});
+	try {
+	    b.importFromObject(this.metadata["validScriptureText"]);
+	    const modifiedMetadata = deepcopy(this.metadata["validScriptureText"]);
+	    modifiedMetadata["meta"]["generator"]["userName"] = "John Doe";
+	    b.importFromObject(modifiedMetadata);
+	    throw Error("Too Far");
+	} catch (err) {
+	    assert.equal(err.message, "CannotModifyExistingVariant");
+	}
     });
 
     it("Throws exception from importFromObject on multiple revisions", function() {

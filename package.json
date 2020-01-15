@@ -6,8 +6,10 @@
     "main": "run_burrito.js",
     "dependencies": {
         "ajv": "^6.10.2",
+        "deep-equal": "^2.0.1",
         "esm": "^3.2.25",
         "fs-extra": "^8.1.0",
-        "semver": "^6.3.0"
+        "semver": "^6.3.0",
+        "sha3": "^2.1.1"
     }
 }

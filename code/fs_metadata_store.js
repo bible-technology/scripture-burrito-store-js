@@ -1,5 +1,9 @@
 'use strict';
 
+import {SHA3} from 'sha3';
+import deepEqual from 'deep-equal';
+
+import {BurritoError} from "./burrito_error.js";
 import {MetadataStore} from "./metadata_store.js";
 
 class FSMetadataStore extends MetadataStore {
@@ -8,6 +12,7 @@ class FSMetadataStore extends MetadataStore {
     constructor(burritoStore) {
 	super(burritoStore);
 	this._urls = {};
+	this._sha3 = new SHA3(512);
     }
 
     /**
@@ -95,7 +100,14 @@ class FSMetadataStore extends MetadataStore {
        * @param {string} metadata
      */
     __addEntryRevisionVariant(sysUrl, entryId, revisionId, variant, metadata) {
-	this._urls[sysUrl][entryId][revisionId][variant] = metadata;
+	const revisionRecord = this._urls[sysUrl][entryId][revisionId];
+	if (variant in revisionRecord) {
+	    if (!deepEqual(metadata, revisionRecord[variant], {"strict": true})) {
+		throw new BurritoError("CannotModifyExistingVariant");
+	    }
+	} else {
+	    this._urls[sysUrl][entryId][revisionId][variant] = metadata;
+	}
     }
 
 }

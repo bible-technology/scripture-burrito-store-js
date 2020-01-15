@@ -63,10 +63,10 @@ class MetadataStore {
 	if (!this.__sysUrlRecord(sysUrl)) {
 	    this.__addSysUrlRecord(sysUrl);
 	}
-	if (!this.__entryRecord(entryId)) {
+	if (!this.__entryRecord(sysUrl, entryId)) {
 	    this.__addEntryRecord(sysUrl, entryId);
 	}
-	if (!this.__revisionRecord(revisionId)) {
+	if (!this.__revisionRecord(sysUrl, entryId, revisionId)) {
 	    this.__addRevisionRecord(sysUrl, entryId, revisionId);
 	}
     }
