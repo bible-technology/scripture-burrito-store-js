@@ -62,49 +62,49 @@ class BurritoStore {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    exportToObject(entryId, revisionId, variantId) {
+    exportToObject(idServerId, entryId, revisionId, variantId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
     
-    exportToDir(entryId, revisionId, variantId, toPath) {
+    exportToDir(idServerId, entryId, revisionId, variantId, toPath) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    exportToZip(entryId, revisionId, variantId, toPath) {
+    exportToZip(idServerId, entryId, revisionId, variantId, toPath) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
     
     /* toTemplate */
 
-    defaultToTemplate(entryId, revisionId, templateData, filter=null) {
+    defaultToTemplate(idServerId, entryId, revisionId, templateData, filter=null) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
     /* toNew */
 
-    templateToNew(templateName) {
+    templateToNew(idServerId, templateName) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
     /* toUpdate */
 
-    defaultToUpdate(entryId, revisionId) {
+    defaultToUpdate(idServerId, entryId, revisionId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
     /* acceptDraft */
 
-    newToDefault(entryId, revisionId) {
+    newToDefault(idServerId, entryId, revisionId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    updateToDefault(entryId, revisionId) {
+    updateToDefault(idServerId, entryId, revisionId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
     /* makeDerived */
 
-    defaultToDerived(entryId, revisionId, derivativeName) {
+    defaultToDerived(idServerId, entryId, revisionId, derivativeName) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
@@ -126,61 +126,69 @@ class BurritoStore {
 
     /* List */
 
-    entries(requiredVariant=null) {
-	throw new BurritoError("MethodNotYetImplemented");
-    }
-    
-    entriesDetails(variantId="default") {
+    idServers() {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    entryRevisions(entryId) {
-	throw new BurritoError("MethodNotYetImplemented");
-    }
-    
-    entryRevisionsDetails(entryId, variantId="default") {
-	throw new BurritoError("MethodNotYetImplemented");
-    }
-    
-    entryRevisionVariants(entryId, revisionId) {
-	throw new BurritoError("MethodNotYetImplemented");
-    }
-    
-    entryRevisionVariantsDetails(entryId, revisionId) {
+    idServersDetails() {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    ingredients(entryId, revisionId, variantId) {
+    entries(idServerId, requiredVariant=null) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
     
-    ingredientsDetails(entryId, revisionId, variantId) {
+    entriesDetails(idServerId, variantId="default") {
+	throw new BurritoError("MethodNotYetImplemented");
+    }
+
+    entryRevisions(idServerId, entryId) {
+	throw new BurritoError("MethodNotYetImplemented");
+    }
+    
+    entryRevisionsDetails(idServerId, entryId, variantId="default") {
+	throw new BurritoError("MethodNotYetImplemented");
+    }
+    
+    entryRevisionVariants(idServerId, entryId, revisionId) {
+	throw new BurritoError("MethodNotYetImplemented");
+    }
+    
+    entryRevisionVariantsDetails(idServerId, entryId, revisionId) {
+	throw new BurritoError("MethodNotYetImplemented");
+    }
+
+    ingredients(idServerId, entryId, revisionId, variantId) {
+	throw new BurritoError("MethodNotYetImplemented");
+    }
+    
+    ingredientsDetails(idServerId, entryId, revisionId, variantId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
     /* Read Metadata */
 
-    metadataContent(entryId, revisionId, variantId) {
+    metadataContent(idServerId, entryId, revisionId, variantId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
     /* Read Ingredients */
 
-    ingredientDetails(entryId, revisionId, variantId, ingredientName) {
+    ingredientDetails(idServerId, entryId, revisionId, variantId, ingredientName) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    ingredientContent(entryId, revisionId, variantId, ingredientName) {
+    ingredientContent(idServerId, entryId, revisionId, variantId, ingredientName) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    ingredientLocation(entryId, revisionId, variantId, ingredientName) {
+    ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientName) {
 	throw new BurritoError("MethodNotYetImplemented");
     }    
 
     /* Update Metadata */
 
-    metadataForm(entryId, revisionId, variantId, filter) {
+    metadataForm(idServerId, entryId, revisionId, variantId, filter) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
     
@@ -190,47 +198,47 @@ class BurritoStore {
     
     /* Add, Update, Remove, Cache Ingredients */
 
-    cacheIngredient(entryId, revisionId, variantId, ingredientName, ingredientContent) {
+    cacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    uncacheIngredient(entryId, revisionId, variantId, ingredientName) {
+    uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    addOrUpdateIngredient(entryId, revisionId, variantId, ingredientName, ingredientContent) {
+    addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    deleteIngredient(entryId, revisionId, variantId, ingredientName) {
+    deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
     /* Validation */
 
-    validateMetadata(entryId, revisionId, variantId, schema="metadata") {
+    validateMetadata(idServerId, entryId, revisionId, variantId, schema="metadata") {
 	throw new BurritoError("MethodNotYetImplemented");
     }
     
-    validateConvention(entryId, revisionId, variantId, conventionName) {
+    validateConvention(idServerId, entryId, revisionId, variantId, conventionName) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
     
-    validateMetadataConventions(entryId, revisionId, variantId) {
+    validateMetadataConventions(idServerId, entryId, revisionId, variantId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
     
     /* Delete */
 
-    deleteEntry(entryId) {
+    deleteEntry(idServerId, entryId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    deleteEntryRevision(entryId, revisionId) {
+    deleteEntryRevision(idServerId, entryId, revisionId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
-    deleteEntryRevisionVariant(entryId, revisionId, variantId) {
+    deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
     

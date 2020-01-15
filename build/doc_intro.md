@@ -98,37 +98,37 @@ The burrito is shared, without change, licenses permitting. This is an inter-sto
 
 #### importFromZip(path)
 
-#### exportToObject(entryId, revisionId, variantId)
+#### exportToObject(idServerId, entryId, revisionId, variantId)
 
-#### exportToDir(entryId, revisionId, variantId, path)
+#### exportToDir(idServerId, entryId, revisionId, variantId, path)
 
-#### exportToZip(entryId, revisionId, variantId, path)
+#### exportToZip(idServerId, entryId, revisionId, variantId, path)
 
 ### **2**: toTemplate
 
 The burrito is stripped of ids for use as a template.
 
-#### defaultToTemplate(entryId, revisionId, templateData, filter?)
+#### defaultToTemplate(idServerId, entryId, revisionId, templateData, filter?)
 
 ### **3**: toNew
 
 A draft new burrito (new id, no previous revision) is created, based on a template.
 
-#### templateToNew(templateName)
+#### templateToNew(idServerId, templateName)
 
 ### **4**: toUpdate
 
 An existing burrito is used to create a draft update (same id, new revision).
 
-#### defaultToUpdate(entryId, revisionId)
+#### defaultToUpdate(idServerId, entryId, revisionId)
 
 ### **5**: acceptDraft
 
 A draft is accepted as a new revision.
 
-#### newToDefault(entryId, revisionId)
+#### newToDefault(idServerId, entryId, revisionId)
 
-#### updateToDefault(entryId, revisionId)
+#### updateToDefault(idServerId, entryId, revisionId)
 
 ### **6**: receiveRevision
 
@@ -144,11 +144,11 @@ A new entry/revision is received from the owner.
 
 A draft is sent to the owner.
 
-* exportToObject(entryId, revisionId, variantId)
+* exportToObject(idServerId, entryId, revisionId, variantId)
 
-* exportToDir(entryId, revisionId, variantId, path)
+* exportToDir(idServerId, entryId, revisionId, variantId, path)
 
-* exportToZip(entryId, revisionId, variantId, path)
+* exportToZip(idServerId, entryId, revisionId, variantId, path)
 
 ### **8**: receiveDraft
 
@@ -160,11 +160,11 @@ A draft is received by the owner from a delegated store.
 
 * importFromZip(path)
 
-### **9**: makeVariant
+### **9**: makeDerived
 
 A read-only derived variant is created.
 
-#### defaultToDerived(entryId, revisionId, derivativeName)
+#### defaultToDerived(idServerId, entryId, revisionId, derivativeName)
 
 ### **10**: ownEntry
 
@@ -264,35 +264,43 @@ This level of validity includes metadata validity. The entire metadata document 
 
 These operations are suitable for producing table views, and can be used as the basis of iterative algorithms. In each case there is a keys-only function (which should be cheap), as well as a function that returns catalog-level information.
 
-#### entries(requiredVariant=null)
+#### idServers()
 
-Returns an array of entry ids.
+Returns an array of idServer ids.
 
-#### entriesDetails(variantId=default)
+#### idServersDetails()
+
+Returns an object with metadata for each idServer.
+
+#### entries(idServerId, requiredVariant=null)
+
+Returns an array of entry ids for the idServer.
+
+#### entriesDetails(idServerId, variantId=default)
 
 Returns an object with catalog information for the latest revision of each entry.
 
-#### entryRevisions(entryId)
+#### entryRevisions(idServerId, entryId)
 
 Returns an array of revision ids.
 
-#### entryRevisionsDetails(entryId, variantId=default)
+#### entryRevisionsDetails(idServerId, entryId, variantId=default)
 
 Returns an object with catalog information for each revision of the entry.
 
-#### entryRevisionVariants(entryId, revisionId)
+#### entryRevisionVariants(idServerId, entryId, revisionId)
 
 Returns an array of variant ids.
 
-#### entryRevisionVariantsDetails(entryId, revisionId)
+#### entryRevisionVariantsDetails(idServerId, entryId, revisionId)
 
 Returns an object with catalog information for each variant of the entry.
 
-#### ingredients(entryId, revisionId, variantId)
+#### ingredients(idServerId, entryId, revisionId, variantId)
 
 Returns a list of ingredient ids.
 
-#### ingredientsDetails(entryId, revisionId, variantId)
+#### ingredientsDetails(idServerId, entryId, revisionId, variantId)
 
 Returns an object with metadata for each ingredient.
 
@@ -301,7 +309,7 @@ Returns an object with metadata for each ingredient.
 
 Metadata is treated differently to ingredients. It is assumed that the metadata is small enough to be returned conveniently as an object.
 
-#### metadataContent(entryId, revisionId, variantId)
+#### metadataContent(idServerId, entryId, revisionId, variantId)
 
 Returns the metadata document as an object.
 
@@ -309,15 +317,15 @@ Returns the metadata document as an object.
 
 Various options are supported, some of which are, by necessity, implementation-dependent.
 
-#### ingredientDetails(entryId, revisionId, variantId, ingredientName)
+#### ingredientDetails(idServerId, entryId, revisionId, variantId, ingredientName)
 
 Returns ingredient metadata (size, checksum, role, isSource, isCached) as an object.
 
-#### ingredientContent(entryId, revisionId, variantId, ingredientName)
+#### ingredientContent(idServerId, entryId, revisionId, variantId, ingredientName)
 
 Returns a stream-like object from which the (potentially large) ingredient content may be read.
 
-#### ingredientLocation(entryId, revisionId, variantId, ingredientName)
+#### ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientName)
 
 Returns a path to access the ingredient directly, eg from a local filesystem or S3.
 
@@ -325,7 +333,7 @@ Returns a path to access the ingredient directly, eg from a local filesystem or 
 
 There is no "replace metadata completely" endpoint, since this would require a lot of checks to avoid esoteric data integrity issues. The metadata update model is based on the forms functionality behind DBL's Nathanael client. A form is an object containing schema-like information for each field (name, description, validation information) plus the current value. The filter specifies which portion of the metadata is referenced in an xpath-like way (mainly nested keys).
 
-#### metadataForm(entryId, revisionId, variantId, filter)
+#### metadataForm(idServerId, entryId, revisionId, variantId, filter)
 
 Returns a form for the variant.
 
@@ -341,19 +349,19 @@ Validates the form information and, if validation succeeds, updates the metadata
 
 Operations exist to add and remove ingredients, either as a cache operation (when metadata is immutable) or as a modifying operation (when metadata is mutable and the intention is to change the metadata ingredients).
 
-#### cacheIngredient(entryId, revisionId, variantId, ingredientName, ingredientContent)
+#### cacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent)
 
 Make a local copy of an ingredient that exists in the owning store for this entry/revision . This is a no-op if the ingredient is already present.
 
-#### uncacheIngredient(entryId, revisionId, variantId, ingredientName)
+#### uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName)
 
 Remove a local copy of an ingredient that exists in the owning store for this entry/revision . This is a no-op if the ingredient is not present.
 
-#### addOrUpdateIngredient(entryId, revisionId, variantId, ingredientName, ingredientContent)
+#### addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent)
 
 Add or update an ingredient, changing the ingredients section of the metadata accordingly.
 
-#### deleteIngredient(entryId, revisionId, variantId, ingredientName)
+#### deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientName)
 
 Delete an ingredient, changing the ingredients section of the metadata accordingly.
 
@@ -368,15 +376,15 @@ Delete an ingredient, changing the ingredients section of the metadata according
 
 All data within a store should always be catalog valid. It is possible to validate against stricter schema, and to check for convention conformance.
 
-#### validateMetadata(entryId, revisionId, variantId, schema=strict)
+#### validateMetadata(idServerId, entryId, revisionId, variantId, schema=strict)
 
 Validates the metadata of a variant.
 
-#### validateConvention(entryId, revisionId, variantId, conventionName)
+#### validateConvention(idServerId, entryId, revisionId, variantId, conventionName)
 
 Returns a report on whether the variant's metadata and ingredients conform to the named convention.
 
-#### validataMetadataConventions(entryId, revisionId, variantId)
+#### validataMetadataConventions(idServerId, entryId, revisionId, variantId)
 
 Returns a report on whether the variant's metadata and ingredients conform to each of the conventions listed in the metadata.
 
@@ -384,14 +392,18 @@ Returns a report on whether the variant's metadata and ingredients conform to ea
 
 Delete operations may not be allowed by all stores.
 
-#### deleteEntry(entryId)
+#### deleteIdServer(idServerId)
 
-Deletes an entry from the store.
+Deletes an idServer from the store.
 
-#### deleteEntryRevision(entryId, revisionId)
+#### deleteEntry(idServerId, entryId)
 
-Deletes an entry/revision from the store. The entry will also be deleted if this is the only revision.
+Deletes an entry from the store. The idServer will also be deleted if this is the only entry.
 
-#### deleteEntryRevisionVariant(entryId, revisionId, variantId)
+#### deleteEntryRevision(idServerId, entryId, revisionId)
 
-Deletes a variant from the store. The revision will be deleted if this is the only variant. The entry will be deleted if this is the only variant of the only revision.
+Deletes an entry/revision from the store. The entry will also be deleted if this is the only revision. The idServer will also be deleted if this is the only entry.
+
+#### deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId)
+
+Deletes a variant from the store. The revision will be deleted if this is the only variant. The entry will be deleted if this is the only variant of the only revision. The idServer will also be deleted if this is the only entry.

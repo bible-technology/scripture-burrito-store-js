@@ -43,7 +43,518 @@
 
 
     <section>
-        <article><p>This module is a reference implementation of the Scripture Burrito processing model.</p></article>
+        <article><h1>Burrito Store</h1>
+<h2>Terminology</h2>
+<p>A <strong>burrito store</strong> is a mechanism for storing a collection of <em>entries</em>.</p>
+<p>An <strong>entry</strong> is an ordered collection of <em>revisions</em>. Within a given store, each <em>entry</em> has the <em>status</em> of <em>owned</em>, <em>delegated</em> or <em>loaned</em>. The <em>status</em> of an <em>entry</em> representing the same burrito may vary between <em>burrito stores</em>.</p>
+<p>A <em>burrito store</em> may be used by an <strong>id server</strong>. An <em>id server</em> provides the main id for an <em>entry</em>. <em>Entry/revisions</em> may be <em>owned</em> by zero or one <em>id server</em>.</p>
+<p>An <strong>owned entry</strong> is an entry whose latest revision is authenticated by the <em>id server</em> which uses the <em>burrito store</em>.</p>
+<p>A <strong>delegated entry</strong> is an <em>entry</em> whose latest revision is not authenticated by the <em>id server</em> which uses the <em>burrito store</em>, but to which editing rights have been delegated by an <em>id server</em>.</p>
+<p>A <strong>loaned entry</strong> is an <em>entry</em> whose latest revision is not authenticated by the <em>id server</em> which uses the <em>burrito store</em>, and to which no editing rights have been delegated by an <em>id server</em>.</p>
+<p>A <strong>revision</strong> is an unordered collection of <em>variants</em> containing <em>metadata</em> which refers, optionally, to <em>ingredients</em>.</p>
+<p>A <strong>variant</strong> is one set of <em>metadata</em> plus optional <em>ingredients</em> for an <em>entry/revision</em>. It must be either a <em>standard variant</em> or a <em>derived variant</em>.</p>
+<p>A <strong>standard variant</strong> is one of</p>
+<ul>
+<li>
+<p><strong>default</strong>: the base form of an <em>entry/revision</em>. The <em>metadata</em> and <em>ingredients</em> of this variant are immutable. If the <em>entry/revision</em> is <em>owned</em>, all <em>ingredients</em> must be present. If the <em>entry/revision</em> is <em>delegated</em> or <em>loaned</em>, <em>ingredients</em> may be added or removed, but must correspond to the immutable <em>metadata</em>.</p>
+</li>
+<li>
+<p><strong>new</strong>: a draft for an <em>entry</em> for which no previous <em>revisions</em> exist. <em>Metadata</em> may be edited. <em>Ingredients</em> may be added, removed and updated.</p>
+</li>
+<li>
+<p><strong>update</strong>: a draft that is based on the <em>default</em> variant of a <em>revision</em> of an existing <em>entry</em>. <em>Metadata</em> may be edited. <em>Ingredients</em> may be added, removed and updated.</p>
+</li>
+</ul>
+<p>A <strong>derived variant</strong> is generated from <em>default</em> according to a processor-dependant algorithm. The <em>metadata</em> and <em>ingredients</em> of this <em>variant</em> are immutable. No other <em>variants</em> may be created from a <em>derived variant</em>.</p>
+<p>A <strong>template</strong> may be created from a <em>default variant</em>. A <em>template</em> contains some of the <em>metadata</em> of the <em>default variant</em>. It must not contain an entry or revision id or any other systemId.</p>
+<h2>Store Options</h2>
+<p>Burrito stores may appear in many different systems, such as</p>
+<ul>
+<li>
+<p>a server that contains the definitive copies of entries (eg DBL)</p>
+</li>
+<li>
+<p>a client that edits entry/revisions (eg Paratext projects)</p>
+</li>
+<li>
+<p>an application that consumes published entries (eg &quot;Paratext resources&quot;, YouVersion...)</p>
+</li>
+</ul>
+<p>A system may well handle different entries in different ways. For example, Paratext can edit owned projects but cannot directly edit Paratext resources.</p>
+<p>Scripture Burrito can represent many different types of content, but any given system may only handle a subset of those types. Such constraints need to be implemented by the store. Ideally, they should also be exposed transparently so that other stores can discover whether it will be possible to exchange content.</p>
+<p>Necessary configuration options include:</p>
+<h3>acceptedVersion</h3>
+<p>If present, this provides a semantic versioning string, which may allow a range, eg &quot;0.2.x&quot;. When absent, all versions are accepted.</p>
+<h3>acceptedFlavors</h3>
+<p>If present, this provides an array of flavor and/or flavorTypes, eg &quot;: [&quot;scriptureText&quot;, &quot;gloss&quot;] which means &quot;accept the scriptureText flavor plus any gloss flavors&quot;. When absent, all flavors are accepted.</p>
+<h3>allowXFlavors</h3>
+<p>This provides a boolean. When false or absent, only x-flavors that are listed under acceptedFlavors are allowed. When true, x-flavors are accepted if acceptedFlavors is absent, or if acceptedFlavor includes the flavorType of the x-flavor.</p>
+<h3>ownedEntryIDServers</h3>
+<p>If present, this provides an array of idServer URLs for which a systemId must exist in the metadata in order for the burrito to be accepted as an owned entry. When absent, no specific systemId is required.</p>
+<h3>acceptedIDServers</h3>
+<p>If present, this provides an array of idServer URLs for which a systemId must exist in the metadata in order for the burrito to be accepted as a loaned entry.</p>
+<h3>creatableDerivedVariants</h3>
+<p>If present, this provides an array of derived variants that the store can create from a default variant. When absent, no derived variants may be created by the store.</p>
+<h3>acceptedDerivedVariants</h3>
+<p>If present, this provides an array of derived variants that are accepted by the system, eg [&quot;noReferences&quot;]. When absent, no derived variants are permitted.</p>
+<h3>validation</h3>
+<p>If present, this specifies the minimum level of validation that all entries must meet. When absent, the level is &quot;catalog valid&quot;.</p>
+<h2>State Changes</h2>
+<p>The diagram below shows how variants may be passed between burrito stores and transformed within burrito stores.</p>
+<p>Processors may provide convenience &quot;macros&quot; that include several state changes, but the semantics of each state change must be respected. For example, a processor might provide a &quot;default to new&quot; operator, but such an operator should produce the same result as creating a template and then using it to create a new variant (state changes 2 and 3 below).</p>
+<p>Any variant may be created in a &quot;constructing&quot; sub-state. This sub-state allows for non-instantaneous creation of variants, for example when the content of a default entry is being downloaded, or when the creation of a derived variant requires significant processing. variants in the constructing sub-state should not be accessible through the standard API.</p>
+<p><img src="../build/state_changes.png" alt="State changes for 3 types of entity"></p>
+<h3><strong>1</strong>: share</h3>
+<p>The burrito is shared, without change, licenses permitting. This is an inter-store operation, so various transport formats are supported.</p>
+<h4>importFromObject(metadata)</h4>
+<h4>importFromDir(path)</h4>
+<h4>importFromZip(path)</h4>
+<h4>exportToObject(idServerId, entryId, revisionId, variantId)</h4>
+<h4>exportToDir(idServerId, entryId, revisionId, variantId, path)</h4>
+<h4>exportToZip(idServerId, entryId, revisionId, variantId, path)</h4>
+<h3><strong>2</strong>: toTemplate</h3>
+<p>The burrito is stripped of ids for use as a template.</p>
+<h4>defaultToTemplate(idServerId, entryId, revisionId, templateData, filter?)</h4>
+<h3><strong>3</strong>: toNew</h3>
+<p>A draft new burrito (new id, no previous revision) is created, based on a template.</p>
+<h4>templateToNew(idServerId, templateName)</h4>
+<h3><strong>4</strong>: toUpdate</h3>
+<p>An existing burrito is used to create a draft update (same id, new revision).</p>
+<h4>defaultToUpdate(idServerId, entryId, revisionId)</h4>
+<h3><strong>5</strong>: acceptDraft</h3>
+<p>A draft is accepted as a new revision.</p>
+<h4>newToDefault(idServerId, entryId, revisionId)</h4>
+<h4>updateToDefault(idServerId, entryId, revisionId)</h4>
+<h3><strong>6</strong>: receiveRevision</h3>
+<p>A new entry/revision is received from the owner.</p>
+<ul>
+<li>
+<p>importFromObject(metadata)</p>
+</li>
+<li>
+<p>importFromDir(path)</p>
+</li>
+<li>
+<p>importFromZip(path)</p>
+</li>
+</ul>
+<h3><strong>7</strong>: sendDraft</h3>
+<p>A draft is sent to the owner.</p>
+<ul>
+<li>
+<p>exportToObject(idServerId, entryId, revisionId, variantId)</p>
+</li>
+<li>
+<p>exportToDir(idServerId, entryId, revisionId, variantId, path)</p>
+</li>
+<li>
+<p>exportToZip(idServerId, entryId, revisionId, variantId, path)</p>
+</li>
+</ul>
+<h3><strong>8</strong>: receiveDraft</h3>
+<p>A draft is received by the owner from a delegated store.</p>
+<ul>
+<li>
+<p>importFromObject(metadata)</p>
+</li>
+<li>
+<p>importFromDir(path)</p>
+</li>
+<li>
+<p>importFromZip(path)</p>
+</li>
+</ul>
+<h3><strong>9</strong>: makeDerived</h3>
+<p>A read-only derived variant is created.</p>
+<h4>defaultToDerived(idServerId, entryId, revisionId, derivativeName)</h4>
+<h3><strong>10</strong>: ownEntry</h3>
+<p>An entry created elsewhere is imported, with change of ownership.</p>
+<h4>importAsOwnedFromObject(metadata)</h4>
+<h4>importAsOwnedFromDir(path)</h4>
+<h4>importAsOwnedFromZip(path)</h4>
+<p>The possible state changes are summarized in the tables below.</p>
+<h3>Owned Entry</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>default</th>
+<th>template</th>
+<th>derived</th>
+<th>new</th>
+<th>update</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>export</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to default</td>
+<td>-</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>to template</td>
+<td>yes</td>
+<td>-</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to derived</td>
+<td>yes</td>
+<td>no</td>
+<td>-</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to new</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>-</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to update</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3>Delegated Entry</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>default</th>
+<th>template</th>
+<th>derived</th>
+<th>new</th>
+<th>update</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>export</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>to default</td>
+<td>-</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to template</td>
+<td>yes</td>
+<td>-</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to derived</td>
+<td>no</td>
+<td>no</td>
+<td>-</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to new</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>-</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to update</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3>Template / Loaned Entry</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>default</th>
+<th>template</th>
+<th>derived</th>
+<th>new</th>
+<th>update</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>export</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to default</td>
+<td>-</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to template</td>
+<td>yes</td>
+<td>-</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to derived</td>
+<td>no</td>
+<td>no</td>
+<td>-</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to new</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>-</td>
+<td>no</td>
+</tr>
+<tr>
+<td>to update</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2>Maintaining Entry State</h2>
+<p>In addition to &quot;burrito&quot; metadata, the burrito store requires the following state information about each entry:</p>
+<h3>Ownership</h3>
+<p>This is one of</p>
+<ul>
+<li>
+<p>owned</p>
+</li>
+<li>
+<p>delegated</p>
+</li>
+<li>
+<p>loaned</p>
+</li>
+<li>
+<p>template</p>
+</li>
+</ul>
+<h3>isConstructing</h3>
+<p>This boolean may be set during an async entry instantiation process. (In the case of an immutable variant, such as a derived variant or an imported burrito containing substantial ingredients, this process may take some time.)</p>
+<h2>Metadata schema and scope</h2>
+<p>Validation of the contents of each entry is vital to simplify processing and to maintain data integrity. Five schema are envisaged:</p>
+<h3>Template</h3>
+<p>A template is not strictly an entry, since it does not have an entry id. Templates, by their nature, are incomplete. However, whatever structure is present should be consistent with a metadata-valid document. The template schema also expects additional fields to identify the template, such as an id, name and description. (These should be stored differently to entry ids etc to avoid confusion when the template is instantiated.)</p>
+<h3>Catalog Valid</h3>
+<p>This is the lowest level of validity, which is required for all entries. Fields that are used for presenting summary information about the entry must be present and valid.</p>
+<h3>Archivist Valid</h3>
+<p>This level of validity includes catalog validity. All fields that can reasonably be human-maintained must be present and valid. (This notably excludes ingredients and publication structure.)</p>
+<h3>Metadata Valid</h3>
+<p>This level of validity includes detail validity. The entire metadata document must be valid.</p>
+<h3>Burrito Valid</h3>
+<p>This level of validity includes metadata validity. The entire metadata document must be valid and, in addition, the metadata and ingredients must conform to any conventions listed in the metadata. (This level of validation is only viable for owned entries, or for the first revision of a delegated entry, since, in other cases, the ingredients may not be present locally.)</p>
+<h2>Operations</h2>
+<h3>List</h3>
+<p>These operations are suitable for producing table views, and can be used as the basis of iterative algorithms. In each case there is a keys-only function (which should be cheap), as well as a function that returns catalog-level information.</p>
+<h4>idServers()</h4>
+<p>Returns an array of idServer ids.</p>
+<h4>idServersDetails()</h4>
+<p>Returns an object with metadata for each idServer.</p>
+<h4>entries(idServerId, requiredVariant=null)</h4>
+<p>Returns an array of entry ids for the idServer.</p>
+<h4>entriesDetails(idServerId, variantId=default)</h4>
+<p>Returns an object with catalog information for the latest revision of each entry.</p>
+<h4>entryRevisions(idServerId, entryId)</h4>
+<p>Returns an array of revision ids.</p>
+<h4>entryRevisionsDetails(idServerId, entryId, variantId=default)</h4>
+<p>Returns an object with catalog information for each revision of the entry.</p>
+<h4>entryRevisionVariants(idServerId, entryId, revisionId)</h4>
+<p>Returns an array of variant ids.</p>
+<h4>entryRevisionVariantsDetails(idServerId, entryId, revisionId)</h4>
+<p>Returns an object with catalog information for each variant of the entry.</p>
+<h4>ingredients(idServerId, entryId, revisionId, variantId)</h4>
+<p>Returns a list of ingredient ids.</p>
+<h4>ingredientsDetails(idServerId, entryId, revisionId, variantId)</h4>
+<p>Returns an object with metadata for each ingredient.</p>
+<h3>Read Metadata</h3>
+<p>Metadata is treated differently to ingredients. It is assumed that the metadata is small enough to be returned conveniently as an object.</p>
+<h4>metadataContent(idServerId, entryId, revisionId, variantId)</h4>
+<p>Returns the metadata document as an object.</p>
+<h3>Read Ingredients</h3>
+<p>Various options are supported, some of which are, by necessity, implementation-dependent.</p>
+<h4>ingredientDetails(idServerId, entryId, revisionId, variantId, ingredientName)</h4>
+<p>Returns ingredient metadata (size, checksum, role, isSource, isCached) as an object.</p>
+<h4>ingredientContent(idServerId, entryId, revisionId, variantId, ingredientName)</h4>
+<p>Returns a stream-like object from which the (potentially large) ingredient content may be read.</p>
+<h4>ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientName)</h4>
+<p>Returns a path to access the ingredient directly, eg from a local filesystem or S3.</p>
+<h3>Update Metadata</h3>
+<p>There is no &quot;replace metadata completely&quot; endpoint, since this would require a lot of checks to avoid esoteric data integrity issues. The metadata update model is based on the forms functionality behind DBL's Nathanael client. A form is an object containing schema-like information for each field (name, description, validation information) plus the current value. The filter specifies which portion of the metadata is referenced in an xpath-like way (mainly nested keys).</p>
+<h4>metadataForm(idServerId, entryId, revisionId, variantId, filter)</h4>
+<p>Returns a form for the variant.</p>
+<h4>submitMetadataForm(filter, form, minValidity=catalog)</h4>
+<p>Validates the form information and, if validation succeeds, updates the metadata.</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>default (owned)</th>
+<th>default (not owned)</th>
+<th>derived</th>
+<th>new</th>
+<th>update</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>metadataForm</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<h3>Add, Update, Remove, Cache Ingredients</h3>
+<p>Operations exist to add and remove ingredients, either as a cache operation (when metadata is immutable) or as a modifying operation (when metadata is mutable and the intention is to change the metadata ingredients).</p>
+<h4>cacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent)</h4>
+<p>Make a local copy of an ingredient that exists in the owning store for this entry/revision . This is a no-op if the ingredient is already present.</p>
+<h4>uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName)</h4>
+<p>Remove a local copy of an ingredient that exists in the owning store for this entry/revision . This is a no-op if the ingredient is not present.</p>
+<h4>addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent)</h4>
+<p>Add or update an ingredient, changing the ingredients section of the metadata accordingly.</p>
+<h4>deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientName)</h4>
+<p>Delete an ingredient, changing the ingredients section of the metadata accordingly.</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>default (owned)</th>
+<th>default (not owned)</th>
+<th>derived</th>
+<th>new</th>
+<th>update</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cacheIngredient</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>uncacheIngredient</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>addOrUpdateIngredient</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>deleteIngredient</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<h3>Validation</h3>
+<p>All data within a store should always be catalog valid. It is possible to validate against stricter schema, and to check for convention conformance.</p>
+<h4>validateMetadata(idServerId, entryId, revisionId, variantId, schema=strict)</h4>
+<p>Validates the metadata of a variant.</p>
+<h4>validateConvention(idServerId, entryId, revisionId, variantId, conventionName)</h4>
+<p>Returns a report on whether the variant's metadata and ingredients conform to the named convention.</p>
+<h4>validataMetadataConventions(idServerId, entryId, revisionId, variantId)</h4>
+<p>Returns a report on whether the variant's metadata and ingredients conform to each of the conventions listed in the metadata.</p>
+<h3>Delete</h3>
+<p>Delete operations may not be allowed by all stores.</p>
+<h4>deleteIdServer(idServerId)</h4>
+<p>Deletes an idServer from the store.</p>
+<h4>deleteEntry(idServerId, entryId)</h4>
+<p>Deletes an entry from the store. The idServer will also be deleted if this is the only entry.</p>
+<h4>deleteEntryRevision(idServerId, entryId, revisionId)</h4>
+<p>Deletes an entry/revision from the store. The entry will also be deleted if this is the only revision. The idServer will also be deleted if this is the only entry.</p>
+<h4>deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId)</h4>
+<p>Deletes a variant from the store. The revision will be deleted if this is the only variant. The entry will be deleted if this is the only variant of the only revision. The idServer will also be deleted if this is the only entry.</p></article>
     </section>
 
 
@@ -60,7 +571,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Tue Jan 14 2020 11:11:51 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Wed Jan 15 2020 15:59:06 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
