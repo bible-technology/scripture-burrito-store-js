@@ -1,6 +1,5 @@
 'use strict';
 
-import {SHA3} from 'sha3';
 import deepEqual from 'deep-equal';
 
 import {BurritoError} from "./burrito_error.js";
@@ -12,7 +11,6 @@ class FSMetadataStore extends MetadataStore {
     constructor(burritoStore) {
 	super(burritoStore);
 	this._urls = {};
-	this._sha3 = new SHA3(512);
     }
 
     /**
