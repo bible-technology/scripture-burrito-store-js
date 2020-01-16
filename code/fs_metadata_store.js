@@ -40,6 +40,29 @@ class FSMetadataStore extends MetadataStore {
     }
 
     /**
+     */
+    __idServerEntries(idServerId, requiredVariant) {
+	if (idServerId in this._urls) {
+	    return Object.keys(this._urls[idServerId]);
+	} else {
+	    return null;
+	}
+	
+    }
+
+    /**
+     */
+    __idServerEntriesDetails(idServerId, variantId) {
+	throw new BurritoError("ToDo");
+    }
+
+    /**
+     */
+    __idServerEntriesRevisions(idServerId, variantId) {
+	throw new BurritoError("ToDo");
+    }
+
+    /**
        Returns record for sysUrl or null
        * @param {string} sysUrl
      */
