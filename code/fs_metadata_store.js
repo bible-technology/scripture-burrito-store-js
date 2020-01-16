@@ -22,6 +22,16 @@ class FSMetadataStore extends MetadataStore {
     /**
      */
     __idServersDetails() {
+	const ret = {};
+	Object.keys(this._urls).forEach(function (ids) {
+	    ret[ids] = {"id": ids};
+	});
+	return ret;
+    }
+
+    /**
+     */
+    __idServersEntries() {
 	var ret = {};
 	for (const url of Object.entries(this._urls)) {
 	    ret[url[0]] = Object.keys(url[1]);

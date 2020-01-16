@@ -134,6 +134,10 @@ class BurritoStore {
 	return this._metadataStore.__idServersDetails();
     }
 
+    idServersEntries() {
+	return this._metadataStore.__idServersEntries();
+    }
+
     entries(idServerId, requiredVariant=null) {
 	throw new BurritoError("MethodNotYetImplemented");
     }

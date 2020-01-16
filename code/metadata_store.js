@@ -83,6 +83,10 @@ class MetadataStore {
 	throw new BurritoError("MethodNotOverriddenBySubclass");
     }
     
+    __idServersEntries() {
+	throw new BurritoError("MethodNotOverriddenBySubclass");
+    }
+
     /**
        Returns record for sysUrl or null
        * @param {string} sysUrl
