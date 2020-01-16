@@ -138,20 +138,20 @@ class BurritoStore {
 	return this._metadataStore.__idServersEntries();
     }
 
-    entries(idServerId, requiredVariant=null) {
-	return this._metadataStore.__idServerEntries(idServerId, requiredVariant);
+    entries(idServerId) {
+	return this._metadataStore.__idServerEntries(idServerId);
     }
     
-    entriesRevisions(idServerId, variantId="default") {
-	return this._metadataStore.__idServerEntriesRevisions(idServerId, variantId="default");
+    entriesRevisions(idServerId) {
+	return this._metadataStore.__idServerEntriesRevisions(idServerId);
     }
     
     entryRevisions(idServerId, entryId) {
-	throw new BurritoError("MethodNotYetImplemented");
+	return this._metadataStore.__idServerEntryRevisions(idServerId, entryId);
     }
     
-    entryRevisionsDetails(idServerId, entryId, variantId="default") {
-	throw new BurritoError("MethodNotYetImplemented");
+    entryRevisionsVariants(idServerId, entryId) {
+	return this._metadataStore.__idServerEntryRevisionsVariants(idServerId, entryId);
     }
     
     entryRevisionVariants(idServerId, entryId, revisionId) {

@@ -244,4 +244,24 @@ describe("FS Burrito Class", function() {
 	assert.equal(b.entriesRevisions("https://thedigitalbiblelibrary.org")[entryKeys[0]].length, 1);
     });
 
+    it("Implements entryRevisions()", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore"
+	});
+	assert.isNull(b.entryRevisions("https://thedigitalbiblelibrary.org", "0123456789abcdef"));
+	b.importFromObject(this.metadata["validScriptureText"]);
+	assert.equal(b.entryRevisions("https://thedigitalbiblelibrary.org", "0123456789abcdef").length, 1);
+    });
+
+    it("Implements entryRevisionsVariants()", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore"
+	});
+	assert.isNull(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef"));
+	b.importFromObject(this.metadata["validScriptureText"]);
+	const revisionKeys = Object.keys(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef"));
+	assert.equal(revisionKeys.length, 1);
+	assert.equal(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef")[revisionKeys[0]].length, 1);
+    });
+
 });
