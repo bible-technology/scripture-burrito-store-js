@@ -272,21 +272,25 @@ Returns an array of idServer ids.
 
 Returns an object with metadata for each idServer.
 
-#### entries(idServerId, requiredVariant=null)
+#### idServersEntries()
+
+Returns the entry ids for each idServer.
+
+#### entries(idServerId)
 
 Returns an array of entry ids for the idServer.
 
-#### entriesDetails(idServerId, variantId=default)
+#### entriesRevisions(idServerId)
 
-Returns an object with catalog information for the latest revision of each entry.
+Returns an object with the revision ids of each entry.
 
 #### entryRevisions(idServerId, entryId)
 
 Returns an array of revision ids.
 
-#### entryRevisionsDetails(idServerId, entryId, variantId=default)
+#### entryRevisionsVariants(idServerId, entryId)
 
-Returns an object with catalog information for each revision of the entry.
+Returns an object with variant ids for each revision of the entry.
 
 #### entryRevisionVariants(idServerId, entryId, revisionId)
 

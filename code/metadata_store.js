@@ -87,11 +87,23 @@ class MetadataStore {
 	throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
-    __idServerEntries(idServerId, requiredVariant) {
+    __idServerEntries(idServerId) {
 	throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
-    __idServerEntriesRevisions(idServerId, variantId) {
+    __idServerEntriesRevisions(idServerId) {
+	throw new BurritoError("MethodNotOverriddenBySubclass");
+    }
+
+    __idServerEntryRevisions(idServerId, entryId) {
+	throw new BurritoError("MethodNotOverriddenBySubclass");
+    }
+
+    __idServerEntryRevisionsVariants(idServerId, entryId) {
+	throw new BurritoError("MethodNotOverriddenBySubclass");
+    }
+
+    __idServerEntryRevisionVariants(idServerId, entryId, revisionId) {
 	throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 

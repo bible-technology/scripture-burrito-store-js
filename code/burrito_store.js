@@ -155,7 +155,7 @@ class BurritoStore {
     }
     
     entryRevisionVariants(idServerId, entryId, revisionId) {
-	throw new BurritoError("MethodNotYetImplemented");
+	return this._metadataStore.__idServerEntryRevisionVariants(idServerId, entryId, revisionId);
     }
     
     entryRevisionVariantsDetails(idServerId, entryId, revisionId) {

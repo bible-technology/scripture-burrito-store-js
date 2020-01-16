@@ -41,7 +41,7 @@ class FSMetadataStore extends MetadataStore {
 
     /**
      */
-    __idServerEntries(idServerId, requiredVariant) {
+    __idServerEntries(idServerId) {
 	if (idServerId in this._urls) {
 	    return Object.keys(this._urls[idServerId]);
 	} else {
@@ -51,7 +51,7 @@ class FSMetadataStore extends MetadataStore {
 
     /**
      */
-    __idServerEntriesRevisions(idServerId, variantId) {
+    __idServerEntriesRevisions(idServerId) {
 	if (idServerId in this._urls) {
 	    var ret = {};
 	    for (const entry of Object.entries(this._urls[idServerId])) {
@@ -63,6 +63,38 @@ class FSMetadataStore extends MetadataStore {
 	}
     }
 
+    /**
+     */
+    __idServerEntryRevisions(idServerId, entryId) {
+	if (idServerId in this._urls && entryId in this._urls[idServerId]) {
+	    return Object.keys(this._urls[idServerId][entryId]);
+	} else {
+	    return null;
+	}
+    }
+
+    /**
+     */
+    __idServerEntryRevisionsVariants(idServerId, entryId) {
+	if (idServerId in this._urls && entryId in this._urls[idServerId]) {
+	    var ret = {};
+	    for (const entry of Object.entries(this._urls[idServerId][entryId])) {
+		ret[entry[0]] = Object.keys(entry[1]);
+	    }
+	    return ret;
+	} else {
+	    return null;
+	}
+    }
+
+    __idServerEntryRevisionVariants(idServerId, entryId, revisionId) {
+	if (idServerId in this._urls && entryId in this._urls[idServerId] && revisionId in this._urls[idServerId][entryId]) {
+	    return Object.keys(this._urls[idServerId][entryId][revisionId]);
+	} else {
+	    return null;
+	}
+    }
+    
     /**
        Returns record for sysUrl or null
        * @param {string} sysUrl
