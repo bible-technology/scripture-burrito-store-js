@@ -142,12 +142,8 @@ class BurritoStore {
 	return this._metadataStore.__idServerEntries(idServerId, requiredVariant);
     }
     
-    entriesDetails(idServerId, variantId="default") {
-	throw new BurritoError("MethodNotYetImplemented");
-    }
-
-    entriesRevisions(idServerId) {
-	throw new BurritoError("MethodNotYetImplemented");
+    entriesRevisions(idServerId, variantId="default") {
+	return this._metadataStore.__idServerEntriesRevisions(idServerId, variantId="default");
     }
     
     entryRevisions(idServerId, entryId) {

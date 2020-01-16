@@ -233,4 +233,15 @@ describe("FS Burrito Class", function() {
 	assert.equal(b.entries("https://thedigitalbiblelibrary.org").length, 1);
     });
 
+    it("Implements entriesRevisions()", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore"
+	});
+	assert.isNull(b.entriesRevisions("https://thedigitalbiblelibrary.org"));
+	b.importFromObject(this.metadata["validScriptureText"]);
+	const entryKeys = Object.keys(b.entriesRevisions("https://thedigitalbiblelibrary.org"));
+	assert.equal(entryKeys.length, 1);
+	assert.equal(b.entriesRevisions("https://thedigitalbiblelibrary.org")[entryKeys[0]].length, 1);
+    });
+
 });

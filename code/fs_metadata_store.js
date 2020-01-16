@@ -47,19 +47,20 @@ class FSMetadataStore extends MetadataStore {
 	} else {
 	    return null;
 	}
-	
-    }
-
-    /**
-     */
-    __idServerEntriesDetails(idServerId, variantId) {
-	throw new BurritoError("ToDo");
     }
 
     /**
      */
     __idServerEntriesRevisions(idServerId, variantId) {
-	throw new BurritoError("ToDo");
+	if (idServerId in this._urls) {
+	    var ret = {};
+	    for (const entry of Object.entries(this._urls[idServerId])) {
+		ret[entry[0]] = Object.keys(entry[1]);
+	    }
+	    return ret;
+	} else {
+	    return null;
+	}
     }
 
     /**
