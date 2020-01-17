@@ -13,7 +13,7 @@ describe("FS Burrito Class", function() {
 	this.testDataDir = path.join(__dirname, "test_data");
 	const metadataDir = path.join(this.testDataDir, "metadata");
 	this.metadata = {
-	    "validScriptureText": JSON.parse(fse.readFileSync(path.join(metadataDir, "scriptureText.json"), "utf8")),
+	    "validTextTranslation": JSON.parse(fse.readFileSync(path.join(metadataDir, "TextTranslation.json"), "utf8")),
 	    "scriptureTextNoRevision": JSON.parse(fse.readFileSync(path.join(metadataDir, "scriptureTextNoRevision.json"), "utf8")),
 	    "scriptureTextDupRevision": JSON.parse(fse.readFileSync(path.join(metadataDir, "scriptureTextDupRevision.json"), "utf8")),
 	    "validScriptureTextStub": JSON.parse(fse.readFileSync(path.join(metadataDir, "stub.json"), "utf8")),
@@ -68,7 +68,7 @@ describe("FS Burrito Class", function() {
 	    "validation": "burrito",
 	    "subclassSettings": {"foo": "baa"}
 	});
-	b.importFromObject(this.metadata["validScriptureText"]);
+	b.importFromObject(this.metadata["validTextTranslation"]);
     });
 
     it("Allow import of identical metadata twice", function() {
@@ -77,8 +77,8 @@ describe("FS Burrito Class", function() {
 	    "validation": "burrito",
 	    "subclassSettings": {"foo": "baa"}
 	});
-	b.importFromObject(this.metadata["validScriptureText"]);
-	b.importFromObject(this.metadata["validScriptureText"]);
+	b.importFromObject(this.metadata["validTextTranslation"]);
+	b.importFromObject(this.metadata["validTextTranslation"]);
     });
 
     it("Do not allow import of different metadata for existing variant", function() {
@@ -88,8 +88,8 @@ describe("FS Burrito Class", function() {
 	    "subclassSettings": {"foo": "baa"}
 	});
 	try {
-	    b.importFromObject(this.metadata["validScriptureText"]);
-	    const modifiedMetadata = deepcopy(this.metadata["validScriptureText"]);
+	    b.importFromObject(this.metadata["validTextTranslation"]);
+	    const modifiedMetadata = deepcopy(this.metadata["validTextTranslation"]);
 	    modifiedMetadata["meta"]["generator"]["userName"] = "John Doe";
 	    b.importFromObject(modifiedMetadata);
 	    throw Error("Too Far");
@@ -189,7 +189,7 @@ describe("FS Burrito Class", function() {
 	    "storeClass": "FSBurritoStore",
 	    "acceptedIdServers": ["https://thedigitalbiblelibrary.org"]
 	});
-	b.importFromObject(this.metadata["validScriptureText"]);
+	b.importFromObject(this.metadata["validTextTranslation"]);
 	assert.exists(b);
     });
 
@@ -198,7 +198,7 @@ describe("FS Burrito Class", function() {
 	    "storeClass": "FSBurritoStore"
 	});
 	assert.equal(b.idServers().length, 0);
-	b.importFromObject(this.metadata["validScriptureText"]);	
+	b.importFromObject(this.metadata["validTextTranslation"]);	
 	assert.equal(b.idServers().length, 1);
 	assert.equal(b.idServers()[0], "https://thedigitalbiblelibrary.org");
     });
@@ -208,7 +208,7 @@ describe("FS Burrito Class", function() {
 	    "storeClass": "FSBurritoStore"
 	});
 	assert.equal(Object.keys(b.idServersDetails()).length, 0);
-	b.importFromObject(this.metadata["validScriptureText"]);	
+	b.importFromObject(this.metadata["validTextTranslation"]);	
 	assert.equal(Object.keys(b.idServersDetails()).length, 1);
 	assert.equal(Object.keys(b.idServersDetails())[0], "https://thedigitalbiblelibrary.org");
 	assert.equal(b.idServersDetails()["https://thedigitalbiblelibrary.org"]["id"], "https://thedigitalbiblelibrary.org");
@@ -219,7 +219,7 @@ describe("FS Burrito Class", function() {
 	    "storeClass": "FSBurritoStore"
 	});
 	assert.equal(Object.keys(b.idServersEntries()).length, 0);
-	b.importFromObject(this.metadata["validScriptureText"]);	
+	b.importFromObject(this.metadata["validTextTranslation"]);	
 	assert.equal(Object.keys(b.idServersEntries()).length, 1);
 	assert.equal(b.idServersEntries()["https://thedigitalbiblelibrary.org"].length, 1);
     });
@@ -229,7 +229,7 @@ describe("FS Burrito Class", function() {
 	    "storeClass": "FSBurritoStore"
 	});
 	assert.isNull(b.entries("https://thedigitalbiblelibrary.org"));
-	b.importFromObject(this.metadata["validScriptureText"]);	
+	b.importFromObject(this.metadata["validTextTranslation"]);	
 	assert.equal(b.entries("https://thedigitalbiblelibrary.org").length, 1);
     });
 
@@ -238,7 +238,7 @@ describe("FS Burrito Class", function() {
 	    "storeClass": "FSBurritoStore"
 	});
 	assert.isNull(b.entriesRevisions("https://thedigitalbiblelibrary.org"));
-	b.importFromObject(this.metadata["validScriptureText"]);
+	b.importFromObject(this.metadata["validTextTranslation"]);
 	const entryKeys = Object.keys(b.entriesRevisions("https://thedigitalbiblelibrary.org"));
 	assert.equal(entryKeys.length, 1);
 	assert.equal(b.entriesRevisions("https://thedigitalbiblelibrary.org")[entryKeys[0]].length, 1);
@@ -249,7 +249,7 @@ describe("FS Burrito Class", function() {
 	    "storeClass": "FSBurritoStore"
 	});
 	assert.isNull(b.entryRevisions("https://thedigitalbiblelibrary.org", "0123456789abcdef"));
-	b.importFromObject(this.metadata["validScriptureText"]);
+	b.importFromObject(this.metadata["validTextTranslation"]);
 	assert.equal(b.entryRevisions("https://thedigitalbiblelibrary.org", "0123456789abcdef").length, 1);
     });
 
@@ -258,7 +258,7 @@ describe("FS Burrito Class", function() {
 	    "storeClass": "FSBurritoStore"
 	});
 	assert.isNull(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef"));
-	b.importFromObject(this.metadata["validScriptureText"]);
+	b.importFromObject(this.metadata["validTextTranslation"]);
 	const revisionKeys = Object.keys(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef"));
 	assert.equal(revisionKeys.length, 1);
 	assert.equal(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef")[revisionKeys[0]].length, 1);
@@ -269,8 +269,8 @@ describe("FS Burrito Class", function() {
 	    "storeClass": "FSBurritoStore"
 	});
 	assert.isNull(b.entryRevisionVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23"));
-	b.importFromObject(this.metadata["validScriptureText"]);
-	b.importFromObject(this.metadata["validScriptureText"]);
+	b.importFromObject(this.metadata["validTextTranslation"]);
+	b.importFromObject(this.metadata["validTextTranslation"]);
 	assert.equal(b.entryRevisionVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23").length, 1);
     });
 

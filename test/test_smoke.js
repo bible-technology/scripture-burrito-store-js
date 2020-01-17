@@ -1,3 +1,3 @@
-describe('Smoke Tests', function() {
-  require('./test_burrito_store.js');
+describe('Schema Tests', function() {
+  require('./test_schema.js');
   })

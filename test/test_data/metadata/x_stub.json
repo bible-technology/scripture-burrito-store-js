@@ -3,8 +3,12 @@
         "version": "0.2.0"
     },
     "type": {
-        "flavor": "x-myflavor",
-        "flavorType": "scripture"
+        "flavorType": {
+	    "name": "scripture",
+	    "flavor": {
+		"name": "x-myFlavor"
+	    }
+	}
     },
     "idServers": {
         "dbl": "https://thedigitalbiblelibrary.org"

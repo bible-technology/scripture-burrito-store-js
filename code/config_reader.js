@@ -1,6 +1,7 @@
 "use strict";
 
 import * as semver from 'semver';
+const assert = require('chai').assert;
 
 import {BurritoError} from "./burrito_error.js";
 
@@ -50,17 +51,23 @@ class ConfigReader {
 	try {
 	    var datum = "version";
 	    version = metadata["meta"]["version"];
+	    assert.isString(version);
 	    datum = "flavor";
-	    flavor = metadata["type"]["flavor"];
+	    flavor = metadata["type"]["flavorType"]["flavor"]["name"];
+	    assert.isString(flavor);
 	    datum = "flavorType";
-	    flavorType = metadata["type"]["flavorType"];
+	    flavorType = metadata["type"]["flavorType"]["name"];
+	    assert.isString(flavorType);
 	    isXType = flavor.startsWith("x-");
+	    assert.isBoolean(isXType);
 	    datum = "idServers";
 	    idServers = metadata["idServers"];
+	    assert.isObject(idServers);
 	    datum = "systemIds";
 	    systemIds = metadata["identification"]["systemId"];
+	    assert.isObject(systemIds);
 	} catch (err) {
-	    return {"result": "rejected", "reason": "MissingMinimalData", "message": datum}; 
+	    return {"result": "rejected", "reason": "MissingMinimalData "+ datum, "message": datum}; 
 	}
 	if (!(this.acceptedVersion.includes("*") && semver.satisfies(version, this.acceptedVersion))) {
 	    return {"result": "rejected", "reason": "RejectedVersion", "message": version + "/" + this.acceptedVersion}; 

@@ -52,25 +52,27 @@
         "publications": "restricted"
     },
     "type": {
-        "flavor": "scriptureText",
-        "flavorType": "scripture",
-        "flavorDetails": {
-            "projectType": "standard",
-            "audience": "common",
-            "translationType": "newTranslation",
-            "usfmVersion": "3.1.rc49"
-        },
-        "bookScope": {
-            "GEN": "",
-            "EXO": "1-12",
-            "LEV": "2-3",
-            "MAT": "1,5,7-11"
-        },
-        "canonType": ["OT", "NT"],
-        "canonSpec": {
-            "OT": {"name": "western"},
-            "NT": {"name": "x-matthewOnlyMillenialists", "books": ["MAT"]}
-        }
+        "flavorType": {
+	    "name": "scripture",
+            "bookScope": {
+		"GEN": "",
+		"EXO": "1-12",
+		"LEV": "2-3",
+		"MAT": "1,5,7-11"
+            },
+            "canonType": ["OT", "NT"],
+            "canonSpec": {
+		"OT": {"name": "western"},
+		"NT": {"name": "x-matthewOnlyMillenialists", "books": ["MAT"]}
+            },
+            "flavor": {
+		"name": "TextTranslation",
+		"projectType": "standard",
+		"audience": "common",
+		"translationType": "newTranslation",
+		"usfmVersion": "3.1.rc49"
+            }
+	}
     },
     "relationships": [
         {

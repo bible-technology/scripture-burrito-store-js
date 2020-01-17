@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "testAll": "mocha test_all.js",
-    "testSmoke": "mocha test_smoke.js"
+      "testSmoke": "mocha test_smoke.js",
+      "testSchema": "mocha test_schema.js"
   },
   "author": "",
   "license": "ISC",

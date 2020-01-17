@@ -3,8 +3,12 @@
         "version": "0.2.0"
     },
     "type": {
-        "flavor": "scriptureText",
-        "flavorType": "scripture"
+        "flavorType": {
+	    "name": "scripture",
+	    "flavor": {
+		"name": "TextTranslation"
+	    }
+	}
     },
     "idServers": {
         "notdbl": "https://notthedigitalbiblelibrary.org"
