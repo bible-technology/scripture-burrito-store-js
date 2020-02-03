@@ -13,7 +13,7 @@ describe("FS Burrito Class", function() {
 	this.testDataDir = path.join(__dirname, "test_data");
 	const metadataDir = path.join(this.testDataDir, "metadata");
 	this.metadata = {
-	    "validTextTranslation": JSON.parse(fse.readFileSync(path.join(metadataDir, "TextTranslation.json"), "utf8")),
+	    "validTextTranslation": JSON.parse(fse.readFileSync(path.join(metadataDir, "textTranslation.json"), "utf8")),
 	    "scriptureTextNoRevision": JSON.parse(fse.readFileSync(path.join(metadataDir, "scriptureTextNoRevision.json"), "utf8")),
 	    "scriptureTextDupRevision": JSON.parse(fse.readFileSync(path.join(metadataDir, "scriptureTextDupRevision.json"), "utf8")),
 	    "validScriptureTextStub": JSON.parse(fse.readFileSync(path.join(metadataDir, "stub.json"), "utf8")),
