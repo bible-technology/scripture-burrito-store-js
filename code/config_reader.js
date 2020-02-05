@@ -47,7 +47,7 @@ class ConfigReader {
        * @return {Object}
      */
     metadataCompatible(metadata) {
-	var version, flavor, flavorType, isXType, idServers, systemIds;
+	var version, flavor, flavorType, isXType, idServers, systemIds, idServerAbbr;
 	try {
 	    var datum = "version";
 	    version = metadata["meta"]["version"];
@@ -66,7 +66,10 @@ class ConfigReader {
 	    datum = "systemIds";
 	    systemIds = metadata["identification"]["systemId"];
 	    assert.isObject(systemIds);
+	    datum = "systemIdAbbr";
+	    idServerAbbr = metadata["identification"]["idServer"];
 	} catch (err) {
+	    console.log(err);
 	    return {"result": "rejected", "reason": "MissingMinimalData "+ datum, "message": datum}; 
 	}
 	if (!(this.acceptedVersion.includes("*") && semver.satisfies(version, this.acceptedVersion))) {
@@ -84,20 +87,7 @@ class ConfigReader {
 	}
 	try {
 	    if (this.acceptedIdServers && !(this.acceptedIdServers.includes("*"))) {
-		const acceptedIdServers = this.acceptedIdServers;
-		var acceptedIdAbbreviations = [];
-		for (const abbr of Object.keys(idServers)) {
-		    if (acceptedIdServers.includes(idServers[abbr])) {
-			acceptedIdAbbreviations.push(abbr);
-		    }
-		}
-		var foundId = false;
-		for (const abbr of Object.keys(systemIds)) {
-		    if (acceptedIdAbbreviations.includes(abbr)) {
-			foundId = true;
-		    }
-		}
-		if (!foundId) {
+		if (!this.acceptedIdServers.includes(idServers[idServerAbbr])) {
 		    throw new BurritoError("NoAcceptableId");
 		}
 	    }
