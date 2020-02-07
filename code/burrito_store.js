@@ -62,8 +62,16 @@ class BurritoStore {
 	throw new BurritoError("MethodNotYetImplemented");
     }
 
+    /**
+       Returns the requested variant metadata as a dictionary. It is an error for the variant not to exist.
+     */
     exportToObject(idServerId, entryId, revisionId, variantId) {
-	throw new BurritoError("MethodNotYetImplemented");
+	const md = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
+	if (md) {
+	    return md;
+	} else {
+	    throw new BurritoError("VariantNotFoundInStore");
+	}
     }
     
     exportToDir(idServerId, entryId, revisionId, variantId, toPath) {

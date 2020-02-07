@@ -62,7 +62,6 @@ describe("FS Burrito Class", function() {
 	}
     });
 
-
     it("Implements importFromObject", function() {
 	const b = new FSBurritoStore({
 	    "storeClass": "FSBurritoStore",
@@ -314,6 +313,30 @@ describe("FS Burrito Class", function() {
 	b.importFromObject(this.metadata["validTextTranslation"]);
 	b.importFromObject(this.metadata["validTextTranslation"]);
 	assert.equal(b.entryRevisionVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23").length, 1);
+    });
+
+    it("Implements exportToObject", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "validation": "burrito"
+	});
+	b.importFromObject(this.metadata["validTextTranslation"]);
+	const md = b.exportToObject("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23", "default");
+	assert.isObject(md);
+    });
+
+    it("exportToObject raises exception if variant not found", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "validation": "burrito"
+	});
+	try {
+	    b.importFromObject(this.metadata["validTextTranslation"]);
+	    const md = b.exportToObject("https://thedigitalbiblelibrary.org", "0123456789abcdef", "99", "default");
+	    throw new Error("Too Far", {});
+	} catch (err) {
+	    assert.equal(err.message, "VariantNotFoundInStore");
+	}
     });
 
 });

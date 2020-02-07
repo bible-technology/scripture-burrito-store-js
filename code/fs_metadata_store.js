@@ -147,6 +147,24 @@ class FSMetadataStore extends MetadataStore {
     }
 
     /**
+       Returns variant metadata or null
+       * @param {string} sysUrl
+       * @param {string} entryId
+       * @param {string} revisionId
+       * @param {string} variantId
+     */
+    __variantMetadata(sysUrl, entryId, revisionId, variantId) {
+	if ((sysUrl in this._urls) &&
+	    (entryId in this._urls[sysUrl]) &&
+	    (revisionId in this._urls[sysUrl][entryId]) &&
+	    (variantId in this._urls[sysUrl][entryId][revisionId])) {
+		return this._urls[sysUrl][entryId][revisionId][variantId];
+	} else {
+	    return null;
+	}
+    }
+
+    /**
        Adds a Url record
        * @param {string} sysUrl
      */
