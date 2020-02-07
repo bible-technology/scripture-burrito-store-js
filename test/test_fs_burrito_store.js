@@ -22,6 +22,7 @@ describe("FS Burrito Class", function() {
 	    "audioStub": JSON.parse(fse.readFileSync(path.join(metadataDir, "audio_stub.json"), "utf8")),
 	    "xStub": JSON.parse(fse.readFileSync(path.join(metadataDir, "x_stub.json"), "utf8")),
 	    "badServerStub": JSON.parse(fse.readFileSync(path.join(metadataDir, "bad_server_stub.json"), "utf8")),
+	    "bananaVariantStub": JSON.parse(fse.readFileSync(path.join(metadataDir, "banana_variant.json"), "utf8"))
 	}
     });
 
@@ -167,7 +168,6 @@ describe("FS Burrito Class", function() {
 	} catch (err) {
 	    assert.equal(err.message, "ImportedMetadataNotSchemaValid");
 	}
-
     });
 
     it("Raises exception on adding variant with no accepted id", function() {
@@ -191,6 +191,48 @@ describe("FS Burrito Class", function() {
 	});
 	b.importFromObject(this.metadata["validTextTranslation"]);
 	assert.exists(b);
+    });
+
+    it("Raises exception on adding unknown variant", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "acceptedIdServers": ["https://thedigitalbiblelibrary.org"]
+	});
+	    try {
+	    b.importFromObject(this.metadata["bananaVariantStub"]);
+	    throw new Error("Too Far", {});
+	} catch (err) {
+	    assert.equal(err.message, "ImportedMetadataNotConfigCompatible");
+	    assert.equal(err.arg, "UnacceptableVariant");
+	}
+    });
+
+    it("Accepts derived variant with * config", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "acceptedIdServers": ["https://thedigitalbiblelibrary.org"],
+	    "acceptedDerivedVariants": ["*"]
+	});
+	    try {
+	    b.importFromObject(this.metadata["bananaVariantStub"]);
+	    throw new Error("Too Far", {});
+	} catch (err) {
+	    assert.equal(err.message, "ImportedMetadataNotSchemaValid");
+	}
+    });
+
+    it("Accepts derived variant with explicit config", function() {
+	const b = new FSBurritoStore({
+	    "storeClass": "FSBurritoStore",
+	    "acceptedIdServers": ["https://thedigitalbiblelibrary.org"],
+	    "acceptedDerivedVariants": ["derived_banana"]
+	});
+	    try {
+	    b.importFromObject(this.metadata["bananaVariantStub"]);
+	    throw new Error("Too Far", {});
+	} catch (err) {
+	    assert.equal(err.message, "ImportedMetadataNotSchemaValid");
+	}
     });
 
     it("Implements idServers()", function() {

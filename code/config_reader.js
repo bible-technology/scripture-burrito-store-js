@@ -47,7 +47,7 @@ class ConfigReader {
        * @return {Object}
      */
     metadataCompatible(metadata) {
-	var version, flavor, flavorType, isXType, idServers, systemIds, idServerAbbr;
+	var version, flavor, flavorType, isXType, idServers, systemIds, idServerAbbr, variant;
 	try {
 	    var datum = "version";
 	    version = metadata["meta"]["version"];
@@ -68,6 +68,12 @@ class ConfigReader {
 	    assert.isObject(systemIds);
 	    datum = "systemIdAbbr";
 	    idServerAbbr = metadata["identification"]["idServer"];
+	    datum = "variant";
+	    variant = "default";
+	    if ("variant" in metadata["identification"]) {
+		variant = metadata["identification"]["variant"];
+	    }
+	    assert.isString(variant);
 	} catch (err) {
 	    console.log(err);
 	    return {"result": "rejected", "reason": "MissingMinimalData "+ datum, "message": datum}; 
@@ -93,6 +99,13 @@ class ConfigReader {
 	    }
 	} catch (err) {
 	    return {"result": "rejected", "reason": "NoAcceptableId", "message": flavor}; 
+	}
+	if (!(this.acceptedDerivedVariants.includes("*"))) {
+	    var acceptedVariants = ["default", "new", "update", "template"];
+	    acceptedVariants = acceptedVariants.concat(this.acceptedDerivedVariants);
+	    if (!(acceptedVariants.includes(variant))) {
+		return {"result": "rejected", "reason": "UnacceptableVariant", "message": variant};
+	    }
 	}
 	return {"result": "accepted"};
     }

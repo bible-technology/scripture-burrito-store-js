@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "version": "0.2.0"
+    },
+    "type": {
+        "flavorType": {
+	    "name": "scripture",
+	    "flavor": {
+		"name": "TextTranslation"
+	    }
+	}
+    },
+    "idServers": {"dbl": "https://thedigitalbiblelibrary.org"},
+    "identification": {
+	"idServer": "dbl",
+        "systemId": {
+            "dbl": {
+		"id": "0123456789abcdef",
+		"revision": "23"
+	    }
+	},
+	"variant": "derived_banana"
+    }
+}
