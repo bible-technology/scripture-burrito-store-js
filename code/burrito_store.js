@@ -50,7 +50,7 @@ class BurritoStore {
 	    /* console.log(schemaValidationResult); */
 	    throw new BurritoError("ImportedMetadataNotSchemaValid", schemaValidationResult.schemaErrors);
 	}
-	this._metadataStore.addEntryRevisionVariant(metadata, "default");
+	this._metadataStore.addEntryRevisionVariant(metadata, this._metadataVariant(metadata));
 	this._ingredientsStore.touchEntry(sysUrl, entryId);
     }
 
@@ -245,7 +245,15 @@ class BurritoStore {
     deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
 	throw new BurritoError("MethodNotYetImplemented");
     }
-    
+
+    /* Utility methods */
+    _metadataVariant(metadata) {
+	if ("variant" in metadata["identification"]) {
+	    return metadata["identification"]["variant"];
+	} else {
+	    return "default";
+	}
+    }
 }
 
 export {BurritoStore}
