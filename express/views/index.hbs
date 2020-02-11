@@ -1,15 +1,13 @@
-<h1>{{title}}</h1>
+<h1>{{title}}: My Burrito Store</h1>
 
-{{#if burrito}}
-<table>
-<tr><th>id</th><th>name</th></tr>
-{{#each burrito}}
-<tr>
-<td>{{id}}</td>
-<td>{{name}}</td>
-</tr>
+{{#if servers}}
+<ul>
+{{#each servers}}
+<li><a href="entries?idserver={{uriencode this}}">{{this}}</a></li>
 {{/each}}
-</table>
+</ul>
+
 {{else}}
-<p>Yes we have no burritos!</p>
+
+<p>Yes we have no idservers!</p>
 {{/if}}

@@ -1,0 +1,13 @@
+<h1>{{title}}: My Burrito Store</h1>
+
+{{#if variants}}
+<ul>
+{{#each variants}}
+<li><a href="metadata?idserver={{uriencode ../idServer}}&entry={{uriencode ../entry}}&revision={{uriencode ../revision}}&variant={{uriencode this}}">{{this}}</a></li>
+{{/each}}
+</ul>
+
+{{else}}
+
+<p>Yes we have no metadata for {{idServer}} / {{entry}} / {{revision}} / {{variant}}!</p>
+{{/if}}

@@ -2,13 +2,15 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* List of entries for idServer */
 router.get('/', function(req, res, next) {
     const app = req.app;
     const store = app.__burrito.store;
-    res.render('index', {
-	title: 'ID Servers',
-	servers: store.idServers()
+    const idServer = req.query.idserver;
+    res.render('entries', {
+	title: 'Entries for ' + idServer,
+	idServer: idServer,
+	entries: store.entries(idServer)
     });
 });
 

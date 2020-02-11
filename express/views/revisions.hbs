@@ -1,0 +1,13 @@
+<h1>{{title}}: My Burrito Store</h1>
+
+{{#if revisions}}
+<ul>
+{{#each revisions}}
+<li><a href="variants?idserver={{uriencode ../idServer}}&entry={{uriencode ../entry}}&revision={{uriencode this}}">{{this}}</a></li>
+{{/each}}
+</ul>
+
+{{else}}
+
+<p>Yes we have no revisions for {{idServer}} / {{entry}}!</p>
+{{/if}}

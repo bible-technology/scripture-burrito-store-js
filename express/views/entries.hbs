@@ -1,0 +1,13 @@
+<h1>{{title}}: My Burrito Store</h1>
+
+{{#if entries}}
+<ul>
+{{#each entries}}
+<li><a href="revisions?idserver={{uriencode ../idServer}}&entry={{uriencode this}}">{{this}}</a></li>
+{{/each}}
+</ul>
+
+{{else}}
+
+<p>Yes we have no entries for {{idServer}}!</p>
+{{/if}}
