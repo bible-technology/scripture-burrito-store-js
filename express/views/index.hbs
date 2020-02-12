@@ -1,6 +1,5 @@
 <h1>My Burrito Store</h1>
 <h2>{{title}}</h2>
-
 {{#if servers}}
 <ul>
 {{#each servers}}
@@ -12,3 +11,15 @@
 
 <p>Yes we have no idservers!</p>
 {{/if}}
+<div style="color: #777; background-color:#EEE; border-style:solid;border-width:1px; padding:10px;width:25em">
+{{#if upload}}
+<p>UPLOADED</p>
+{{/if}}
+<form action="upload/metadata" method="post" enctype="multipart/form-data">
+    <p>Select metadata file to upload</p>
+    <p>
+    <input type="file" name="uploadedMetadata" id="uploadedMetadata">
+    <input type="submit" value="Upload" name="submit">
+    </p>
+</form>
+</div>

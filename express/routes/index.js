@@ -8,7 +8,9 @@ router.get('/', function(req, res, next) {
     const store = app.__burrito.store;
     res.render('index', {
 	title: 'ID Servers',
-	servers: store.idServers()
+	servers: store.idServers(),
+	upload: req.query.upload ? true : false
+
     });
 });
 

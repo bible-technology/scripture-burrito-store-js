@@ -2,6 +2,7 @@ require = require("esm")(module/*, options*/);
 
 var createError = require('http-errors');
 var express = require('express');
+var fileUpload = require('express-fileupload');
 var hbs = require('hbs');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -13,6 +14,7 @@ var revisionsRouter = require('./routes/revisions');
 var variantsRouter = require('./routes/variants');
 var variantRouter = require('./routes/variant');
 var metadataRouter = require('./routes/metadata');
+var uploadMetadataRouter = require('./routes/upload/metadata');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -29,6 +31,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(fileUpload());
 
 app.use('/', indexRouter);
 app.use('/entries', entriesRouter);
@@ -36,6 +39,7 @@ app.use('/revisions', revisionsRouter);
 app.use('/variants', variantsRouter);
 app.use('/variant', variantRouter);
 app.use('/metadata', metadataRouter);
+app.use('/upload/metadata', uploadMetadataRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
@@ -63,7 +67,7 @@ app.__burrito = {
 	"storeClass": "FSBurritoStore"
     })};
 const variantJSON = JSON.parse(fse.readFileSync(path.join("..","test", "test_data", "metadata", "textTranslation.json"), "utf8"));
-app.__burrito.store.importFromObject(variantJSON);
+// app.__burrito.store.importFromObject(variantJSON);
 
 //
 
