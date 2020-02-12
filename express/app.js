@@ -66,8 +66,6 @@ app.__burrito = {
     "store": new bs.FSBurritoStore({
 	"storeClass": "FSBurritoStore"
     })};
-const variantJSON = JSON.parse(fse.readFileSync(path.join("..","test", "test_data", "metadata", "textTranslation.json"), "utf8"));
-// app.__burrito.store.importFromObject(variantJSON);
 
 //
 
