@@ -181,7 +181,12 @@ class BurritoStore {
     /* Read Metadata */
 
     metadataContent(idServerId, entryId, revisionId, variantId) {
-	throw new BurritoError("MethodNotYetImplemented");
+	const md = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
+	if (md) {
+	    return md;
+	} else {
+	    throw new BurritoError("VariantMetadataNotFound");
+	}
     }
 
     /* Read Ingredients */

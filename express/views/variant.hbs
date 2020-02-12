@@ -1,11 +1,36 @@
 <h1>{{title}}: My Burrito Store</h1>
 
-{{#if variants}}
-<ul>
-{{#each variants}}
-<li><a href="metadata?idserver={{uriencode ../idServer}}&entry={{uriencode ../entry}}&revision={{uriencode ../revision}}&variant={{uriencode this}}">{{this}}</a></li>
+{{#if variant}}
+<table>
+{{# each metadata.identification.name}}
+<tr>
+<td>name</td>
+<td>{{@key}}</td>
+<td>{{this}}</td>
+</tr>
 {{/each}}
-</ul>
+{{# each metadata.identification.description}}
+<tr>
+<td>description</td>
+<td>{{@key}}</td>
+<td>{{this}}</td>
+</tr>
+{{/each}}
+{{# each metadata.identification.abbreviation}}
+<tr>
+<td>abbreviation</td>
+<td>{{@key}}</td>
+<td>{{this}}</td>
+</tr>
+{{/each}}
+{{# each metadata.languages}}
+<tr>
+<td>language</td>
+<td>{{this.tag}}</td>
+</tr>
+{{/each}}
+</table>
+<p><a href="metadata?idserver={{uriencode idServer}}&entry={{uriencode entry}}&revision={{uriencode revision}}&variant={{uriencode variant}}">View Raw Metadata</a></p>
 
 {{else}}
 

@@ -134,6 +134,10 @@ class MetadataStore {
 	throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
+    __variantMetadata(sysUrl, entryId, revisionId, variantId) {
+	throw new BurritoError("MethodNotOverriddenBySubclass");
+    }
+
     /**
        Returns record for sysUrl or null
        * @param {string} sysUrl
