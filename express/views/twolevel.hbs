@@ -2,7 +2,14 @@
 {{#if servers}}
 <ul>
 {{#each servers}}
-<li><a href="entries?idserver={{uriencode this}}">{{this}}</a></li>
+<li><a href="/entries?idserver={{uriencode @key}}">{{@key}}</a></li>
+{{#if this}}
+<ul>
+{{#each this}}
+<li><a href="/revisionsvariants?idserver={{uriencode @../key}}&entry={{uriencode this}}">{{this}}</li>
+{{/each}}
+</ul>
+{{/if}}
 {{/each}}
 </ul>
 

@@ -15,6 +15,8 @@ var variantsRouter = require('./routes/variants');
 var variantRouter = require('./routes/variant');
 var metadataRouter = require('./routes/metadata');
 var uploadMetadataRouter = require('./routes/upload/metadata');
+var twoLevelRouter = require('./routes/twolevel');
+var revisionsvariantsRouter = require("./routes/revisionsvariants");
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -34,9 +36,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(fileUpload());
 
 app.use('/', indexRouter);
+app.use('/twolevel', twoLevelRouter);
 app.use('/entries', entriesRouter);
 app.use('/revisions', revisionsRouter);
 app.use('/variants', variantsRouter);
+app.use('/revisionsvariants', revisionsvariantsRouter);
 app.use('/variant', variantRouter);
 app.use('/metadata', metadataRouter);
 app.use('/upload/metadata', uploadMetadataRouter);

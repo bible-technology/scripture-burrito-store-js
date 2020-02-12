@@ -21,3 +21,15 @@ td, th {
     border-width: 1px;
     border-color: #000;
 }
+
+span.button {
+    padding: 5px;
+    background-color: #FFC;
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px
+}
+
+span.button > a {
+    text-decoration: none;
+}

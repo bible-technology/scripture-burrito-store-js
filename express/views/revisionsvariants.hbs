@@ -1,0 +1,21 @@
+<h2>Entry {{entry}} (2 level)</h2>
+
+<p><b>&gt; <a href="/twolevel">Home</a></b></p>
+
+{{#if revisions}}
+<ul>
+{{#each revisions}}
+<li><a href="variants?idserver={{uriencode ../idServer}}&entry={{uriencode ../entry}}&revision={{uriencode @key}}">{{@key}}</a></li>
+{{#if this}}
+<ul>
+{{#each this}}
+<li><a href="variant?idserver={{uriencode ../idServer}}&entry={{uriencode ../entry}}&revision={{uriencode @../key}}&variant={{uriencode this}}">{{this}}</a></li>
+{{/each}}
+</ul>
+{{/if}}
+{{/each}}
+</ul>
+{{else}}
+
+<p>Yes we have no revisions for {{idServer}} / {{entry}}!</p>
+{{/if}}
