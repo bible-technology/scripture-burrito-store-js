@@ -12,16 +12,27 @@
             "userId": "dbl::5678",
             "userName": "Josh Buck"
         },
-	"defaultLanguage": "nl",
         "comments": [
             "Experimenting with i18n",
             "Fixed canon before upload. ~Josh"
         ]
     },
     "idServers": {
-        "dbl": "https://thedigitalbiblelibrary.org",
-        "agmt": "http://registry.autographamt.com",
-        "x-atl": "http://atlantisbibleconsortium.net"
+        "dbl": {
+	    "id": "https://thedigitalbiblelibrary.org",
+	    "name": {
+		"en": "The Digital Bible Library"
+	    }
+	},
+        "agmt": {
+	    "id": "http://registry.autographamt.com",
+	    "name": {
+		"en": "Autographa"
+	    }
+	},
+        "x-atl": {
+	    "id": "http://atlantisbibleconsortium.net"
+	}
     },
     "identification": {
         "systemId": {
