@@ -1,5 +1,6 @@
 'use strict';
 
+import * as fse from 'fs-extra';
 import deepEqual from 'deep-equal';
 
 import {BurritoError} from "./burrito_error.js";
@@ -7,9 +8,19 @@ import {MetadataStore} from "./metadata_store.js";
 
 class FSMetadataStore extends MetadataStore {
     /**
+       * @param {string} sDir a path at which to use or create storage
     */
-    constructor(burritoStore) {
+    constructor(burritoStore, sDir) {
+	if (!sDir) {
+	    throw new BurritoError("StorageDirNotDefined");
+	}
 	super(burritoStore);
+        this.metadataDir = sDir + "/metadata";
+	if (fse.existsSync(this.metadataDir)) {
+	    this.loadEntries();
+	} else {
+	    fse.mkdirSync(this.metadataDir, {recursive: false});
+	}
 	this._urls = {};
     }
 

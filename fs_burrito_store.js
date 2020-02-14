@@ -1,3 +1,6 @@
+import * as fse from 'fs-extra';
+
+import {BurritoError} from "./code/burrito_error.js";
 import {BurritoStore} from "./code/burrito_store.js";
 import {FSMetadataStore} from "./code/fs_metadata_store.js";
 import {FSIngredientsStore} from "./code/fs_ingredients_store.js";
@@ -8,10 +11,16 @@ class FSBurritoStore extends BurritoStore {
        Metadata is loaded into working memory but cached using the filesystem.
        Ingredients are stored using the filesystem.
     */
-    constructor(configJson) {
+    constructor(configJson, sDir) {
+	if (!sDir) {
+	    throw new BurritoError("StorageDirNotDefined");
+	}
 	super(configJson);
-	this._metadataStore = new FSMetadataStore(this);
-	this._ingredientsStore = new FSIngredientsStore(this);
+	if (!fse.existsSync(sDir)) {
+	    fse.mkdirSync(sDir, {recursive: false});
+	}
+	this._metadataStore = new FSMetadataStore(this, sDir);
+	this._ingredientsStore = new FSIngredientsStore(this, sDir);
     }
 }
 
