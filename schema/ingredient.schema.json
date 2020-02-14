@@ -16,8 +16,25 @@
         },
         "mimeType": {"$ref": "common.schema.json#/definitions/mimeType"},
         "checksum": {
-            "type": "string",
-            "pattern": "^[a-f0-9]{32}(\\-\\d+)?$"
+	    "properties": {
+		"md5": {
+		    "properties": {
+			"type": "string",
+			"pattern": "^[a-f0-9]{32}(\\-\\d+)?$"
+		    }
+		},
+		"sha3-256" : {
+		    "type": "string",
+		    "pattern": "^[a-f0-9]{64}$"
+		},
+		"sha3-512" : {
+		    "type": "string",
+		    "pattern": "^[a-f0-9]{128}$"
+		}
+	    },
+	    "required": ["md5"],
+            "maxProperties": 2,
+	    "additionalProperties": false
         },
         "scopeOrRole": {
             "type": "string",
