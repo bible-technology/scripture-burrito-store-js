@@ -47,7 +47,7 @@ class BurritoStore {
 	}
 	const schemaValidationResult = this._validator.schemaValidate("metadata", metadata);
 	if (schemaValidationResult.result != "accepted") {
-	    /* console.log(schemaValidationResult); */
+	    /* console.log(schemaValidationResult.message); */
 	    throw new BurritoError("ImportedMetadataNotSchemaValid", schemaValidationResult.schemaErrors);
 	}
 	this._metadataStore.addEntryRevisionVariant(metadata, this._metadataVariant(metadata));

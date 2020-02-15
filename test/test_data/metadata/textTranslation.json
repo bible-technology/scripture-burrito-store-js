@@ -12,6 +12,7 @@
             "userId": "dbl::5678",
             "userName": "Josh Buck"
         },
+	"defaultLanguage": "en",
         "comments": [
             "Experimenting with i18n",
             "Fixed canon before upload. ~Josh"
@@ -169,92 +170,120 @@
     },
     "ingredients": {
         "source/usfm/OTINT.sfm": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-sfm",
             "scopeOrRole": "intot",
             "size": 1234,
             "isSource": true
         },
         "source/usfm/GEN.sfm": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-sfm",
             "scopeOrRole": "GEN",
             "size": 1234,
             "isSource": true
         },
         "source/usfm/EXO.sfm": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-sfm",
             "scopeOrRole": "EXO 1-12",
             "size": 1234,
             "isSource": true
         },
         "source/usfm/LEV.sfm": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-sfm",
             "scopeOrRole": "LEV 2:3-3:7",
             "size": 1234,
             "isSource": true
         },
         "source/usfm/INTNT.sfm": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-sfm",
             "scopeOrRole": "intnt",
             "size": 1234,
             "isSource": true
         },
         "source/usfm/INTMAT.sfm": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-sfm",
             "scopeOrRole": "intMAT",
             "size": 1234,
             "isSource": true
         },
         "source/usfm/MAT.sfm": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-sfm",
             "scopeOrRole": "MAT 1:3,5,7-11",
             "size": 1234,
             "isSource": true
         },
         "release/text/USX_1/OTINT.usx": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-usx+xml",
             "scopeOrRole": "intot",
             "size": 1234
         },
         "release/text/USX_1/GEN.usx": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-usx+xml",
             "scopeOrRole": "GEN",
             "size": 1234
         },
         "release/text/USX_1/EXO.usx": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-usx+xml",
             "scopeOrRole": "EXO 1-12",
             "size": 1234
         },
         "release/text/USX_1/LEV.usx": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-usx+xml",
             "scopeOrRole": "LEV 2:3-3:7",
             "size": 1234
         },
         "release/text/USX_1/INTNT.usx": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-usx+xml",
             "scopeOrRole": "intnt",
             "size": 1234
         },
         "release/text/USX_1/INTMAT.usx": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-usx+xml",
             "scopeOrRole": "intMAT",
             "size": 1234
         },
         "release/text/USX_1/MAT.usx": {
-            "checksum": "0123456789abcdef0123456789abcdef",
+            "checksum": {
+		"md5": "0123456789abcdef0123456789abcdef"
+	    },
             "mimeType": "text/x-usx+xml",
             "scopeOrRole": "MAT 1:3,5,7-11",
             "size": 1234

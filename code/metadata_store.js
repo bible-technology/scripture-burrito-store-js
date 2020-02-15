@@ -27,7 +27,7 @@ class MetadataStore {
 			}
 			entryId = systemId.id;
 			revisionId = systemId.revision;
-			sysUrl = idServers[systemAbbr];
+			sysUrl = idServers[systemAbbr]["id"];
 		    }
 		}
 	    );

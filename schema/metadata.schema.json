@@ -8,12 +8,17 @@
         "meta": {"$ref": "meta.schema.json"},
         "idServers": {
             "type": "object",
-	    "properties": {
-		"id": {"additionalProperties": {"$ref": "common.schema.json#/definitions/url"}},
-		"name": {"additionalProperties": {"$ref": "common.schema.json#/definitions/localizedText"}},
+	    "additionalProperties": {
+		"type": "object",
+		"properties": {
+		    "id": {
+			"type": "string"
+		    },
+		    "name": {
+			"type": "object"
+		    }
+		}
 	    },
-	    "required": ["id"],
-            "minProperties": 1,
             "description": "Declares one or more identity servers which may later be referred to using identifier prefixes."
         },
         "identification": {"$ref": "identification.schema.json"},

@@ -16,12 +16,11 @@
         },
         "mimeType": {"$ref": "common.schema.json#/definitions/mimeType"},
         "checksum": {
+	    "type": "object",
 	    "properties": {
 		"md5": {
-		    "properties": {
-			"type": "string",
-			"pattern": "^[a-f0-9]{32}(\\-\\d+)?$"
-		    }
+		    "type": "string",
+		    "pattern": "^[a-f0-9]{32}(\\-\\d+)?$"
 		},
 		"sha3-256" : {
 		    "type": "string",
