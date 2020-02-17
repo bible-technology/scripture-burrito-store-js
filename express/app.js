@@ -25,7 +25,6 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 hbs.registerPartials(path.join(__dirname, 'partials'));
-hbs.registerHelper("uriencode", encodeURIComponent);
 app.set('json spaces', 4);
 
 app.use(logger('dev'));
@@ -71,6 +70,31 @@ app.__burrito = {
 	"storeClass": "FSBurritoStore"
     })};
 
+hbs.registerHelper(
+    "keysInObject",
+    function(ob) {
+	return ob.length > 0;
+    }
+);
+hbs.registerHelper("uriencode", encodeURIComponent);
+hbs.registerHelper(
+    "idServerNameOrId",
+    function(idDetails, nameLang) {
+	const lang = nameLang ? nameLang : "en";
+	console.log(nameLang);
+	if ("name" in idDetails) {
+	    return idDetails["name"]["en"];
+	} else {
+	    return idDetails["id"];
+	}
+    }
+);
+hbs.registerHelper(
+    "nameInLang",
+    function(namesOb, lang) {
+	return namesOb[lang];
+    }
+);
 //
 
 module.exports = app;

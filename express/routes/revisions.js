@@ -11,6 +11,7 @@ router.get('/', function(req, res, next) {
     res.render('revisions', {
 	title: 'Revisions for ' + idServer + " / " + entry,
 	idServer: idServer,
+	idServerName: store.idServerName(idServer),
 	entry: entry,
 	revisions: store.entryRevisions(idServer, entry)
     });

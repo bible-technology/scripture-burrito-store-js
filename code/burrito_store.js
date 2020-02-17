@@ -26,6 +26,14 @@ class BurritoStore {
 	this._ingredientsStore = null;
     }
 
+    /* Utilities */
+
+    /**
+     */
+    idServerName(idServerId) {
+	throw new BurritoError("MethodNotYetImplemented");
+    }
+
     /* STATE CHANGES */
     
     /* share, receiveRevision, sendDraft, receiveDraft */

@@ -11,6 +11,7 @@ class FSMetadataStore extends MetadataStore {
     constructor(burritoStore) {
 	super(burritoStore);
 	this._urls = {};
+	this._idServers = {};
     }
 
     /**
@@ -23,10 +24,20 @@ class FSMetadataStore extends MetadataStore {
      */
     __idServersDetails() {
 	const ret = {};
-	Object.keys(this._urls).forEach(function (ids) {
-	    ret[ids] = {"id": ids};
-	});
+	const urlKeys = Object.keys(this._urls);
+	const nKeys = urlKeys.length;
+	for (var n=0; n < nKeys; n++) {
+	    ret[urlKeys[n]] = this.__idServersDetails1(urlKeys[n]);
+	}
 	return ret;
+    }
+
+    __idServersDetails1 (ids) {
+	if (ids in this._idServers) {
+	    return this._idServers[ids];
+	} else {
+	    return {"id": ids};
+	}
     }
 
     /**
@@ -206,6 +217,12 @@ class FSMetadataStore extends MetadataStore {
 	} else {
 	    this._urls[sysUrl][entryId][revisionId][variant] = metadata;
 	}
+    }
+
+    __updateIdServerRecordFromMetadata(metadata) {
+	const idServer = metadata.identification.idServer;
+	const idServerRecord = metadata.idServers[idServer];
+	this._idServers[idServerRecord["id"]] = idServerRecord;
     }
 
 }

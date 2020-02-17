@@ -13,6 +13,17 @@ class FSBurritoStore extends BurritoStore {
 	this._metadataStore = new FSMetadataStore(this);
 	this._ingredientsStore = new FSIngredientsStore(this);
     }
+
+    idServerName(idServerId, nameLang) {
+	const lang = nameLang ? nameLang : "en";
+	const idDetails = this._metadataStore._idServers[idServerId];
+	if ("name" in idDetails) {
+	    return idDetails["name"][lang];
+	} else {
+	    return idDetails["id"];
+	}
+    }
+
 }
 
 export {FSBurritoStore}

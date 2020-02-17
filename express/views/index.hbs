@@ -1,8 +1,8 @@
 <h2>{{title}}</h2>
-{{#if servers}}
+{{#if serversExist}}
 <ul>
 {{#each servers}}
-<li><a href="entries?idserver={{uriencode this}}">{{this}}</a></li>
+<li><a href="entries?idserver={{uriencode this.id}}">{{idServerNameOrId this defaultLang}}</a></li>
 {{/each}}
 </ul>
 
