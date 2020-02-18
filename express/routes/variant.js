@@ -10,13 +10,15 @@ router.get('/', function(req, res, next) {
     const entry = req.query.entry;
     const revision = req.query.revision;
     const variant = req.query.variant;
+    const metadata = store.metadataContent(idServer, entry, revision, variant);
     res.render('variant', {
 	title: 'Variant ' + variant + " of " + idServer + " / " + entry + " / " + revision,
 	idServer: idServer,
+	idServerName: store.idServerName(idServer),
 	entry: entry,
 	revision: revision,
 	variant: variant,
-	metadata: store.metadataContent(idServer, entry, revision, variant)
+	metadata: metadata
     });
 });
 

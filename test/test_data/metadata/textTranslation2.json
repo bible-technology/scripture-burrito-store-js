@@ -12,7 +12,7 @@
             "userId": "dbl::5678",
             "userName": "Josh Buck"
         },
-	"defaultLanguage": "en",
+	"defaultLanguage": "fr",
         "comments": [
             "Experimenting with i18n",
             "Fixed canon before upload. ~Josh"
@@ -37,8 +37,8 @@
     },
     "identification": {
         "systemId": {
-            "dbl":{
-        "id": "0123456789abcdef",
+            "x-atl":{
+        "id": "fedcba9876543210",
         "revision":"23"
         },
             "gbc": {
@@ -48,18 +48,19 @@
         "id": "2d5220a02a7aaac6bcc2831ae262e9aaca5e1abd"
         }
         },
-	"idServer": "dbl",
+	"idServer": "x-atl",
 	"variant": "default",
         "name": {
-            "en": "Scripture Burrito Demo Text Bible",
-            "fr": "Crêpe mexicaine biblique surdimensionnée (démonstration)"
+            "en": "Another Scripture Burrito Demo Text Bible",
+            "fr": "Encore une crêpe mexicaine biblique surdimensionnée (démonstration)"
         },
         "description": {
-            "en": "A Demonstration Scripture Burrito containing Text, like Paratext Might One Day Produce"
+            "en": "Another Demonstration Scripture Burrito containing Text, like Paratext Might One Day Produce",
+            "fr": "Encore une crêpe mexicaine biblique surdimensionnée comme celle que Paratext pourrait créer un jour"
         },
         "abbreviation": {
-	    "en": "DSB",
-            "fr": "CMBS"
+	    "en": "ADSB",
+            "fr": "EUCMBS"
         }
     },
     "confidentiality": {
@@ -109,11 +110,10 @@
     ],
     "languages": [
         {
-            "tag": "en",
+            "tag": "fr",
             "name": {
-                "en": "English",
-                "de": "Englisch",
-                "fr": "anglais"
+                "en": "French",
+                "fr": "français"
             }
         }
     ],

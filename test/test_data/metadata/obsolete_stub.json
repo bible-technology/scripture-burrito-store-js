@@ -1,6 +1,7 @@
 {
     "meta": {
-        "version": "0.1.0"
+        "version": "0.1.0",
+	"defaultLanguage": "en"
     },
     "type": {
         "flavorType": {
@@ -11,7 +12,9 @@
 	}
     },
     "idServers": {
-        "dbl": "https://thedigitalbiblelibrary.org"
+        "dbl": {
+	    "id": "https://thedigitalbiblelibrary.org"
+	}
     },
     "identification": {
         "systemId": {

@@ -11,7 +11,9 @@
 	}
     },
     "idServers": {
-        "notdbl": "https://notthedigitalbiblelibrary.org"
+        "notdbl": {
+	    "id": "https://notthedigitalbiblelibrary.org"
+	}
     },
     "identification": {
         "systemId": {

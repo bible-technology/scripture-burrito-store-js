@@ -12,6 +12,7 @@
             "userId": "dbl::5678",
             "userName": "Josh Buck"
         },
+	"defaultLanguage": "en",
         "comments": [
             "Experimenting with i18n",
             "Fixed canon before upload. ~Josh"

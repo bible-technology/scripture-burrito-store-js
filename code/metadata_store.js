@@ -27,7 +27,7 @@ class MetadataStore {
 			}
 			entryId = systemId.id;
 			revisionId = systemId.revision;
-			sysUrl = idServers[systemAbbr];
+			sysUrl = idServers[systemAbbr]["id"];
 		    }
 		}
 	    );
@@ -51,6 +51,11 @@ class MetadataStore {
 	}
 	this.touchEntryRevision(sysUrl, entryId, revisionId);
 	this.__addEntryRevisionVariant(sysUrl, entryId, revisionId, variant, metadata);
+	this.__updateIdServerRecordFromMetadata(metadata);
+    }
+
+    __updateIdServerRecordFromMetadata(metadata) {
+	throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     /**
@@ -88,6 +93,10 @@ class MetadataStore {
     }
 
     __idServerEntries(idServerId) {
+	throw new BurritoError("MethodNotOverriddenBySubclass");
+    }
+
+    __idServerEntriesLatestRevision(idServerId) {
 	throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 

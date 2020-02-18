@@ -22,6 +22,7 @@ class FSMetadataStore extends MetadataStore {
 	    fse.mkdirSync(this.metadataDir, {recursive: false});
 	}
 	this._urls = {};
+	this._idServers = {};
     }
 
     /**
@@ -34,10 +35,19 @@ class FSMetadataStore extends MetadataStore {
      */
     __idServersDetails() {
 	const ret = {};
-	Object.keys(this._urls).forEach(function (ids) {
-	    ret[ids] = {"id": ids};
-	});
+	const urlKeys = Object.keys(this._urls);
+	for (const key of urlKeys) {
+	    ret[key] = this.__idServersDetails1(key);
+	}
 	return ret;
+    }
+
+    __idServersDetails1 (ids) {
+	if (ids in this._idServers) {
+	    return this._idServers[ids];
+	} else {
+	    return {"id": ids};
+	}
     }
 
     /**
@@ -55,6 +65,18 @@ class FSMetadataStore extends MetadataStore {
     __idServerEntries(idServerId) {
 	if (idServerId in this._urls) {
 	    return Object.keys(this._urls[idServerId]);
+	} else {
+	    return null;
+	}
+    }
+
+    __idServerEntriesLatestRevision(idServerId) {
+	if (idServerId in this._urls) {
+	    var ret = {};
+	    for (const entry of Object.entries(this._urls[idServerId])) {
+		ret[entry[0]] = Object.keys(entry[1]);
+	    }
+	    return ret;
 	} else {
 	    return null;
 	}
@@ -217,6 +239,12 @@ class FSMetadataStore extends MetadataStore {
 	} else {
 	    this._urls[sysUrl][entryId][revisionId][variant] = metadata;
 	}
+    }
+
+    __updateIdServerRecordFromMetadata(metadata) {
+	const idServer = metadata.identification.idServer;
+	const idServerRecord = metadata.idServers[idServer];
+	this._idServers[idServerRecord["id"]] = idServerRecord;
     }
 
 }

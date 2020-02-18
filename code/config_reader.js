@@ -61,7 +61,10 @@ class ConfigReader {
 	    isXType = flavor.startsWith("x-");
 	    assert.isBoolean(isXType);
 	    datum = "idServers";
-	    idServers = metadata["idServers"];
+	    idServers = {};
+	    for (let [prefix, record] of Object.entries(metadata["idServers"])) {
+		idServers[prefix] = record["id"];
+	    };
 	    assert.isObject(idServers);
 	    datum = "systemIds";
 	    systemIds = metadata["identification"]["systemId"];
@@ -75,7 +78,7 @@ class ConfigReader {
 	    }
 	    assert.isString(variant);
 	} catch (err) {
-	    console.log(err);
+	    /* console.log(err); */
 	    return {"result": "rejected", "reason": "MissingMinimalData "+ datum, "message": datum}; 
 	}
 	if (!(this.acceptedVersion.includes("*") && semver.satisfies(version, this.acceptedVersion))) {
