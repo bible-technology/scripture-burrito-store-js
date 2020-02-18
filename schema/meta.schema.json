@@ -43,10 +43,10 @@
             "$ref": "#/definitions/softwareAndUserInfo",
             "description": "Information about the program and user who uploaded this burrito."
         },
-	"defaultLanguage": {
+    "defaultLanguage": {
             "$ref": "common.schema.json#/definitions/languageTag",
-	    "description": "The BCP47 code of the language that should be displayed, if a default is required, and for which localization is required in all name fields specified for 'catalog' validation."
-	},
+        "description": "The BCP47 code of the language that should be displayed, if a default is required, and for which localization is required in all name fields specified for 'catalog' validation."
+    },
         "comments": {
             "type": "array",
             "items": { "type": "string" },
