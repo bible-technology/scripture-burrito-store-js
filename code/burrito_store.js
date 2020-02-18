@@ -26,6 +26,14 @@ class BurritoStore {
 	this._ingredientsStore = null;
     }
 
+    /* Utilities */
+
+    /**
+     */
+    idServerName(idServerId) {
+	throw new BurritoError("MethodNotYetImplemented");
+    }
+
     /* STATE CHANGES */
     
     /* share, receiveRevision, sendDraft, receiveDraft */
@@ -47,7 +55,7 @@ class BurritoStore {
 	}
 	const schemaValidationResult = this._validator.schemaValidate("metadata", metadata);
 	if (schemaValidationResult.result != "accepted") {
-	    /* console.log(schemaValidationResult); */
+	    /* console.log(schemaValidationResult.message); */
 	    throw new BurritoError("ImportedMetadataNotSchemaValid", schemaValidationResult.schemaErrors);
 	}
 	this._metadataStore.addEntryRevisionVariant(metadata, this._metadataVariant(metadata));
@@ -148,6 +156,10 @@ class BurritoStore {
 
     entries(idServerId) {
 	return this._metadataStore.__idServerEntries(idServerId);
+    }
+
+    entriesLatestRevision(idServerId) {
+	return this._metadataStore.__idServerEntriesLatestRevision(idServerId);
     }
     
     entriesRevisions(idServerId) {

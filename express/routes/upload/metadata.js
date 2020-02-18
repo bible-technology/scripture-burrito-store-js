@@ -13,7 +13,6 @@ router.post('/', function(req, res, next) {
     const app = req.app;
     const store = app.__burrito.store;
     const uploadedMetadata = JSON.parse(req.files.uploadedMetadata.data.toString());
-    console.log(uploadedMetadata);
     store.importFromObject(uploadedMetadata);
     res.redirect(302, "/?upload=true");
 });

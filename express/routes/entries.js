@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
     res.render('entries', {
 	title: 'Entries for ' + idServer,
 	idServer: idServer,
+	idServerName: store.idServerName(idServer),
 	entries: store.entries(idServer)
     });
 });

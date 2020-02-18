@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
     res.render('variants', {
 	title: 'Variants for ' + idServer + " / " + entry + " / " + revision,
 	idServer: idServer,
+	idServerName: store.idServerName(idServer),
 	entry: entry,
 	revision: revision,
 	variants: store.entryRevisionVariants(idServer, entry, revision)

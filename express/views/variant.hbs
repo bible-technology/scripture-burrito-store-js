@@ -1,34 +1,25 @@
 <h2>"{{variant}}" Variant of Entry {{entry}}/{{revision}}</h2>
 
-<p><b>&gt; <a href="/">Home</a> &gt; <a href="entries?idserver={{uriencode idServer}}">{{idServer}}</a> &gt; <a href="revisions?idserver={{uriencode idServer}}&entry={{uriencode entry}}">{{entry}}</a> &gt; <a href="variants?idserver={{uriencode idServer}}&entry={{uriencode entry}}&revision={{uriencode revision}}">{{revision}}</a></b></p>
+<p><b>&gt; <a href="/">Home</a> &gt; <a href="entries?idserver={{uriencode idServer}}">{{idServerName}}</a> &gt; <a href="revisions?idserver={{uriencode idServer}}&entry={{uriencode entry}}">{{entry}}</a> &gt; <a href="variants?idserver={{uriencode idServer}}&entry={{uriencode entry}}&revision={{uriencode revision}}">{{revision}}</a></b></p>
 
 {{#if variant}}
 <table>
-{{# each metadata.identification.name}}
 <tr>
 <th>name</td>
-<td>{{@key}}</td>
-<td>{{this}}</td>
+<td>{{nameInLang metadata.identification.name metadata.meta.defaultLanguage}}</td>
 </tr>
-{{/each}}
-{{# each metadata.identification.description}}
 <tr>
 <th>description</td>
-<td>{{@key}}</td>
-<td>{{this}}</td>
+<td>{{nameInLang metadata.identification.description metadata.meta.defaultLanguage}}</td>
 </tr>
-{{/each}}
-{{# each metadata.identification.abbreviation}}
 <tr>
 <th>abbreviation</td>
-<td>{{@key}}</td>
-<td>{{this}}</td>
+<td>{{nameInLang metadata.identification.abbreviation metadata.meta.defaultLanguage}}</td>
 </tr>
-{{/each}}
 {{# each metadata.languages}}
 <tr>
 <th>language</td>
-<td colspan="2">{{this.tag}}</td>
+<td>{{this.tag}}</td>
 </tr>
 {{/each}}
 </table>
