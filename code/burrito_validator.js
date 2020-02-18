@@ -35,6 +35,7 @@ class BurritoValidator {
 		"result": "accepted"
 	    };
 	} else {
+	    /* console.log(JSON.stringify(validator.errors));*/
 	    return {
 		"schemaId": schemaId,
 		"result": "rejected",
