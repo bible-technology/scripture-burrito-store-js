@@ -157,6 +157,10 @@ class BurritoStore {
     entries(idServerId) {
 	return this._metadataStore.__idServerEntries(idServerId);
     }
+
+    entriesLatestRevision(idServerId) {
+	return this._metadataStore.__idServerEntriesLatestRevision(idServerId);
+    }
     
     entriesRevisions(idServerId) {
 	return this._metadataStore.__idServerEntriesRevisions(idServerId);

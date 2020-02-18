@@ -96,6 +96,10 @@ class MetadataStore {
 	throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
+    __idServerEntriesLatestRevision(idServerId) {
+	throw new BurritoError("MethodNotOverriddenBySubclass");
+    }
+
     __idServerEntriesRevisions(idServerId) {
 	throw new BurritoError("MethodNotOverriddenBySubclass");
     }

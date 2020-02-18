@@ -25,9 +25,8 @@ class FSMetadataStore extends MetadataStore {
     __idServersDetails() {
 	const ret = {};
 	const urlKeys = Object.keys(this._urls);
-	const nKeys = urlKeys.length;
-	for (var n=0; n < nKeys; n++) {
-	    ret[urlKeys[n]] = this.__idServersDetails1(urlKeys[n]);
+	for (const key of urlKeys) {
+	    ret[key] = this.__idServersDetails1(key);
 	}
 	return ret;
     }
@@ -55,6 +54,18 @@ class FSMetadataStore extends MetadataStore {
     __idServerEntries(idServerId) {
 	if (idServerId in this._urls) {
 	    return Object.keys(this._urls[idServerId]);
+	} else {
+	    return null;
+	}
+    }
+
+    __idServerEntriesLatestRevision(idServerId) {
+	if (idServerId in this._urls) {
+	    var ret = {};
+	    for (const entry of Object.entries(this._urls[idServerId])) {
+		ret[entry[0]] = Object.keys(entry[1]);
+	    }
+	    return ret;
 	} else {
 	    return null;
 	}

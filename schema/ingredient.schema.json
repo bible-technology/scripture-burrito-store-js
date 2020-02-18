@@ -20,7 +20,7 @@
 	    "properties": {
 		"md5": {
 		    "type": "string",
-		    "pattern": "^[a-f0-9]{32}(\\-\\d+)?$"
+		    "pattern": "^[a-f0-9]{32}$"
 		},
 		"sha3-256" : {
 		    "type": "string",
