@@ -150,7 +150,8 @@
                 "en": "BRU"
             },
             "url": "https://burritos-r-us.org",
-            "contributes": [
+            "roles": [
+                "rightsHolder",
                 "content",
                 "finance",
                 "management",
@@ -162,7 +163,10 @@
             "id": "dbl::29",
             "name": {
                 "en": "We Manage Burritos"
-            }
+            },
+            "roles": [
+                "qa"
+            ]
         }
     ],
     "copyright": {
