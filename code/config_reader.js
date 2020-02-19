@@ -72,10 +72,7 @@ class ConfigReader {
 	    datum = "systemIdAbbr";
 	    idServerAbbr = metadata["identification"]["idServer"];
 	    datum = "variant";
-	    variant = "default";
-	    if ("variant" in metadata["identification"]) {
-		variant = metadata["identification"]["variant"];
-	    }
+	    variant = metadata["meta"]["variant"];
 	    assert.isString(variant);
 	} catch (err) {
 	    /* console.log(err); */

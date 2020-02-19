@@ -1,6 +1,7 @@
 {
     "meta": {
         "version": "0.2.0",
+	"variant": "derived_banana",
 	"defaultLanguage": "en"
     },
     "type": {
@@ -23,7 +24,6 @@
 		"id": "0123456789abcdef",
 		"revision": "23"
 	    }
-	},
-	"variant": "derived_banana"
+	}
     }
 }

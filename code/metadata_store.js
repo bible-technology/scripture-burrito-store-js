@@ -44,7 +44,6 @@ class MetadataStore {
        * @param {Object} metadata
        */
     addEntryRevisionVariant(metadata, variant) {
-	/* Get variant from metadata once schema is updated */
 	const [sysUrl, entryId, revisionId] = this.idFromMetadataObject(metadata);
 	if (!sysUrl) {
 	    throw new BurritoError("UnableToFindMetadataId");

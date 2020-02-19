@@ -273,8 +273,8 @@ class BurritoStore {
 
     /* Utility methods */
     _metadataVariant(metadata) {
-	if ("variant" in metadata["identification"]) {
-	    return metadata["identification"]["variant"];
+	if ("variant" in metadata["meta"]) {
+	    return metadata["meta"]["variant"];
 	} else {
 	    return "default";
 	}

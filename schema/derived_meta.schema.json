@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://burrito.bible/schema/derived_meta.schema.json",
+    "title": "Scripture Burrito Meta (Derived)",
+    "type": "object",
+    "description": "Information about the Scripture Burrito metadata file.",
+    "properties": {
+        "dateCreated": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "version": {
+            "type": "string",
+            "pattern": "^[0-9]+(\\.[0-9]+)*$",
+            "description": "Version of the Scripture Burrito specification this file follows."
+        },
+        "variant": {
+            "type": "string",
+            "pattern": "^derived_[A-Za-z][A-Za-z0-9]*$",
+            "description": "The type of derived variant represented in the burrito"
+        },
+        "generator": {
+            "$ref": "software_and_user_info.schema.json",
+            "description": "Information about the program and user who generated this burrito."
+        },
+        "uploader": {
+            "$ref": "software_and_user_info.schema.json",
+            "description": "Information about the program and user who uploaded this burrito."
+        },
+        "defaultLanguage": {
+            "$ref": "common.schema.json#/definitions/languageTag",
+            "description": "The BCP47 code of the language that should be displayed, if a default is required, and for which localization is required in all name fields specified for 'catalog' validation."
+        },
+        "comments": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Arbitrary text strings attached by users with no effect on the interpretation of the Scripture Burrito."
+        }
+    },
+    "required": [
+        "version",
+        "variant",
+        "dateCreated",
+        "defaultLanguage"
+    ],
+    "additionalProperties": false
+}
