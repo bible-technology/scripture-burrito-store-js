@@ -5,19 +5,19 @@
     "type": "object",
     "description": "Config root metadata object.",
     "properties": {
-    "storeClass": {
-        "type": "string",
-        "minItems": 1
-    },
-    "acceptedVersion": {},
-    "acceptedFlavors": {},
-    "allowXFlavors": {},
-    "ownedEntryIDServers": {},
-    "acceptedIdServers": {},
-    "creatableDerivedVariants": {},
-    "acceptedDerivedVariants": {},
-    "validation": {},
-    "subclassSettings": {}
+        "storeClass": {
+            "type": "string",
+            "minItems": 1
+        },
+        "acceptedVersion": {},
+        "acceptedFlavors": {},
+        "allowXFlavors": {},
+        "ownedEntryIDServers": {},
+        "acceptedIdServers": {},
+        "creatableDerivedVariants": {},
+        "acceptedDerivedVariants": {},
+        "validation": {},
+        "subclassSettings": {}
     },
     "additionalProperties": false
 }
