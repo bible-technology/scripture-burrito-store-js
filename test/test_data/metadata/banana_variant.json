@@ -1,29 +1,29 @@
 {
     "meta": {
         "version": "0.2.0",
-	"variant": "derived_banana",
-	"defaultLanguage": "en"
+        "variant": "derived_banana",
+        "defaultLanguage": "en"
     },
     "type": {
         "flavorType": {
-	    "name": "scripture",
-	    "flavor": {
-		"name": "TextTranslation"
-	    }
-	}
+            "name": "scripture",
+            "flavor": {
+                "name": "TextTranslation"
+            }
+        }
     },
     "idServers": {
-	"dbl": {
-	    "id": "https://thedigitalbiblelibrary.org"
-	}
+        "dbl": {
+            "id": "https://thedigitalbiblelibrary.org"
+        }
     },
     "identification": {
-	"idServer": "dbl",
+        "idServer": "dbl",
         "systemId": {
             "dbl": {
-		"id": "0123456789abcdef",
-		"revision": "23"
-	    }
-	}
+                "id": "0123456789abcdef",
+                "revision": "23"
+            }
+        }
     }
 }

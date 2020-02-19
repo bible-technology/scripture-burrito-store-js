@@ -1,8 +1,8 @@
 {
     "meta": {
         "version": "0.2.0",
-	"variant": "default",
-	"defaultLanguage": "en"
+        "variant": "default",
+        "defaultLanguage": "en"
     },
     "type": {
         "flavor": "scriptureText",
@@ -10,12 +10,12 @@
     },
     "idServers": {
         "dbl": {
-	    "id": "https://thedigitalbiblelibrary.org"
-	}
+            "id": "https://thedigitalbiblelibrary.org"
+        }
     },
     "identification": {
         "systemId": {
             "dbl": "0123456789abcdef:23"
-	}
+        }
     }
 }
