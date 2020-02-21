@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://burrito.bible/schema/gloss_flavor_type.schema.json",
+    "title": "Scripture Burrito Scripture Flavor Type",
+    "properties": {
+	"flavorType": {  
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "const": "gloss"
+                },
+                "flavor": {
+                    "type": "object",
+                    "oneOf": [
+                        {
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "pattern": "^x-[a-z][A-za-z0-9]*$"
+                                }
+                            }
+                        },
+                        {
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "enum": [
+                                        "textStories"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "required": [
+                        "name"
+                    ]
+                },
+                "bookScope": {"$ref": "book_scope.schema.json"},
+                "canonType": {"$ref": "canon_type.schema.json"},
+                "canonSpec": {"$ref": "canon_spec.schema.json"}
+	    }
+	}
+    },
+    "additionalProperties": false
+}
