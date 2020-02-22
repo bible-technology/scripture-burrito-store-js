@@ -42,16 +42,14 @@ module.exports = {
         require('./relationships.schema.json'),
         require('./relationship.schema.json'),
 	require('./scripture_flavor_type.schema.json'),
+	require('./scripture/audio_translation.schema.json'),
+	require('./scripture/braille_scripture_publication.schema.json'),
+	require('./scripture/print_publication.schema.json'),
+	require('./scripture/sign_language_video_translation.schema.json'),
+	require('./scripture/text_translation.schema.json'),
         require('./software_and_user_info.schema.json'),
         require('./type.schema.json'),
-        require('./gloss/glossedTextStory.schema.json'),
-        require('./parascriptural/parascripturalWordAlignment.schema.json'),
-        require('./peripheral/peripheralVersification.schema.json'),
-        require('./scripture/scriptureAudio.schema.json'),
-        require('./scripture/scriptureBraille.schema.json'),
-        require('./scripture/scripturePrint.schema.json'),
-        require('./scripture/scriptureSignLanguageVideo.schema.json'),
-        require('./scripture/scriptureText.schema.json'),
+	require('./x_flavor.schema.json'),
 
 	require('./config.schema.json')
     ]
