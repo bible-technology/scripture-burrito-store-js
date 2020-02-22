@@ -39,7 +39,15 @@
                 "bookScope": {"$ref": "book_scope.schema.json"},
                 "canonType": {"$ref": "canon_type.schema.json"},
                 "canonSpec": {"$ref": "canon_spec.schema.json"}
-	    }
+	    },
+	    "required": [
+		"name",
+		"bookScope",
+		"canonType",
+		"canonSpec",
+		"flavor"
+	    ],
+	    "additionalProperties": false
 	}
     },
     "additionalProperties": false
