@@ -73,8 +73,25 @@ class FSMetadataStore extends MetadataStore {
     __idServerEntriesLatestRevision(idServerId) {
 	if (idServerId in this._urls) {
 	    var ret = {};
-	    for (const entry of Object.entries(this._urls[idServerId])) {
-		ret[entry[0]] = Object.keys(entry[1]);
+	    for (const [entryKey, entryVal] of Object.entries(this._urls[idServerId])) {
+		const revisions = Object.values(entryVal);
+		const latestRevision = revisions.reduce(
+		    function(a, b) {
+			const variantA = ("default" in a) ? a["default"]: Object.values(a)[0];
+			const variantB = ("default" in b) ? b["default"]: Object.values(b)[0];
+			return Date(variantA.meta.dateCreated) > Date(variantB.meta.dateCreated);
+		    }
+		);
+		const latestRevisionVariant = ("default" in latestRevision) ? latestRevision["default"] : Object.values(latestRevision)[0];
+		ret[entryKey] = {
+		    "id": latestRevisionVariant.identification.systemId[latestRevisionVariant.identification.idServer].revision,
+		    "variant": latestRevisionVariant.meta.variant,
+		    "defaultLanguage": latestRevisionVariant.meta.defaultLanguage,
+		    "name": latestRevisionVariant.identification.name,
+		    "description": ("description" in latestRevisionVariant.identification) ? latestRevisionVariant.identification.description : null,
+		    "abbreviation": ("abbreviation" in latestRevisionVariant.identification) ? latestRevisionVariant.identification.abbreviation : null,
+		    "languages": latestRevisionVariant.languages
+		};
 	    }
 	    return ret;
 	} else {

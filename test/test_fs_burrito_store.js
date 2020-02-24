@@ -5,6 +5,7 @@ const deepcopy = require('deepcopy');
 const fse = require('fs-extra');
 const path = require('path');
 const assert = require('chai').assert;
+const expect = require('chai').expect;
 const FSBurritoStore = require('../fs_burrito_store.js').FSBurritoStore;
 
 describe("FS Burrito Class", function() {
@@ -399,6 +400,20 @@ describe("FS Burrito Class", function() {
 	assert.equal(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef")[revisionKeys[0]].length, 1);
     });
 
+
+    it("Implements entriesLatestRevision()", function() {
+	const b = new FSBurritoStore(
+	    {
+		"storeClass": "FSBurritoStore"
+	    },
+	    this.storagePath
+	);
+	assert.isNull(b.entriesLatestRevision("https://thedigitalbiblelibrary.org"));
+	b.importFromObject(this.metadata["validTextTranslation"]);
+	const entryRecord = b.entriesLatestRevision("https://thedigitalbiblelibrary.org")["0123456789abcdef"];
+	expect(entryRecord).to.have.keys("abbreviation", "defaultLanguage", "description", 'id', 'languages', 'name', 'variant',);
+    });
+    
     it("Implements entryRevisionVariants()", function() {
 	const b = new FSBurritoStore(
 	    {
