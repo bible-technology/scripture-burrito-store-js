@@ -4,7 +4,7 @@
     "title": "Scripture Burrito Scripture Flavor Type",
     "type": "object",
     "properties": {
-	"flavorType": {  
+        "flavorType": {
             "type": "object",
             "properties": {
                 "name": {
@@ -13,28 +13,46 @@
                 },
                 "flavor": {
                     "type": "object",
-		    "oneOf": [
-			{"$ref": "scripture/text_translation.schema.json"},
-			{"$ref": "scripture/audio_translation.schema.json"},
-			{"$ref": "scripture/print_publication.schema.json"},
-			{"$ref": "scripture/braille_scripture_publication.schema.json"},
-			{"$ref": "scripture/sign_language_video_translation.schema.json"},
-			{"$ref": "x_flavor.schema.json"}
-		    ]
+                    "oneOf": [
+                        {
+                            "$ref": "scripture/text_translation.schema.json"
+                        },
+                        {
+                            "$ref": "scripture/audio_translation.schema.json"
+                        },
+                        {
+                            "$ref": "scripture/print_publication.schema.json"
+                        },
+                        {
+                            "$ref": "scripture/braille_scripture_publication.schema.json"
+                        },
+                        {
+                            "$ref": "scripture/sign_language_video_translation.schema.json"
+                        },
+                        {
+                            "$ref": "x_flavor.schema.json"
+                        }
+                    ]
                 },
-                "bookScope": {"$ref": "book_scope.schema.json"},
-                "canonType": {"$ref": "canon_type.schema.json"},
-                "canonSpec": {"$ref": "canon_spec.schema.json"}
-	    },
-	    "required": [
-		"name",
-		"bookScope",
-		"canonType",
-		"canonSpec",
-		"flavor"
-	    ],
-	    "additionalProperties": false
-	}
+                "bookScope": {
+                    "$ref": "book_scope.schema.json"
+                },
+                "canonType": {
+                    "$ref": "canon_type.schema.json"
+                },
+                "canonSpec": {
+                    "$ref": "canon_spec.schema.json"
+                }
+            },
+            "required": [
+                "name",
+                "bookScope",
+                "canonType",
+                "canonSpec",
+                "flavor"
+            ],
+            "additionalProperties": false
+        }
     },
     "additionalProperties": false
 }

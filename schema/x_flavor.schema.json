@@ -5,11 +5,13 @@
     "description": "Schema of flavor field for xFlavor",
     "type": "object",
     "properties": {
-	"name": {
-	    "type": "string",
-	    "pattern": "^x-[a-z][a-zA-Z0-9]*$"
-	}
+        "name": {
+            "type": "string",
+            "pattern": "^x-[a-z][a-zA-Z0-9]*$"
+        }
     },
-    "required": ["name"],
+    "required": [
+        "name"
+    ],
     "additionalProperties": true
 }
