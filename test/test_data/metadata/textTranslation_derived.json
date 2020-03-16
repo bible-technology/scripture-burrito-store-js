@@ -1,7 +1,7 @@
 {
     "meta": {
         "version": "0.2.0",
-        "variant": "derived_banana",
+        "variant": "derived_foo",
         "dateCreated": "2019-02-19T01:02:03+01:00",
         "generator": {
             "softwareName": "Burrito Factory",
@@ -52,11 +52,11 @@
         },
         "idServer": "dbl",
         "name": {
-            "en": "Scripture Burrito Demo Text Bible",
-            "fr": "Cr\u00eape mexicaine biblique surdimensionn\u00e9e (d\u00e9monstration)"
+            "en": "Excerpts from a Scripture Burrito Demo Text Bible",
+            "fr": "Des morceaux d'une Cr\u00eape mexicaine biblique surdimensionn\u00e9e (d\u00e9monstration)"
         },
         "description": {
-            "en": "A Demonstration Scripture Burrito containing Text, like Paratext Might One Day Produce"
+            "en": "Extracts of A Demonstration Scripture Burrito containing Text, like Paratext Might One Day Produce"
         },
         "abbreviation": {
             "en": "DSB",
@@ -71,21 +71,33 @@
     "type": {
         "flavorType": {
             "name": "scripture",
-            "bookScope": {
-                "GEN": "",
-                "EXO": "1-12",
-                "LEV": "2-3",
-                "MAT": "1,5,7-11"
+            "currentScope": {
+                "GEN": [],
+                "EXO": [
+                    "1",
+                    "3-12",
+                    "13:4",
+                    "14:3-8",
+                    "15:8-16:2"
+                ],
+                "LEV": [
+                    "2-3"
+                ],
+                "MAT": [
+                    "1",
+                    "5",
+                    "7-11"
+                ]
             },
             "canonType": [
-                "OT",
-                "NT"
+                "ot",
+                "nt"
             ],
             "canonSpec": {
-                "OT": {
+                "ot": {
                     "name": "western"
                 },
-                "NT": {
+                "nt": {
                     "name": "x-matthewOnlyMillenialists",
                     "books": [
                         "MAT"
@@ -125,10 +137,11 @@
                 "en": "English",
                 "de": "Englisch",
                 "fr": "anglais"
-            }
+            },
+            "numberingSystem": "latn"
         }
     ],
-    "countries": [
+    "targetAreas": [
         {
             "code": "NL",
             "name": {
@@ -151,6 +164,7 @@
             "url": "https://burritos-r-us.org",
             "roles": [
                 "rightsHolder",
+                "rightsAdmin",
                 "content",
                 "finance",
                 "management",
@@ -169,16 +183,6 @@
         }
     ],
     "copyright": {
-        "rightsHolderAgencies": [
-            0,
-            1
-        ],
-        "rightsAdminAgency": 1,
-        "licenses": [
-            {
-                "url": "https://burritos-r-us.org/licenses/3247"
-            }
-        ],
         "shortStatementPlain": {
             "fr": "\u00a9 Burritos R Us 2019."
         },
@@ -189,81 +193,13 @@
             "fr": "<p><b>\u00a9 Burritos R Us 2019.</b></p><p><i>Tous droits r\u00e9serv\u00e9s.</i></p>"
         }
     },
-    "promotion": {
-        "statementRich": {
-            "en": "<h2>Why you should enjoy this burrito</h2><p>This burrito comes straight from the <a href=\"https://burritos-r-us.org/\">Burritos R Us</a> factory and contains the best ingredients:</p><ul><li>Delicious <b>beans</b></li><li>Fresh green <b>lettuce</b></li><li>A <em>generous</em> helping of <b>cheese</b></li></ul><p /><h2>What our customers say</h2><blockquote><p>This burrito is <i>delicious</i>!</p></blockquote>"
-        }
-    },
     "ingredients": {
-        "source/usfm/OTINT.sfm": {
-            "checksum": {
-                "md5": "0123456789abcdef0123456789abcdef"
-            },
-            "mimeType": "text/x-sfm",
-            "scopeOrRole": "intot",
-            "size": 1234,
-            "isSource": true
-        },
-        "source/usfm/GEN.sfm": {
-            "checksum": {
-                "md5": "0123456789abcdef0123456789abcdef"
-            },
-            "mimeType": "text/x-sfm",
-            "scopeOrRole": "GEN",
-            "size": 1234,
-            "isSource": true
-        },
-        "source/usfm/EXO.sfm": {
-            "checksum": {
-                "md5": "0123456789abcdef0123456789abcdef"
-            },
-            "mimeType": "text/x-sfm",
-            "scopeOrRole": "EXO 1-12",
-            "size": 1234,
-            "isSource": true
-        },
-        "source/usfm/LEV.sfm": {
-            "checksum": {
-                "md5": "0123456789abcdef0123456789abcdef"
-            },
-            "mimeType": "text/x-sfm",
-            "scopeOrRole": "LEV 2:3-3:7",
-            "size": 1234,
-            "isSource": true
-        },
-        "source/usfm/INTNT.sfm": {
-            "checksum": {
-                "md5": "0123456789abcdef0123456789abcdef"
-            },
-            "mimeType": "text/x-sfm",
-            "scopeOrRole": "intnt",
-            "size": 1234,
-            "isSource": true
-        },
-        "source/usfm/INTMAT.sfm": {
-            "checksum": {
-                "md5": "0123456789abcdef0123456789abcdef"
-            },
-            "mimeType": "text/x-sfm",
-            "scopeOrRole": "intMAT",
-            "size": 1234,
-            "isSource": true
-        },
-        "source/usfm/MAT.sfm": {
-            "checksum": {
-                "md5": "0123456789abcdef0123456789abcdef"
-            },
-            "mimeType": "text/x-sfm",
-            "scopeOrRole": "MAT 1:3,5,7-11",
-            "size": 1234,
-            "isSource": true
-        },
         "release/text/USX_1/OTINT.usx": {
             "checksum": {
                 "md5": "0123456789abcdef0123456789abcdef"
             },
             "mimeType": "text/x-usx+xml",
-            "scopeOrRole": "intot",
+            "role": "intot",
             "size": 1234
         },
         "release/text/USX_1/GEN.usx": {
@@ -271,7 +207,9 @@
                 "md5": "0123456789abcdef0123456789abcdef"
             },
             "mimeType": "text/x-usx+xml",
-            "scopeOrRole": "GEN",
+            "scope": {
+                "GEN": []
+            },
             "size": 1234
         },
         "release/text/USX_1/EXO.usx": {
@@ -279,7 +217,11 @@
                 "md5": "0123456789abcdef0123456789abcdef"
             },
             "mimeType": "text/x-usx+xml",
-            "scopeOrRole": "EXO 1-12",
+            "scope": {
+                "EXO": [
+                    "1-12"
+                ]
+            },
             "size": 1234
         },
         "release/text/USX_1/LEV.usx": {
@@ -287,7 +229,11 @@
                 "md5": "0123456789abcdef0123456789abcdef"
             },
             "mimeType": "text/x-usx+xml",
-            "scopeOrRole": "LEV 2:3-3:7",
+            "scope": {
+                "LEV": [
+                    "2:3-3:7"
+                ]
+            },
             "size": 1234
         },
         "release/text/USX_1/INTNT.usx": {
@@ -295,7 +241,7 @@
                 "md5": "0123456789abcdef0123456789abcdef"
             },
             "mimeType": "text/x-usx+xml",
-            "scopeOrRole": "intnt",
+            "role": "intnt",
             "size": 1234
         },
         "release/text/USX_1/INTMAT.usx": {
@@ -303,7 +249,7 @@
                 "md5": "0123456789abcdef0123456789abcdef"
             },
             "mimeType": "text/x-usx+xml",
-            "scopeOrRole": "intMAT",
+            "role": "intMAT",
             "size": 1234
         },
         "release/text/USX_1/MAT.usx": {
@@ -311,7 +257,13 @@
                 "md5": "0123456789abcdef0123456789abcdef"
             },
             "mimeType": "text/x-usx+xml",
-            "scopeOrRole": "MAT 1:3,5,7-11",
+            "scope": {
+                "MAT": [
+                    "1:3",
+                    "1:5",
+                    "1:7-11"
+                ]
+            },
             "size": 1234
         },
         "unknownAdditive.foo": {
@@ -365,9 +317,9 @@
                 "fr": "Evangile selon Matthieu"
             }
         },
-        "frontmatter": {
+        "intot": {
             "short": {
-                "fr": "Avant de lire Matthieu ..."
+                "fr": "A propos de l'Ancien Testament"
             }
         },
         "intnt": {
@@ -380,5 +332,59 @@
                 "fr": "A propos de Matthieu"
             }
         }
+    },
+    "recipe": {
+        "spec": {
+            "path": "recipe_specs/bitsOfBurrito.recipe_spec.json"
+        },
+        "content": [
+            {
+                "type": "section",
+                "nameId": "ot",
+                "content": [
+                    {
+                        "type": "element",
+                        "nameId": "intot",
+                        "ingredient": "release/text/USX_1/OTINT.usx"
+                    },
+                    {
+                        "type": "element",
+                        "nameId": "book-gen",
+                        "ingredient": "release/text/USX_1/GEN.usx"
+                    },
+                    {
+                        "type": "element",
+                        "nameId": "book-exo",
+                        "ingredient": "release/text/USX_1/EXO.usx"
+                    },
+                    {
+                        "type": "element",
+                        "nameId": "book-lev",
+                        "ingredient": "release/text/USX_1/LEV.usx"
+                    }
+                ]
+            },
+            {
+                "type": "section",
+                "nameId": "nt",
+                "content": [
+                    {
+                        "type": "element",
+                        "nameId": "intnt",
+                        "ingredient": "release/text/USX_1/NTINT.usx"
+                    },
+                    {
+                        "type": "element",
+                        "nameId": "intmat",
+                        "ingredient": "release/text/USX_1/INTMAT.usx"
+                    },
+                    {
+                        "type": "element",
+                        "nameId": "book-mat",
+                        "ingredient": "release/text/USX_1/MAT.usx"
+                    }
+                ]
+            }
+        ]
     }
 }

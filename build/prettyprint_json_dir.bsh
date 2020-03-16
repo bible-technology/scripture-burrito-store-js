@@ -1,6 +1,0 @@
-#!/bin/bash
-
-set -u
-set -e
-
-for f in "$1"/*.json; do ./prettyprint_json.py $f; done

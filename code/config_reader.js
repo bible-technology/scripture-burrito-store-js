@@ -101,7 +101,7 @@ class ConfigReader {
 	    return {"result": "rejected", "reason": "NoAcceptableId", "message": flavor}; 
 	}
 	if (!(this.acceptedDerivedVariants.includes("*"))) {
-	    var acceptedVariants = ["default", "new", "update", "template"];
+	    var acceptedVariants = ["source", "new", "update", "template"];
 	    acceptedVariants = acceptedVariants.concat(this.acceptedDerivedVariants);
 	    if (!(acceptedVariants.includes(variant))) {
 		return {"result": "rejected", "reason": "UnacceptableVariant", "message": variant};

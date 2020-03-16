@@ -6,7 +6,7 @@ import * as fse from 'fs-extra';
 import * as path from 'path';
 import * as semver from 'semver';
 import Ajv from 'ajv';
-import schemaIndex from '../schema';
+import schemaIndex from '../schema/sbs_index.js';
 import {BurritoError} from './burrito_error.js';
 
 /**

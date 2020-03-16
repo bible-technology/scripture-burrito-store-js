@@ -16,7 +16,7 @@ describe("FS Burrito Class", function() {
 	const metadataDir = path.join(this.testDataDir, "metadata");
 	this.metadata = {
 	    "validTextTranslation": JSON.parse(fse.readFileSync(path.join(metadataDir, "textTranslation.json"), "utf8")),
-	    "validDerivedTextTranslation": JSON.parse(fse.readFileSync(path.join(metadataDir, "textTranslationDerived.json"), "utf8")),
+	    "validDerivedTextTranslation": JSON.parse(fse.readFileSync(path.join(metadataDir, "textTranslation_derived.json"), "utf8")),
 	    "scriptureTextNoRevision": JSON.parse(fse.readFileSync(path.join(metadataDir, "scriptureTextNoRevision.json"), "utf8")),
 	    "scriptureTextDupRevision": JSON.parse(fse.readFileSync(path.join(metadataDir, "scriptureTextDupRevision.json"), "utf8")),
 	    "validScriptureTextStub": JSON.parse(fse.readFileSync(path.join(metadataDir, "stub.json"), "utf8")),
@@ -102,7 +102,7 @@ describe("FS Burrito Class", function() {
 	    {
 		"storeClass": "FSBurritoStore",
 		"validation": "burrito",
-		"acceptedDerivedVariants": ["derived_banana"]
+		"acceptedDerivedVariants": ["derived_foo"]
 	    },
 	    this.storagePath
 	);
@@ -436,7 +436,7 @@ describe("FS Burrito Class", function() {
 	    this.storagePath
 	);
 	b.importFromObject(this.metadata["validTextTranslation"]);
-	const md = b.exportToObject("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23", "default");
+	const md = b.exportToObject("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23", "source");
 	assert.isObject(md);
     });
 
@@ -450,7 +450,7 @@ describe("FS Burrito Class", function() {
 	);
 	try {
 	    b.importFromObject(this.metadata["validTextTranslation"]);
-	    const md = b.exportToObject("https://thedigitalbiblelibrary.org", "0123456789abcdef", "99", "default");
+	    const md = b.exportToObject("https://thedigitalbiblelibrary.org", "0123456789abcdef", "99", "source");
 	    throw new Error("Too Far", {});
 	} catch (err) {
 	    assert.equal(err.message, "VariantNotFoundInStore");
