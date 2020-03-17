@@ -66,9 +66,12 @@ const fse = require('fs-extra');
 
 const bs = require("../fs_burrito_store.js");
 app.__burrito = {
-    "store": new bs.FSBurritoStore({
+  "store": new bs.FSBurritoStore(
+    {
 	"storeClass": "FSBurritoStore"
-    })};
+    },
+    "some_burritos"
+  )};
 
 hbs.registerHelper(
     "keysInObject",

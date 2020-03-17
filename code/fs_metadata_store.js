@@ -15,15 +15,87 @@ class FSMetadataStore extends MetadataStore {
 	    throw new BurritoError("StorageDirNotDefined");
 	}
 	super(burritoStore);
+	this._urls = {};
+	this._idServers = {};
         this.metadataDir = sDir + "/metadata";
 	if (fse.existsSync(this.metadataDir)) {
 	    this.loadEntries();
 	} else {
 	    fse.mkdirSync(this.metadataDir, {recursive: false});
 	}
-	this._urls = {};
-	this._idServers = {};
     }
+
+  /**
+   */
+  loadEntries() {
+    var self = this;
+    fse.readdir(
+      self.metadataDir,
+      function(err, urls) {
+        if (err) {
+          console.log(err);
+          throw new BurritoError("loadEntriesUrls");
+        }
+        urls.forEach(
+          function (url, index) {
+            const decodedUrl = decodeURIComponent(url);
+            self._urls[decodedUrl] = {};
+            const urlDir = self.metadataDir + "/" + url;
+            fse.readdir(
+              urlDir,
+              function(err, entries) {
+                if (err) {
+                  console.log(err);
+                  throw new BurritoError("loadEntriesEntries");
+                }
+                entries.forEach(
+                  function (entry, index) {
+                    const decodedEntry = decodeURIComponent(entry);
+                    self._urls[decodedUrl][decodedEntry] = {};
+                    const entryDir = urlDir + "/" + entry;
+                    fse.readdir(
+                      entryDir,
+                      function(err, revisions) {
+                        if (err) {
+                          console.log(err);
+                          throw new BurritoError("loadEntriesRevisions");
+                        }
+                        revisions.forEach(
+                          function (revision, index) {
+                            const decodedRevision = decodeURIComponent(revision);
+                            self._urls[decodedUrl][decodedEntry][decodedRevision] = {};
+                            const revisionDir = entryDir + "/" + revision;
+                            fse.readdir(
+                              revisionDir,
+                              function(err, variants) {
+                                if (err) {
+                                  console.log(err);
+                                  throw new BurritoError("loadEntriesVariants");
+                                }
+                                variants.forEach(
+                                  function (variant, index) {
+                                    const decodedVariant = decodeURIComponent(variant);
+                                    const variantDir = revisionDir + "/" + variant + "/metadata.json";
+                                    const metadata = JSON.parse(fse.readFileSync(variantDir));
+                                    self._urls[decodedUrl][decodedEntry][decodedRevision][decodedVariant] = metadata;
+                                    self.__updateIdServerRecordFromMetadata(metadata);
+                                  }
+                                )
+                              }
+                            )
+                          }
+                        )
+                      }
+                    )
+                  }
+                )
+              }
+            )
+          }
+        )
+      }
+    )
+  }
 
     /**
      */
@@ -219,7 +291,13 @@ class FSMetadataStore extends MetadataStore {
        * @param {string} sysUrl
      */
     __addSysUrlRecord(sysUrl) {
-	this._urls[sysUrl] = {}
+      this._urls[sysUrl] = {};
+      const urlDir = this.metadataDir + "/" + encodeURIComponent(sysUrl);
+      if (fse.existsSync(urlDir)) {
+	throw new BurritoError("newUrlDirAlreadyExists");
+      } else {
+	fse.mkdirSync(urlDir, {recursive: false});
+      }
     }
 
     /**
@@ -228,9 +306,15 @@ class FSMetadataStore extends MetadataStore {
        * @param {string} entryId
      */
     __addEntryRecord(sysUrl, entryId) {
-	this._urls[sysUrl][entryId] = {}
+      this._urls[sysUrl][entryId] = {};
+      const entryDir = this.metadataDir + "/" + encodeURIComponent(sysUrl) + "/" + encodeURIComponent(entryId);
+      if (fse.existsSync(entryDir)) {
+	throw new BurritoError("newEntryDirAlreadyExists");
+      } else {
+	fse.mkdirSync(entryDir, {recursive: false});
+      }
     }
-
+  
     /**
        Adds a revision record
        * @param {string} sysUrl
@@ -238,7 +322,13 @@ class FSMetadataStore extends MetadataStore {
        * @param {string} revisionId
      */
     __addRevisionRecord(sysUrl, entryId, revisionId) {
-	this._urls[sysUrl][entryId][revisionId] = {}
+      this._urls[sysUrl][entryId][revisionId] = {};
+      const revisionDir = this.metadataDir + "/" + encodeURIComponent(sysUrl) + "/" + encodeURIComponent(entryId) + "/" + encodeURIComponent(revisionId);
+      if (fse.existsSync(revisionDir)) {
+	throw new BurritoError("newRevisionDirAlreadyExists");
+      } else {
+	fse.mkdirSync(revisionDir, {recursive: false});
+      }
     }
 
     /**
@@ -247,21 +337,31 @@ class FSMetadataStore extends MetadataStore {
        * @param {string} revisionId
        * @param {string} metadata
      */
-    __addEntryRevisionVariant(sysUrl, entryId, revisionId, variant, metadata) {
-	const revisionRecord = this._urls[sysUrl][entryId][revisionId];
-	if (variant in revisionRecord) {
-	    if (!deepEqual(metadata, revisionRecord[variant], {"strict": true})) {
-		throw new BurritoError("CannotModifyExistingVariant");
-	    }
-	} else {
-	    this._urls[sysUrl][entryId][revisionId][variant] = metadata;
-	}
+  __addEntryRevisionVariant(sysUrl, entryId, revisionId, variant, metadata) {
+    const revisionRecord = this._urls[sysUrl][entryId][revisionId];
+    if (variant in revisionRecord) {
+      if (!deepEqual(metadata, revisionRecord[variant], {"strict": true})) {
+	throw new BurritoError("CannotModifyExistingVariant");
+      }
+    } else {
+      this._urls[sysUrl][entryId][revisionId][variant] = metadata;
+      const variantDir = this.metadataDir + "/" + encodeURIComponent(sysUrl) + "/" + encodeURIComponent(entryId) + "/" + encodeURIComponent(revisionId) + "/" + encodeURIComponent(variant);
+      if (fse.existsSync(variantDir)) {
+	throw new BurritoError("newRevisionDirAlreadyExists");
+      } else {
+	fse.mkdirSync(variantDir, {recursive: false});
+        fse.writeFileSync(
+          variantDir + "/metadata.json",
+          JSON.stringify(metadata)
+        );
+      }
     }
+  }
 
     __updateIdServerRecordFromMetadata(metadata) {
-	const idServer = metadata.identification.idServer;
+      const idServer = metadata.identification.idServer;
 	const idServerRecord = metadata.idServers[idServer];
-	this._idServers[idServerRecord["id"]] = idServerRecord;
+      this._idServers[idServerRecord["id"]] = idServerRecord;
     }
 
 }
