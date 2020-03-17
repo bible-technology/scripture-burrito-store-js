@@ -457,4 +457,25 @@ describe("FS Burrito Class", function() {
 	}
     });
 
+    /*
+      it("Persistant metadata storage", function() {
+	const b = new FSBurritoStore(
+	    {
+		"storeClass": "FSBurritoStore",
+		"validation": "burrito"
+	    },
+	    this.storagePath
+	);
+      b.importFromObject(this.metadata["validTextTranslation"]);
+      const b2 = new FSBurritoStore(
+	{
+	  "storeClass": "FSBurritoStore",
+	  "validation": "burrito"
+	},
+	this.storagePath
+      );
+      assert.equal(b2.entryRevisionVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23").length, 1);
+    });
+    */
+  
 });
