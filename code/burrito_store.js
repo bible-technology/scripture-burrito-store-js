@@ -1,18 +1,19 @@
 import {BurritoError} from './burrito_error.js';
 import {ConfigReader} from './config_reader.js';
 import {BurritoValidator} from './burrito_validator.js';
+import {DBLImport} from './dbl_metadata_import.js';
 
 /**
    An abstract class for a Burrito Store. Subclasses should implement storage-specific methods.
    * @type module:BurritoStore
    * @require BurritoError
    */
+
 class BurritoStore {
     /**
        Expects a configuration object, which must be valid and for the subclass that is being constructed.
        * @param {Object} configJson - A JSON object containing config options
        */
-
     constructor(configJson) {
 	if (new.target == BurritoStore) {
 	    throw new BurritoError("CannotConstructDirectly");
@@ -38,6 +39,15 @@ class BurritoStore {
     
     /* share, receiveRevision, sendDraft, receiveDraft */
 
+  /**
+     Creates a new variant (and, if necessary, a new revision and entry) using metadata based on DBL Metadata.
+     * @param {Object} dblDom - DBL 2.x metadata as DOM
+     * @return {undefined}
+     */
+  importFromDBLMetadata(dblDom) {
+    this.importFromObject(DBLImport.dblDomToSBMetadata(dblDom));
+  }
+  
     /**
        Creates a new variant (and, if necessary, a new revision and entry) using the provided metadata.
        * @param {Object} metadata - Scripture Burrito metadata as a JS object
