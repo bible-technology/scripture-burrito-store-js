@@ -14,7 +14,7 @@ class DBLImport {
     //this.processType();
     //this.processRelationships();
     //this.processAgencies();
-    //this.processCountries();
+    this.processCountries();
     //this.processFormat();
     //this.processNames();
     //this.processManifest();
@@ -35,6 +35,10 @@ class DBLImport {
     }
   }
 
+  childElementsByName(parent, elementName) {
+    return parent.getElementsByTagName(elementName);
+  }
+
   bcp47ify(iso) {
     const lookup = {
       "eng": "en"
@@ -50,7 +54,6 @@ class DBLImport {
     const self = this;
     children.forEach(
       function (namelike, n) {
-        console.log(namelike);
         const namelikeNode = self.childElementByName(domParent, namelike);
         assert.isNotNull(namelikeNode);
         const namelikeJson = {
@@ -130,6 +133,30 @@ class DBLImport {
       this.sbMetadata["identification"],
       ["name", "description", "abbreviation"]
     );
+  }
+
+  processCountries() {
+    const self = this;
+    const countries = self.childElementByName(self.root, "countries");
+    const countryNodes = self.childElementsByName(countries, "country");
+    if (countryNodes.length > 0) {
+      var countriesJson = [];
+      for (var n = 0; n < countryNodes.length; n++) {
+        const country = countryNodes.item(n);
+        const iso = self.childElementByName(country, "iso");
+        assert.isNotNull(iso);
+        const countryJson = {
+          "code": iso.childNodes[0].nodeValue
+        };
+        self.addNamelike(
+          country,
+          countryJson,
+          ["name"]
+        );
+        countriesJson.push(countryJson);
+      };
+      this.sbMetadata["countries"] = countriesJson;
+    };
   }
 }
 
