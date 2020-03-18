@@ -7,7 +7,7 @@ const fse = require('fs-extra');
 
 const dblImport = require('../code/dbl_metadata_import.js').DBLImport;
 
-describe("Converts DBL Test Entry Metadata", function() {
+describe("DBL Import", function() {
 
     before(function() {
 	this.testDataDir = path.join(__dirname, "test_data");
@@ -15,7 +15,7 @@ describe("Converts DBL Test Entry Metadata", function() {
       this.dblTestEntry = fse.readFileSync(path.join(dblMetadataDir, "dbl_test_entry.xml"), "utf8");
     });
     
-    it("Accept test textTranslation document", function() {
+    it("Convert DBL Test Entry", function() {
       dblDomToSBMetadata(this.dblTestEntry);
     });
 

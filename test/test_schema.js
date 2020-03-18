@@ -7,7 +7,7 @@ const fse = require('fs-extra');
 
 const FSBurritoStore = require('../fs_burrito_store.js').FSBurritoStore;
 
-describe("textTranslation", function() {
+describe("Schema", function() {
 
     before(function() {
 	this.testDataDir = path.join(__dirname, "test_data");
