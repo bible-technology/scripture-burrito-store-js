@@ -13,7 +13,7 @@ class DBLImport {
     this.processIdentification();
     //this.processType();
     //this.processRelationships();
-    //this.processAgencies();
+    this.processAgencies();
     this.processCountries();
     //this.processFormat();
     this.processNames();
@@ -155,7 +155,7 @@ class DBLImport {
         );
         countriesJson.push(countryJson);
       };
-      this.sbMetadata["countries"] = countriesJson;
+      this.sbMetadata["targetAreas"] = countriesJson;
     };
   }
 
@@ -185,6 +185,70 @@ class DBLImport {
       };
       this.sbMetadata["namesJson"] = namesJson;
     }
+  }
+
+  processAgencies() {
+    const self = this;
+    const agencies = self.childElementByName(self.root, "agencies");
+    const agencyTypes = {
+      "rightsHolder": self.childElementsByName(agencies, "rightsHolder"),
+      "contributor": self.childElementsByName(agencies, "contributor"),
+      "rightsAdmin": self.childElementsByName(agencies, "rightsAdmin")
+    };
+    var agencyLookup = {};
+    ["rightsHolder", "contributor", "rightsAdmin"].forEach(
+      function (agencyType, n) {
+        for (var n = 0; n < agencyTypes[agencyType].length; n++) {
+          if (agencyTypes[agencyType].length > 0) {
+            const agency = agencyTypes[agencyType].item(n);
+            const agencyUID = self.childElementByName(agency, "uid").childNodes[0].nodeValue;
+            var agencyJson;
+            if (agencyUID in agencyLookup) {
+              agencyJson = agencyLookup[agencyUID];
+            } else {
+              agencyJson = {
+                "id": "dbl::" + agencyUID,
+                "roles": []
+              }
+            };
+            const agencyURLs = self.childElementsByName(agency, "url");
+            if (agencyURLs.length > 0) {
+              agencyJson["url"] = agencyURLs.item(0).childNodes[0].nodeValue;
+            }
+            self.addNamelike(
+              agency,
+              agencyJson,
+              ["name"]
+            );
+            const agencyAbbrs = self.childElementsByName(agency, "abbr");
+            if (agencyAbbrs.length > 0) {
+              self.addNamelike(
+                agency,
+                agencyJson,
+                ["abbr"]
+              )
+            };
+            if (agencyType == "rightsHolder") {
+              agencyJson["roles"].push("rightsHolder");
+            }
+            else if (agencyType == "rightsAdmin") {
+              agencyJson["roles"].push("rightsAdmin");
+            } else {
+              ["content", "publication", "management", "finance", "qa"].forEach(
+                function (role, n) {
+                  const agencyRoles = self.childElementsByName(agency, role);
+                  if (agencyRoles.length > 0) {
+                    agencyJson["roles"].push(role);
+                  }
+                }
+              )
+            }
+            agencyLookup[agencyUID] = agencyJson;
+          }
+        }
+      }
+    );
+    self.sbMetadata["agencies"] = Object.values(agencyLookup);
   }
 
 }
