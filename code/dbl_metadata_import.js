@@ -9,11 +9,11 @@ class DBLImport {
     this.root = dblDom.documentElement;
     this.sbMetadata = {};
     this.processRoot();
-    //this.processIdentification();
+    this.processLanguage();
+    this.processIdentification();
     //this.processType();
     //this.processRelationships();
     //this.processAgencies();
-    //this.processLanguage();
     //this.processCountries();
     //this.processFormat();
     //this.processNames();
@@ -26,6 +26,45 @@ class DBLImport {
     //this.processArchiveStatus();
   }
 
+  childElementByName(parent, elementName) {
+    const element = parent.getElementsByTagName(elementName);
+    if ("0" in element) {
+      return element["0"];
+    } else {
+      return null;
+    }
+  }
+
+  bcp47ify(iso) {
+    const lookup = {
+      "eng": "en"
+    };
+    if (iso in lookup) {
+      return lookup[iso];
+    } else {
+      return iso;
+    }
+  }
+
+  addNamelike(domParent, jsonParent, children) {
+    const self = this;
+    children.forEach(
+      function (namelike, n) {
+        console.log(namelike);
+        const namelikeNode = self.childElementByName(domParent, namelike);
+        assert.isNotNull(namelikeNode);
+        const namelikeJson = {
+          "en": namelikeNode.childNodes[0].nodeValue
+        };
+        const namelikeLocalNode =self.childElementByName(domParent, namelike + "Local");
+        if (namelikeLocalNode) {
+          namelikeJson[self.bcp47Local] = namelikeLocalNode.childNodes[0].nodeValue;
+        }
+        jsonParent[namelike] = namelikeJson;
+      }
+    )
+  }
+  
   processRoot() {
     assert.equal(this.root.nodeName, "DBLMetadata");
     assert.isTrue(this.root.hasAttribute("id"));
@@ -57,11 +96,41 @@ class DBLImport {
             "id": this.root.getAttribute("id"),
             "revision": this.root.getAttribute("revision")
           }
-        }
+        },
+        "idServer": "dbl"
       }
     };
   }
 
+  processLanguage() {
+    // Todo: numberingSystem
+    const language = this.childElementByName(this.root, "language");
+    assert.isNotNull(language);
+    const iso = this.childElementByName(language, "iso");
+    assert.isNotNull(iso);
+    this.bcp47Local = this.bcp47ify(iso.childNodes[0].nodeValue);
+    const languageJson = {
+      "tag": this.bcp47Local
+    };
+    this.addNamelike(
+      language,
+      languageJson,
+      ["name"]
+    );
+    this.sbMetadata.languages = [
+      languageJson
+      ];
+  }
+  
+  processIdentification() {
+    const identification = this.childElementByName(this.root, "identification");
+    assert.isNotNull(identification);
+    this.addNamelike(
+      identification,
+      this.sbMetadata["identification"],
+      ["name", "description", "abbreviation"]
+    );
+  }
 }
 
 export {DBLImport}
