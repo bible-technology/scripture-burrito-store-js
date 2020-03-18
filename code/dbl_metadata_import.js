@@ -22,7 +22,6 @@ class DBLImport {
     //this.processPublications();
     //this.processCopyright();
     //this.processPromotion();
-    //this.processProgress();
     //this.processArchiveStatus();
   }
 
