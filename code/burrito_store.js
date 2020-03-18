@@ -59,7 +59,6 @@ class BurritoStore {
 	    throw new BurritoError("ImportedMetadataNotSchemaValid", schemaValidationResult.schemaErrors);
 	}
 	this._metadataStore.addEntryRevisionVariant(metadata, this._metadataVariant(metadata));
-	this._ingredientsStore.touchEntry(sysUrl, entryId);
     }
 
     importFromDir(path) {
