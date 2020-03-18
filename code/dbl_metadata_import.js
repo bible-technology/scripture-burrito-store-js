@@ -16,7 +16,7 @@ class DBLImport {
     //this.processAgencies();
     this.processCountries();
     //this.processFormat();
-    //this.processNames();
+    this.processNames();
     //this.processManifest();
     //this.processSource();
     //this.processPublications();
@@ -158,6 +158,35 @@ class DBLImport {
       this.sbMetadata["countries"] = countriesJson;
     };
   }
+
+  processNames() {
+    const self = this;
+    const names = self.childElementByName(self.root, "names");
+    const nameNodes = self.childElementsByName(names, "name");
+    if (nameNodes.length > 0) {
+      var namesJson = {};
+      for (var n = 0; n < nameNodes.length; n++) {
+        const name = nameNodes.item(n);
+        const nameId = name.getAttribute("id");
+        const nameJson = {};
+        ["abbr", "short", "long"].forEach(
+          function (size, n) {
+            const sizeNodes = self.childElementsByName(name, size);
+            if (sizeNodes.length > 0) {
+              self.addNamelike(
+                name,
+                nameJson,
+                [size]
+              );
+            }
+          }
+        );
+        namesJson[nameId] = nameJson;
+      };
+      this.sbMetadata["namesJson"] = namesJson;
+    }
+  }
+
 }
 
 export {DBLImport}
