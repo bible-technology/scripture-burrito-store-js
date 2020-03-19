@@ -11,7 +11,7 @@ class DBLImport {
     this.processRoot();
     this.processLanguage();
     this.processIdentification();
-    //this.processType();
+    this.processType();
     //this.processRelationships();
     this.processAgencies();
     this.processCountries();
@@ -182,7 +182,7 @@ class DBLImport {
         );
         namesJson[nameId] = nameJson;
       };
-      this.sbMetadata["namesJson"] = namesJson;
+      this.sbMetadata["names"] = namesJson;
     }
   }
 
@@ -248,6 +248,37 @@ class DBLImport {
       }
     );
     self.sbMetadata["agencies"] = Object.values(agencyLookup);
+  }
+
+  processType() {
+    // Todo - currentScope; correct enums
+    const self = this;
+    const type = self.childElementByName(self.root, "type");
+    assert.isNotNull(type);
+    const typeJson = {
+      "flavorType": {
+        "name": "scripture",
+        "flavor": {
+          "name": "textTranslation"
+        }
+      }
+    };
+    const translationType = self.childElementByName(type, "translationType");
+    assert.isNotNull(translationType);
+    typeJson["flavorType"]["flavor"]["translationType"] = translationType.childNodes[0].nodeValue;
+    const audience = self.childElementByName(type, "audience");
+    assert.isNotNull(audience);
+    typeJson["flavorType"]["flavor"]["audience"] = audience.childNodes[0].nodeValue;
+    self.sbMetadata["type"] = typeJson;
+    const isConfidential = self.childElementByName(type, "isConfidential");
+    assert.isNotNull(isConfidential);
+    const isConfidentialFlag = (isConfidential.childNodes[0].nodeValue == "true");
+    const confidentialityJson = {
+      "metadata": isConfidentialFlag ? "private" : "unrestricted",
+      "source": "private",
+      "publications": isConfidentialFlag ? "private" : "restricted"
+    };
+    self.sbMetadata["confidentiality"] = confidentialityJson;
   }
 
 }
