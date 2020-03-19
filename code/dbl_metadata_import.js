@@ -6,6 +6,7 @@ import {assert} from 'chai';
 class DBLImport {
 
   constructor(dblDom) {
+    this.serializer = new xmldom.XMLSerializer();
     this.root = dblDom.documentElement;
     this.sbMetadata = {};
     this.processRoot();
@@ -20,7 +21,7 @@ class DBLImport {
     //this.processManifest();
     //this.processSource();
     //this.processPublications();
-    //this.processCopyright();
+    this.processCopyright();
     //this.processPromotion();
     this.processArchiveStatus();
   }
@@ -197,8 +198,8 @@ class DBLImport {
     var agencyLookup = {};
     ["rightsHolder", "contributor", "rightsAdmin"].forEach(
       function (agencyType, n) {
-        for (var n = 0; n < agencyTypes[agencyType].length; n++) {
-          if (agencyTypes[agencyType].length > 0) {
+        if (agencyTypes[agencyType].length > 0) {
+          for (var n = 0; n < agencyTypes[agencyType].length; n++) {
             const agency = agencyTypes[agencyType].item(n);
             const agencyUID = self.childElementByName(agency, "uid").childNodes[0].nodeValue;
             var agencyJson;
@@ -296,6 +297,32 @@ class DBLImport {
     self.sbMetadata["meta"]["comments"] = [aComment.childNodes[0].nodeValue];
   }
 
+  processCopyright() {
+    const self = this;
+    const copyright = self.childElementByName(self.root, "copyright");
+    assert.isNotNull(copyright);
+    const fullStatement = self.childElementByName(copyright, "fullStatement");
+    assert.isNotNull(fullStatement);
+    const copyrightJson = {};
+    const statementContents = self.childElementsByName(fullStatement, "statementContent");
+    if (statementContents.length > 0) {
+      for (var n = 0; n < statementContents.length; n++) {
+        const statementContent = statementContents.item(n);
+        const contentType = statementContent.getAttribute("type");
+        assert.isNotNull(contentType);
+        if (contentType == "xhtml") {
+          var serialize = this.serializer.serializeToString(statementContent);
+          serialize = serialize.replace(new RegExp("^[^>]+>"), "").replace(new RegExp("<[^<]+$"), "");
+          copyrightJson["fullStatementRich"] = serialize.trim();
+        } else {
+          copyrightJson["fullStatementPlain"] = statementContent.childNodes[0].nodeValue;
+        }
+      }
+    }
+    console.log(copyrightJson);
+    self.sbMetadata.copyright = copyrightJson;
+  }
+  
 }
 
 export {DBLImport}
