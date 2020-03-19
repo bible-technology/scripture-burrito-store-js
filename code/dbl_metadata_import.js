@@ -22,7 +22,7 @@ class DBLImport {
     //this.processPublications();
     //this.processCopyright();
     //this.processPromotion();
-    //this.processArchiveStatus();
+    this.processArchiveStatus();
   }
 
   childElementByName(parent, elementName) {
@@ -279,6 +279,21 @@ class DBLImport {
       "publications": isConfidentialFlag ? "private" : "restricted"
     };
     self.sbMetadata["confidentiality"] = confidentialityJson;
+  }
+
+  processArchiveStatus() {
+    const self = this;
+    const aStatus = self.childElementByName(self.root, "archiveStatus");
+    assert.isNotNull(aStatus);
+    const aName = self.childElementByName(aStatus, "archivistName");
+    assert.isNotNull(aName);
+    self.sbMetadata["meta"]["generator"]["userName"] = aName.childNodes[0].nodeValue;
+    const aDate = self.childElementByName(aStatus, "dateUpdated");
+    assert.isNotNull(aDate);
+    self.sbMetadata["meta"]["dateCreated"] = aDate.childNodes[0].nodeValue;
+    const aComment = self.childElementByName(aStatus, "comments");
+    assert.isNotNull(aComment);
+    self.sbMetadata["meta"]["comments"] = [aComment.childNodes[0].nodeValue];
   }
 
 }
