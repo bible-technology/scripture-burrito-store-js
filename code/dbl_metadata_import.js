@@ -20,7 +20,7 @@ class DBLImport {
     this.processNames();
     this.processManifest();
     //this.processSource();
-    //this.processPublications();
+    this.processPublications();
     this.processCopyright();
     this.processPromotion();
     this.processArchiveStatus();
@@ -368,6 +368,31 @@ class DBLImport {
       }
     }
     self.sbMetadata["ingredients"] = ingredientsJson;
+  }
+
+  processPublications() {
+    // Todo - everything apart from setting whole book roles for ingredients with no divisions
+    const self = this;
+    const publications = self.childElementByName(self.root, "publications");
+    assert.isNotNull(publications);
+    const publication = self.childElementsByName(publications, "publication");
+    assert.isNotNull(publication);
+    for (var n = 0; n < publication.length; n++) {
+      const publicationItem = publication.item(n);
+      const structure = self.childElementByName(publicationItem, "structure");
+      assert.isNotNull(structure);
+      const contents = self.childElementsByName(structure, "content");
+      for (var n2 = 0; n2 < contents.length; n2++) {
+        const content = contents.item(n2);
+        const contentSrc = content.getAttribute("src");
+        if (contentSrc in self.sbMetadata.ingredients && content.hasAttribute("role")) {
+          const role = content.getAttribute("role");
+          const scope = {};
+          scope[role] = [];
+          self.sbMetadata.ingredients[contentSrc]["scope"] = scope;
+        }
+      }
+    }
   }
   
 }
