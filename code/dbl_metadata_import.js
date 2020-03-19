@@ -18,7 +18,7 @@ class DBLImport {
     this.processCountries();
     //this.processFormat();
     this.processNames();
-    //this.processManifest();
+    this.processManifest();
     //this.processSource();
     //this.processPublications();
     this.processCopyright();
@@ -345,6 +345,27 @@ class DBLImport {
     }
     console.log(promotionJson);
     self.sbMetadata.promotion = promotionJson;
+  }
+
+  processManifest() {
+    const self = this;
+    const manifest = self.childElementByName(self.root, "manifest");
+    assert.isNotNull(manifest);
+    const ingredientsJson = {};
+    const resources = self.childElementsByName(manifest, "resource");
+    if (resources.length > 0) {
+      for (var n = 0; n < resources.length; n++) {
+        const resource = resources.item(n);
+        ingredientsJson[resource.getAttribute("uri")] = {
+          "checksum": {
+            "md5": resource.getAttribute("checksum")
+          },
+          "mimeType": resource.getAttribute("mimeType"),
+          "size": parseInt(resource.getAttribute("size"))
+        }
+      }
+    }
+    self.sbMetadata["ingredients"] = ingredientsJson;
   }
   
 }
