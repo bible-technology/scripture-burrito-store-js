@@ -22,7 +22,7 @@ class DBLImport {
     //this.processSource();
     //this.processPublications();
     this.processCopyright();
-    //this.processPromotion();
+    this.processPromotion();
     this.processArchiveStatus();
   }
 
@@ -321,6 +321,30 @@ class DBLImport {
     }
     console.log(copyrightJson);
     self.sbMetadata.copyright = copyrightJson;
+  }
+  
+  processPromotion() {
+    const self = this;
+    const promotion = self.childElementByName(self.root, "promotion");
+    assert.isNotNull(promotion);
+    const promotionJson = {};
+    const promoVersionInfos = self.childElementsByName(promotion, "promoVersionInfo");
+    if (promoVersionInfos.length > 0) {
+      for (var n = 0; n < promoVersionInfos.length; n++) {
+        const promoVersionInfo = promoVersionInfos.item(n);
+        const contentType = promoVersionInfo.getAttribute("contentType");
+        assert.isNotNull(contentType);
+        if (contentType == "xhtml") {
+          var serialize = this.serializer.serializeToString(promoVersionInfo);
+          serialize = serialize.replace(new RegExp("^[^>]+>"), "").replace(new RegExp("<[^<]+$"), "");
+          promotionJson["statementRich"] = serialize.trim();
+        } else {
+          promotionJson["statementPlain"] = promoVersionInfo.childNodes[0].nodeValue;
+        }
+      }
+    }
+    console.log(promotionJson);
+    self.sbMetadata.promotion = promotionJson;
   }
   
 }
