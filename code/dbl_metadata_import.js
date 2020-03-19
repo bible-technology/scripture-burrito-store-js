@@ -356,12 +356,14 @@ class DBLImport {
     if (resources.length > 0) {
       for (var n = 0; n < resources.length; n++) {
         const resource = resources.item(n);
-        ingredientsJson[resource.getAttribute("uri")] = {
-          "checksum": {
-            "md5": resource.getAttribute("checksum")
-          },
-          "mimeType": resource.getAttribute("mimeType"),
-          "size": parseInt(resource.getAttribute("size"))
+        if (resource.getAttribute("uri") != "source/source.zip") {
+          ingredientsJson[resource.getAttribute("uri")] = {
+            "checksum": {
+              "md5": resource.getAttribute("checksum")
+            },
+            "mimeType": resource.getAttribute("mimeType"),
+            "size": parseInt(resource.getAttribute("size"))
+          }
         }
       }
     }
