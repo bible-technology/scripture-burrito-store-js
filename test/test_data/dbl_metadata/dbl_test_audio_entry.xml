@@ -1,0 +1,127 @@
+<DBLMetadata version="2.1" id="6e0d81a24efbb679" revision="9">
+  <identification>
+    <name>TEST Audio Bible</name>
+    <nameLocal>TEST Audio Bible - Local</nameLocal>
+    <description>TEST Audio Bible - Description</description>
+    <abbreviation>DBLTD</abbreviation>
+    <scope>New Testament</scope>
+    <bundleProducer>Paratext/8.0.30.1</bundleProducer>
+  </identification>
+  <type>
+    <medium>audio</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>false</hasCharacters>
+    <isTranslation>false</isTranslation>
+    <isExpression>true</isExpression>
+    <dramatization>Dramatized</dramatization>
+  </type>
+  <relationships>
+    <relation id="2880c78491b2f8ce" revision="89" type="text" relationType="source"/>
+  </relationships>
+  <agencies>
+    <rightsHolder>
+      <abbr>TEST</abbr>
+      <url>http://thedigitalbiblelibrary.org</url>
+      <uid>54650cfa5117ad690fb05fb6</uid>
+      <name>Organization for DBL Testing</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>false</publication>
+      <management>false</management>
+      <finance>false</finance>
+      <qa>false</qa>
+      <uid>54650ce75117ad68c4c49e91</uid>
+      <name>Test Creator</name>
+    </contributor>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <finance>false</finance>
+      <qa>false</qa>
+      <uid>54650ce85117ad68c4c49e99</uid>
+      <name>Test Publisher</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>en</ldml>
+  </language>
+  <countries>
+    <country>
+      <iso>US</iso>
+      <name>United States</name>
+    </country>
+  </countries>
+  <format>
+    <compression>MP3</compression>
+    <trackConfiguration>2/0 (Stereo)</trackConfiguration>
+    <bitRate>128000</bitRate>
+    <bitDepth>16</bitDepth>
+    <samplingRate>44100</samplingRate>
+  </format>
+  <names>
+    <name id="book-gen">
+      <abbr>Gn</abbr>
+      <short>Genesis</short>
+      <long>Genesis</long>
+    </name>
+    <name id="book-mat">
+      <abbr>Mt</abbr>
+      <short>Matthew</short>
+      <long>The Gospel according to Matthew</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="b5fd441feb7eed02c68dca3d8dbbfe80" mimeType="audio/mpeg" size="10168353" uri="release/audio/GEN/GEN_001.mp3"/>
+    <resource checksum="d8737c9c4339b95ab0c876a6867415af" mimeType="audio/mpeg" size="7977633" uri="release/audio/GEN/GEN_002.mp3"/>
+    <resource checksum="e5d4e332ac7070a66915ce2f898f85f6" mimeType="audio/mpeg" size="9992673" uri="release/audio/GEN/GEN_003.mp3"/>
+    <resource checksum="48e2d311b4de8a61b1f311ddb2be970f" mimeType="audio/mpeg" size="8399073" uri="release/audio/MAT/MAT_001.mp3"/>
+    <resource checksum="f5fad0278058706de82fdcc800da83ff" mimeType="audio/mpeg" size="10095393" uri="release/audio/MAT/MAT_002.mp3"/>
+    <resource checksum="8019d42da92d9ad42be0e0c75ef4fddb" mimeType="audio/mpeg" size="6794913" uri="release/audio/MAT/MAT_003.mp3"/>
+</manifest>
+  <source/>
+  <publications>
+    <publication id="p1">
+      <canonicalContent>
+        <book code="GEN"/>
+        <book code="MAT"/>
+      </canonicalContent>
+      <structure>
+        <division name="book-gen">
+          <content src="release/audio/GEN/GEN_001.mp3" role="GEN 1"/>
+          <content src="release/audio/GEN/GEN_002.mp3" role="GEN 2"/>
+          <content src="release/audio/GEN/GEN_003.mp3" role="GEN 3"/>
+        </division>
+        <division name="book-mat">
+          <content src="release/audio/MAT/MAT_001.mp3" role="MAT 1"/>
+          <content src="release/audio/MAT/MAT_002.mp3" role="MAT 2"/>
+          <content src="release/audio/MAT/MAT_003.mp3" role="MAT 3"/>
+        </division>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Test Copyright. All rights reserved.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>Audio background and promotion information.</p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Eric Pyle</archivistName>
+    <dateArchived>2015-02-26T22:32:52.214958</dateArchived>
+    <dateUpdated>2018-03-15T19:38:40.762935</dateUpdated>
+    <comments>Updated with working audio files for GEN 1-3 and MAT 1-3, test browser open on success</comments>
+  </archiveStatus>
+</DBLMetadata>
