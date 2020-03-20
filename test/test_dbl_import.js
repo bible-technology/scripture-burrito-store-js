@@ -15,15 +15,27 @@ describe("DBL Import", function() {
     this.testDataDir = path.join(__dirname, "test_data");
     const dblMetadataDir = path.join(this.testDataDir, "dbl_metadata");
     this.domParser = new xmldom.DOMParser();
-    this.dblTestEntry = this.domParser.parseFromString(
-      fse.readFileSync(path.join(dblMetadataDir, "dbl_test_entry.xml"), "utf8"),
+    this.dblTextTestEntry = this.domParser.parseFromString(
+      fse.readFileSync(path.join(dblMetadataDir, "dbl_test_text_entry.xml"), "utf8"),
+      'text/xml'
+    );
+    this.dblAudioTestEntry = this.domParser.parseFromString(
+      fse.readFileSync(path.join(dblMetadataDir, "dbl_test_audio_entry.xml"), "utf8"),
       'text/xml'
     );
   });
     
-    it("Convert DBL Test Entry", function() {
-      const converted = new DBLImport(this.dblTestEntry);
-      console.log(JSON.stringify(converted.sbMetadata.type, null, 2));
+    it("Convert DBL Test Text Entry", function() {
+      const converted = new DBLImport(this.dblTextTestEntry);
+      // console.log(JSON.stringify(converted.sbMetadata.type, null, 2));
+      const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
+      // console.log(validationResult);
+      assert.equal(validationResult.result, "accepted");
+    });
+
+    it("Convert DBL Test Audio Entry", function() {
+      const converted = new DBLImport(this.dblAudioTestEntry);
+      console.log(JSON.stringify(converted.sbMetadata.ingredients, null, 2));
       const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
       console.log(validationResult);
       assert.equal(validationResult.result, "accepted");

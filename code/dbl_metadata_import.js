@@ -54,7 +54,8 @@ class DBLImport {
 
   flavorName(medium) {
     const lookup = {
-      "text": "textTranslation"
+      "text": "textTranslation",
+      "audio": "audioTranslation"
     };
     if (medium in lookup) {
       return lookup[medium];
@@ -319,39 +320,43 @@ class DBLImport {
     const typeJson = {
       "flavorType": {
         "name": "scripture",
-        "canonType": ["ot", "nt"],
-        "canonSpec": {
-          "ot": {
-            "name": "western"
-          },
-          "nt": {
-            "name": "western"
-          }
-        },
-        "flavor": {
-          "usfmVersion": "3.0"
-        }
+        "flavor": {}
       }
     };
     const medium = self.childElementByName(type, "medium");
     assert.isNotNull(medium);
     const flavorName = this.flavorName(medium.childNodes[0].nodeValue);
     typeJson["flavorType"]["flavor"]["name"] = flavorName;
+    typeJson["flavorType"]["canonType"] = ["ot", "nt"];
+    typeJson["flavorType"]["canonSpec"] = {
+      "ot": {
+        "name": "western"
+      },
+      "nt": {
+        "name": "western"
+      }
+    };
     if (flavorName == "textTranslation") {
+      typeJson["flavorType"]["flavor"]["usfmVersion"] = "3.0";
       const translationType = self.childElementByName(type, "translationType");
       assert.isNotNull(translationType);
       typeJson["flavorType"]["flavor"]["translationType"] = this.translationType(translationType.childNodes[0].nodeValue);
       const audience = self.childElementByName(type, "audience");
       assert.isNotNull(audience);
       typeJson["flavorType"]["flavor"]["audience"] = this.audience(audience.childNodes[0].nodeValue);
-      self.sbMetadata["type"] = typeJson;
       const projectType = self.childElementByName(type, "projectType");
       if (projectType) {
         typeJson["flavorType"]["flavor"]["projectType"] = this.projectType(projectType.childNodes[0].nodeValue);
       } else {
         typeJson["flavorType"]["flavor"]["projectType"] = "standard";
       }
+    } else if (flavorName == "audioTranslation") {
+      typeJson["flavorType"]["flavor"]["dramatization"] = "singleVoice"; 
+    } else {
+      throw new Error("Unknown medium");
     }
+    self.sbMetadata["type"] = typeJson;
+
     // Confidentiality
     const isConfidential = self.childElementByName(type, "isConfidential");
     assert.isNotNull(isConfidential);
@@ -456,7 +461,7 @@ class DBLImport {
   }
 
   processPublications() {
-    // Todo - everything apart from setting whole book roles for ingredients with no divisions
+    // Todo - everything apart from setting roles for text and audio ingredients
     const self = this;
     const publications = self.childElementByName(self.root, "publications");
     assert.isNotNull(publications);
@@ -474,10 +479,10 @@ class DBLImport {
         if (contentSrc in self.sbMetadata.ingredients && content.hasAttribute("role")) {
           const role = content.getAttribute("role");
           const scope = {};
-          scope[role] = [];
+          scope[role.substring(0, 3)] = (role.length == 3 ? [] : [role.substring(4)]);
           self.sbMetadata.ingredients[contentSrc]["scope"] = scope;
-          if (!(role in currentScopeJson)) {
-            currentScopeJson[role] = [];
+          if (!(role.substring(0, 3) in currentScopeJson)) {
+            currentScopeJson[role.substring(0, 3)] = [];
           }
         }
       }

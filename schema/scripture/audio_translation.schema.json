@@ -25,6 +25,10 @@
     }
   },
   "properties": {
+    "name": {
+      "type": "string",
+      "const": "audioTranslation"
+    },
     "dramatization": {
       "type": "string",
       "enum": ["dramatized", "nonDramatized", "singleVoice"]
