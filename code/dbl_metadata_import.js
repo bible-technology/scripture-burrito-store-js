@@ -12,8 +12,8 @@ class DBLImport {
     this.processRoot();
     this.processLanguage();
     this.processIdentification();
-    this.processType();
     //this.processRelationships();
+    this.processType();
     this.processAgencies();
     this.processCountries();
     //this.processFormat();
@@ -52,9 +52,40 @@ class DBLImport {
     }
   }
 
+  flavorName(medium) {
+    const lookup = {
+      "text": "textTranslation"
+    };
+    if (medium in lookup) {
+      return lookup[medium];
+    } else {
+      return medium;
+    }
+  }
+
   translationType(str) {
     const lookup = {
+      "First": "firstTranslation",
+      "New": "newTranslation",
       "Revision": "revision"
+    };
+    if (str in lookup) {
+      return lookup[str];
+    } else {
+      return str;
+    }
+  }
+
+  projectType(str) {
+    const lookup = {
+      "Standard": "standard",
+      "Daughter": "daughter",
+      "StudyBible": "studyBible",
+      "StudyBibleAdditions": "studyBibleAdditions",
+      "BackTranslation": "backTranslation",
+      "Auxillary": "auxillary",
+      "TransliterationManual": "transliterationManual",
+      "TransliterationWithEncoder": "transliterationWithEncoder"
     };
     if (str in lookup) {
       return lookup[str];
@@ -65,7 +96,12 @@ class DBLImport {
 
   audience(str) {
     const lookup = {
-      "Common": "common"
+      "Basic": "basic",
+      "Common": "common",
+      "Common - Literary": "common-literary",
+      "Literary": "literary",
+      "Liturgical": "liturgical",
+      "Children": "children"
     };
     if (str in lookup) {
       return lookup[str];
@@ -276,44 +312,46 @@ class DBLImport {
   }
 
   processType() {
-    // Todo - currentScope; correct enums
+    // Todo - canonType/canonSpec
     const self = this;
     const type = self.childElementByName(self.root, "type");
     assert.isNotNull(type);
     const typeJson = {
       "flavorType": {
         "name": "scripture",
-        "currentScope": {
-          "GEN": [],
-          "EXO": ["1", "3-12", "13:4", "14:3-8", "15:8-16:2"],
-          "LEV": ["2-3"],
-          "MAT": ["1", "5", "7-11"]
-        },
         "canonType": ["ot", "nt"],
         "canonSpec": {
           "ot": {
             "name": "western"
           },
           "nt": {
-            "name": "x-matthewOnlyMillenialists",
-            "books": ["MAT"]
+            "name": "western"
           }
         },
         "flavor": {
-          "name": "textTranslation",
-          "projectType": "standard",
           "usfmVersion": "3.0"
         }
       }
     };
-    const translationType = self.childElementByName(type, "translationType");
-    assert.isNotNull(translationType);
-    typeJson["flavorType"]["flavor"]["translationType"] = this.translationType(translationType.childNodes[0].nodeValue);
-    const audience = self.childElementByName(type, "audience");
-    assert.isNotNull(audience);
-    typeJson["flavorType"]["flavor"]["audience"] = this.audience(audience.childNodes[0].nodeValue);
-    self.sbMetadata["type"] = typeJson;
-
+    const medium = self.childElementByName(type, "medium");
+    assert.isNotNull(medium);
+    const flavorName = this.flavorName(medium.childNodes[0].nodeValue);
+    typeJson["flavorType"]["flavor"]["name"] = flavorName;
+    if (flavorName == "textTranslation") {
+      const translationType = self.childElementByName(type, "translationType");
+      assert.isNotNull(translationType);
+      typeJson["flavorType"]["flavor"]["translationType"] = this.translationType(translationType.childNodes[0].nodeValue);
+      const audience = self.childElementByName(type, "audience");
+      assert.isNotNull(audience);
+      typeJson["flavorType"]["flavor"]["audience"] = this.audience(audience.childNodes[0].nodeValue);
+      self.sbMetadata["type"] = typeJson;
+      const projectType = self.childElementByName(type, "projectType");
+      if (projectType) {
+        typeJson["flavorType"]["flavor"]["projectType"] = this.projectType(projectType.childNodes[0].nodeValue);
+      } else {
+        typeJson["flavorType"]["flavor"]["projectType"] = "standard";
+      }
+    }
     // Confidentiality
     const isConfidential = self.childElementByName(type, "isConfidential");
     assert.isNotNull(isConfidential);
@@ -357,9 +395,11 @@ class DBLImport {
         if (contentType == "xhtml") {
           var serialize = this.serializer.serializeToString(statementContent);
           serialize = serialize.replace(new RegExp("^[^>]+>"), "").replace(new RegExp("<[^<]+$"), "");
-          copyrightJson["fullStatementRich"] = {"en": serialize.trim()};
+          copyrightJson["fullStatementRich"] = {};
+          copyrightJson["fullStatementRich"][self.bcp47Local] = serialize.trim();
         } else {
-          copyrightJson["fullStatementPlain"] = {"en": statementContent.childNodes[0].nodeValue};
+          copyrightJson["fullStatementPlain"] = {};
+          copyrightJson["fullStatementPlain"][self.bcp47Local] = statementContent.childNodes[0].nodeValue;
         }
       }
     }
@@ -380,9 +420,11 @@ class DBLImport {
         if (contentType == "xhtml") {
           var serialize = this.serializer.serializeToString(promoVersionInfo);
           serialize = serialize.replace(new RegExp("^[^>]+>"), "").replace(new RegExp("<[^<]+$"), "");
-          promotionJson["statementRich"] = serialize.trim();
+          promotionJson["statementRich"] = {};
+          promotionJson["statementRich"][self.bcp47Local] = serialize.trim();
         } else {
-          promotionJson["statementPlain"] = promoVersionInfo.childNodes[0].nodeValue;
+          promotionJson["statementPlain"] = {};
+          promotionJson["statementPlain"][self.bcp47Local] = promoVersionInfo.childNodes[0].nodeValue;
         }
       }
     }
@@ -420,6 +462,7 @@ class DBLImport {
     assert.isNotNull(publications);
     const publication = self.childElementsByName(publications, "publication");
     assert.isNotNull(publication);
+    const currentScopeJson = {};
     for (var n = 0; n < publication.length; n++) {
       const publicationItem = publication.item(n);
       const structure = self.childElementByName(publicationItem, "structure");
@@ -433,9 +476,13 @@ class DBLImport {
           const scope = {};
           scope[role] = [];
           self.sbMetadata.ingredients[contentSrc]["scope"] = scope;
+          if (!(role in currentScopeJson)) {
+            currentScopeJson[role] = [];
+          }
         }
       }
     }
+    self.sbMetadata.type.flavorType["currentScope"] = currentScopeJson;
   }
   
 }
