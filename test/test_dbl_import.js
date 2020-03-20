@@ -7,6 +7,7 @@ const fse = require('fs-extra');
 const xmldom = require('xmldom');
 
 const DBLImport = require('../code/dbl_metadata_import.js').DBLImport;
+const BurritoValidator = require('../code/burrito_validator.js').BurritoValidator;
 
 describe("DBL Import", function() {
 
@@ -22,7 +23,10 @@ describe("DBL Import", function() {
     
     it("Convert DBL Test Entry", function() {
       const converted = new DBLImport(this.dblTestEntry);
-      console.log(JSON.stringify(converted.sbMetadata, null, 2));
+      // console.log(JSON.stringify(converted.sbMetadata, null, 2));
+      const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
+      console.log(validationResult);
+      assert.equal(validationResult.result, "accepted");
     });
 
 });
