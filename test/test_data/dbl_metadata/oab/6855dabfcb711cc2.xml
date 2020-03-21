@@ -1,0 +1,131 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="6855dabfcb711cc2" revision="1">
+  <identification>
+    <name>Blackfoot Gospel of Matthew [bla] Canada</name>
+    <nameLocal>ŎKHS' I TSĬN IK SĬN NI ST. MATTHEW OT SĬN AI PI.</nameLocal>
+    <description>The Gospel of Matthew in the Blackfoot language of Canada</description>
+    <abbreviation>BLA</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>1890-01-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.100.38</bundleProducer>
+    <systemId type="paratext">
+      <id>6855dabfcb711cc277eb95564917d753c19d79fd</id>
+      <csetId>af96036cb26943de3d56e41c1a297dace3f57a75</csetId>
+      <name>bla1890</name>
+      <fullName>Blackfoot Gospel of Matthew [bla] Canada</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>FLF6nYjvXJaP8P5eq</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>eBible.org</abbr>
+      <url>http://eBible.org</url>
+      <nameLocal>eBible.org</nameLocal>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>http://eBible.org</url>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>54650ccc5117ad67b3826e8f</uid>
+      <name>British &amp; Foreign Bible Society</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>bla</iso>
+    <name>Siksika</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>bla-Latn-019</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>CA</iso>
+      <name>Canada</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>MATTHEW</abbr>
+      <short>ST. MATTHEW</short>
+      <long>ŎKHS' I TSĬN IK SĬN NI ST. MATTHEW OT SĬN AI PI.</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="57146abaaaef11a25613479ff0af4d17" mimeType="application/xml" size="174215" uri="MAT.usx"/>
+      </container>
+      <resource checksum="38687f34647e6496c82a4076b652faf7" mimeType="application/xml" size="1018" uri="bla-Latn-019.ldml"/>
+      <resource checksum="66f1794021934be7a640191b73b494d8" mimeType="application/octet-stream" size="1755052" uri="gentium_plus.ttf"/>
+      <resource checksum="b9ecd5585b1e94297b5ea916905408c0" mimeType="application/xml" size="78095" uri="styles.xml"/>
+      <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="text/plain" size="15364" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="a62dd273e65cf3f7f6811a9f57d3fbd3" mimeType="application/zip" size="11171556" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="MAT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>Blackfoot Matthew</name>
+      <description>common</description>
+      <descriptionLocal>common</descriptionLocal>
+      <abbreviation>bla1890</abbreviation>
+      <canonicalContent>
+        <book code="MAT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>This work is in the Public Domain due to copyright expiration. It was translated by Rev. John William Tims and published in 1890 by the British and Foreign Bible Society.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>For updates and typo reports, please see <a href="https://eBible.org">eBible.org</a>.</p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Michael Johnson</archivistName>
+    <dateArchived>2017-12-07T22:58:33.002089</dateArchived>
+    <dateUpdated>2017-12-07T22:58:33.002089</dateUpdated>
+    <comments>Initial submission</comments>
+  </archiveStatus>
+</DBLMetadata>

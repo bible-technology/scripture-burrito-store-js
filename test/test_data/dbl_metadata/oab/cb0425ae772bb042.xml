@@ -1,0 +1,362 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="cb0425ae772bb042" revision="2">
+  <identification>
+    <name>The New Testament in Ndamba</name>
+    <nameLocal>Lilaghanu lya shonu</nameLocal>
+    <description>Ndamba New Testament</description>
+    <abbreviation>NdBV</abbreviation>
+    <scope>New Testament</scope>
+    <bundleProducer>Paratext/7.5.52.71</bundleProducer>
+    <systemId type="paratext">
+      <id>cb0425ae772bb042408f5b665632ffe762b80ea9</id>
+      <name>NBVU</name>
+      <fullName>Ndamba Bible Version Unicode</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsHolder>
+      <abbr>TWFTW</abbr>
+      <url>www.twftw.org</url>
+      <nameLocal>The Word for the World</nameLocal>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word For The World</name>
+    </rightsHolder>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word For The World</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>ndj</iso>
+    <name>Ndamba</name>
+    <script>Roman</script>
+    <scriptCode>Zzzz</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>ndj-Latn-TZ</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>TZ</iso>
+      <name>Tanzania</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mat</abbr>
+      <short>Mateyi</short>
+      <long>Chilongu ngimu wuchiyandikiwili na Mateyi</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mlk</abbr>
+      <short>Maliku</short>
+      <long>Chilongu ngimu wuchiyandikiwili na Maliku</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Lukasi</short>
+      <long>Chilongu ngimu wuchiyandikiwili na Lukasi</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Yhn</abbr>
+      <short>Yohani</short>
+      <long>Chilongu ngimu wuchiyandikiwili na Yohani</long>
+    </name>
+    <name id="book-act">
+      <abbr>Fgl</abbr>
+      <short>Figoli</short>
+      <long>Figoli fya Vandundami</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Vlm</abbr>
+      <short>Valoma</short>
+      <long>Baluwa ya Pauli kwa Valoma</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Vkl</abbr>
+      <short>Vakolindu</short>
+      <long>Baluwa ya kwaa ya Pauli kwa Vakolindu</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Vkl</abbr>
+      <short>Vakolindu</short>
+      <long>Baluwa ya pili ya Pauli kwa Vakolindu</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Vag</abbr>
+      <short>Vagalatiya</short>
+      <long>Baluwa ya Pauli kwa Vagalatiya</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Vfs</abbr>
+      <short>Vaifesu</short>
+      <long>Baluwa ya Pauli kwa Vaifesu</long>
+    </name>
+    <name id="book-php">
+      <abbr>Vfp</abbr>
+      <short>Vafilipi</short>
+      <long>Baluwa ya Pauli kwa Vafilipi</long>
+    </name>
+    <name id="book-col">
+      <abbr>Vks</abbr>
+      <short>Vakolusayi</short>
+      <long>Baluwa Ya Paulo Kwa Vakolusayi</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Vtk</abbr>
+      <short>1 Vatesaloniki</short>
+      <long>Baluwa ya Kwaa ya Paulo kwa Vatesaloniki</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Vtk</abbr>
+      <short>2 Vatesaloniki</short>
+      <long>Baluwa ya pili ya Pauli kwa Vatesaloniki</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Tmt</abbr>
+      <short>1 Timotewu</short>
+      <long>Baluwa ya kwaa ya Pauli kwa Timotewu</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Tmt</abbr>
+      <short>2 Timotewu</short>
+      <long>Baluwa ya pili ya Pauli kwa Timotewu</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tit</abbr>
+      <short>Titusi</short>
+      <long>Baluwa ya Pauli kwa Titusi</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Flm</abbr>
+      <short>Filimoni</short>
+      <long>Baluwa ya Pauli kwa Filimoni</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Vbl</abbr>
+      <short>Vayibulaniya</short>
+      <long>Baluwa kwa Vayibulaniya</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Ykb</abbr>
+      <short>Yakobi</short>
+      <long>Baluwa ya Yakobi</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Ptl</abbr>
+      <short>1 Petili</short>
+      <long>Baluwa ya kwaa ya Petili</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Ptl</abbr>
+      <short>2 Petili</short>
+      <long>Baluwa ya pili ya Petili</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Yhn</abbr>
+      <short>1 Yohani</short>
+      <long>Baluwa ya kwaa ya Yohani</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Yhn</abbr>
+      <short>2 Yohani</short>
+      <long>Baluwa ya pili ya Yohani</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Yhn</abbr>
+      <short>3 Yohani</short>
+      <long>Baluwa ya tatu ya Yohani</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Yud</abbr>
+      <short>Yuda</short>
+      <long>Baluwa ya Yuda</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Ugl</abbr>
+      <short>Ugubutulu</short>
+      <long>Ugubutulu wagayiliwili Yohani</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="44dc3a314e396c987068829dcd489e34" mimeType="application/octet-stream" size="908" uri="release/Ndamba.lds"/>
+    <resource checksum="6be46aa6de2777947a18a64396baa53d" mimeType="application/xml" size="77643" uri="release/USX_1/1CO.usx"/>
+    <resource checksum="2c8d2174fda1cb4b021434e3e05b69c4" mimeType="application/xml" size="21840" uri="release/USX_1/1JN.usx"/>
+    <resource checksum="d021838a77b61adfb7d4861a812b8c5d" mimeType="application/xml" size="23253" uri="release/USX_1/1PE.usx"/>
+    <resource checksum="cc1c716fd4b288885210257ea9267eb3" mimeType="application/xml" size="17537" uri="release/USX_1/1TH.usx"/>
+    <resource checksum="34f12d17b1b2d66facdf94ed475ef3c3" mimeType="application/xml" size="23771" uri="release/USX_1/1TI.usx"/>
+    <resource checksum="c35899a64ccc0ae0b60c3c675c47b5f8" mimeType="application/xml" size="50572" uri="release/USX_1/2CO.usx"/>
+    <resource checksum="aac34d3c7b55f6da97bda8f1dc2bb331" mimeType="application/xml" size="4625" uri="release/USX_1/2JN.usx"/>
+    <resource checksum="a8bd9128d3b5000e5a8bba45033cdcd5" mimeType="application/xml" size="14372" uri="release/USX_1/2PE.usx"/>
+    <resource checksum="85671541b0a1d41d5ce73ee96113cb38" mimeType="application/xml" size="10699" uri="release/USX_1/2TH.usx"/>
+    <resource checksum="f239ea00db0b8923c1d38a0c6b5e1d0a" mimeType="application/xml" size="17286" uri="release/USX_1/2TI.usx"/>
+    <resource checksum="4aaeb875a210cd5778896057da0d5c51" mimeType="application/xml" size="4411" uri="release/USX_1/3JN.usx"/>
+    <resource checksum="1b1078e1eaa6cfef30526241bd86bbe8" mimeType="application/xml" size="187395" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="f908b516b27a27f1675aa89e1dd71f14" mimeType="application/xml" size="19467" uri="release/USX_1/COL.usx"/>
+    <resource checksum="7811ea2cd2ef81c79f24a6a121196273" mimeType="application/xml" size="27902" uri="release/USX_1/EPH.usx"/>
+    <resource checksum="0d9883a46f56c48b2b7a59b42be0638e" mimeType="application/xml" size="30023" uri="release/USX_1/GAL.usx"/>
+    <resource checksum="47d53cdbf0574e46e534387a07c701a2" mimeType="application/xml" size="63839" uri="release/USX_1/HEB.usx"/>
+    <resource checksum="aff9054373e691dd5dda97d1147586c9" mimeType="application/xml" size="21768" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="ece79e0466af0319c02cb41a3e7d3c54" mimeType="application/xml" size="151021" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="9963acbdace3d290f69fda20b29dc027" mimeType="application/xml" size="7905" uri="release/USX_1/JUD.usx"/>
+    <resource checksum="67d41963436975f1f043499c90b3c485" mimeType="application/xml" size="210487" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="07e3eb43633206ce26d622df840e7d32" mimeType="application/xml" size="199353" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="1f7890a441e477e4dc30cff78d269d6e" mimeType="application/xml" size="126957" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="2d30f4a9460e5777cc7bae0f1c2c278c" mimeType="application/xml" size="5636" uri="release/USX_1/PHM.usx"/>
+    <resource checksum="a1a88290f12fdf27a150ca94d9e480f1" mimeType="application/xml" size="20952" uri="release/USX_1/PHP.usx"/>
+    <resource checksum="aa64c137c2b26fcd800e5e6a88bebede" mimeType="application/xml" size="92912" uri="release/USX_1/REV.usx"/>
+    <resource checksum="5bdd0d457490dde960d1901b81f0c10c" mimeType="application/xml" size="83510" uri="release/USX_1/ROM.usx"/>
+    <resource checksum="ba668e34adac5927d9e1f2c31e9b4376" mimeType="application/xml" size="10974" uri="release/USX_1/TIT.usx"/>
+    <resource checksum="0591b92b4911111517b30b9841319240" mimeType="application/octet-stream" size="4270" uri="release/ndj-Latn-TZ.ldml"/>
+    <resource checksum="7648d2be4381fcb30566811002d2d4ef" mimeType="application/xml" size="77884" uri="release/styles.xml"/>
+    <resource checksum="2bed9d945808683b8df9acebabe23429" mimeType="application/octet-stream" size="13138" uri="release/versification.vrs"/>
+    <resource checksum="8e960e1bcaa6c628566d43e57778fbd3" mimeType="application/zip" size="837667" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <descriptionLocal>Ndamba New Testament</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>©  The Word For The World and Pioneer Bible Translators, 2014</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <h1>Ndamba &amp; The New Testament in Ndamba</h1>
+      <p>This translation, published by The Word for the World Bible Translators and Pioneer Bible Translators, was published in 2014.</p>
+      <p>If you are interested in obtaining a printed copy, please contact The Word for the World Bible Translators at <a href="www.twftw.org">www.twftw.org.</a></p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Kees de Blois -archivist</archivistName>
+    <dateArchived>2014-04-07T10:09:32.981148</dateArchived>
+    <dateUpdated>2014-04-24T19:43:46.408268</dateUpdated>
+    <comments>Changed metadata: TWFTW (Updated to DBL 4.0)</comments>
+  </archiveStatus>
+</DBLMetadata>

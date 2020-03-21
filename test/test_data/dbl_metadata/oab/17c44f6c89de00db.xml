@@ -1,0 +1,359 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="17c44f6c89de00db" revision="4">
+  <identification>
+    <name>Belarusian New Testament and Proverbs</name>
+    <nameLocal>Новы Запавет і Прыповесьці</nameLocal>
+    <description>Belarusan: Новы Запавет і Прыповесьці New Testament+</description>
+    <abbreviation>NTPrv</abbreviation>
+    <abbreviationLocal>НЗПрп</abbreviationLocal>
+    <scope>New Testament+</scope>
+    <dateCompleted>2016-08-18</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.106</bundleProducer>
+    <systemId type="gbc">
+      <id>579fbe5b5117ad1c2c58fdda</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>17c44f6c89de00db2f3ae14c17f9d2e5b52d8e30</id>
+      <csetId>67924ede0308a9b592f9a1fa062624ad0cd32627</csetId>
+      <name>NTPrv</name>
+      <fullName>Belarusian New Testament and Proverbs</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>John the Forerunner Church</abbr>
+      <url>www.belreform.org</url>
+      <nameLocal>John the Forerunner Church of Christians of Evangelical Faith of Minsk City</nameLocal>
+      <uid>5775ac755117ad7af83a3323</uid>
+      <name>John the Forerunner Church of Christians of Evangelical Faith of Minsk City</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>false</qa>
+      <uid>5775ac755117ad7af83a3323</uid>
+      <name>John the Forerunner Church of Christians of Evangelical Faith of Minsk City</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>bel</iso>
+    <name>Belarusian</name>
+    <nameLocal>беларуская</nameLocal>
+    <script>Cyrillic</script>
+    <scriptCode>Cyrl</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>be</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>BY</iso>
+      <name>Belarus</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-pro">
+      <abbr>Прп</abbr>
+      <short>ПРЫПОВЕСЬЦІ</short>
+      <long>КНІГА ПРЫПОВЕСЬЦЯЎ</long>
+    </name>
+    <name id="book-mat">
+      <abbr>Мц</abbr>
+      <short>МАЦЬВЕЯ</short>
+      <long>ЭВАНГЕЛЬЛЕ ПАВОДЛЕ МАЦЬВЕЯ</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Мк</abbr>
+      <short>МАРКА</short>
+      <long>ЭВАНГЕЛЬЛЕ ПАВОДЛЕ МАРКА</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Лк</abbr>
+      <short>ЛУКІ</short>
+      <long>ЭВАНГЕЛЬЛЕ ПАВОДЛЕ ЛУКІ</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Ян</abbr>
+      <short>ЯНА</short>
+      <long>ЭВАНГЕЛЬЛЕ ПАВОДЛЕ ЯНА</long>
+    </name>
+    <name id="book-act">
+      <abbr>Дз</abbr>
+      <short>ДЗЕІ</short>
+      <long>ДЗЕІ АПОСТАЛАЎ</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Рым</abbr>
+      <short>РЫМЛЯНАЎ</short>
+      <long>ПАСЛАНЬНЕ ДА РЫМЛЯНАЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Кар</abbr>
+      <short>1 КАРЫНЬЦЯНАЎ</short>
+      <long>ПЕРШАЕ ПАСЛАНЬНЕ ДА КАРЫНЬЦЯНАЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Кар</abbr>
+      <short>2 КАРЫНЬЦЯНАЎ</short>
+      <long>ДРУГОЕ ПАСЛАНЬНЕ ДА КАРЫНЬЦЯНАЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Гал</abbr>
+      <short>ГАЛЯТАЎ</short>
+      <long>ПАСЛАНЬНЕ ДА ГАЛЯТАЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Эф</abbr>
+      <short>ЭФЭСЦАЎ</short>
+      <long>ПАСЛАНЬНЕ ДА ЭФЭСЦАЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-php">
+      <abbr>Флп</abbr>
+      <short>ФІЛІПЯНАЎ</short>
+      <long>ПАСЛАНЬНЕ ДА ФІЛІПЯНАЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-col">
+      <abbr>Кал</abbr>
+      <short>КАЛАСЯНАЎ</short>
+      <long>ПАСЛАНЬНЕ ДА КАЛАСЯНАЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Тэс</abbr>
+      <short>1 ТЭСАЛОНЦАЎ</short>
+      <long>ПЕРШАЕ ПАСЛАНЬНЕ ДА ТЭСАЛОНЦАЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Тэс</abbr>
+      <short>2 ТЭСАЛОНЦАЎ</short>
+      <long>ДРУГОЕ ПАСЛАНЬНЕ ДА ТЭСАЛОНЦАЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Цім</abbr>
+      <short>1 ЦІМАФЕЯ</short>
+      <long>ПЕРШАЕ ПАСЛАНЬНЕ ДА ЦІМАФЕЯ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Цім</abbr>
+      <short>2 ЦІМАФЕЯ</short>
+      <long>ДРУГОЕ ПАСЛАНЬНЕ ДА ЦІМАФЕЯ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Ціт</abbr>
+      <short>ЦІТА</short>
+      <long>ПАСЛАНЬНЕ ДА ЦІТА АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Флм</abbr>
+      <short>ФІЛІМОНА</short>
+      <long>ПАСЛАНЬНЕ ДА ФІЛІМОНА АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Гебр</abbr>
+      <short>ГЕБРАЯЎ</short>
+      <long>ПАСЛАНЬНЕ ДА ГЕБРАЯЎ АПОСТАЛА ПАЎЛА</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Як</abbr>
+      <short>ЯКУБА</short>
+      <long>ПАЎСЮДНАЕ ПАСЛАНЬНЕ АПОСТАЛА ЯКУБА</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Пт</abbr>
+      <short>1 ПЯТРА</short>
+      <long>ПЕРШАЕ ПАЎСЮДНАЕ ПАСЛАНЬНЕ АПОСТАЛА ПЯТРА</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Пт</abbr>
+      <short>2 ПЯТРА</short>
+      <long>ДРУГОЕ ПАЎСЮДНАЕ ПАСЛАНЬНЕ АПОСТАЛА ПЯТРА</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Ян</abbr>
+      <short>1 ЯНА</short>
+      <long>ПЕРШАЕ ПАЎСЮДНАЕ ПАСЛАНЬНЕ АПОСТАЛА ЯНА</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Ян</abbr>
+      <short>2 ЯНА</short>
+      <long>ДРУГОЕ ПАЎСЮДНАЕ ПАСЛАНЬНЕ АПОСТАЛА ЯНА</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Ян</abbr>
+      <short>3 ЯНА</short>
+      <long>ТРЭЦЯЕ ПАЎСЮДНАЕ ПАСЛАНЬНЕ АПОСТАЛА ЯНА</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Юда</abbr>
+      <short>ЮДЫ</short>
+      <long>ПАЎСЮДНАЕ ПАСЛАНЬНЕ АПОСТАЛА ЮДЫ</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Адкр</abbr>
+      <short>АДКРЫЦЬЦЁ</short>
+      <long>АДКРЫЦЬЦЁ ЯНА БАГАСЛОВА</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="0f083a7e26b221865e8181dc9ca32b16" mimeType="application/octet-stream" size="823" uri="release/Belarusian.lds"/>
+    <resource checksum="9dc6a5e1f3544f743643de398dcc3e04" mimeType="application/xml" size="108647" uri="release/USX_1/1CO.usx"/>
+    <resource checksum="c3ac5ac4f134703282b4fedcc5d07069" mimeType="application/xml" size="28208" uri="release/USX_1/1JN.usx"/>
+    <resource checksum="2e11470d2cebed4bf7bd68ad23316aee" mimeType="application/xml" size="29185" uri="release/USX_1/1PE.usx"/>
+    <resource checksum="1b6e60ff93e11da59dbdcd0c716c7af6" mimeType="application/xml" size="22711" uri="release/USX_1/1TH.usx"/>
+    <resource checksum="59339edb27208588ff405e4f24f5b3d7" mimeType="application/xml" size="29507" uri="release/USX_1/1TI.usx"/>
+    <resource checksum="6e05ea329db2b6b1a75b72fa0fabd1dd" mimeType="application/xml" size="68827" uri="release/USX_1/2CO.usx"/>
+    <resource checksum="ca94103ab1bd0aa9bd7cd25a8f03c275" mimeType="application/xml" size="3827" uri="release/USX_1/2JN.usx"/>
+    <resource checksum="08e32ee34fd60c9d8a0d96a3497eb960" mimeType="application/xml" size="18503" uri="release/USX_1/2PE.usx"/>
+    <resource checksum="f18dee120bb0ebdecd989af3dd82004d" mimeType="application/xml" size="12614" uri="release/USX_1/2TH.usx"/>
+    <resource checksum="242bce372e46d6d54855cf36328f77f5" mimeType="application/xml" size="21368" uri="release/USX_1/2TI.usx"/>
+    <resource checksum="6fc059b9e632ae0783ab5a69914fbbc9" mimeType="application/xml" size="3822" uri="release/USX_1/3JN.usx"/>
+    <resource checksum="1f45a9fe56641eaf1fea559c6aedfe97" mimeType="application/xml" size="271105" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="0d94917eee574aa3f9eac48c0c1721a3" mimeType="application/xml" size="24227" uri="release/USX_1/COL.usx"/>
+    <resource checksum="38b08cf2c6aaed2a6e02cd1d381eba65" mimeType="application/xml" size="37100" uri="release/USX_1/EPH.usx"/>
+    <resource checksum="cb7e944a6fa6826c662724261425051c" mimeType="application/xml" size="37170" uri="release/USX_1/GAL.usx"/>
+    <resource checksum="94b1cc30a8b0c1ee2996fe3878df6326" mimeType="application/xml" size="81274" uri="release/USX_1/HEB.usx"/>
+    <resource checksum="692d57adf49657ab43707a6e53df58c1" mimeType="application/xml" size="28505" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="3e1d08942507311a5d66da6e4502113f" mimeType="application/xml" size="218091" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="7fc80bb71b3eeafba3993186295f039b" mimeType="application/xml" size="7712" uri="release/USX_1/JUD.usx"/>
+    <resource checksum="72589178e4351479c79bf994dda6f95a" mimeType="application/xml" size="291473" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="b7292e645d1d4f7d7f15e7d802dc424a" mimeType="application/xml" size="272174" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="e71adb01a69720adc1af28b2b4821e1d" mimeType="application/xml" size="170891" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="8009546e7542cab8f329b632614f0701" mimeType="application/xml" size="5777" uri="release/USX_1/PHM.usx"/>
+    <resource checksum="dda55706f68b626225767520107a5872" mimeType="application/xml" size="26256" uri="release/USX_1/PHP.usx"/>
+    <resource checksum="5cbea4baf5d1b244b97ad9219c3fe004" mimeType="application/xml" size="198752" uri="release/USX_1/PRO.usx"/>
+    <resource checksum="048c1a9f8b46c290cc04b4e36dd41ce6" mimeType="application/xml" size="125116" uri="release/USX_1/REV.usx"/>
+    <resource checksum="8f57bff4d19e1eba3dfa20060963d666" mimeType="application/xml" size="111375" uri="release/USX_1/ROM.usx"/>
+    <resource checksum="29e6d7aa6af5d7003a400cebf110de85" mimeType="application/xml" size="12303" uri="release/USX_1/TIT.usx"/>
+    <resource checksum="c6ce681eebb6a490e9ab8a476f7db2b2" mimeType="application/octet-stream" size="1777" uri="release/bel_be.ldml"/>
+    <resource checksum="abd518d088b692836eead88627648d2e" mimeType="application/xml" size="82442" uri="release/styles.xml"/>
+    <resource checksum="f4ce2dffd18c70ce1842bf8e719307fa" mimeType="application/octet-stream" size="9112" uri="release/versification.vrs"/>
+    <resource checksum="c87100b3002d1adab0b2a3809bbf3b78" mimeType="application/zip" size="1503349" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="PRO"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>Belarusian New Testament and Proverbs</description>
+      <descriptionLocal>Новы Запавет і Прыповесьці</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="PRO"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-pro" src="release/USX_1/PRO.usx" role="PRO"/>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>©  Antoni Bokun<br/></p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Emma Canales</archivistName>
+    <dateArchived>2016-08-01T21:32:12.192131</dateArchived>
+    <dateUpdated>2016-08-18T18:56:29.414595</dateUpdated>
+    <comments>Updated metadata</comments>
+  </archiveStatus>
+</DBLMetadata>

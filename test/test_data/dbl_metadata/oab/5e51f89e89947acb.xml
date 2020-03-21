@@ -1,0 +1,376 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="5e51f89e89947acb" revision="4">
+  <identification>
+    <name>Aruamu New Testament [msy] Papua New Guinea 2004 DBL</name>
+    <nameLocal>Godɨn Akar Aghuim; Akar Dɨkɨrɨzir Gavgavir Igiam</nameLocal>
+    <description>New Testament in the Aruamu Language for DBL</description>
+    <abbreviation>AruNT04</abbreviation>
+    <scope>New Testament</scope>
+    <dateCompleted>2004-01-01</dateCompleted>
+    <bundleProducer>Paratext/7.5.100.32</bundleProducer>
+    <systemId type="paratext">
+      <id>5e51f89e89947acbea25aae12ca6ea57d9ecc018</id>
+      <name>msyDBL</name>
+      <fullName>Aruamu New Testament [msy] Papua New Guinea 2004 DBL</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>nyhBnM9McdPvafPW4</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsAdmin>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>54650ce35117ad68c4c49e87</uid>
+      <name>Bible Society of Papua New Guinea</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>false</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>msy</iso>
+    <name>Aruamu</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>msy</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mt</abbr>
+      <short>Matyu</short>
+      <long>Matyu Osirizir Akar Aghuim</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mk</abbr>
+      <short>Mak</short>
+      <long>Mak Osirizir Akar Aghuim</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Lu</abbr>
+      <short>Luk</short>
+      <long>Luk Osirizir Akar Aghuim</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Jo</abbr>
+      <short>Jon</short>
+      <long>Jon Osirizir Akar Aghuim</long>
+    </name>
+    <name id="book-act">
+      <abbr>Ap</abbr>
+      <short>Aposel</short>
+      <long>Aposelbar Ingangariba</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Ro</abbr>
+      <short>Rom</short>
+      <long>Akɨnafarir Pol Romɨn Nguibar Ekiamɨn itir Sios bagha Osirizim</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Ko</abbr>
+      <short>1 Korin</short>
+      <long>Akɨnafarir Faragha Zuim, Pol Korinɨn Nguibamɨn itir Sios baghava an Osiri</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Ko</abbr>
+      <short>2 Korin</short>
+      <long>Polɨn Akɨnafarir Namba 2, a Korinɨn Nguibamɨn itir Sios baghava an Osiri</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Ga</abbr>
+      <short>Galesia</short>
+      <long>Akɨnafarir Pol Galesian Provinsɨn itir Sios bagha Osirizim</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Ef</abbr>
+      <short>Efesus</short>
+      <long>Akɨnafarir Pol Efesusɨn Nguibamɨn itir Sios bagha Osirizim</long>
+    </name>
+    <name id="book-php">
+      <abbr>Fl</abbr>
+      <short>Filipai</short>
+      <long>Akɨnafarir Pol Filipain Nguibamɨn itir Sios bagha Osirizim</long>
+    </name>
+    <name id="book-col">
+      <abbr>Kl</abbr>
+      <short>Kolosi</short>
+      <long>Akɨnafarir Pol Kolosin Nguibamɨn itir Sios bagha Osirizim</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Te</abbr>
+      <short>1 Tesalonika</short>
+      <long>Akɨnafarir Faragha Zuim, Pol Tesalonikan Nguibamɨn itir Sios baghava an Osiri</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 e</abbr>
+      <short>2 Tesalonika</short>
+      <long>Akɨnafarir Namba 2, Pol Tesalonikan Nguibamɨn itir Sios baghava an Osiri</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Ti</abbr>
+      <short>1 Timoti</short>
+      <long>Akɨnafarir Faragha Zuim, Pol Timoti baghava an Osiri</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Ti</abbr>
+      <short>2 Timoti</short>
+      <long>Akɨnafarir Namba 2, Pol Timoti baghava an Osiri</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Ta</abbr>
+      <short>Taitus</short>
+      <long>Pol Taitus bagha Osirizir Akɨnafarim</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Fm</abbr>
+      <short>Filemon</short>
+      <long>Pol Filemon bagha Osirizir Akɨnafarim</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Hi</abbr>
+      <short>Hibru</short>
+      <long>Akɨnafarir Hibrun Gumazamiziba bagha Zuim</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Je</abbr>
+      <short>Jems</short>
+      <long>Jems Osirizir Akɨnafarim</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Pi</abbr>
+      <short>1 Pita</short>
+      <long>Pitan Akɨnafarir Faragha Zuim</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Pi</abbr>
+      <short>2 Pita</short>
+      <long>Pitan Akɨnafarir Namba 2</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Jo</abbr>
+      <short>1 Jon</short>
+      <long>Jonɨn Akɨnafarir Faragha Zuim</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Jo</abbr>
+      <short>2 Jon</short>
+      <long>Jonɨn Akɨnafarir Namba 2</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Jo</abbr>
+      <short>3 Jon</short>
+      <long>Jonɨn Akɨnafarir Namba 3</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Ju</abbr>
+      <short>Jut</short>
+      <long>Jut Osirizir Akɨnafarim</long>
+    </name>
+    <name id="book-rev">
+      <abbr>MAA</abbr>
+      <short>Mogomer Akar Aghuriaghɨrɨzim</short>
+      <long>Krais Akar Mogomem a Isa Azenim Gatɨ</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="2bb6152a4d0f4b51cce612e7c07a9a47" mimeType="application/xml" size="112153" uri="1CO.usx"/>
+        <resource checksum="a3bfc4f8caf8e7db7a8643619de644d3" mimeType="application/xml" size="27603" uri="1JN.usx"/>
+        <resource checksum="ffb3449fa88c1f6fa9ae4b1a01ce9cc9" mimeType="application/xml" size="32994" uri="1PE.usx"/>
+        <resource checksum="f528d5484794a929e44331ee2e2b463b" mimeType="application/xml" size="22244" uri="1TH.usx"/>
+        <resource checksum="c8bbcf5d6ebdc17248857db741d1319f" mimeType="application/xml" size="34555" uri="1TI.usx"/>
+        <resource checksum="2c6d4379e6122e6145ec2f8f4b057b07" mimeType="application/xml" size="76570" uri="2CO.usx"/>
+        <resource checksum="334b46aa5aa061bf53210a643488ba62" mimeType="application/xml" size="4068" uri="2JN.usx"/>
+        <resource checksum="746a470b4384bf8050d9edbbaec8453a" mimeType="application/xml" size="19808" uri="2PE.usx"/>
+        <resource checksum="2f4f0925bf9f4535a0b9e15f3e757f5b" mimeType="application/xml" size="13148" uri="2TH.usx"/>
+        <resource checksum="249ee366a5e34835632cbe869419e39c" mimeType="application/xml" size="23030" uri="2TI.usx"/>
+        <resource checksum="0c5d4a5adb96c7ec86f01164bbf62f7d" mimeType="application/xml" size="4107" uri="3JN.usx"/>
+        <resource checksum="8ade0a5b2b154cfb54de83bf4cbd4a6f" mimeType="application/xml" size="242744" uri="ACT.usx"/>
+        <resource checksum="2ee21e42a760c4a4c36bc30e6162b64e" mimeType="application/xml" size="29186" uri="COL.usx"/>
+        <resource checksum="522924628cd8eaa91d6d14cde64e35ed" mimeType="application/xml" size="39611" uri="EPH.usx"/>
+        <resource checksum="1481d2c482bd5f97cd26e46b284098f3" mimeType="application/xml" size="43614" uri="GAL.usx"/>
+        <resource checksum="b6ab554e90f2b5854f85e388ab5be989" mimeType="application/xml" size="99340" uri="HEB.usx"/>
+        <resource checksum="06a53a1b39b0e75dd6664929df0006ef" mimeType="application/xml" size="31506" uri="JAS.usx"/>
+        <resource checksum="59ce334787901aadccf90a730c8bba15" mimeType="application/xml" size="200570" uri="JHN.usx"/>
+        <resource checksum="5a9344548bf0df2c0f1f50dd26995138" mimeType="application/xml" size="8836" uri="JUD.usx"/>
+        <resource checksum="8548db3dcd1529839208e61c3d9b193c" mimeType="application/xml" size="246751" uri="LUK.usx"/>
+        <resource checksum="f5517230ef489cf8dcc001af8b38ae53" mimeType="application/xml" size="262228" uri="MAT.usx"/>
+        <resource checksum="0c2c479b68890c9ece31751b57fbdaae" mimeType="application/xml" size="157853" uri="MRK.usx"/>
+        <resource checksum="958a99b18ecc724f011c6408b9e7394b" mimeType="application/xml" size="7842" uri="PHM.usx"/>
+        <resource checksum="2132af929426b67d9e9f77fb3e5334c5" mimeType="application/xml" size="29062" uri="PHP.usx"/>
+        <resource checksum="9814a2b03c67e73a6df73cadbedc4403" mimeType="application/xml" size="137175" uri="REV.usx"/>
+        <resource checksum="dd85fbd06053cfe226ee514377ad4422" mimeType="application/xml" size="122730" uri="ROM.usx"/>
+        <resource checksum="8e545f2471fb3ef1627417008833a25c" mimeType="application/xml" size="15327" uri="TIT.usx"/>
+      </container>
+      <resource checksum="dbe3c9258def31a9fdda9fb19d93dd34" mimeType="application/xml" size="3162" uri="msy.ldml"/>
+      <resource checksum="7d21e2fcdc59f4acd9c100d3c1826850" mimeType="application/octet-stream" size="44" uri="msy.lds"/>
+      <resource checksum="32d0e544349e5a372e8ecf08b04e0b2b" mimeType="application/xml" size="78800" uri="styles.xml"/>
+      <resource checksum="0c24a78a25d4fe8e7c995449864dce61" mimeType="text/plain" size="13114" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="91643703d2fdc0536c40e914a424280e" mimeType="application/zip" size="1183296" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>Aruamu New Testament</name>
+      <description>New Testament</description>
+      <descriptionLocal>New Testament</descriptionLocal>
+      <abbreviation>AruNT</abbreviation>
+      <abbreviationLocal>AruNT</abbreviationLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>The copyright is jointly held by:</p>
+        <p>Copyright © 2004 by the Bible Society of Papua New Guinea</p>
+        <p>Copyright © 2004 by Pioneer Bible Translators</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <h1>Godɨn Akar Aghuim in the Aruamu Language</h1>
+      <p>This translation was produced by Pioneer Bible Translators, and was published in 2004 by the Bible Society of Papua New Guinea.</p>
+      <p>If you are interested in obtaining a printed copy, please contact the Pioneer Bible Translators at <a href="http://www.pioneerbible.org/">www.pioneerbible.org</a></p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Mike Herchenroeder</archivistName>
+    <dateArchived>2014-01-01T15:43:24.015823</dateArchived>
+    <dateUpdated>2017-12-20T20:11:20.447474</dateUpdated>
+    <comments>Corrected title; updated copyright information (Updated to DBL 4.0), change abbreviation from AruNT to AruNT04</comments>
+  </archiveStatus>
+</DBLMetadata>

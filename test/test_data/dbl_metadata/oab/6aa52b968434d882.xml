@@ -1,0 +1,127 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="6aa52b968434d882" revision="2">
+  <identification>
+    <name>Gospel of Mark - Kianying Balang Lanugage</name>
+    <nameLocal>Mak Kiañiŋ Balaŋ</nameLocal>
+    <description>Kyenele: Mak Kiañiŋ Balaŋ Portions</description>
+    <abbreviation>KBNT</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>1992</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.99</bundleProducer>
+    <systemId type="gbc">
+      <id>5824d5bd5117ad67fde422cb</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>6aa52b968434d882a750c40f96e0fa05f7bb9382</id>
+      <csetId>312c8b3b2296e91002961c5cdeaacf28adfc651c</csetId>
+      <name>kqlDBL</name>
+      <fullName>Kianying Balang Mark for DBL</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>true</qa>
+      <uid>54650ce35117ad68c4c49e87</uid>
+      <name>Bible Society of Papua New Guinea</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>kql</iso>
+    <name>Kyenele</name>
+    <nameLocal>Kiañiŋ Balaŋ</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>kql</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mrk">
+      <short>Mak</short>
+      <long>Mak</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="e891f4157331f9b91a0bba8ee215ca2d" mimeType="application/octet-stream" size="854" uri="release/Kenyang Balang-Unicode.lds"/>
+    <resource checksum="de1a837d6172aaf1d15399b4df359cbf" mimeType="application/xml" size="180085" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="3e4372617e2a8f9489fb67ec96880df1" mimeType="application/octet-stream" size="3576" uri="release/kql.ldml"/>
+    <resource checksum="fba077086d482e7bbbb195ee4d079326" mimeType="application/xml" size="82444" uri="release/styles.xml"/>
+    <resource checksum="ddf86170179e7bda081ca67126790529" mimeType="application/octet-stream" size="13092" uri="release/versification.vrs"/>
+    <resource checksum="d4020ba555129a6b5b226ad1f468f794" mimeType="application/zip" size="168753" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="MRK"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>The Book of Mark - Kianying Balang</name>
+      <nameLocal>Mak - Kiañiŋ Balaŋ</nameLocal>
+      <description>Gospel of Mark</description>
+      <descriptionLocal>Gutnius bilong Mak</descriptionLocal>
+      <canonicalContent>
+        <book code="MRK"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Original electronic version, copyright Pioneer Bible Translators, 1992.</p>
+        <p>Print edition, copyright Bible Society of Papua New Guinea, 1993.</p>
+        <p>
+        <br/>
+      </p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Mike Herchenroeder</archivistName>
+    <dateArchived>2016-11-11T16:45:42.101822</dateArchived>
+    <dateUpdated>2016-11-11T16:45:42.101822</dateUpdated>
+    <comments>Initial upload.</comments>
+  </archiveStatus>
+</DBLMetadata>

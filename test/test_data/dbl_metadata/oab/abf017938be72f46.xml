@@ -1,0 +1,218 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="abf017938be72f46" revision="4">
+  <identification>
+    <name>Morokodo</name>
+    <description>Morokodo: Morokodo Portions</description>
+    <abbreviation>MKD</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>2010-01-01</dateCompleted>
+    <bundleProducer>Paratext/7.5.100.111</bundleProducer>
+    <systemId type="gbc">
+      <id>54f47d4b5117ad3c3080be97</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>abf017938be72f465c8290bb99335cdd99c0392f</id>
+      <csetId>7a3fb18f7e26399c55cb80a8faa000c726ae80ff</csetId>
+      <name>MKD</name>
+      <fullName>Morokodo</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>mgc</iso>
+    <name>Morokodo</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>mgc</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>SS</iso>
+      <name>South Sudan</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-gen">
+      <short>GEN</short>
+    </name>
+    <name id="book-exo">
+      <short>EXO</short>
+    </name>
+    <name id="book-job">
+      <short>JOB</short>
+    </name>
+    <name id="book-psa">
+      <short>Wayeto</short>
+    </name>
+    <name id="book-pro">
+      <short>PRO</short>
+    </name>
+    <name id="book-jer">
+      <short>Yeremaya</short>
+    </name>
+    <name id="book-ezk">
+      <short>EZK</short>
+    </name>
+    <name id="book-dan">
+      <short>Daniyele</short>
+    </name>
+    <name id="book-jol">
+      <short>Yowele</short>
+    </name>
+    <name id="book-mat">
+      <abbr>Mt.</abbr>
+      <short>Matayo</short>
+      <long>Kö'du Yöyö Laka 'ba Yësu ma Matayo ayöru</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mk.</abbr>
+      <short>Marako</short>
+      <long>Kö'du Yöyö Laka 'ba Yësu ma Marako ayöru</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Lk.</abbr>
+      <short>Luka</short>
+    </name>
+    <name id="book-jhn">
+      <abbr>Yn.</abbr>
+      <short>Yowani</short>
+      <long>Kö'du Yöyö Laka 'ba Yësu ma Yowani ayöru</long>
+    </name>
+    <name id="book-act">
+      <short>Lïtuwë</short>
+      <long>Lɔɔ 'ba vo Lïtuwë</long>
+    </name>
+    <name id="book-rom">
+      <short>ROM</short>
+    </name>
+    <name id="book-1co">
+      <short>1CO</short>
+    </name>
+    <name id="book-2co">
+      <short>2CO</short>
+    </name>
+    <name id="book-gal">
+      <short>GAL</short>
+    </name>
+    <name id="book-eph">
+      <short>EPH</short>
+    </name>
+    <name id="book-php">
+      <short>PHP</short>
+    </name>
+    <name id="book-1ti">
+      <short>1TI</short>
+    </name>
+    <name id="book-heb">
+      <short>HEB</short>
+    </name>
+    <name id="book-jas">
+      <short>Yemisi</short>
+      <long>Waraga kazi Yemisi</long>
+    </name>
+    <name id="book-1jn">
+      <short>Yowani</short>
+      <long>Dagba waraga 'ba Yowani</long>
+    </name>
+    <name id="book-2jn">
+      <short>2JN</short>
+    </name>
+    <name id="book-3jn">
+      <short>3JN</short>
+    </name>
+    <name id="book-jud">
+      <short>JUD</short>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="96e9783d256938ffb8bb22d30659385a" mimeType="application/octet-stream" size="926" uri="release/Morokodo.lds"/>
+    <resource checksum="5827fbdf8a17b1658891626d6f683ad4" mimeType="application/xml" size="20557" uri="release/USX_1/1JN.usx"/>
+    <resource checksum="5fc8fc642ced94c833534c0d2e3be3df" mimeType="application/xml" size="188580" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="483ed9ca743564b0a72a3c68c707a916" mimeType="application/xml" size="18926" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="6370de59a2a94f7d91e8cbad1fe5a1bf" mimeType="application/xml" size="152662" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="caa332db6a9a313596db8abb67ad0ae3" mimeType="application/xml" size="199286" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="83692c46c378675fd7c8b8ebf31bba07" mimeType="application/xml" size="128812" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="18deac4b9428f671eaad3387dafc52a4" mimeType="application/octet-stream" size="5920" uri="release/mgc.ldml"/>
+    <resource checksum="a01e36916fe934ed20d564db3bcc9adf" mimeType="application/xml" size="11957" uri="release/styles.xml"/>
+    <resource checksum="2bed9d945808683b8df9acebabe23429" mimeType="application/octet-stream" size="13138" uri="release/versification.vrs"/>
+    <resource checksum="b6e98b7472af058397e4b07e6bdf435f" mimeType="application/zip" size="6626181" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1JN"/>
+      <book code="ACT"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>Portion of Morokodo</description>
+      <descriptionLocal>Portion of Morokodo</descriptionLocal>
+      <canonicalContent>
+        <book code="1JN"/>
+        <book code="ACT"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p> © 2010, Pioneer Bible Translators</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2015-03-03T19:25:50.237512</dateArchived>
+    <dateUpdated>2015-08-07T14:27:26.161487</dateUpdated>
+    <comments>portions</comments>
+  </archiveStatus>
+</DBLMetadata>

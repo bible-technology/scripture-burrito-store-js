@@ -1,0 +1,364 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="c9f3cf58d557a9f3" revision="2">
+  <identification>
+    <name>The New Testament in Zigua</name>
+    <nameLocal>Lagano hya</nameLocal>
+    <description>Zigua</description>
+    <abbreviation>ZiBT</abbreviation>
+    <scope>New Testament</scope>
+    <bundleProducer>Paratext/7.5.52.71</bundleProducer>
+    <systemId type="paratext">
+      <id>c9f3cf58d557a9f3608ebded24f9dc98aead3ae3</id>
+      <name>ZBVU</name>
+      <fullName>Zigua Bible Version Unicode</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsHolder>
+      <abbr>TWFTW</abbr>
+      <url>www.twftw.org</url>
+      <nameLocal>The Word for the World</nameLocal>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word For The World</name>
+    </rightsHolder>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word For The World</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>ziw</iso>
+    <name>Zigua</name>
+    <nameLocal>Zigula</nameLocal>
+    <script>Roman</script>
+    <scriptCode>Zzzz</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>ziw-Latn-TZ</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>TZ</iso>
+      <name>Tanzania</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mat</abbr>
+      <short>Matayo</short>
+      <long>Mbuli yedi iwandikwe ni Matayo</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mak</abbr>
+      <short>Mako</short>
+      <long>Mbuli yedi iwandikwe ni Mako</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Luka</short>
+      <long>Mbuli yedi iwandikwe ni Luka</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Yoh</abbr>
+      <short>Yohana</short>
+      <long>Mbuli yedi iwandikwe ni Yohana</long>
+    </name>
+    <name id="book-act">
+      <abbr>Nten</abbr>
+      <short>Ntendwa</short>
+      <long>Ntendwa za Wasigilwa</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Wal</abbr>
+      <short>Walumi</short>
+      <long>Baluwa ya Paolo kwa</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1Wakol</abbr>
+      <short>1Wakolinto</short>
+      <long>Baluwa ya nkongo ya Paolo kwa Wakolinto</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Wakol</abbr>
+      <short>2 Wakolinto</short>
+      <long>Baluwa ya kaidi ya Paolo kwa</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Wagal</abbr>
+      <short>Wagalatiya</short>
+      <long>Baluwa ya Paolo kwa</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Waefe</abbr>
+      <short>Waefeso</short>
+      <long>Baluwa ya Paolo kwa</long>
+    </name>
+    <name id="book-php">
+      <abbr>Wafil</abbr>
+      <short>Wafilipi</short>
+      <long>Baluwa ya Paolo kwa</long>
+    </name>
+    <name id="book-col">
+      <abbr>Wakol</abbr>
+      <short>Wakolosai</short>
+      <long>Baluwa ya Paolo kwa</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Wases</abbr>
+      <short>1 Wasesalonike</short>
+      <long>Baluwa ya nkongo ya Paolo kwa Wasesalonike</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Wases</abbr>
+      <short>2 Wasesalonike</short>
+      <long>Baluwa ya kaidi ya Paolo kwa Wasesalonike</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Tim</abbr>
+      <short>1 Timoseo</short>
+      <long>Baluwa ya nkongo ya Paolo kwa Timoseo</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Tim</abbr>
+      <short>2 Timoseo</short>
+      <long>Baluwa ya kaidi ya Paolo kwa Timoseo</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tit</abbr>
+      <short>Tito</short>
+      <long>Baluwa ya Paolo kwa Tito</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Fil</abbr>
+      <short>Filemoni</short>
+      <long>Baluwa ya Paolo kwa Filemoni</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Waeb</abbr>
+      <short>Waebulaniya</short>
+      <long>Baluwa kwa Waebulaniya</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Yak</abbr>
+      <short>Yakobo</short>
+      <long>Baluwa iwandikwe ni Yakobo</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Pet</abbr>
+      <short>1 Petulo</short>
+      <long>Baluwa ya nkongo iwandikwe ni Petulo</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Pet</abbr>
+      <short>2 Petulo</short>
+      <long>Baluwa ya kaidi iwandikwe ni Petulo</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Yoh</abbr>
+      <short>1 Yohana</short>
+      <long>Baluwa ya nkongo iwandikwe ni Yohana</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Yoh</abbr>
+      <short>2 Yohana</short>
+      <long>Baluwa ya kaidi iwandikwe ni Yohana</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Yoh</abbr>
+      <short>3 Yohana</short>
+      <long>Baluwa ya katatu iwandikwe ni Yohana</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Yud</abbr>
+      <short>Yuda</short>
+      <long>Baluwa iwandikwe ni Yuda</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Ugub</abbr>
+      <short>Ugubulo</short>
+      <long>Ugubulo kwa Yohana</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="95db2b31af403cf00bc5e39b9d0464be" mimeType="application/xml" size="75051" uri="release/USX_1/1CO.usx"/>
+    <resource checksum="22e2f989e57bbdde50e52119523975a6" mimeType="application/xml" size="20980" uri="release/USX_1/1JN.usx"/>
+    <resource checksum="50fb7b15fea17aa34d54e43fa5071856" mimeType="application/xml" size="22363" uri="release/USX_1/1PE.usx"/>
+    <resource checksum="aa52071c77c4964cf8da2af3997df6f3" mimeType="application/xml" size="17300" uri="release/USX_1/1TH.usx"/>
+    <resource checksum="1ee7ecf84a8caa9db72750171d2112d0" mimeType="application/xml" size="22164" uri="release/USX_1/1TI.usx"/>
+    <resource checksum="3f72ee4f761b91f7ef06f84c41cf3460" mimeType="application/xml" size="48065" uri="release/USX_1/2CO.usx"/>
+    <resource checksum="94a6efda3e0605fe31dcde28c1214562" mimeType="application/xml" size="3949" uri="release/USX_1/2JN.usx"/>
+    <resource checksum="c68a14e4bc1556e2fe9cfd855776a678" mimeType="application/xml" size="14092" uri="release/USX_1/2PE.usx"/>
+    <resource checksum="2e660df26a4bbf7128ecd7da8ba9ffdd" mimeType="application/xml" size="10262" uri="release/USX_1/2TH.usx"/>
+    <resource checksum="c58f1dba9155acd849e18c24e35fb036" mimeType="application/xml" size="15964" uri="release/USX_1/2TI.usx"/>
+    <resource checksum="a51ee97f1ba08474e80347c85107a5ee" mimeType="application/xml" size="4144" uri="release/USX_1/3JN.usx"/>
+    <resource checksum="391d6a76d437870a1d35934cbb5a8c25" mimeType="application/xml" size="174092" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="7918b2e1c3ed44fb09f346c5d7ea7cc4" mimeType="application/xml" size="18896" uri="release/USX_1/COL.usx"/>
+    <resource checksum="57c4c606247389065f1e29325f3e39ed" mimeType="application/xml" size="27007" uri="release/USX_1/EPH.usx"/>
+    <resource checksum="8d07f3db1ebca8182f6213222aee5c3d" mimeType="application/xml" size="28724" uri="release/USX_1/GAL.usx"/>
+    <resource checksum="0acd7954f31cba181ef8ffd385e1c53a" mimeType="application/xml" size="61833" uri="release/USX_1/HEB.usx"/>
+    <resource checksum="0fc4b9759b453a006224d8dede9dcaee" mimeType="application/xml" size="20378" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="f8e3d6207f3fa7fe268f556c3d73c7f8" mimeType="application/xml" size="147672" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="8815c94c07cbf9b476d64e53573daa64" mimeType="application/xml" size="7383" uri="release/USX_1/JUD.usx"/>
+    <resource checksum="ad75d386c58793a7207e6f6886a38b9b" mimeType="application/xml" size="204869" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="e69200e9aff2cb8120de09fab733ab62" mimeType="application/xml" size="188313" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="096aa6883dbbece08b7e4e56162119cc" mimeType="application/xml" size="121862" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="71fbdb4dfeb232c47385e1c3b3a766e6" mimeType="application/xml" size="5493" uri="release/USX_1/PHM.usx"/>
+    <resource checksum="5b284cdf75d38677482b24d86b43bd19" mimeType="application/xml" size="19973" uri="release/USX_1/PHP.usx"/>
+    <resource checksum="084ef1afafaf26fd42f4bc3c06df4b7c" mimeType="application/xml" size="91104" uri="release/USX_1/REV.usx"/>
+    <resource checksum="6549ad04a568abea5431efb4ae68827b" mimeType="application/xml" size="77614" uri="release/USX_1/ROM.usx"/>
+    <resource checksum="409a1d966d2dfee19897708472b5df6e" mimeType="application/xml" size="10007" uri="release/USX_1/TIT.usx"/>
+    <resource checksum="8fa3892a563b4d5802e4fc9ea73fbec3" mimeType="application/octet-stream" size="691" uri="release/Zigua.lds"/>
+    <resource checksum="7648d2be4381fcb30566811002d2d4ef" mimeType="application/xml" size="77884" uri="release/styles.xml"/>
+    <resource checksum="39af66998d2a2586774d82c658b55dfb" mimeType="application/octet-stream" size="13114" uri="release/versification.vrs"/>
+    <resource checksum="d10e1ad5100536fe5ec7393a5cbbffc0" mimeType="application/octet-stream" size="3859" uri="release/ziw-Latn-TZ.ldml"/>
+    <resource checksum="1f8202b558de89e0a1bd519d7db1ed07" mimeType="application/zip" size="817097" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>Zigua NT</description>
+      <descriptionLocal>Zigua NT</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>©  The Word For The World and Pioneer Bible Translators, 2014</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <h1>Zigua &amp; The New Testament in Zigua</h1>
+      <p>This translation, published by The Word for the World Bible Translators and Pioneer Bible Translators, was published in 2014.</p>
+      <p>If you are interested in obtaining a printed copy, please contact The Word for the World Bible Translators at <a href="www.twftw.org">www.twftw.org.</a></p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Kees de Blois -archivist</archivistName>
+    <dateArchived>2014-04-07T09:58:48.979909</dateArchived>
+    <dateUpdated>2014-04-24T19:49:28.189393</dateUpdated>
+    <comments>Corrected metadata: TWFTW (Updated to DBL 4.0)</comments>
+  </archiveStatus>
+</DBLMetadata>

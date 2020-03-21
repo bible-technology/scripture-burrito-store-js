@@ -1,0 +1,362 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="e8b818f49c7c2835" revision="3">
+  <identification>
+    <name>The New Testament in Kire</name>
+    <nameLocal>Fhe Bakɨmen Kaman Kameŋ</nameLocal>
+    <description>Kire: Fhe Bakɨmen Kaman Kameŋ New Testament</description>
+    <abbreviation>KirNT</abbreviation>
+    <scope>New Testament</scope>
+    <dateCompleted>2001</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.99</bundleProducer>
+    <systemId type="gbc">
+      <id>542298ac5117ad345f06b828</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>e8b818f49c7c283584979467dacd476b963f753d</id>
+      <csetId>1599736e6a3d9efe98c3c7bfa45be32ed5fc3045</csetId>
+      <name>gebDBL</name>
+      <fullName>Kire NT for DBL</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>true</qa>
+      <uid>54650ce35117ad68c4c49e87</uid>
+      <name>Bible Society of Papua New Guinea</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>false</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>geb</iso>
+    <name>Kire</name>
+    <script>Latin (Roman) with Papua New Guinea enhancements</script>
+    <scriptCode>Zzzz</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>geb</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mt</abbr>
+      <short>Matiu</short>
+      <long>Matiu Khergi Kaman Vhuuŋ</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mk</abbr>
+      <short>Mak</short>
+      <long>Mak Khergi Kaman Vhuuŋ</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Ru</abbr>
+      <short>Ruk</short>
+      <long>Ruk Khergi Kaman Vhuuŋ</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Zo</abbr>
+      <short>Zon</short>
+      <long>Zon Khergi Kaman Vhuuŋ</long>
+    </name>
+    <name id="book-act">
+      <abbr>FG</abbr>
+      <short>Farasegi Gumgi</short>
+      <long>Zisas Farasegi 12 Thɨgi Ŋaara Gumgi Muuŋgi Ŋaari</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Ro</abbr>
+      <short>Rom</short>
+      <long>Khe Por Romiŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Ko</abbr>
+      <short>1 Korin</short>
+      <long>Khe Por Fharav Koriniŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Ko</abbr>
+      <short>2 Korin</short>
+      <long>Khe Por Phenatɨtɨgap Koriniŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Ga</abbr>
+      <short>Garesia</short>
+      <long>Khe Por Garesiaiŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Ef</abbr>
+      <short>Efesus</short>
+      <long>Khe Por Efesusiŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-php">
+      <abbr>Fi</abbr>
+      <short>Firipai</short>
+      <long>Khe Por Firipaiŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-col">
+      <abbr>Kor</abbr>
+      <short>Korosi</short>
+      <long>Khe Por Korosiŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Te</abbr>
+      <short>1 Tesaronaika</short>
+      <long>Khe Por Fharav Tesaronaikaiŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Te</abbr>
+      <short>2 Tesaronaika</short>
+      <long>Khe Por Phenatɨtɨgap Tesaronaikaiŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 T</abbr>
+      <short>1 Timoti</short>
+      <long>Khe Por Fharav Timoti Ndi Khergi Gap</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 T</abbr>
+      <short>2 Timoti</short>
+      <long>Khe Por Phenatɨtɨgap Timoti Ndi Khergi Gap</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Ta</abbr>
+      <short>Taitus</short>
+      <long>Khe Por Taitus Ndi Khergi Gap</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Fm</abbr>
+      <short>Firemon</short>
+      <long>Khe Por Firemon Ndi Khergi Gap</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Hi</abbr>
+      <short>Hibru</short>
+      <long>Khe Hibruiŋ Ndi Khergi Gap</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Ze</abbr>
+      <short>Zems</short>
+      <long>Khe Zems Khergi Gap</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Pi</abbr>
+      <short>1 Pita</short>
+      <long>Khe Pita Fhara Khergi Gap</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Pi</abbr>
+      <short>2 Pita</short>
+      <long>Khe Pita Phenatɨtɨgap Khergi Gap</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Zo</abbr>
+      <short>1 Zon</short>
+      <long>Khe Zon Fharav Khergi Gap</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Zo</abbr>
+      <short>2 Zon</short>
+      <long>Khe Zon Phenatɨtɨgap Khergi Gap</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Zo</abbr>
+      <short>3 Zon</short>
+      <long>Khe Zon Gava Phuni Khergiap, Ana Wom Khergi Khegene Khare</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Zu</abbr>
+      <short>Zut</short>
+      <long>Khe Zut Khergi Gap</long>
+    </name>
+    <name id="book-rev">
+      <abbr>VB</abbr>
+      <short>Vhagi Buni</short>
+      <long>Vhagi Buni Ndi Hiaŋ Rɨgi Gap</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="d63f77227cc1dc298206cbdc9cef59f0" mimeType="application/octet-stream" size="584" uri="release/Kire Unicode.lds"/>
+    <resource checksum="c52dadd776772d52ea4201224aa94aa4" mimeType="application/xml" size="194901" uri="release/USX_1/1CO.usx"/>
+    <resource checksum="c7f6d370c7a6664c264eeaffef8fa9b9" mimeType="application/xml" size="62386" uri="release/USX_1/1JN.usx"/>
+    <resource checksum="d2f4f80ded8d03b84a88fa4f22651af2" mimeType="application/xml" size="66821" uri="release/USX_1/1PE.usx"/>
+    <resource checksum="0c85b3fc734e5a1c280c54a0bcf33697" mimeType="application/xml" size="45565" uri="release/USX_1/1TH.usx"/>
+    <resource checksum="eac22ade82e40cec476e4c811241d8df" mimeType="application/xml" size="58344" uri="release/USX_1/1TI.usx"/>
+    <resource checksum="3291da85353aec82d4c524350b42e5dd" mimeType="application/xml" size="125941" uri="release/USX_1/2CO.usx"/>
+    <resource checksum="636d4888d46933d234a898c4b58c0e2c" mimeType="application/xml" size="7738" uri="release/USX_1/2JN.usx"/>
+    <resource checksum="1d0713f410b6472e234c2445156fbd77" mimeType="application/xml" size="37331" uri="release/USX_1/2PE.usx"/>
+    <resource checksum="2d6c973473c10ce4a8b1fefd1dc7267d" mimeType="application/xml" size="24721" uri="release/USX_1/2TH.usx"/>
+    <resource checksum="9a5ba2d09c88ac94868d92438e09f944" mimeType="application/xml" size="44056" uri="release/USX_1/2TI.usx"/>
+    <resource checksum="8473bafb3b19362bb3f84d621b4f4c1e" mimeType="application/xml" size="7002" uri="release/USX_1/3JN.usx"/>
+    <resource checksum="cc2a52992b7b9e5de8463ef5dc7241ce" mimeType="application/xml" size="448247" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="578979547f33a3ad971f5dac11f133f3" mimeType="application/xml" size="49809" uri="release/USX_1/COL.usx"/>
+    <resource checksum="dd394b1b780802f11d94b12ef758950c" mimeType="application/xml" size="80825" uri="release/USX_1/EPH.usx"/>
+    <resource checksum="4d100081a0c37139251dae4df66386cb" mimeType="application/xml" size="74775" uri="release/USX_1/GAL.usx"/>
+    <resource checksum="17cbc2bc079955f24841b90c30613987" mimeType="application/xml" size="169356" uri="release/USX_1/HEB.usx"/>
+    <resource checksum="ae3f00c734edf248f1c53724a09e5d01" mimeType="application/xml" size="56651" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="ac929427dd201eac08cd58f5380874f0" mimeType="application/xml" size="342876" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="548d7f357696773bea423fc9ba3a18be" mimeType="application/xml" size="17744" uri="release/USX_1/JUD.usx"/>
+    <resource checksum="3b1f95a417753f9b15ba5991669e7466" mimeType="application/xml" size="475594" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="1777dfadfed3b3de35bd0f38b8ee8f42" mimeType="application/xml" size="437170" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="e6264cf02a3e906c794e43cc7414ea96" mimeType="application/xml" size="237776" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="60cd23e863849dbf58e5c8d6f85494e5" mimeType="application/xml" size="12264" uri="release/USX_1/PHM.usx"/>
+    <resource checksum="29601f41190da3c909dba21bdcd213f0" mimeType="application/xml" size="48022" uri="release/USX_1/PHP.usx"/>
+    <resource checksum="d49e55e2af071b145042061a267f3220" mimeType="application/xml" size="257101" uri="release/USX_1/REV.usx"/>
+    <resource checksum="e2919071772b171ada9475f354ed680c" mimeType="application/xml" size="217827" uri="release/USX_1/ROM.usx"/>
+    <resource checksum="89acc73af39bcf037c7b73b3daddcda5" mimeType="application/xml" size="27269" uri="release/USX_1/TIT.usx"/>
+    <resource checksum="cb0c80d0884701991b36c40c6f601d71" mimeType="application/octet-stream" size="4097" uri="release/geb.ldml"/>
+    <resource checksum="0d8f14b5a23458edfc461132b19ffff0" mimeType="application/xml" size="78093" uri="release/styles.xml"/>
+    <resource checksum="ddf86170179e7bda081ca67126790529" mimeType="application/octet-stream" size="13092" uri="release/versification.vrs"/>
+    <resource checksum="f40ba93a2bfe993751e5e7b08cd3a705" mimeType="application/zip" size="3577068" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>Protestant</description>
+      <descriptionLocal>Protestant</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Created by Pioneer Bible Translators Association of Papua New Guinea, Inc.</p>
+        <p>Published by the Bible Society of Papua New Guinea in 2001.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <h1>Fhe Bakɨmen Kaman Kameŋ in the Kire Language</h1>
+      <p>This translation was produced by Pioneer Bible Translators, and was published in 2001 by the Bible Society of Papua New Guinea.</p>
+      <p>If you are interested in obtaining a printed copy, please contact the Pioneer Bible Translators at <a href="http://www.pioneerbible.org">www.pioneerbible.org</a></p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Mike Herchenroeder</archivistName>
+    <dateArchived>2014-03-11T18:35:37.890854</dateArchived>
+    <dateUpdated>2016-10-26T17:02:32.432493</dateUpdated>
+    <comments>Updated project to contain all of the content in the paper published version, except for graphics files. Various formatting and punctuation errors were corrected.</comments>
+  </archiveStatus>
+</DBLMetadata>

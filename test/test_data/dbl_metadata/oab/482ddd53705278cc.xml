@@ -1,0 +1,350 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="482ddd53705278cc" revision="2">
+  <identification>
+    <name>Versión Biblia Libre [spa] Spanish Free Bible Version</name>
+    <nameLocal>El Nuevo Testamento, Versión Biblia Libre</nameLocal>
+    <description>The New Testament in Spanish, Free Bible Version</description>
+    <abbreviation>VBL</abbreviation>
+    <scope>New Testament</scope>
+    <dateCompleted>2018-03-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.0.10250</bundleProducer>
+    <systemId type="paratext">
+      <id>482ddd53705278cce28a22c6292957b4d0c095c1</id>
+      <csetId>ff3d6558bded014950a6b7b7a201bdc9aaa33b15</csetId>
+      <name>spavbl</name>
+      <fullName>Versión Biblia Libre [spa] Spanish Free Bible Version</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>fbx9s8quxQ4Ec38m4</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>Free Bible Ministry</abbr>
+      <url>http://www.freebibleministry.org/</url>
+      <nameLocal>Free Bible Ministry, Inc.</nameLocal>
+      <uid>401e512ba47c11259eaafef1</uid>
+      <name>Free Bible Ministry, Inc.</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>http://www.freebibleministry.org/</url>
+      <uid>401e512ba47c11259eaafef1</uid>
+      <name>Free Bible Ministry, Inc.</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>401e512ba47c11259eaafef1</uid>
+      <name>Free Bible Ministry, Inc.</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>spa</iso>
+    <name>Spanish</name>
+    <nameLocal>Español</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>es-Latn</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>ES</iso>
+      <name>Spain</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <short>Mateo</short>
+      <long>Mateo</long>
+    </name>
+    <name id="book-mrk">
+      <short>Marcos</short>
+      <long>Marcos</long>
+    </name>
+    <name id="book-luk">
+      <short>Lucas</short>
+      <long>Lucas</long>
+    </name>
+    <name id="book-jhn">
+      <short>Juan</short>
+      <long>Juan</long>
+    </name>
+    <name id="book-act">
+      <short>Hechos</short>
+      <long>Hechos</long>
+    </name>
+    <name id="book-rom">
+      <short>Romanos</short>
+      <long>Romanos</long>
+    </name>
+    <name id="book-1co">
+      <short>1 Corintios</short>
+      <long>1 Corintios</long>
+    </name>
+    <name id="book-2co">
+      <short>2 Corintios</short>
+      <long>2 Corintios</long>
+    </name>
+    <name id="book-gal">
+      <short>Gálatas</short>
+      <long>Gálatas</long>
+    </name>
+    <name id="book-eph">
+      <short>Efesios</short>
+      <long>Efesios</long>
+    </name>
+    <name id="book-php">
+      <short>Filipenses</short>
+      <long>Filipenses</long>
+    </name>
+    <name id="book-col">
+      <short>Colosenses</short>
+      <long>Colosenses</long>
+    </name>
+    <name id="book-1th">
+      <short>1 Tesalonicenses</short>
+      <long>1 Tesalonicenses</long>
+    </name>
+    <name id="book-2th">
+      <short>2 Tesalonicenses</short>
+      <long>2 Tesalonicenses</long>
+    </name>
+    <name id="book-1ti">
+      <short>1 Timoteo</short>
+      <long>1 Timoteo</long>
+    </name>
+    <name id="book-2ti">
+      <short>2 Timoteo</short>
+      <long>2 Timoteo</long>
+    </name>
+    <name id="book-tit">
+      <short>Tito</short>
+      <long>Tito</long>
+    </name>
+    <name id="book-phm">
+      <short>Filemón</short>
+      <long>Filemón</long>
+    </name>
+    <name id="book-heb">
+      <short>Hebreos</short>
+      <long>Hebreos</long>
+    </name>
+    <name id="book-jas">
+      <short>Santiago</short>
+      <long>Santiago</long>
+    </name>
+    <name id="book-1pe">
+      <short>1 Pedro</short>
+      <long>1 Pedro</long>
+    </name>
+    <name id="book-2pe">
+      <short>2 Pedro</short>
+      <long>2 Pedro</long>
+    </name>
+    <name id="book-1jn">
+      <short>1 Juan</short>
+      <long>1 Juan</long>
+    </name>
+    <name id="book-2jn">
+      <short>2 Juan</short>
+      <long>2 Juan</long>
+    </name>
+    <name id="book-3jn">
+      <short>3 Juan</short>
+      <long>3 Juan</long>
+    </name>
+    <name id="book-jud">
+      <short>Judas</short>
+      <long>Judas</long>
+    </name>
+    <name id="book-rev">
+      <short>Apocalipsis</short>
+      <long>Apocalipsis</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="839ed2d40774136370b4dd4b68d7807d" mimeType="application/xml" size="94855" uri="1CO.usx"/>
+        <resource checksum="21a8c87be4ad3c749316941741f022c1" mimeType="application/xml" size="22504" uri="1JN.usx"/>
+        <resource checksum="f8c5b98e1989f2c0a40d8cb75089e92b" mimeType="application/xml" size="23142" uri="1PE.usx"/>
+        <resource checksum="0c176391d10347dbf4889e698a40706c" mimeType="application/xml" size="17845" uri="1TH.usx"/>
+        <resource checksum="536eb029ce6443b194cba7f7ca1e25ed" mimeType="application/xml" size="24026" uri="1TI.usx"/>
+        <resource checksum="c76537f21d3d1bc30256b16f4003bf4f" mimeType="application/xml" size="53214" uri="2CO.usx"/>
+        <resource checksum="bbe2f97e35cf4ff08489f65d8f24bdfc" mimeType="application/xml" size="3193" uri="2JN.usx"/>
+        <resource checksum="1611a5ed691607fa668478e32473d13f" mimeType="application/xml" size="13744" uri="2PE.usx"/>
+        <resource checksum="661a6091496fa5280f6397e9a4e514da" mimeType="application/xml" size="10359" uri="2TH.usx"/>
+        <resource checksum="0d9dcf28d7c5b4ebc113521607f3afe4" mimeType="application/xml" size="16346" uri="2TI.usx"/>
+        <resource checksum="b6ef1b059cee85830e5e29ed1d8bee00" mimeType="application/xml" size="3536" uri="3JN.usx"/>
+        <resource checksum="6c14fc135dc0b1dae3498ba86fda6af8" mimeType="application/xml" size="200100" uri="ACT.usx"/>
+        <resource checksum="1a7725f8d04951fdc544b0d5f0dda4cd" mimeType="application/xml" size="19542" uri="COL.usx"/>
+        <resource checksum="ba33b4704fe7fca2df6367c0ea8127dd" mimeType="application/xml" size="26420" uri="EPH.usx"/>
+        <resource checksum="615f0aeb8dd3b695de6fc7e814069cc3" mimeType="application/xml" size="33048" uri="GAL.usx"/>
+        <resource checksum="d9c607b15a036ae47cc2f7b1024099c0" mimeType="application/xml" size="67044" uri="HEB.usx"/>
+        <resource checksum="dd3e4f030823f15d0785e4ffa8fb10dd" mimeType="application/xml" size="20551" uri="JAS.usx"/>
+        <resource checksum="bf97a4e9006121c59f7861360b3caa5a" mimeType="application/xml" size="166731" uri="JHN.usx"/>
+        <resource checksum="2b554f7c89a8f72a88d174f88f186a6a" mimeType="application/xml" size="7052" uri="JUD.usx"/>
+        <resource checksum="bcabe22e5c6c1a7f1db625e1fe0de9c0" mimeType="application/xml" size="208911" uri="LUK.usx"/>
+        <resource checksum="836408684c3f508306023859d31c6c1d" mimeType="application/xml" size="203969" uri="MAT.usx"/>
+        <resource checksum="1977f468d3056d89ffabdffad952142a" mimeType="application/xml" size="130068" uri="MRK.usx"/>
+        <resource checksum="e2528ef2078a083d4e2539fd6ffeebfe" mimeType="application/xml" size="4468" uri="PHM.usx"/>
+        <resource checksum="05b12612f3f7357684425079b7c6c60c" mimeType="application/xml" size="18896" uri="PHP.usx"/>
+        <resource checksum="2816659b7c26dfddaa1bbf602a05e1c8" mimeType="application/xml" size="95261" uri="REV.usx"/>
+        <resource checksum="257aba49dcc1cd13ea1d3259b864df6b" mimeType="application/xml" size="92769" uri="ROM.usx"/>
+        <resource checksum="f3741bc34249ddd08fb52cb01b8777ad" mimeType="application/xml" size="9428" uri="TIT.usx"/>
+      </container>
+      <resource checksum="d8f2eabc33fb01c407bc2ad5c6613088" mimeType="application/xml" size="28663" uri="spa_es-Latn.ldml"/>
+      <resource checksum="eb12529b95292c2caccd8a36c2a32d56" mimeType="application/xml" size="78090" uri="styles.xml"/>
+      <resource checksum="509a98fa772ba406ed6e72612e5dba86" mimeType="text/plain" size="15179" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="0bdcbb7b8a0793faf734a4bc0a3ed69e" mimeType="application/zip" size="8109433" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>The New Testament in Spanish, Free Bible Version</name>
+      <description>common</description>
+      <descriptionLocal>Nuevo Testmento</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>copyright © 2018 <a href="http://www.freebibleversion.org/">Jonathan Gallagher y Shelly Barrios de Avila</a>. Esta obra se encuentra bajo una licencia de Creative Commons Attribution-NoDerivs Unported License.	La traducción Free Bible Version está siendo distribuida para uso libre, con las únicas condiciones siguientes: a) debe ser identificada como Free BibleVersion, y b) el texto no debe ser cambiado.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>La traducción se ha hecho de manera directa del texto en griego estándar de Nestle-Aland. Su propósito es ser una traducción fiel a su significado original, sin términos difíciles o confusos. El estilo ha sido traducido al inglés y español contemporáneos, evitando el uso de jergas o palabras coloquiales, hablando así a nuestra sociedad moderna de una forma que todos puedan entender.</p>
+      <p>Para más informacióny noticias actuales sobre la traducción Free Bible Version, visita a www.freebibleversion.org donde también podrás escuchar los audios en inglés.</p>
+      <p>La traducción Free Bible Version es un proyecto del Ministerio Free Bible Ministry (www.freebibleministry.org). Gracias a todos los que han hecho posible esta nueva traducción y su publicación. No es posible mencionar a todos los que han contribuido a la revisión, edición, y los recursos para esta nueva traducción, pero ustedes saben quiénes son, y lo apreciamos en gran manera.</p>
+      <p>Que nuestro misericordioso Dios bendiga a todos los que leen.</p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Michael Johnson (PNG Scriptures)</archivistName>
+    <dateArchived>2018-03-06T19:44:35.342721</dateArchived>
+    <dateUpdated>2018-07-06T03:07:03.896734</dateUpdated>
+    <comments>Corrected one typo in Acts 2:9</comments>
+  </archiveStatus>
+</DBLMetadata>

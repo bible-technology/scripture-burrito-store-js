@@ -1,0 +1,115 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="b7ad344da9c39262" revision="2">
+  <identification>
+    <name>Arapaho Luke</name>
+    <nameLocal>Hethadenee waunauyaunee vadan Luke Vanenāna</nameLocal>
+    <description>Arapaho: Hethadenee waunauyaunee vadan Luke Vanenāna Portions</description>
+    <abbreviation>ARP</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>1903-01-01</dateCompleted>
+    <bundleProducer>Paratext/7.5.100.120</bundleProducer>
+    <systemId type="gbc">
+      <id>554d04c15117ad306ed173df</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>b7ad344da9c39262820027e10236c1e58f010a97</id>
+      <csetId>b012fb4f742b12117537097a144febd74f237045</csetId>
+      <name>arp</name>
+      <fullName>Arapaho Luke [arp] USA</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>eBible.org</abbr>
+      <url>http://eBible.org</url>
+      <nameLocal>eBible.org</nameLocal>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </rightsHolder>
+    <contributor>
+      <content>false</content>
+      <publication>false</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>arp</iso>
+    <name>Arapaho</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>arp</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>US</iso>
+      <name>United States</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Luke</short>
+      <long>Hethadenee waunauyaunee vadan Luke Vanenāna</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="4a7b8283c4148b318dd3c65c3af1b753" mimeType="application/xml" size="192378" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="fe00a305d7fc3a9d411b79c031bdb8d9" mimeType="application/octet-stream" size="2678" uri="release/arp.ldml"/>
+    <resource checksum="87bfe63522d85eb25e868b55fc1cb350" mimeType="application/octet-stream" size="40" uri="release/arp.lds"/>
+    <resource checksum="eb12529b95292c2caccd8a36c2a32d56" mimeType="application/xml" size="78090" uri="release/styles.xml"/>
+    <resource checksum="39af66998d2a2586774d82c658b55dfb" mimeType="application/octet-stream" size="13114" uri="release/versification.vrs"/>
+    <resource checksum="eee51f121e38b23ea2ba7747f2388021" mimeType="application/zip" size="158273" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="LUK"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>common</description>
+      <descriptionLocal>common</descriptionLocal>
+      <abbreviation>arp</abbreviation>
+      <canonicalContent>
+        <book code="LUK"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>This book is in the <a href="http://ebible.org/publicdomain.htm">PUBLIC DOMAIN</a> due to copyright expiration. It was first published in 1903 by the American Bible Society. The translation was done by Michael White Hawk and John Roberts.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Michael Johnson</archivistName>
+    <dateArchived>2015-05-08T18:51:38.634658</dateArchived>
+    <dateUpdated>2015-05-08T18:51:38.634658</dateUpdated>
+    <comments>PUBLIC DOMAIN. Initial publication by ABS. Electronic text submitted by eBible.org, but no copyright is claimed on the electronic text.</comments>
+  </archiveStatus>
+</DBLMetadata>

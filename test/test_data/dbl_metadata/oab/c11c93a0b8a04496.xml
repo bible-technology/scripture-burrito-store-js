@@ -1,0 +1,388 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="c11c93a0b8a04496" revision="1">
+  <identification>
+    <name>Makonde Bible Version</name>
+    <nameLocal>LILAILANO LYAHAMBI LYA NNUNGU KWA VANU VAMMALELE</nameLocal>
+    <description>Makonde: LILAILANO LYAHAMBI LYA NNUNGU KWA VANU VAMMALELE (Bible)</description>
+    <abbreviation>Makonde</abbreviation>
+    <scope>Bible</scope>
+    <bundleProducer>Paratext/8.0.100.83</bundleProducer>
+    <systemId type="paratext">
+      <id>c11c93a0b8a04496e11168e14eb4540afc3aeff5</id>
+      <csetId>2fc8841fce822836afc506d8095e1136af39802f</csetId>
+      <name>Makonde</name>
+      <fullName>Makonde Bible Version</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>SeREc4FA4MJ44efdp</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>false</finance>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>kde</iso>
+    <name>Makonde</name>
+    <nameLocal>Shimakonde</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>kde</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>TZ</iso>
+      <name>Tanzania, United Republic of</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Matayo</abbr>
+      <short>Matayo</short>
+      <long>Malove Lambone lamwâmba Yesu Kilisto lalembwîje na Matayo</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mako</abbr>
+      <short>Mako</short>
+      <long>Malove Lambone lamwâmba Yesu Kilisto lalembwîje na Mako</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luka</abbr>
+      <short>Luka</short>
+      <long>Malove Lambone lamwâmba Yesu Kilisto lalembwîje na Luka</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Yohana</abbr>
+      <short>Yohana</short>
+      <long>Malove lambone lamwâmba Yesu Kilisto lalembwîje na Yohana</long>
+    </name>
+    <name id="book-act">
+      <abbr>Matendo</abbr>
+      <short>Matendo</short>
+      <long>Matendo la Mitume</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Valoma</abbr>
+      <short>Valoma</short>
+      <long>Baluwa yanga Paolo yavalembidile Valoma</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Vakolinso</abbr>
+      <short>1 Vakolinso</short>
+      <long>Baluwa inandi yanga Paolo yavalembidile Vakolinso</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Vakolinso</abbr>
+      <short>2 Vakolinso</short>
+      <long>Baluwa ya vili ya Paolo yavalembelele Vakolinso</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Vagalatiya</abbr>
+      <short>Vagalatiya</short>
+      <long>Baluwa yanga Paolo yavalembidile Vagalatiya</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Vaefeso</abbr>
+      <short>Vaefeso</short>
+      <long>Baluwa yanga Paolo yavalembidile Vaefeso</long>
+    </name>
+    <name id="book-php">
+      <abbr>Vafilipi</abbr>
+      <short>Vafilipi</short>
+      <long>Baluwa yanga Paolo yavalembidile Vafilipi</long>
+    </name>
+    <name id="book-col">
+      <abbr>Vakolosayi</abbr>
+      <short>Vakolosayi</short>
+      <long>Baluwa yanga Paolo yavalembidile Vakolosayi</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Vasesalonike</abbr>
+      <short>1 Vasesalonike</short>
+      <long>Baluwa inandi yanga Paolo yavalembidile Vasesalonike</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Vasesalonike</abbr>
+      <short>2 Vasesalonike</short>
+      <long>Baluwa yavili yanga Paolo yavalembidile Vasesalonike</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Timoseo</abbr>
+      <short>1 Timoseo</short>
+      <long>Baluwa inandi yanga Paolo yannembidile Timoseo</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Timoseo</abbr>
+      <short>2 Timoseo</short>
+      <long>Baluwa yavili yanga Paolo yannembidile Timoseo</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tito</abbr>
+      <short>Tito</short>
+      <long>Baluwa yanga Paolo yannembidile Tito</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Filimoni</abbr>
+      <short>Filimoni</short>
+      <long>Baluwa yanga Paolo yannembidile Filimoni</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Vaeblaniya</abbr>
+      <short>Vaeblaniya</short>
+      <long>Baluwa ivavalembidile Vaeblaniya</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Yakobo</abbr>
+      <short>Yakobo</short>
+      <long>Yakobo</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Petulo</abbr>
+      <short>1 Petulo</short>
+      <long>Baluwa inandi yanga Petulo</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Petulo</abbr>
+      <short>2 Petulo</short>
+      <long>Baluwa ya vili yanga Petulo</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Yohana</abbr>
+      <short>1 Yohana</short>
+      <long>Baluwa inandi ya Yohana</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Yohana</abbr>
+      <short>2 Yohana</short>
+      <long>Baluwa yavili ya Yohana</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Yohana</abbr>
+      <short>3 Yohana</short>
+      <long>Baluwa yatatu ya Yohana</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Yuda</abbr>
+      <short>Yuda</short>
+      <long>Baluwa yanga Yuda</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Uhunulo</abbr>
+      <short>Uhunulo</short>
+      <long>Chitabu cha Uhunulo</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="835829e6f76c65809a548c2d870fd4af" mimeType="application/xml" size="91173" uri="1CO.usx"/>
+        <resource checksum="ba8214b0aa3df5479741e9678f447c21" mimeType="application/xml" size="24643" uri="1JN.usx"/>
+        <resource checksum="9d28d3dba40bdab12f3e5270310fc7ea" mimeType="application/xml" size="29241" uri="1PE.usx"/>
+        <resource checksum="bfc33689e233e6d590b9f56c124a065a" mimeType="application/xml" size="20654" uri="1TH.usx"/>
+        <resource checksum="676459466e86804278a413c0da69a24c" mimeType="application/xml" size="26531" uri="1TI.usx"/>
+        <resource checksum="b326b4a281211818ee46039b09a385d8" mimeType="application/xml" size="60810" uri="2CO.usx"/>
+        <resource checksum="3ba7a3da7a3b2d71e93086e9cc975b04" mimeType="application/xml" size="5446" uri="2JN.usx"/>
+        <resource checksum="7980b1470c594b0c1414e0c307ed3ef7" mimeType="application/xml" size="16854" uri="2PE.usx"/>
+        <resource checksum="3ce665488a6438c3ff6ee177347c3f70" mimeType="application/xml" size="12421" uri="2TH.usx"/>
+        <resource checksum="63a4f476e6548256906761b1e64a5525" mimeType="application/xml" size="19457" uri="2TI.usx"/>
+        <resource checksum="3f0a1f1db98b1530258974de9ec641fb" mimeType="application/xml" size="5489" uri="3JN.usx"/>
+        <resource checksum="18f7e46616917cab0c63a36422ffee19" mimeType="application/xml" size="227636" uri="ACT.usx"/>
+        <resource checksum="891b833b9825022417e5668a70f856fe" mimeType="application/xml" size="23248" uri="COL.usx"/>
+        <resource checksum="ff1827f530a5f87d31b450afa723c9c2" mimeType="application/xml" size="33423" uri="EPH.usx"/>
+        <resource checksum="88ce1b26fbc456fc508e36dea8e84fa0" mimeType="application/xml" size="34107" uri="GAL.usx"/>
+        <resource checksum="c9fd0dbc3ec3d69b191f1cf51ad04e00" mimeType="application/xml" size="77358" uri="HEB.usx"/>
+        <resource checksum="ff12f7ef2179b0f3d06c79c4d004e4f6" mimeType="application/xml" size="24489" uri="JAS.usx"/>
+        <resource checksum="8923c81995f814952b1d7019d2128a62" mimeType="application/xml" size="188614" uri="JHN.usx"/>
+        <resource checksum="0c30e8826eb357a2cf789b3e89090e01" mimeType="application/xml" size="8645" uri="JUD.usx"/>
+        <resource checksum="d00679c5ce10c637638d383d761fb27e" mimeType="application/xml" size="265785" uri="LUK.usx"/>
+        <resource checksum="6132ffe4a87f543db83143cb2d4fce1c" mimeType="application/xml" size="249080" uri="MAT.usx"/>
+        <resource checksum="a122ad9f46be82fd7e4746d1d42887e9" mimeType="application/xml" size="156806" uri="MRK.usx"/>
+        <resource checksum="e92508a51aab03efe3c76ab4f76e5f41" mimeType="application/xml" size="6856" uri="PHM.usx"/>
+        <resource checksum="35c49577ce6e9295fa7fe080f54041c3" mimeType="application/xml" size="25723" uri="PHP.usx"/>
+        <resource checksum="836bc72c2242c91a6200a7afbb4de46f" mimeType="application/xml" size="110572" uri="REV.usx"/>
+        <resource checksum="0b34a8b519fe3b9b8af38a787378e8d4" mimeType="application/xml" size="96650" uri="ROM.usx"/>
+        <resource checksum="cb462712a8bf24c587a933f6ad81c319" mimeType="application/xml" size="12079" uri="TIT.usx"/>
+      </container>
+      <resource checksum="3f72105e770d0d36305dcc2d2949d93f" mimeType="application/xml" size="2580" uri="kde.ldml"/>
+      <resource checksum="040f7c90300e5d234812400d3c580031" mimeType="application/xml" size="89836" uri="styles.xml"/>
+      <resource checksum="7bac69d13d1c9e55d03a90415de993b4" mimeType="text/plain" size="15388" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="7d24f5d8bef824a974895628c292fad1" mimeType="application/zip" size="52241523" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>Makonde NT</name>
+      <nameLocal>Makonde NT</nameLocal>
+      <description>NT</description>
+      <descriptionLocal>Makonde</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© 2019 Pioneer Bible Translators</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <progress>
+    <book code="MAT" stage="5"/>
+    <book code="LUK" stage="5"/>
+    <book code="JHN" stage="5"/>
+    <book code="ACT" stage="5"/>
+    <book code="ROM" stage="5"/>
+    <book code="1CO" stage="5"/>
+    <book code="2CO" stage="4"/>
+    <book code="GAL" stage="5"/>
+    <book code="EPH" stage="5"/>
+    <book code="PHP" stage="5"/>
+    <book code="COL" stage="5"/>
+    <book code="1TH" stage="5"/>
+    <book code="2TH" stage="5"/>
+    <book code="1TI" stage="5"/>
+    <book code="2TI" stage="5"/>
+    <book code="TIT" stage="4"/>
+    <book code="PHM" stage="4"/>
+    <book code="HEB" stage="4"/>
+    <book code="JAS" stage="5"/>
+    <book code="1PE" stage="5"/>
+    <book code="2PE" stage="5"/>
+    <book code="1JN" stage="5"/>
+    <book code="2JN" stage="4"/>
+    <book code="3JN" stage="4"/>
+    <book code="JUD" stage="4"/>
+    <book code="REV" stage="4"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2019-09-05T07:48:17.940309</dateArchived>
+    <dateUpdated>2019-11-06T11:12:11.492607</dateUpdated>
+    <comments>Full NT</comments>
+  </archiveStatus>
+</DBLMetadata>

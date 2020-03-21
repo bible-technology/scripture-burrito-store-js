@@ -1,0 +1,470 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="c2d40ebca6db1ec5" revision="2">
+  <identification>
+    <name>Vidunda Bible Version</name>
+    <nameLocal>Ilagano lya Katali, Ilagano Linyale kwa Wanhu Weng’ha</nameLocal>
+    <description>Vidunda: Ilagano lya Katali, Ilagano Linyale kwa Wanhu Weng’ha (Bible)</description>
+    <abbreviation>Vidunda</abbreviation>
+    <abbreviationLocal>Chividunda</abbreviationLocal>
+    <scope>Bible</scope>
+    <bundleProducer>Paratext/8.0.100.83</bundleProducer>
+    <systemId type="paratext">
+      <id>90784d8a6de759bdb2bd1f720e686b4614fe2cec</id>
+      <csetId>28f4bfda6e38a3506a646f8f3af23d2cc0747cac</csetId>
+      <name>Vidunda</name>
+      <fullName>Vidunda Bible Version</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>4NuoTDxFKdkd3nMMr</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>false</finance>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>vid</iso>
+    <name>Vidunda</name>
+    <nameLocal>Chividunda</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>vid</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>TZ</iso>
+      <name>Tanzania, United Republic of</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-gen">
+      <abbr>Mwal</abbr>
+      <short>Mwaluko</short>
+      <long>Mwaluko</long>
+    </name>
+    <name id="book-exo">
+      <abbr>Kul</abbr>
+      <short>Kulawa</short>
+      <long>Kulawa</long>
+    </name>
+    <name id="book-lev">
+      <abbr>Wala</abbr>
+      <short>Walawi</short>
+      <long>Walawi</long>
+    </name>
+    <name id="book-num">
+      <abbr>His</abbr>
+      <short>Hisabu</short>
+      <long>Hisabu</long>
+    </name>
+    <name id="book-deu">
+      <abbr>Kukumb</abbr>
+      <short>Kukumbuchila</short>
+      <long>Kukumbuchila</long>
+    </name>
+    <name id="book-mat">
+      <abbr>Mat</abbr>
+      <short>Matei</short>
+      <long>Mbuli Inojile yandichigwe na Matei</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mal</abbr>
+      <short>Malichi</short>
+      <long>Mbuli Inojile yandichigwe na Malichi</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Lukasi</short>
+      <long>Mbuli Inojile yandichigwe na Lukasi</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Yoh</abbr>
+      <short>Yohana</short>
+      <long>Mbuli Inojile yandichigwe na Yohana</long>
+    </name>
+    <name id="book-act">
+      <abbr>Mad</abbr>
+      <short>Madito</short>
+      <long>Madito ga Watumigwa</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Lom</abbr>
+      <short>Waloma</short>
+      <long>Baluwa ya Paoli kwa wanhu wa Loma</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Kol</abbr>
+      <short>1 Kolinto</short>
+      <long>Baluwa ya Mwaluko ya Paoli kwa wanhu wa Kolinto</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Kol</abbr>
+      <short>2 Kolinto</short>
+      <long>Baluwa ya Keli ya Paoli kwa wanhu wa Kolinto</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gal</abbr>
+      <short>Wagalatiya</short>
+      <long>Baluwa ya Paoli kwa wanhu wa Galatiya</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Efe</abbr>
+      <short>Waefeso</short>
+      <long>Baluwa ya Paoli kwa wanhu wa Efeso</long>
+    </name>
+    <name id="book-php">
+      <abbr>Fil</abbr>
+      <short>Wafilipi</short>
+      <long>Baluwa ya Paoli kwa wanhu wa Filipi</long>
+    </name>
+    <name id="book-col">
+      <abbr>Kol</abbr>
+      <short>Wakolosai</short>
+      <long>Baluwa ya Paoli kwa wanhu wa Kolosai</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Tes</abbr>
+      <short>1 Watesalonike</short>
+      <long>Baluwa ya Mwaluko ya Paoli kwa wanhu wa Tesalonike</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Tes</abbr>
+      <short>2 Watesalonike</short>
+      <long>Baluwa ya Keli ya Paoli kwa wanhu wa Tesalonike</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Tim</abbr>
+      <short>1 Timoteyi</short>
+      <long>Baluwa ya Mwaluko ya Paoli kwa Timoteyi</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Tim</abbr>
+      <short>2 Timoteyi</short>
+      <long>Baluwa ya Keli ya Paoli kwa Timoteyi</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tit</abbr>
+      <short>Tito</short>
+      <long>Baluwa ya Paoli kwa Tito</long>
+    </name>
+    <name id="book-phm">
+      <abbr>File</abbr>
+      <short>Filimeni</short>
+      <long>Baluwa ya Paoli kwa Filimeni</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Waeb</abbr>
+      <short>Waebulaniya</short>
+      <long>Baluwa kwa Waebulaniya</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Yak</abbr>
+      <short>Yakubu</short>
+      <long>Baluwa ya Yakubu</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Pet</abbr>
+      <short>1 Petili</short>
+      <long>Baluwa ya Mwaluko ya Petili</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Pet</abbr>
+      <short>2 Petili</short>
+      <long>Baluwa ya Keli ya Petili</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Yoh</abbr>
+      <short>1 Yohana</short>
+      <long>Baluwa ya Mwaluko ya Yohana</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Yoh</abbr>
+      <short>2 Yohana</short>
+      <long>Baluwa ya Keli ya Yohana</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Yoh</abbr>
+      <short>3 Yohana</short>
+      <long>Baluwa ya Kadatu ya Yohana</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Yud</abbr>
+      <short>Yuda</short>
+      <long>Baluwa ya Yuda</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Ugub</abbr>
+      <short>Ugubulo</short>
+      <long>Ugubulo woyapeligwe Yohana</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="ddade140b99734da35ac748d2008812b" mimeType="application/xml" size="81339" uri="1CO.usx"/>
+        <resource checksum="9db51313bc37d366755a34bce80c5709" mimeType="application/xml" size="21809" uri="1JN.usx"/>
+        <resource checksum="910772b8c7b3beeec4d1ec33ce8cf219" mimeType="application/xml" size="24167" uri="1PE.usx"/>
+        <resource checksum="fd2a008933cf4d6dc1c46d7e8cd84ec3" mimeType="application/xml" size="18434" uri="1TH.usx"/>
+        <resource checksum="3047a71ac91a7cd6d2fd0cf614ecf16d" mimeType="application/xml" size="24619" uri="1TI.usx"/>
+        <resource checksum="5ca43678e1b4883f959502c5619b4163" mimeType="application/xml" size="52142" uri="2CO.usx"/>
+        <resource checksum="7eae75f76e046ef48a286c9f7a2f6aa5" mimeType="application/xml" size="4550" uri="2JN.usx"/>
+        <resource checksum="bf9adbfd962d15a1fa8733c382e1fb3f" mimeType="application/xml" size="14838" uri="2PE.usx"/>
+        <resource checksum="03b445598b69118d680ee9fa0f6463a3" mimeType="application/xml" size="11319" uri="2TH.usx"/>
+        <resource checksum="01adc439a1cf71cfd9f99baf4f998074" mimeType="application/xml" size="17575" uri="2TI.usx"/>
+        <resource checksum="7a4c3a292530c530dd729727d1c2b813" mimeType="application/xml" size="4447" uri="3JN.usx"/>
+        <resource checksum="85e86fa48244461cb604e5e0f4e4ae2d" mimeType="application/xml" size="189984" uri="ACT.usx"/>
+        <resource checksum="b4445f24c375cda3120ff146c3fdda8d" mimeType="application/xml" size="20906" uri="COL.usx"/>
+        <resource checksum="2e28c421b9f2c476436ca808c0035c89" mimeType="application/xml" size="199896" uri="DEU.usx"/>
+        <resource checksum="bff1cbdd80b9002647f818da9e2a089b" mimeType="application/xml" size="28469" uri="EPH.usx"/>
+        <resource checksum="acfa1b102ba4c6ad0f4fe1d30a3064fb" mimeType="application/xml" size="239056" uri="EXO.usx"/>
+        <resource checksum="6d3582cf5aa14a554d880aca9bcb5369" mimeType="application/xml" size="29871" uri="GAL.usx"/>
+        <resource checksum="025a23386ca3211003cc109cee0ed729" mimeType="application/xml" size="278867" uri="GEN.usx"/>
+        <resource checksum="e7ae5a5011a371b59c6982b7260af51a" mimeType="application/xml" size="65246" uri="HEB.usx"/>
+        <resource checksum="8709de3d49bd9de6443cb0f656b16177" mimeType="application/xml" size="22438" uri="JAS.usx"/>
+        <resource checksum="62e60cc0289e78cfc02362bb0764d1c2" mimeType="application/xml" size="155256" uri="JHN.usx"/>
+        <resource checksum="b37405a12fd53d611b0b16258fa1a0b5" mimeType="application/xml" size="7946" uri="JUD.usx"/>
+        <resource checksum="2d503e0157e34617f7300cefeea3af4c" mimeType="application/xml" size="168919" uri="LEV.usx"/>
+        <resource checksum="d633f2297162862535f9b2b7b834eeae" mimeType="application/xml" size="214250" uri="LUK.usx"/>
+        <resource checksum="e0e4f5975379b1aa81b8054545878a45" mimeType="application/xml" size="200458" uri="MAT.usx"/>
+        <resource checksum="96c8be204b37a0bc73ec7ec5af3373c2" mimeType="application/xml" size="129868" uri="MRK.usx"/>
+        <resource checksum="e93125a8d144c89aef30c3d2cfdd0eef" mimeType="application/xml" size="237626" uri="NUM.usx"/>
+        <resource checksum="74b26f9187a36cc508a3ef8f362435fb" mimeType="application/xml" size="6149" uri="PHM.usx"/>
+        <resource checksum="59184455948f9d174d9190eab9fc8c1a" mimeType="application/xml" size="21778" uri="PHP.usx"/>
+        <resource checksum="3ebb62bff9b4f6b6bbdec256ed42642e" mimeType="application/xml" size="96239" uri="REV.usx"/>
+        <resource checksum="e8404853d4b3964881783b2b91e9619d" mimeType="application/xml" size="85143" uri="ROM.usx"/>
+        <resource checksum="149b68bb4becec432f73883fe6aebf92" mimeType="application/xml" size="11142" uri="TIT.usx"/>
+      </container>
+      <resource checksum="18b643b1bdd42c942180913ac013aeca" mimeType="application/xml" size="89826" uri="styles.xml"/>
+      <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="text/plain" size="15364" uri="versification.vrs"/>
+      <resource checksum="5c71aeaa4c8b453d21cef692500a7a9c" mimeType="application/xml" size="2781" uri="vid.ldml"/>
+    </container>
+    <container uri="source">
+      <resource checksum="2360cf69d83dcfacfa15afbb1712d724" mimeType="application/zip" size="85184695" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="DEU"/>
+      <book code="EPH"/>
+      <book code="EXO"/>
+      <book code="GAL"/>
+      <book code="GEN"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LEV"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="NUM"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>The Bible in Vidunda</name>
+      <description>New Testament, Pentateuch</description>
+      <descriptionLocal>Chividunda</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="DEU"/>
+        <book code="EPH"/>
+        <book code="EXO"/>
+        <book code="GAL"/>
+        <book code="GEN"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LEV"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="NUM"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-gen" src="release/USX_1/GEN.usx" role="GEN"/>
+        <content name="book-exo" src="release/USX_1/EXO.usx" role="EXO"/>
+        <content name="book-lev" src="release/USX_1/LEV.usx" role="LEV"/>
+        <content name="book-num" src="release/USX_1/NUM.usx" role="NUM"/>
+        <content name="book-deu" src="release/USX_1/DEU.usx" role="DEU"/>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>New Testament © 2014 Pioneer Bible Translators and The Word for the World</p>
+        <p>Old Testament books © 2018 Pioneer Bible Translators</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <progress>
+    
+    <book code="GEN" stage="5"/>
+    <book code="EXO" stage="3"/>
+    <book code="LEV" stage="3"/>
+    <book code="NUM" stage="3"/>
+    <book code="DEU" stage="3"/>
+    <book code="JOS" stage="6"/>
+    <book code="JDG" stage="6"/>
+    <book code="RUT" stage="6"/>
+    <book code="1SA" stage="5"/>
+    <book code="2SA" stage="5"/>
+    <book code="1KI" stage="2"/>
+    <book code="2KI" stage="2"/>
+    <book code="1CH" stage="2"/>
+    <book code="2CH" stage="2"/>
+    <book code="EZR" stage="2"/>
+    <book code="NEH" stage="2"/>
+    <book code="EST" stage="2"/>
+    <book code="JOB" stage="1"/>
+    <book code="PSA" stage="2"/>
+    <book code="PRO" stage="2"/>
+    <book code="ECC" stage="2"/>
+    <book code="SNG" stage="1"/>
+    <book code="DAN" stage="1"/>
+    <book code="HOS" stage="2"/>
+    <book code="JOL" stage="1"/>
+    <book code="AMO" stage="1"/>
+    <book code="OBA" stage="1"/>
+    <book code="JON" stage="2"/>
+    <book code="MIC" stage="1"/>
+    <book code="NAM" stage="1"/>
+    <book code="HAB" stage="1"/>
+    <book code="ZEP" stage="1"/>
+    <book code="ZEC" stage="1"/>
+    <book code="MAL" stage="1"/>
+    <book code="MAT" stage="3"/>
+    <book code="MRK" stage="6"/>
+    <book code="LUK" stage="3"/>
+    <book code="JHN" stage="3"/>
+    <book code="ACT" stage="6"/>
+    <book code="ROM" stage="3"/>
+    <book code="1CO" stage="6"/>
+    <book code="2CO" stage="3"/>
+    <book code="GAL" stage="3"/>
+    <book code="EPH" stage="3"/>
+    <book code="PHP" stage="3"/>
+    <book code="COL" stage="3"/>
+    <book code="1TH" stage="3"/>
+    <book code="2TH" stage="3"/>
+    <book code="1TI" stage="3"/>
+    <book code="2TI" stage="3"/>
+    <book code="TIT" stage="3"/>
+    <book code="PHM" stage="3"/>
+    <book code="HEB" stage="3"/>
+    <book code="JAS" stage="3"/>
+    <book code="1PE" stage="3"/>
+    <book code="2PE" stage="3"/>
+    <book code="1JN" stage="3"/>
+    <book code="2JN" stage="3"/>
+    <book code="3JN" stage="3"/>
+    <book code="JUD" stage="3"/>
+    <book code="REV" stage="3"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2017-11-17T01:06:26.514482</dateArchived>
+    <dateUpdated>2019-09-05T07:06:06.364635</dateUpdated>
+    <comments>Pentateuch + NT</comments>
+  </archiveStatus>
+</DBLMetadata>

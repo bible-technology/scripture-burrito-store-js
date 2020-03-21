@@ -1,0 +1,364 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="c1f49ed98a65a544" revision="1">
+  <identification>
+    <name>Sanskrit Bible (NT) in Kannada Script (ಸತ್ಯವೇದಃ।)</name>
+    <nameLocal>Sanskrit Bible (NT) in Kannada Script</nameLocal>
+    <description>New Testament in Sanskrit Language; printed in Kannada Script</description>
+    <abbreviation>SANKAN</abbreviation>
+    <scope>New Testament</scope>
+    <dateCompleted>2018-06-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.100.71</bundleProducer>
+    <systemId type="paratext">
+      <id>c1f49ed98a65a544a6878cea618fdea261c61e78</id>
+      <csetId>03cfb59a19177bac4a7d31d84ecd725d521f6947</csetId>
+      <name>san_kan</name>
+      <fullName>Sanskrit Bible (NT) in Kannada Script (ಸತ್ಯವೇದಃ।)</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>mNcoASMwT9HJDXLtK</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common - Literary</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>SB</abbr>
+      <url>http://www.sanskritbible.in/</url>
+      <nameLocal>SanskritBible.in</nameLocal>
+      <uid>b1c7c64e4f5e41f8f32abeff</uid>
+      <name>SanskritBible.in</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>b1c7c64e4f5e41f8f32abeff</uid>
+      <name>SanskritBible.in</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>san</iso>
+    <name>Sanskrit</name>
+    <nameLocal>Saṃskṛtam</nameLocal>
+    <script>Kannada</script>
+    <scriptCode>Knda</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>sa-Knda-IN-laukika</ldml>
+    <numerals>Roman</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>IN</iso>
+      <name>India</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>ಮಥಿಃ</abbr>
+      <short>ಮಥಿಃ</short>
+      <long>ಮಥಿಲಿಖಿತಃ ಸುಸಂವಾದಃ</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>ಮಾರ್ಕಃ</abbr>
+      <short>ಮಾರ್ಕಃ</short>
+      <long>ಮಾರ್ಕಲಿಖಿತಃ ಸುಸಂವಾದಃ</long>
+    </name>
+    <name id="book-luk">
+      <abbr>ಲೂಕಃ</abbr>
+      <short>ಲೂಕಃ</short>
+      <long>ಲೂಕಲಿಖಿತಃ ಸುಸಂವಾದಃ</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>ಯೋಹನಃ</abbr>
+      <short>ಯೋಹನಃ</short>
+      <long>ಯೋಹನಲಿಖಿತಃ ಸುಸಂವಾದಃ</long>
+    </name>
+    <name id="book-act">
+      <abbr>ಪ್ರೇರಿತಾಃ</abbr>
+      <short>ಪ್ರೇರಿತಾಃ</short>
+      <long>ಪ್ರೇರಿತಾನಾಂ ಕರ್ಮ್ಮಣಾಮಾಖ್ಯಾನಂ</long>
+    </name>
+    <name id="book-rom">
+      <abbr>ರೋಮಿಣಃ</abbr>
+      <short>ರೋಮಿಣಃ</short>
+      <long>ರೋಮಿಣಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-1co">
+      <abbr>೧ ಕರಿನ್ಥಿನಃ</abbr>
+      <short>೧ ಕರಿನ್ಥಿನಃ</short>
+      <long>೧ ಕರಿನ್ಥಿನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-2co">
+      <abbr>೨ ಕರಿನ್ಥಿನಃ</abbr>
+      <short>೨ ಕರಿನ್ಥಿನಃ</short>
+      <long>೨ ಕರಿನ್ಥಿನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-gal">
+      <abbr>ಗಾಲಾತಿನಃ</abbr>
+      <short>ಗಾಲಾತಿನಃ</short>
+      <long>ಗಾಲಾತಿನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-eph">
+      <abbr>ಇಫಿಷಿಣಃ</abbr>
+      <short>ಇಫಿಷಿಣಃ</short>
+      <long>ಇಫಿಷಿಣಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-php">
+      <abbr>ಫಿಲಿಪಿನಃ</abbr>
+      <short>ಫಿಲಿಪಿನಃ</short>
+      <long>ಫಿಲಿಪಿನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-col">
+      <abbr>ಕಲಸಿನಃ</abbr>
+      <short>ಕಲಸಿನಃ</short>
+      <long>ಕಲಸಿನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-1th">
+      <abbr>೧ ಥಿಷಲನೀಕಿನಃ</abbr>
+      <short>೧ ಥಿಷಲನೀಕಿನಃ</short>
+      <long>೧ ಥಿಷಲನೀಕಿನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-2th">
+      <abbr>೨ ಥಿಷಲನೀಕಿನಃ</abbr>
+      <short>೨ ಥಿಷಲನೀಕಿನಃ</short>
+      <long>೨ ಥಿಷಲನೀಕಿನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>೧ ತೀಮಥಿಯಃ</abbr>
+      <short>೧ ತೀಮಥಿಯಃ</short>
+      <long>೧ ತೀಮಥಿಯಂ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>೨ ತೀಮಥಿಯಃ</abbr>
+      <short>೨ ತೀಮಥಿಯಃ</short>
+      <long>೨ ತೀಮಥಿಯಂ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-tit">
+      <abbr>ತೀತಃ</abbr>
+      <short>ತೀತಃ</short>
+      <long>ತೀತಂ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-phm">
+      <abbr>ಫಿಲೋಮೋನಃ</abbr>
+      <short>ಫಿಲೋಮೋನಃ</short>
+      <long>ಫಿಲೋಮೋನಂ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-heb">
+      <abbr>ಇಬ್ರಿಣಃ</abbr>
+      <short>ಇಬ್ರಿಣಃ</short>
+      <long>ಇಬ್ರಿಣಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-jas">
+      <abbr>ಯಾಕೂಬಃ</abbr>
+      <short>ಯಾಕೂಬಃ</short>
+      <long>ಯಾಕೂಬಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>೧ ಪಿತರಃ</abbr>
+      <short>೧ ಪಿತರಃ</short>
+      <long>೧ ಪಿತರಸ್ಯ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>೨ ಪಿತರಃ</abbr>
+      <short>೨ ಪಿತರಃ</short>
+      <long>೨ ಪಿತರಸ್ಯ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>೧ ಯೋಹನಃ</abbr>
+      <short>೧ ಯೋಹನಃ</short>
+      <long>೧ ಯೋಹನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>೨ ಯೋಹನಃ</abbr>
+      <short>೨ ಯೋಹನಃ</short>
+      <long>೨ ಯೋಹನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>೩ ಯೋಹನಃ</abbr>
+      <short>೩ ಯೋಹನಃ</short>
+      <long>೩ ಯೋಹನಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-jud">
+      <abbr>ಯಿಹೂದಾಃ</abbr>
+      <short>ಯಿಹೂದಾಃ</short>
+      <long>ಯಿಹೂದಾಃ ಪತ್ರಂ</long>
+    </name>
+    <name id="book-rev">
+      <abbr>ಪ್ರಕಾಶಿತಂ</abbr>
+      <short>ಪ್ರಕಾಶಿತಂ</short>
+      <long>ಪ್ರಕಾಶಿತಂ ಭವಿಷ್ಯದ್ವಾಕ್ಯಂ</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <resource checksum="2fd9c16b805724d590c0cff96da070a4" mimeType="application/octet-stream" size="414820" uri="NotoSans-Regular.ttf"/>
+      <container uri="USX_1">
+        <resource checksum="eb9e590d83400c1b9c16d0ad60013b00" mimeType="application/xml" size="155060" uri="1CO.usx"/>
+        <resource checksum="f9c3d4a69ce6001ead19e4466cb8e5f8" mimeType="application/xml" size="40692" uri="1JN.usx"/>
+        <resource checksum="93fbee8762b853d94c71a8c9a3ecf3e8" mimeType="application/xml" size="40072" uri="1PE.usx"/>
+        <resource checksum="6e4d2dc0ed0f24af2697b3aecaeebe9f" mimeType="application/xml" size="34301" uri="1TH.usx"/>
+        <resource checksum="257cdc6d2efa3586e633105ea5844b92" mimeType="application/xml" size="39745" uri="1TI.usx"/>
+        <resource checksum="ca5e0689cfd0413acba20be09de01d10" mimeType="application/xml" size="99523" uri="2CO.usx"/>
+        <resource checksum="0bf0beea7c27d7e6daa0409f956ab8fe" mimeType="application/xml" size="5645" uri="2JN.usx"/>
+        <resource checksum="aae7e6e58692d644daf7bb82a8e7fc56" mimeType="application/xml" size="24717" uri="2PE.usx"/>
+        <resource checksum="791cc2a43ba4d1caa5b636146be807aa" mimeType="application/xml" size="18235" uri="2TH.usx"/>
+        <resource checksum="8df062f8de44f1596dffb6e446c4c0ef" mimeType="application/xml" size="29486" uri="2TI.usx"/>
+        <resource checksum="46a31caf7066cfe624ef58fb8c96931e" mimeType="application/xml" size="5759" uri="3JN.usx"/>
+        <resource checksum="a9980fc4ea2c29d1e47480d121e7e14f" mimeType="application/xml" size="392213" uri="ACT.usx"/>
+        <resource checksum="420a26fd421e068402b1cbbc41c1802d" mimeType="application/xml" size="34612" uri="COL.usx"/>
+        <resource checksum="cdf7d2e54b385a1cd74532404b70844f" mimeType="application/xml" size="51245" uri="EPH.usx"/>
+        <resource checksum="837321a15efbe15d031cb356771881cc" mimeType="application/xml" size="53089" uri="GAL.usx"/>
+        <resource checksum="0f310e726104b0d7b519516a2a8183cc" mimeType="application/xml" size="110861" uri="HEB.usx"/>
+        <resource checksum="8a6096387c7687f297d7ffe27599ed39" mimeType="application/xml" size="38357" uri="JAS.usx"/>
+        <resource checksum="c03dae86a7a972fee29b92c088119604" mimeType="application/xml" size="299182" uri="JHN.usx"/>
+        <resource checksum="c72b715f1665e7561b6bcc616d5ca463" mimeType="application/xml" size="10801" uri="JUD.usx"/>
+        <resource checksum="1c7c9688455de557c8471b9e043ab689" mimeType="application/xml" size="390924" uri="LUK.usx"/>
+        <resource checksum="6db2234fd666948265e11ff01dbdc196" mimeType="application/xml" size="362734" uri="MAT.usx"/>
+        <resource checksum="d787de8fbaa8387a250290a5b0efdf22" mimeType="application/xml" size="228193" uri="MRK.usx"/>
+        <resource checksum="5fd3d54b93cb2434561398ed3bc3be2e" mimeType="application/xml" size="8068" uri="PHM.usx"/>
+        <resource checksum="ae2bfbea19baf021eecc4b7559b5426d" mimeType="application/xml" size="36766" uri="PHP.usx"/>
+        <resource checksum="18040fa56b036726711608f8d072fd4e" mimeType="application/xml" size="172564" uri="REV.usx"/>
+        <resource checksum="391bf3c688311fae572bb190d9d0416c" mimeType="application/xml" size="162023" uri="ROM.usx"/>
+        <resource checksum="6b4ae8e517b2142925bcdf3a945813d0" mimeType="application/xml" size="17023" uri="TIT.usx"/>
+      </container>
+      <resource checksum="8abbce94493d103c63d79dc4ae67f9fc" mimeType="application/xml" size="1028" uri="san_sa-Knda-IN-laukika.ldml"/>
+      <resource checksum="a3a34f91fb427060a2aba4a5f12c9dea" mimeType="application/xml" size="78092" uri="styles.xml"/>
+      <resource checksum="7bac69d13d1c9e55d03a90415de993b4" mimeType="text/plain" size="15388" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="fece4d213eb32011fa975ed59fa5ffd0" mimeType="application/zip" size="1026952" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <nameLocal>ಸತ್ಯವೇದಃ। Sanskrit Bible (NT) in Kannada Script</nameLocal>
+      <description>Sanskrit Bible (NT) in Kannada Script (ಸತ್ಯವೇದಃ।)</description>
+      <descriptionLocal>ಸತ್ಯವೇದಃ। Sanskrit Bible (NT) in Kannada Script</descriptionLocal>
+      <abbreviation>SANKA</abbreviation>
+      <abbreviationLocal>SANKA</abbreviationLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© SanskritBible.in । Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a></p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>Thank you for your interest in Sanskrit Bible.</p>
+      <p>Sanskrit Bible (NT) is freely available in 22 different scripts of your choice. This edition is in Kannada script and is based on the Sanskrit translation of the Holy Bible published by Calcutta Baptist Missionaries in 1851. Please visit SanskritBible.in to learn more about Sanskrit Bible and to download various free Christian literature.</p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Manu Mathew Thomas</archivistName>
+    <dateArchived>2018-09-26T11:11:47.006698</dateArchived>
+    <dateUpdated>2018-09-26T11:11:47.006698</dateUpdated>
+    <comments>Sanskrit Bible (NT) in Kannada Script (ಸತ್ಯವೇದಃ।)</comments>
+  </archiveStatus>
+</DBLMetadata>

@@ -1,0 +1,381 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="8e3b1a957009c6ca" revision="4">
+  <identification>
+    <name>New Testament in Tay</name>
+    <nameLocal>Jisas Klays Takaw Teplep Ne</nameLocal>
+    <description>Tay New Testament</description>
+    <abbreviation>TayNT</abbreviation>
+    <scope>New Testament</scope>
+    <dateCompleted>2013</dateCompleted>
+    <bundleProducer>Paratext/7.4.100.52</bundleProducer>
+    <systemId type="paratext">
+      <id>8e3b1a957009c6caa78ed611388919164605f255</id>
+      <name>tawDBL</name>
+      <fullName>Tay NT for DBL</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>taw</iso>
+    <name>Tay</name>
+    <nameLocal>Tai</nameLocal>
+    <script>Roman</script>
+    <scriptCode>Zzzz</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>taw</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mat</abbr>
+      <short>Matyu</short>
+      <long>Matyu Ne Jisas Klays Takaw Teplep Ak Kɨl Tɨkak</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mak</abbr>
+      <short>Mak</short>
+      <long>Mak Ne Jisas Klays Takaw Teplep Ak Kɨl Tɨkak</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Luk</short>
+      <long>Luk Ne Jisas Klays Takaw Teplep Ak Kɨl Tɨkak</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Jon</abbr>
+      <short>Jon</short>
+      <long>Jon Ne Jisas Klays Takaw Teplep Ak Kɨl Tɨkak</long>
+    </name>
+    <name id="book-act">
+      <abbr>Apo</abbr>
+      <short>Aposel</short>
+      <long>Bɨ Jisas Takaw Nop Dad Ameb Okok Tɨtay Gɨlak Kesɨm</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Lom</abbr>
+      <short>Lom</short>
+      <long>Pol Lom Binɨb Kɨlop Mɨj Tɨkak</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Ko</abbr>
+      <short>1 Kolin</short>
+      <long>Pol Mɨj Ned Ak Kolin Binɨb Kɨlop Tɨkak</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Ko</abbr>
+      <short>2 Kolin</short>
+      <long>Pol Mɨj Kɨdek Ak Kolin Binɨb Kɨlop Tɨkak</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gal</abbr>
+      <short>Galesiya</short>
+      <long>Pol Galesiya Binɨb Kɨlop Mɨj Tɨkak</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Epe</abbr>
+      <short>Epesus</short>
+      <long>Pol Epesus Binɨb Kɨlop Mɨj Tɨkak</long>
+    </name>
+    <name id="book-php">
+      <abbr>Plp</abbr>
+      <short>Pilipay</short>
+      <long>Pol Pilipay Binɨb Kɨlop Mɨj Tɨkak</long>
+    </name>
+    <name id="book-col">
+      <abbr>Kol</abbr>
+      <short>Kolosi</short>
+      <long>Pol Kolosi Binɨb Kɨlop Mɨj Tɨkak</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Te</abbr>
+      <short>1 Tesalonayka</short>
+      <long>Pol Mɨj Ned Ak Tesalonayka Binɨb Kɨlop Tɨkak</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Te</abbr>
+      <short>2 Tesalonayka</short>
+      <long>Pol Mɨj Kɨdek Ak Tesalonayka Binɨb Kɨlop Tɨkak</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Ti</abbr>
+      <short>1 Timoti</short>
+      <long>Pol Mɨj Ned Ak Timoti Nop Tɨkak</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Ti</abbr>
+      <short>2 Timoti</short>
+      <long>Pol Mɨj Kɨdek Ak Timoti Nop Tɨkak</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tat</abbr>
+      <short>Taytus</short>
+      <long>Pol Taytus Nop Mɨj Tɨkak</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Plm</abbr>
+      <short>Pilemon</short>
+      <long>Pol Pilemon Nop Mɨj Tɨkak</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Hib</abbr>
+      <short>Hiblu</short>
+      <long>Bɨ Olap Ne Hiblu Binɨb Klays Yɨl Yelak Okok Kɨlop Mɨj Tɨkak</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Jem</abbr>
+      <short>Jemis</short>
+      <long>Jemis Mɨj Tɨkak</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Pi</abbr>
+      <short>1 Pita</short>
+      <long>Pita Mɨj Ned Ak Tɨkak</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Pi</abbr>
+      <short>2 Pita</short>
+      <long>Pita Mɨj Kɨdek Ak Tɨkak</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Jo</abbr>
+      <short>1 Jon</short>
+      <long>Jon Mɨj Ned Ak Tɨkak</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Jo</abbr>
+      <short>2 Jon</short>
+      <long>Jon Mɨj Nab Ak Tɨkak</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Jo</abbr>
+      <short>3 Jon</short>
+      <long>Jon Mɨj Kɨdek Ak Tɨkak</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Jud</abbr>
+      <short>Jud</short>
+      <long>Jud Mɨj Tɨkak</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Lep</abbr>
+      <short>Lepelesin</short>
+      <long>Jisas Klays Ne Jon Nop Takaw Jɨj We Gɨl Agyɨkak</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="d551a4392ecc2a49d983d0fac5d00ca4" mimeType="application/octet-stream" size="692" uri="release/TayUni.lds"/>
+    <resource checksum="be7018a54e221d66c22d33acf9866bf2" mimeType="application/xml" size="160634" uri="release/USX_1/1CO.usx"/>
+    <resource checksum="e92d8efe24765f159ea39287149dcb4c" mimeType="application/xml" size="39874" uri="release/USX_1/1JN.usx"/>
+    <resource checksum="f88a9cdc5e384b0229dbaaf36c056f10" mimeType="application/xml" size="50819" uri="release/USX_1/1PE.usx"/>
+    <resource checksum="08c4de0ea65e1798d69999dac943c53d" mimeType="application/xml" size="32878" uri="release/USX_1/1TH.usx"/>
+    <resource checksum="0911e91fd71a4c363a2d7ada8a74c036" mimeType="application/xml" size="46292" uri="release/USX_1/1TI.usx"/>
+    <resource checksum="3bb7e27ca1c55f2ebae7a2e832320793" mimeType="application/xml" size="103248" uri="release/USX_1/2CO.usx"/>
+    <resource checksum="291eb19705ab93eb70f94ec17d9c0f0e" mimeType="application/xml" size="5287" uri="release/USX_1/2JN.usx"/>
+    <resource checksum="4d438e1672b4d8d57815b78aa28595d6" mimeType="application/xml" size="29303" uri="release/USX_1/2PE.usx"/>
+    <resource checksum="d1c5da62d255891008ccb41781301e71" mimeType="application/xml" size="18380" uri="release/USX_1/2TH.usx"/>
+    <resource checksum="399469502b4ac42b918972ac61b95368" mimeType="application/xml" size="33177" uri="release/USX_1/2TI.usx"/>
+    <resource checksum="3ba991de755a2d92bb3698b5f44fdfc6" mimeType="application/xml" size="5296" uri="release/USX_1/3JN.usx"/>
+    <resource checksum="3a6fcf4d847fceca75b10a5a21bbfd99" mimeType="application/xml" size="326090" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="24eb877f2e8b6e1e09c05251abbfda56" mimeType="application/xml" size="39938" uri="release/USX_1/COL.usx"/>
+    <resource checksum="49d861eb08203605e61f2fb1cfe41372" mimeType="application/xml" size="62299" uri="release/USX_1/EPH.usx"/>
+    <resource checksum="0df69d9fcd41b959348110a7c5af6747" mimeType="application/xml" size="54835" uri="release/USX_1/GAL.usx"/>
+    <resource checksum="c4cc5a55acaabb3847bb8407cd31c265" mimeType="application/xml" size="134694" uri="release/USX_1/HEB.usx"/>
+    <resource checksum="4e1a02870544f92bde5673092239edd1" mimeType="application/xml" size="45361" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="cc0be13bab31fd78d1abbcf451f0a49a" mimeType="application/xml" size="283258" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="7bbfefeaaeb0e25a56eed8e9e73bdba8" mimeType="application/xml" size="12292" uri="release/USX_1/JUD.usx"/>
+    <resource checksum="5e4f46550e9bcae9b9a88f1abc2dd3a7" mimeType="application/xml" size="353234" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="7223720b7216f5d3668e612d4849a2d6" mimeType="application/xml" size="357938" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="b355b57feeaef3de61d741cd7403b9a0" mimeType="application/xml" size="188895" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="a84ce0fca9ec6257af42c6a4ca26bc04" mimeType="application/xml" size="8855" uri="release/USX_1/PHM.usx"/>
+    <resource checksum="68db5a6a6e3e2e468f0bcee200aadbf2" mimeType="application/xml" size="38633" uri="release/USX_1/PHP.usx"/>
+    <resource checksum="d57b55d4fad655f29199528689996db3" mimeType="application/xml" size="182981" uri="release/USX_1/REV.usx"/>
+    <resource checksum="6c30a92b65d7226b2a962c2cf2d9e21c" mimeType="application/xml" size="180520" uri="release/USX_1/ROM.usx"/>
+    <resource checksum="9838916be82d498f411538d07c3750e0" mimeType="application/xml" size="20469" uri="release/USX_1/TIT.usx"/>
+    <resource checksum="fcb97e72338e8779a175af41fb7fb8c5" mimeType="application/xml" size="77886" uri="release/styles.xml"/>
+    <resource checksum="581f0c64fe351cd85003c386bb3cb214" mimeType="application/octet-stream" size="3595" uri="release/taw.ldml"/>
+    <resource checksum="1b3c6325327287444f085d6052b2e3a8" mimeType="application/octet-stream" size="691" uri="release/tawDBL.lds"/>
+    <resource checksum="39af66998d2a2586774d82c658b55dfb" mimeType="application/octet-stream" size="13114" uri="release/versification.vrs"/>
+    <resource checksum="68e8fa17e9d0d23b2434f0c09e455ee8" mimeType="application/zip" size="11308222" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>New Testament</description>
+      <descriptionLocal>New Testament</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© Pioneer Bible Translators Association of Papua New Guinea</p>
+        <p>© Pioneer Bible Translators of Dallas, Texas, USA</p>
+        <p>This work is licensed under the Creative Commons Attribution Non-commercial No-Derivatives 3.0 license.<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">creativecommons.org</a></p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>.
+</p>
+    </promoVersionInfo>
+  </promotion>
+  <progress>
+    <book code="MAT" stage="3"/>
+    <book code="MRK" stage="3"/>
+    <book code="LUK" stage="3"/>
+    <book code="JHN" stage="3"/>
+    <book code="ACT" stage="3"/>
+    <book code="ROM" stage="3"/>
+    <book code="1CO" stage="3"/>
+    <book code="2CO" stage="3"/>
+    <book code="GAL" stage="3"/>
+    <book code="EPH" stage="3"/>
+    <book code="PHP" stage="3"/>
+    <book code="COL" stage="3"/>
+    <book code="1TH" stage="3"/>
+    <book code="2TH" stage="3"/>
+    <book code="1TI" stage="3"/>
+    <book code="2TI" stage="3"/>
+    <book code="TIT" stage="3"/>
+    <book code="PHM" stage="3"/>
+    <book code="HEB" stage="3"/>
+    <book code="JAS" stage="3"/>
+    <book code="1PE" stage="3"/>
+    <book code="2PE" stage="3"/>
+    <book code="1JN" stage="3"/>
+    <book code="2JN" stage="3"/>
+    <book code="3JN" stage="3"/>
+    <book code="JUD" stage="3"/>
+    <book code="REV" stage="3"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Mike Herchenroeder</archivistName>
+    <dateArchived>2013-12-19T20:09:22.383806</dateArchived>
+    <dateUpdated>2014-01-08T21:50:37.870191</dateUpdated>
+    <comments>Metadata promotion modified (Updated to DBL 4.0)</comments>
+  </archiveStatus>
+</DBLMetadata>

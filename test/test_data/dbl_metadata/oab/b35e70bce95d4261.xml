@@ -1,0 +1,788 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata id="b35e70bce95d4261" revision="1" version="2.2.1">
+  <identification>
+    <canonSpec type="NT">
+      <component>westernNT</component>
+    </canonSpec>
+    <name>Indian Revised Version(IRV) Hindi - 2019</name>
+    <nameLocal>आई आर वी हिंदी</nameLocal>
+    <abbreviation>IRVHin</abbreviation>
+    <description>Hindi Bible Version 2019</description>
+    <descriptionLocal>आई आर वी हिंदी</descriptionLocal>
+    <scope>New Testament</scope>
+    <bundleProducer>nathanael/0.51.3</bundleProducer>
+  </identification>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <uid>ca4e509c2990fb97eaa0b7c9</uid>
+      <name>Bridge Connectivity Solutions Pvt. Ltd.</name>
+      <nameLocal>Bridge Connectivity Solutions Pvt. Ltd.</nameLocal>
+      <abbr>BCS</abbr>
+      <url>https://bridgeconn.com/</url>
+    </rightsHolder>
+    <contributor>
+      <uid>ca4e509c2990fb97eaa0b7c9</uid>
+      <name>Bridge Connectivity Solutions Pvt. Ltd.</name>
+      <content>true</content>
+      <finance>true</finance>
+      <management>true</management>
+      <qa>true</qa>
+      <publication>true</publication>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>hin</iso>
+    <name>Hindi</name>
+    <nameLocal>हिन्दी</nameLocal>
+    <scriptCode>Deva</scriptCode>
+    <script>Devanagari</script>
+    <scriptDirection>LTR</scriptDirection>
+    <numerals>Devanagari</numerals>
+    <ldml>hi-Deva-IN</ldml>
+  </language>
+  <countries>
+    <country>
+      <iso>IN</iso>
+      <name>India</name>
+    </country>
+  </countries>
+  <type>
+    <medium>audio</medium>
+    <hasCharacters>false</hasCharacters>
+    <isTranslation>false</isTranslation>
+    <isExpression>true</isExpression>
+    <dramatization>Single-Voice</dramatization>
+    <isConfidential>false</isConfidential>
+  </type>
+  <format>
+    <compression>MP3</compression>
+    <contentByChapter>true</contentByChapter>
+  </format>
+  <manifest>
+    <resource mimeType="audio/mpeg" size="4941952" checksum="c5e34a08a3ca82992c180306fc535680" uri="release/audio/1CO/1CO_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="2571904" checksum="aec60620b502a35e99dac4b4ef5e0ee6" uri="release/audio/1CO/1CO_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="3172480" checksum="92824ca0cbbb9ecceca985cdb6886d79" uri="release/audio/1CO/1CO_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="3467392" checksum="f31381f4228c4533a8de71bfea130258" uri="release/audio/1CO/1CO_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="2265856" checksum="7b34f1b4999512ed2ba4806d8416e18b" uri="release/audio/1CO/1CO_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="3074176" checksum="85f852e5cffdd883047ce2f2e7ed8381" uri="release/audio/1CO/1CO_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="6722560" checksum="a639b1ec9cb09f1e24cb03379921aad6" uri="release/audio/1CO/1CO_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="2353408" checksum="8edbb1d4191a9a50f6ad8ad87857dda0" uri="release/audio/1CO/1CO_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="4395904" checksum="07dc986a31fdf3b17bddd78e4181bd01" uri="release/audio/1CO/1CO_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="4603648" checksum="e67c1a15b8534557fe0bdbecd74f2f9d" uri="release/audio/1CO/1CO_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="4647040" checksum="4013adac4cdfc91c43ba186f651f0aae" uri="release/audio/1CO/1CO_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="4483456" checksum="c3b202282539f9cdc010562b49a9e65f" uri="release/audio/1CO/1CO_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="2058496" checksum="5d18f0a94f199e7cffe7c4bc240ac6ae" uri="release/audio/1CO/1CO_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="6340096" checksum="75f68855300b9c645002a1ef6bbd8da6" uri="release/audio/1CO/1CO_014.mp3"/>
+    <resource mimeType="audio/mpeg" size="8513920" checksum="a6385ce3e05ee4e7890d9ef14ebd5b36" uri="release/audio/1CO/1CO_015.mp3"/>
+    <resource mimeType="audio/mpeg" size="2987008" checksum="42853ac41a19481c41ee165b42ad01af" uri="release/audio/1CO/1CO_016.mp3"/>
+    <resource mimeType="audio/mpeg" size="1676032" checksum="40f37fcc6ccfd376ca225000ba41ca85" uri="release/audio/1JN/1JN_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="4909312" checksum="155df303ca2c389b327115cf2e02b4f8" uri="release/audio/1JN/1JN_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="3926272" checksum="970c5acfbf7c22fb4f61f72a25eb6a37" uri="release/audio/1JN/1JN_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="3762304" checksum="5f51459784403577e3a5c05a419fbe61" uri="release/audio/1JN/1JN_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="3609472" checksum="c6ee38ca69a9c9238cc735b28f20b3d6" uri="release/audio/1JN/1JN_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="4275712" checksum="2b143f9c2ed973f6c891f12cd39ca3c4" uri="release/audio/1PE/1PE_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="4243072" checksum="8d018d652c8dc40b1951bd9c28346533" uri="release/audio/1PE/1PE_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="4166656" checksum="b5b425be0246066fa1afa608bda0deb6" uri="release/audio/1PE/1PE_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="3205504" checksum="9e542508251b936ec2e5e091d5bcf8c6" uri="release/audio/1PE/1PE_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="2200576" checksum="d2db75d37abebf318e2890aab6558cba" uri="release/audio/1PE/1PE_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="1851136" checksum="9c5916e0f01adca5649d31edcd53c205" uri="release/audio/1TH/1TH_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="4057216" checksum="dd6f4284c0443644bb59270515f57860" uri="release/audio/1TH/1TH_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="2484352" checksum="3ef0780a726609ac3375491e190f5e50" uri="release/audio/1TH/1TH_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="3216256" checksum="b453a4e63cb2edbdaa96eccaf9200a3f" uri="release/audio/1TH/1TH_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="3194368" checksum="e425fcb097f4c2bf7561ae9adf9ed82b" uri="release/audio/1TH/1TH_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="3559936" checksum="d862a4bf837c2de7628b86d88c794b20" uri="release/audio/1TI/1TI_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="2144896" checksum="83bce65666c3f7c5aef5bfab8d67b7be" uri="release/audio/1TI/1TI_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="2477824" checksum="f809058af2b90006f2c2f02c28288edc" uri="release/audio/1TI/1TI_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="2679808" checksum="9fd575f13b669006224f01f143f7a546" uri="release/audio/1TI/1TI_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="3702400" checksum="6839e4e69b2d4797521377d25b525960" uri="release/audio/1TI/1TI_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="3607168" checksum="b230febf8ac6716a13be0d01a1f2af06" uri="release/audio/1TI/1TI_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="4439680" checksum="ed130464cdfd8716a229cd0d8a0ef944" uri="release/audio/2CO/2CO_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="2735872" checksum="903f9848af050bd677e3ba36d19971db" uri="release/audio/2CO/2CO_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="2735872" checksum="1445d10462c58703273c348be010ebfb" uri="release/audio/2CO/2CO_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="3139840" checksum="23625b4fbcbbfd7aa85eb43029a279a1" uri="release/audio/2CO/2CO_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="3434752" checksum="98e41e5756c1e2d4203800c0d0ef82e7" uri="release/audio/2CO/2CO_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="2910592" checksum="402b744bf09b55a2c8b8860e989f465f" uri="release/audio/2CO/2CO_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="3467392" checksum="d9f7fbc1ea1edac2e2c4dec00c6d4704" uri="release/audio/2CO/2CO_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="4035328" checksum="be560ccec9a8efebfc3a799a64673973" uri="release/audio/2CO/2CO_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="2779264" checksum="c07ab85e6a93f015845b1c547802f2f3" uri="release/audio/2CO/2CO_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="3139840" checksum="3ecbac65689fed9bd59833e221478c70" uri="release/audio/2CO/2CO_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="4985728" checksum="7f3368d94a4e0fe0f1c5e563301b1b2d" uri="release/audio/2CO/2CO_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="4166656" checksum="8d638b3dab3682e6ea0c82fd6c0e769d" uri="release/audio/2CO/2CO_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="2211328" checksum="e916b938ff3943be7539bcb8bde009ca" uri="release/audio/2CO/2CO_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="2178688" checksum="3d2b338bdeeb690c5bf846c950e43947" uri="release/audio/2JN/2JN_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="3729664" checksum="2400132f9fcb895e281423b7934ab682" uri="release/audio/2PE/2PE_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="3991936" checksum="d7aecccd8f04e3d7a8de48f7c509f068" uri="release/audio/2PE/2PE_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="3347200" checksum="c2803e7b8b1552bce34890f8d118d407" uri="release/audio/2PE/2PE_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="2309632" checksum="317574a647872ddb58f1b41829383c0c" uri="release/audio/2TH/2TH_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="2987008" checksum="5b7b1b488ad9f4b3c66b7ee20d828edc" uri="release/audio/2TH/2TH_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="2659072" checksum="8a26e8538caa7bf69b309c33bd737c26" uri="release/audio/2TH/2TH_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="3084160" checksum="8c2c6762b9e94630ac55a9801a3b711e" uri="release/audio/2TI/2TI_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="3975808" checksum="ec42b62a2d466f3060f74c9ed839a694" uri="release/audio/2TI/2TI_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="2739328" checksum="194641327bb99bdfe141e4602bd3320f" uri="release/audio/2TI/2TI_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="3274240" checksum="ae5feeea29181f3442a9fe030b36825f" uri="release/audio/2TI/2TI_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="2331520" checksum="79e1f65f2431582e9f802f6a3a234b2f" uri="release/audio/3JN/3JN_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="4155520" checksum="c378c778f40b68454c6371ce66e7cc6d" uri="release/audio/ACT/ACT_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="6864640" checksum="e4481394bf47119065e78c9a6b8be608" uri="release/audio/ACT/ACT_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="4461568" checksum="8488738a741afb7eb8b32227a06dda02" uri="release/audio/ACT/ACT_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="5848576" checksum="5a86ca41c39644945c98e5f3db02bfa2" uri="release/audio/ACT/ACT_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="6973696" checksum="add95967b62197bc9ee5e491f8eda272" uri="release/audio/ACT/ACT_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="2615680" checksum="50b20058746e4a88a5fc68d16da5247f" uri="release/audio/ACT/ACT_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="10130176" checksum="22dbf10bc431e82258627fe50df13e77" uri="release/audio/ACT/ACT_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="6241792" checksum="f1eb1f90523ae4d447f6c8a77e13c0cd" uri="release/audio/ACT/ACT_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="6744448" checksum="64968cbb75b14b2e59d51c66e008a77b" uri="release/audio/ACT/ACT_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="7290496" checksum="4c2cc246c8e46a9c6bb6fe6dfe59b888" uri="release/audio/ACT/ACT_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="4395904" checksum="7063e4815f14ad62a5db0535335bc734" uri="release/audio/ACT/ACT_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="4275712" checksum="12ce720e5562525ba93e3a2a3a4cca9b" uri="release/audio/ACT/ACT_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="8415616" checksum="967888d01b3932a270026129f37597d0" uri="release/audio/ACT/ACT_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="4450432" checksum="08e4996d2d1dc3ad7136432969b123c1" uri="release/audio/ACT/ACT_014.mp3"/>
+    <resource mimeType="audio/mpeg" size="6635008" checksum="6b8a2e059a9d5428fb502960f512dce7" uri="release/audio/ACT/ACT_015.mp3"/>
+    <resource mimeType="audio/mpeg" size="6231040" checksum="42c5af6b02b057641e853d11dc4a772f" uri="release/audio/ACT/ACT_016.mp3"/>
+    <resource mimeType="audio/mpeg" size="6492928" checksum="8b0f9c8265a9105588394a5ad2460013" uri="release/audio/ACT/ACT_017.mp3"/>
+    <resource mimeType="audio/mpeg" size="5138560" checksum="d740f31d274a7433a384e64074dd45b4" uri="release/audio/ACT/ACT_018.mp3"/>
+    <resource mimeType="audio/mpeg" size="6919168" checksum="134125071f05c83b1b08cd29cdb9bbf4" uri="release/audio/ACT/ACT_019.mp3"/>
+    <resource mimeType="audio/mpeg" size="6143488" checksum="f3a0109de2f4382dc39b0244f02f406e" uri="release/audio/ACT/ACT_020.mp3"/>
+    <resource mimeType="audio/mpeg" size="7224832" checksum="e8bdd758ac8114fc97769f15481278b7" uri="release/audio/ACT/ACT_021.mp3"/>
+    <resource mimeType="audio/mpeg" size="4985728" checksum="a8d5571cf53e70ffdcf8fd9678460f8f" uri="release/audio/ACT/ACT_022.mp3"/>
+    <resource mimeType="audio/mpeg" size="6307456" checksum="a2c9c0cddfd2708d3a41c2c169b9cd5b" uri="release/audio/ACT/ACT_023.mp3"/>
+    <resource mimeType="audio/mpeg" size="4898560" checksum="cd98c1cfc577863b82e64a04f92a5389" uri="release/audio/ACT/ACT_024.mp3"/>
+    <resource mimeType="audio/mpeg" size="5160448" checksum="5fb453b558c2711d20498571ad6e0469" uri="release/audio/ACT/ACT_025.mp3"/>
+    <resource mimeType="audio/mpeg" size="5521024" checksum="f1054004fadf75427109cd3471cd1444" uri="release/audio/ACT/ACT_026.mp3"/>
+    <resource mimeType="audio/mpeg" size="7072000" checksum="50997e6bc663d02218feec0820d5d4b0" uri="release/audio/ACT/ACT_027.mp3"/>
+    <resource mimeType="audio/mpeg" size="5313280" checksum="6bc99b6b195f577f4dbf3dc4726d95ee" uri="release/audio/ACT/ACT_028.mp3"/>
+    <resource mimeType="audio/mpeg" size="4865536" checksum="3edd2acbd148ecba59089e8f8954272a" uri="release/audio/COL/COL_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="3773440" checksum="3c401e85a842ad760000d208c2679ac8" uri="release/audio/COL/COL_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="3522304" checksum="1d791bebc9ae9426aa27bf561fb5edf3" uri="release/audio/COL/COL_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="2790400" checksum="e973d4e57329db3809464a8bc60ea81d" uri="release/audio/COL/COL_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="3761920" checksum="d35a614472fa403251d5692cd3c4e715" uri="release/audio/EPH/EPH_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="3536128" checksum="3eb55b328c9475445bf4244e693e083c" uri="release/audio/EPH/EPH_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="3143680" checksum="e2115a80ca545123fcdbc0b3a5abd4bd" uri="release/audio/EPH/EPH_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="4807936" checksum="466e6f310a1a392e88b816045b8a3d7b" uri="release/audio/EPH/EPH_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="4320640" checksum="79f5b925ee61394f02d639fa11eccc7c" uri="release/audio/EPH/EPH_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="3417088" checksum="347810bb307ad0f8a0c89ef3a792c996" uri="release/audio/EPH/EPH_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="3456640" checksum="dcacf94a97ba876e7d2a6f37a2b5317a" uri="release/audio/GAL/GAL_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="4188544" checksum="4814c810dbc943354298e8d32343da3f" uri="release/audio/GAL/GAL_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="4843648" checksum="135133c30cc7f4e3caaf81a7af209eb5" uri="release/audio/GAL/GAL_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="4483456" checksum="5b7b38e146e554eaf1c5b58ad85598c6" uri="release/audio/GAL/GAL_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="3478528" checksum="a2cf0cd168b66becbb18eab4eb0ae519" uri="release/audio/GAL/GAL_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="2648320" checksum="b626be827a92d55312e32a702405e11a" uri="release/audio/GAL/GAL_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="2331520" checksum="a3c7056b79e46c68b4cf970beb131769" uri="release/audio/HEB/HEB_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="3347200" checksum="e122c2d9f6b8c5f034b17473e0698d61" uri="release/audio/HEB/HEB_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="2801152" checksum="fea1da2a4d9aaf5d4d4b04e7a912ae1e" uri="release/audio/HEB/HEB_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="2943232" checksum="2ce7325ca78ac14f27189f961ef6d642" uri="release/audio/HEB/HEB_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="2222464" checksum="39b8aa58ba98047276f68f0e6cc4e27d" uri="release/audio/HEB/HEB_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="3216256" checksum="aafbbcad386e19d7aef7a41e46c91e90" uri="release/audio/HEB/HEB_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="4723456" checksum="a780f8b86de49219ac2403585f593f03" uri="release/audio/HEB/HEB_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="2560768" checksum="d72fbaa458b62b11b29519a39e398f4c" uri="release/audio/HEB/HEB_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="5226112" checksum="3379b11d047224b12cbb3c19f1e4ccdc" uri="release/audio/HEB/HEB_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="5903104" checksum="ed7d28a082ec8b58ab0f8df1d11a6f8c" uri="release/audio/HEB/HEB_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="7028224" checksum="7dc381c2a75e85cb5b2523bc9d618efa" uri="release/audio/HEB/HEB_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="4800256" checksum="011580fc0e5edd0a6638e12b318740da" uri="release/audio/HEB/HEB_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="3860608" checksum="7bbcb016a55bd07ec89215e31ca04f4a" uri="release/audio/HEB/HEB_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="4013824" checksum="b645e0816a1a342571e830f19ae74c33" uri="release/audio/JAS/JAS_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="3751552" checksum="14883767aace26eb75bc94a51088ad1b" uri="release/audio/JAS/JAS_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="2877568" checksum="2b316daec19cd41a0236ac780b9f3155" uri="release/audio/JAS/JAS_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="2692096" checksum="398f8f6500688a4a221dfdff5c83de0a" uri="release/audio/JAS/JAS_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="3227392" checksum="2da10f4e0d0ef059071e81cb2578750b" uri="release/audio/JAS/JAS_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="7104640" checksum="b32047a23ffd0ea76f236546e9f38a4a" uri="release/audio/JHN/JHN_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="3445504" checksum="41a450b6396b0709c92e023f00ecc6f7" uri="release/audio/JHN/JHN_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="5651968" checksum="ee2882cdd854c41cea9f31c4085b979a" uri="release/audio/JHN/JHN_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="7596160" checksum="4062df881a5d03bd3d80ac90c6a731b7" uri="release/audio/JHN/JHN_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="7192192" checksum="bfbf1ca9bb33bff1673be0bac22dfe62" uri="release/audio/JHN/JHN_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="9289216" checksum="e263a678126088a24bf6407582ed816b" uri="release/audio/JHN/JHN_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="6820864" checksum="f6bf2ab266da4a76c71c465834290fe7" uri="release/audio/JHN/JHN_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="8655616" checksum="49a4011c8711f045156f51e7f3765f45" uri="release/audio/JHN/JHN_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="5509888" checksum="5cf17a64149080001570a337f7d5c736" uri="release/audio/JHN/JHN_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="5411584" checksum="5cb4b7e322f8841f1bc1e1edd994b017" uri="release/audio/JHN/JHN_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="7356160" checksum="2eda68401bab45e83e7c18fe839c3e27" uri="release/audio/JHN/JHN_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="6941056" checksum="fb46861f7f4f01f9c6fff4c81c771c1e" uri="release/audio/JHN/JHN_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="5477248" checksum="583a234adc7c7e142895a7a81466c2a8" uri="release/audio/JHN/JHN_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="4472320" checksum="98d14fefa9136d260b034d510d37839e" uri="release/audio/JHN/JHN_014.mp3"/>
+    <resource mimeType="audio/mpeg" size="3926272" checksum="808b2de22d9f0d26a72eba0cd721b1c1" uri="release/audio/JHN/JHN_015.mp3"/>
+    <resource mimeType="audio/mpeg" size="4778368" checksum="6066571d3d9302d1dff49f20bf50a171" uri="release/audio/JHN/JHN_016.mp3"/>
+    <resource mimeType="audio/mpeg" size="4363264" checksum="64353ea4859d32c6e15747472c0dd114" uri="release/audio/JHN/JHN_017.mp3"/>
+    <resource mimeType="audio/mpeg" size="6121600" checksum="5de0d7e45cb67b8f836f88d3c17a454b" uri="release/audio/JHN/JHN_018.mp3"/>
+    <resource mimeType="audio/mpeg" size="6951808" checksum="679c03f6812adf8fc82c7bc54e4b824c" uri="release/audio/JHN/JHN_019.mp3"/>
+    <resource mimeType="audio/mpeg" size="4887424" checksum="1d1ff201d5592f155b0a40a11483e54b" uri="release/audio/JHN/JHN_020.mp3"/>
+    <resource mimeType="audio/mpeg" size="4909312" checksum="d82a2bfa4cc91a5f4aec4ecd59ed3fce" uri="release/audio/JHN/JHN_021.mp3"/>
+    <resource mimeType="audio/mpeg" size="5040256" checksum="9e7781e8111e1fa9f3281e73c45cf7ed" uri="release/audio/JUD/JUD_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="9136384" checksum="181f61c937d12b8499c27ac299a34370" uri="release/audio/LUK/LUK_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="6165376" checksum="3d70d06d1ff1694baad9d2a0f87c845c" uri="release/audio/LUK/LUK_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="5149696" checksum="7928c4462f0e2f5a29f2d24c208c6412" uri="release/audio/LUK/LUK_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="5761408" checksum="c6872bc266f5d8e08e38061359ef3ad5" uri="release/audio/LUK/LUK_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="5564800" checksum="f045fcdbb2c22dcf3f2a890bd8ce4fe5" uri="release/audio/LUK/LUK_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="6897280" checksum="be1fc5319b2654272341cba209017aed" uri="release/audio/LUK/LUK_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="7257856" checksum="3d1b585424e44ca72c49ad07c8776ffd" uri="release/audio/LUK/LUK_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="8033152" checksum="a0b7237079c3bb999dda018396f9e1a2" uri="release/audio/LUK/LUK_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="8480896" checksum="ef514d5f8016ce6bc8c18777743654a4" uri="release/audio/LUK/LUK_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="5706496" checksum="6adc4f173d624f06fae30c596434fbef" uri="release/audio/LUK/LUK_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="7749376" checksum="2e75c3b868c73051c2ce399a4b6f2af9" uri="release/audio/LUK/LUK_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="8000512" checksum="aef6bddd123ae62a2fdba9066d3f1e7a" uri="release/audio/LUK/LUK_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="5258752" checksum="4873b29733ddf74993ce1df95b2bc603" uri="release/audio/LUK/LUK_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="4800256" checksum="e906254e7a23353d190d2cf3338a5457" uri="release/audio/LUK/LUK_014.mp3"/>
+    <resource mimeType="audio/mpeg" size="4603648" checksum="2bf919ebcee30967e35ce34f063610c5" uri="release/audio/LUK/LUK_015.mp3"/>
+    <resource mimeType="audio/mpeg" size="5171584" checksum="be47e0217faa1053b9d45e74ae021cb3" uri="release/audio/LUK/LUK_016.mp3"/>
+    <resource mimeType="audio/mpeg" size="4821760" checksum="1961ef14bc0c0d71988f05483e175aac" uri="release/audio/LUK/LUK_017.mp3"/>
+    <resource mimeType="audio/mpeg" size="5586688" checksum="75a2da1febbb05be424e7dbec5034738" uri="release/audio/LUK/LUK_018.mp3"/>
+    <resource mimeType="audio/mpeg" size="6318208" checksum="cacdf47a69599207c3a1a8d65bfa2927" uri="release/audio/LUK/LUK_019.mp3"/>
+    <resource mimeType="audio/mpeg" size="6088960" checksum="20738ee043464a5e9bb52550c784f67a" uri="release/audio/LUK/LUK_020.mp3"/>
+    <resource mimeType="audio/mpeg" size="4581760" checksum="0f4105f24627901b949b1ae83d111d62" uri="release/audio/LUK/LUK_021.mp3"/>
+    <resource mimeType="audio/mpeg" size="8349952" checksum="b3ce31f98714ae2690c8e4335e3eb7b7" uri="release/audio/LUK/LUK_022.mp3"/>
+    <resource mimeType="audio/mpeg" size="6864640" checksum="5b07160e14f7936c22ae25939a28bad6" uri="release/audio/LUK/LUK_023.mp3"/>
+    <resource mimeType="audio/mpeg" size="6547840" checksum="b5869cdb8694ce95855bdf57cfed1456" uri="release/audio/LUK/LUK_024.mp3"/>
+    <resource mimeType="audio/mpeg" size="3817216" checksum="9859c03a214c0f9f943d6aa200c091b6" uri="release/audio/MAT/MAT_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="3958912" checksum="5e617361b62345acec1a1c7fbe9ed1c8" uri="release/audio/MAT/MAT_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="2953984" checksum="1cb0c31e6d414b69c4628a8e07d37d98" uri="release/audio/MAT/MAT_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="3554944" checksum="76e75062cc1d1db52939863f815b9335" uri="release/audio/MAT/MAT_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="7082752" checksum="d0db3165b1380fb610287111ea360766" uri="release/audio/MAT/MAT_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="5630080" checksum="994b3780537b9996f316bbfa56a75cc4" uri="release/audio/MAT/MAT_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="4100992" checksum="636a3262c78f824f6a7dc01c01ddcbb6" uri="release/audio/MAT/MAT_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="4832896" checksum="de1fdbccae1d3b8bfc7096d182c5ecbc" uri="release/audio/MAT/MAT_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="5586688" checksum="20c4b8dd4e1ee9aac7717fdcef761109" uri="release/audio/MAT/MAT_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="6045184" checksum="0851b79a728c69a7e57cc5d9ea3aaea6" uri="release/audio/MAT/MAT_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="4537984" checksum="7dbb12d4c1b93c25deb93f4b9147bfbe" uri="release/audio/MAT/MAT_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="7563520" checksum="961315b1dbc18aa67b6fed5d15090f83" uri="release/audio/MAT/MAT_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="8680192" checksum="04b6baa38ea3ed9b9a31e479bc3516c6" uri="release/audio/MAT/MAT_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="4505344" checksum="1fe66a245a9ec6307d4d1e1238064523" uri="release/audio/MAT/MAT_014.mp3"/>
+    <resource mimeType="audio/mpeg" size="4985728" checksum="54baa4eca128a6d260d62e22d61e09af" uri="release/audio/MAT/MAT_015.mp3"/>
+    <resource mimeType="audio/mpeg" size="4352128" checksum="75abb1c3b9d64e1748961485435aa5eb" uri="release/audio/MAT/MAT_016.mp3"/>
+    <resource mimeType="audio/mpeg" size="4264960" checksum="d110d42d031fd521c518a0079a629146" uri="release/audio/MAT/MAT_017.mp3"/>
+    <resource mimeType="audio/mpeg" size="5608192" checksum="770883404198cfb5e849d27a6d2d531b" uri="release/audio/MAT/MAT_018.mp3"/>
+    <resource mimeType="audio/mpeg" size="4483456" checksum="b40a619337100526ff8fcbd344d410b1" uri="release/audio/MAT/MAT_019.mp3"/>
+    <resource mimeType="audio/mpeg" size="4537984" checksum="7de2ce1a8cb1c5187d6631d006eeed7e" uri="release/audio/MAT/MAT_020.mp3"/>
+    <resource mimeType="audio/mpeg" size="7050112" checksum="1a63db25986740e2e0001c456ce40d8f" uri="release/audio/MAT/MAT_021.mp3"/>
+    <resource mimeType="audio/mpeg" size="5477248" checksum="8a2aff7d91f6549e3e36204766d55f98" uri="release/audio/MAT/MAT_022.mp3"/>
+    <resource mimeType="audio/mpeg" size="5924992" checksum="9735f7dc28828b31ff33dd5108fb3ee3" uri="release/audio/MAT/MAT_023.mp3"/>
+    <resource mimeType="audio/mpeg" size="6482176" checksum="0b7e9d87a319dd7d48eb2712b1d81ee8" uri="release/audio/MAT/MAT_024.mp3"/>
+    <resource mimeType="audio/mpeg" size="6853504" checksum="59ce80fa0938dc2e6ad687ebe2ef061e" uri="release/audio/MAT/MAT_025.mp3"/>
+    <resource mimeType="audio/mpeg" size="10173952" checksum="0ab8e74676b894c5873caf95bb0b19f9" uri="release/audio/MAT/MAT_026.mp3"/>
+    <resource mimeType="audio/mpeg" size="8819584" checksum="2aabecd420fac5224504beae3272ead5" uri="release/audio/MAT/MAT_027.mp3"/>
+    <resource mimeType="audio/mpeg" size="2735872" checksum="81bab0c799f873f24b7aa4fc05891b1e" uri="release/audio/MAT/MAT_028.mp3"/>
+    <resource mimeType="audio/mpeg" size="6176512" checksum="c0524dd7c163e49ec1cff1634f063616" uri="release/audio/MRK/MRK_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="4494208" checksum="8868809bf6299d101063ea8bd2856561" uri="release/audio/MRK/MRK_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="4308736" checksum="40981535e7fe537b330ee9bea64631f4" uri="release/audio/MRK/MRK_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="5531776" checksum="9157cb5f99169b2a13feebeb7ba521cf" uri="release/audio/MRK/MRK_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="5651968" checksum="54e70ac505c528346bcdb0cc149222b3" uri="release/audio/MRK/MRK_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="7934848" checksum="826c72df25a09d23b8967cd8197b6869" uri="release/audio/MRK/MRK_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="5051392" checksum="18fbf1057532ff27906bd95ba025def6" uri="release/audio/MRK/MRK_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="5214976" checksum="6b2b9aea4ec4cf7203e8d3efd2c8b04c" uri="release/audio/MRK/MRK_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="7552768" checksum="b3d0861c1bddf31aae1c2a574765cba1" uri="release/audio/MRK/MRK_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="7727488" checksum="e2eb7c894108f7bec5e0768ea1526946" uri="release/audio/MRK/MRK_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="4941952" checksum="d6e0d2021c5eb97bd253661fbd4a434a" uri="release/audio/MRK/MRK_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="6755200" checksum="2097e7fcee067b9b22a7c13f94c61013" uri="release/audio/MRK/MRK_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="5149696" checksum="5096ff847d628440aea516a67a7a5c57" uri="release/audio/MRK/MRK_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="9769984" checksum="e43c478255879fb5bc18d6cbd2010ebb" uri="release/audio/MRK/MRK_014.mp3"/>
+    <resource mimeType="audio/mpeg" size="6231040" checksum="427638f0da3b945bfcc2b123f2098b2d" uri="release/audio/MRK/MRK_015.mp3"/>
+    <resource mimeType="audio/mpeg" size="3052288" checksum="e4da1181c352be98be3c6573d256bcf2" uri="release/audio/MRK/MRK_016.mp3"/>
+    <resource mimeType="audio/mpeg" size="3238144" checksum="01b5240c8b689622b138384f0f267f42" uri="release/audio/PHM/PHM_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="4668928" checksum="0c5c6377cf8d450ae399715180835ce4" uri="release/audio/PHP/PHP_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="4330240" checksum="a10d31810f2022eeb7b8dd1096d4573d" uri="release/audio/PHP/PHP_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="3631360" checksum="9f750f8780157e209c526bd36b3543af" uri="release/audio/PHP/PHP_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="3642112" checksum="6e12047975649f6aff4e7cb3cb046e93" uri="release/audio/PHP/PHP_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="4264960" checksum="fd3c6286a69aa6e58de67183ade75259" uri="release/audio/REV/REV_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="5968768" checksum="c3d559d9eda5e2dbd350b7f4f1417ca3" uri="release/audio/REV/REV_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="4745344" checksum="5364211771449a1bf7bf6d1cb024c31a" uri="release/audio/REV/REV_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="2713984" checksum="856ed9c1e86b6eaecfc198e0d26ebbe7" uri="release/audio/REV/REV_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="2866816" checksum="54cc9800b629bea2c0fee0036cfcfdbb" uri="release/audio/REV/REV_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="3292672" checksum="026a3b2732f1dc47621d78d6d52063ea" uri="release/audio/REV/REV_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="3347200" checksum="4ccf63c1315fb3fca23b7beb202f882f" uri="release/audio/REV/REV_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="2593792" checksum="e0263fad9258e5e13548d5c524928018" uri="release/audio/REV/REV_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="3904384" checksum="b7a5465236464398ff125618806bbb29" uri="release/audio/REV/REV_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="2419072" checksum="809e485c042c0d7893bc53f4cd2e8845" uri="release/audio/REV/REV_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="3970048" checksum="56c3eea7e1cfb8cc550edc67a7797275" uri="release/audio/REV/REV_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="3598720" checksum="6e685bb612b2108a4aa08f556fffeb9e" uri="release/audio/REV/REV_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="3554944" checksum="6883ab2aa5ea24e53ede09b1ad06f9e5" uri="release/audio/REV/REV_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="4625152" checksum="d5ed2d4440cd4da8794b71c6462485af" uri="release/audio/REV/REV_014.mp3"/>
+    <resource mimeType="audio/mpeg" size="1916416" checksum="f34def7c637d26b29a77111b7d2f3dec" uri="release/audio/REV/REV_015.mp3"/>
+    <resource mimeType="audio/mpeg" size="3795328" checksum="0a98043f5c38de173e16fd9f70c09605" uri="release/audio/REV/REV_016.mp3"/>
+    <resource mimeType="audio/mpeg" size="3751552" checksum="f9544138b8f266209509e440c9708943" uri="release/audio/REV/REV_017.mp3"/>
+    <resource mimeType="audio/mpeg" size="5138560" checksum="1ca05299d0348326c6cca1cb1f6f1fc4" uri="release/audio/REV/REV_018.mp3"/>
+    <resource mimeType="audio/mpeg" size="4231936" checksum="b84a7557d531a9cfc2deace3d02f013a" uri="release/audio/REV/REV_019.mp3"/>
+    <resource mimeType="audio/mpeg" size="3227392" checksum="97370dc0c644533b8ab7a4f2e4903d24" uri="release/audio/REV/REV_020.mp3"/>
+    <resource mimeType="audio/mpeg" size="4996864" checksum="b0850a65e4c235caeb6d14a48333b717" uri="release/audio/REV/REV_021.mp3"/>
+    <resource mimeType="audio/mpeg" size="3827968" checksum="09aa5f23fb76799ac44f7ceb5b2eb39e" uri="release/audio/REV/REV_022.mp3"/>
+    <resource mimeType="audio/mpeg" size="5695744" checksum="71dc4096d5f69b31bd0ebfb12da343e2" uri="release/audio/ROM/ROM_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="4712704" checksum="36565e11753c09ab93d6ef66d36bc6e4" uri="release/audio/ROM/ROM_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="4264960" checksum="ab8a56cc129cbdf2896f49f856abc5f8" uri="release/audio/ROM/ROM_003.mp3"/>
+    <resource mimeType="audio/mpeg" size="4013824" checksum="71aed21a9c60b27c3cd5f7dce1cd641c" uri="release/audio/ROM/ROM_004.mp3"/>
+    <resource mimeType="audio/mpeg" size="3893632" checksum="ad760344204856340e7803e27c780dd2" uri="release/audio/ROM/ROM_005.mp3"/>
+    <resource mimeType="audio/mpeg" size="3620608" checksum="ca7faa1bc7c6f0df423086ec0eb7399b" uri="release/audio/ROM/ROM_006.mp3"/>
+    <resource mimeType="audio/mpeg" size="4210432" checksum="f0c8e1a1b7aeefbbfe6e8ad11c8fbc65" uri="release/audio/ROM/ROM_007.mp3"/>
+    <resource mimeType="audio/mpeg" size="6198016" checksum="47769aa2e3982d37acecfa51fb631ecf" uri="release/audio/ROM/ROM_008.mp3"/>
+    <resource mimeType="audio/mpeg" size="4767232" checksum="849c63fe8ce0ab6671181c39ffeac912" uri="release/audio/ROM/ROM_009.mp3"/>
+    <resource mimeType="audio/mpeg" size="3107200" checksum="068042d945a2b62fc52a87a97d96074d" uri="release/audio/ROM/ROM_010.mp3"/>
+    <resource mimeType="audio/mpeg" size="5411584" checksum="b70a6e7d8921744bc040855d10cac2c9" uri="release/audio/ROM/ROM_011.mp3"/>
+    <resource mimeType="audio/mpeg" size="3150592" checksum="458007a04f3cc49f1db2336405cd6e62" uri="release/audio/ROM/ROM_012.mp3"/>
+    <resource mimeType="audio/mpeg" size="2746624" checksum="fd5cac8637045fca488fdb52719a4ff7" uri="release/audio/ROM/ROM_013.mp3"/>
+    <resource mimeType="audio/mpeg" size="3740416" checksum="6498aeb3dedfe593d9e07c8019d90583" uri="release/audio/ROM/ROM_014.mp3"/>
+    <resource mimeType="audio/mpeg" size="5346304" checksum="2f525ae1f7be7c3da9cf1d68779f8454" uri="release/audio/ROM/ROM_015.mp3"/>
+    <resource mimeType="audio/mpeg" size="4253824" checksum="a8b39f63d59f806191a5cb67cbf5142b" uri="release/audio/ROM/ROM_016.mp3"/>
+    <resource mimeType="audio/mpeg" size="2965504" checksum="e72cc943a44c77904a14614774611f84" uri="release/audio/TIT/TIT_001.mp3"/>
+    <resource mimeType="audio/mpeg" size="2386432" checksum="e4d6a3aed2561929844e6b6de2acb31e" uri="release/audio/TIT/TIT_002.mp3"/>
+    <resource mimeType="audio/mpeg" size="2659456" checksum="48a9df059b1c0b8630d232f8dfa520d7" uri="release/audio/TIT/TIT_003.mp3"/>
+  </manifest>
+  <names>
+    <name id="book-mat">
+      <short>Mat</short>
+    </name>
+    <name id="book-mrk">
+      <short>Mrk</short>
+    </name>
+    <name id="book-luk">
+      <short>Luk</short>
+    </name>
+    <name id="book-jhn">
+      <short>Jhn</short>
+    </name>
+    <name id="book-act">
+      <short>Act</short>
+    </name>
+    <name id="book-rom">
+      <short>Rom</short>
+    </name>
+    <name id="book-1co">
+      <short>1Co</short>
+    </name>
+    <name id="book-2co">
+      <short>2Co</short>
+    </name>
+    <name id="book-gal">
+      <short>Gal</short>
+    </name>
+    <name id="book-eph">
+      <short>Eph</short>
+    </name>
+    <name id="book-php">
+      <short>Php</short>
+    </name>
+    <name id="book-col">
+      <short>Col</short>
+    </name>
+    <name id="book-1th">
+      <short>1Th</short>
+    </name>
+    <name id="book-2th">
+      <short>2Th</short>
+    </name>
+    <name id="book-1ti">
+      <short>1Ti</short>
+    </name>
+    <name id="book-2ti">
+      <short>2Ti</short>
+    </name>
+    <name id="book-tit">
+      <short>Tit</short>
+    </name>
+    <name id="book-phm">
+      <short>Phm</short>
+    </name>
+    <name id="book-heb">
+      <short>Heb</short>
+    </name>
+    <name id="book-jas">
+      <short>Jas</short>
+    </name>
+    <name id="book-1pe">
+      <short>1Pe</short>
+    </name>
+    <name id="book-2pe">
+      <short>2Pe</short>
+    </name>
+    <name id="book-1jn">
+      <short>1Jn</short>
+    </name>
+    <name id="book-2jn">
+      <short>2Jn</short>
+    </name>
+    <name id="book-3jn">
+      <short>3Jn</short>
+    </name>
+    <name id="book-jud">
+      <short>Jud</short>
+    </name>
+    <name id="book-rev">
+      <short>Rev</short>
+    </name>
+  </names>
+  <source/>
+  <publications>
+    <publication id="pt1">
+      <canonicalContent>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="LUK"/>
+        <book code="JHN"/>
+        <book code="ACT"/>
+        <book code="ROM"/>
+        <book code="1CO"/>
+        <book code="2CO"/>
+        <book code="GAL"/>
+        <book code="EPH"/>
+        <book code="PHP"/>
+        <book code="COL"/>
+        <book code="1TH"/>
+        <book code="2TH"/>
+        <book code="1TI"/>
+        <book code="2TI"/>
+        <book code="TIT"/>
+        <book code="PHM"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="1PE"/>
+        <book code="2PE"/>
+        <book code="1JN"/>
+        <book code="2JN"/>
+        <book code="3JN"/>
+        <book code="JUD"/>
+        <book code="REV"/>
+      </canonicalContent>
+      <name>Indian Revised Version(IRV) Hindi - 2019</name>
+      <nameLocal>आई आर वी हिंदी</nameLocal>
+      <abbreviation>IRVhin</abbreviation>
+      <scope>New Testament</scope>
+      <countries>
+        <country>
+          <iso>IN</iso>
+          <name>India</name>
+        </country>
+      </countries>
+      <canonSpec type="NT">
+        <component>westernNT</component>
+      </canonSpec>
+      <structure>
+        <division role="MAT" name="book-mat">
+          <content src="release/audio/MAT/MAT_001.mp3" role="MAT 1"/>
+          <content src="release/audio/MAT/MAT_002.mp3" role="MAT 2"/>
+          <content src="release/audio/MAT/MAT_003.mp3" role="MAT 3"/>
+          <content src="release/audio/MAT/MAT_004.mp3" role="MAT 4"/>
+          <content src="release/audio/MAT/MAT_005.mp3" role="MAT 5"/>
+          <content src="release/audio/MAT/MAT_006.mp3" role="MAT 6"/>
+          <content src="release/audio/MAT/MAT_007.mp3" role="MAT 7"/>
+          <content src="release/audio/MAT/MAT_008.mp3" role="MAT 8"/>
+          <content src="release/audio/MAT/MAT_009.mp3" role="MAT 9"/>
+          <content src="release/audio/MAT/MAT_010.mp3" role="MAT 10"/>
+          <content src="release/audio/MAT/MAT_011.mp3" role="MAT 11"/>
+          <content src="release/audio/MAT/MAT_012.mp3" role="MAT 12"/>
+          <content src="release/audio/MAT/MAT_013.mp3" role="MAT 13"/>
+          <content src="release/audio/MAT/MAT_014.mp3" role="MAT 14"/>
+          <content src="release/audio/MAT/MAT_015.mp3" role="MAT 15"/>
+          <content src="release/audio/MAT/MAT_016.mp3" role="MAT 16"/>
+          <content src="release/audio/MAT/MAT_017.mp3" role="MAT 17"/>
+          <content src="release/audio/MAT/MAT_018.mp3" role="MAT 18"/>
+          <content src="release/audio/MAT/MAT_019.mp3" role="MAT 19"/>
+          <content src="release/audio/MAT/MAT_020.mp3" role="MAT 20"/>
+          <content src="release/audio/MAT/MAT_021.mp3" role="MAT 21"/>
+          <content src="release/audio/MAT/MAT_022.mp3" role="MAT 22"/>
+          <content src="release/audio/MAT/MAT_023.mp3" role="MAT 23"/>
+          <content src="release/audio/MAT/MAT_024.mp3" role="MAT 24"/>
+          <content src="release/audio/MAT/MAT_025.mp3" role="MAT 25"/>
+          <content src="release/audio/MAT/MAT_026.mp3" role="MAT 26"/>
+          <content src="release/audio/MAT/MAT_027.mp3" role="MAT 27"/>
+          <content src="release/audio/MAT/MAT_028.mp3" role="MAT 28"/>
+        </division>
+        <division role="MRK" name="book-mrk">
+          <content src="release/audio/MRK/MRK_001.mp3" role="MRK 1"/>
+          <content src="release/audio/MRK/MRK_002.mp3" role="MRK 2"/>
+          <content src="release/audio/MRK/MRK_003.mp3" role="MRK 3"/>
+          <content src="release/audio/MRK/MRK_004.mp3" role="MRK 4"/>
+          <content src="release/audio/MRK/MRK_005.mp3" role="MRK 5"/>
+          <content src="release/audio/MRK/MRK_006.mp3" role="MRK 6"/>
+          <content src="release/audio/MRK/MRK_007.mp3" role="MRK 7"/>
+          <content src="release/audio/MRK/MRK_008.mp3" role="MRK 8"/>
+          <content src="release/audio/MRK/MRK_009.mp3" role="MRK 9"/>
+          <content src="release/audio/MRK/MRK_010.mp3" role="MRK 10"/>
+          <content src="release/audio/MRK/MRK_011.mp3" role="MRK 11"/>
+          <content src="release/audio/MRK/MRK_012.mp3" role="MRK 12"/>
+          <content src="release/audio/MRK/MRK_013.mp3" role="MRK 13"/>
+          <content src="release/audio/MRK/MRK_014.mp3" role="MRK 14"/>
+          <content src="release/audio/MRK/MRK_015.mp3" role="MRK 15"/>
+          <content src="release/audio/MRK/MRK_016.mp3" role="MRK 16"/>
+        </division>
+        <division role="LUK" name="book-luk">
+          <content src="release/audio/LUK/LUK_001.mp3" role="LUK 1"/>
+          <content src="release/audio/LUK/LUK_002.mp3" role="LUK 2"/>
+          <content src="release/audio/LUK/LUK_003.mp3" role="LUK 3"/>
+          <content src="release/audio/LUK/LUK_004.mp3" role="LUK 4"/>
+          <content src="release/audio/LUK/LUK_005.mp3" role="LUK 5"/>
+          <content src="release/audio/LUK/LUK_006.mp3" role="LUK 6"/>
+          <content src="release/audio/LUK/LUK_007.mp3" role="LUK 7"/>
+          <content src="release/audio/LUK/LUK_008.mp3" role="LUK 8"/>
+          <content src="release/audio/LUK/LUK_009.mp3" role="LUK 9"/>
+          <content src="release/audio/LUK/LUK_010.mp3" role="LUK 10"/>
+          <content src="release/audio/LUK/LUK_011.mp3" role="LUK 11"/>
+          <content src="release/audio/LUK/LUK_012.mp3" role="LUK 12"/>
+          <content src="release/audio/LUK/LUK_013.mp3" role="LUK 13"/>
+          <content src="release/audio/LUK/LUK_014.mp3" role="LUK 14"/>
+          <content src="release/audio/LUK/LUK_015.mp3" role="LUK 15"/>
+          <content src="release/audio/LUK/LUK_016.mp3" role="LUK 16"/>
+          <content src="release/audio/LUK/LUK_017.mp3" role="LUK 17"/>
+          <content src="release/audio/LUK/LUK_018.mp3" role="LUK 18"/>
+          <content src="release/audio/LUK/LUK_019.mp3" role="LUK 19"/>
+          <content src="release/audio/LUK/LUK_020.mp3" role="LUK 20"/>
+          <content src="release/audio/LUK/LUK_021.mp3" role="LUK 21"/>
+          <content src="release/audio/LUK/LUK_022.mp3" role="LUK 22"/>
+          <content src="release/audio/LUK/LUK_023.mp3" role="LUK 23"/>
+          <content src="release/audio/LUK/LUK_024.mp3" role="LUK 24"/>
+        </division>
+        <division role="JHN" name="book-jhn">
+          <content src="release/audio/JHN/JHN_001.mp3" role="JHN 1"/>
+          <content src="release/audio/JHN/JHN_002.mp3" role="JHN 2"/>
+          <content src="release/audio/JHN/JHN_003.mp3" role="JHN 3"/>
+          <content src="release/audio/JHN/JHN_004.mp3" role="JHN 4"/>
+          <content src="release/audio/JHN/JHN_005.mp3" role="JHN 5"/>
+          <content src="release/audio/JHN/JHN_006.mp3" role="JHN 6"/>
+          <content src="release/audio/JHN/JHN_007.mp3" role="JHN 7"/>
+          <content src="release/audio/JHN/JHN_008.mp3" role="JHN 8"/>
+          <content src="release/audio/JHN/JHN_009.mp3" role="JHN 9"/>
+          <content src="release/audio/JHN/JHN_010.mp3" role="JHN 10"/>
+          <content src="release/audio/JHN/JHN_011.mp3" role="JHN 11"/>
+          <content src="release/audio/JHN/JHN_012.mp3" role="JHN 12"/>
+          <content src="release/audio/JHN/JHN_013.mp3" role="JHN 13"/>
+          <content src="release/audio/JHN/JHN_014.mp3" role="JHN 14"/>
+          <content src="release/audio/JHN/JHN_015.mp3" role="JHN 15"/>
+          <content src="release/audio/JHN/JHN_016.mp3" role="JHN 16"/>
+          <content src="release/audio/JHN/JHN_017.mp3" role="JHN 17"/>
+          <content src="release/audio/JHN/JHN_018.mp3" role="JHN 18"/>
+          <content src="release/audio/JHN/JHN_019.mp3" role="JHN 19"/>
+          <content src="release/audio/JHN/JHN_020.mp3" role="JHN 20"/>
+          <content src="release/audio/JHN/JHN_021.mp3" role="JHN 21"/>
+        </division>
+        <division role="ACT" name="book-act">
+          <content src="release/audio/ACT/ACT_001.mp3" role="ACT 1"/>
+          <content src="release/audio/ACT/ACT_002.mp3" role="ACT 2"/>
+          <content src="release/audio/ACT/ACT_003.mp3" role="ACT 3"/>
+          <content src="release/audio/ACT/ACT_004.mp3" role="ACT 4"/>
+          <content src="release/audio/ACT/ACT_005.mp3" role="ACT 5"/>
+          <content src="release/audio/ACT/ACT_006.mp3" role="ACT 6"/>
+          <content src="release/audio/ACT/ACT_007.mp3" role="ACT 7"/>
+          <content src="release/audio/ACT/ACT_008.mp3" role="ACT 8"/>
+          <content src="release/audio/ACT/ACT_009.mp3" role="ACT 9"/>
+          <content src="release/audio/ACT/ACT_010.mp3" role="ACT 10"/>
+          <content src="release/audio/ACT/ACT_011.mp3" role="ACT 11"/>
+          <content src="release/audio/ACT/ACT_012.mp3" role="ACT 12"/>
+          <content src="release/audio/ACT/ACT_013.mp3" role="ACT 13"/>
+          <content src="release/audio/ACT/ACT_014.mp3" role="ACT 14"/>
+          <content src="release/audio/ACT/ACT_015.mp3" role="ACT 15"/>
+          <content src="release/audio/ACT/ACT_016.mp3" role="ACT 16"/>
+          <content src="release/audio/ACT/ACT_017.mp3" role="ACT 17"/>
+          <content src="release/audio/ACT/ACT_018.mp3" role="ACT 18"/>
+          <content src="release/audio/ACT/ACT_019.mp3" role="ACT 19"/>
+          <content src="release/audio/ACT/ACT_020.mp3" role="ACT 20"/>
+          <content src="release/audio/ACT/ACT_021.mp3" role="ACT 21"/>
+          <content src="release/audio/ACT/ACT_022.mp3" role="ACT 22"/>
+          <content src="release/audio/ACT/ACT_023.mp3" role="ACT 23"/>
+          <content src="release/audio/ACT/ACT_024.mp3" role="ACT 24"/>
+          <content src="release/audio/ACT/ACT_025.mp3" role="ACT 25"/>
+          <content src="release/audio/ACT/ACT_026.mp3" role="ACT 26"/>
+          <content src="release/audio/ACT/ACT_027.mp3" role="ACT 27"/>
+          <content src="release/audio/ACT/ACT_028.mp3" role="ACT 28"/>
+        </division>
+        <division role="ROM" name="book-rom">
+          <content src="release/audio/ROM/ROM_001.mp3" role="ROM 1"/>
+          <content src="release/audio/ROM/ROM_002.mp3" role="ROM 2"/>
+          <content src="release/audio/ROM/ROM_003.mp3" role="ROM 3"/>
+          <content src="release/audio/ROM/ROM_004.mp3" role="ROM 4"/>
+          <content src="release/audio/ROM/ROM_005.mp3" role="ROM 5"/>
+          <content src="release/audio/ROM/ROM_006.mp3" role="ROM 6"/>
+          <content src="release/audio/ROM/ROM_007.mp3" role="ROM 7"/>
+          <content src="release/audio/ROM/ROM_008.mp3" role="ROM 8"/>
+          <content src="release/audio/ROM/ROM_009.mp3" role="ROM 9"/>
+          <content src="release/audio/ROM/ROM_010.mp3" role="ROM 10"/>
+          <content src="release/audio/ROM/ROM_011.mp3" role="ROM 11"/>
+          <content src="release/audio/ROM/ROM_012.mp3" role="ROM 12"/>
+          <content src="release/audio/ROM/ROM_013.mp3" role="ROM 13"/>
+          <content src="release/audio/ROM/ROM_014.mp3" role="ROM 14"/>
+          <content src="release/audio/ROM/ROM_015.mp3" role="ROM 15"/>
+          <content src="release/audio/ROM/ROM_016.mp3" role="ROM 16"/>
+        </division>
+        <division role="1CO" name="book-1co">
+          <content src="release/audio/1CO/1CO_001.mp3" role="1CO 1"/>
+          <content src="release/audio/1CO/1CO_002.mp3" role="1CO 2"/>
+          <content src="release/audio/1CO/1CO_003.mp3" role="1CO 3"/>
+          <content src="release/audio/1CO/1CO_004.mp3" role="1CO 4"/>
+          <content src="release/audio/1CO/1CO_005.mp3" role="1CO 5"/>
+          <content src="release/audio/1CO/1CO_006.mp3" role="1CO 6"/>
+          <content src="release/audio/1CO/1CO_007.mp3" role="1CO 7"/>
+          <content src="release/audio/1CO/1CO_008.mp3" role="1CO 8"/>
+          <content src="release/audio/1CO/1CO_009.mp3" role="1CO 9"/>
+          <content src="release/audio/1CO/1CO_010.mp3" role="1CO 10"/>
+          <content src="release/audio/1CO/1CO_011.mp3" role="1CO 11"/>
+          <content src="release/audio/1CO/1CO_012.mp3" role="1CO 12"/>
+          <content src="release/audio/1CO/1CO_013.mp3" role="1CO 13"/>
+          <content src="release/audio/1CO/1CO_014.mp3" role="1CO 14"/>
+          <content src="release/audio/1CO/1CO_015.mp3" role="1CO 15"/>
+          <content src="release/audio/1CO/1CO_016.mp3" role="1CO 16"/>
+        </division>
+        <division role="2CO" name="book-2co">
+          <content src="release/audio/2CO/2CO_001.mp3" role="2CO 1"/>
+          <content src="release/audio/2CO/2CO_002.mp3" role="2CO 2"/>
+          <content src="release/audio/2CO/2CO_003.mp3" role="2CO 3"/>
+          <content src="release/audio/2CO/2CO_004.mp3" role="2CO 4"/>
+          <content src="release/audio/2CO/2CO_005.mp3" role="2CO 5"/>
+          <content src="release/audio/2CO/2CO_006.mp3" role="2CO 6"/>
+          <content src="release/audio/2CO/2CO_007.mp3" role="2CO 7"/>
+          <content src="release/audio/2CO/2CO_008.mp3" role="2CO 8"/>
+          <content src="release/audio/2CO/2CO_009.mp3" role="2CO 9"/>
+          <content src="release/audio/2CO/2CO_010.mp3" role="2CO 10"/>
+          <content src="release/audio/2CO/2CO_011.mp3" role="2CO 11"/>
+          <content src="release/audio/2CO/2CO_012.mp3" role="2CO 12"/>
+          <content src="release/audio/2CO/2CO_013.mp3" role="2CO 13"/>
+        </division>
+        <division role="GAL" name="book-gal">
+          <content src="release/audio/GAL/GAL_001.mp3" role="GAL 1"/>
+          <content src="release/audio/GAL/GAL_002.mp3" role="GAL 2"/>
+          <content src="release/audio/GAL/GAL_003.mp3" role="GAL 3"/>
+          <content src="release/audio/GAL/GAL_004.mp3" role="GAL 4"/>
+          <content src="release/audio/GAL/GAL_005.mp3" role="GAL 5"/>
+          <content src="release/audio/GAL/GAL_006.mp3" role="GAL 6"/>
+        </division>
+        <division role="EPH" name="book-eph">
+          <content src="release/audio/EPH/EPH_001.mp3" role="EPH 1"/>
+          <content src="release/audio/EPH/EPH_002.mp3" role="EPH 2"/>
+          <content src="release/audio/EPH/EPH_003.mp3" role="EPH 3"/>
+          <content src="release/audio/EPH/EPH_004.mp3" role="EPH 4"/>
+          <content src="release/audio/EPH/EPH_005.mp3" role="EPH 5"/>
+          <content src="release/audio/EPH/EPH_006.mp3" role="EPH 6"/>
+        </division>
+        <division role="PHP" name="book-php">
+          <content src="release/audio/PHP/PHP_001.mp3" role="PHP 1"/>
+          <content src="release/audio/PHP/PHP_002.mp3" role="PHP 2"/>
+          <content src="release/audio/PHP/PHP_003.mp3" role="PHP 3"/>
+          <content src="release/audio/PHP/PHP_004.mp3" role="PHP 4"/>
+        </division>
+        <division role="COL" name="book-col">
+          <content src="release/audio/COL/COL_001.mp3" role="COL 1"/>
+          <content src="release/audio/COL/COL_002.mp3" role="COL 2"/>
+          <content src="release/audio/COL/COL_003.mp3" role="COL 3"/>
+          <content src="release/audio/COL/COL_004.mp3" role="COL 4"/>
+        </division>
+        <division role="1TH" name="book-1th">
+          <content src="release/audio/1TH/1TH_001.mp3" role="1TH 1"/>
+          <content src="release/audio/1TH/1TH_002.mp3" role="1TH 2"/>
+          <content src="release/audio/1TH/1TH_003.mp3" role="1TH 3"/>
+          <content src="release/audio/1TH/1TH_004.mp3" role="1TH 4"/>
+          <content src="release/audio/1TH/1TH_005.mp3" role="1TH 5"/>
+        </division>
+        <division role="2TH" name="book-2th">
+          <content src="release/audio/2TH/2TH_001.mp3" role="2TH 1"/>
+          <content src="release/audio/2TH/2TH_002.mp3" role="2TH 2"/>
+          <content src="release/audio/2TH/2TH_003.mp3" role="2TH 3"/>
+        </division>
+        <division role="1TI" name="book-1ti">
+          <content src="release/audio/1TI/1TI_001.mp3" role="1TI 1"/>
+          <content src="release/audio/1TI/1TI_002.mp3" role="1TI 2"/>
+          <content src="release/audio/1TI/1TI_003.mp3" role="1TI 3"/>
+          <content src="release/audio/1TI/1TI_004.mp3" role="1TI 4"/>
+          <content src="release/audio/1TI/1TI_005.mp3" role="1TI 5"/>
+          <content src="release/audio/1TI/1TI_006.mp3" role="1TI 6"/>
+        </division>
+        <division role="2TI" name="book-2ti">
+          <content src="release/audio/2TI/2TI_001.mp3" role="2TI 1"/>
+          <content src="release/audio/2TI/2TI_002.mp3" role="2TI 2"/>
+          <content src="release/audio/2TI/2TI_003.mp3" role="2TI 3"/>
+          <content src="release/audio/2TI/2TI_004.mp3" role="2TI 4"/>
+        </division>
+        <division role="TIT" name="book-tit">
+          <content src="release/audio/TIT/TIT_001.mp3" role="TIT 1"/>
+          <content src="release/audio/TIT/TIT_002.mp3" role="TIT 2"/>
+          <content src="release/audio/TIT/TIT_003.mp3" role="TIT 3"/>
+        </division>
+        <division role="PHM" name="book-phm">
+          <content src="release/audio/PHM/PHM_001.mp3" role="PHM 1"/>
+        </division>
+        <division role="HEB" name="book-heb">
+          <content src="release/audio/HEB/HEB_001.mp3" role="HEB 1"/>
+          <content src="release/audio/HEB/HEB_002.mp3" role="HEB 2"/>
+          <content src="release/audio/HEB/HEB_003.mp3" role="HEB 3"/>
+          <content src="release/audio/HEB/HEB_004.mp3" role="HEB 4"/>
+          <content src="release/audio/HEB/HEB_005.mp3" role="HEB 5"/>
+          <content src="release/audio/HEB/HEB_006.mp3" role="HEB 6"/>
+          <content src="release/audio/HEB/HEB_007.mp3" role="HEB 7"/>
+          <content src="release/audio/HEB/HEB_008.mp3" role="HEB 8"/>
+          <content src="release/audio/HEB/HEB_009.mp3" role="HEB 9"/>
+          <content src="release/audio/HEB/HEB_010.mp3" role="HEB 10"/>
+          <content src="release/audio/HEB/HEB_011.mp3" role="HEB 11"/>
+          <content src="release/audio/HEB/HEB_012.mp3" role="HEB 12"/>
+          <content src="release/audio/HEB/HEB_013.mp3" role="HEB 13"/>
+        </division>
+        <division role="JAS" name="book-jas">
+          <content src="release/audio/JAS/JAS_001.mp3" role="JAS 1"/>
+          <content src="release/audio/JAS/JAS_002.mp3" role="JAS 2"/>
+          <content src="release/audio/JAS/JAS_003.mp3" role="JAS 3"/>
+          <content src="release/audio/JAS/JAS_004.mp3" role="JAS 4"/>
+          <content src="release/audio/JAS/JAS_005.mp3" role="JAS 5"/>
+        </division>
+        <division role="1PE" name="book-1pe">
+          <content src="release/audio/1PE/1PE_001.mp3" role="1PE 1"/>
+          <content src="release/audio/1PE/1PE_002.mp3" role="1PE 2"/>
+          <content src="release/audio/1PE/1PE_003.mp3" role="1PE 3"/>
+          <content src="release/audio/1PE/1PE_004.mp3" role="1PE 4"/>
+          <content src="release/audio/1PE/1PE_005.mp3" role="1PE 5"/>
+        </division>
+        <division role="2PE" name="book-2pe">
+          <content src="release/audio/2PE/2PE_001.mp3" role="2PE 1"/>
+          <content src="release/audio/2PE/2PE_002.mp3" role="2PE 2"/>
+          <content src="release/audio/2PE/2PE_003.mp3" role="2PE 3"/>
+        </division>
+        <division role="1JN" name="book-1jn">
+          <content src="release/audio/1JN/1JN_001.mp3" role="1JN 1"/>
+          <content src="release/audio/1JN/1JN_002.mp3" role="1JN 2"/>
+          <content src="release/audio/1JN/1JN_003.mp3" role="1JN 3"/>
+          <content src="release/audio/1JN/1JN_004.mp3" role="1JN 4"/>
+          <content src="release/audio/1JN/1JN_005.mp3" role="1JN 5"/>
+        </division>
+        <division role="2JN" name="book-2jn">
+          <content src="release/audio/2JN/2JN_001.mp3" role="2JN 1"/>
+        </division>
+        <division role="3JN" name="book-3jn">
+          <content src="release/audio/3JN/3JN_001.mp3" role="3JN 1"/>
+        </division>
+        <division role="JUD" name="book-jud">
+          <content src="release/audio/JUD/JUD_001.mp3" role="JUD 1"/>
+        </division>
+        <division role="REV" name="book-rev">
+          <content src="release/audio/REV/REV_001.mp3" role="REV 1"/>
+          <content src="release/audio/REV/REV_002.mp3" role="REV 2"/>
+          <content src="release/audio/REV/REV_003.mp3" role="REV 3"/>
+          <content src="release/audio/REV/REV_004.mp3" role="REV 4"/>
+          <content src="release/audio/REV/REV_005.mp3" role="REV 5"/>
+          <content src="release/audio/REV/REV_006.mp3" role="REV 6"/>
+          <content src="release/audio/REV/REV_007.mp3" role="REV 7"/>
+          <content src="release/audio/REV/REV_008.mp3" role="REV 8"/>
+          <content src="release/audio/REV/REV_009.mp3" role="REV 9"/>
+          <content src="release/audio/REV/REV_010.mp3" role="REV 10"/>
+          <content src="release/audio/REV/REV_011.mp3" role="REV 11"/>
+          <content src="release/audio/REV/REV_012.mp3" role="REV 12"/>
+          <content src="release/audio/REV/REV_013.mp3" role="REV 13"/>
+          <content src="release/audio/REV/REV_014.mp3" role="REV 14"/>
+          <content src="release/audio/REV/REV_015.mp3" role="REV 15"/>
+          <content src="release/audio/REV/REV_016.mp3" role="REV 16"/>
+          <content src="release/audio/REV/REV_017.mp3" role="REV 17"/>
+          <content src="release/audio/REV/REV_018.mp3" role="REV 18"/>
+          <content src="release/audio/REV/REV_019.mp3" role="REV 19"/>
+          <content src="release/audio/REV/REV_020.mp3" role="REV 20"/>
+          <content src="release/audio/REV/REV_021.mp3" role="REV 21"/>
+          <content src="release/audio/REV/REV_022.mp3" role="REV 22"/>
+        </division>
+      </structure>
+    </publication>
+  </publications>
+  <archiveStatus>
+    <dateUpdated>2019-12-09T15:57:04.662712</dateUpdated>
+    <bundleCreatorName>Elbert Boot</bundleCreatorName>
+    <archivistName>Elbert Boot</archivistName>
+    <comments>First submit</comments>
+  <dateArchived>2019-12-09T15:57:04.662712</dateArchived></archiveStatus>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© 2019 Bridge Connectivity Solutions. Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>If you have questions or would like to get a  copy of this version please contact info@bridgeconn.com</p>
+      <p>यदि आपकों कोई प्रश्न हैं या इस अनुवाद की एक कॉपी प्राप्त करना चाहते हैं, तो कृपया info@bridgeconn.com पर संपर्क करें</p>
+    </promoVersionInfo>
+  </promotion>
+</DBLMetadata>

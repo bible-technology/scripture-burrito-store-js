@@ -1,0 +1,375 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="90799bb5b996fddc" revision="1">
+  <identification>
+    <name>Translation for Translators in Portuguese</name>
+    <nameLocal>A Bíblia Sagrada, Tradução para Tradutores</nameLocal>
+    <description>Portuguese: A Bíblia Sagrada, Tradução para Tradutores (New Testament)</description>
+    <abbreviation>TfTP</abbreviation>
+    <scope>New Testament</scope>
+    <bundleProducer>Paratext/8.0.0.10258</bundleProducer>
+    <systemId type="paratext">
+      <id>90799bb5b996fddcadef5fd8bf58949c188adafe</id>
+      <csetId>7b27e2cbade9d0b4ea764a2d80037bdeba72d293</csetId>
+      <name>TfTP</name>
+      <fullName>Translation for Translators Portuguese</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>8K3gWQvuoASzCie3M</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>eBible.org</abbr>
+      <url>http://eBible.org</url>
+      <nameLocal>eBible.org</nameLocal>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>http://eBible.org</url>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>573f263c5117ad37d3a47d33</uid>
+      <name>New Tribes Mission</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>por</iso>
+    <name>Portuguese</name>
+    <nameLocal>Português</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>pt</ldml>
+    <rod>00047</rod>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>BR</iso>
+      <name>Brazil</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mateus</abbr>
+      <short>Mateus</short>
+      <long>O Evangelho que foi escrito por Mateus</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Marcos</abbr>
+      <short>Marcos</short>
+      <long>O Evangelho que foi escrito por Marcos</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Lucas</abbr>
+      <short>Lucas</short>
+      <long>O Evangelho que foi escrito por Lucas</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>João</abbr>
+      <short>João</short>
+      <long>O Evangelho que foi escrito por João</long>
+    </name>
+    <name id="book-act">
+      <abbr>Atos</abbr>
+      <short>Atos</short>
+      <long>A história dos primeiros cristãos que nós chamamos de livro de ATOS</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Romanos</abbr>
+      <short>Romanos</short>
+      <long>A Carta de Paulo aos Cristãos em Roma, que chamamos comumente de ROMANOS</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Coríntios</abbr>
+      <short>1 Coríntios</short>
+      <long>O apóstolo Paulo escreveu cartas aos cristãos em Corinto. Chamamos esta carta de Primeira Carta aos Coríntios.</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Coríntios</abbr>
+      <short>2 Coríntios</short>
+      <long>O apóstolo Paulo escreveu cartas aos cristãos em Corinto. Chamamos esta carta de A Segunda Carta de Paulo aos Coríntios</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gálatas</abbr>
+      <short>Gálatas</short>
+      <long>A carta que o apóstolo Paulo escreveu aos cristãos na província de Galácia que chamamos Gálatas</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Efésios</abbr>
+      <short>Efésios</short>
+      <long>O apóstolo Paulo escreveu uma carta aos cristãos em Éfeso. Nós chamamos esta carta de Efésios</long>
+    </name>
+    <name id="book-php">
+      <abbr>Filipenses</abbr>
+      <short>Filipenses</short>
+      <long>A carta do apóstolo Paulo aos cristãos em Filipos que nós chamamos de Filipenses</long>
+    </name>
+    <name id="book-col">
+      <abbr>Colossenses</abbr>
+      <short>Colossenses</short>
+      <long>A carta do apóstolo Paulo aos cristãos em Colossos, que chamamos Colossenses</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Tessalonicenses</abbr>
+      <short>1 Tessalonicenses</short>
+      <long>1 TESSALONICENSES</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Tessalonicenses</abbr>
+      <short>2 Tessalonicenses</short>
+      <long>2 TESSALONICENSES</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Timóteo</abbr>
+      <short>1 Timóteo</short>
+      <long>O apóstolo Paulo escreveu cartas aos seus ajudantes. Chamamos esta carta de Primeira a Timóteo</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Timóteo</abbr>
+      <short>2 Timóteo</short>
+      <long>2 TIMÓTEO</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tito</abbr>
+      <short>Tito</short>
+      <long>O Apóstolo Paulo escreveu cartas aos seus ajudantes. Nós chamamos esta carta de Tito.</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Filemom</abbr>
+      <short>Filemom</short>
+      <long>A carta do apóstolo Paulo a um amigo que chamamos Filemom</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Hebreus</abbr>
+      <short>Hebreus</short>
+      <long>A carta que foi escrita aos cristãos judaicos. Chamamos esta carta de HEBREUS</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Tiago</abbr>
+      <short>Tiago</short>
+      <long>A carta de Jacó, irmão de Jesus, a quem chamamos de Tiago.</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Pedro</abbr>
+      <short>1 Pedro</short>
+      <long>1 Pedro Tradução Para Tradutores A primeira carta do apóstolo Pedro aos cristãos que ele estava guiando, que nós chamamos 1 Pedro</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Pedro</abbr>
+      <short>2 Pedro</short>
+      <long>2 Pedro tradução para Tradutores novembro de 2005 A segunda carta do Apóstolo Pedro aos cristãos que ele estava guiando, que nós chamamos de 2 Pedro</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 João</abbr>
+      <short>1 João</short>
+      <long>O apóstolo João escreveu cartas aos cristãos. Chamamos esta carta de 1 João</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 João</abbr>
+      <short>2 João</short>
+      <long>O apóstolo João escreveu cartas aos cristãos. Chamamos esta carta de 2 João</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 João</abbr>
+      <short>3 João</short>
+      <long>O apóstolo João escreveu cartas aos cristãos. Chamamos esta carta de 3 João</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Judas</abbr>
+      <short>Judas</short>
+      <long>A carta escrita por um irmão de Jesus, que chamamos Judas</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Apocalipse</abbr>
+      <short>Apocalipse</short>
+      <long>O livro das visões de João que chamamos comumente de APOCALIPSE</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="bce13ee3a87438eaa6dad5f615913346" mimeType="application/xml" size="166342" uri="1CO.usx"/>
+        <resource checksum="6b6ffd8f538178fa202bef99d827bed6" mimeType="application/xml" size="42214" uri="1JN.usx"/>
+        <resource checksum="c0503b2214f1b793c3bc7f267bdfb5c4" mimeType="application/xml" size="39568" uri="1PE.usx"/>
+        <resource checksum="b8d729d53b7373ce8e9ed6e72d1a3f4a" mimeType="application/xml" size="39047" uri="1TH.usx"/>
+        <resource checksum="2a1b8e82989099f5ee30883701f21c16" mimeType="application/xml" size="39329" uri="1TI.usx"/>
+        <resource checksum="7d1a907defa91f32a5b3c855d2bdbbb2" mimeType="application/xml" size="131693" uri="2CO.usx"/>
+        <resource checksum="90269d3b168062ed95963f0daf1427aa" mimeType="application/xml" size="6524" uri="2JN.usx"/>
+        <resource checksum="bf3f56b93956fb87d9ec486c199af990" mimeType="application/xml" size="27377" uri="2PE.usx"/>
+        <resource checksum="92d0bdec0577741a56ab012a56038418" mimeType="application/xml" size="21288" uri="2TH.usx"/>
+        <resource checksum="e226fe1da1fc36a0d9a56d8bd7dacce6" mimeType="application/xml" size="27462" uri="2TI.usx"/>
+        <resource checksum="7121389e0da7391e496bf4bdb6401001" mimeType="application/xml" size="6807" uri="3JN.usx"/>
+        <resource checksum="1d2685917d14398ba45361112df05a6f" mimeType="application/xml" size="406130" uri="ACT.usx"/>
+        <resource checksum="89cf6e2be1837c9e905fa044f95c12f1" mimeType="application/xml" size="34156" uri="COL.usx"/>
+        <resource checksum="aaa0ac180c386a81f61e798330251d29" mimeType="application/xml" size="51080" uri="EPH.usx"/>
+        <resource checksum="ff3aa8bd9e33ad0155caa42887d0c768" mimeType="application/xml" size="67736" uri="GAL.usx"/>
+        <resource checksum="f9a7eae594ef3212f7ee96189c669903" mimeType="application/xml" size="126196" uri="HEB.usx"/>
+        <resource checksum="a13e6c707082f73fe6eb307b3a2ea58a" mimeType="application/xml" size="45297" uri="JAS.usx"/>
+        <resource checksum="b6783801e580077b1fd5b3e7b75c4f94" mimeType="application/xml" size="244349" uri="JHN.usx"/>
+        <resource checksum="3b2050ee8cd16fb96a3a2585a8057776" mimeType="application/xml" size="14673" uri="JUD.usx"/>
+        <resource checksum="8e3b8cdef8a177d94c3d9379832eb1ad" mimeType="application/xml" size="337003" uri="LUK.usx"/>
+        <resource checksum="eace772f671814e433eebf949ee703d3" mimeType="application/xml" size="358875" uri="MAT.usx"/>
+        <resource checksum="1bd8f7e29e8267792156d99f11f18ec8" mimeType="application/xml" size="185188" uri="MRK.usx"/>
+        <resource checksum="9ce121b6fd80e83bebabc7e9a6fa835b" mimeType="application/xml" size="9205" uri="PHM.usx"/>
+        <resource checksum="1f16ef339a5be2e895fa7e622d05dae4" mimeType="application/xml" size="45931" uri="PHP.usx"/>
+        <resource checksum="fd6f8c500010bb30a8dbf2fbc7d29812" mimeType="application/xml" size="172999" uri="REV.usx"/>
+        <resource checksum="14949d9f9aa45e70bc27d8b2b25e6750" mimeType="application/xml" size="174372" uri="ROM.usx"/>
+        <resource checksum="adf19bf02d1fad6f827fad5cb7a5a22f" mimeType="application/xml" size="21995" uri="TIT.usx"/>
+      </container>
+      <resource checksum="dab081bcc552b0271beddd69964f069a" mimeType="application/xml" size="3047" uri="por_pt.ldml"/>
+      <resource checksum="71158e9513b5a1daa911a9b01fa840e2" mimeType="application/xml" size="87285" uri="styles.xml"/>
+      <resource checksum="3f63e61603b05bec09c6f46cdad5bba1" mimeType="text/plain" size="15053" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="b276e26fff3c7da3f7bb2317fe9dfc1f" mimeType="application/zip" size="15338176" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>Translation for Translators in Brasilian Portuguese</name>
+      <nameLocal>Translation for Translators in Brasilian Portuguese</nameLocal>
+      <description>common</description>
+      <descriptionLocal>comum</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Copyright © 2018 Ellis W. Deibler, Jr. Released under a CC-BY-SA 4.0 license.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>This text is provided courtesy of Ellis W. Deibler, Jr. Proofreading and spelling correction by Ethnos 360 (New Tribes Mission) is gratefully acknowledged.</p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Michael Johnson (PNG Scriptures)</archivistName>
+    <dateArchived>2018-09-11T20:28:53.697957</dateArchived>
+    <dateUpdated>2018-09-11T20:33:11.552150</dateUpdated>
+    <comments>Initial DBL submission, Correct project name</comments>
+  </archiveStatus>
+</DBLMetadata>

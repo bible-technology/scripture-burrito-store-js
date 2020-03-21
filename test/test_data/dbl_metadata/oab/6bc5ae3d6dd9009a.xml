@@ -1,0 +1,364 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="6bc5ae3d6dd9009a" revision="1">
+  <identification>
+    <name>Sanskrit Bible (NT) in ITRANS Script (satyavedaH|)</name>
+    <nameLocal>Sanskrit Bible (NT) in ITRANS Script</nameLocal>
+    <description>New Testament in Sanskrit Language; printed in ITRANS Script</description>
+    <abbreviation>SANITR</abbreviation>
+    <scope>New Testament</scope>
+    <dateCompleted>2018-06-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.100.71</bundleProducer>
+    <systemId type="paratext">
+      <id>6bc5ae3d6dd9009abda2b8f57ebc8adee56c06d0</id>
+      <csetId>9aff0b3c99ef8bc21324f0fa78639a71157a1eaa</csetId>
+      <name>san_itr</name>
+      <fullName>Sanskrit Bible (NT) in ITRANS Script (satyavedaH|)</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>AXpeFrbrzhPaHpf5N</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common - Literary</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>SB</abbr>
+      <url>http://www.sanskritbible.in/</url>
+      <nameLocal>SanskritBible.in</nameLocal>
+      <uid>b1c7c64e4f5e41f8f32abeff</uid>
+      <name>SanskritBible.in</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>b1c7c64e4f5e41f8f32abeff</uid>
+      <name>SanskritBible.in</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>san</iso>
+    <name>Sanskrit</name>
+    <nameLocal>Saṃskṛtam</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>sa-Latn-001-laukika</ldml>
+    <numerals>Roman</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>IN</iso>
+      <name>India</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>mathiH</abbr>
+      <short>mathiH</short>
+      <long>mathilikhitaH susaMvAdaH</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>mArkaH</abbr>
+      <short>mArkaH</short>
+      <long>mArkalikhitaH susaMvAdaH</long>
+    </name>
+    <name id="book-luk">
+      <abbr>lUkaH</abbr>
+      <short>lUkaH</short>
+      <long>lUkalikhitaH susaMvAdaH</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>yohanaH</abbr>
+      <short>yohanaH</short>
+      <long>yohanalikhitaH susaMvAdaH</long>
+    </name>
+    <name id="book-act">
+      <abbr>preritAH</abbr>
+      <short>preritAH</short>
+      <long>preritAnAM karmmaNAmAkhyAnaM</long>
+    </name>
+    <name id="book-rom">
+      <abbr>romiNaH</abbr>
+      <short>romiNaH</short>
+      <long>romiNaH patraM</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 karinthinaH</abbr>
+      <short>1 karinthinaH</short>
+      <long>1 karinthinaH patraM</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 karinthinaH</abbr>
+      <short>2 karinthinaH</short>
+      <long>2 karinthinaH patraM</long>
+    </name>
+    <name id="book-gal">
+      <abbr>gAlAtinaH</abbr>
+      <short>gAlAtinaH</short>
+      <long>gAlAtinaH patraM</long>
+    </name>
+    <name id="book-eph">
+      <abbr>iphiShiNaH</abbr>
+      <short>iphiShiNaH</short>
+      <long>iphiShiNaH patraM</long>
+    </name>
+    <name id="book-php">
+      <abbr>philipinaH</abbr>
+      <short>philipinaH</short>
+      <long>philipinaH patraM</long>
+    </name>
+    <name id="book-col">
+      <abbr>kalasinaH</abbr>
+      <short>kalasinaH</short>
+      <long>kalasinaH patraM</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 thiShalanIkinaH</abbr>
+      <short>1 thiShalanIkinaH</short>
+      <long>1 thiShalanIkinaH patraM</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 thiShalanIkinaH</abbr>
+      <short>2 thiShalanIkinaH</short>
+      <long>2 thiShalanIkinaH patraM</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 tImathiyaH</abbr>
+      <short>1 tImathiyaH</short>
+      <long>1 tImathiyaM patraM</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 tImathiyaH</abbr>
+      <short>2 tImathiyaH</short>
+      <long>2 tImathiyaM patraM</long>
+    </name>
+    <name id="book-tit">
+      <abbr>tItaH</abbr>
+      <short>tItaH</short>
+      <long>tItaM patraM</long>
+    </name>
+    <name id="book-phm">
+      <abbr>philomonaH</abbr>
+      <short>philomonaH</short>
+      <long>philomonaM patraM</long>
+    </name>
+    <name id="book-heb">
+      <abbr>ibriNaH</abbr>
+      <short>ibriNaH</short>
+      <long>ibriNaH patraM</long>
+    </name>
+    <name id="book-jas">
+      <abbr>yAkUbaH</abbr>
+      <short>yAkUbaH</short>
+      <long>yAkUbaH patraM</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 pitaraH</abbr>
+      <short>1 pitaraH</short>
+      <long>1 pitarasya patraM</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 pitaraH</abbr>
+      <short>2 pitaraH</short>
+      <long>2 pitarasya patraM</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 yohanaH</abbr>
+      <short>1 yohanaH</short>
+      <long>1 yohanaH patraM</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 yohanaH</abbr>
+      <short>2 yohanaH</short>
+      <long>2 yohanaH patraM</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 yohanaH</abbr>
+      <short>3 yohanaH</short>
+      <long>3 yohanaH patraM</long>
+    </name>
+    <name id="book-jud">
+      <abbr>yihUdAH</abbr>
+      <short>yihUdAH</short>
+      <long>yihUdAH patraM</long>
+    </name>
+    <name id="book-rev">
+      <abbr>prakAshitaM</abbr>
+      <short>prakAshitaM</short>
+      <long>prakAshitaM bhaviShyadvAkyaM</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <resource checksum="2fd9c16b805724d590c0cff96da070a4" mimeType="application/octet-stream" size="414820" uri="NotoSans-Regular.ttf"/>
+      <container uri="USX_1">
+        <resource checksum="dc5b84be68d37c3eb1c4e19495751187" mimeType="application/xml" size="81451" uri="1CO.usx"/>
+        <resource checksum="f7b164d8510c02e24e9a7362436015b1" mimeType="application/xml" size="21119" uri="1JN.usx"/>
+        <resource checksum="1eb974fccdebe7da6146856629fe562a" mimeType="application/xml" size="20821" uri="1PE.usx"/>
+        <resource checksum="d9dca137d85d737b50a7e2950295120a" mimeType="application/xml" size="17796" uri="1TH.usx"/>
+        <resource checksum="8bee7e70362e5468478514e4b652cad2" mimeType="application/xml" size="21054" uri="1TI.usx"/>
+        <resource checksum="d9dee71ef65e51e1418dabd5b9b3456c" mimeType="application/xml" size="51359" uri="2CO.usx"/>
+        <resource checksum="05347b30f0fddb7948456b898dfd55bb" mimeType="application/xml" size="3087" uri="2JN.usx"/>
+        <resource checksum="815e4ec9f9bfc19b4c255b4fe99880db" mimeType="application/xml" size="12694" uri="2PE.usx"/>
+        <resource checksum="61f7b94e66a14a194af6977333c12ebb" mimeType="application/xml" size="9504" uri="2TH.usx"/>
+        <resource checksum="bde9f5fd0e2c6a2d6fc4cdf338cec311" mimeType="application/xml" size="15594" uri="2TI.usx"/>
+        <resource checksum="3ff25b63b02727cf4d15fc162d03606a" mimeType="application/xml" size="3168" uri="3JN.usx"/>
+        <resource checksum="5e623ef9e5be6b72315e6d6b32962bda" mimeType="application/xml" size="200852" uri="ACT.usx"/>
+        <resource checksum="ec84b6ab5a933f49bdefddd30039d606" mimeType="application/xml" size="18253" uri="COL.usx"/>
+        <resource checksum="bf851b5f34984b0024b2fa0c19fc69ba" mimeType="application/xml" size="27286" uri="EPH.usx"/>
+        <resource checksum="cc390f16e6aa690a4ad7c0b53b65b348" mimeType="application/xml" size="27852" uri="GAL.usx"/>
+        <resource checksum="394cae2d3dc8ee4d206e1885d0ff98ac" mimeType="application/xml" size="58196" uri="HEB.usx"/>
+        <resource checksum="56e9429fc2c196093c59a2f79df905b0" mimeType="application/xml" size="20681" uri="JAS.usx"/>
+        <resource checksum="bce09e6b1ca54b99611827c6624450ab" mimeType="application/xml" size="158337" uri="JHN.usx"/>
+        <resource checksum="4a81389694abbe27e7c9cba104420a7d" mimeType="application/xml" size="5562" uri="JUD.usx"/>
+        <resource checksum="1e46587fbc6c82804a1df8c069647187" mimeType="application/xml" size="207889" uri="LUK.usx"/>
+        <resource checksum="dcab54591ed8ed3fef2249c618ea01cb" mimeType="application/xml" size="193755" uri="MAT.usx"/>
+        <resource checksum="ccd330a57e1081e3714a72feefa59951" mimeType="application/xml" size="121648" uri="MRK.usx"/>
+        <resource checksum="4d3f6f5fd3c03f7a2f19b3a12bd02ed4" mimeType="application/xml" size="4551" uri="PHM.usx"/>
+        <resource checksum="87acbfbca9567575d6a6225326c90494" mimeType="application/xml" size="19412" uri="PHP.usx"/>
+        <resource checksum="937620ba7a4f5d83ea05063852a1285d" mimeType="application/xml" size="88339" uri="REV.usx"/>
+        <resource checksum="31481f4a632f5add84c3c4a1c5d631b4" mimeType="application/xml" size="83989" uri="ROM.usx"/>
+        <resource checksum="fa9e53d1848c02f6955574bd0712ef33" mimeType="application/xml" size="8950" uri="TIT.usx"/>
+      </container>
+      <resource checksum="74accb7e2352a6d216ecd0222d014fc6" mimeType="application/xml" size="1029" uri="san_sa-Latn-001-laukika.ldml"/>
+      <resource checksum="a3a34f91fb427060a2aba4a5f12c9dea" mimeType="application/xml" size="78092" uri="styles.xml"/>
+      <resource checksum="7bac69d13d1c9e55d03a90415de993b4" mimeType="text/plain" size="15388" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="7b2bb184d01ea2b80102336995cc314c" mimeType="application/zip" size="802718" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <nameLocal>satyavedaH| Sanskrit Bible (NT) in ITRANS Script</nameLocal>
+      <description>Sanskrit Bible (NT) in ITRANS Script (satyavedaH|)</description>
+      <descriptionLocal>satyavedaH| Sanskrit Bible (NT) in ITRANS Script</descriptionLocal>
+      <abbreviation>SANIT</abbreviation>
+      <abbreviationLocal>SANIT</abbreviationLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© SanskritBible.in । Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a></p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>Thank you for your interest in Sanskrit Bible.</p>
+      <p>Sanskrit Bible (NT) is freely available in 22 different scripts of your choice. This edition is in ITRANS script and is based on the Sanskrit translation of the Holy Bible published by Calcutta Baptist Missionaries in 1851. Please visit SanskritBible.in to learn more about Sanskrit Bible and to download various free Christian literature.</p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Manu Mathew Thomas</archivistName>
+    <dateArchived>2018-09-26T11:23:33.333997</dateArchived>
+    <dateUpdated>2018-09-26T11:23:33.333997</dateUpdated>
+    <comments>Sanskrit Bible (NT) in ITRANS Script (satyavedaH|)</comments>
+  </archiveStatus>
+</DBLMetadata>

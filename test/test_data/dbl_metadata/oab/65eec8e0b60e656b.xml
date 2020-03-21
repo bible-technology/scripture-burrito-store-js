@@ -1,0 +1,343 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="65eec8e0b60e656b" revision="1">
+  <identification>
+    <name>Free Bible Version New Testament with Psalms</name>
+    <description>Free Bible Version New Testament with Psalms</description>
+    <abbreviation>FBVNTPsalms</abbreviation>
+    <scope>New Testament</scope>
+    <bundleProducer>Paratext/8.0.100.71</bundleProducer>
+    <systemId type="paratext">
+      <id>65eec8e0b60e656bacfb5081cf6b2b79e2d0b882</id>
+      <csetId>325ecffab563280d7bdb4bd2b6e7878a76d875f1</csetId>
+      <name>FBVNT</name>
+      <fullName>Free Bible Version New Testament</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>aP8LmpDsvdagQZHar</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>Free Bible Ministry</abbr>
+      <url>http://www.freebibleministry.org/</url>
+      <nameLocal>Free Bible Ministry, Inc.</nameLocal>
+      <uid>401e512ba47c11259eaafef1</uid>
+      <name>Free Bible Ministry, Inc.</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>http://www.freebibleministry.org/</url>
+      <uid>401e512ba47c11259eaafef1</uid>
+      <name>Free Bible Ministry, Inc.</name>
+    </rightsAdmin>
+    <contributor>
+      <content>false</content>
+      <publication>false</publication>
+      <management>false</management>
+      <finance>false</finance>
+      <qa>false</qa>
+      <uid>401e512ba47c11259eaafef1</uid>
+      <name>Free Bible Ministry, Inc.</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>en</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>US</iso>
+      <name>United States</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-psa">
+      <abbr>Psalms</abbr>
+      <short>Psalms</short>
+      <long>Psalms</long>
+    </name>
+    <name id="book-mat">
+      <short>Matthew</short>
+      <long>Matthew</long>
+    </name>
+    <name id="book-mrk">
+      <short>Mark</short>
+      <long>Mark</long>
+    </name>
+    <name id="book-luk">
+      <short>Luke</short>
+      <long>Luke</long>
+    </name>
+    <name id="book-jhn">
+      <short>John</short>
+      <long>John</long>
+    </name>
+    <name id="book-act">
+      <short>Acts</short>
+      <long>Acts</long>
+    </name>
+    <name id="book-rom">
+      <short>Romans</short>
+      <long>Romans</long>
+    </name>
+    <name id="book-1co">
+      <short>1 Corinthians</short>
+      <long>First Corinthians</long>
+    </name>
+    <name id="book-2co">
+      <short>2 Corinthians</short>
+      <long>Second Corinthians</long>
+    </name>
+    <name id="book-gal">
+      <short>Galatians</short>
+      <long>Galatians</long>
+    </name>
+    <name id="book-eph">
+      <short>Ephesians</short>
+      <long>Ephesians</long>
+    </name>
+    <name id="book-php">
+      <short>Philippians</short>
+      <long>Philippians</long>
+    </name>
+    <name id="book-col">
+      <short>Colossians</short>
+      <long>Colossians</long>
+    </name>
+    <name id="book-1th">
+      <short>1 Thessalonians</short>
+      <long>First Thessalonians</long>
+    </name>
+    <name id="book-2th">
+      <short>2 Thessalonians</short>
+      <long>Second Thessalonians</long>
+    </name>
+    <name id="book-1ti">
+      <short>1 Timothy</short>
+      <long>First Timothy</long>
+    </name>
+    <name id="book-2ti">
+      <short>2 Timothy</short>
+      <long>Second Timothy</long>
+    </name>
+    <name id="book-tit">
+      <short>Titus</short>
+      <long>Titus</long>
+    </name>
+    <name id="book-phm">
+      <short>Philemon</short>
+      <long>Philemon</long>
+    </name>
+    <name id="book-heb">
+      <short>Hebrews</short>
+      <long>Hebrews</long>
+    </name>
+    <name id="book-jas">
+      <short>James</short>
+      <long>James</long>
+    </name>
+    <name id="book-1pe">
+      <short>1 Peter</short>
+      <long>First Peter</long>
+    </name>
+    <name id="book-2pe">
+      <short>2 Peter</short>
+      <long>Second Peter</long>
+    </name>
+    <name id="book-1jn">
+      <short>1 John</short>
+      <long>First John</long>
+    </name>
+    <name id="book-2jn">
+      <short>2 John</short>
+      <long>Second John</long>
+    </name>
+    <name id="book-3jn">
+      <short>3 John</short>
+      <long>Third John</long>
+    </name>
+    <name id="book-jud">
+      <short>Jude</short>
+      <long>Jude</long>
+    </name>
+    <name id="book-rev">
+      <short>Revelation</short>
+      <long>Revelation</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="e9d37052927f5fe542acf6d7cfc5e8fa" mimeType="application/xml" size="88275" uri="1CO.usx"/>
+        <resource checksum="c1d56fbb40820604e0cc9ff05f52ca71" mimeType="application/xml" size="21963" uri="1JN.usx"/>
+        <resource checksum="bf9214725f7eaa257f6a2e53606ad41c" mimeType="application/xml" size="21952" uri="1PE.usx"/>
+        <resource checksum="ad43e4e5384c9db3f0df01a6d72e20bd" mimeType="application/xml" size="16585" uri="1TH.usx"/>
+        <resource checksum="068e883548f699aaa18a0e5c0ed25749" mimeType="application/xml" size="22554" uri="1TI.usx"/>
+        <resource checksum="a2c979072596c4f14ac5581c9d473214" mimeType="application/xml" size="50070" uri="2CO.usx"/>
+        <resource checksum="324b366d032d5e065451d6b89f64b9b3" mimeType="application/xml" size="3156" uri="2JN.usx"/>
+        <resource checksum="e772000b81850630afd0f748f466b88a" mimeType="application/xml" size="13337" uri="2PE.usx"/>
+        <resource checksum="382bda1c6a82c4c82f37f982e46884df" mimeType="application/xml" size="9757" uri="2TH.usx"/>
+        <resource checksum="0dac6ec45909ad6cdd19821ee69118c8" mimeType="application/xml" size="15788" uri="2TI.usx"/>
+        <resource checksum="f7ed38b68934a04b31e11b11678ef028" mimeType="application/xml" size="3467" uri="3JN.usx"/>
+        <resource checksum="a88044cca52b90442a9829a6bb1289f9" mimeType="application/xml" size="186387" uri="ACT.usx"/>
+        <resource checksum="beeb8173e25240b233252a3a8c415700" mimeType="application/xml" size="18426" uri="COL.usx"/>
+        <resource checksum="5c914e96a9dd061ba741e62a4b24bbd8" mimeType="application/xml" size="25210" uri="EPH.usx"/>
+        <resource checksum="3758e5c80242015d53d82e4c2270ee6b" mimeType="application/xml" size="30804" uri="GAL.usx"/>
+        <resource checksum="8deae2defa61a100076e46b95d67d747" mimeType="application/xml" size="63406" uri="HEB.usx"/>
+        <resource checksum="e93656d4351e254635471a812e6d5cb5" mimeType="application/xml" size="19626" uri="JAS.usx"/>
+        <resource checksum="7b810142fac9bc40159b16e1e505a77f" mimeType="application/xml" size="157340" uri="JHN.usx"/>
+        <resource checksum="1d5d3448e448c51f0aa8a573ee5b9555" mimeType="application/xml" size="6576" uri="JUD.usx"/>
+        <resource checksum="43507b4ec5d39c226b01197b26be323a" mimeType="application/xml" size="195474" uri="LUK.usx"/>
+        <resource checksum="d3c804cdccc62f3ceda58e24bfec2fbb" mimeType="application/xml" size="192507" uri="MAT.usx"/>
+        <resource checksum="c5cb6bee5f54056196e0ee63f70b11e0" mimeType="application/xml" size="122666" uri="MRK.usx"/>
+        <resource checksum="c8b299805c08bb951542c1004176c766" mimeType="application/xml" size="4265" uri="PHM.usx"/>
+        <resource checksum="5c19422bbeb3f400cbb99061bbf41a72" mimeType="application/xml" size="17823" uri="PHP.usx"/>
+        <resource checksum="d2fde60f39a0229b8ee40c454ad34f73" mimeType="application/xml" size="487224" uri="PSA.usx"/>
+        <resource checksum="32cdb9c9df80129f0274d41d5aa15009" mimeType="application/xml" size="93060" uri="REV.usx"/>
+        <resource checksum="351e5a843bc4c8a5b8f7210a5db5559b" mimeType="application/xml" size="86545" uri="ROM.usx"/>
+        <resource checksum="8e1eb23438c280936c83c1ea96739ca0" mimeType="application/xml" size="8755" uri="TIT.usx"/>
+      </container>
+      <resource checksum="4dd606be60c13a293a1f464d1b69e84e" mimeType="application/xml" size="2260" uri="eng_en.ldml"/>
+      <resource checksum="a54f9131ab413d5368316fdc65426cee" mimeType="application/xml" size="78083" uri="styles.xml"/>
+      <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="text/plain" size="15364" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="e5437e81d94ff01cad2c1ee095a85c50" mimeType="application/zip" size="1221225" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="PSA"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>New edition of FBV NT that now includes Psalms</description>
+      <descriptionLocal>New edition of FBV NT that now includes Psalms</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="PSA"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+        <content name="book-psa" src="release/USX_1/PSA.usx" role="PSA"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Dr. Jonathan Gallagher</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>Released under Creative Commons Attribution-NoDerivs 4.0 Unported License.</p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Jeff Klassen</archivistName>
+    <dateArchived>2018-10-08T20:16:36.461068</dateArchived>
+    <dateUpdated>2018-10-12T14:23:33.452031</dateUpdated>
+    <comments>First upload to DBL, Metadata update</comments>
+  </archiveStatus>
+</DBLMetadata>

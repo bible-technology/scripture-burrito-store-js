@@ -1,0 +1,352 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="b5105cd03c972046" revision="3">
+  <identification>
+    <name>Makua New Testament 2015</name>
+    <description>Makhuwa-Meetto: Makua New Testament 2015 New Testament</description>
+    <abbreviation>MNT15</abbreviation>
+    <scope>New Testament</scope>
+    <dateCompleted>2016-11-30</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.117</bundleProducer>
+    <systemId type="gbc">
+      <id>58336f7e5117ad5794bd415c</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>b5105cd03c972046676d910c5f786fca0dc02209</id>
+      <csetId>75655b7dd5cbe162ae50d4ee9eebfb1e88ff577f</csetId>
+      <name>Makua</name>
+      <fullName>Makua Bible Version</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common - Literary</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>TWFTW</abbr>
+      <url>www.twftw.org</url>
+      <nameLocal>The Word for the World</nameLocal>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word For The World</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word For The World</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>mgh</iso>
+    <name>Makhuwa-Meetto</name>
+    <nameLocal>Makua</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>mgh</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>TZ</iso>
+      <name>Tanzania</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mat</abbr>
+      <short>Namatayo</short>
+      <long>Malhove orera a Yesu Kuristo thoko chilhepiye aya ni Namatayo</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mako</abbr>
+      <short>Namako</short>
+      <long>Malhove orera a Yesu Kuristo alhepiye ni Namako</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Luka</short>
+      <long>Malhove orera a Yesu kuristo alhepiye ni ashinna Luka</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Yoha</abbr>
+      <short>Nayohana</short>
+      <long>Malhove orera a Yesu Kuristo thoko chilhepiye aya ni Nayohana</long>
+    </name>
+    <name id="book-act">
+      <abbr>Mitk</abbr>
+      <short>Mitheko</short>
+      <long>Mitheko cha akarumia</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Aru</abbr>
+      <short>Arumi</short>
+      <long>Iwarakha i Napaolo wa attu o Urumi</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1Ako</abbr>
+      <short>1 o Ukorintho</short>
+      <long>Iwarakha yo upacha i Napaolo wa attu o Ukorintho</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2Ako</abbr>
+      <short>2 o Ukorintho</short>
+      <long>Iwarakha yo neyelhi i Napaolo wa attu o Ukorintho</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Ugal</abbr>
+      <short>o Ugalatia</short>
+      <long>Iwarakha ya Napaolo wa attu o Ugalatia</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Uef</abbr>
+      <short>o Uefeso</short>
+      <long>Iwarakha i Napaolo wa attu o Uefeso</long>
+    </name>
+    <name id="book-php">
+      <abbr>Ufil</abbr>
+      <short>o Ufilipi</short>
+      <long>Iwarakha i Napaolo wa attu o Ufilipi</long>
+    </name>
+    <name id="book-col">
+      <abbr>Ukol</abbr>
+      <short>o Ukolosai</short>
+      <long>Iwarakha i Napaolo wa attu o Ukolosai</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1Uthes</abbr>
+      <short>1 o Uthesalonike</short>
+      <long>Iwarakha yo upacha i Napaolo wa attu o Uthesalonike</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2Uthes</abbr>
+      <short>o Uthesalonike</short>
+      <long>Iwarakha yo neyekhi i Napaolo wa attu o Uthesalonike</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1Natim</abbr>
+      <short>1 Natim</short>
+      <long>Iwarakha yo upacha i Napaolo u Natimotheo</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2Natim</abbr>
+      <short>2 Natim</short>
+      <long>Iwarakha yo neyelhi i Napaolo u Natimotheo</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Nat</abbr>
+      <short>Natito</short>
+      <long>Iwarakha i Napaolo u Natito</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Naf</abbr>
+      <short>Nafilimoni</short>
+      <long>Iwarakha i Napaolo wa Nafilimoni</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Aebr</abbr>
+      <short>Aebraniya</short>
+      <long>Iwarakha i Napaolo wa Aebraniya</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Nayak</abbr>
+      <short>Nayakhobo</short>
+      <long>Iwarakha i Napaolo u Nayakhobo</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1Nap</abbr>
+      <short>1 Napeturo</short>
+      <long>Iwarakha yo upacha ya Napeturo</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2Nap</abbr>
+      <short>2 Napeturo</short>
+      <long>Iwarakha yo neyelhi ya Napeturo</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1Nay</abbr>
+      <short>1 Nayohana</short>
+      <long>Iwarakha yo upacha ya Nayohana</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2Nay</abbr>
+      <short>2 Nayohana</short>
+      <long>Iwarakha yo neyelhi ya Nayohana</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3Nay</abbr>
+      <short>3 Nayohana</short>
+      <long>Iwarakha yo neraru ya Nayohana</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Nayu</abbr>
+      <short>Nayuuda</short>
+      <long>Iwarakha i Nayuda</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Upat</abbr>
+      <short>Upatakulhelhiya</short>
+      <long>Upatakulhelhiya u Nayohana</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="382c9c0f01e90d459eb7f9d6293ebcbc" mimeType="application/octet-stream" size="742" uri="release/Makua.lds"/>
+    <resource checksum="0db88c13f5d1af2a2deb0727bcd7fbdb" mimeType="application/xml" size="86393" uri="release/USX_1/1CO.usx"/>
+    <resource checksum="00f3389be39d13afaf377b871e4120d3" mimeType="application/xml" size="23783" uri="release/USX_1/1JN.usx"/>
+    <resource checksum="56f5a686be207b111564cb027317e38c" mimeType="application/xml" size="25259" uri="release/USX_1/1PE.usx"/>
+    <resource checksum="c1c05bd7219160325a17bd2117bcf105" mimeType="application/xml" size="19287" uri="release/USX_1/1TH.usx"/>
+    <resource checksum="46c09381214cb0cfcd4167493bbdf061" mimeType="application/xml" size="25137" uri="release/USX_1/1TI.usx"/>
+    <resource checksum="2e3378ac0d533730c83a6312fd46088a" mimeType="application/xml" size="58344" uri="release/USX_1/2CO.usx"/>
+    <resource checksum="44b5e576cbb62be33a002594a7392b25" mimeType="application/xml" size="4991" uri="release/USX_1/2JN.usx"/>
+    <resource checksum="9b6600d2a944847b005ce7d206e39733" mimeType="application/xml" size="16662" uri="release/USX_1/2PE.usx"/>
+    <resource checksum="cc3e260c3b33449a45b4aae51d82f37e" mimeType="application/xml" size="11327" uri="release/USX_1/2TH.usx"/>
+    <resource checksum="fb5083876b89e99d99510139ef177ad1" mimeType="application/xml" size="18054" uri="release/USX_1/2TI.usx"/>
+    <resource checksum="5ec8a4cf4594c164f8f9437361b3d71b" mimeType="application/xml" size="5030" uri="release/USX_1/3JN.usx"/>
+    <resource checksum="ab55b397edb7290de5623c08e9ff9e05" mimeType="application/xml" size="204629" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="d06e76c75a53d4ad2e2586d9174a50c9" mimeType="application/xml" size="21189" uri="release/USX_1/COL.usx"/>
+    <resource checksum="cbf68689da74432d94d6e1c6d0652685" mimeType="application/xml" size="32226" uri="release/USX_1/EPH.usx"/>
+    <resource checksum="616ce885931bd19d057f4cc90cbaf7dc" mimeType="application/xml" size="32192" uri="release/USX_1/GAL.usx"/>
+    <resource checksum="d6b708c5dc1900caf362c349d1d1304c" mimeType="application/xml" size="68630" uri="release/USX_1/HEB.usx"/>
+    <resource checksum="aaef3062d1291fb0a464f717c1c727f8" mimeType="application/xml" size="23516" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="a469599b18d652ac85e75b2d7ce6ad6b" mimeType="application/xml" size="163814" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="ae0d78a4c3e7c82d7371bce45cec926f" mimeType="application/xml" size="8581" uri="release/USX_1/JUD.usx"/>
+    <resource checksum="b37b74002b1e9dffcd91ebd2c7151423" mimeType="application/xml" size="220362" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="d511b3d8c28c846ae54d248a6fa94e59" mimeType="application/xml" size="214355" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="a6da663205400a225c04a6da6d1a35ba" mimeType="application/xml" size="133895" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="5ca0e8b5ce99df5523e1042a1d3105fb" mimeType="application/xml" size="6379" uri="release/USX_1/PHM.usx"/>
+    <resource checksum="d4579b39ec609124d466d72d5410842c" mimeType="application/xml" size="22682" uri="release/USX_1/PHP.usx"/>
+    <resource checksum="7494e0caacfdbd20f3f60fb1b41247bf" mimeType="application/xml" size="101510" uri="release/USX_1/REV.usx"/>
+    <resource checksum="931725799b2d367abda6412b2d999bc2" mimeType="application/xml" size="88726" uri="release/USX_1/ROM.usx"/>
+    <resource checksum="2f3250be26f5d9b73f92345cd6bb02d6" mimeType="application/xml" size="11650" uri="release/USX_1/TIT.usx"/>
+    <resource checksum="2bd00608bba3c1d423d9997d4591dd4b" mimeType="application/octet-stream" size="3506" uri="release/mgh.ldml"/>
+    <resource checksum="6a3f1b83fd07a89d69cd7cd3ffec9463" mimeType="application/xml" size="82447" uri="release/styles.xml"/>
+    <resource checksum="ddf86170179e7bda081ca67126790529" mimeType="application/octet-stream" size="13092" uri="release/versification.vrs"/>
+    <resource checksum="c25f4b57c23c2efc168295609d29e1cb" mimeType="application/zip" size="12832341" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>Makua New Testament</name>
+      <nameLocal>Makua New Testament</nameLocal>
+      <description>Makua New Testament 2015</description>
+      <descriptionLocal>Makua New Testament 2015</descriptionLocal>
+      <abbreviation>MNT</abbreviation>
+      <abbreviationLocal>MNT</abbreviationLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Makua New Testament © The Word For The World, 2015.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Gladys Grasso</archivistName>
+    <dateArchived>2016-11-30T16:56:33.828863</dateArchived>
+    <dateUpdated>2016-11-30T16:56:33.828863</dateUpdated>
+    <comments>First Submit</comments>
+  </archiveStatus>
+</DBLMetadata>

@@ -1,0 +1,593 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="33ac978af36830fa" revision="5">
+  <identification>
+    <name>Eastern Slovak Romani Bible</name>
+    <nameLocal>Le Devleskero Lav Andre Romaňi Čhib 2019</nameLocal>
+    <description>Romani, Carpathian: Le Devleskero Lav Andre Romaňi Čhib 2019 (New Testament+)</description>
+    <abbreviation>EMOU</abbreviation>
+    <abbreviationLocal>NZR</abbreviationLocal>
+    <scope>New Testament+</scope>
+    <bundleProducer>Paratext/8.0.100.81</bundleProducer>
+    <systemId type="paratext">
+      <id>33ac978af36830facbe2dc85c569fc122a48d318</id>
+      <csetId>7fab34ec47d767c66db63d823b63082b73e25fe7</csetId>
+      <name>EMOU</name>
+      <fullName>ESR Marek Olah Unicode</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>bn9egT248pv7QgLTr</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>TWFTW</abbr>
+      <url>www.twftw.org</url>
+      <nameLocal>The Word for the World</nameLocal>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word For The World</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.twftw.org</url>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word for the World International</name>
+    </rightsAdmin>
+    <contributor>
+      <content>false</content>
+      <publication>false</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>54650d065117ad695d428986</uid>
+      <name>The Seed Company</name>
+    </contributor>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <finance>false</finance>
+      <qa>false</qa>
+      <uid>545d2cb01fabb944c6ac48e8</uid>
+      <name>Hosanna</name>
+    </contributor>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <finance>false</finance>
+      <qa>false</qa>
+      <uid>54650ceb5117ad68c4c49ea1</uid>
+      <name>Slovak Bible Society</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>rmc</iso>
+    <name>Carpathian Romani</name>
+    <nameLocal>Romanes</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>rmc</ldml>
+    <rod>16015</rod>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>SK</iso>
+      <name>Slovakia</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-gen">
+      <abbr>1M</abbr>
+      <short>Genezis</short>
+      <long>Genezis — O Ešebno Pisišagos le Mojžišoškero</long>
+    </name>
+    <name id="book-exo">
+      <abbr>2M</abbr>
+      <short>2. Mojžišoskero</short>
+      <long>O Exodus – O Dujto Mojžišoskero Zvitkos</long>
+    </name>
+    <name id="book-num">
+      <abbr>4M</abbr>
+      <short>4. Mojžišoskero</short>
+      <long>O Numeri – O Štarto Mojžišoskero Zvitkos</long>
+    </name>
+    <name id="book-deu">
+      <abbr>5M</abbr>
+      <short>5. Mojžišoskero</short>
+      <long>O Deuteronomium – O Pandžto Mojžišoskero Zvitkos</long>
+    </name>
+    <name id="book-jos">
+      <abbr>Joz</abbr>
+      <short>Jozua</short>
+      <long>Jozua</long>
+    </name>
+    <name id="book-jdg">
+      <abbr>Sud</abbr>
+      <short>Sdc</short>
+      <long>Le Sudcengeri kňižka</long>
+    </name>
+    <name id="book-rut">
+      <abbr>Rut</abbr>
+      <short>Rut</short>
+      <long>E Rut</long>
+    </name>
+    <name id="book-1sa">
+      <abbr>1Sam</abbr>
+      <short>1. Samueloskero</short>
+      <long>Ešebno kňižka le Samueloskeri</long>
+    </name>
+    <name id="book-2sa">
+      <abbr>2Sam</abbr>
+      <short>2. Samueloskero</short>
+      <long>O Dujto Samueloskero Zvitkos</long>
+    </name>
+    <name id="book-1ki">
+      <abbr>1Kr</abbr>
+      <short>1. Kraľengero</short>
+      <long>O Ešebno Kraľengero Zvitkos</long>
+    </name>
+    <name id="book-2ki">
+      <abbr>2Kr</abbr>
+      <short>2. Kraľengero</short>
+      <long>O Dujto Kraľengero Zvitkos</long>
+    </name>
+    <name id="book-1ch">
+      <abbr>1Krn</abbr>
+      <short>1. Kronikengero</short>
+      <long>O Ešebno Kronikengero Zvitkos</long>
+    </name>
+    <name id="book-2ch">
+      <abbr>2Krn</abbr>
+      <short>2. Kronikengero</short>
+      <long>O Dujto Kronikengero Zvitkos</long>
+    </name>
+    <name id="book-ezr">
+      <abbr>Ezd</abbr>
+      <short>Ezdraš</short>
+      <long>O Ezdraš</long>
+    </name>
+    <name id="book-neh">
+      <abbr>Neh</abbr>
+      <short>Nehemiaš</short>
+      <long>O Nehemiaš</long>
+    </name>
+    <name id="book-est">
+      <abbr>Est</abbr>
+      <short>E Ester</short>
+      <long>E Ester</long>
+    </name>
+    <name id="book-jon">
+      <abbr>Jon</abbr>
+      <short>O Jonaš</short>
+      <long>O Jonaš</long>
+    </name>
+    <name id="book-mat">
+      <abbr>Mat</abbr>
+      <short>MATUŠ</short>
+      <long>O Evaňjelium Pal O MATUŠ</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mrk</abbr>
+      <short>MAREK</short>
+      <long>O Evaňjelium Pal O MAREK</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>LUKAŠ</short>
+      <long>O Evaňjelium Pal O LUKAŠ</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Jan</abbr>
+      <short>JAN</short>
+      <long>O Evaňjelium Pal O JAN</long>
+    </name>
+    <name id="book-act">
+      <abbr>Sk</abbr>
+      <short>SKUTKI</short>
+      <long>Le Apoštolengere SKUTKI</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Rim</abbr>
+      <short>RIMANENGE</short>
+      <long>Le Pavloskero Ľil Le RIMANENGE</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1Kor</abbr>
+      <short>1. KORINŤANENGE</short>
+      <long>Le Pavloskero Ešebno Ľil Le KORINŤANENGE</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2Kor</abbr>
+      <short>2. KORINŤANENGE</short>
+      <long>Le Pavloskero Dujto Ľil Le KORINŤANENGE</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gal</abbr>
+      <short>GALAŤANENGE</short>
+      <long>Le Pavloskero Ľil Le GALAŤANENGE</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Ef</abbr>
+      <short>EFEŽANENGE</short>
+      <long>Le Pavloskero Ľil Le EFEŽANENGE</long>
+    </name>
+    <name id="book-php">
+      <abbr>Fil</abbr>
+      <short>FILIPANENGE</short>
+      <long>Le Pavloskero Ľil Le FILIPANENGE</long>
+    </name>
+    <name id="book-col">
+      <abbr>Kol</abbr>
+      <short>KOLOŠANENGE</short>
+      <long>Le Pavloskero Ľil Le KOLOŠANENGE</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1Tes</abbr>
+      <short>1. TESALONIČANENGE</short>
+      <long>Le Pavloskero Ešebno Ľil Le TESALONIČANENGE</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2Tes</abbr>
+      <short>2. TESALONIČANENGE</short>
+      <long>Le Pavloskero Dujto Ľil Le TESALONIČANENGE</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1Tim</abbr>
+      <short>1. TIMOTEOSKE</short>
+      <long>Le Pavloskero Ešebno Ľil Le TIMOTEOSKE</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2Tim</abbr>
+      <short>2. TIMOTEOSKE</short>
+      <long>Le Pavloskero Dujto Ľil Le TIMOTEOSKE</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tit</abbr>
+      <short>TITOSKE</short>
+      <long>Le Pavloskero Ľil Le TITOSKE</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Flm</abbr>
+      <short>FILEMONOSKE</short>
+      <long>Le Pavloskero Ľil Le FILEMONOSKE</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Žid</abbr>
+      <short>ŽIDENGE</short>
+      <long>O Ľil Le ŽIDENGE</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Jak</abbr>
+      <short>JAKOB</short>
+      <long>O Ľil Le JAKOBOSKERO</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1Pt</abbr>
+      <short>1. PETER</short>
+      <long>O Ešebno Ľil Le PETERISKERO</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2Pt</abbr>
+      <short>2. PETER</short>
+      <long>O Dujto Ľil Le PETERISKERO</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1Jn</abbr>
+      <short>1. JAN</short>
+      <long>O Ešebno Ľil Le JANOSKERO</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2Jn</abbr>
+      <short>2. JAN</short>
+      <long>O Dujto Ľil Le JANOSKERO</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3Jn</abbr>
+      <short>3. JAN</short>
+      <long>O Trito Ľil Le JANOSKERO</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Jud</abbr>
+      <short>JUDA</short>
+      <long>O Ľil Le JUDASKERO</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Zj</abbr>
+      <short>ZJAVEŇIE</short>
+      <long>Le Janoskero ZJAVEŇIE</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_2">
+        <resource checksum="8d2c953db62a21c431556b6cc6a3bf4a" mimeType="application/xml" size="163356" uri="1CH.usx"/>
+        <resource checksum="8351a1ce9999173620e818647a108b4a" mimeType="application/xml" size="85494" uri="1CO.usx"/>
+        <resource checksum="49408aa3ed67dfd118e5693ff9908668" mimeType="application/xml" size="21446" uri="1JN.usx"/>
+        <resource checksum="27c32ff7a253c3ca5dc52e700fc81c4a" mimeType="application/xml" size="166345" uri="1KI.usx"/>
+        <resource checksum="3e656ba21afe37c4270ca15468ea650e" mimeType="application/xml" size="23352" uri="1PE.usx"/>
+        <resource checksum="f65d163a713355688f94235e03ede8b6" mimeType="application/xml" size="171781" uri="1SA.usx"/>
+        <resource checksum="c4ecd3ec52cf84e6f967eb6e3ef38051" mimeType="application/xml" size="17486" uri="1TH.usx"/>
+        <resource checksum="b3752e81ca68f1a932864a5c7e285723" mimeType="application/xml" size="23691" uri="1TI.usx"/>
+        <resource checksum="76e2757b7ea0b47c1d6b2509bc068dc9" mimeType="application/xml" size="178995" uri="2CH.usx"/>
+        <resource checksum="1fdeede251100df68c59d9f8a966018c" mimeType="application/xml" size="54304" uri="2CO.usx"/>
+        <resource checksum="37ff2245ffe52dbb94cf3c9fc7e84c43" mimeType="application/xml" size="3068" uri="2JN.usx"/>
+        <resource checksum="b0473de2f4b32b5e44febfc25a7b1496" mimeType="application/xml" size="164203" uri="2KI.usx"/>
+        <resource checksum="9820fb11669db2d2e45d45acc796b296" mimeType="application/xml" size="14147" uri="2PE.usx"/>
+        <resource checksum="3a7892732d03af96dcd10fb8be089f68" mimeType="application/xml" size="151361" uri="2SA.usx"/>
+        <resource checksum="4201c2c09f6cfea1acb60ec7c485fdcc" mimeType="application/xml" size="10207" uri="2TH.usx"/>
+        <resource checksum="50f095e5115bb6804a855d2ddd8da6e1" mimeType="application/xml" size="16629" uri="2TI.usx"/>
+        <resource checksum="1def4d595a45093712f792003645e2d7" mimeType="application/xml" size="3146" uri="3JN.usx"/>
+        <resource checksum="3b6bd5aa687b23c634a80834ecd3b959" mimeType="application/xml" size="206118" uri="ACT.usx"/>
+        <resource checksum="e66375f6fdf75834381ddb0ad9e7f843" mimeType="application/xml" size="20015" uri="COL.usx"/>
+        <resource checksum="3fa8a3a1551787dfa548868be5c30868" mimeType="application/xml" size="190423" uri="DEU.usx"/>
+        <resource checksum="dfbbd08cfb05a392741dfd7c4d4b9b2e" mimeType="application/xml" size="29842" uri="EPH.usx"/>
+        <resource checksum="551dc9d08a14d75bf6cb7fe9cc6d0ce1" mimeType="application/xml" size="41420" uri="EST.usx"/>
+        <resource checksum="be0f9068d7da247aec24a31d31cd4c9a" mimeType="application/xml" size="220091" uri="EXO.usx"/>
+        <resource checksum="e4b74c4d8aedfa89ac46d08de58aa5b0" mimeType="application/xml" size="53843" uri="EZR.usx"/>
+        <resource checksum="32421bcbaeca681e42146559ce92833f" mimeType="application/xml" size="30683" uri="GAL.usx"/>
+        <resource checksum="950bb3581a920b7f5dab08622803888f" mimeType="application/xml" size="279518" uri="GEN.usx"/>
+        <resource checksum="034bf971ec3cfc9591427ea82467d397" mimeType="application/xml" size="64895" uri="HEB.usx"/>
+        <resource checksum="908f88df0cea5cbd7ebbe225cc87628e" mimeType="application/xml" size="21817" uri="JAS.usx"/>
+        <resource checksum="f4e6fcfee9c3ae7aa3194e2d2d1d83ca" mimeType="application/xml" size="129681" uri="JDG.usx"/>
+        <resource checksum="38b28ee42fc4460d9d3e2eecdd295974" mimeType="application/xml" size="160559" uri="JHN.usx"/>
+        <resource checksum="77027c41a8334c4fdc51bfdf27263fa2" mimeType="application/xml" size="9666" uri="JON.usx"/>
+        <resource checksum="461fa56436f41b3473c77443e07437ea" mimeType="application/xml" size="123044" uri="JOS.usx"/>
+        <resource checksum="40412126338ed6cbcf10482781d49ccf" mimeType="application/xml" size="6174" uri="JUD.usx"/>
+        <resource checksum="a11d252f78218c93142a044970b0e26e" mimeType="application/xml" size="219488" uri="LUK.usx"/>
+        <resource checksum="205633bfb2106db003127d39bbc55ecf" mimeType="application/xml" size="208042" uri="MAT.usx"/>
+        <resource checksum="a282310426546425c15bebf4eda20634" mimeType="application/xml" size="129774" uri="MRK.usx"/>
+        <resource checksum="feb9e53857d1de3ce5b936fb371af29d" mimeType="application/xml" size="81653" uri="NEH.usx"/>
+        <resource checksum="2e1119ed299f8f5a96bce63243e66b7f" mimeType="application/xml" size="223623" uri="NUM.usx"/>
+        <resource checksum="790eaa4c40ec6a383e69885ca0e71091" mimeType="application/xml" size="4773" uri="PHM.usx"/>
+        <resource checksum="de4a00e6afb8c9eb622ebb867ac1b009" mimeType="application/xml" size="20886" uri="PHP.usx"/>
+        <resource checksum="7ea16033f13b831af01ac018faaeae01" mimeType="application/xml" size="94659" uri="REV.usx"/>
+        <resource checksum="11a43d2052df144896182f492f1d09b2" mimeType="application/xml" size="91482" uri="ROM.usx"/>
+        <resource checksum="b4430bd6098a044aef4e05f03352275f" mimeType="application/xml" size="19123" uri="RUT.usx"/>
+        <resource checksum="20ffcb42215620382447af48da91f574" mimeType="application/xml" size="10276" uri="TIT.usx"/>
+      </container>
+      <resource checksum="dc27f847bb13fbe52a0e98569d50f4c9" mimeType="application/xml" size="4220" uri="rmc.ldml"/>
+      <resource checksum="4837bf85621d07216983de4dc75e7b13" mimeType="application/xml" size="82454" uri="styles.xml"/>
+      <resource checksum="48a2ec3873e5056894224e324eb2ca75" mimeType="text/plain" size="9976" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="0b9270d16ad193040cca6a2ec8a25c1b" mimeType="application/zip" size="74291287" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CH"/>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1KI"/>
+      <book code="1PE"/>
+      <book code="1SA"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CH"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2KI"/>
+      <book code="2PE"/>
+      <book code="2SA"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="DEU"/>
+      <book code="EPH"/>
+      <book code="EST"/>
+      <book code="EXO"/>
+      <book code="EZR"/>
+      <book code="GAL"/>
+      <book code="GEN"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JDG"/>
+      <book code="JHN"/>
+      <book code="JON"/>
+      <book code="JOS"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="NEH"/>
+      <book code="NUM"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="RUT"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p2" default="true">
+      <name>Carpathian Romani 2019</name>
+      <nameLocal>Le Devleskero Lav Andre Romaňi Čhib</nameLocal>
+      <description>The Carpathian Romani Bible for app</description>
+      <descriptionLocal>Le Devleskero Lav</descriptionLocal>
+      <abbreviation>RNC</abbreviation>
+      <abbreviationLocal>RNC</abbreviationLocal>
+      <canonicalContent>
+        <book code="1CH"/>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1KI"/>
+        <book code="1PE"/>
+        <book code="1SA"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CH"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2KI"/>
+        <book code="2PE"/>
+        <book code="2SA"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="DEU"/>
+        <book code="EPH"/>
+        <book code="EST"/>
+        <book code="EXO"/>
+        <book code="EZR"/>
+        <book code="GAL"/>
+        <book code="GEN"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JDG"/>
+        <book code="JHN"/>
+        <book code="JON"/>
+        <book code="JOS"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="NEH"/>
+        <book code="NUM"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="RUT"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-gen" src="release/USX_2/GEN.usx" role="GEN"/>
+        <content name="book-exo" src="release/USX_2/EXO.usx" role="EXO"/>
+        <content name="book-num" src="release/USX_2/NUM.usx" role="NUM"/>
+        <content name="book-deu" src="release/USX_2/DEU.usx" role="DEU"/>
+        <content name="book-jos" src="release/USX_2/JOS.usx" role="JOS"/>
+        <content name="book-jdg" src="release/USX_2/JDG.usx" role="JDG"/>
+        <content name="book-rut" src="release/USX_2/RUT.usx" role="RUT"/>
+        <content name="book-1sa" src="release/USX_2/1SA.usx" role="1SA"/>
+        <content name="book-2sa" src="release/USX_2/2SA.usx" role="2SA"/>
+        <content name="book-1ki" src="release/USX_2/1KI.usx" role="1KI"/>
+        <content name="book-2ki" src="release/USX_2/2KI.usx" role="2KI"/>
+        <content name="book-1ch" src="release/USX_2/1CH.usx" role="1CH"/>
+        <content name="book-2ch" src="release/USX_2/2CH.usx" role="2CH"/>
+        <content name="book-ezr" src="release/USX_2/EZR.usx" role="EZR"/>
+        <content name="book-neh" src="release/USX_2/NEH.usx" role="NEH"/>
+        <content name="book-est" src="release/USX_2/EST.usx" role="EST"/>
+        <content name="book-jon" src="release/USX_2/JON.usx" role="JON"/>
+        <content name="book-mat" src="release/USX_2/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_2/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_2/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_2/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_2/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_2/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_2/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_2/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_2/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_2/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_2/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_2/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_2/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_2/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_2/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_2/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_2/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_2/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_2/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_2/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_2/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_2/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_2/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_2/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_2/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_2/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_2/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Eastern Slovak Romani New Testament+ © The Word for the World International and The Word for the World Slovakia, 2019.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <h3>Eastern Slovak Romani New Testament Plus Portions</h3>
+      <p>
+        <a href="https://www.twftw.org/">The Word for the World International</a>
+      </p>
+      <p>Eastern Slovak Romani belongs to the larger cluster of dialects designated 'Carpathian Romani'. Roma people of Slovakia and the Czech Republic can read and understand the printed text. The audio is also understood by Roma in parts of Poland, Ukraine, and Romania.</p>
+      <p>Books of the Old Testament are being added as the translation of the Old Testament progresses. Audio of the whole New Testament is available.</p>
+      <p>The text and audio are accessible on Bible.com; Biblia.sk; Bible.is; Romani.global.bible.</p>
+      <p>For further information, please contact Project Manager Pierre van Vuuren at pvanvuuren@twftw.org.</p>
+    </promoVersionInfo>
+  </promotion>
+  <progress>
+    <book code="GEN" stage="1"/>
+    <book code="EXO" stage="2"/>
+    <book code="NUM" stage="1"/>
+    <book code="DEU" stage="1"/>
+    <book code="JOS" stage="1"/>
+    <book code="JDG" stage="1"/>
+    <book code="RUT" stage="1"/>
+    <book code="1SA" stage="1"/>
+    <book code="2SA" stage="1"/>
+    <book code="1KI" stage="1"/>
+    <book code="2KI" stage="1"/>
+    <book code="1CH" stage="1"/>
+    <book code="2CH" stage="1"/>
+    <book code="EZR" stage="1"/>
+    <book code="NEH" stage="1"/>
+    <book code="EST" stage="1"/>
+    <book code="JON" stage="1"/>
+    <book code="MAT" stage="2"/>
+    <book code="MRK" stage="3"/>
+    <book code="LUK" stage="1"/>
+    <book code="JHN" stage="1"/>
+    <book code="ACT" stage="1"/>
+    <book code="ROM" stage="1"/>
+    <book code="1CO" stage="1"/>
+    <book code="2CO" stage="1"/>
+    <book code="GAL" stage="1"/>
+    <book code="EPH" stage="1"/>
+    <book code="PHP" stage="1"/>
+    <book code="COL" stage="1"/>
+    <book code="1TH" stage="1"/>
+    <book code="2TH" stage="1"/>
+    <book code="1TI" stage="1"/>
+    <book code="2TI" stage="1"/>
+    <book code="TIT" stage="1"/>
+    <book code="PHM" stage="1"/>
+    <book code="HEB" stage="1"/>
+    <book code="JAS" stage="1"/>
+    <book code="1PE" stage="1"/>
+    <book code="2PE" stage="1"/>
+    <book code="1JN" stage="1"/>
+    <book code="2JN" stage="1"/>
+    <book code="3JN" stage="1"/>
+    <book code="JUD" stage="1"/>
+    <book code="REV" stage="1"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Pierre van Vuuren</archivistName>
+    <dateArchived>2014-01-29T16:43:06.871173</dateArchived>
+    <dateUpdated>2019-08-21T20:20:23.706259</dateUpdated>
+    <comments>Updated localized name, Update localized name</comments>
+  </archiveStatus>
+</DBLMetadata>

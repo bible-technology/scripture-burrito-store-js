@@ -1,0 +1,413 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="fa4317c59f0825e0" revision="8">
+  <identification>
+    <name>Svenska Kärnbibeln</name>
+    <nameLocal>Svenska Kärnbibeln - en expanderad översättning</nameLocal>
+    <description>Swedish: Svenska Kärnbibeln - en expanderad översättning (New Testament)</description>
+    <abbreviation>skb</abbreviation>
+    <scope>New Testament</scope>
+    <bundleProducer>Paratext/8.0.100.84</bundleProducer>
+    <systemId type="paratext">
+      <id>fa4317c59f0825e0fd535c7f7312d8c465d122d7</id>
+      <csetId>58748e31a618bd613e49b55080233b42b7a0946d</csetId>
+      <name>SKB</name>
+      <fullName>Svenska Kärnbibeln</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>3WJi5CrMEcTBPr9pW</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>SKB</abbr>
+      <url>http://www.karnbibeln.se/</url>
+      <nameLocal>Svenska Kärnbibeln</nameLocal>
+      <uid>3dd920e02abcf95233c165f1</uid>
+      <name>Svenska Kärnbibeln</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>http://www.karnbibeln.se/</url>
+      <uid>3dd920e02abcf95233c165f1</uid>
+      <name>Svenska Kärnbibeln</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>3dd920e02abcf95233c165f1</uid>
+      <name>Svenska Kärnbibeln</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>swe</iso>
+    <name>Swedish</name>
+    <nameLocal>Svenska</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>sv</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>SE</iso>
+      <name>Sweden</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-pro">
+      <abbr>Ords</abbr>
+      <short>Ordspråksboken</short>
+      <long>Ordspråksboken</long>
+    </name>
+    <name id="book-dan">
+      <abbr>Dan</abbr>
+      <short>Daniel</short>
+      <long>Daniel</long>
+    </name>
+    <name id="book-mat">
+      <abbr>Matt</abbr>
+      <short>Matteus</short>
+      <long>Matteusevangeliet</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mark</abbr>
+      <short>Markus</short>
+      <long>Markusevangeliet</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Lukas</short>
+      <long>Lukasevangeliet</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Joh</abbr>
+      <short>Johannes</short>
+      <long>Johannesevangeliet</long>
+    </name>
+    <name id="book-act">
+      <abbr>Apg</abbr>
+      <short>Apostlagärningarna</short>
+      <long>Apostlagärningarna</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Rom</abbr>
+      <short>Romarbrevet</short>
+      <long>Romarbrevet</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Kor</abbr>
+      <short>1 Korintierbrevet</short>
+      <long>Första Korintierbrevet</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Kor</abbr>
+      <short>2 Korintierbrevet</short>
+      <long>Andra Korintierbrevet</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gal</abbr>
+      <short>Galaterbrevet</short>
+      <long>Galaterbrevet</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Ef</abbr>
+      <short>Efesierbrevet</short>
+      <long>Efesierbrevet</long>
+    </name>
+    <name id="book-php">
+      <abbr>Fil</abbr>
+      <short>Filipperbrevet</short>
+      <long>Filipperbrevet</long>
+    </name>
+    <name id="book-col">
+      <abbr>Kol</abbr>
+      <short>Kolosserbrevet</short>
+      <long>Kolosserbrevet</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Tess</abbr>
+      <short>1 Tessalonikerbrevet</short>
+      <long>Första Tessalonikerbrevet</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Tess</abbr>
+      <short>2 Tessalonikerbrevet</short>
+      <long>Andra Tessalonikerbrevet</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Tim</abbr>
+      <short>1 Timoteusbrevet</short>
+      <long>Första Timotheusbrevet</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Tim</abbr>
+      <short>2 Timoteusbrevet</short>
+      <long>Andra Timotheusbrevet</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tit</abbr>
+      <short>Titusbrevet</short>
+      <long>Brevet till Titus</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Filemon</abbr>
+      <short>Filemonbrevet</short>
+      <long>Brevet till Filemon</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Heb</abbr>
+      <short>Hebreerbrevet</short>
+      <long>Hebreerbrevet</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Jak</abbr>
+      <short>Jakobsbrevet</short>
+      <long>Jakobs brev</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Pet</abbr>
+      <short>1 Petrusbrevet</short>
+      <long>Första Petrusbrevet</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Pet</abbr>
+      <short>2 Petrusbrevet</short>
+      <long>Andra Petrusbrevet</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Joh</abbr>
+      <short>1 Johannesbrevet</short>
+      <long>Första Johannesbrevet</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Joh</abbr>
+      <short>2 Johannesbrevet</short>
+      <long>Andra Johannesbrevet</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Joh</abbr>
+      <short>3 Johannesbrevet</short>
+      <long>Tredje Johannesbrevet</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Jud</abbr>
+      <short>Judasbrevet</short>
+      <long>Judas brev</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Upp</abbr>
+      <short>Uppenbarelseboken</short>
+      <long>Uppenbarelseboken</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="0a24e7011f8f13daa8d25efd83a750e9" mimeType="application/xml" size="205004" uri="1CO.usx"/>
+        <resource checksum="84ea6d013403f5ee99e5b05b85957a44" mimeType="application/xml" size="71406" uri="1JN.usx"/>
+        <resource checksum="4b35c8b46f9fc6d4093b0e90a995b9b3" mimeType="application/xml" size="52188" uri="1PE.usx"/>
+        <resource checksum="37dee8d6a038170a1903dd95dbf2303e" mimeType="application/xml" size="46069" uri="1TH.usx"/>
+        <resource checksum="b5966e1cf1ff8cff70d876c969fc1c39" mimeType="application/xml" size="76727" uri="1TI.usx"/>
+        <resource checksum="287eeb0c9f677bb1cdbc3b6a7ded1b1e" mimeType="application/xml" size="118849" uri="2CO.usx"/>
+        <resource checksum="f7d432ad8bd4bf689ca0836e379d5fef" mimeType="application/xml" size="7691" uri="2JN.usx"/>
+        <resource checksum="f4cad2db84be583ad6e5de77d4e152e4" mimeType="application/xml" size="29140" uri="2PE.usx"/>
+        <resource checksum="2e924418d99a0f0e2b86e79faa1c66bc" mimeType="application/xml" size="26053" uri="2TH.usx"/>
+        <resource checksum="d80b3116cc3ac5cbe5e7f57a118a4b33" mimeType="application/xml" size="52861" uri="2TI.usx"/>
+        <resource checksum="88af4e57cdb017aabf6609505a2ca85b" mimeType="application/xml" size="8720" uri="3JN.usx"/>
+        <resource checksum="55f208223e265814c6f5a77c17ef30fb" mimeType="application/xml" size="428679" uri="ACT.usx"/>
+        <resource checksum="4d690e62ae5cb9922a0d102e05fa5db2" mimeType="application/xml" size="56575" uri="COL.usx"/>
+        <resource checksum="ded6bf7119003cc948dd68b4c30226c4" mimeType="application/xml" size="232440" uri="DAN.usx"/>
+        <resource checksum="860211a4de5d757f470d9da2ff297a14" mimeType="application/xml" size="79714" uri="EPH.usx"/>
+        <resource checksum="f4b89ab5391ef3dfad16750e9cdd8af2" mimeType="application/xml" size="66608" uri="GAL.usx"/>
+        <resource checksum="efc63b498620dd1e9ef90c0ea03d01ac" mimeType="application/xml" size="128777" uri="HEB.usx"/>
+        <resource checksum="dcbc930379943b35f1d7e9d4a1ebf783" mimeType="application/xml" size="50206" uri="JAS.usx"/>
+        <resource checksum="0bfa2a5395351fbab8a01d471c4de4e2" mimeType="application/xml" size="317969" uri="JHN.usx"/>
+        <resource checksum="d0f72ed9cf63353f8dd1663c134ca9d6" mimeType="application/xml" size="18671" uri="JUD.usx"/>
+        <resource checksum="14942cf45523f7a973fd3e9f4812757c" mimeType="application/xml" size="456286" uri="LUK.usx"/>
+        <resource checksum="7cf04af55e393769523991e6e776da97" mimeType="application/xml" size="468407" uri="MAT.usx"/>
+        <resource checksum="82fa6a22bb0738a744eb603905ce7782" mimeType="application/xml" size="262486" uri="MRK.usx"/>
+        <resource checksum="e4951cbbcc81f66d92dddb6c235e2528" mimeType="application/xml" size="20625" uri="PHM.usx"/>
+        <resource checksum="87d2caee707e2d62bda31cc690f2fcae" mimeType="application/xml" size="47461" uri="PHP.usx"/>
+        <resource checksum="5ae56ae651904db83ba959357012bd1c" mimeType="application/xml" size="293255" uri="PRO.usx"/>
+        <resource checksum="d87b2486492d3bd5686a0103b2f92a43" mimeType="application/xml" size="270549" uri="REV.usx"/>
+        <resource checksum="e19141fab58e643d02280784b45e786f" mimeType="application/xml" size="179097" uri="ROM.usx"/>
+        <resource checksum="557e272460f4d7381293882030a57b15" mimeType="application/xml" size="20944" uri="TIT.usx"/>
+      </container>
+      <resource checksum="d6168892848086f6f0e36ae25aef5dc4" mimeType="application/xml" size="89644" uri="styles.xml"/>
+      <resource checksum="36909dfca36a0edad6cc9a72c5bc52de" mimeType="application/xml" size="2420" uri="swe_sv.ldml"/>
+      <resource checksum="778892f74f11650250037c48b6cf9490" mimeType="text/plain" size="9981" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="b2d96da17ebe008ac4ae4c0f045aab1f" mimeType="application/zip" size="63187945" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="DAN"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="PRO"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>Swedish Core Bible - expanded</name>
+      <nameLocal>Svenska Kärnbibeln</nameLocal>
+      <description>En expanderad översättning</description>
+      <descriptionLocal>En expanderad översättning</descriptionLocal>
+      <abbreviation>SKB</abbreviation>
+      <abbreviationLocal>SKB</abbreviationLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="DAN"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="PRO"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-pro" src="release/USX_1/PRO.usx" role="PRO"/>
+        <content name="book-dan" src="release/USX_1/DAN.usx" role="DAN"/>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© Svenska Kärnbibeln</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <progress>
+    
+    <book code="PRO" stage="1"/>
+    <book code="DAN" stage="1"/>
+    <book code="MAT" stage="1"/>
+    <book code="MRK" stage="1"/>
+    <book code="LUK" stage="1"/>
+    <book code="JHN" stage="1"/>
+    <book code="ACT" stage="1"/>
+    <book code="ROM" stage="1"/>
+    <book code="1CO" stage="1"/>
+    <book code="2CO" stage="1"/>
+    <book code="GAL" stage="1"/>
+    <book code="EPH" stage="1"/>
+    <book code="PHP" stage="1"/>
+    <book code="COL" stage="1"/>
+    <book code="1TH" stage="1"/>
+    <book code="2TH" stage="1"/>
+    <book code="1TI" stage="1"/>
+    <book code="2TI" stage="1"/>
+    <book code="TIT" stage="1"/>
+    <book code="PHM" stage="1"/>
+    <book code="HEB" stage="1"/>
+    <book code="JAS" stage="1"/>
+    <book code="1PE" stage="1"/>
+    <book code="2PE" stage="1"/>
+    <book code="1JN" stage="1"/>
+    <book code="2JN" stage="1"/>
+    <book code="3JN" stage="1"/>
+    <book code="JUD" stage="1"/>
+    <book code="REV" stage="1"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Jonas Bergsten</archivistName>
+    <dateArchived>2017-12-13T23:08:52.354049</dateArchived>
+    <dateUpdated>2019-11-26T18:52:21.050233</dateUpdated>
+    <comments>Now with book of Daniel</comments>
+  </archiveStatus>
+</DBLMetadata>

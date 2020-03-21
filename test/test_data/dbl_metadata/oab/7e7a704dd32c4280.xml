@@ -1,0 +1,392 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="7e7a704dd32c4280" revision="3">
+  <identification>
+    <name>Zaramo Bible Project</name>
+    <nameLocal>Lagano da Isambi da Mndewa na Mkombola Wetu Yesu Kilisto</nameLocal>
+    <description>Zaramo: Lagano da Isambi da Mndewa na Mkombola Wetu Yesu Kilisto (Bible)</description>
+    <abbreviation>Zaramo</abbreviation>
+    <abbreviationLocal>Kizalamo</abbreviationLocal>
+    <scope>Bible</scope>
+    <bundleProducer>Paratext/8.0.100.83</bundleProducer>
+    <systemId type="paratext">
+      <id>64eac64d3871b0bb4bb5323f26d6d06e50507afa</id>
+      <csetId>3ebee040beaaac4391415cb603b967f5c25f7502</csetId>
+      <name>Zaramo</name>
+      <fullName>Zaramo Bible Project</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>wnWwY2xgvNnydNQcd</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>false</finance>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>zaj</iso>
+    <name>Zaramo</name>
+    <nameLocal>Kizalamo</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>zaj</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>TZ</iso>
+      <name>Tanzania, United Republic of</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mat.</abbr>
+      <short>MATAYO</short>
+      <long>USENGA UNOGILE WA YESU KILISTO KAMBA VIWANDIKIGWE NA MATAYO</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mlk.</abbr>
+      <short>MALUKO</short>
+      <long>USENGA UNOGILE WA YESU KILISTO KAMBA VIWANDIKIGWE NA MALUKO</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk.</abbr>
+      <short>LUKA</short>
+      <long>USENGA UNOGILE WA YESU KILISTO KAMBA VIWANDIKIGWE NA LUKA</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Yoh.</abbr>
+      <short>YOHANA.</short>
+      <long>USENGA UNOGILE WA YESU KILISTO KAMBA VIWANDIKIGWE NA YOHANA</long>
+    </name>
+    <name id="book-act">
+      <abbr>Sang'h.</abbr>
+      <short>SANG'HANO</short>
+      <long>SANG'HANO ZA WATUMIGWA WA KILISTO</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Lom.</abbr>
+      <short>WALOMA</short>
+      <long>LUPWILILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA WALOMA</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1Kol.</abbr>
+      <short>1WAKOLINTO</short>
+      <long>LUPWILILI LWA ICHANDUSO LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA WAKOLINTO</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2Kol.</abbr>
+      <short>2WAKOLINTO</short>
+      <long>LUPWILILI LWA IKABILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA WAKOLINTO</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gal.</abbr>
+      <short>WAGALATIA</short>
+      <long>LUPWILILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA WAGALATIA</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Efs.</abbr>
+      <short>WAEFESO</short>
+      <long>LUPWILILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA WAEFESO</long>
+    </name>
+    <name id="book-php">
+      <abbr>Flp.</abbr>
+      <short>WAFILIPI</short>
+      <long>LUPWILILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA WAFILIPI</long>
+    </name>
+    <name id="book-col">
+      <abbr>Kol.</abbr>
+      <short>WAKOLOSAI</short>
+      <long>LUPWILILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA WAKOLOSAI</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1Tes.</abbr>
+      <short>1WATESALONIKE</short>
+      <long>LUPWILILI LWA ICHANDUSO LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA WATESALONIKE</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2Tes.</abbr>
+      <short>2WATESALONIKE</short>
+      <long>LUPWILILI LWA IKABILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA WATESALONIKE</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1Tim.</abbr>
+      <short>1TIMOTEO</short>
+      <long>LUPWILILI LWA ICHANDUSO LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA TIMOTEO</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2Tim.</abbr>
+      <short>TIMOTEO WA IKABILI</short>
+      <long>LUPWILILI LWA IKABILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA TIMOTEO</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tit.</abbr>
+      <short>TITO</short>
+      <long>LUPWILILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA TITO</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Flm.</abbr>
+      <short>FILIMONI</short>
+      <long>LUPWILILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PAULO HA FILIMONI</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Ebl.</abbr>
+      <short>WAEBLANIA</short>
+      <long>LUPWILILI LWANDIKIGWE HA WAEBLANIA</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Yak.</abbr>
+      <short>YAKOBO</short>
+      <long>LUPWILILI LWANDIKIGWE NA YAKOBO</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1Pet.</abbr>
+      <short>1PETULO</short>
+      <long>LUPWILILI LWA ICHANDUSO LWANDIKIGWE NA MTUMIGWA WA KILISTO PETULO</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2Pet.</abbr>
+      <short>2PETULO</short>
+      <long>LUPWILILI LWA IKABILI LWANDIKIGWE NA MTUMIGWA WA KILISTO PETULO</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1Yoh.</abbr>
+      <short>1YOHANA</short>
+      <long>LUPWILILI LWA ICHANDUSO LWANDIKIGWE NA MTUMIGWA WA KILISTO YOHANA</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2Yoh.</abbr>
+      <short>2YOHANA</short>
+      <long>LUPWILILI LWA IKABILI LWANDIKIGWE NA MTUMIGWA WA KILISTO YOHANA</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3Yoh.</abbr>
+      <short>3YOHANA</short>
+      <long>LUPWILILI LWA IKADATU LWANDIKIGWE NA MTUMIGWA WA KILISTO YOHANA</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Yud.</abbr>
+      <short>YUDA</short>
+      <long>LUPWILILI LWANDIKIGWE NA YUDA</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Lug.</abbr>
+      <short>LUGUBULO</short>
+      <long>LUGUBULO LUYAGWELELIGWE YOHANA</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="4ad48cc815e532a3477940ac7f128304" mimeType="application/xml" size="82974" uri="1CO.usx"/>
+        <resource checksum="3b82a9ee8cf83df1006ff8aa41ffe22b" mimeType="application/xml" size="21747" uri="1JN.usx"/>
+        <resource checksum="fdcaca79b66b5b81663092056eee1631" mimeType="application/xml" size="27003" uri="1PE.usx"/>
+        <resource checksum="1988ea8491bda07af93853cee27a5f1e" mimeType="application/xml" size="18436" uri="1TH.usx"/>
+        <resource checksum="23fda9813c6665e6259750bbf0897d08" mimeType="application/xml" size="24634" uri="1TI.usx"/>
+        <resource checksum="b92526e88d0d66edb22c31a65463e2da" mimeType="application/xml" size="54626" uri="2CO.usx"/>
+        <resource checksum="c02f70bc510a05b2977dbaa602b24f33" mimeType="application/xml" size="5693" uri="2JN.usx"/>
+        <resource checksum="b708565412ba43618ffdcaf0cf7d7677" mimeType="application/xml" size="15578" uri="2PE.usx"/>
+        <resource checksum="8bd426e1eec290de3b82bb872adebcf9" mimeType="application/xml" size="11291" uri="2TH.usx"/>
+        <resource checksum="1248e30b048fc2a1eba1d51a6fa4c441" mimeType="application/xml" size="18330" uri="2TI.usx"/>
+        <resource checksum="f43746e5feb38ae1deab7aef5d99b4d9" mimeType="application/xml" size="5007" uri="3JN.usx"/>
+        <resource checksum="64acfc9a073d21cbb9410f890c3db878" mimeType="application/xml" size="202124" uri="ACT.usx"/>
+        <resource checksum="1b7b28e4baa20c75b74adef68d09f8b2" mimeType="application/xml" size="20207" uri="COL.usx"/>
+        <resource checksum="cd14b6259e3203283c26cfc0a0e40505" mimeType="application/xml" size="30122" uri="EPH.usx"/>
+        <resource checksum="ce54e8cb45f43e82acf48a598ccc7ae7" mimeType="application/xml" size="33437" uri="GAL.usx"/>
+        <resource checksum="603f99c3084934a7c961bae93b405e24" mimeType="application/xml" size="73145" uri="HEB.usx"/>
+        <resource checksum="7626dd2adcda8bcb2add4a96acbd49f5" mimeType="application/xml" size="23956" uri="JAS.usx"/>
+        <resource checksum="650af9f6018b7247049568870d35162a" mimeType="application/xml" size="158510" uri="JHN.usx"/>
+        <resource checksum="72ab283a6faf2cf6f48e9739764570fe" mimeType="application/xml" size="9095" uri="JUD.usx"/>
+        <resource checksum="2ff9552a555c68b2f4fcbedcca3fd6dc" mimeType="application/xml" size="221446" uri="LUK.usx"/>
+        <resource checksum="12ce4d1597290907f5dfbe6f9bf92d0f" mimeType="application/xml" size="215164" uri="MAT.usx"/>
+        <resource checksum="bf2aaceaeda2a2f21ae81e871e1cfbe2" mimeType="application/xml" size="135868" uri="MRK.usx"/>
+        <resource checksum="ea5bc99ce1e8047f62ea436ee65b6357" mimeType="application/xml" size="6366" uri="PHM.usx"/>
+        <resource checksum="5ca8135110d646fb13ee132b6149ad7b" mimeType="application/xml" size="22568" uri="PHP.usx"/>
+        <resource checksum="827bb8321c01cbea25d56f210e4a6b18" mimeType="application/xml" size="100756" uri="REV.usx"/>
+        <resource checksum="331c2533965043df84b5dcae8cb0eafc" mimeType="application/xml" size="97135" uri="ROM.usx"/>
+        <resource checksum="0352a46dba85585fa11f90ce008c9806" mimeType="application/xml" size="11254" uri="TIT.usx"/>
+      </container>
+      <resource checksum="747a786bcfec8445faac19afbe389d91" mimeType="application/xml" size="89836" uri="styles.xml"/>
+      <resource checksum="7bac69d13d1c9e55d03a90415de993b4" mimeType="text/plain" size="15388" uri="versification.vrs"/>
+      <resource checksum="6cacbfc6b44600cf1a2be4549a3669a9" mimeType="application/xml" size="2405" uri="zaj.ldml"/>
+    </container>
+    <container uri="source">
+      <resource checksum="cd4b54241c284628368b4efa16e0a31d" mimeType="application/zip" size="82747506" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>The New Testament in Zaramo</name>
+      <nameLocal>Lagano da Isambi Muulonzi wa Kizalamo</nameLocal>
+      <description>New Testament</description>
+      <descriptionLocal>Kizalamo</descriptionLocal>
+      <abbreviation>Kizalamo</abbreviation>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p> © 2019 Pioneer Bible Translators</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <progress>
+    
+    <book code="MAT" stage="6"/>
+    <book code="MRK" stage="6"/>
+    <book code="LUK" stage="6"/>
+    <book code="JHN" stage="6"/>
+    <book code="ACT" stage="6"/>
+    <book code="ROM" stage="6"/>
+    <book code="1CO" stage="6"/>
+    <book code="2CO" stage="6"/>
+    <book code="GAL" stage="6"/>
+    <book code="EPH" stage="6"/>
+    <book code="PHP" stage="6"/>
+    <book code="COL" stage="6"/>
+    <book code="1TH" stage="6"/>
+    <book code="2TH" stage="6"/>
+    <book code="1TI" stage="6"/>
+    <book code="2TI" stage="6"/>
+    <book code="TIT" stage="6"/>
+    <book code="PHM" stage="6"/>
+    <book code="HEB" stage="6"/>
+    <book code="JAS" stage="6"/>
+    <book code="1PE" stage="6"/>
+    <book code="2PE" stage="6"/>
+    <book code="1JN" stage="6"/>
+    <book code="2JN" stage="6"/>
+    <book code="3JN" stage="6"/>
+    <book code="JUD" stage="6"/>
+    <book code="REV" stage="6"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2017-11-13T17:56:27.362866</dateArchived>
+    <dateUpdated>2019-09-05T08:23:23.174150</dateUpdated>
+    <comments>after minor typesetting edits</comments>
+  </archiveStatus>
+</DBLMetadata>

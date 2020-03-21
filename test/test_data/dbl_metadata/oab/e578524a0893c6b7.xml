@@ -1,0 +1,371 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="e578524a0893c6b7" revision="4">
+  <identification>
+    <name>Dawro New Testament</name>
+    <description>Dawro: Dawro New Testament</description>
+    <abbreviation>DWRNT</abbreviation>
+    <scope>New Testament</scope>
+    <dateCompleted>2011-04-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.100.77</bundleProducer>
+    <systemId type="paratext">
+      <id>e578524a0893c6b70beaed838a7cada33780df85</id>
+      <csetId>592ad2be44dc5b71bf5e768707018c7caefbcfad</csetId>
+      <name>DWRNT</name>
+      <fullName>Dawro New Testament</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>WDvCrHP7mJkLhWiSd</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common - Literary</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>TWFTW-INT</abbr>
+      <url>www.twftw.org</url>
+      <nameLocal>The Word for the World International</nameLocal>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word for the World International</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.twftw.org</url>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word for the World International</name>
+    </rightsAdmin>
+    <contributor>
+      <content>false</content>
+      <publication>false</publication>
+      <management>false</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>545d2cb05f032bce5404dab8</uid>
+      <name>The Word for the World International</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>false</finance>
+      <qa>false</qa>
+      <uid>3d4fed65b37a10a1727bd1ef</uid>
+      <name>The Word for the World Ethiopia</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>dwr</iso>
+    <name>Dawro</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>dwr-Latn</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>ET</iso>
+      <name>Ethiopia</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mat</abbr>
+      <short>Maatoossa</short>
+      <long>Maatoossa</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mar</abbr>
+      <short>Marqqoossa</short>
+      <long>Marqqoossa</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luq</abbr>
+      <short>Luuqaasa</short>
+      <long>Luuqaasa</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Yoh</abbr>
+      <short>Yohaannisa</short>
+      <long>Yohaannisa</long>
+    </name>
+    <name id="book-act">
+      <abbr>Kit</abbr>
+      <short>Kiitetteeddawanttu Oosuwaa</short>
+      <long>Kiitetteeddawanttu Oosuwaa</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Rom</abbr>
+      <short>Roome</short>
+      <long>Roome</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1Qo</abbr>
+      <short>1 Qoronttoosa</short>
+      <long>1 Qoronttoosa</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2Qo</abbr>
+      <short>2 Qoronttoosa</short>
+      <long>2 Qoronttoosa</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gal</abbr>
+      <short>Galaatiyaa</short>
+      <long>Galaatiyaa</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Efe</abbr>
+      <short>Efesoona</short>
+      <long>Efesoona</long>
+    </name>
+    <name id="book-php">
+      <short>Piliphphisiyoosa</short>
+      <long>Piliphphisiyoosa</long>
+    </name>
+    <name id="book-col">
+      <abbr>Qol</abbr>
+      <short>Qolaasiyaasa</short>
+      <long>Qolaasiyaasa</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1Te</abbr>
+      <short>1 Teselonqqiyaa</short>
+      <long>1 Teselonqqiyaa</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2Te</abbr>
+      <short>2 Teselonqqiyaa</short>
+      <long>2 Teselonqqiyaa</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1Xi</abbr>
+      <short>1 Ximootoosa</short>
+      <long>1 Ximootoosa</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2Xi</abbr>
+      <short>2 Ximootoosa</short>
+      <long>2 Ximootoosa</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tit</abbr>
+      <short>Tiita</short>
+      <long>Tiita</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Fim</abbr>
+      <short>Pilimoona</short>
+      <long>Pilimoona</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Ibr</abbr>
+      <short>Ibraawe</short>
+      <long>Ibraawe</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Yay</abbr>
+      <short>Yayiqooba</short>
+      <long>Yayiqooba</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1Ph</abbr>
+      <short>1 Phexiroosa</short>
+      <long>1 Phexiroosa</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2Ph</abbr>
+      <short>2 Phexiroosa</short>
+      <long>2 Phexiroosa</long>
+    </name>
+    <name id="book-1jn">
+      <short>1 Yohaannisa</short>
+      <long>1 Yohaannisa</long>
+    </name>
+    <name id="book-2jn">
+      <short>2 Yohaannisa</short>
+      <long>2 Yohaannisa</long>
+    </name>
+    <name id="book-3jn">
+      <short>3 Yohaannisa</short>
+      <long>3 Yohaannisa</long>
+    </name>
+    <name id="book-jud">
+      <short>Yihudaa</short>
+      <long>Yihudaa</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Sax</abbr>
+      <short>Saxaa</short>
+      <long>Saxaa</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="2f28262cc912cba68a74425fc556ae2e" mimeType="application/xml" size="93215" uri="1CO.usx"/>
+        <resource checksum="0967c21c25f0de39e2e126d6186030c2" mimeType="application/xml" size="23456" uri="1JN.usx"/>
+        <resource checksum="84b9f7ca79329813cc77fe3ac524135c" mimeType="application/xml" size="25862" uri="1PE.usx"/>
+        <resource checksum="26a90dff8804978871c999482b66d1cc" mimeType="application/xml" size="20373" uri="1TH.usx"/>
+        <resource checksum="968977ec1f285a01b6e6030405cd659b" mimeType="application/xml" size="24769" uri="1TI.usx"/>
+        <resource checksum="ebd9b6dbe17e05778bf1ecb0c1493e32" mimeType="application/xml" size="58225" uri="2CO.usx"/>
+        <resource checksum="c21936918ca0f1060c860c25cd4e95e4" mimeType="application/xml" size="4455" uri="2JN.usx"/>
+        <resource checksum="1ff396ab9a92c85d7b3e4800370802f7" mimeType="application/xml" size="15730" uri="2PE.usx"/>
+        <resource checksum="c8dd157098095fa6e7d1a22902450dbe" mimeType="application/xml" size="11224" uri="2TH.usx"/>
+        <resource checksum="e981c002d97f3055411d62b02284531c" mimeType="application/xml" size="18456" uri="2TI.usx"/>
+        <resource checksum="c16d470c126d5e1162b85bf17208b466" mimeType="application/xml" size="4518" uri="3JN.usx"/>
+        <resource checksum="44aacb52b439efe9ecb851cdbffb2314" mimeType="application/xml" size="225309" uri="ACT.usx"/>
+        <resource checksum="52a9143a86f33163e5994d86bcf40e6f" mimeType="application/xml" size="23383" uri="COL.usx"/>
+        <resource checksum="b4ae6c25258e228952bf26356a2e7fd0" mimeType="application/xml" size="34147" uri="EPH.usx"/>
+        <resource checksum="4fc31ba79444a7c5307595c3891d967e" mimeType="application/xml" size="35048" uri="GAL.usx"/>
+        <resource checksum="d50b28a5619faefa2e35aa3779a02f54" mimeType="application/xml" size="82229" uri="HEB.usx"/>
+        <resource checksum="55586196bff7c9f06ba620d103d6d8bf" mimeType="application/xml" size="25510" uri="JAS.usx"/>
+        <resource checksum="9fbe238ee2e6cb4f7195716481c86f17" mimeType="application/xml" size="180728" uri="JHN.usx"/>
+        <resource checksum="be1c83b9a6379299805cba479a7fa280" mimeType="application/xml" size="9483" uri="JUD.usx"/>
+        <resource checksum="53f1697ae91365884014e581e3d6c80e" mimeType="application/xml" size="265995" uri="LUK.usx"/>
+        <resource checksum="89be1e3a9f079e3102225d4732598cdf" mimeType="application/xml" size="250863" uri="MAT.usx"/>
+        <resource checksum="726c387ecf2991dda4c4641df65a17c9" mimeType="application/xml" size="161197" uri="MRK.usx"/>
+        <resource checksum="ba24af1fee0a9d493917d85e3d2a54a0" mimeType="application/xml" size="5921" uri="PHM.usx"/>
+        <resource checksum="869418fa18917a2bfce79b28648f6614" mimeType="application/xml" size="25157" uri="PHP.usx"/>
+        <resource checksum="f4d508331a198194f9a25338b2cf3227" mimeType="application/xml" size="140970" uri="REV.usx"/>
+        <resource checksum="104122f35f46c3ef6b1eefa71477345a" mimeType="application/xml" size="102448" uri="ROM.usx"/>
+        <resource checksum="d38c599b4f89ede3f8ed1688a1981ac6" mimeType="application/xml" size="11233" uri="TIT.usx"/>
+      </container>
+      <resource checksum="6dcd1d43947710217cb0fa145f7588fd" mimeType="application/xml" size="1781" uri="dwr-Latn.ldml"/>
+      <resource checksum="14209091bed508c635652e26443b9437" mimeType="application/xml" size="78190" uri="styles.xml"/>
+      <resource checksum="d0f6d91b108f358d9bd76f3219f6dbe5" mimeType="text/plain" size="9977" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="fa631472aa9bec429772f5912debff78" mimeType="application/zip" size="1310002" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>New Testament</description>
+      <descriptionLocal>New Testament</descriptionLocal>
+      <abbreviation>DWNT</abbreviation>
+      <abbreviationLocal>DWNT</abbreviationLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Dawro New Testament © The Word for the World Ethiopia, 2011.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <h3>Dawro New Testament</h3>
+      <p>
+        <a href="https://www.twftw.org/">The Word for the World International</a>
+      </p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Gladys Grasso</archivistName>
+    <dateArchived>2013-12-31T12:38:09.658939</dateArchived>
+    <dateUpdated>2019-05-02T19:04:47.427230</dateUpdated>
+    <comments>Updated Text and Metadata</comments>
+  </archiveStatus>
+</DBLMetadata>

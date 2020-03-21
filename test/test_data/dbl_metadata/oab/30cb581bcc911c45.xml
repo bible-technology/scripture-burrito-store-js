@@ -1,0 +1,581 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="30cb581bcc911c45" revision="2">
+  <identification>
+    <name>God's Book</name>
+    <nameLocal>GALA Sɛʋɛi</nameLocal>
+    <description>Toma: GALA Sɛʋɛi Portions</description>
+    <abbreviation>GS</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>2013-01-01</dateCompleted>
+    <bundleProducer>Paratext/7.5.100.111</bundleProducer>
+    <systemId type="gbc">
+      <id>55ddbf825117ad3c8f12aac8</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>30cb581bcc911c45c070925e3dd97fc2e6e61a3d</id>
+      <csetId>04e00b4482381b1729d334d16dd07e7040f23f3e</csetId>
+      <name>TOMAU</name>
+      <fullName>Toma Unicode</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>tod</iso>
+    <name>Toma</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>tod</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>GN</iso>
+      <name>Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-gen">
+      <abbr>Zen</abbr>
+      <short>Zenɛze</short>
+      <long>Zenɛze, Fai Kpein Tɔɔzeizuʋɛ</long>
+    </name>
+    <name id="book-exo">
+      <abbr>Ɛgz</abbr>
+      <short>Ɛgezɔde</short>
+      <long>Ɛgezɔde</long>
+    </name>
+    <name id="book-lev">
+      <abbr>Lev</abbr>
+      <short>Leevi</short>
+      <long>Leevi Nuiti Ta-Zɛʋɛi</long>
+    </name>
+    <name id="book-num">
+      <abbr>GlS</abbr>
+      <short>Gaalu Sɛʋɛi</short>
+      <long>Gaalu Sɛʋɛi</long>
+    </name>
+    <name id="book-deu">
+      <abbr>TSV</abbr>
+      <short>Tɔ Sɛʋɛi Velesiɛi</short>
+      <long>Tɔ Sɛʋɛi Velesiɛi</long>
+    </name>
+    <name id="book-jos">
+      <abbr>Zoz</abbr>
+      <short>Zozuwe</short>
+      <long>Zozuwe Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-jdg">
+      <abbr>TɠN</abbr>
+      <short>Tukpɔɠaaleʋe Nuiti</short>
+      <long>Tukpɔɠaaleʋe Nuiti Ta-Zɛʋɛi</long>
+    </name>
+    <name id="book-rut">
+      <abbr>Lut</abbr>
+      <short>Lute</short>
+      <long>Lute Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-1sa">
+      <abbr>1Sa</abbr>
+      <short>1 Samiyɛle</short>
+      <long>Samiyɛle Ná-Sɛʋɛ Mɔungi</long>
+    </name>
+    <name id="book-2sa">
+      <abbr>2Sa</abbr>
+      <short>2 Samiyɛle</short>
+      <long>Samiyɛle Ná-Sɛʋɛi Velesiɛi</long>
+    </name>
+    <name id="book-1ki">
+      <abbr>1Ma</abbr>
+      <short>1 Masagiti</short>
+      <long>Masagiti Ta-Zɛʋɛ Mɔungi</long>
+    </name>
+    <name id="book-2ki">
+      <abbr>2Ma</abbr>
+      <short>2 Masagiti</short>
+      <long>Masagiti Ta-Zɛʋɛi Velesiɛi</long>
+    </name>
+    <name id="book-1ch">
+      <abbr>1DS</abbr>
+      <short>1 Dɔlɔ Sɛʋɛi</short>
+      <long>Dɔlɔ Sɛʋɛ Mɔungi</long>
+    </name>
+    <name id="book-2ch">
+      <abbr>2DS</abbr>
+      <short>2 Dɔlɔ Sɛʋɛi</short>
+      <long>Dɔlɔ Sɛʋɛi Velesiɛi</long>
+    </name>
+    <name id="book-ezr">
+      <abbr>Ɛsd</abbr>
+      <short>Ɛsedalase</short>
+      <long>Ɛsedelase Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-neh">
+      <abbr>Neɠ</abbr>
+      <short>Neɠemi</short>
+      <long>Neɠemi Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-est">
+      <abbr>Ɛst</abbr>
+      <short>Ɛsetɛɛl</short>
+      <long>Ɛsetɛɛl Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-job">
+      <abbr>Zɔɓ</abbr>
+      <short>Zɔɓe</short>
+      <long>Zɔɓe Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-psa">
+      <abbr>Guy</abbr>
+      <short>Guyeiti</short>
+      <long>GALA Sɛʋɛi Ma Wuyeiti</long>
+    </name>
+    <name id="book-pro">
+      <abbr>TFa</abbr>
+      <short>Tɛnɛ Faalaaliiti</short>
+      <long>Tɛnɛ Faalaaliiti</long>
+    </name>
+    <name id="book-ecc">
+      <abbr>TbN</abbr>
+      <short>Tɛnɛbo Nui</short>
+      <long>Tɛnɛbo Nui Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-sng">
+      <abbr>GPG</abbr>
+      <short>Guyei Pagai Guyei Pɛ Ba</short>
+      <long>Guyei Pagai Guyei Pɛ Ba</long>
+    </name>
+    <name id="book-isa">
+      <abbr>Eza</abbr>
+      <short>Ezayi</short>
+      <long>Ezayi Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-jer">
+      <abbr>Zel</abbr>
+      <short>Zeelemi</short>
+      <long>Zeelemi Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-lam">
+      <abbr>Gɔl</abbr>
+      <short>Gɔlɔ Wooiti</short>
+      <long>Zeeleemi Ná-Gɔlɔ Wooiti</long>
+    </name>
+    <name id="book-ezk">
+      <abbr>Ezk</abbr>
+      <short>Ezeekiyɛle</short>
+      <long>Ezeekiyɛle Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-dan">
+      <abbr>Dan</abbr>
+      <short>Daniyɛle</short>
+      <long>Daniyɛle Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-hos">
+      <abbr>Wɔz</abbr>
+      <short>Wɔzee</short>
+      <long>Wɔzee Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-jol">
+      <abbr>Zow</abbr>
+      <short>Zowɛle</short>
+      <long>Zowɛle Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-amo">
+      <abbr>Amɔ</abbr>
+      <short>Amɔse</short>
+      <long>Amɔse Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-oba">
+      <abbr>Aɓd</abbr>
+      <short>Aɓediase</short>
+      <long>Aɓediase Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-jon">
+      <abbr>Zon</abbr>
+      <short>Zonase</short>
+      <long>Zonase Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-mic">
+      <abbr>Mis</abbr>
+      <short>Misee</short>
+      <long>Misee Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-nam">
+      <abbr>Naɠ</abbr>
+      <short>Naɠuume</short>
+      <long>Naɠuume Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-hab">
+      <abbr>Aɓk</abbr>
+      <short>Aɓakuke</short>
+      <long>Aɓakuke Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-zep">
+      <abbr>Sof</abbr>
+      <short>Sofoni</short>
+      <long>Sofoni Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-hag">
+      <abbr>Aze</abbr>
+      <short>Azee</short>
+      <long>Azee Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-zec">
+      <abbr>Zkl</abbr>
+      <short>Zakali</short>
+      <long>Zakali Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-mal">
+      <abbr>Mal</abbr>
+      <short>Malasi</short>
+      <long>Malasi Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-mat">
+      <abbr>Mat</abbr>
+      <short>Matiyo</short>
+      <long>Woo Niinɛ Ʋagɔi Nii Matiyo Sɛʋɛni</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mak</abbr>
+      <short>Maleke</short>
+      <long>Woo Niinɛ Ʋagɔi Nii Maleke Sɛʋɛni</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Luke</short>
+      <long>Woo Niinɛ Ʋagɔi Nii Luke Sɛʋɛni</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Zan</abbr>
+      <short>Zan</short>
+      <long>Woo Niinɛ Ʋagɔi Nii Zan Sɛʋɛni</long>
+    </name>
+    <name id="book-act">
+      <abbr>Kɛw</abbr>
+      <short>Kɛɛwotiiti</short>
+      <long>Keelaiti Kɛɛwotiiti</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Wɔl</abbr>
+      <short>Wɔlɔme</short>
+      <long>Pɔle Ná-Sɛʋɛi // É Teʋeni // Wɔlɔme Nuiti Ma</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1Kɔ</abbr>
+      <short>1 Kɔlɛnte</short>
+      <long>Pɔle Ná-Sɛʋɛ Mɔungi // É Teʋeni // Kɔlɛnte Nuiti Ma</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2Kɔ</abbr>
+      <short>2 Kɔlɛnte</short>
+      <long>Pɔle Ná-Sɛʋɛi Velesiɛi // É Teʋeni // Kɔlɛnte Nuiti Ma</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gal</abbr>
+      <short>Galate</short>
+      <long>Pɔle Ná-Sɛʋɛi // É Teʋeni // Galate Nuiti Ma</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Efɛ</abbr>
+      <short>Efɛze</short>
+      <long>Pɔle Ná-Sɛʋɛi // É Teʋeni // Efɛze Nuiti Ma</long>
+    </name>
+    <name id="book-php">
+      <abbr>Fil</abbr>
+      <short>Filipe</short>
+      <long>Pɔle Ná-Sɛʋɛi // É Teʋeni // Filipe Nuiti Ma</long>
+    </name>
+    <name id="book-col">
+      <abbr>Kɔl</abbr>
+      <short>Kɔlɔse</short>
+      <long>Pɔle Ná-Sɛʋɛi // É Teʋeni // Kɔlɔse Nuiti Ma</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1Tɛ</abbr>
+      <short>1 Tɛsalɔnike</short>
+      <long>Pɔle Ná-Sɛʋɛ Mɔungi // É Teʋeni // Tɛsalɔnike Nuiti Ma</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2Tɛ</abbr>
+      <short>2 Tɛsalɔnike</short>
+      <long>Pɔle Ná-Sɛʋɛi Velesiɛi // É Teʋeni // Tɛsalɔnike Nuiti Ma</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1Ti</abbr>
+      <short>1 Timɔtee</short>
+      <long>Pɔle Ná-Sɛʋɛ Mɔungi // É Teʋeni // Timɔtee Ma</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2Ti</abbr>
+      <short>2 Timɔtee</short>
+      <long>Pɔle Ná-Sɛʋɛi Velesiɛi // É Teʋeni // Timɔtee Ma</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tit</abbr>
+      <short>Tite</short>
+      <long>Pɔle Ná-Sɛʋɛi // É Teʋeni // Tite Ma</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Flm</abbr>
+      <short>Fileemɔn</short>
+      <long>Pɔle Ná-Sɛʋɛi // É Teʋeni // Fileemɔn Ma</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Eɓu</abbr>
+      <short>Eɓulu Nuiti</short>
+      <long>Sɛʋɛi Nii Teʋegai Eɓulu Nuiti Ma</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Zak</abbr>
+      <short>Zake</short>
+      <long>Zake Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1Pi</abbr>
+      <short>1 Piyɛlɛ</short>
+      <long>Piyɛlɛ Ná-Sɛʋɛ Mɔungi</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2Pi</abbr>
+      <short>2 Piyɛlɛ</short>
+      <long>Piyɛlɛ Ná-Sɛʋɛi Velesiɛi</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1Za</abbr>
+      <short>1 Zan</short>
+      <long>Zan Ná-Sɛʋɛ Mɔungi</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2Za</abbr>
+      <short>2 Zan</short>
+      <long>Zan Ná-Sɛʋɛi Velesiɛi</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3Za</abbr>
+      <short>3 Zan</short>
+      <long>Zan Ná-Sɛʋɛi Zaʋasiɛi</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Zud</abbr>
+      <short>Zude</short>
+      <long>Zude Ná-Sɛʋɛi</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Kul</abbr>
+      <short>Kulakɛlɛmai</short>
+      <long>Yesu Kilista Ná-Kulakɛlɛmai Zan Ʋɛ</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="aead6402bb850a28e18a8fc4fe1139cb" mimeType="application/octet-stream" size="932" uri="release/Toma Unicode.lds"/>
+    <resource checksum="6bfe592031b29ee9c2cf78398f35a746" mimeType="application/xml" size="196692" uri="release/USX_1/1SA.usx"/>
+    <resource checksum="2800b6cf025a0a0c540d404d34279dfa" mimeType="application/xml" size="159844" uri="release/USX_1/2SA.usx"/>
+    <resource checksum="ebda8b97a6ddcb2527cf8f679be054b0" mimeType="application/xml" size="201151" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="09655bcb8e85a3a13724a6a521b692fa" mimeType="application/xml" size="214121" uri="release/USX_1/DEU.usx"/>
+    <resource checksum="f12fe7fa1aec3ef0905a3ae779bb3e16" mimeType="application/xml" size="249674" uri="release/USX_1/EXO.usx"/>
+    <resource checksum="102465d883b2224f236430b0fad96041" mimeType="application/xml" size="309656" uri="release/USX_1/GEN.usx"/>
+    <resource checksum="dd11970dbf4c8ac945924959599a0364" mimeType="application/xml" size="19650" uri="release/USX_1/HAB.usx"/>
+    <resource checksum="0785f72c2c9fe4c9a4dbcaaf8b91738d" mimeType="application/xml" size="11856" uri="release/USX_1/HAG.usx"/>
+    <resource checksum="5a98bf9f07a2420ac40deb63802b2236" mimeType="application/xml" size="150131" uri="release/USX_1/JDG.usx"/>
+    <resource checksum="021e724f4f3c20c9741290eeeb96145f" mimeType="application/xml" size="143699" uri="release/USX_1/JOS.usx"/>
+    <resource checksum="ae95b938cb2a2bfb7b459bf9ead2e6db" mimeType="application/xml" size="171652" uri="release/USX_1/LEV.usx"/>
+    <resource checksum="b39e32da5b5af7c23846d0af5a8d1af4" mimeType="application/xml" size="18314" uri="release/USX_1/MAL.usx"/>
+    <resource checksum="a24f80746a8780767d3915983577cc65" mimeType="application/xml" size="38163" uri="release/USX_1/MIC.usx"/>
+    <resource checksum="f24aadbb6faa8097d977eb041c45fe98" mimeType="application/xml" size="17938" uri="release/USX_1/NAM.usx"/>
+    <resource checksum="905aeef6558077cdb9750365112488f8" mimeType="application/xml" size="254744" uri="release/USX_1/NUM.usx"/>
+    <resource checksum="58bf37866648b6ebb293e2a8c52ef721" mimeType="application/xml" size="210986" uri="release/USX_1/PRO.usx"/>
+    <resource checksum="9547633418a89fd6086e217a020408c9" mimeType="application/xml" size="21246" uri="release/USX_1/RUT.usx"/>
+    <resource checksum="1be3c758694a9521eb4b89a14b8ec82b" mimeType="application/xml" size="58485" uri="release/USX_1/ZEC.usx"/>
+    <resource checksum="c122a30eda5c391346610f8deb654584" mimeType="application/xml" size="20758" uri="release/USX_1/ZEP.usx"/>
+    <resource checksum="85398d697802f9c15944d4dd39bc2ca8" mimeType="application/xml" size="78100" uri="release/styles.xml"/>
+    <resource checksum="8f9ba1d67db6fe21142fa7a97707ad98" mimeType="application/octet-stream" size="4551" uri="release/tod.ldml"/>
+    <resource checksum="49a0c15caeb3c8405bb423a418f45ce2" mimeType="application/octet-stream" size="9112" uri="release/versification.vrs"/>
+    <resource checksum="c20e6a91c6a2c4077093984bf8e4ef27" mimeType="application/zip" size="13650606" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1SA"/>
+      <book code="2SA"/>
+      <book code="ACT"/>
+      <book code="DEU"/>
+      <book code="EXO"/>
+      <book code="GEN"/>
+      <book code="HAB"/>
+      <book code="HAG"/>
+      <book code="JDG"/>
+      <book code="JOS"/>
+      <book code="LEV"/>
+      <book code="MAL"/>
+      <book code="MIC"/>
+      <book code="NAM"/>
+      <book code="NUM"/>
+      <book code="PRO"/>
+      <book code="RUT"/>
+      <book code="ZEC"/>
+      <book code="ZEP"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>God's Book in Toma</name>
+      <description>portions</description>
+      <descriptionLocal>portions</descriptionLocal>
+      <canonicalContent>
+        <book code="1SA"/>
+        <book code="2SA"/>
+        <book code="ACT"/>
+        <book code="DEU"/>
+        <book code="EXO"/>
+        <book code="GEN"/>
+        <book code="HAB"/>
+        <book code="HAG"/>
+        <book code="JDG"/>
+        <book code="JOS"/>
+        <book code="LEV"/>
+        <book code="MAL"/>
+        <book code="MIC"/>
+        <book code="NAM"/>
+        <book code="NUM"/>
+        <book code="PRO"/>
+        <book code="RUT"/>
+        <book code="ZEC"/>
+        <book code="ZEP"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-gen" src="release/USX_1/GEN.usx" role="GEN"/>
+        <content name="book-exo" src="release/USX_1/EXO.usx" role="EXO"/>
+        <content name="book-lev" src="release/USX_1/LEV.usx" role="LEV"/>
+        <content name="book-num" src="release/USX_1/NUM.usx" role="NUM"/>
+        <content name="book-deu" src="release/USX_1/DEU.usx" role="DEU"/>
+        <content name="book-jos" src="release/USX_1/JOS.usx" role="JOS"/>
+        <content name="book-jdg" src="release/USX_1/JDG.usx" role="JDG"/>
+        <content name="book-rut" src="release/USX_1/RUT.usx" role="RUT"/>
+        <content name="book-1sa" src="release/USX_1/1SA.usx" role="1SA"/>
+        <content name="book-2sa" src="release/USX_1/2SA.usx" role="2SA"/>
+        <content name="book-pro" src="release/USX_1/PRO.usx" role="PRO"/>
+        <content name="book-mic" src="release/USX_1/MIC.usx" role="MIC"/>
+        <content name="book-nam" src="release/USX_1/NAM.usx" role="NAM"/>
+        <content name="book-hab" src="release/USX_1/HAB.usx" role="HAB"/>
+        <content name="book-zep" src="release/USX_1/ZEP.usx" role="ZEP"/>
+        <content name="book-hag" src="release/USX_1/HAG.usx" role="HAG"/>
+        <content name="book-zec" src="release/USX_1/ZEC.usx" role="ZEC"/>
+        <content name="book-mal" src="release/USX_1/MAL.usx" role="MAL"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© Pioneer Bible Translators and Bible Society of Guinea</p>
+        <p>© Traducteurs Pionniers de la Bible et Alliance Biblique de Guinée</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <progress>
+    
+    <book code="GEN" stage="4"/>
+    <book code="EXO" stage="4"/>
+    <book code="LEV" stage="4"/>
+    <book code="NUM" stage="4"/>
+    <book code="DEU" stage="4"/>
+    <book code="JOS" stage="4"/>
+    <book code="JDG" stage="4"/>
+    <book code="RUT" stage="4"/>
+    <book code="1SA" stage="4"/>
+    <book code="2SA" stage="4"/>
+    <book code="1KI" stage="1"/>
+    <book code="2KI" stage="1"/>
+    <book code="1CH" stage="1"/>
+    <book code="2CH" stage="1"/>
+    <book code="EZR" stage="1"/>
+    <book code="NEH" stage="1"/>
+    <book code="EST" stage="1"/>
+    <book code="JOB" stage="1"/>
+    <book code="PSA" stage="3"/>
+    <book code="PRO" stage="3"/>
+    <book code="ECC" stage="3"/>
+    <book code="SNG" stage="3"/>
+    <book code="ISA" stage="1"/>
+    <book code="JER" stage="1"/>
+    <book code="LAM" stage="1"/>
+    <book code="EZK" stage="1"/>
+    <book code="DAN" stage="1"/>
+    <book code="HOS" stage="1"/>
+    <book code="JOL" stage="1"/>
+    <book code="AMO" stage="1"/>
+    <book code="OBA" stage="1"/>
+    <book code="JON" stage="1"/>
+    <book code="MIC" stage="4"/>
+    <book code="NAM" stage="4"/>
+    <book code="HAB" stage="4"/>
+    <book code="ZEP" stage="4"/>
+    <book code="HAG" stage="4"/>
+    <book code="ZEC" stage="4"/>
+    <book code="MAL" stage="4"/>
+    <book code="MAT" stage="1"/>
+    <book code="MRK" stage="1"/>
+    <book code="LUK" stage="1"/>
+    <book code="JHN" stage="1"/>
+    <book code="ACT" stage="4"/>
+    <book code="ROM" stage="3"/>
+    <book code="1CO" stage="3"/>
+    <book code="2CO" stage="3"/>
+    <book code="GAL" stage="3"/>
+    <book code="EPH" stage="3"/>
+    <book code="PHP" stage="3"/>
+    <book code="COL" stage="3"/>
+    <book code="1TH" stage="3"/>
+    <book code="2TH" stage="3"/>
+    <book code="1TI" stage="1"/>
+    <book code="2TI" stage="1"/>
+    <book code="TIT" stage="1"/>
+    <book code="PHM" stage="1"/>
+    <book code="HEB" stage="1"/>
+    <book code="JAS" stage="1"/>
+    <book code="1PE" stage="1"/>
+    <book code="2PE" stage="1"/>
+    <book code="1JN" stage="1"/>
+    <book code="2JN" stage="1"/>
+    <book code="3JN" stage="1"/>
+    <book code="JUD" stage="1"/>
+    <book code="REV" stage="1"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2015-08-26T13:56:51.568147</dateArchived>
+    <dateUpdated>2015-08-26T13:56:51.568147</dateUpdated>
+    <comments>first upload</comments>
+  </archiveStatus>
+</DBLMetadata>

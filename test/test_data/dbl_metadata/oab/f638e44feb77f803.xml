@@ -1,0 +1,120 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="f638e44feb77f803" revision="1">
+  <identification>
+    <name>The Holy Gospel of Jesus for the Matumbi</name>
+    <nameLocal>Injili ya Yesu Mwaiandikilwe na Luka</nameLocal>
+    <description>Matumbi: Injili ya Yesu Mwaiandikilwe na Luka Portions</description>
+    <abbreviation>Matumbi</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>2017-06-01</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.88</bundleProducer>
+    <systemId type="gbc">
+      <id>59fc75bf5117ad0149338259</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>f638e44feb77f803e96fa0648c8ec41b0cbf0d9a</id>
+      <csetId>cb832b03364fa51a162a3435d066609a963c9c6b</csetId>
+      <name>Matumbi</name>
+      <fullName>Matumbi Bible Version</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>mgw</iso>
+    <name>Matumbi</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>mgw</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>TZ</iso>
+      <name>Tanzania</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Luka</short>
+      <long>Injili ya Luka</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <resource checksum="34d8b52a1a8f5e0b22efb42e387c93c4" mimeType="application/octet-stream" size="477" uri="Matumbi.lds"/>
+      <container uri="USX_1">
+        <resource checksum="18c38b43b3a93018aec7b80c023bba24" mimeType="application/xml" size="210521" uri="LUK.usx"/>
+      </container>
+      <resource checksum="3afcdf5a1ba9fde76777dc878e1e6020" mimeType="application/xml" size="3067" uri="ldml.xml"/>
+      <resource checksum="3afcdf5a1ba9fde76777dc878e1e6020" mimeType="application/octet-stream" size="3067" uri="mgw.ldml"/>
+      <resource checksum="abd518d088b692836eead88627648d2e" mimeType="application/xml" size="82442" uri="styles.xml"/>
+      <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="application/octet-stream" size="15364" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="d1fba7da877e9ac797ef86f443ce4049" mimeType="application/zip" size="5403567" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="LUK"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>Gospel of Luke</description>
+      <descriptionLocal>Luka</descriptionLocal>
+      <canonicalContent>
+        <book code="LUK"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© 2017 - Pioneer Bible Translators</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2017-11-13T17:37:37.383969</dateArchived>
+    <dateUpdated>2017-11-13T17:37:37.383969</dateUpdated>
+    <comments>first upload</comments>
+  </archiveStatus>
+</DBLMetadata>

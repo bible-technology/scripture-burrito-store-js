@@ -1,0 +1,729 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="bbeb583cd75c6356" revision="5">
+  <identification>
+    <name>Susu Bible</name>
+    <nameLocal>Soso Kitaabuie: Tawureta, Yabura, Inyila</nameLocal>
+    <description>Susu: Soso Kitaabuie: Tawureta, Yabura, Inyila Bible</description>
+    <abbreviation>Susu</abbreviation>
+    <abbreviationLocal>Soso</abbreviationLocal>
+    <scope>Bible</scope>
+    <dateCompleted>2015-05-01</dateCompleted>
+    <bundleProducer>Paratext/7.5.100.111</bundleProducer>
+    <systemId type="gbc">
+      <id>542298ac5117ad2c2bd6b8b3</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>bbeb583cd75c6356c74c7f12009cfb10b1c8bd51</id>
+      <csetId>1d3a83dd2fd2b505b6a97156f125c4c04e8fbe35</csetId>
+      <name>Susu</name>
+      <fullName>Susu Translation</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsHolder>
+      <abbr>MERN</abbr>
+      <url>http://www.zgg.nl/</url>
+      <nameLocal>Mission Evangélique Réformée Néerlandaise</nameLocal>
+      <uid>54650d075117ad695d42898a</uid>
+      <name>Mission Evangélique Réformée Néerlandaise</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>false</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>54650d075117ad695d42898a</uid>
+      <name>Mission Evangélique Réformée Néerlandaise</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>sus</iso>
+    <name>Susu</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>sus</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>GN</iso>
+      <name>Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-gen">
+      <abbr>Fɔl</abbr>
+      <short>Fe Fɔlɔ Fɔlɛ</short>
+      <long>Fe Fɔlɔ Fɔlɛ</long>
+    </name>
+    <name id="book-exo">
+      <abbr>Yɛt</abbr>
+      <short>Yɛtɛ sɔtɔɛ</short>
+      <long>Isirayila xa yɛtɛ sɔtɔɛ</long>
+    </name>
+    <name id="book-lev">
+      <abbr>Lew</abbr>
+      <short>Lewi Sɛrɛxɛdubɛ</short>
+      <long>Lewi Sɛrɛxɛdubɛ Bɔnsɔɛ xa Sɛriyɛ</long>
+    </name>
+    <name id="book-num">
+      <abbr>Kɔn</abbr>
+      <short>Kɔnti tife</short>
+      <long>Isirayila xa Kɔnti Tife</long>
+    </name>
+    <name id="book-deu">
+      <abbr>Dɔn</abbr>
+      <short>Masenyi Dɔnxɔɛ</short>
+      <long>Annabi Munsa xa Masenyi Dɔnxɔɛ</long>
+    </name>
+    <name id="book-jos">
+      <abbr>Yos</abbr>
+      <short>Yosuwe</short>
+      <long>Ala xa Masenyi Annabi Yosuwe bɛ</long>
+    </name>
+    <name id="book-jdg">
+      <abbr>Kit</abbr>
+      <short>Kiitisae</short>
+      <long>Ala xa Masenyi Kiitisae bɛ</long>
+    </name>
+    <name id="book-rut">
+      <abbr>Rut</abbr>
+      <short>Ruti</short>
+      <long>Ruti xa Taruxui</long>
+    </name>
+    <name id="book-1sa">
+      <abbr>SamI</abbr>
+      <short>Samuweli I</short>
+      <long>Ala xa Masenyi singe Annabi Samuweli bɛ</long>
+    </name>
+    <name id="book-2sa">
+      <abbr>SamII</abbr>
+      <short>Samuweli II</short>
+      <long>Ala xa Masenyi firin nde Annabi Samuweli bɛ</long>
+    </name>
+    <name id="book-1ki">
+      <abbr>ManI</abbr>
+      <short>Isirayila Mangɛe I</short>
+      <long>Isirayila Mangɛe xa Taruxui Sɛniyɛnxi singe</long>
+    </name>
+    <name id="book-2ki">
+      <abbr>ManII</abbr>
+      <short>Isirayila Mangɛe II</short>
+      <long>Isirayila Mangɛe xa Taruxui Sɛniyɛnxi firin nde</long>
+    </name>
+    <name id="book-1ch">
+      <abbr>YmI</abbr>
+      <short>Yudaya Mangɛe I</short>
+      <long>Yudaya Mangɛe xa Taruxui Sɛniyɛnxi singe</long>
+    </name>
+    <name id="book-2ch">
+      <abbr>YmII</abbr>
+      <short>Yudaya Mangɛe II</short>
+      <long>Yudaya Mangɛe xa Taruxui Sɛniyɛnxi firin nde</long>
+    </name>
+    <name id="book-ezr">
+      <abbr>Esi</abbr>
+      <short>Annabi Esidirasi</short>
+      <long>Ala xa masenyi Annabi Esidirasi bɛ</long>
+    </name>
+    <name id="book-neh">
+      <abbr>Neh</abbr>
+      <short>Annabi Nehemi</short>
+      <long>Ala xa Masenyi Annabi Nehemi bɛ</long>
+    </name>
+    <name id="book-est">
+      <abbr>Est</abbr>
+      <short>Esita xa Taruxui</short>
+      <long>Esita xa Taruxui</long>
+    </name>
+    <name id="book-job">
+      <abbr>Yub</abbr>
+      <short>Job</short>
+      <long>Yuuba xa Taruxui</long>
+    </name>
+    <name id="book-psa">
+      <abbr>Yab</abbr>
+      <short>Yabura Dawuda</short>
+      <long>Yabura Dawuda</long>
+    </name>
+    <name id="book-pro">
+      <abbr>Taa</abbr>
+      <short>Proverbs</short>
+      <long>Ala xa Taalie</long>
+    </name>
+    <name id="book-ecc">
+      <abbr>Kaw</abbr>
+      <short>Ecclesiastes</short>
+      <long>Kawandila xa Kitaabui</long>
+    </name>
+    <name id="book-sng">
+      <abbr>Suu</abbr>
+      <short>Song of Songs</short>
+      <long>Annabi Sulemani xa suuki fisamante</long>
+    </name>
+    <name id="book-isa">
+      <abbr>Esa</abbr>
+      <short>Annabi Esayi</short>
+      <long>Ala xa masenyi Annabi Esayi bɛ</long>
+    </name>
+    <name id="book-jer">
+      <abbr>Yer</abbr>
+      <short>Annabi Yeremi</short>
+      <long>Ala xa masenyi Annabi Yeremi bɛ</long>
+    </name>
+    <name id="book-lam">
+      <abbr>2Ye</abbr>
+      <short>Lamentations</short>
+      <long>Ala xa masenyi firin nde Annabi Yeremi bɛ</long>
+    </name>
+    <name id="book-ezk">
+      <abbr>Ese</abbr>
+      <short>Ezekiel</short>
+      <long>Ala xa masenyi Annabi Esekiyeli bɛ</long>
+    </name>
+    <name id="book-dan">
+      <abbr>Dan</abbr>
+      <short>Daniel (Hebrew)</short>
+      <long>Ala xa masenyi Annabi Daniyɛli bɛ</long>
+    </name>
+    <name id="book-hos">
+      <abbr>Hos</abbr>
+      <short>Hosea</short>
+      <long>Ala xa masenyi Annabi Hose bɛ</long>
+    </name>
+    <name id="book-jol">
+      <abbr>Yow</abbr>
+      <short>Joel</short>
+      <long>Ala xa masenyi Annabi Yoweli bɛ</long>
+    </name>
+    <name id="book-amo">
+      <abbr>Amo</abbr>
+      <short>Amos</short>
+      <long>Ala xa masenyi Annabi Amosi bɛ</long>
+    </name>
+    <name id="book-oba">
+      <abbr>Aba</abbr>
+      <short>Obadiah</short>
+      <long>Ala xa masenyi Annabi Abadiyasi bɛ</long>
+    </name>
+    <name id="book-jon">
+      <abbr>Yun</abbr>
+      <short>Yunusa</short>
+      <long>Ala xa masenyi Annabi Yunusa bɛ</long>
+    </name>
+    <name id="book-mic">
+      <abbr>Mik</abbr>
+      <short>Micah</short>
+      <long>Ala xa masenyi Annabi Mika bɛ</long>
+    </name>
+    <name id="book-nam">
+      <abbr>Nax</abbr>
+      <short>Nahum</short>
+      <long>Ala xa masenyi Annabi Naxumu bɛ</long>
+    </name>
+    <name id="book-hab">
+      <abbr>Hab</abbr>
+      <short>Habakkuk</short>
+      <long>Ala xa masenyi Annabi Habakuku bɛ</long>
+    </name>
+    <name id="book-zep">
+      <abbr>Sof</abbr>
+      <short>Zephaniah</short>
+      <long>Ala xa masenyi Annabi Sofoni bɛ</long>
+    </name>
+    <name id="book-hag">
+      <abbr>Hag</abbr>
+      <short>Haggai</short>
+      <long>Ala xa masenyi Annabi Hage bɛ</long>
+    </name>
+    <name id="book-zec">
+      <abbr>Sak</abbr>
+      <short>Zechariah</short>
+      <long>Ala xa masenyi Annabi Sakari bɛ</long>
+    </name>
+    <name id="book-mal">
+      <abbr>Mal</abbr>
+      <short>Malachi</short>
+      <long>Ala xa masenyi Annabi Malaki bɛ</long>
+    </name>
+    <name id="book-mat">
+      <short>Matiyu</short>
+      <long>Inyila Isa Annabi Matiyu naxan sɛbɛxi</long>
+    </name>
+    <name id="book-mrk">
+      <short>Maraki</short>
+      <long>Inyila Isa Annabi Maraki naxan sɛbɛxi</long>
+    </name>
+    <name id="book-luk">
+      <short>Luki</short>
+      <long>Inyila Isa Annabi Luki naxan sɛbɛxi</long>
+    </name>
+    <name id="book-jhn">
+      <short>Yaya</short>
+      <long>Inyila Isa Annabi Yaya naxan sɛbɛxi</long>
+    </name>
+    <name id="book-act">
+      <short>Taruxui</short>
+      <long>Isa xa xɛɛrae xa taruxui</long>
+    </name>
+    <name id="book-rom">
+      <short>Romans</short>
+      <long>Ala xa masenyi Annabi Pɔlu naxan sɛbɛ Rɔma danxaniyatɔɛ ɲama ma</long>
+    </name>
+    <name id="book-1co">
+      <short>Korinti I</short>
+      <long>Ala xa masenyi singe Annabi Pɔlu naxan sɛbɛ Korinti danxaniyatɔɛ ɲama ma</long>
+    </name>
+    <name id="book-2co">
+      <short>2 Corinthians</short>
+      <long>Ala xa masenyi firin nde Annabi Pɔlu naxan sɛbɛ Korinti danxaniyatɔɛ ɲama ma</long>
+    </name>
+    <name id="book-gal">
+      <short>Galatians</short>
+      <long>Ala xa masenyi Annabi Pɔlu naxan sɛbɛ Galati danxaniyatɔɛ ɲama ma</long>
+    </name>
+    <name id="book-eph">
+      <short>Ephesians</short>
+      <long>Ala xa masenyi Annabi Pɔlu naxan sɛbɛ Efɛsɛ danxaniyatɔɛ ɲama ma</long>
+    </name>
+    <name id="book-php">
+      <short>Philippians</short>
+      <long>Ala xa masenyi Annabi Pɔlu naxan sɛbɛ Filipi danxaniyatɔɛ ɲama ma</long>
+    </name>
+    <name id="book-col">
+      <short>Colossians</short>
+      <long>Ala xa masenyi Annabi Pɔlu naxan sɛbɛ Kɔlɔsi danxaniyatɔɛ ɲama ma</long>
+    </name>
+    <name id="book-1th">
+      <short>1 Thessalonians</short>
+      <long>Ala xa masenyi singe Annabi Pɔlu naxan sɛbɛ Tɛsaloniki danxaniyatɔɛ ɲama ma</long>
+    </name>
+    <name id="book-2th">
+      <short>2 Thessalonians</short>
+      <long>Ala xa masenyi firin nde Annabi Pɔlu naxan sɛbɛ Tɛsaloniki danxaniyatɔɛ ɲama ma</long>
+    </name>
+    <name id="book-1ti">
+      <short>1 Timothy</short>
+      <long>Ala xa masenyi singe Annabi Pɔlu naxan sɛbɛ Timote ma</long>
+    </name>
+    <name id="book-2ti">
+      <short>2 Timothy</short>
+      <long>Ala xa masenyi firin nde Annabi Pɔlu naxan sɛbɛ Timote ma</long>
+    </name>
+    <name id="book-tit">
+      <short>Titus</short>
+      <long>Ala xa masenyi Annabi Pɔlu naxan sɛbɛ Tito ma</long>
+    </name>
+    <name id="book-phm">
+      <short>Philemon</short>
+      <long>Ala xa masenyi Annabi Pɔlu naxan sɛbɛ Filemon ma</long>
+    </name>
+    <name id="book-heb">
+      <short>Hebrews</short>
+      <long>Ala xa masenyi Eburu bɔnsɔɛ bɛ</long>
+    </name>
+    <name id="book-jas">
+      <short>James</short>
+      <long>Ala xa masenyi Annabi Yaki naxan sɛbɛ</long>
+    </name>
+    <name id="book-1pe">
+      <short>1 Peter</short>
+      <long>Ala xa masenyi singe Annabi Piyɛri naxan sɛbɛ</long>
+    </name>
+    <name id="book-2pe">
+      <short>2 Peter</short>
+      <long>Ala xa masenyi firin nde Annabi Piyɛri naxan sɛbɛ</long>
+    </name>
+    <name id="book-1jn">
+      <short>1 John</short>
+      <long>Ala xa masenyi singe Annabi Yaya naxan sɛbɛ</long>
+    </name>
+    <name id="book-2jn">
+      <short>2 John</short>
+      <long>Ala xa masenyi firin nde Annabi Yaya naxan sɛbɛ</long>
+    </name>
+    <name id="book-3jn">
+      <short>3 John</short>
+      <long>Ala xa masenyi saxan nde Annabi Yaya naxan sɛbɛ</long>
+    </name>
+    <name id="book-jud">
+      <short>Jude</short>
+      <long>Ala xa masenyi Annabi Yude naxan sɛbɛ</long>
+    </name>
+    <name id="book-rev">
+      <short>Revelation</short>
+      <long>Ala xa Waxayi</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="dadcc7ea01bbe44663e7a8f0a5f030a4" mimeType="application/octet-stream" size="755" uri="release/Susu.lds"/>
+    <resource checksum="d3b5211835b0f28f8a55bc60e30ed277" mimeType="application/xml" size="146947" uri="release/USX_1/1CH.usx"/>
+    <resource checksum="c459713b1516ae865baee8f9b0aad1a2" mimeType="application/xml" size="76703" uri="release/USX_1/1CO.usx"/>
+    <resource checksum="b2e849505e497d49f45048e95afc3301" mimeType="application/xml" size="21914" uri="release/USX_1/1JN.usx"/>
+    <resource checksum="a0318836dc0393c3f54e476e809264ec" mimeType="application/xml" size="157045" uri="release/USX_1/1KI.usx"/>
+    <resource checksum="1aeb330fb9a056b88198d08f512bf390" mimeType="application/xml" size="21868" uri="release/USX_1/1PE.usx"/>
+    <resource checksum="b0bf18dfa7657565a196f7e027a639ff" mimeType="application/xml" size="152765" uri="release/USX_1/1SA.usx"/>
+    <resource checksum="b1b9e0c3884503eacb426ffb740a37d6" mimeType="application/xml" size="18792" uri="release/USX_1/1TH.usx"/>
+    <resource checksum="9aebd4b2cfd76c7221b827680682865b" mimeType="application/xml" size="21871" uri="release/USX_1/1TI.usx"/>
+    <resource checksum="dd6ba8cedccb66b3d5e01cc58bd8b1c4" mimeType="application/xml" size="166811" uri="release/USX_1/2CH.usx"/>
+    <resource checksum="6e699a79b46b84d1cdfc56ccb3b916d1" mimeType="application/xml" size="50337" uri="release/USX_1/2CO.usx"/>
+    <resource checksum="f0b859175fbe55aecf6e1578bdc88a36" mimeType="application/xml" size="3346" uri="release/USX_1/2JN.usx"/>
+    <resource checksum="7e53124e396e8892c6cce97545a09a8d" mimeType="application/xml" size="150505" uri="release/USX_1/2KI.usx"/>
+    <resource checksum="a7a66d7fc03d5d9e60a8d7677bfcfbd8" mimeType="application/xml" size="13916" uri="release/USX_1/2PE.usx"/>
+    <resource checksum="6313675ce333a3aea9a279a8911a164d" mimeType="application/xml" size="132881" uri="release/USX_1/2SA.usx"/>
+    <resource checksum="07c8158ca32c4523890e3d3cf0d06de1" mimeType="application/xml" size="11414" uri="release/USX_1/2TH.usx"/>
+    <resource checksum="13e43aafb567a1401e7833d62e51a9d0" mimeType="application/xml" size="16052" uri="release/USX_1/2TI.usx"/>
+    <resource checksum="5c2c8186d99b6e13a99c5fa17aa74a83" mimeType="application/xml" size="3643" uri="release/USX_1/3JN.usx"/>
+    <resource checksum="3440e193419f903323dbc7d2a8ef940b" mimeType="application/xml" size="171771" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="47ea7b4d3c09462ff60140d2e19ab1e7" mimeType="application/xml" size="44678" uri="release/USX_1/AMO.usx"/>
+    <resource checksum="553615d6914b501b802452a337de5eea" mimeType="application/xml" size="18676" uri="release/USX_1/COL.usx"/>
+    <resource checksum="b08f1c9f94fd4b90aa1e0f996109d99e" mimeType="application/xml" size="75974" uri="release/USX_1/DAN.usx"/>
+    <resource checksum="d29531851bd10504c0f409e076c9cb3a" mimeType="application/xml" size="182681" uri="release/USX_1/DEU.usx"/>
+    <resource checksum="8d340f1b5997ca54db750b70747af778" mimeType="application/xml" size="48441" uri="release/USX_1/ECC.usx"/>
+    <resource checksum="dadfc50510f583ebc4aac5df396caf83" mimeType="application/xml" size="29373" uri="release/USX_1/EPH.usx"/>
+    <resource checksum="cf1c936434e6e7a0cdefaeefac4aebf0" mimeType="application/xml" size="35939" uri="release/USX_1/EST.usx"/>
+    <resource checksum="9794597d7126a20c6a84fa3419becee8" mimeType="application/xml" size="207056" uri="release/USX_1/EXO.usx"/>
+    <resource checksum="53c2fb61fcf0f5fafa782fb2d7be286e" mimeType="application/xml" size="240995" uri="release/USX_1/EZK.usx"/>
+    <resource checksum="961fd6d642d14911a51f16f34f276c32" mimeType="application/xml" size="54522" uri="release/USX_1/EZR.usx"/>
+    <resource checksum="e3045d555ed33318ad0cccdcea162d40" mimeType="application/xml" size="30310" uri="release/USX_1/GAL.usx"/>
+    <resource checksum="beaae9e85912bdc1e7f1501ffd5aa91a" mimeType="application/xml" size="271840" uri="release/USX_1/GEN.usx"/>
+    <resource checksum="045b9a8a9c67a1fa0b9c4f05d78f73c6" mimeType="application/xml" size="16588" uri="release/USX_1/HAB.usx"/>
+    <resource checksum="42fd48ea7a9cf419545f88a1e917c7a5" mimeType="application/xml" size="12380" uri="release/USX_1/HAG.usx"/>
+    <resource checksum="568c893713a038d2b475296975e964a0" mimeType="application/xml" size="60789" uri="release/USX_1/HEB.usx"/>
+    <resource checksum="41f828d57f16c535d7d0d705ecc732c0" mimeType="application/xml" size="52180" uri="release/USX_1/HOS.usx"/>
+    <resource checksum="389e91549b7c82bd4a1529db03bacc50" mimeType="application/xml" size="322240" uri="release/USX_1/ISA.usx"/>
+    <resource checksum="699b2f7db6c80b7aba9548ebc23b8ec0" mimeType="application/xml" size="20806" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="c20a5a78360c0cc422059ce53e9466f6" mimeType="application/xml" size="119914" uri="release/USX_1/JDG.usx"/>
+    <resource checksum="cd9c1653dab170d174a19093a189ac69" mimeType="application/xml" size="342387" uri="release/USX_1/JER.usx"/>
+    <resource checksum="32a14e63eea81e67974e4b0308ad0198" mimeType="application/xml" size="147554" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="0f4db096b13a46348e91ad1ec0c1b525" mimeType="application/xml" size="183875" uri="release/USX_1/JOB.usx"/>
+    <resource checksum="2a63b6ac25ca7127dd55bf805e7e8470" mimeType="application/xml" size="20237" uri="release/USX_1/JOL.usx"/>
+    <resource checksum="5b5e4bf5d8f8c97df34ce3f721e3dbb2" mimeType="application/xml" size="11574" uri="release/USX_1/JON.usx"/>
+    <resource checksum="1dad58e07e7f8add388098e9c7b2780d" mimeType="application/xml" size="120490" uri="release/USX_1/JOS.usx"/>
+    <resource checksum="4294a2afa5428dd1becbb8ff394040e5" mimeType="application/xml" size="6869" uri="release/USX_1/JUD.usx"/>
+    <resource checksum="acbb1c75b5b64b861705651de448a39f" mimeType="application/xml" size="36455" uri="release/USX_1/LAM.usx"/>
+    <resource checksum="fe2221002ad6c7be2ef3c023fee07417" mimeType="application/xml" size="152690" uri="release/USX_1/LEV.usx"/>
+    <resource checksum="ed7703a25299cfd15a8ed0fcd602110b" mimeType="application/xml" size="209216" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="db6705d6399885de094a9058ed1a77d1" mimeType="application/xml" size="13976" uri="release/USX_1/MAL.usx"/>
+    <resource checksum="7b3c9ab8853a7deb0aef25eab2f4c1d0" mimeType="application/xml" size="194038" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="f38e2134fbba4d4c3afbd0961cf9367d" mimeType="application/xml" size="31359" uri="release/USX_1/MIC.usx"/>
+    <resource checksum="6074c77bca59c85f57c3d158bcc5a743" mimeType="application/xml" size="120809" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="ad77b2e98552e604ec123395b279ee2d" mimeType="application/xml" size="13992" uri="release/USX_1/NAM.usx"/>
+    <resource checksum="4db2498c919f41b40895cb9b1f5b0bc6" mimeType="application/xml" size="77548" uri="release/USX_1/NEH.usx"/>
+    <resource checksum="114e18c1653ba5e0be691b1211f17c5c" mimeType="application/xml" size="213294" uri="release/USX_1/NUM.usx"/>
+    <resource checksum="de26e6a8ac64fefff016a044e9bbd523" mimeType="application/xml" size="7528" uri="release/USX_1/OBA.usx"/>
+    <resource checksum="e800a7774d87813ec5b6a3b71217ff49" mimeType="application/xml" size="6076" uri="release/USX_1/PHM.usx"/>
+    <resource checksum="dce3a7d83b4a40407158534464075119" mimeType="application/xml" size="19410" uri="release/USX_1/PHP.usx"/>
+    <resource checksum="caa740940073057cc89e4c050285418b" mimeType="application/xml" size="167571" uri="release/USX_1/PRO.usx"/>
+    <resource checksum="087469027a110f8455b97a70d56db05f" mimeType="application/xml" size="471950" uri="release/USX_1/PSA.usx"/>
+    <resource checksum="252f14aa48c50641b5d8065d0b2aa87c" mimeType="application/xml" size="84358" uri="release/USX_1/REV.usx"/>
+    <resource checksum="6a055bbdf553aeab25182364319828c8" mimeType="application/xml" size="86929" uri="release/USX_1/ROM.usx"/>
+    <resource checksum="53b8b20487e210aab957f8f3b3600cfd" mimeType="application/xml" size="18104" uri="release/USX_1/RUT.usx"/>
+    <resource checksum="39976fd4a653e342463c793a5e945385" mimeType="application/xml" size="32541" uri="release/USX_1/SNG.usx"/>
+    <resource checksum="7ffee39c4657041736cf3794232b30d8" mimeType="application/xml" size="10927" uri="release/USX_1/TIT.usx"/>
+    <resource checksum="f2e21faf80169ba11d41176b9a0324f7" mimeType="application/xml" size="50748" uri="release/USX_1/ZEC.usx"/>
+    <resource checksum="2ea9e31d353a265f4d14c3d276b01de9" mimeType="application/xml" size="17693" uri="release/USX_1/ZEP.usx"/>
+    <resource checksum="b1ce8906c253950ceef15d630e72cc76" mimeType="application/xml" size="78101" uri="release/styles.xml"/>
+    <resource checksum="0a3a2d6bd5f029407076af9e9cf89123" mimeType="application/octet-stream" size="3507" uri="release/sus.ldml"/>
+    <resource checksum="49a0c15caeb3c8405bb423a418f45ce2" mimeType="application/octet-stream" size="9112" uri="release/versification.vrs"/>
+    <resource checksum="9892fcea4cce393f46d795e9f4c354a7" mimeType="application/zip" size="11765205" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CH"/>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1KI"/>
+      <book code="1PE"/>
+      <book code="1SA"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CH"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2KI"/>
+      <book code="2PE"/>
+      <book code="2SA"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="AMO"/>
+      <book code="COL"/>
+      <book code="DAN"/>
+      <book code="DEU"/>
+      <book code="ECC"/>
+      <book code="EPH"/>
+      <book code="EST"/>
+      <book code="EXO"/>
+      <book code="EZK"/>
+      <book code="EZR"/>
+      <book code="GAL"/>
+      <book code="GEN"/>
+      <book code="HAB"/>
+      <book code="HAG"/>
+      <book code="HEB"/>
+      <book code="HOS"/>
+      <book code="ISA"/>
+      <book code="JAS"/>
+      <book code="JDG"/>
+      <book code="JER"/>
+      <book code="JHN"/>
+      <book code="JOB"/>
+      <book code="JOL"/>
+      <book code="JON"/>
+      <book code="JOS"/>
+      <book code="JUD"/>
+      <book code="LAM"/>
+      <book code="LEV"/>
+      <book code="LUK"/>
+      <book code="MAL"/>
+      <book code="MAT"/>
+      <book code="MIC"/>
+      <book code="MRK"/>
+      <book code="NAM"/>
+      <book code="NEH"/>
+      <book code="NUM"/>
+      <book code="OBA"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="PRO"/>
+      <book code="PSA"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="RUT"/>
+      <book code="SNG"/>
+      <book code="TIT"/>
+      <book code="ZEC"/>
+      <book code="ZEP"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>Bible in three volumes</description>
+      <descriptionLocal>Soso Kitaabuie</descriptionLocal>
+      <canonicalContent>
+        <book code="1CH"/>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1KI"/>
+        <book code="1PE"/>
+        <book code="1SA"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CH"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2KI"/>
+        <book code="2PE"/>
+        <book code="2SA"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="AMO"/>
+        <book code="COL"/>
+        <book code="DAN"/>
+        <book code="DEU"/>
+        <book code="ECC"/>
+        <book code="EPH"/>
+        <book code="EST"/>
+        <book code="EXO"/>
+        <book code="EZK"/>
+        <book code="EZR"/>
+        <book code="GAL"/>
+        <book code="GEN"/>
+        <book code="HAB"/>
+        <book code="HAG"/>
+        <book code="HEB"/>
+        <book code="HOS"/>
+        <book code="ISA"/>
+        <book code="JAS"/>
+        <book code="JDG"/>
+        <book code="JER"/>
+        <book code="JHN"/>
+        <book code="JOB"/>
+        <book code="JOL"/>
+        <book code="JON"/>
+        <book code="JOS"/>
+        <book code="JUD"/>
+        <book code="LAM"/>
+        <book code="LEV"/>
+        <book code="LUK"/>
+        <book code="MAL"/>
+        <book code="MAT"/>
+        <book code="MIC"/>
+        <book code="MRK"/>
+        <book code="NAM"/>
+        <book code="NEH"/>
+        <book code="NUM"/>
+        <book code="OBA"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="PRO"/>
+        <book code="PSA"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="RUT"/>
+        <book code="SNG"/>
+        <book code="TIT"/>
+        <book code="ZEC"/>
+        <book code="ZEP"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-gen" src="release/USX_1/GEN.usx" role="GEN"/>
+        <content name="book-exo" src="release/USX_1/EXO.usx" role="EXO"/>
+        <content name="book-lev" src="release/USX_1/LEV.usx" role="LEV"/>
+        <content name="book-num" src="release/USX_1/NUM.usx" role="NUM"/>
+        <content name="book-deu" src="release/USX_1/DEU.usx" role="DEU"/>
+        <content name="book-jos" src="release/USX_1/JOS.usx" role="JOS"/>
+        <content name="book-jdg" src="release/USX_1/JDG.usx" role="JDG"/>
+        <content name="book-rut" src="release/USX_1/RUT.usx" role="RUT"/>
+        <content name="book-1sa" src="release/USX_1/1SA.usx" role="1SA"/>
+        <content name="book-2sa" src="release/USX_1/2SA.usx" role="2SA"/>
+        <content name="book-1ki" src="release/USX_1/1KI.usx" role="1KI"/>
+        <content name="book-2ki" src="release/USX_1/2KI.usx" role="2KI"/>
+        <content name="book-1ch" src="release/USX_1/1CH.usx" role="1CH"/>
+        <content name="book-2ch" src="release/USX_1/2CH.usx" role="2CH"/>
+        <content name="book-ezr" src="release/USX_1/EZR.usx" role="EZR"/>
+        <content name="book-neh" src="release/USX_1/NEH.usx" role="NEH"/>
+        <content name="book-est" src="release/USX_1/EST.usx" role="EST"/>
+        <content name="book-job" src="release/USX_1/JOB.usx" role="JOB"/>
+        <content name="book-psa" src="release/USX_1/PSA.usx" role="PSA"/>
+        <content name="book-pro" src="release/USX_1/PRO.usx" role="PRO"/>
+        <content name="book-ecc" src="release/USX_1/ECC.usx" role="ECC"/>
+        <content name="book-sng" src="release/USX_1/SNG.usx" role="SNG"/>
+        <content name="book-isa" src="release/USX_1/ISA.usx" role="ISA"/>
+        <content name="book-jer" src="release/USX_1/JER.usx" role="JER"/>
+        <content name="book-lam" src="release/USX_1/LAM.usx" role="LAM"/>
+        <content name="book-ezk" src="release/USX_1/EZK.usx" role="EZK"/>
+        <content name="book-dan" src="release/USX_1/DAN.usx" role="DAN"/>
+        <content name="book-hos" src="release/USX_1/HOS.usx" role="HOS"/>
+        <content name="book-jol" src="release/USX_1/JOL.usx" role="JOL"/>
+        <content name="book-amo" src="release/USX_1/AMO.usx" role="AMO"/>
+        <content name="book-oba" src="release/USX_1/OBA.usx" role="OBA"/>
+        <content name="book-jon" src="release/USX_1/JON.usx" role="JON"/>
+        <content name="book-mic" src="release/USX_1/MIC.usx" role="MIC"/>
+        <content name="book-nam" src="release/USX_1/NAM.usx" role="NAM"/>
+        <content name="book-hab" src="release/USX_1/HAB.usx" role="HAB"/>
+        <content name="book-zep" src="release/USX_1/ZEP.usx" role="ZEP"/>
+        <content name="book-hag" src="release/USX_1/HAG.usx" role="HAG"/>
+        <content name="book-zec" src="release/USX_1/ZEC.usx" role="ZEC"/>
+        <content name="book-mal" src="release/USX_1/MAL.usx" role="MAL"/>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© 2015—Mission Evangélique Reformée Néerlandaise et les Traducteurs Pionniers de la Bible</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <progress>
+    
+    <book code="GEN" stage="1"/>
+    <book code="EXO" stage="1"/>
+    <book code="LEV" stage="1"/>
+    <book code="NUM" stage="1"/>
+    <book code="DEU" stage="1"/>
+    <book code="JOS" stage="1"/>
+    <book code="JDG" stage="1"/>
+    <book code="RUT" stage="1"/>
+    <book code="1SA" stage="1"/>
+    <book code="2SA" stage="1"/>
+    <book code="1KI" stage="1"/>
+    <book code="2KI" stage="1"/>
+    <book code="1CH" stage="1"/>
+    <book code="2CH" stage="1"/>
+    <book code="EZR" stage="1"/>
+    <book code="NEH" stage="1"/>
+    <book code="EST" stage="1"/>
+    <book code="JOB" stage="1"/>
+    <book code="PSA" stage="1"/>
+    <book code="PRO" stage="1"/>
+    <book code="ECC" stage="1"/>
+    <book code="SNG" stage="1"/>
+    <book code="ISA" stage="1"/>
+    <book code="JER" stage="1"/>
+    <book code="LAM" stage="1"/>
+    <book code="EZK" stage="1"/>
+    <book code="DAN" stage="1"/>
+    <book code="HOS" stage="1"/>
+    <book code="JOL" stage="1"/>
+    <book code="AMO" stage="1"/>
+    <book code="OBA" stage="1"/>
+    <book code="JON" stage="1"/>
+    <book code="MIC" stage="1"/>
+    <book code="NAM" stage="1"/>
+    <book code="HAB" stage="1"/>
+    <book code="ZEP" stage="1"/>
+    <book code="HAG" stage="1"/>
+    <book code="ZEC" stage="1"/>
+    <book code="MAL" stage="1"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2013-11-14T16:53:19.048046</dateArchived>
+    <dateUpdated>2015-08-27T11:24:47.137799</dateUpdated>
+    <comments>first upload including OT</comments>
+  </archiveStatus>
+</DBLMetadata>

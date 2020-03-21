@@ -1,0 +1,164 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="71d2075d284c4eae" revision="4">
+  <identification>
+    <name>God's Holy Book</name>
+    <nameLocal>Kitabu ka Kanu</nameLocal>
+    <description>Baga Sitemu: Kitabu ka Kanu Portions</description>
+    <abbreviation>Baga</abbreviation>
+    <abbreviationLocal>KKK</abbreviationLocal>
+    <scope>Portions</scope>
+    <dateCompleted>2015</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.88</bundleProducer>
+    <systemId type="gbc">
+      <id>5783b5135117ad037b018d3c</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>71d2075d284c4eae20d9c985704305f6a0f5fe73</id>
+      <csetId>51c9464870e976f674c9195cbc71a78a68679dc5</csetId>
+      <name>BTU</name>
+      <fullName>Baga Translation Unicode</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>bsp</iso>
+    <name>Baga Sitemu</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>bsp</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>GN</iso>
+      <name>Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-gen">
+      <short>Tawureta Musa, Buk I: Dəkətchop</short>
+      <long>Dəkətchop da Doru</long>
+    </name>
+    <name id="book-jos">
+      <short>Yosuwe</short>
+      <long>Yosuwe</long>
+    </name>
+    <name id="book-rut">
+      <short>Rut</short>
+      <long>Rut</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk</abbr>
+      <short>Luk</short>
+      <long>Kəbaru Kətɔt Luk</long>
+    </name>
+    <name id="book-act">
+      <abbr>Mes</abbr>
+      <short>Yɛbətch ya Asom a Yesu</short>
+      <long>Yɛbətch ya Asom a Yesu</long>
+    </name>
+    <name id="book-jas">
+      <short>Sak</short>
+      <long>Sak</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="71cd2714c634e75062e049ac35fd7aa9" mimeType="application/octet-stream" size="490" uri="release/Baga Unicode.lds"/>
+    <resource checksum="6057ac1e373bfe21bef3b51dc67deb2a" mimeType="application/xml" size="207910" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="40dab67b2f6afbcf25ed70a6f6065fd0" mimeType="application/xml" size="281938" uri="release/USX_1/GEN.usx"/>
+    <resource checksum="e2bc61bf84416bd5f42acdc80d6b3c4e" mimeType="application/xml" size="22529" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="c2acb48a4d8b694076d86a937d20565c" mimeType="application/xml" size="135172" uri="release/USX_1/JOS.usx"/>
+    <resource checksum="a898300e166eadd6bc5c978448fd9e37" mimeType="application/xml" size="237400" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="5fb25dee319c63c2bd2be187dbab6f08" mimeType="application/xml" size="19095" uri="release/USX_1/RUT.usx"/>
+    <resource checksum="79f543b256c3e822d5705e27ed2670ad" mimeType="application/octet-stream" size="3436" uri="release/bsp.ldml"/>
+    <resource checksum="79f543b256c3e822d5705e27ed2670ad" mimeType="application/xml" size="3436" uri="release/ldml.xml"/>
+    <resource checksum="6cf3c307f37463f5996880429d0e5240" mimeType="application/xml" size="78093" uri="release/styles.xml"/>
+    <resource checksum="49a0c15caeb3c8405bb423a418f45ce2" mimeType="application/octet-stream" size="9112" uri="release/versification.vrs"/>
+    <resource checksum="edf114da0c6dfabcf68f863fa957e7ac" mimeType="application/zip" size="16202251" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="ACT"/>
+      <book code="GEN"/>
+      <book code="JAS"/>
+      <book code="JOS"/>
+      <book code="LUK"/>
+      <book code="RUT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>The Law books, Psalms, the Gospel and the Letters of the Apostles</description>
+      <descriptionLocal>Tawureta, Yabura, Iŋyila, kɔ reka ya asɔm a Yesu</descriptionLocal>
+      <canonicalContent>
+        <book code="ACT"/>
+        <book code="GEN"/>
+        <book code="JAS"/>
+        <book code="JOS"/>
+        <book code="LUK"/>
+        <book code="RUT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-gen" src="release/USX_1/GEN.usx" role="GEN"/>
+        <content name="book-jos" src="release/USX_1/JOS.usx" role="JOS"/>
+        <content name="book-rut" src="release/USX_1/RUT.usx" role="RUT"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© 2015—Traducteurs Pionniers de la Bible</p>
+        <p>© 2015—Pioneer Bible Translators</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <progress>
+    
+    <book code="GEN" stage="4"/>
+    <book code="EXO" stage="1"/>
+    <book code="JOS" stage="2"/>
+    <book code="LUK" stage="4"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2016-07-11T15:54:18.422011</dateArchived>
+    <dateUpdated>2016-07-27T13:41:28.568939</dateUpdated>
+    <comments>with book names</comments>
+  </archiveStatus>
+</DBLMetadata>

@@ -1,0 +1,711 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="5b835ce16a1703ff" revision="1">
+  <identification>
+    <name>Indian Revised Version (IRV) Telugu - 2019</name>
+    <nameLocal>ఇండియన్ రివైజ్డ్ వెర్షన్ (IRV) - తెలుగు -2019</nameLocal>
+    <description>Telugu: ఇండియన్ రివైజ్డ్ వెర్షన్ (IRV) - తెలుగు -2019 (Bible)</description>
+    <abbreviation>IRVTel</abbreviation>
+    <scope>Bible</scope>
+    <dateCompleted>2019-01-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.100.83</bundleProducer>
+    <systemId type="paratext">
+      <id>5b835ce16a1703ff82f55acff64ea834242223d6</id>
+      <csetId>a8c27b4bc888088263e69bddea69d5a652092f17</csetId>
+      <name>IRVTel</name>
+      <fullName>Indian Revised Version (IRV) Telugu</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>psbontZjvwuK2cDkD</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>Revision</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>BCS</abbr>
+      <url>https://bridgeconn.com/</url>
+      <nameLocal>Bridge Connectivity Solutions Pvt. Ltd.</nameLocal>
+      <uid>ca4e509c2990fb97eaa0b7c9</uid>
+      <name>Bridge Connectivity Solutions Pvt. Ltd.</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>https://bridgeconn.com/</url>
+      <uid>ca4e509c2990fb97eaa0b7c9</uid>
+      <name>Bridge Connectivity Solutions Pvt. Ltd.</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>ca4e509c2990fb97eaa0b7c9</uid>
+      <name>Bridge Connectivity Solutions Pvt. Ltd.</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>tel</iso>
+    <name>Telugu</name>
+    <nameLocal>తెలుగు</nameLocal>
+    <script>Telugu</script>
+    <scriptCode>Telu</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>te-IN</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>IN</iso>
+      <name>India</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-gen">
+      <abbr>ఆది</abbr>
+      <short>ఆది</short>
+      <long>ఆదికాండం</long>
+    </name>
+    <name id="book-exo">
+      <abbr>నిర్గ</abbr>
+      <short>నిర్గమ</short>
+      <long>నిర్గమకాండం</long>
+    </name>
+    <name id="book-lev">
+      <abbr>లేవీ</abbr>
+      <short>లేవీ</short>
+      <long>లేవీకాండం</long>
+    </name>
+    <name id="book-num">
+      <abbr>సంఖ్యా</abbr>
+      <short>సంఖ్యా</short>
+      <long>సంఖ్యాకాండం</long>
+    </name>
+    <name id="book-deu">
+      <abbr>ద్వితీ</abbr>
+      <short>ద్వితీ</short>
+      <long>ద్వితీయోపదేశ కాండము</long>
+    </name>
+    <name id="book-jos">
+      <abbr>యెహో</abbr>
+      <short>యెహో</short>
+      <long>యెహోషువ</long>
+    </name>
+    <name id="book-jdg">
+      <abbr>న్యాయా</abbr>
+      <short>న్యాయాధి</short>
+      <long>న్యాయాధిపతులు</long>
+    </name>
+    <name id="book-rut">
+      <abbr>రూతు</abbr>
+      <short>రూతు</short>
+      <long>రూతు</long>
+    </name>
+    <name id="book-1sa">
+      <abbr>1సమూ</abbr>
+      <short>1 సమూ</short>
+      <long>1 సమూయేలు</long>
+    </name>
+    <name id="book-2sa">
+      <abbr>2సమూ</abbr>
+      <short>2 సమూ</short>
+      <long>2 సమూయేలు</long>
+    </name>
+    <name id="book-1ki">
+      <abbr>1రాజులు</abbr>
+      <short>1 రాజులు</short>
+      <long>1 రాజులు</long>
+    </name>
+    <name id="book-2ki">
+      <abbr>2రాజులు</abbr>
+      <short>2 రాజులు</short>
+      <long>2 రాజులు</long>
+    </name>
+    <name id="book-1ch">
+      <abbr>1దిన</abbr>
+      <short>1 దిన</short>
+      <long>1 దినవృత్తాంతాలు</long>
+    </name>
+    <name id="book-2ch">
+      <abbr>2దిన</abbr>
+      <short>2 దిన</short>
+      <long>2 దినవృత్తాంతాలు</long>
+    </name>
+    <name id="book-ezr">
+      <abbr>ఎజ్రా</abbr>
+      <short>ఎజ్రా</short>
+      <long>ఎజ్రా</long>
+    </name>
+    <name id="book-neh">
+      <abbr>నెహె</abbr>
+      <short>నెహెమ్యా</short>
+      <long>నెహెమ్యా</long>
+    </name>
+    <name id="book-est">
+      <abbr>ఎస్తే</abbr>
+      <short>ఎస్తేరు</short>
+      <long>ఎస్తేరు</long>
+    </name>
+    <name id="book-job">
+      <abbr>యోబు</abbr>
+      <short>యోబు</short>
+      <long>యోబు</long>
+    </name>
+    <name id="book-psa">
+      <abbr>కీర్త</abbr>
+      <short>కీర్తన</short>
+      <long>కీర్తనలు</long>
+    </name>
+    <name id="book-pro">
+      <abbr>సామె</abbr>
+      <short>సామెత</short>
+      <long>సామెతలు</long>
+    </name>
+    <name id="book-ecc">
+      <abbr>ప్రస</abbr>
+      <short>ప్రసంగి</short>
+      <long>ప్రసంగి</long>
+    </name>
+    <name id="book-sng">
+      <abbr>పరమ</abbr>
+      <short>పరమ</short>
+      <long>పరమగీతం</long>
+    </name>
+    <name id="book-isa">
+      <abbr>యెష</abbr>
+      <short>యెషయా</short>
+      <long>యెషయా</long>
+    </name>
+    <name id="book-jer">
+      <abbr>యిర్మీ</abbr>
+      <short>యిర్మీయా</short>
+      <long>యిర్మీయా</long>
+    </name>
+    <name id="book-lam">
+      <abbr>విలాప</abbr>
+      <short>విలాప</short>
+      <long>విలాపవాక్యాలు</long>
+    </name>
+    <name id="book-ezk">
+      <abbr>యెహె</abbr>
+      <short>యెహె</short>
+      <long>యెహెజ్కేలు</long>
+    </name>
+    <name id="book-dan">
+      <abbr>దాని</abbr>
+      <short>దాని</short>
+      <long>దానియేలు</long>
+    </name>
+    <name id="book-hos">
+      <abbr>హోషే</abbr>
+      <short>హోషే</short>
+      <long>హోషేయ</long>
+    </name>
+    <name id="book-jol">
+      <abbr>యోవే</abbr>
+      <short>యోవే</short>
+      <long>యోవేలు</long>
+    </name>
+    <name id="book-amo">
+      <abbr>ఆమో</abbr>
+      <short>ఆమోసు</short>
+      <long>ఆమోసు</long>
+    </name>
+    <name id="book-oba">
+      <abbr>ఓబద్యా</abbr>
+      <short>ఓబద్యా</short>
+      <long>ఓబద్యా</long>
+    </name>
+    <name id="book-jon">
+      <abbr>యోనా</abbr>
+      <short>యోనా</short>
+      <long>యోనా</long>
+    </name>
+    <name id="book-mic">
+      <abbr>మీకా</abbr>
+      <short>మీకా</short>
+      <long>మీకా</long>
+    </name>
+    <name id="book-nam">
+      <abbr>నహూ</abbr>
+      <short>నహూ</short>
+      <long>నహూము</long>
+    </name>
+    <name id="book-hab">
+      <abbr>హబ</abbr>
+      <short>హబ</short>
+      <long>హబక్కూకు</long>
+    </name>
+    <name id="book-zep">
+      <abbr>జెఫ</abbr>
+      <short>జెఫన్యా</short>
+      <long>జెఫన్యా</long>
+    </name>
+    <name id="book-hag">
+      <abbr>హగ్గ</abbr>
+      <short>హగ్గయి</short>
+      <long>హగ్గయి</long>
+    </name>
+    <name id="book-zec">
+      <abbr>జెక</abbr>
+      <short>జెకర్యా</short>
+      <long>జెకర్యా</long>
+    </name>
+    <name id="book-mal">
+      <abbr>మలా</abbr>
+      <short>మలాకీ</short>
+      <long>మలాకీ</long>
+    </name>
+    <name id="book-mat">
+      <abbr>మత్తయి</abbr>
+      <short>మత్తయి</short>
+      <long>మత్తయి రాసిన సువార్త</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>మార్కు</abbr>
+      <short>మార్కు</short>
+      <long>మార్కు రాసిన సువార్త</long>
+    </name>
+    <name id="book-luk">
+      <abbr>లూకా</abbr>
+      <short>లూకా</short>
+      <long>లూకా రాసిన సువార్త</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>యోహా</abbr>
+      <short>యోహాను</short>
+      <long>యోహాను రాసిన సువార్త</long>
+    </name>
+    <name id="book-act">
+      <abbr>అపొ.కా.</abbr>
+      <short>అపొస్తలుల కార్యములు</short>
+      <long>అపొస్తలుల కార్యములు</long>
+    </name>
+    <name id="book-rom">
+      <abbr>రోమా</abbr>
+      <short>రోమా పత్రిక</short>
+      <long>రోమీయులకు రాసిన పత్రిక</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1కొరింతీ</abbr>
+      <short>1 కొరింతీ పత్రిక</short>
+      <long>కొరింతీయులకు రాసిన మొదటి పత్రిక</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2కొరింతీ</abbr>
+      <short>2 కొరింతీ పత్రిక</short>
+      <long>కొరింతీయులకు రాసిన రెండవ పత్రిక</long>
+    </name>
+    <name id="book-gal">
+      <abbr>గలతీ</abbr>
+      <short>గలతీ పత్రిక</short>
+      <long>గలతీయులకు రాసిన పత్రిక</long>
+    </name>
+    <name id="book-eph">
+      <abbr>ఎఫెసీ</abbr>
+      <short>ఎఫెసీ పత్రిక</short>
+      <long>ఎఫెసీయులకు రాసిన పత్రిక</long>
+    </name>
+    <name id="book-php">
+      <abbr>ఫిలిప్పీ</abbr>
+      <short>ఫిలిప్పీ పత్రిక</short>
+      <long>ఫిలిప్పీయులకు రాసిన పత్రిక</long>
+    </name>
+    <name id="book-col">
+      <abbr>కొలస్సీ</abbr>
+      <short>కొలస్సీ పత్రిక</short>
+      <long>కొలస్సయులకు రాసిన పత్రిక</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1తెస్స</abbr>
+      <short>1 తెస్సలోనిక పత్రిక</short>
+      <long>తెస్సలోనికయులకు రాసిన మొదటి పత్రిక</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2తెస్స</abbr>
+      <short>2 తెస్సలోనిక పత్రిక</short>
+      <long>తెస్సలోనికయులకు రాసిన రెండవ పత్రిక</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1తిమో</abbr>
+      <short>1 తిమోతి పత్రిక</short>
+      <long>తిమోతికి రాసిన మొదటి పత్రిక</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2తిమో</abbr>
+      <short>2 తిమోతి పత్రిక</short>
+      <long>తిమోతికి రాసిన రెండవ పత్రిక</long>
+    </name>
+    <name id="book-tit">
+      <abbr>తీతు</abbr>
+      <short>తీతు పత్రిక</short>
+      <long>తీతుకు రాసిన పత్రిక</long>
+    </name>
+    <name id="book-phm">
+      <abbr>ఫిలే</abbr>
+      <short>ఫిలేమోను పత్రిక</short>
+      <long>ఫిలేమోనుకు రాసిన పత్రిక</long>
+    </name>
+    <name id="book-heb">
+      <abbr>హెబ్రీ</abbr>
+      <short>హెబ్రీ పత్రిక</short>
+      <long>హెబ్రీయులకు రాసిన పత్రిక</long>
+    </name>
+    <name id="book-jas">
+      <abbr>యాకో</abbr>
+      <short>యాకోబు పత్రిక</short>
+      <long>యాకోబు రాసిన పత్రిక</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1పేతు</abbr>
+      <short>1 పేతురు పత్రిక</short>
+      <long>పేతురు రాసిన మొదటి పత్రిక</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2పేతు</abbr>
+      <short>2 పేతురు పత్రిక</short>
+      <long>పేతురు రాసిన రెండవ పత్రిక</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1యోహా</abbr>
+      <short>1 యోహాను పత్రిక</short>
+      <long>యోహాను రాసిన మొదటి పత్రిక</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2యోహా</abbr>
+      <short>2 యోహాను పత్రిక</short>
+      <long>యోహాను రాసిన రెండవ పత్రిక</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3యోహా</abbr>
+      <short>3 యోహాను పత్రిక</short>
+      <long>యోహాను రాసిన మూడవ పత్రిక</long>
+    </name>
+    <name id="book-jud">
+      <abbr>యూదా</abbr>
+      <short>యూదా పత్రిక</short>
+      <long>యూదా రాసిన పత్రిక</long>
+    </name>
+    <name id="book-rev">
+      <abbr>ప్రక</abbr>
+      <short>ప్రకటన గ్రంథం</short>
+      <long>యోహాను రాసిన ప్రకటన గ్రంథం</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="32580bdc5d5b6f05aee091b53cfe1dce" mimeType="application/xml" size="345232" uri="1CH.usx"/>
+        <resource checksum="d7fb252ad10de5f27a6373ae07852abb" mimeType="application/xml" size="161618" uri="1CO.usx"/>
+        <resource checksum="50caad108ea97378e6d0c62bbd1306c1" mimeType="application/xml" size="43946" uri="1JN.usx"/>
+        <resource checksum="7d126c0126246b43990e42db3b388d96" mimeType="application/xml" size="343995" uri="1KI.usx"/>
+        <resource checksum="95d259d2d32c5de1c00c9e3d0d3e672a" mimeType="application/xml" size="45616" uri="1PE.usx"/>
+        <resource checksum="9524f13ade3cc84f7c32a5b8fa967bf6" mimeType="application/xml" size="367385" uri="1SA.usx"/>
+        <resource checksum="4331a673b305a1460eb0dda25cd5486e" mimeType="application/xml" size="36570" uri="1TH.usx"/>
+        <resource checksum="fff62ef06bfa63976150029fb35814d7" mimeType="application/xml" size="43266" uri="1TI.usx"/>
+        <resource checksum="8327cc20fea1c341cbd8c59bd8236334" mimeType="application/xml" size="381459" uri="2CH.usx"/>
+        <resource checksum="8ec993dd7c84c24f33686af66bcc263f" mimeType="application/xml" size="101939" uri="2CO.usx"/>
+        <resource checksum="6cab7cef1340f08c118bc97b905112a6" mimeType="application/xml" size="8257" uri="2JN.usx"/>
+        <resource checksum="6a40bb7b0d07e878012c2cdbfe2f010e" mimeType="application/xml" size="353674" uri="2KI.usx"/>
+        <resource checksum="82aaf5ba58a5644ef157a29035e1edc2" mimeType="application/xml" size="29833" uri="2PE.usx"/>
+        <resource checksum="47028c615153367feddac91e78080d4d" mimeType="application/xml" size="311554" uri="2SA.usx"/>
+        <resource checksum="fb1e5b338885fc74dc844e6ae0652469" mimeType="application/xml" size="21913" uri="2TH.usx"/>
+        <resource checksum="b44cfdb958ff49a4452e26999505b16f" mimeType="application/xml" size="32271" uri="2TI.usx"/>
+        <resource checksum="4585c8368e13680b44c45556fa00e4e0" mimeType="application/xml" size="9493" uri="3JN.usx"/>
+        <resource checksum="5b5a5dabbaa3605c33ef744b6b2cb2f6" mimeType="application/xml" size="373785" uri="ACT.usx"/>
+        <resource checksum="b5571134829ef8ed216c3f56d592e11c" mimeType="application/xml" size="78030" uri="AMO.usx"/>
+        <resource checksum="247804fa4437a86c1b86c4aad2813e84" mimeType="application/xml" size="41534" uri="COL.usx"/>
+        <resource checksum="75ed057e5c35b1aa731610b79b5caff8" mimeType="application/xml" size="181979" uri="DAN.usx"/>
+        <resource checksum="eb49f360e5b18f325e74a1e38a5da104" mimeType="application/xml" size="390216" uri="DEU.usx"/>
+        <resource checksum="2daff2760f6d7847c76a9f2e12473a4b" mimeType="application/xml" size="95685" uri="ECC.usx"/>
+        <resource checksum="c9a7a599bd40e4a4d873ee5bb153175c" mimeType="application/xml" size="53625" uri="EPH.usx"/>
+        <resource checksum="794de5e36ccbce92b147884ab82577f8" mimeType="application/xml" size="82423" uri="EST.usx"/>
+        <resource checksum="49649f40e5da8c51f24a048a8c6738ab" mimeType="application/xml" size="474782" uri="EXO.usx"/>
+        <resource checksum="868e769eb7eccf6ba6cc40ea58f63078" mimeType="application/xml" size="553179" uri="EZK.usx"/>
+        <resource checksum="f26e63914bdc69b1c9acf45af7c6ecd7" mimeType="application/xml" size="108505" uri="EZR.usx"/>
+        <resource checksum="0d6585909baaa98e60f43c27baf9cd75" mimeType="application/xml" size="58576" uri="GAL.usx"/>
+        <resource checksum="263f488a26ec4491fdefd53557444952" mimeType="application/xml" size="572334" uri="GEN.usx"/>
+        <resource checksum="e714fb0be9500fe89113d4b775bd46c0" mimeType="application/xml" size="29874" uri="HAB.usx"/>
+        <resource checksum="97515d6c6401d3719ed0730348964a8b" mimeType="application/xml" size="23163" uri="HAG.usx"/>
+        <resource checksum="31da2b842bd35600dce1125b0c371c5d" mimeType="application/xml" size="130497" uri="HEB.usx"/>
+        <resource checksum="408681ee143e38a7f9b3c43eea3b666b" mimeType="application/xml" size="104164" uri="HOS.usx"/>
+        <resource checksum="c0049cfe76bea6638c295efac81a5c1c" mimeType="application/xml" size="604864" uri="ISA.usx"/>
+        <resource checksum="c8c458dc1f12d721c073ad8e0d609fe3" mimeType="application/xml" size="43465" uri="JAS.usx"/>
+        <resource checksum="f0659e06f2c5e30d4d6d934208c1b787" mimeType="application/xml" size="285603" uri="JDG.usx"/>
+        <resource checksum="36cd5a4361f2bada904e158a05aaa458" mimeType="application/xml" size="649730" uri="JER.usx"/>
+        <resource checksum="b68a34a85773e5a6a6f4f399b9b31fe4" mimeType="application/xml" size="323303" uri="JHN.usx"/>
+        <resource checksum="37b949ad9fa235691ea4892e279e5348" mimeType="application/xml" size="340923" uri="JOB.usx"/>
+        <resource checksum="09530ab0bdd5383f6a86fa06b603d32c" mimeType="application/xml" size="38578" uri="JOL.usx"/>
+        <resource checksum="6cd9fdf8dd0b199ad995aaecc7729f50" mimeType="application/xml" size="24224" uri="JON.usx"/>
+        <resource checksum="ff6f6deb60695de1b0da6fa052c76d81" mimeType="application/xml" size="261099" uri="JOS.usx"/>
+        <resource checksum="404691fdbdf903b6152114da3c486069" mimeType="application/xml" size="15315" uri="JUD.usx"/>
+        <resource checksum="fba161617b7abae439beb869a8809f7e" mimeType="application/xml" size="66617" uri="LAM.usx"/>
+        <resource checksum="c0b0557253c37686354c534535d82424" mimeType="application/xml" size="347627" uri="LEV.usx"/>
+        <resource checksum="f09e36560efb73c1d99fb5c36211f069" mimeType="application/xml" size="432749" uri="LUK.usx"/>
+        <resource checksum="80f21929dd8477e00c296b87f9906fba" mimeType="application/xml" size="34309" uri="MAL.usx"/>
+        <resource checksum="599a6c8a69499808c09c10bb2bd8909d" mimeType="application/xml" size="406488" uri="MAT.usx"/>
+        <resource checksum="cc0dfb5c20ef7803d1d3a2dc1f3d8388" mimeType="application/xml" size="60643" uri="MIC.usx"/>
+        <resource checksum="da0ec975cd9ef5581f98469725e58fef" mimeType="application/xml" size="260450" uri="MRK.usx"/>
+        <resource checksum="eb51aff2d83064c80abc8d3a88466d79" mimeType="application/xml" size="25801" uri="NAM.usx"/>
+        <resource checksum="44819c2f62baae95e26fca867c45c9d4" mimeType="application/xml" size="162829" uri="NEH.usx"/>
+        <resource checksum="a1f3e87614e45c3c492f4558e8a00904" mimeType="application/xml" size="472276" uri="NUM.usx"/>
+        <resource checksum="ca12dadf6e73f59b1db408a5ba181c65" mimeType="application/xml" size="13601" uri="OBA.usx"/>
+        <resource checksum="4fa8fc4a8aa6a8007ea22eeec718e811" mimeType="application/xml" size="11599" uri="PHM.usx"/>
+        <resource checksum="7eeef675c55ca8a556e285641584a957" mimeType="application/xml" size="43861" uri="PHP.usx"/>
+        <resource checksum="ce68211c8b0f56090d1899f8f29f8816" mimeType="application/xml" size="278855" uri="PRO.usx"/>
+        <resource checksum="7ce6bf6288cf5290d9b95bccf33e1276" mimeType="application/xml" size="786773" uri="PSA.usx"/>
+        <resource checksum="403b080c84c02a2fb26584086cc492dd" mimeType="application/xml" size="191517" uri="REV.usx"/>
+        <resource checksum="71d368d8e827feaeee73e24219b898be" mimeType="application/xml" size="165520" uri="ROM.usx"/>
+        <resource checksum="6abdf56d618f7e12e22ad709eda596dd" mimeType="application/xml" size="43472" uri="RUT.usx"/>
+        <resource checksum="120bdae3ef11dd67041fd1531005a2cb" mimeType="application/xml" size="57477" uri="SNG.usx"/>
+        <resource checksum="17b924173e5e4473bc304cf3fa51b82e" mimeType="application/xml" size="21760" uri="TIT.usx"/>
+        <resource checksum="44a3d92a702223a89bc3b8791d5e6f1d" mimeType="application/xml" size="99560" uri="ZEC.usx"/>
+        <resource checksum="c7fdc38e94c5aad9df1fbbc97d6eb4ae" mimeType="application/xml" size="31948" uri="ZEP.usx"/>
+      </container>
+      <resource checksum="9224749edcbc8b2766a1a900662de93d" mimeType="application/xml" size="89533" uri="styles.xml"/>
+      <resource checksum="26c448f8c31906e18a76fafa9a951700" mimeType="application/xml" size="1173" uri="tel_te-IN.ldml"/>
+      <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="text/plain" size="15364" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="564cd7a999c03d13587d486197b20ce6" mimeType="application/zip" size="64987942" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CH"/>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1KI"/>
+      <book code="1PE"/>
+      <book code="1SA"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CH"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2KI"/>
+      <book code="2PE"/>
+      <book code="2SA"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="AMO"/>
+      <book code="COL"/>
+      <book code="DAN"/>
+      <book code="DEU"/>
+      <book code="ECC"/>
+      <book code="EPH"/>
+      <book code="EST"/>
+      <book code="EXO"/>
+      <book code="EZK"/>
+      <book code="EZR"/>
+      <book code="GAL"/>
+      <book code="GEN"/>
+      <book code="HAB"/>
+      <book code="HAG"/>
+      <book code="HEB"/>
+      <book code="HOS"/>
+      <book code="ISA"/>
+      <book code="JAS"/>
+      <book code="JDG"/>
+      <book code="JER"/>
+      <book code="JHN"/>
+      <book code="JOB"/>
+      <book code="JOL"/>
+      <book code="JON"/>
+      <book code="JOS"/>
+      <book code="JUD"/>
+      <book code="LAM"/>
+      <book code="LEV"/>
+      <book code="LUK"/>
+      <book code="MAL"/>
+      <book code="MAT"/>
+      <book code="MIC"/>
+      <book code="MRK"/>
+      <book code="NAM"/>
+      <book code="NEH"/>
+      <book code="NUM"/>
+      <book code="OBA"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="PRO"/>
+      <book code="PSA"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="RUT"/>
+      <book code="SNG"/>
+      <book code="TIT"/>
+      <book code="ZEC"/>
+      <book code="ZEP"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>Bible for all</description>
+      <descriptionLocal>Bible for all</descriptionLocal>
+      <canonicalContent>
+        <book code="1CH"/>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1KI"/>
+        <book code="1PE"/>
+        <book code="1SA"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CH"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2KI"/>
+        <book code="2PE"/>
+        <book code="2SA"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="AMO"/>
+        <book code="COL"/>
+        <book code="DAN"/>
+        <book code="DEU"/>
+        <book code="ECC"/>
+        <book code="EPH"/>
+        <book code="EST"/>
+        <book code="EXO"/>
+        <book code="EZK"/>
+        <book code="EZR"/>
+        <book code="GAL"/>
+        <book code="GEN"/>
+        <book code="HAB"/>
+        <book code="HAG"/>
+        <book code="HEB"/>
+        <book code="HOS"/>
+        <book code="ISA"/>
+        <book code="JAS"/>
+        <book code="JDG"/>
+        <book code="JER"/>
+        <book code="JHN"/>
+        <book code="JOB"/>
+        <book code="JOL"/>
+        <book code="JON"/>
+        <book code="JOS"/>
+        <book code="JUD"/>
+        <book code="LAM"/>
+        <book code="LEV"/>
+        <book code="LUK"/>
+        <book code="MAL"/>
+        <book code="MAT"/>
+        <book code="MIC"/>
+        <book code="MRK"/>
+        <book code="NAM"/>
+        <book code="NEH"/>
+        <book code="NUM"/>
+        <book code="OBA"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="PRO"/>
+        <book code="PSA"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="RUT"/>
+        <book code="SNG"/>
+        <book code="TIT"/>
+        <book code="ZEC"/>
+        <book code="ZEP"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-gen" src="release/USX_1/GEN.usx" role="GEN"/>
+        <content name="book-exo" src="release/USX_1/EXO.usx" role="EXO"/>
+        <content name="book-lev" src="release/USX_1/LEV.usx" role="LEV"/>
+        <content name="book-num" src="release/USX_1/NUM.usx" role="NUM"/>
+        <content name="book-deu" src="release/USX_1/DEU.usx" role="DEU"/>
+        <content name="book-jos" src="release/USX_1/JOS.usx" role="JOS"/>
+        <content name="book-jdg" src="release/USX_1/JDG.usx" role="JDG"/>
+        <content name="book-rut" src="release/USX_1/RUT.usx" role="RUT"/>
+        <content name="book-1sa" src="release/USX_1/1SA.usx" role="1SA"/>
+        <content name="book-2sa" src="release/USX_1/2SA.usx" role="2SA"/>
+        <content name="book-1ki" src="release/USX_1/1KI.usx" role="1KI"/>
+        <content name="book-2ki" src="release/USX_1/2KI.usx" role="2KI"/>
+        <content name="book-1ch" src="release/USX_1/1CH.usx" role="1CH"/>
+        <content name="book-2ch" src="release/USX_1/2CH.usx" role="2CH"/>
+        <content name="book-ezr" src="release/USX_1/EZR.usx" role="EZR"/>
+        <content name="book-neh" src="release/USX_1/NEH.usx" role="NEH"/>
+        <content name="book-est" src="release/USX_1/EST.usx" role="EST"/>
+        <content name="book-job" src="release/USX_1/JOB.usx" role="JOB"/>
+        <content name="book-psa" src="release/USX_1/PSA.usx" role="PSA"/>
+        <content name="book-pro" src="release/USX_1/PRO.usx" role="PRO"/>
+        <content name="book-ecc" src="release/USX_1/ECC.usx" role="ECC"/>
+        <content name="book-sng" src="release/USX_1/SNG.usx" role="SNG"/>
+        <content name="book-isa" src="release/USX_1/ISA.usx" role="ISA"/>
+        <content name="book-jer" src="release/USX_1/JER.usx" role="JER"/>
+        <content name="book-lam" src="release/USX_1/LAM.usx" role="LAM"/>
+        <content name="book-ezk" src="release/USX_1/EZK.usx" role="EZK"/>
+        <content name="book-dan" src="release/USX_1/DAN.usx" role="DAN"/>
+        <content name="book-hos" src="release/USX_1/HOS.usx" role="HOS"/>
+        <content name="book-jol" src="release/USX_1/JOL.usx" role="JOL"/>
+        <content name="book-amo" src="release/USX_1/AMO.usx" role="AMO"/>
+        <content name="book-oba" src="release/USX_1/OBA.usx" role="OBA"/>
+        <content name="book-jon" src="release/USX_1/JON.usx" role="JON"/>
+        <content name="book-mic" src="release/USX_1/MIC.usx" role="MIC"/>
+        <content name="book-nam" src="release/USX_1/NAM.usx" role="NAM"/>
+        <content name="book-hab" src="release/USX_1/HAB.usx" role="HAB"/>
+        <content name="book-zep" src="release/USX_1/ZEP.usx" role="ZEP"/>
+        <content name="book-hag" src="release/USX_1/HAG.usx" role="HAG"/>
+        <content name="book-zec" src="release/USX_1/ZEC.usx" role="ZEC"/>
+        <content name="book-mal" src="release/USX_1/MAL.usx" role="MAL"/>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>CC BY SA</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Vipin Bhadran</archivistName>
+    <dateArchived>2019-11-08T14:26:39.637019</dateArchived>
+    <dateUpdated>2019-11-08T14:26:39.637019</dateUpdated>
+    <comments>First Submit</comments>
+  </archiveStatus>
+</DBLMetadata>

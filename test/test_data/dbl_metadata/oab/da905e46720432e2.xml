@@ -1,0 +1,379 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="da905e46720432e2" revision="1">
+  <identification>
+    <name>Mborena Kam NT for DBL</name>
+    <nameLocal>Raraŋ Aetaniacna Kam Wembaŋ Laŋ</nameLocal>
+    <description>New Testament in Mborena Kam language</description>
+    <abbreviation>MbKamNT</abbreviation>
+    <scope>New Testament</scope>
+    <dateCompleted>2016-12-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.100.59</bundleProducer>
+    <systemId type="paratext">
+      <id>da905e46720432e20cd148846645635c46ffb4b3</id>
+      <csetId>65ef96147071b0533e84fff24a4f2141b90aa3d3</csetId>
+      <name>gaiDBL</name>
+      <fullName>Mborena Kam NT for DBL</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>PmQBKFiQYctpP9GWZ</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsAdmin>
+    <contributor>
+      <content>false</content>
+      <publication>false</publication>
+      <management>false</management>
+      <finance>false</finance>
+      <qa>true</qa>
+      <uid>54650ce35117ad68c4c49e87</uid>
+      <name>Bible Society of Papua New Guinea</name>
+    </contributor>
+    <contributor>
+      <content>false</content>
+      <publication>false</publication>
+      <management>false</management>
+      <finance>true</finance>
+      <qa>false</qa>
+      <uid>54650d065117ad695d428986</uid>
+      <name>The Seed Company</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>gai</iso>
+    <name>Borei</name>
+    <nameLocal>Mborena Kam</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>gai</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mt</abbr>
+      <short>Matiu</short>
+      <long>Matiu Tiratna Kam Wembaŋ Laŋ</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mk</abbr>
+      <short>Mak</short>
+      <long>Mak Tiratna Kam Wembaŋ Laŋ</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Lk</abbr>
+      <short>Luk</short>
+      <long>Luk Tiratna Kam Wembaŋ Laŋ</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>In</abbr>
+      <short>Ion</short>
+      <long>Ion Tiratna Kam Wembaŋ Laŋ</long>
+    </name>
+    <name id="book-act">
+      <abbr>Up</abbr>
+      <short>Up Aŋgɨrena Ramtaɨrta Aiŋ</short>
+      <long>Iesusna Up Aŋgɨrena Ramtaɨrta Aiŋna Nininina Timbigta Kap</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Ro</abbr>
+      <short>Rom</short>
+      <long>Pola Romnandmo Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Ko</abbr>
+      <short>1 Korin</short>
+      <long>Pola Korinnandmo Tiratna Outna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Ko</abbr>
+      <short>2 Korin</short>
+      <long>Pola Korinnandmo Iŋmbaia Mac Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gal</abbr>
+      <short>Galesia</short>
+      <long>Pola Galesianandmo Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Epe</abbr>
+      <short>Epesus</short>
+      <long>Pola Epesusnandmo Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-php">
+      <abbr>Pil</abbr>
+      <short>Pilipai</short>
+      <long>Pola Pilipainandmo Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-col">
+      <abbr>Kol</abbr>
+      <short>Kolosi</short>
+      <long>Pola Kolosinandmo Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Te</abbr>
+      <short>1 Tesalonika</short>
+      <long>Pola Tesalonikanandmo Tiratna Outna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Te</abbr>
+      <short>2 Tesalonika</short>
+      <long>Pola Tesalonikanandmo Iŋmbaia Mac Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Ti</abbr>
+      <short>1 Timoti</short>
+      <long>Pola Timotimo Tiratna Outna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Ti</abbr>
+      <short>2 Timoti</short>
+      <long>Pola Timotimo Iŋmbaia Mac Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Ta</abbr>
+      <short>Taitus</short>
+      <long>Pola Taitusmo Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Pm</abbr>
+      <short>Pilimon</short>
+      <long>Pola Pilimonmo Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Ib</abbr>
+      <short>Iburu</short>
+      <long>Iburunaŋgepta Timbiŋ Rapar</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Ie</abbr>
+      <short>Iemis</short>
+      <long>Iemisa Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Pi</abbr>
+      <short>1 Pita</short>
+      <long>Pita Tiratna Outna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Pi</abbr>
+      <short>2 Pita</short>
+      <long>Pita Iŋmbaia Mac Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Io</abbr>
+      <short>1 Ion</short>
+      <long>Ionna Tiratna Outna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Io</abbr>
+      <short>2 Ion</short>
+      <long>Ionna Iŋmbaia Mac Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Io</abbr>
+      <short>3 Ion</short>
+      <long>Ionna Mac Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Iu</abbr>
+      <short>Iuda</short>
+      <long>Iuda Tiratna Timbiŋ Rapar</long>
+    </name>
+    <name id="book-rev">
+      <abbr>KIEK</abbr>
+      <short>KIEK</short>
+      <long>Karaisa Iŋgoroca Eacrena Kambmo Ion Mbuŋa Moa Larurina</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="aacf7e871041460c7930e8ce9ecfc2e4" mimeType="application/xml" size="198041" uri="1CO.usx"/>
+        <resource checksum="5843ed94c1988f0d71e7f95617e15bf8" mimeType="application/xml" size="57161" uri="1JN.usx"/>
+        <resource checksum="75bbeb52e62997ea5366fa532d4e66aa" mimeType="application/xml" size="65946" uri="1PE.usx"/>
+        <resource checksum="daf908393300c34c078e917bfe2c4bcd" mimeType="application/xml" size="46047" uri="1TH.usx"/>
+        <resource checksum="0f47da7d6110830749cf667df1e1e80f" mimeType="application/xml" size="56427" uri="1TI.usx"/>
+        <resource checksum="f2e075b86c054b4ce58243c20a73f4a8" mimeType="application/xml" size="122997" uri="2CO.usx"/>
+        <resource checksum="dff5d3b0cfa0988b3235e25071699319" mimeType="application/xml" size="6840" uri="2JN.usx"/>
+        <resource checksum="84190cf75e664266421228ad7ee08676" mimeType="application/xml" size="36505" uri="2PE.usx"/>
+        <resource checksum="8f1397cd08ed53b2e80837b1f3f2bc92" mimeType="application/xml" size="25000" uri="2TH.usx"/>
+        <resource checksum="0524fad09f4b9c048309b547d94f3276" mimeType="application/xml" size="44554" uri="2TI.usx"/>
+        <resource checksum="3b2356e8d5f9f48fe6bff8721cc49bde" mimeType="application/xml" size="6908" uri="3JN.usx"/>
+        <resource checksum="6f9423791d4ef946bf5c2da24dc4dcd0" mimeType="application/xml" size="428646" uri="ACT.usx"/>
+        <resource checksum="f972c2a70f990c9e462cbd016df275a6" mimeType="application/xml" size="51038" uri="COL.usx"/>
+        <resource checksum="fa6173bebbcaf4ffa8671e32e21969aa" mimeType="application/xml" size="81404" uri="EPH.usx"/>
+        <resource checksum="005a8e2caa4c797be2358f6f541ffdfd" mimeType="application/xml" size="78918" uri="GAL.usx"/>
+        <resource checksum="b2af4caf470b46bbc6aa6e9d2a343a7f" mimeType="application/xml" size="166487" uri="HEB.usx"/>
+        <resource checksum="967dd41d1b56bdcdd62f92715cf1c3d4" mimeType="application/xml" size="57364" uri="JAS.usx"/>
+        <resource checksum="d7766203f57fb0577e5184f5fb895391" mimeType="application/xml" size="354314" uri="JHN.usx"/>
+        <resource checksum="2ec731a2482b4cff0ca9d7460ce03777" mimeType="application/xml" size="19115" uri="JUD.usx"/>
+        <resource checksum="663073bdcd14f7a01153553a5b527d44" mimeType="application/xml" size="454973" uri="LUK.usx"/>
+        <resource checksum="f5a6d833663d5d9d70bb09565b465b7b" mimeType="application/xml" size="425497" uri="MAT.usx"/>
+        <resource checksum="bec842115840d405a46d59e048726d15" mimeType="application/xml" size="235927" uri="MRK.usx"/>
+        <resource checksum="5369f7fd53a486029b042c87b439fd9d" mimeType="application/xml" size="11673" uri="PHM.usx"/>
+        <resource checksum="214becd6ced1d4ae32116a5625b4f905" mimeType="application/xml" size="49324" uri="PHP.usx"/>
+        <resource checksum="942ba32b68505c33f9be909e54d5dfc1" mimeType="application/xml" size="254630" uri="REV.usx"/>
+        <resource checksum="16368fae7aca0818b95d95a510f528ec" mimeType="application/xml" size="221278" uri="ROM.usx"/>
+        <resource checksum="17d092b95a2717cf265077e2cf07a6de" mimeType="application/xml" size="28255" uri="TIT.usx"/>
+      </container>
+      <resource checksum="8273942c3dc2c8db5e35ec8497ab4f8e" mimeType="application/xml" size="2767" uri="gai.ldml"/>
+      <resource checksum="b4c1b8b69d2cee07625167c66f7f7344" mimeType="application/xml" size="82754" uri="styles.xml"/>
+      <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="text/plain" size="15364" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="f053ea4eb33b508999ff090a6fbd1ff8" mimeType="application/zip" size="29303459" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>New Testament in Mborena Kam</name>
+      <description>New Testament in Mbore language (Mborena Kam)</description>
+      <descriptionLocal>NT Mborena Kam</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© Pioneer Bible Translators Association of Papua New Guinea, Inc.</p>
+        <p>© Pioneer Bible Translators of Dallas, Texas, USA</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Mike Herchenroeder</archivistName>
+    <dateArchived>2018-05-12T18:25:18.910266</dateArchived>
+    <dateUpdated>2018-05-12T18:25:18.910266</dateUpdated>
+    <comments>Replaces project MbKamUni</comments>
+  </archiveStatus>
+</DBLMetadata>

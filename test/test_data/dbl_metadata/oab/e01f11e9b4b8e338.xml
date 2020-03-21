@@ -1,0 +1,153 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="e01f11e9b4b8e338" revision="3">
+  <identification>
+    <name>Sob Jonah and Luke</name>
+    <nameLocal>Profet Yonab Budi / Dora Nama Lukde Feiaga</nameLocal>
+    <description>Sop: Profet Yonab Budi / Dora Nama Lukde Feiaga (Portions)</description>
+    <abbreviation>SobP15</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>2015-02-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.100.38</bundleProducer>
+    <systemId type="paratext">
+      <id>e01f11e9b4b8e338003fe0b0e32d863e03f50976</id>
+      <csetId>f985d6c9017def096c4ab4cabe28619e87e95326</csetId>
+      <name>urwDBL15</name>
+      <fullName>Sob Jonah and Luke</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>jRRvFv5qbn6wDpt3m</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>urw</iso>
+    <name>Sop</name>
+    <nameLocal>Sob Dora</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>urw</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-jon">
+      <abbr>Yna</abbr>
+      <short>Yona</short>
+      <long>Budib Kiari Fere Yona</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Lu</abbr>
+      <short>Luk</short>
+      <long>Dora Nama Lukde Feiaga</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="78a272a943b5fce7e3a2720642551554" mimeType="application/xml" size="11785" uri="JON.usx"/>
+        <resource checksum="fe429f0da008bd11511dc492f02a3ddc" mimeType="application/xml" size="410761" uri="LUK.usx"/>
+      </container>
+      <resource checksum="57a7695f4493cb98cbf5fec05dbcc3ca" mimeType="application/xml" size="78090" uri="styles.xml"/>
+      <resource checksum="64dc4f9d5d9b3bb8ace74a5513b962a0" mimeType="application/xml" size="2904" uri="urw.ldml"/>
+      <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="text/plain" size="15364" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="59359aa839e75c657e04197646ab5bdf" mimeType="application/zip" size="225118" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="JON"/>
+      <book code="LUK"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <nameLocal>Profet Yonab / Dora Nama Lukede Feiaga</nameLocal>
+      <description>Sob Portions 15</description>
+      <descriptionLocal>Sob Portions</descriptionLocal>
+      <canonicalContent>
+        <book code="JON"/>
+        <book code="LUK"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-jon" src="release/USX_1/JON.usx" role="JON"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>
+        <strong>Jonah</strong>
+      </p>
+        <p>© Pioneer Bible Translators Association of Papua New Guinea 2007</p>
+        <p>
+        <strong>Luke</strong>
+      </p>
+        <p>© Pioneer Bible Translators Association of Papua New Guinea, Inc. 2015</p>
+        <p>© Pioneer Bible Translators of Dallas, Texas, USA 2015</p>
+        <p>This work is licensed under the Creative Commons Attribution Non-commercial No-Derivatives 4.0 license.</p>
+        <p>http://creativecommons.org/licenses/by-nc-nd/4.0/</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>This Scripture is being provided by Pioneer Bible Translators. For more information see <a href="http://pioneerbible.org">pioneerbible.org</a></p>
+    </promoVersionInfo>
+  </promotion>
+  <progress>
+    
+    <book code="JON" stage="1"/>
+    <book code="LUK" stage="1"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Mike Herchenroeder</archivistName>
+    <dateArchived>2017-12-15T22:07:52.453768</dateArchived>
+    <dateUpdated>2017-12-20T17:36:13.021144</dateUpdated>
+    <comments>Updated comment in metadata and \rem in FRT</comments>
+  </archiveStatus>
+</DBLMetadata>

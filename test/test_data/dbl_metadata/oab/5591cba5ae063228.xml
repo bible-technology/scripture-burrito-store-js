@@ -1,0 +1,120 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="5591cba5ae063228" revision="1">
+  <identification>
+    <name>Mum Language NT Portions</name>
+    <description>Mum: Mum Language NT Portions Portions</description>
+    <abbreviation>MumNP18</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>2017-11</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.163</bundleProducer>
+    <systemId type="gbc">
+      <id>5b7324c4f8b34b7f53480735</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>5591cba5ae063228ca70880b463ca5c8476174ba</id>
+      <csetId>0cce4c058a97742705fc63db7b9208b4fa3cd25a</csetId>
+      <name>kqaDBL18</name>
+      <fullName>Mum NT Portions for DBL</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>false</finance>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>kqa</iso>
+    <name>Mum</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>kqa</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mt</abbr>
+      <short>Matyu</short>
+      <long>Kuyu avi Matyu yɨhimbɨvɨrami</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <resource checksum="2b902542de0b16a2a475b4eb9b3452ee" mimeType="application/octet-stream" size="536" uri="MumUni.lds"/>
+      <container uri="USX_1">
+        <resource checksum="35918ba1ae018d6ed1b98f2c0e0c5c43" mimeType="application/xml" size="450350" uri="MAT.usx"/>
+      </container>
+      <resource checksum="1e9782961e59079d0c919c517b9a0ec0" mimeType="application/xml" size="1738" uri="kqa.ldml"/>
+      <resource checksum="dc63ec73258e2e4a69311edea91f6087" mimeType="application/xml" size="78090" uri="styles.xml"/>
+      <resource checksum="ddf86170179e7bda081ca67126790529" mimeType="text/plain" size="13092" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="0c9bb01bae3f87fd8d3c86ef8c15c09a" mimeType="application/zip" size="202353" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="MAT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <nameLocal>Mum Tok Ples</nameLocal>
+      <description>Mum Matthew</description>
+      <descriptionLocal>Mum Matyu</descriptionLocal>
+      <canonicalContent>
+        <book code="MAT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© Pioneer Bible Translators Association of Papua New Guinea, Inc.<br/>© Pioneer Bible Translators of Dallas, Texas, USA </p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Mike Herchenroeder</archivistName>
+    <dateArchived>2018-08-14T19:14:03.239595</dateArchived>
+    <dateUpdated>2018-08-14T19:14:03.239595</dateUpdated>
+    <comments>First time to upload</comments>
+  </archiveStatus>
+</DBLMetadata>

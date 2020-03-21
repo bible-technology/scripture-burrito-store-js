@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="4ffcec8e8f3c33e7" revision="3">
+  <identification>
+    <name>God's Holy Book in Sankaran</name>
+    <nameLocal>Alla la Kitabu Seniman</nameLocal>
+    <description>Maninka, Sankaran: Alla la Kitabu Seniman Portions</description>
+    <abbreviation>GHBS</abbreviation>
+    <abbreviationLocal>AKS</abbreviationLocal>
+    <scope>Portions</scope>
+    <dateCompleted>2017-04-30</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.88</bundleProducer>
+    <systemId type="gbc">
+      <id>577ccd005117ad7f047becec</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>4ffcec8e8f3c33e7f0798b8091f1fb53b8e89a70</id>
+      <csetId>1065b40bf2a737306825fea585cd68d594c7dd5c</csetId>
+      <name>SAN</name>
+      <fullName>Sankaran</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>Revision</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <nameLocal>Pioneer Bible Translators</nameLocal>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>msc</iso>
+    <name>Sankaran Maninka</name>
+    <nameLocal>Sankaran</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>msc</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>GN</iso>
+      <name>Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-gen">
+      <abbr>A Damira</abbr>
+      <short>A Damira</short>
+      <long>A Damira</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luka</abbr>
+      <short>Luka</short>
+      <long>Kitabu mɛn sɛbɛni Nabi Luka bolo</long>
+    </name>
+    <name id="book-gal">
+      <short>book_GAL</short>
+      <long>Pɔli la bataki lawa Kalatikailu ma</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Yakuba</abbr>
+      <short>Yakuba</short>
+      <long>Yakuba</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="1eead08bb4056340af0ca39b718ee2c9" mimeType="application/octet-stream" size="405" uri="release/MKU.lds"/>
+    <resource checksum="6d9efb52f331934da71d21b1aa5475e1" mimeType="application/xml" size="33393" uri="release/USX_1/GAL.usx"/>
+    <resource checksum="65ddc053b6496e9c5bc19e2d5211578b" mimeType="application/xml" size="291462" uri="release/USX_1/GEN.usx"/>
+    <resource checksum="d81a8d7cd73d36337fa6706eb55396f0" mimeType="application/xml" size="23308" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="6288f156db941ab853b55b407fcd8be5" mimeType="application/xml" size="217558" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="5a5fcdf33259408a0ad4c28287a47ad2" mimeType="application/xml" size="3566" uri="release/ldml.xml"/>
+    <resource checksum="5a5fcdf33259408a0ad4c28287a47ad2" mimeType="application/octet-stream" size="3566" uri="release/msc.ldml"/>
+    <resource checksum="527a1c7b3e6edac9ca4401ec392d6f2b" mimeType="application/xml" size="82444" uri="release/styles.xml"/>
+    <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="application/octet-stream" size="15364" uri="release/versification.vrs"/>
+    <resource checksum="afacbcd197d750589ec9ad47e433faff" mimeType="application/zip" size="21494544" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="GAL"/>
+      <book code="GEN"/>
+      <book code="JAS"/>
+      <book code="LUK"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>Genesis, Luke, Galatians, James</description>
+      <descriptionLocal>A Damira, Luka, Yakuba, Kalatikailu</descriptionLocal>
+      <canonicalContent>
+        <book code="GAL"/>
+        <book code="GEN"/>
+        <book code="JAS"/>
+        <book code="LUK"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-gen" src="release/USX_1/GEN.usx" role="GEN"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© 2017—Traducteurs Pionniers de la Bible.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2016-07-06T09:29:31.069721</dateArchived>
+    <dateUpdated>2017-08-23T15:19:17.728766</dateUpdated>
+    <comments>added book of Luke</comments>
+  </archiveStatus>
+</DBLMetadata>

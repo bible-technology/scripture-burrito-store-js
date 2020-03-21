@@ -1,0 +1,343 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="9b076bc0f1856204" revision="3">
+  <identification>
+    <name>Pular Fuuta-Jallon New Testament</name>
+    <nameLocal>Version Pular Fuuta-Jallon</nameLocal>
+    <description>Pular: Version Pular Fuuta-Jallon New Testament</description>
+    <abbreviation>PFJV</abbreviation>
+    <abbreviationLocal>VPFJ</abbreviationLocal>
+    <scope>New Testament</scope>
+    <dateCompleted>2010-05-01</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.88</bundleProducer>
+    <systemId type="gbc">
+      <id>55df1d035117ad70e34b9cde</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>9b076bc0f18562041a7de51244f4b2f1dd53941f</id>
+      <csetId>795ca63382a65cf2a77d1fb69b5cbbb06590b217</csetId>
+      <name>PNT</name>
+      <fullName>Pular New Testament DBL</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>false</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>fuf</iso>
+    <name>Pular</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>fuf</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>GN</iso>
+      <name>Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mat.</abbr>
+      <short>LINJIILA MATTA</short>
+      <long>NO MATTA YOTTINIRI LINJIILA ON NON</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mrk.</abbr>
+      <short>LINJIILA MARKUUSA</short>
+      <long>NO MARKUUSA YOTTINIRI LINJIILA ON NON</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luk.</abbr>
+      <short>LINJIILA LUUKA</short>
+      <long>NO LUUKA YOTTINIRI LINJIILA ON NON</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Yhn.</abbr>
+      <short>LINJIILA YUUHANNA</short>
+      <long>NO YUUHANNA YOTTINIRI LINJIILA ON NON</long>
+    </name>
+    <name id="book-act">
+      <abbr>Sah.</abbr>
+      <short>KUUƊE SAHAABAAƁE ƁEN</short>
+      <long>DEFTERE KUUƊE SAHAABAAƁE ƁEN</long>
+    </name>
+    <name id="book-rom">
+      <short>ROOMU</short>
+      <long>ƁATAKURU PUULUSA HAA E ƁE ROOMU ƁEN</long>
+    </name>
+    <name id="book-1co">
+      <short>KORENTI 1</short>
+      <long>ƁATAKURU PUULUSA ARANURU HAA E ƁE KORENTI ƁEN</long>
+    </name>
+    <name id="book-2co">
+      <short>KORENTI 2</short>
+      <long>ƁATAKURU PUULUSA ƊIMMURU HAA E ƁE KORENTI ƁEN</long>
+    </name>
+    <name id="book-gal">
+      <short>GALAASI</short>
+      <long>ƁATAKURU PUULUSA HAA E ƁE GALAASI ƁEN</long>
+    </name>
+    <name id="book-eph">
+      <short>EFEESI</short>
+      <long>ƁATAKURU PUULUSA HAA E ƁE EFEESI ƁEN</long>
+    </name>
+    <name id="book-php">
+      <short>FILIPII</short>
+      <long>ƁATAKURU PUULUSA HAA E ƁE FILIPII ƁEN</long>
+    </name>
+    <name id="book-col">
+      <short>KOLOOSI</short>
+      <long>ƁATAKURU PUULUSA HAA E ƁE KOLOOSI ƁEN</long>
+    </name>
+    <name id="book-1th">
+      <short>TESALONII 1</short>
+      <long>ƁATAKURU PUULUSA ARANURU HAA E ƁE TESALONII ƁEN</long>
+    </name>
+    <name id="book-2th">
+      <short>TESALONII 2</short>
+      <long>ƁATAKURU PUULUSA ƊIMMURU HAA E ƁE TESALONII ƁEN</long>
+    </name>
+    <name id="book-1ti">
+      <short>TIMOTEE 1</short>
+      <long>ƁATAKURU PUULUSA ARANURU HAA E TIMOTEE</long>
+    </name>
+    <name id="book-2ti">
+      <short>TIMOTEE 2</short>
+      <long>ƁATAKURU PUULUSA ƊIMMURU HAA E TIMOTEE</long>
+    </name>
+    <name id="book-tit">
+      <short>TIITUUSA</short>
+      <long>ƁATAKURU PUULUSA HAA E TIITUUSA</long>
+    </name>
+    <name id="book-phm">
+      <short>FILIMUUNU</short>
+      <long>ƁATAKURU PUULUSA HAA E FILIMUUNU</long>
+    </name>
+    <name id="book-heb">
+      <short>YAHUUDIYANKEEƁE</short>
+      <long>ƁATAKURU NAƁANAANDU YAHUUDIYANKEEƁE ƁEN</long>
+    </name>
+    <name id="book-jas">
+      <short>YAAQUUBA</short>
+      <long>ƁATAKURU YAAQUUBA NDUN</long>
+    </name>
+    <name id="book-1pe">
+      <short>PETRUUSU 1</short>
+      <long>ƁATAKURU PETRUUSU ARANURU NDUN</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2Pe.</abbr>
+      <short>PETRUUSU 2</short>
+      <long>ƁATAKURU PETRUUSU ƊIMMURU NDUN</long>
+    </name>
+    <name id="book-1jn">
+      <short>YUUHANNA 1</short>
+      <long>ƁATAKURU YUUHANNA ARANURU NDUN</long>
+    </name>
+    <name id="book-2jn">
+      <short>YUUHANNA 2</short>
+      <long>ƁATAKURU YUUHANNA ƊIMMURU NDUN</long>
+    </name>
+    <name id="book-3jn">
+      <short>YUUHANNA 3</short>
+      <long>ƁATAKURU YUUHANNA TAMMURU NDUN</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Yud.</abbr>
+      <short>YUUDU</short>
+      <long>ƁATAKURU YUUDU NDUN</long>
+    </name>
+    <name id="book-rev">
+      <short>FEƝƝINANNDE</short>
+      <long>FEƝƝINANNDE</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <resource checksum="5c831f2a623ad1ac005b2dc9d3c1909a" mimeType="application/octet-stream" size="1089" uri="Pular Unicode.lds"/>
+      <container uri="USX_1">
+        <resource checksum="47e04a8b12e29e06a6b3fc6961ee306a" mimeType="application/xml" size="74712" uri="1CO.usx"/>
+        <resource checksum="578658d26c5ca25d95b1c4acfcdc138f" mimeType="application/xml" size="19461" uri="1JN.usx"/>
+        <resource checksum="dac45aa9bcb65e34ac452d57948a7cde" mimeType="application/xml" size="21558" uri="1PE.usx"/>
+        <resource checksum="2d0c2435287287e710d4651afe44d8e0" mimeType="application/xml" size="15364" uri="1TH.usx"/>
+        <resource checksum="316a2ba061ae840a8a20ac343f2698af" mimeType="application/xml" size="20388" uri="1TI.usx"/>
+        <resource checksum="cf2f5850a90bed8bb769eef0a4bfcbe6" mimeType="application/xml" size="48386" uri="2CO.usx"/>
+        <resource checksum="8c1e12ba66f7c862cf154c2538edfb84" mimeType="application/xml" size="2961" uri="2JN.usx"/>
+        <resource checksum="25133504c47d64647d49830d6ce62ff1" mimeType="application/xml" size="12942" uri="2PE.usx"/>
+        <resource checksum="af82ccff22f4e5cacd8325afc66350ba" mimeType="application/xml" size="8609" uri="2TH.usx"/>
+        <resource checksum="6fa19e30130599bbf29503e526c047b7" mimeType="application/xml" size="14639" uri="2TI.usx"/>
+        <resource checksum="1d3520240788564200b6156cd8177e09" mimeType="application/xml" size="2947" uri="3JN.usx"/>
+        <resource checksum="be9f76e56185b439090f06496a228e0f" mimeType="application/xml" size="194112" uri="ACT.usx"/>
+        <resource checksum="e307cf5edd65f76337c71eff9bc977cf" mimeType="application/xml" size="17151" uri="COL.usx"/>
+        <resource checksum="b1d1d845206ce35ad170c242c0582317" mimeType="application/xml" size="25873" uri="EPH.usx"/>
+        <resource checksum="2dc493b7d169f493de4169757d795570" mimeType="application/xml" size="26639" uri="GAL.usx"/>
+        <resource checksum="613c9c8082da6e77e3f69a157e896a74" mimeType="application/xml" size="61022" uri="HEB.usx"/>
+        <resource checksum="f10f8c5efea9f94da08c17e8bbecc624" mimeType="application/xml" size="19262" uri="JAS.usx"/>
+        <resource checksum="b6ee7dabe3b45cf9268ea926d204a5e0" mimeType="application/xml" size="155751" uri="JHN.usx"/>
+        <resource checksum="824e65f08b982eeea2ef1291ee9b3f41" mimeType="application/xml" size="5952" uri="JUD.usx"/>
+        <resource checksum="2008c61af6731dc6e97f164edddf70b0" mimeType="application/xml" size="211435" uri="LUK.usx"/>
+        <resource checksum="37d2e4c936d7680c83cb96bdb127cf76" mimeType="application/xml" size="199259" uri="MAT.usx"/>
+        <resource checksum="094317bc40465e3a7f50daa7e657e799" mimeType="application/xml" size="127554" uri="MRK.usx"/>
+        <resource checksum="e30da1966f086b45cd37b0ebdc6dc23b" mimeType="application/xml" size="4423" uri="PHM.usx"/>
+        <resource checksum="9e06ea31f52dd1cf01305dfb8a561224" mimeType="application/xml" size="18988" uri="PHP.usx"/>
+        <resource checksum="6b537da91301976a0d7cec34e4c1ff8a" mimeType="application/xml" size="93041" uri="REV.usx"/>
+        <resource checksum="64a1af6432c35343d38b0ab701900988" mimeType="application/xml" size="80818" uri="ROM.usx"/>
+        <resource checksum="8f183ae13c15cdf8f153b2f550ff2d91" mimeType="application/xml" size="9243" uri="TIT.usx"/>
+      </container>
+      <resource checksum="30865b658d4d87d4e4e08e83df090363" mimeType="application/octet-stream" size="2980" uri="fuf.ldml"/>
+      <resource checksum="30865b658d4d87d4e4e08e83df090363" mimeType="application/xml" size="2980" uri="ldml.xml"/>
+      <resource checksum="c1e270b1928104bd70e216c7a48c19fb" mimeType="application/xml" size="82444" uri="styles.xml"/>
+      <resource checksum="49a0c15caeb3c8405bb423a418f45ce2" mimeType="application/octet-stream" size="9112" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="0121b460e7d8e44ba02dd61831f86b74" mimeType="application/zip" size="1009577" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <name>Pular Fuuta-Jallon Version</name>
+      <description>New Testament</description>
+      <descriptionLocal>Injil</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© 2010-Pioneer Bible Translators</p>
+        <p>© 2010-Traducteurs Pionniers de la Bible</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>This translation, published by Pioneer Bible Translators, was published in 2011.</p>
+      <p>If you are interested in obtaining a printed copy, please contact wab.admin@pbti.org.</p>
+      <p>The translation was completed in collaboration with Christian Reformed World Mission.</p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2015-08-27T14:32:30.978798</dateArchived>
+    <dateUpdated>2017-11-14T13:50:09.651918</dateUpdated>
+    <comments>added book names</comments>
+  </archiveStatus>
+</DBLMetadata>

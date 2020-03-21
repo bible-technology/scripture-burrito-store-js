@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="0c2ff0a5c8b9069c" revision="1">
+  <identification>
+    <name>Nend Portions - Mark</name>
+    <nameLocal>MAK Yakŋ Ohɨrand Ya Imbɨr Makɨv Mpamar</nameLocal>
+    <description>Mark in Nend</description>
+    <abbreviation>NendNP03</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>2003-01-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.100.75</bundleProducer>
+    <systemId type="paratext">
+      <id>0c2ff0a5c8b9069c6014fa93a9fd32aae80c44ca</id>
+      <csetId>a152a81c68819ed3b6d79e1878819f7f5cdc8e6f</csetId>
+      <name>anhDBL03</name>
+      <fullName>Nend Portions - Mark</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>BKEpZHB2QSGoM85oq</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsAdmin>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <finance>false</finance>
+      <qa>false</qa>
+      <uid>54650ce35117ad68c4c49e87</uid>
+      <name>Bible Society of Papua New Guinea</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>false</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>anh</iso>
+    <name>Nend</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>anh</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mrk">
+      <abbr>Mk</abbr>
+      <short>Mak</short>
+      <long>Yakŋ Ohɨrand Ya Imbɨr Makɨv Mpamar</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="547dfaad75282981e43db7feb2c17700" mimeType="application/xml" size="182801" uri="MRK.usx"/>
+      </container>
+      <resource checksum="c451c3a9e24ba4c97299ad02a072718d" mimeType="application/xml" size="2377" uri="anh.ldml"/>
+      <resource checksum="a54f9131ab413d5368316fdc65426cee" mimeType="application/xml" size="78083" uri="styles.xml"/>
+      <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="text/plain" size="15364" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="fafd8b32a816a4ca30fa2c453045dc8a" mimeType="application/zip" size="119824" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="MRK"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <descriptionLocal>Mark in Nend</descriptionLocal>
+      <canonicalContent>
+        <book code="MRK"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>©Bible Society of Papua New Guinea 2004</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <h1>MAK </h1>
+      <h2>Yakŋ Ohɨrand Ya Imbɨr Makɨv Mpamar</h2>
+      <p>This translation was produced by Pioneer Bible Translators, and was published in 2004 by the Bible Society of Papua New Guinea.</p>
+      <p>If you are interested in obtaining a printed copy, please contact the Pioneer Bible Translators at <a href="http://www.pioneerbible.org/">www.pioneerbible.org</a></p>
+    </promoVersionInfo>
+  </promotion>
+  <progress>
+    
+    <book code="MRK" stage="1"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Mike Herchenroeder</archivistName>
+    <dateArchived>2019-03-08T20:29:15.315893</dateArchived>
+    <dateUpdated>2019-03-08T20:29:15.315893</dateUpdated>
+    <comments>First upload</comments>
+  </archiveStatus>
+</DBLMetadata>

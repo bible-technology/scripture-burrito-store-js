@@ -1,0 +1,126 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="f95e2d9b384f8e6e" revision="1">
+  <identification>
+    <name>Caning Bible Translation</name>
+    <nameLocal>Sorunu Kaläg na Ikä Caning</nameLocal>
+    <description>Caning Bible Translation</description>
+    <abbreviation>SHJ</abbreviation>
+    <scope>Bible</scope>
+    <bundleProducer>Paratext/8.0.100.71</bundleProducer>
+    <systemId type="paratext">
+      <id>f95e2d9b384f8e6ecadb928f3677776d376f62ca</id>
+      <csetId>2724db0458ca03c4fd0f65b3d7471b441fbf2627</csetId>
+      <name>SHJ</name>
+      <fullName>Caning Bible Translation</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>obnKPBrYvTCGJfjSD</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>true</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsAdmin>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>shj</iso>
+    <name>Shatt</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>shj</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>SS</iso>
+      <name>South Sudan</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-luk">
+      <short>Luka</short>
+      <long>Inycil Luka</long>
+    </name>
+  </names>
+  <manifest>
+    <container uri="release">
+      <container uri="USX_1">
+        <resource checksum="c1182e0d8e154a3c1222adf6afde5d8b" mimeType="application/xml" size="212951" uri="LUK.usx"/>
+      </container>
+      <resource checksum="f26d0cb723322a30292a1b9cfdb6d837" mimeType="application/xml" size="2781" uri="shj.ldml"/>
+      <resource checksum="09d8dc56095cc28ed6a74241227008d0" mimeType="application/xml" size="82459" uri="styles.xml"/>
+      <resource checksum="2943e700c92e815ce506dc5d584b86d8" mimeType="text/plain" size="9977" uri="versification.vrs"/>
+    </container>
+    <container uri="source">
+      <resource checksum="9e21168c30e95a372c4382d992b0f721" mimeType="application/zip" size="6463808" uri="source.zip"/>
+    </container>
+  </manifest>
+  <source>
+    <canonicalContent>
+      <book code="LUK"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>Gospel of Luke</description>
+      <descriptionLocal>Inycil Luka na Ikä Caning</descriptionLocal>
+      <canonicalContent>
+        <book code="LUK"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>© 2018 Pioneer Bible Translators</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <progress>
+    
+    <book code="LUK" stage="4"/>
+  </progress>
+  <archiveStatus>
+    <archivistName>Melva Wahl</archivistName>
+    <dateArchived>2018-10-09T19:24:30.577942</dateArchived>
+    <dateUpdated>2018-10-09T19:24:30.577942</dateUpdated>
+    <comments>first upload</comments>
+  </archiveStatus>
+</DBLMetadata>

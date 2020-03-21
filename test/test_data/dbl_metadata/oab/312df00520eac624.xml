@@ -1,0 +1,363 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="312df00520eac624" revision="2">
+  <identification>
+    <name>Takuu New Testament</name>
+    <nameLocal>Na Taratara TeAtua i naa taratara Takuu</nameLocal>
+    <description>Takuu: Na Taratara TeAtua i naa taratara Takuu New Testament</description>
+    <abbreviation>NHO</abbreviation>
+    <abbreviationLocal>Takuu</abbreviationLocal>
+    <scope>New Testament</scope>
+    <dateCompleted>2009</dateCompleted>
+    <bundleProducer>Paratext/7.6.54.99</bundleProducer>
+    <systemId type="gbc">
+      <id>5768a2fd5117ad34fd1d396d</id>
+    </systemId>
+    <systemId type="paratext">
+      <id>312df00520eac6246efe4bc81bf5f81aee8ac50d</id>
+      <csetId>3f12d5515cc2261a1f065c2dff826f784db7452f</csetId>
+      <name>nhoDBL</name>
+      <fullName>Takuu [nho] Papua New Guinea</fullName>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>First</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>eBible.org</abbr>
+      <url>http://eBible.org</url>
+      <nameLocal>eBible.org</nameLocal>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </rightsHolder>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>545d2cb072ce7f9950308849</uid>
+      <name>Digital Bible Society</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>nho</iso>
+    <name>Takuu</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>nho</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mat">
+      <abbr>Mt</abbr>
+      <short>MATTHEW</short>
+      <long>MATTHEW TE LONO TAUKAREKA I NAA TARATARA MATTHEW</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mk</abbr>
+      <short>MARK</short>
+      <long>MARK TE LONO TAUKAREKA I NAA TARATARA MARK</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Lk</abbr>
+      <short>LUKE</short>
+      <long>LUKE TE LONO TAUKAREKA I NAA TARATARA LUKE</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Jn</abbr>
+      <short>JOHN</short>
+      <long>JOHN TE LONO TAUKAREKA I NAA TARATARA JOHN</long>
+    </name>
+    <name id="book-act">
+      <abbr>Acts</abbr>
+      <short>ACTS</short>
+      <long>ACTS NAA HEHEUNA NAA APOSOL</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Rom</abbr>
+      <short>ROME</short>
+      <long>ROME TE PAS PAUL KI NAA TAMA TE LOTU I ROME</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Cor</abbr>
+      <short>1 CORINTHIANS</short>
+      <long>1 CORINTHIANS TE PAS MUA PAUL KI NAA TAMA TE LOTU I KORINT</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Cor</abbr>
+      <short>2 CORINTHIANS</short>
+      <long>2 CORINTHIANS SSOA TE PAS PAUL KI NAA TAMA TE LOTU I KORINT</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Gal</abbr>
+      <short>GALATIANS</short>
+      <long>GALATIANS TE PAS PAUL KI NAA TAMA I GALESIA</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Eph</abbr>
+      <short>EPHESIANS</short>
+      <long>EPHESIANS TE PAS PAUL KI NAA TAMA TE LOTU I EPISES</long>
+    </name>
+    <name id="book-php">
+      <abbr>Phil</abbr>
+      <short>PHILIPPIANS</short>
+      <long>PHILIPPIANS TE PAS PAUL KI NAA TAMA TE LOTU I FILIPAI</long>
+    </name>
+    <name id="book-col">
+      <abbr>Col</abbr>
+      <short>COLOSSIANS</short>
+      <long>COLOSSIANS TE PAS PAUL KI NAA TAMA TE LOTU I KOLOSE</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Thes</abbr>
+      <short>1 THESSALONIANS</short>
+      <long>1 THESSALONIANS TE PAS MUA PAUL KI NAA TAMA TE LOTU I TESALONAIKA</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Thes</abbr>
+      <short>2 THESSALONIANS</short>
+      <long>2 THESSALONIANS SSOA TE PAS PAUL KI NAA TAMA TE LOTU I TESALONAIKA</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Tim</abbr>
+      <short>1 TIMOTHY</short>
+      <long>1 TIMOTHY TE PAS MUA PAUL KI TIMOTHY</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Tim</abbr>
+      <short>2 TIMOTHY</short>
+      <long>2 TIMOTHY SSOA TE PAS PAUL KI TIMOTHY</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Tit</abbr>
+      <short>TITUS</short>
+      <long>TITUS TE PAS PAUL KI TITUS</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Phlm</abbr>
+      <short>FILEMON</short>
+      <long>FILEMON TE PAS PAUL KI FILEMON</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Heb</abbr>
+      <short>HEBREWS</short>
+      <long>HEBREWS TE PAS E SISSII KI NAA HEBREW</long>
+    </name>
+    <name id="book-jas">
+      <abbr>Jas</abbr>
+      <short>JAMES</short>
+      <long>JAMES TE PAS JAMES</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Pet</abbr>
+      <short>1 PETER</short>
+      <long>1 PETER TE PAS MUA PETER</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Pet</abbr>
+      <short>2 PETER</short>
+      <long>2 PETER TE SSOA TE PAS PETER</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 Jn</abbr>
+      <short>1 JOHN</short>
+      <long>1 JOHN TE PAS MUA JOHN</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 Jn</abbr>
+      <short>2 JOHN</short>
+      <long>2 JOHN SSOA TE PAS JOHN</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 Jn</abbr>
+      <short>3 JOHN</short>
+      <long>3 JOHN TTORU NAA PAS JOHN</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Jude</abbr>
+      <short>JUDE</short>
+      <long>JUDE TE PAS JUDE</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Rev</abbr>
+      <short>REVELATION</short>
+      <long>REVELATION NAA VANA JOHN NI HAKAKIITEA TEATUA</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="ed3fc2d28f10787996131b6634d81c3f" mimeType="application/xml" size="130465" uri="release/USX_1/1CO.usx"/>
+    <resource checksum="239e6e1205828ccd6c3b51e9dfc20028" mimeType="application/xml" size="32191" uri="release/USX_1/1JN.usx"/>
+    <resource checksum="ffab9a0b073969153974b9c324671784" mimeType="application/xml" size="39211" uri="release/USX_1/1PE.usx"/>
+    <resource checksum="0d22f0f566d5019597faf3d03d1291a6" mimeType="application/xml" size="28135" uri="release/USX_1/1TH.usx"/>
+    <resource checksum="cba08781b20211d11fb9327f578906fb" mimeType="application/xml" size="34395" uri="release/USX_1/1TI.usx"/>
+    <resource checksum="6f8ace09b66462bdc5a8ae91f8c9ab20" mimeType="application/xml" size="80191" uri="release/USX_1/2CO.usx"/>
+    <resource checksum="8fd380c21e4f1a30eb186f5ce6860da7" mimeType="application/xml" size="4889" uri="release/USX_1/2JN.usx"/>
+    <resource checksum="581acff1ed755f8712ab6cb87d21e456" mimeType="application/xml" size="23680" uri="release/USX_1/2PE.usx"/>
+    <resource checksum="08a753cd0bebba6880040d1b1c173ce6" mimeType="application/xml" size="16506" uri="release/USX_1/2TH.usx"/>
+    <resource checksum="972c896de8b61ad9764cdbbcb9ba2b6b" mimeType="application/xml" size="26361" uri="release/USX_1/2TI.usx"/>
+    <resource checksum="e9495303ef20d2d8963dac92090eabeb" mimeType="application/xml" size="5127" uri="release/USX_1/3JN.usx"/>
+    <resource checksum="eafa2b624dbabad5e432f1330510afe8" mimeType="application/xml" size="303962" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="7750769f65903122e6c724beb5875c3a" mimeType="application/xml" size="32550" uri="release/USX_1/COL.usx"/>
+    <resource checksum="208773def56d00261e25d8a350a52c8b" mimeType="application/xml" size="46462" uri="release/USX_1/EPH.usx"/>
+    <resource checksum="4b679d27eaf3f9cb56d1f177169de694" mimeType="application/xml" size="48163" uri="release/USX_1/GAL.usx"/>
+    <resource checksum="12838fefa5b28f0fddd470dbc6dd7963" mimeType="application/xml" size="108735" uri="release/USX_1/HEB.usx"/>
+    <resource checksum="2d6ad98ed82a20c9f5902de6a6d7ac1d" mimeType="application/xml" size="34735" uri="release/USX_1/JAS.usx"/>
+    <resource checksum="d3f0ec7738be39966e7aa1d64dac2447" mimeType="application/xml" size="228730" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="0d0ab9e0cad28874249f71737657ff88" mimeType="application/xml" size="11804" uri="release/USX_1/JUD.usx"/>
+    <resource checksum="5a452245d831bb3262981f977838325b" mimeType="application/xml" size="350086" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="3b28d62cfadd6cda5fff3743b451d6bf" mimeType="application/xml" size="345078" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="7da5a754d048fa74f4cb6d63e3155e9e" mimeType="application/xml" size="209318" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="c27f96430ae80e0970762d9c1515ae74" mimeType="application/xml" size="8527" uri="release/USX_1/PHM.usx"/>
+    <resource checksum="8ec0485ad6cf61a597a9ba0e7e0a7aa2" mimeType="application/xml" size="34224" uri="release/USX_1/PHP.usx"/>
+    <resource checksum="09521a64fca851bbe365c0ba8cba73e7" mimeType="application/xml" size="169906" uri="release/USX_1/REV.usx"/>
+    <resource checksum="184ef76017b6ddc79d3aa8a0867c5df8" mimeType="application/xml" size="138021" uri="release/USX_1/ROM.usx"/>
+    <resource checksum="aa433ebad49c2a78eae25dff1093585d" mimeType="application/xml" size="16375" uri="release/USX_1/TIT.usx"/>
+    <resource checksum="087018217b9c87205ceed5ec336ad422" mimeType="application/octet-stream" size="3351" uri="release/nho.ldml"/>
+    <resource checksum="8aac6824392f35bb629cfdf50c625c53" mimeType="application/octet-stream" size="391" uri="release/nho.lds"/>
+    <resource checksum="0caa251c522ec2a8cdbd09b98bfded46" mimeType="application/xml" size="78095" uri="release/styles.xml"/>
+    <resource checksum="520456dcf8d592eb25057d32e28db763" mimeType="application/octet-stream" size="13107" uri="release/versification.vrs"/>
+    <resource checksum="cec5d74632fb5251e897ea27993ed7c6" mimeType="application/zip" size="10385292" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="1CO"/>
+      <book code="1JN"/>
+      <book code="1PE"/>
+      <book code="1TH"/>
+      <book code="1TI"/>
+      <book code="2CO"/>
+      <book code="2JN"/>
+      <book code="2PE"/>
+      <book code="2TH"/>
+      <book code="2TI"/>
+      <book code="3JN"/>
+      <book code="ACT"/>
+      <book code="COL"/>
+      <book code="EPH"/>
+      <book code="GAL"/>
+      <book code="HEB"/>
+      <book code="JAS"/>
+      <book code="JHN"/>
+      <book code="JUD"/>
+      <book code="LUK"/>
+      <book code="MAT"/>
+      <book code="MRK"/>
+      <book code="PHM"/>
+      <book code="PHP"/>
+      <book code="REV"/>
+      <book code="ROM"/>
+      <book code="TIT"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <description>commo</description>
+      <descriptionLocal>commo</descriptionLocal>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="EPH"/>
+        <book code="GAL"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JUD"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+        <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+        <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+        <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+        <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+        <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+        <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+        <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+        <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+        <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+        <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+        <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+        <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+        <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+        <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+        <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+        <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+        <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+        <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+        <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+        <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+        <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+        <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+        <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Copyright © 2009 Translation Committee of Takuu, Mortlock Community</p>
+        <p>Language: Takuu</p>
+        <p>Translation by: Translation Committee of Takuu, Mortlock Community</p>
+        <p>Contributor: Isles of the Sea</p>
+        <p>This translation is made available to you under the terms of the<a href="http://creativecommons.org/licenses/by-nd/4.0/"> Creative Commons Attribution-no derivatives license</a>.</p>
+        <p>You may share and redistribute this Bible translation or extracts from it in any format, provided that:</p>
+        <p>You include the above copyright information.</p>
+        <p>You do not make any derivative works that change any of the actual words or punctuation of the Scriptures.</p>
+        <p>
+        <br/>
+      </p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>For more information about this translation, please see <a href="http://isles-of-the-sea.org/projects/takuu/">http://isles-of-the-sea.org/projects/takuu/</a>. To read this translation online, please go to <a href="http://PNGScriptures.org/nho/">http://PNGScriptures.org/nho/</a>. </p>
+    </promoVersionInfo>
+  </promotion>
+  <archiveStatus>
+    <archivistName>Michael Johnson</archivistName>
+    <dateArchived>2016-07-01T18:48:03.562977</dateArchived>
+    <dateUpdated>2016-07-01T18:48:03.562977</dateUpdated>
+    <comments>Initial submission to the ETEN DBL.</comments>
+  </archiveStatus>
+</DBLMetadata>

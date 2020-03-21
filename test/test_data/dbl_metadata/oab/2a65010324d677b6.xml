@@ -1,0 +1,140 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.1" id="2a65010324d677b6" revision="1">
+  <identification>
+    <name>Akukem Portions for DBL</name>
+    <nameLocal>Mak Osɨrisira Akaman Aghuuŋ ko Iesusɨm Mbɨsevisir Gumasi</nameLocal>
+    <description>Published Mark &amp; Acts</description>
+    <abbreviation>AkgPor10</abbreviation>
+    <scope>Portions</scope>
+    <dateCompleted>2017-08-01</dateCompleted>
+    <bundleProducer>Paratext/8.0.100.24</bundleProducer>
+    <systemId type="paratext">
+      <id>2a65010324d677b6484a75fadc6c4e66316ff662</id>
+      <csetId>03305cdc2f4d858af6ec28b3eeae22509db6b816</csetId>
+      <name>spmDBLp</name>
+      <fullName>spmDBLp</fullName>
+    </systemId>
+    <systemId type="ptreg">
+      <id>hyAL9mdA2Fos4Cwx9</id>
+    </systemId>
+  </identification>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>Revision</translationType>
+    <audience>Common</audience>
+  </type>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>PBT</abbr>
+      <url>www.pioneerbible.org</url>
+      <nameLocal>Pioneer Bible Translators</nameLocal>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsHolder>
+    <rightsAdmin>
+      <url>www.pioneerbible.org</url>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </rightsAdmin>
+    <contributor>
+      <content>false</content>
+      <publication>true</publication>
+      <management>false</management>
+      <qa>false</qa>
+      <uid>54650ce35117ad68c4c49e87</uid>
+      <name>Bible Society of Papua New Guinea</name>
+    </contributor>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>545d2cb013cb53cafc2bad91</uid>
+      <name>Pioneer Bible Translators</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>spm</iso>
+    <name>Akukem</name>
+    <nameLocal>Akɨghɨman Akam</nameLocal>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>spm</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>PG</iso>
+      <name>Papua New Guinea</name>
+    </country>
+  </countries>
+  <format>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <names>
+    <name id="book-mrk">
+      <abbr>Mk</abbr>
+      <short>Mak</short>
+      <long>MAK Osɨrisira Akaman Aghuuŋ</long>
+    </name>
+    <name id="book-act">
+      <abbr>Ap</abbr>
+      <short>Iesus%u0268m Mb%u0268sevisir Gumasi</short>
+      <long>Iesus%u0268m Mb%u0268sevisir Gumasir I%u014Baarir%u0268 Mb%u0268ghar</long>
+    </name>
+  </names>
+  <manifest>
+    <resource checksum="0b88f00a6d8d83ff1b3b5a5c3249e3fd" mimeType="application/xml" size="410207" uri="release/USX_1/ACT.usx"/>
+    <resource checksum="0c94a44f785f406a9f6675b8a57ab6c2" mimeType="application/xml" size="179149" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="3a2dec9101b2a8a485af9db9add084ff" mimeType="application/octet-stream" size="3619" uri="release/spm.ldml"/>
+    <resource checksum="a54f9131ab413d5368316fdc65426cee" mimeType="application/xml" size="78083" uri="release/styles.xml"/>
+    <resource checksum="f6d7f2f8ac3963453de613e666ab4e3f" mimeType="application/octet-stream" size="15364" uri="release/versification.vrs"/>
+    <resource checksum="5f0f7b9fde2812cb965c4f1569938587" mimeType="application/zip" size="314496" uri="source/source.zip"/>
+</manifest>
+  <source>
+    <canonicalContent>
+      <book code="ACT"/>
+      <book code="MRK"/>
+    </canonicalContent>
+    <structure>
+      <content src="source/source.zip" role="sourceZip"/>
+    </structure>
+  </source>
+  <publications>
+    <publication id="p1" default="true">
+      <descriptionLocal>Published Mark &amp; Acts</descriptionLocal>
+      <abbreviation>Akg-MkAc</abbreviation>
+      <abbreviationLocal>Akg-MkAc</abbreviationLocal>
+      <canonicalContent>
+        <book code="ACT"/>
+        <book code="MRK"/>
+      </canonicalContent>
+      <structure>
+        <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+        <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+      </structure>
+    </publication>
+  </publications>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Mak Osɨrisira Akaman Aghuuŋ [Mark]</p>
+        <p>© 2006 Bible Society of Papua New Guinea</p>
+        <p>Iesusɨm Mbɨsevisir Gumasi [Acts]</p>
+        <p>© 2010 Pioneer Bible Translators</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+  <archiveStatus>
+    <archivistName>Mike Herchenroeder</archivistName>
+    <dateArchived>2017-08-23T23:02:22.956442</dateArchived>
+    <dateUpdated>2017-08-23T23:02:22.956442</dateUpdated>
+    <comments>23-Aug-17 Previously published books of Mark (2006) and Acts (2010)</comments>
+  </archiveStatus>
+</DBLMetadata>

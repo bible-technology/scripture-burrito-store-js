@@ -1,0 +1,457 @@
+<?xml version="1.0" standalone="yes"?><DBLMetadata version="2.2.1" id="2dd568eeff29fb3c" revision="2">
+    <identification>
+      <name>Terjemahan Sederhana Indonesia</name>
+      <nameLocal>Perjanjian Baru dalam Terjemahan Sederhana Indonesia Edisi Kedua</nameLocal>
+      <description>Plain Indonesian Translation</description>
+      <abbreviation>TSI</abbreviation>
+      <abbreviationLocal>TSI</abbreviationLocal>
+      <scope>Bible</scope>
+      <bundleProducer>Paratext/9.0.100.5</bundleProducer>
+      <systemId type="paratext">
+        <id>2dd568eeff29fb3c5185578e6c10076ffe735a90</id>
+        <csetId>cb60b946d836b0736bfc78a3b54fe83e240bfcb8</csetId>
+        <name>TSI</name>
+        <fullName>Terjemahan Sederhana Indonesia</fullName>
+      </systemId>
+      <systemId type="ptreg">
+        <id>EKckvYazFFXN9gGiu</id>
+      </systemId>
+    </identification>
+    <type>
+      <medium>text</medium>
+      <isConfidential>false</isConfidential>
+      <hasCharacters>true</hasCharacters>
+      <isTranslation>true</isTranslation>
+      <isExpression>true</isExpression>
+      <translationType>First</translationType>
+      <audience>Common</audience>
+      <projectType>Standard</projectType>
+    </type>
+    <relationships/>
+    <agencies>
+      <rightsHolder>
+        <abbr>Albata</abbr>
+        <url>http://albata.info/</url>
+        <nameLocal>Yayasan Alkitab BahasaKita</nameLocal>
+        <uid>56609fd75117ad3edf040a36</uid>
+        <name>The OurLanguage Bible Organization</name>
+      </rightsHolder>
+      <contributor>
+        <content>true</content>
+        <publication>true</publication>
+        <management>true</management>
+        <finance>true</finance>
+        <qa>true</qa>
+        <uid>545d2cb013cb53cafc2bad91</uid>
+        <name>Pioneer Bible Translators</name>
+      </contributor>
+    </agencies>
+    <language>
+      <iso>ind</iso>
+      <name>Indonesian</name>
+      <nameLocal>Indonesia, bahasa</nameLocal>
+      <script>Latin</script>
+      <scriptCode>Latn</scriptCode>
+      <scriptDirection>LTR</scriptDirection>
+      <ldml>id</ldml>
+      <numerals>Arabic</numerals>
+    </language>
+    <countries>
+      <country>
+        <iso>ID</iso>
+        <name>Indonesia</name>
+      </country>
+      <country>
+        <iso>MY</iso>
+        <name>Malaysia</name>
+      </country>
+    </countries>
+    <format>
+      <usxVersion>3.0</usxVersion>
+      <versedParagraphs>false</versedParagraphs>
+    </format>
+    <names>
+      <name id="book-mat">
+        <abbr>Mat.</abbr>
+        <short>Matius</short>
+        <long>Injil Matius</long>
+      </name>
+      <name id="book-mrk">
+        <abbr>Mrk.</abbr>
+        <short>Markus</short>
+        <long>Injil Markus</long>
+      </name>
+      <name id="book-luk">
+        <abbr>Luk.</abbr>
+        <short>Lukas</short>
+        <long>Injil Lukas</long>
+      </name>
+      <name id="book-jhn">
+        <abbr>Yoh.</abbr>
+        <short>Yohanes</short>
+        <long>Injil Yohanes</long>
+      </name>
+      <name id="book-act">
+        <abbr>Kis.</abbr>
+        <short>Kisah</short>
+        <long>Kisah Para Rasul</long>
+      </name>
+      <name id="book-rom">
+        <abbr>Rom.</abbr>
+        <short>Roma</short>
+        <long>Surat Paulus kepada jemaat Roma</long>
+      </name>
+      <name id="book-1co">
+        <abbr>1Kor.</abbr>
+        <short>1 Korintus</short>
+        <long>Surat Paulus yang pertama kepada jemaat Korintus</long>
+      </name>
+      <name id="book-2co">
+        <abbr>2Kor.</abbr>
+        <short>2 Korintus</short>
+        <long>Surat Paulus yang kedua kepada jemaat Korintus</long>
+      </name>
+      <name id="book-gal">
+        <abbr>Gal.</abbr>
+        <short>Galatia</short>
+        <long>Surat Paulus kepada jemaat-jemaat di propinsi Galatia</long>
+      </name>
+      <name id="book-eph">
+        <abbr>Ef.</abbr>
+        <short>Efesus</short>
+        <long>Surat Paulus kepada jemaat Efesus</long>
+      </name>
+      <name id="book-php">
+        <abbr>Fil.</abbr>
+        <short>Filipi</short>
+        <long>Surat Paulus kepada jemaat Filipi</long>
+      </name>
+      <name id="book-col">
+        <abbr>Kol.</abbr>
+        <short>Kolose</short>
+        <long>Surat Paulus kepada jemaat Kolose</long>
+      </name>
+      <name id="book-1th">
+        <abbr>1Tes.</abbr>
+        <short>1 Tesalonika</short>
+        <long>Surat Paulus yang pertama kepada jemaat Tesalonika</long>
+      </name>
+      <name id="book-2th">
+        <abbr>2Tes.</abbr>
+        <short>2 Tesalonika</short>
+        <long>Surat Paulus yang kedua kepada jemaat Tesalonika</long>
+      </name>
+      <name id="book-1ti">
+        <abbr>1Tim.</abbr>
+        <short>1 Timotius</short>
+        <long>Surat Paulus yang pertama kepada Timotius</long>
+      </name>
+      <name id="book-2ti">
+        <abbr>2Tim.</abbr>
+        <short>2 Timotius</short>
+        <long>Surat Paulus yang kedua kepada Timotius</long>
+      </name>
+      <name id="book-tit">
+        <abbr>Tit.</abbr>
+        <short>Titus</short>
+        <long>Surat Paulus kepada Titus</long>
+      </name>
+      <name id="book-phm">
+        <abbr>Flm.</abbr>
+        <short>Filemon</short>
+        <long>Surat Paulus kepada Bapak Filemon</long>
+      </name>
+      <name id="book-heb">
+        <abbr>Ibr.</abbr>
+        <short>Ibrani</short>
+        <long>Surat kepada jemaat bangsa Ibrani</long>
+      </name>
+      <name id="book-jas">
+        <abbr>Yak.</abbr>
+        <short>Yakobus</short>
+        <long>Surat Yakobus</long>
+      </name>
+      <name id="book-1pe">
+        <abbr>1Ptr.</abbr>
+        <short>1 Petrus</short>
+        <long>Surat Petrus yang pertama</long>
+      </name>
+      <name id="book-2pe">
+        <abbr>2Ptr.</abbr>
+        <short>2 Petrus</short>
+        <long>Surat Petrus yang kedua</long>
+      </name>
+      <name id="book-1jn">
+        <abbr>1Yoh.</abbr>
+        <short>1 Yohanes</short>
+        <long>Surat Yohanes yang pertama</long>
+      </name>
+      <name id="book-2jn">
+        <abbr>2Yoh.</abbr>
+        <short>2 Yohanes</short>
+        <long>Surat Yohanes yang kedua</long>
+      </name>
+      <name id="book-3jn">
+        <abbr>3Yoh.</abbr>
+        <short>3 Yohanes</short>
+        <long>Surat Yohanes yang ketiga</long>
+      </name>
+      <name id="book-jud">
+        <abbr>Yud.</abbr>
+        <short>Yudas</short>
+        <long>Surat Yudas</long>
+      </name>
+      <name id="book-rev">
+        <abbr>Why.</abbr>
+        <short>Wahyu</short>
+        <long>Wahyu— Penglihatan Yohanes tentang peristiwa-peristiwa yang akan datang</long>
+      </name>
+      <name id="book-gen">
+        <abbr>Kej.</abbr>
+        <short>Kejadian</short>
+        <long>Kejadian</long>
+      </name>
+      <name id="book-exo">
+        <abbr>Kel.</abbr>
+        <short>Keluaran</short>
+        <long>Keluaran</long>
+      </name>
+      <name id="book-lev">
+        <abbr>Im.</abbr>
+        <short>Imamat</short>
+        <long>Imamat</long>
+      </name>
+      <name id="book-deu">
+        <abbr>Ul.</abbr>
+        <short>Ulangan</short>
+        <long>Deuteronomy</long>
+      </name>
+      <name id="book-jos">
+        <abbr>Yos.</abbr>
+        <short>Yosua</short>
+        <long>Yosua</long>
+      </name>
+      <name id="book-rut">
+        <abbr>Rut</abbr>
+        <short>Rut</short>
+        <long>Rut</long>
+      </name>
+      <name id="book-1sa">
+        <abbr>1Sam.</abbr>
+        <short>1 Samuel</short>
+      </name>
+      <name id="book-2sa">
+        <abbr>2Sam.</abbr>
+        <short>2 Samuel</short>
+      </name>
+      <name id="book-est">
+        <abbr>Est.</abbr>
+        <short>Ester</short>
+        <long>Ester</long>
+      </name>
+      <name id="book-psa">
+        <abbr>Mzm.</abbr>
+        <short>Mazmur</short>
+      </name>
+      <name id="book-ecc">
+        <abbr>Pkh.</abbr>
+        <short>Pengkhotbah</short>
+      </name>
+      <name id="book-jon">
+        <abbr>Yun.</abbr>
+        <short>Yunus</short>
+        <long>Yunus</long>
+      </name>
+    </names>
+    <manifest>
+      <resource checksum="0eeb63a4f57989f821a84fa2c67be38c" mimeType="application/xml" size="144023" uri="release/USX_1/1CO.usx"/>
+      <resource checksum="7dab1830fdd07b4a17d896e9a0711f11" mimeType="application/xml" size="42367" uri="release/USX_1/1JN.usx"/>
+      <resource checksum="229232ebb00ccbecd33cd7d1307033bf" mimeType="application/xml" size="40581" uri="release/USX_1/1PE.usx"/>
+      <resource checksum="76863c53930ebe000302de6c9354d8a2" mimeType="application/xml" size="27633" uri="release/USX_1/1TH.usx"/>
+      <resource checksum="4e95f3e55f280044b2a76d6ca71f6732" mimeType="application/xml" size="40483" uri="release/USX_1/1TI.usx"/>
+      <resource checksum="1778db154765e0442270c6dc1ca68922" mimeType="application/xml" size="88321" uri="release/USX_1/2CO.usx"/>
+      <resource checksum="aaf029f708cfb49a2a640cb0b3107bc3" mimeType="application/xml" size="5599" uri="release/USX_1/2JN.usx"/>
+      <resource checksum="fc79031797e121062a18955ee5930c38" mimeType="application/xml" size="23223" uri="release/USX_1/2PE.usx"/>
+      <resource checksum="e01428b96dd0019813f6e8567bbc79be" mimeType="application/xml" size="17691" uri="release/USX_1/2TH.usx"/>
+      <resource checksum="8e4e7df3f8522ee39077144239849225" mimeType="application/xml" size="29793" uri="release/USX_1/2TI.usx"/>
+      <resource checksum="3fbdcc3e54e95a40ac30d26abadb0cef" mimeType="application/xml" size="5067" uri="release/USX_1/3JN.usx"/>
+      <resource checksum="b80e6559433f66472f2b4df21ee276c9" mimeType="application/xml" size="317002" uri="release/USX_1/ACT.usx"/>
+      <resource checksum="fc4882e19d858fdb5403ea79a68016ea" mimeType="application/xml" size="36780" uri="release/USX_1/COL.usx"/>
+      <resource checksum="0d0f2b7849b4fb1f89a6f73fbd607338" mimeType="application/xml" size="77887" uri="release/USX_1/ECC.usx"/>
+      <resource checksum="933c728ab9c7af731200ccf71fa9623b" mimeType="application/xml" size="49065" uri="release/USX_1/EPH.usx"/>
+      <resource checksum="3a787e90220f5d1fdcc6224cbfa4eb56" mimeType="application/xml" size="56230" uri="release/USX_1/EST.usx"/>
+      <resource checksum="7f44317bf7355e0519634c75dbbb5c5e" mimeType="application/xml" size="57862" uri="release/USX_1/GAL.usx"/>
+      <resource checksum="26a698b1e38a2f64dcfa9711b39fdb7b" mimeType="application/xml" size="123454" uri="release/USX_1/HEB.usx"/>
+      <resource checksum="099fae481ff493ddb984d50f618c4b1b" mimeType="application/xml" size="39520" uri="release/USX_1/JAS.usx"/>
+      <resource checksum="5eb5a57b62ac0e8de266021897b71602" mimeType="application/xml" size="288026" uri="release/USX_1/JHN.usx"/>
+      <resource checksum="5256df6706a58a540b7f0ff45a86befb" mimeType="application/xml" size="16531" uri="release/USX_1/JON.usx"/>
+      <resource checksum="55a51d5c2d7cc20c71224f542c35e684" mimeType="application/xml" size="10451" uri="release/USX_1/JUD.usx"/>
+      <resource checksum="a9e53f017a441a5e612ec7fd819390a2" mimeType="application/xml" size="404969" uri="release/USX_1/LUK.usx"/>
+      <resource checksum="e05c1d83d53c2aa117f638f44559c27e" mimeType="application/xml" size="401697" uri="release/USX_1/MAT.usx"/>
+      <resource checksum="8cf285760784721cd89eff0f4735ec59" mimeType="application/xml" size="261286" uri="release/USX_1/MRK.usx"/>
+      <resource checksum="0e86994865f590515c1be5f88674ee65" mimeType="application/xml" size="8826" uri="release/USX_1/PHM.usx"/>
+      <resource checksum="372d1382260b11b505a062294ad2adc5" mimeType="application/xml" size="34548" uri="release/USX_1/PHP.usx"/>
+      <resource checksum="656d30853905e57b32cf9ee18d03e76e" mimeType="application/xml" size="175196" uri="release/USX_1/REV.usx"/>
+      <resource checksum="95d23d49a8db03b8aaa539376f294235" mimeType="application/xml" size="156307" uri="release/USX_1/ROM.usx"/>
+      <resource checksum="6f06763ddd27152abc68de94c792c89b" mimeType="application/xml" size="30045" uri="release/USX_1/RUT.usx"/>
+      <resource checksum="a0521bba89564f84db3ca4d39a1ec83d" mimeType="application/xml" size="16650" uri="release/USX_1/TIT.usx"/>
+      <resource checksum="96e30f1db12a28156a0752fb050080e8" mimeType="application/xml" size="2235" uri="release/ind_id.ldml"/>
+      <resource checksum="3c00492d85f144a6a604c2aa16ac3b12" mimeType="application/xml" size="92696" uri="release/styles.xml"/>
+      <resource checksum="ad829a7d2ac2acbed7a573364ce818df" mimeType="text/plain" size="15359" uri="release/versification.vrs"/>
+      <resource checksum="78a7e193273578cf03e9e39fef879dcc" mimeType="application/zip" size="18891252" uri="source/source.zip"/>
+    </manifest>
+    <source>
+      <canonicalContent>
+        <book code="1CO"/>
+        <book code="1JN"/>
+        <book code="1PE"/>
+        <book code="1SA"/>
+        <book code="1TH"/>
+        <book code="1TI"/>
+        <book code="2CO"/>
+        <book code="2JN"/>
+        <book code="2PE"/>
+        <book code="2SA"/>
+        <book code="2TH"/>
+        <book code="2TI"/>
+        <book code="3JN"/>
+        <book code="ACT"/>
+        <book code="COL"/>
+        <book code="DEU"/>
+        <book code="ECC"/>
+        <book code="EPH"/>
+        <book code="EST"/>
+        <book code="EXO"/>
+        <book code="GAL"/>
+        <book code="GEN"/>
+        <book code="HEB"/>
+        <book code="JAS"/>
+        <book code="JHN"/>
+        <book code="JON"/>
+        <book code="JOS"/>
+        <book code="JUD"/>
+        <book code="LEV"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="PHM"/>
+        <book code="PHP"/>
+        <book code="PSA"/>
+        <book code="REV"/>
+        <book code="ROM"/>
+        <book code="RUT"/>
+        <book code="TIT"/>
+      </canonicalContent>
+      <structure>
+        <content src="source/source.zip" role="sourceZip"/>
+      </structure>
+    </source>
+    <publications>
+      <publication id="p1" default="true">
+        <name>Terjemahan Sederhana Indonesia NT Second Edition</name>
+        <nameLocal>Perjanjian Baru dalam Terjemahan Sederhana Indonesia Edisi Kedua</nameLocal>
+        <description>New Testament and some other books</description>
+        <descriptionLocal>Perjanjian Baru dalam Terjemahan Sederhana Indonesia</descriptionLocal>
+        <abbreviation>TSI</abbreviation>
+        <abbreviationLocal>TSI</abbreviationLocal>
+        <canonicalContent>
+          <book code="1CO"/>
+          <book code="1JN"/>
+          <book code="1PE"/>
+          <book code="1TH"/>
+          <book code="1TI"/>
+          <book code="2CO"/>
+          <book code="2JN"/>
+          <book code="2PE"/>
+          <book code="2TH"/>
+          <book code="2TI"/>
+          <book code="3JN"/>
+          <book code="ACT"/>
+          <book code="COL"/>
+          <book code="ECC"/>
+          <book code="EPH"/>
+          <book code="EST"/>
+          <book code="GAL"/>
+          <book code="HEB"/>
+          <book code="JAS"/>
+          <book code="JHN"/>
+          <book code="JON"/>
+          <book code="JUD"/>
+          <book code="LUK"/>
+          <book code="MAT"/>
+          <book code="MRK"/>
+          <book code="PHM"/>
+          <book code="PHP"/>
+          <book code="REV"/>
+          <book code="ROM"/>
+          <book code="RUT"/>
+          <book code="TIT"/>
+        </canonicalContent>
+        <structure>
+          <content name="book-rut" src="release/USX_1/RUT.usx" role="RUT"/>
+          <content name="book-est" src="release/USX_1/EST.usx" role="EST"/>
+          <content name="book-jon" src="release/USX_1/JON.usx" role="JON"/>
+          <content name="book-mat" src="release/USX_1/MAT.usx" role="MAT"/>
+          <content name="book-mrk" src="release/USX_1/MRK.usx" role="MRK"/>
+          <content name="book-luk" src="release/USX_1/LUK.usx" role="LUK"/>
+          <content name="book-jhn" src="release/USX_1/JHN.usx" role="JHN"/>
+          <content name="book-act" src="release/USX_1/ACT.usx" role="ACT"/>
+          <content name="book-rom" src="release/USX_1/ROM.usx" role="ROM"/>
+          <content name="book-1co" src="release/USX_1/1CO.usx" role="1CO"/>
+          <content name="book-2co" src="release/USX_1/2CO.usx" role="2CO"/>
+          <content name="book-gal" src="release/USX_1/GAL.usx" role="GAL"/>
+          <content name="book-eph" src="release/USX_1/EPH.usx" role="EPH"/>
+          <content name="book-php" src="release/USX_1/PHP.usx" role="PHP"/>
+          <content name="book-col" src="release/USX_1/COL.usx" role="COL"/>
+          <content name="book-1th" src="release/USX_1/1TH.usx" role="1TH"/>
+          <content name="book-2th" src="release/USX_1/2TH.usx" role="2TH"/>
+          <content name="book-1ti" src="release/USX_1/1TI.usx" role="1TI"/>
+          <content name="book-2ti" src="release/USX_1/2TI.usx" role="2TI"/>
+          <content name="book-tit" src="release/USX_1/TIT.usx" role="TIT"/>
+          <content name="book-phm" src="release/USX_1/PHM.usx" role="PHM"/>
+          <content name="book-heb" src="release/USX_1/HEB.usx" role="HEB"/>
+          <content name="book-jas" src="release/USX_1/JAS.usx" role="JAS"/>
+          <content name="book-1pe" src="release/USX_1/1PE.usx" role="1PE"/>
+          <content name="book-2pe" src="release/USX_1/2PE.usx" role="2PE"/>
+          <content name="book-1jn" src="release/USX_1/1JN.usx" role="1JN"/>
+          <content name="book-2jn" src="release/USX_1/2JN.usx" role="2JN"/>
+          <content name="book-3jn" src="release/USX_1/3JN.usx" role="3JN"/>
+          <content name="book-jud" src="release/USX_1/JUD.usx" role="JUD"/>
+          <content name="book-rev" src="release/USX_1/REV.usx" role="REV"/>
+          <content name="book-ecc" src="release/USX_1/ECC.usx" role="ECC"/>
+        </structure>
+      </publication>
+    </publications>
+    <copyright>
+      <fullStatement>
+        <statementContent type="xhtml">
+          <p>© 2013 oleh Yayasan Alkitab BahasaKita (Albata) </p>
+        </statementContent>
+        <statementContent type="plain">Pioneer Bible Translators</statementContent>
+      </fullStatement>
+    </copyright>
+    <promotion>
+      <promoVersionInfo contentType="xhtml">
+        <p>© 2013 oleh Yayasan Alkitab BahasaKita (Albata)</p>
+      </promoVersionInfo>
+    </promotion>
+    <progress>
+      <book code="GEN" stage="3"/>
+      <book code="EXO" stage="2"/>
+      <book code="LEV" stage="2"/>
+      <book code="DEU" stage="1"/>
+      <book code="JOS" stage="1"/>
+      <book code="JDG" stage="1"/>
+      <book code="RUT" stage="3"/>
+      <book code="1SA" stage="1"/>
+      <book code="2SA" stage="1"/>
+      <book code="EST" stage="3"/>
+      <book code="JON" stage="3"/>
+    </progress>
+    <archiveStatus>
+      <archivistName>Melva Wahl</archivistName>
+      <dateArchived>2018-06-20T21:20:00.875738</dateArchived>
+      <dateUpdated>2020-02-07T04:35:06.649218</dateUpdated>
+      <comments>4 OT Books Added</comments>
+    </archiveStatus>
+  </DBLMetadata>
