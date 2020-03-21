@@ -1,4 +1,4 @@
-const sb_index = require('./index.js');
+const sb_index = require('./sb/index.js');
 
 schemaIds = sb_index.schemaIds;
 schemaIds["config"] = "https://burrito.bible/schema/store/config.schema.json";
