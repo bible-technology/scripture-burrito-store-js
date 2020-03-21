@@ -274,7 +274,11 @@ class DBLImport {
             };
             const agencyURLs = self.childElementsByName(agency, "url");
             if (agencyURLs.length > 0) {
-              agencyJson["url"] = agencyURLs.item(0).childNodes[0].nodeValue;
+              var urlString = agencyURLs.item(0).childNodes[0].nodeValue;
+              if(!urlString.match("^(http(s)?|ftp)://")) {
+                urlString = "http://" + urlString;
+              }
+              agencyJson["url"] = urlString;
             }
             self.addNamelike(
               agency,
@@ -378,7 +382,11 @@ class DBLImport {
     self.sbMetadata["meta"]["generator"]["userName"] = aName.childNodes[0].nodeValue;
     const aDate = self.childElementByName(aStatus, "dateUpdated");
     assert.isNotNull(aDate);
-    self.sbMetadata["meta"]["dateCreated"] = aDate.childNodes[0].nodeValue + "+00:00";
+    var dateString = aDate.childNodes[0].nodeValue;
+    if (!dateString.includes("+")) {
+      dateString += "+00:00";
+    }
+    self.sbMetadata["meta"]["dateCreated"] = dateString;
     const aComment = self.childElementByName(aStatus, "comments");
     assert.isNotNull(aComment);
     self.sbMetadata["meta"]["comments"] = [aComment.childNodes[0].nodeValue];

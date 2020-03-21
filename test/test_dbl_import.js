@@ -35,10 +35,32 @@ describe("DBL Import", function() {
 
     it("Convert DBL Test Audio Entry", function() {
       const converted = new DBLImport(this.dblAudioTestEntry);
-      console.log(JSON.stringify(converted.sbMetadata.type, null, 2));
+      // console.log(JSON.stringify(converted.sbMetadata.type, null, 2));
       const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
-      console.log(validationResult);
+      // console.log(validationResult);
       assert.equal(validationResult.result, "accepted");
     });
+
+  const oabDataDir = path.join(__dirname, "test_data", "dbl_metadata", "oab");
+  const self = this;
+  fse.readdirSync(oabDataDir).forEach(
+    function (file) {
+      it("Convert DBL Open Access Entry" + " " + file, function() {
+        const entry = new xmldom.DOMParser().parseFromString(
+          fse.readFileSync(
+            path.join(oabDataDir, file),
+            "utf8"
+          ),
+          'text/xml'
+        );
+        const converted = new DBLImport(entry);
+        // console.log(JSON.stringify(converted.sbMetadata.meta, null, 2));
+        const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
+        // console.log(validationResult);
+        assert.equal(validationResult.result, "accepted");
+      }
+        )
+    }
+  )
 
 });
