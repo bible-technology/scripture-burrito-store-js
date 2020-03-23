@@ -1,0 +1,134 @@
+<DBLMetadata version="2.2" id="7f3540fe4b0576d7" revision="1">
+    <identification>
+      <name>DBL Test Version with DC</name>
+      <nameLocal>DBL Test Version with DC Local</nameLocal>
+      <description>English: DBL Test Version with DC Local New Testament</description>
+      <abbreviation>DBLTD</abbreviation>
+      <scope>New Testament</scope>
+      <dateCompleted>1992-10-01</dateCompleted>
+      <bundleProducer>Publishing Assistant/6.1.0.0</bundleProducer>
+    </identification>
+    <type>
+      <medium>print</medium>
+      <isConfidential>false</isConfidential>
+      <hasCharacters>true</hasCharacters>
+      <isTranslation>false</isTranslation>
+      <isExpression>true</isExpression>
+    </type>
+    <relationships>
+      <relation id="2880c78491b2f8ce" revision="89" type="text" relationType="source"/>
+    </relationships>
+    <agencies>
+      <rightsHolder>
+        <abbr>TEST</abbr>
+        <url>http://thedigitalbiblelibrary.org</url>
+        <nameLocal>DBL Testing</nameLocal>
+        <uid>54650cfa5117ad690fb05fb6</uid>
+        <name>Organization for DBL Testing</name>
+      </rightsHolder>
+      <rightsHolder>
+        <abbr>EIPC</abbr>
+        <url>http://www.dblipc.org</url>
+        <uid>545d2cb0c1fbcec540df3e8d</uid>
+        <name>Example Intellectual Property Contributor</name>
+      </rightsHolder>
+      <contributor>
+        <content>true</content>
+        <publication>true</publication>
+        <management>true</management>
+        <qa>true</qa>
+        <uid>54650cd05117ad67b3826e99</uid>
+        <name>American Bible Society</name>
+      </contributor>
+    </agencies>
+    <language>
+      <iso>eng</iso>
+      <name>English</name>
+      <script>Latin</script>
+      <scriptCode>Latn</scriptCode>
+      <scriptDirection>LTR</scriptDirection>
+      <ldml>en</ldml>
+      <numerals>Arabic</numerals>
+    </language>
+    <countries>
+      <country>
+        <iso>US</iso>
+        <name>United States</name>
+      </country>
+    </countries>
+    <format>
+      <pod>true</pod>
+      <width>140mm</width>
+      <height>210mm</height>
+      <scale>100%</scale>
+      <orientation>portrait</orientation>
+      <color>CMYK</color>
+      <pageCount>193</pageCount>
+      <edgeSpace>
+        <top>5mm</top>
+        <bottom>9mm</bottom>
+        <inside>13mm</inside>
+        <outside>9mm</outside>
+      </edgeSpace>
+      <fonts>
+        <font type="OpenType">Times New Roman Regular</font>
+        <font type="OpenType">Times New Roman BoldBold</font>
+        <font type="OpenType">Times New Roman ItalicItalic</font>
+        <font type="OpenType">Segoe UI Symbol Regular</font>
+      </fonts>
+    </format>
+    <names/>
+    <manifest>
+      <resource checksum="ea6cf3aaab5e87d4844a839f55712a2b" mimeType="application/pdf" size="21742731" uri="release/Inside.pdf"/>
+      <resource checksum="4f885b5395c57b623982fe1db37efbb1" mimeType="application/pdf" size="69141" uri="release/Cover.pdf"/>
+      <resource checksum="92b271f5d83ad1cc574276dd1d898854" mimeType="text/plain" size="15323" uri="release/FrontCover.jpg"/>
+      <resource checksum="c7b53b012f49a06dc9c32a17cb5b77be" mimeType="application/zip" size="46147024" uri="source/zzzPADBL_2018POD_Source.zip"/>
+    </manifest>
+    <source>
+      <canonicalContent>
+        <book code="ACT"/>
+        <book code="JHN"/>
+        <book code="LUK"/>
+        <book code="MAT"/>
+        <book code="MRK"/>
+      </canonicalContent>
+      <structure>
+        <content src="source/zzzPADBL_2018POD_Source.zip" role="sourceZip"/>
+      </structure>
+    </source>
+    <publications>
+      <publication id="p0">
+        <name>Print bundle</name>
+        <canonicalContent>
+          <book code="ACT"/>
+          <book code="JHN"/>
+          <book code="LUK"/>
+          <book code="MAT"/>
+          <book code="MRK"/>
+        </canonicalContent>
+        <structure>
+          <content src="release/Inside.pdf"/>
+          <content src="release/Cover.pdf"/>
+        </structure>
+      </publication>
+    </publications>
+    <copyright>
+      <fullStatement>
+        <statementContent type="xhtml">
+          <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+        </statementContent>
+      </fullStatement>
+    </copyright>
+    <promotion>
+      <promoVersionInfo contentType="xhtml">
+        <p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p>
+        <p>This is a Digital Bible Library demonstration bundle. It should NOT BE USED for any publication purposes</p>
+      </promoVersionInfo>
+    </promotion>
+    <archiveStatus>
+      <archivistName>Bev Cope</archivistName>
+      <dateArchived>2018-12-07T23:37:27.3766825+00:00</dateArchived>
+      <dateUpdated>2018-12-08T12:36:12.329486</dateUpdated>
+      <comments>Looking for FrontCover.JPG</comments>
+    </archiveStatus>
+  </DBLMetadata>
