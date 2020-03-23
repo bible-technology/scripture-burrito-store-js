@@ -23,6 +23,10 @@ describe("DBL Import", function() {
       fse.readFileSync(path.join(dblMetadataDir, "dbl_test_audio_entry.xml"), "utf8"),
       'text/xml'
     );
+    this.dblPrintTestEntry = this.domParser.parseFromString(
+      fse.readFileSync(path.join(dblMetadataDir, "dbl_test_print_entry.xml"), "utf8"),
+      'text/xml'
+    );
   });
     
     it("Convert DBL Test Text Entry", function() {
@@ -41,6 +45,15 @@ describe("DBL Import", function() {
       assert.equal(validationResult.result, "accepted");
     });
 
+    it("Convert DBL Test Print Entry", function() {
+      const converted = new DBLImport(this.dblPrintTestEntry);
+      console.log(JSON.stringify(converted.sbMetadata.type, null, 2));
+      const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
+      // console.log(validationResult);
+      assert.equal(validationResult.result, "accepted");
+    });
+
+  /*
   const oabDataDir = path.join(__dirname, "test_data", "dbl_metadata", "oab");
   const self = this;
   fse.readdirSync(oabDataDir).forEach(
@@ -61,6 +74,6 @@ describe("DBL Import", function() {
       }
         )
     }
-  )
+  )*/
 
 });

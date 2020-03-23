@@ -16,7 +16,7 @@ class DBLImport {
     this.processType();
     this.processAgencies();
     this.processCountries();
-    //this.processFormat();
+    this.processFormat();
     this.processNames();
     this.processManifest();
     //this.processSource();
@@ -55,7 +55,8 @@ class DBLImport {
   flavorName(medium) {
     const lookup = {
       "text": "textTranslation",
-      "audio": "audioTranslation"
+      "audio": "audioTranslation",
+      "print": "typesetScripture"
     };
     if (medium in lookup) {
       return lookup[medium];
@@ -355,7 +356,9 @@ class DBLImport {
         typeJson["flavorType"]["flavor"]["projectType"] = "standard";
       }
     } else if (flavorName == "audioTranslation") {
+      // Use proper dramatization enum once it exists
       typeJson["flavorType"]["flavor"]["dramatization"] = "singleVoice"; 
+    } else if (flavorName == "typesetScripture") {
     } else {
       throw new Error("Unknown medium");
     }
@@ -373,6 +376,55 @@ class DBLImport {
     self.sbMetadata["confidentiality"] = confidentialityJson;
   }
 
+  processFormat() {
+    const self = this;
+    const format = self.childElementByName(self.root, "format");
+    const typeJson = self.sbMetadata.type.flavorType.flavor;
+    if (typeJson.name == "typesetScripture") {
+      typeJson["contentType"] = "pdf";
+      [["pod", "boolean"], ["pageCount", "integer"], ["height", "string"], ["width", "string"], ["scale", "string"]].forEach(
+        function(fieldTuple) {
+          const [field, fieldType] = fieldTuple;
+          const fieldNode = self.childElementByName(format, field);
+          assert.isNotNull(field);
+          if (fieldType == "boolean") {
+            typeJson[field] = (fieldNode.childNodes[0].nodeValue == "true");
+          } else if (fieldType == "integer") {
+            typeJson[field] = parseInt(fieldNode.childNodes[0].nodeValue);
+          } else {
+            typeJson[field] = fieldNode.childNodes[0].nodeValue;
+          }
+        }
+      );
+      const color = self.childElementByName(format, "color");
+      assert.isNotNull(color);
+      typeJson["colorSpace"] = color.childNodes[0].nodeValue.toLowerCase();
+      const edgeSpace = self.childElementByName(format, "edgeSpace");
+      assert.isNotNull(edgeSpace);
+      typeJson["edgeSpace"] = {};
+      ["top", "bottom", "inside", "outside"].forEach(
+        function(field) {
+          const fieldNode = self.childElementByName(format, field);
+          assert.isNotNull(field);
+          typeJson["edgeSpace"][field] = fieldNode.childNodes[0].nodeValue;
+        }
+      );
+      const fonts = self.childElementByName(format, "fonts");
+      assert.isNotNull(fonts);
+      const fontRecords = self.childElementsByName(fonts, "font");
+      if (fontRecords.length > 0) {
+        typeJson["fonts"] = [];
+        for (var n = 0; n < fontRecords.length; n++) {
+          const font = fontRecords.item(n);
+          const fontName = font.childNodes[0].nodeValue;
+          var fontType = font.getAttribute("type");
+          fontType = fontType.substring(0, 1).toLowerCase() + fontType.substring(1);
+          typeJson["fonts"].push([fontName, fontType]);
+        }
+      }
+    }
+  }
+  
   processArchiveStatus() {
     const self = this;
     const aStatus = self.childElementByName(self.root, "archiveStatus");
