@@ -116,10 +116,10 @@ class DBLImport {
     const self = this;
     children.forEach(
       function (namelike, n) {
+        const namelikeJson = {}
         const namelikeNode = self.childElementByName(domParent, namelike);
-        assert.isNotNull(namelikeNode);
-        const namelikeJson = {
-          "en": namelikeNode.childNodes[0].nodeValue
+        if (namelikeNode) {
+          namelikeJson["en"] = namelikeNode.childNodes[0].nodeValue
         };
         const namelikeLocalNode =self.childElementByName(domParent, namelike + "Local");
         if (namelikeLocalNode) {
@@ -552,7 +552,11 @@ class DBLImport {
   }
 
   processPublications() {
-    // Todo - everything apart from setting roles for text and audio ingredients
+    /* Todo:
+       setting roles for non-text/audio ingredients and divisions
+    */
+
+    // scope and roles
     const self = this;
     const publications = self.childElementByName(self.root, "publications");
     assert.isNotNull(publications);
@@ -579,8 +583,80 @@ class DBLImport {
       }
     }
     self.sbMetadata.type.flavorType["currentScope"] = currentScopeJson;
+
+    // recipeSpecs
+    self.sbMetadata["recipeSpecs"] = [];
+
+    // DC-like fields
+    for (var n = 0; n < publication.length; n++) {
+      const publicationItem = publication.item(n);
+      const recipeSpecJson = {
+        "id": publicationItem.getAttribute("id"),
+        "metadata": {"recipe": {"content": []}}
+      };
+      const recipeMetadata = {};
+      var namelikeJson;
+      [["name"], ["abbreviation"], ["description"]].forEach(
+        function (field) {
+          const namelikeJson = {};
+          self.addNamelike(
+            publicationItem,
+            namelikeJson,
+            field
+          );
+          if (Object.keys(namelikeJson[field]).length > 0) {
+            recipeMetadata[field] = namelikeJson[field];
+          }
+        }
+      );
+      if (Object.keys(recipeMetadata).length > 0) {
+        recipeSpecJson["metadata"]["identification"] = recipeMetadata;
+      }
+
+      // Structure
+      const structure = self.childElementByName(publicationItem, "structure");
+      assert.isNotNull(structure);
+      const structureChildren = structure.childNodes;
+      const structureJson = recipeSpecJson["metadata"]["recipe"]["content"];
+      self.buildRecipe(
+        structureChildren,
+        structureJson
+      );
+      self.sbMetadata["recipeSpecs"].push(recipeSpecJson);
+    }
   }
-  
+
+  buildRecipe(domChildren, jsonTarget) {
+    const self = this;
+    for (var n3 = 0; n3 < domChildren.length; n3++) {
+      const childNode = domChildren.item(n3);
+      if (childNode.nodeType != 1) {
+        continue;
+      } else if (childNode.tagName == "content") {
+        const elementJson = {
+          "type": "element",
+          "ingredient": childNode.getAttribute("src")
+        };
+        if (childNode.hasAttribute("name")) {
+          elementJson["nameId"] = childNode.getAttribute("name");
+        }
+        jsonTarget.push(elementJson);
+      } else if (childNode.tagName == "division") {
+        const sectionJson = {
+          "type": "section"
+        };
+        if (childNode.hasAttribute("name")) {
+          sectionJson["nameId"] = childNode.getAttribute("name");
+        }
+        sectionJson["content"] = [];
+        self.buildRecipe(
+          childNode.childNodes,
+          sectionJson["content"]
+        );
+        jsonTarget.push(sectionJson);
+      }
+    }
+  }
 }
 
 export {DBLImport}

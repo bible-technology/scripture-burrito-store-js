@@ -51,7 +51,6 @@
         }
     },
     "required": [
-        "spec",
         "content"
     ]
 }
