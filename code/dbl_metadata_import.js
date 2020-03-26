@@ -439,7 +439,9 @@ class DBLImport {
       function(fieldTuple) {
         const [field, fieldType] = fieldTuple;
         const fieldNode = self.childElementByName(format, field);
-        assert.isNotNull(field);
+        if(!fieldNode){
+          return;
+        };
         if (fieldType == "integer") {
           typeJson["formats"][0][field] = parseInt(fieldNode.childNodes[0].nodeValue);
         } else if (fieldType == "ccString") {

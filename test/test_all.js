@@ -3,4 +3,5 @@ describe('All Tests', function() {
   require('./test_burrito_store.js');
   require('./test_fs_burrito_store.js');
   require('./test_dbl_import.js');
+  require('./test_dbl_oab_import.js');
   })
