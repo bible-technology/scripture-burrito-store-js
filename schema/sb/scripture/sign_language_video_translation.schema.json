@@ -1,9 +1,9 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://burrito.bible/schema/scripture/sign_language_video_translation.schema.json",
-    "title": "Flavor Details: Scripture: Sign Language Video Translation",
-    "type": "object",
-    "description": "Schema of flavor field for signLanguageVideoTranslation flavor",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://burrito.bible/schema/scripture/sign_language_video_translation.schema.json",
+  "title": "Flavor Details: Scripture: Sign Language Video Translation",
+  "type": "object",
+  "description": "Schema of flavor field for signLanguageVideoTranslation flavor",
   "definitions": {
     "format": {
       "type": "object",
@@ -14,30 +14,26 @@
         },
         "videoStream": {
           "properties": {
-            "bitRate": {"type": "integer"},
-            "frameRate": {"type": "integer"},
-            "screenResolution": {"type": "string", "pattern": "^\\d+x\\d+$"}
+            "bitRate": { "type": "integer" },
+            "frameRate": { "type": "integer" },
+            "screenResolution": { "type": "string", "pattern": "^\\d+x\\d+$" }
           },
-          "required": [
-            "bitRate",
-            "frameRate",
-            "screenResolution"
-          ],
+          "required": ["bitRate", "frameRate", "screenResolution"],
           "additionalProperties": false
         },
         "audioStream": {
           "properties": {
-                "compression": {
-                    "type": "string",
-                    "enum": ["mp3", "wav"]
-                },
-                "trackConfiguration": {
-                    "type": "string",
-                    "enum": ["1/0 (Mono)", "Dual mono", "2/0 (Stereo)", "5.1 Surround"]
-                },
-                "bitRate": {"type": "integer"},
-                "bitDepth": {"type": "integer"},
-            "samplingRate": {"type": "integer"}
+            "compression": {
+              "type": "string",
+              "enum": ["mp3", "wav"]
+            },
+            "trackConfiguration": {
+              "type": "string",
+              "enum": ["1/0 (Mono)", "Dual mono", "2/0 (Stereo)", "5.1 Surround"]
+            },
+            "bitRate": { "type": "integer" },
+            "bitDepth": { "type": "integer" },
+            "samplingRate": { "type": "integer" }
           },
           "required": ["compression"],
           "additionalProperties": false
@@ -52,13 +48,13 @@
       "type": "string",
       "const": "signLanguageVideoTranslation"
     },
-    "contentByChapter": {"type": "boolean"},
+    "contentByChapter": { "type": "boolean" },
     "formats": {
       "type": "object",
       "additionalProperties": {
         "$ref": "#/definitions/format"
       },
-      "propertyNames": {"type": "string"},
+      "propertyNames": { "type": "string" },
       "minProperties": 1
     },
     "conventions": {
@@ -70,17 +66,10 @@
       "propertyNames": {
         "type": "string",
         "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
-        "oneOf": [
-          {"$ref": "../common.schema.json#/definitions/xToken"},
-          {"enum": ["bookDirs", "rolesInUris"]}
-        ]
+        "oneOf": [{ "$ref": "../common.schema.json#/definitions/xToken" }, { "enum": ["bookDirs", "rolesInUris"] }]
       }
     }
   },
-  "required": [
-    "name",
-    "contentByChapter",
-    "formats"
-  ],
+  "required": ["name", "contentByChapter", "formats"],
   "additionalProperties": false
 }
