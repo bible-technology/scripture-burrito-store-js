@@ -7,7 +7,7 @@
     "properties": {
         "name": {
             "type": "string",
-            "const": "signLanguagevideoTranslation"
+            "const": "signLanguageVideoTranslation"
         },
         "conventions": {
             "type": "object",

@@ -17,8 +17,8 @@ const entry = domParser.parseFromString(
 const converted = new DBLImport(entry);
 // console.log(JSON.stringify(converted.sbMetadata.meta, null, 2));
 const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
-if (validationResult.result == "accepted") {
+// if (validationResult.result == "accepted") {
   console.log(JSON.stringify(converted.sbMetadata, null, 2));
-} else {
-  console.log(validationResult.result)
-}
+//} else {
+//  console.log(validationResult.result)
+//}

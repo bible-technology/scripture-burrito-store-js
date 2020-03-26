@@ -27,6 +27,10 @@ describe("DBL Import", function() {
       fse.readFileSync(path.join(dblMetadataDir, "dbl_test_print_entry.xml"), "utf8"),
       'text/xml'
     );
+    this.dblSLTestEntry = this.domParser.parseFromString(
+      fse.readFileSync(path.join(dblMetadataDir, "dbl_test_sl_entry.xml"), "utf8"),
+      'text/xml'
+    );
   });
     
     it("Convert DBL Test Text Entry", function() {
@@ -47,6 +51,14 @@ describe("DBL Import", function() {
 
     it("Convert DBL Test Print Entry", function() {
       const converted = new DBLImport(this.dblPrintTestEntry);
+      // console.log(JSON.stringify(converted.sbMetadata.type, null, 2));
+      const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
+      // console.log(validationResult);
+      assert.equal(validationResult.result, "accepted");
+    });
+
+    it("Convert DBL Test SL Entry", function() {
+      const converted = new DBLImport(this.dblSLTestEntry);
       // console.log(JSON.stringify(converted.sbMetadata.type, null, 2));
       const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
       // console.log(validationResult);

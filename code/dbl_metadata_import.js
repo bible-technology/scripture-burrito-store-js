@@ -56,7 +56,8 @@ class DBLImport {
     const lookup = {
       "text": "textTranslation",
       "audio": "audioTranslation",
-      "print": "typesetScripture"
+      "print": "typesetScripture",
+      "video": "signLanguageVideoTranslation"
     };
     if (medium in lookup) {
       return lookup[medium];
@@ -125,7 +126,9 @@ class DBLImport {
         if (namelikeLocalNode) {
           namelikeJson[self.bcp47Local] = namelikeLocalNode.childNodes[0].nodeValue;
         }
-        jsonParent[namelike] = namelikeJson;
+        if (Object.keys(namelikeJson).length > 0) {
+          jsonParent[namelike] = namelikeJson;
+        }
       }
     )
   }
@@ -359,8 +362,9 @@ class DBLImport {
       // Use proper dramatization enum once it exists
       typeJson["flavorType"]["flavor"]["dramatization"] = "singleVoice"; 
     } else if (flavorName == "typesetScripture") {
+    } else if (flavorName == "signLanguageVideoTranslation") {
     } else {
-      throw new Error("Unknown medium");
+      throw new Error("Unknown medium "+ flavorName);
     }
     self.sbMetadata["type"] = typeJson;
 
@@ -384,6 +388,8 @@ class DBLImport {
       this.processTypesetScriptureFormat(format, typeJson);
     } else if (typeJson.name == "audioTranslation") {
       this.processAudioTranslationFormat(format, typeJson);
+    } else if (typeJson.name == "signLanguageVideoTranslation") {
+      this.processSignLanguageVideoTranslationFormat(format, typeJson);
     }
   }
 
@@ -455,7 +461,9 @@ class DBLImport {
         }
       }
     );
-    
+  }
+
+  processSignLanguageVideoTranslationFormat(format, typeJson) {
   }
   
   processArchiveStatus() {
@@ -575,10 +583,13 @@ class DBLImport {
         const contentSrc = content.getAttribute("src");
         if (contentSrc in self.sbMetadata.ingredients && content.hasAttribute("role")) {
           const role = content.getAttribute("role");
+          const truncatedRole = role.substring(0, 3);
           const scope = {};
-          scope[role.substring(0, 3)] = (role.length == 3 ? [] : [role.substring(4)]);
-          self.sbMetadata.ingredients[contentSrc]["scope"] = scope;
-          if (!(role.substring(0, 3) in currentScopeJson)) {
+          if (truncatedRole.match("[A-Z0-6]{3}")) {
+            scope[role.substring(0, 3)] = (role.length == 3 ? [] : [role.substring(4)]);
+            self.sbMetadata.ingredients[contentSrc]["scope"] = scope;
+          }
+          if (truncatedRole.match("[A-Z0-6]{3}") && !(truncatedRole in currentScopeJson)) {
             currentScopeJson[role.substring(0, 3)] = [];
           }
         }
@@ -606,7 +617,7 @@ class DBLImport {
             namelikeJson,
             field
           );
-          if (Object.keys(namelikeJson[field]).length > 0) {
+          if (namelikeJson[field] && Object.keys(namelikeJson[field]).length > 0) {
             recipeMetadata[field] = namelikeJson[field];
           }
         }
