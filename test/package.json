@@ -7,7 +7,8 @@
     "testAll": "mocha test_all.js",
     "testSmoke": "mocha test_smoke.js",
     "testSchema": "mocha test_schema.js",
-    "testDbl": "mocha test_dbl_import.js"
+    "testDbl": "mocha test_dbl_import.js",
+    "testDblOab": "mocha test_dbl_oab_import.js"
   },
   "author": "",
   "license": "ISC",

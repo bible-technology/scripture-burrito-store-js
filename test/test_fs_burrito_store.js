@@ -381,9 +381,9 @@ describe("FS Burrito Class", function() {
 	    },
 	    this.storagePath
 	);
-	assert.isNull(b.entryRevisions("https://thedigitalbiblelibrary.org", "0123456789abcdef"));
+	assert.isNull(b.entryRevisions("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce"));
 	b.importFromObject(this.metadata["validTextTranslation"]);
-	assert.equal(b.entryRevisions("https://thedigitalbiblelibrary.org", "0123456789abcdef").length, 1);
+	assert.equal(b.entryRevisions("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce").length, 1);
     });
 
     it("Implements entryRevisionsVariants()", function() {
@@ -393,11 +393,11 @@ describe("FS Burrito Class", function() {
 	    },
 	    this.storagePath
 	);
-	assert.isNull(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef"));
+	assert.isNull(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce"));
 	b.importFromObject(this.metadata["validTextTranslation"]);
-	const revisionKeys = Object.keys(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef"));
+	const revisionKeys = Object.keys(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce"));
 	assert.equal(revisionKeys.length, 1);
-	assert.equal(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef")[revisionKeys[0]].length, 1);
+	assert.equal(b.entryRevisionsVariants("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce")[revisionKeys[0]].length, 1);
     });
 
 
@@ -410,7 +410,7 @@ describe("FS Burrito Class", function() {
 	);
 	assert.isNull(b.entriesLatestRevision("https://thedigitalbiblelibrary.org"));
 	b.importFromObject(this.metadata["validTextTranslation"]);
-	const entryRecord = b.entriesLatestRevision("https://thedigitalbiblelibrary.org")["0123456789abcdef"];
+	const entryRecord = b.entriesLatestRevision("https://thedigitalbiblelibrary.org")["2880c78491b2f8ce"];
 	expect(entryRecord).to.have.keys("abbreviation", "defaultLanguage", "description", 'id', 'languages', 'name', 'variant',);
     });
     
@@ -421,10 +421,10 @@ describe("FS Burrito Class", function() {
 	    },
 	    this.storagePath
 	);
-	assert.isNull(b.entryRevisionVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23"));
+	assert.isNull(b.entryRevisionVariants("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce", "91"));
 	b.importFromObject(this.metadata["validTextTranslation"]);
 	b.importFromObject(this.metadata["validTextTranslation"]);
-	assert.equal(b.entryRevisionVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23").length, 1);
+	assert.equal(b.entryRevisionVariants("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce", "91").length, 1);
     });
 
     it("Implements exportToObject", function() {
@@ -436,7 +436,7 @@ describe("FS Burrito Class", function() {
 	    this.storagePath
 	);
 	b.importFromObject(this.metadata["validTextTranslation"]);
-	const md = b.exportToObject("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23", "source");
+	const md = b.exportToObject("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce", "91", "source");
 	assert.isObject(md);
     });
 
@@ -450,7 +450,7 @@ describe("FS Burrito Class", function() {
 	);
 	try {
 	    b.importFromObject(this.metadata["validTextTranslation"]);
-	    const md = b.exportToObject("https://thedigitalbiblelibrary.org", "0123456789abcdef", "99", "source");
+	    const md = b.exportToObject("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce", "99", "source");
 	    throw new Error("Too Far", {});
 	} catch (err) {
 	    assert.equal(err.message, "VariantNotFoundInStore");
@@ -474,7 +474,7 @@ describe("FS Burrito Class", function() {
 	},
 	this.storagePath
       );
-      assert.equal(b2.entryRevisionVariants("https://thedigitalbiblelibrary.org", "0123456789abcdef", "23").length, 1);
+      assert.equal(b2.entryRevisionVariants("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce", "91").length, 1);
     });
     */
   

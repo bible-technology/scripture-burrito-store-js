@@ -22,7 +22,7 @@
                 "samplingRate": {"type": "integer"},
                 "timingDir": {"$ref": "../common.schema.json#/definitions/path"}
             },
-          "required": ["id", "compression", "bitRate", "bitDepth", "samplingRate"]
+          "required": ["id", "compression"]
         }
     },
   "properties": {
