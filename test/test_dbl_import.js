@@ -35,7 +35,7 @@ describe("DBL Import", function() {
     
     it("Convert DBL Test Text Entry", function() {
       const converted = new DBLImport(this.dblTextTestEntry);
-      console.log(JSON.stringify(converted.sbMetadata.recipeSpecs, null, 2));
+      // console.log(JSON.stringify(converted.sbMetadata.recipeSpecs, null, 2));
       const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
       // console.log(validationResult);
       assert.equal(validationResult.result, "accepted");

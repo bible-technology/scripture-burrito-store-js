@@ -588,9 +588,11 @@ class DBLImport {
           if (truncatedRole.match("[A-Z0-6]{3}")) {
             scope[role.substring(0, 3)] = (role.length == 3 ? [] : [role.substring(4)]);
             self.sbMetadata.ingredients[contentSrc]["scope"] = scope;
+          } else {
+            self.sbMetadata.ingredients[contentSrc]["role"] = role;
           }
           if (truncatedRole.match("[A-Z0-6]{3}") && !(truncatedRole in currentScopeJson)) {
-            currentScopeJson[role.substring(0, 3)] = [];
+            currentScopeJson[truncatedRole] = [];
           }
         }
       }
