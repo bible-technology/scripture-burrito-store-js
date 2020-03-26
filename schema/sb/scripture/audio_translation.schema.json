@@ -8,7 +8,6 @@
         "format": {
             "type": "object",
           "properties": {
-            "id": {"type": "string"},
                 "compression": {
                     "type": "string",
                     "enum": ["mp3", "wav"]
@@ -22,7 +21,8 @@
                 "samplingRate": {"type": "integer"},
                 "timingDir": {"$ref": "../common.schema.json#/definitions/path"}
             },
-          "required": ["id", "compression"]
+          "required": ["compression"],
+          "additionalProperties": false
         }
     },
   "properties": {
@@ -34,11 +34,11 @@
             "enum": ["dramatized", "nonDramatized", "singleVoice"]
         },
     "formats": {
-      "type": "array",
-      "items": {
+      "type": "object",
+      "additionalProperties": {
         "$ref": "#/definitions/format"
       },
-      "minItems": 1
+      "propertyNames": {"type": "string"}
     },
         "conventions": {
             "type": "object",

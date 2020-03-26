@@ -440,7 +440,7 @@ class DBLImport {
 
   processAudioTranslationFormat(format, typeJson) {
     const self = this;
-    typeJson["formats"] = [{"id": "mp3"}];
+    typeJson["formats"] = {"mp3": {}};
     [["compression", "lcString"], ["trackConfiguration", "string"], ["bitRate", "integer"], ["bitDepth", "integer"], ["samplingRate", "integer"]].forEach(
       function(fieldTuple) {
         const [field, fieldType] = fieldTuple;
@@ -449,21 +449,71 @@ class DBLImport {
           return;
         };
         if (fieldType == "integer") {
-          typeJson["formats"][0][field] = parseInt(fieldNode.childNodes[0].nodeValue);
+          typeJson["formats"]["mp3"][field] = parseInt(fieldNode.childNodes[0].nodeValue);
         } else if (fieldType == "ccString") {
           const fieldValue = fieldNode.childNodes[0].nodeValue;
-          typeJson["formats"][0][field] = fieldValue.substring(0, 1).toLowerCase() + fieldValue.substring(1);
+          typeJson["formats"]["mp3"][field] = fieldValue.substring(0, 1).toLowerCase() + fieldValue.substring(1);
         } else if (fieldType == "lcString") {
           const fieldValue = fieldNode.childNodes[0].nodeValue;
-          typeJson["formats"][0][field] = fieldValue.toLowerCase();
+          typeJson["formats"]["mp3"][field] = fieldValue.toLowerCase();
         } else {
-          typeJson["formats"][0][field] = fieldNode.childNodes[0].nodeValue;
+          typeJson["formats"]["mp3"][field] = fieldNode.childNodes[0].nodeValue;
         }
       }
     );
   }
 
   processSignLanguageVideoTranslationFormat(format, typeJson) {
+    const self = this;
+    [["contentByChapter", "boolean"]].forEach(
+      function(fieldTuple) {
+        const [field, fieldType] = fieldTuple;
+        const fieldNode = self.childElementByName(format, field);
+        if(!fieldNode){
+          return;
+        };
+        if (fieldType == "boolean") {
+          typeJson[field] = (fieldNode.childNodes[0].nodeValue == "true");
+        } else if (fieldType == "integer") {
+          typeJson[field] = parseInt(fieldNode.childNodes[0].nodeValue);
+        } else if (fieldType == "ccString") {
+          const fieldValue = fieldNode.childNodes[0].nodeValue;
+          typeJson[field] = fieldValue.substring(0, 1).toLowerCase() + fieldValue.substring(1);
+        } else if (fieldType == "lcString") {
+          const fieldValue = fieldNode.childNodes[0].nodeValue;
+          typeJson[field] = fieldValue.toLowerCase();
+        } else {
+          typeJson[field] = fieldNode.childNodes[0].nodeValue;
+        }
+      }
+    );
+    typeJson["formats"] = {"format1": {}};
+    const container = self.childElementByName(format, "container");
+    assert.isNotNull(container);
+    typeJson["formats"]["format1"]["container"] = container.childNodes[0].nodeValue.toLowerCase();
+    typeJson["formats"]["format1"]["videoStream"] = {};
+    [["bitRate", "integer"], ["frameRate", "integer"], ["screenResolution", "string"]].forEach(
+      function(fieldTuple) {
+        const [field, fieldType] = fieldTuple;
+        const fieldNode = self.childElementByName(format, field);
+        if(!fieldNode){
+          return;
+        };
+        if (fieldType == "boolean") {
+          typeJson["formats"]["format1"]["videoStream"][field] = (fieldNode.childNodes[0].nodeValue == "true");
+        } else if (fieldType == "integer") {
+          typeJson["formats"]["format1"]["videoStream"][field] = parseInt(fieldNode.childNodes[0].nodeValue);
+        } else if (fieldType == "ccString") {
+          const fieldValue = fieldNode.childNodes[0].nodeValue;
+          typeJson["formats"]["format1"]["videoStream"][field] = fieldValue.substring(0, 1).toLowerCase() + fieldValue.substring(1);
+        } else if (fieldType == "lcString") {
+          const fieldValue = fieldNode.childNodes[0].nodeValue;
+          typeJson["formats"]["format1"]["videoStream"][field] = fieldValue.toLowerCase();
+        } else {
+          typeJson["formats"]["format1"]["videoStream"][field] = fieldNode.childNodes[0].nodeValue;
+        }
+      }
+    );
   }
   
   processArchiveStatus() {
