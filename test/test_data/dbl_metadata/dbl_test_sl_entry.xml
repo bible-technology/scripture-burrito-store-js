@@ -1,0 +1,600 @@
+<DBLMetadata version="2.2.1" revision="2" id="acce3721073e44da">
+  <identification>
+    <name>The Gospel of Luke in French Sign Language</name>
+    <nameLocal>L'Evangile de Luc en langue des signes française</nameLocal>
+    <description>The French Bible publishes  the first translation of a major historical and cultural work - Luke's Gospel - in French sign language.</description>
+    <descriptionLocal>L'Alliance biblique française met à disposition du public sourd, malentendant et entendant la première traduction d'un texte majeure du patrimoine de l'humanité - l'Evangile de Luc - en langue des signes.</descriptionLocal>
+    <scope>Portions</scope>
+    <bundleProducer>nathanael/0.51.3</bundleProducer>
+  </identification>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <uid>54650cdf5117ad687c9b5189</uid>
+      <name>French Bible Society</name>
+      <nameLocal>Société biblique française</nameLocal>
+      <abbr>ABF</abbr>
+      <url>www.alliancebiblique.fr</url>
+    </rightsHolder>
+    <contributor>
+      <uid>54650cdf5117ad687c9b5189</uid>
+      <name>French Bible Society</name>
+      <content>true</content>
+      <finance>true</finance>
+      <management>true</management>
+      <qa>true</qa>
+      <publication>true</publication>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>lsf</iso>
+    <name>French Sign Language</name>
+    <nameLocal>langue des signes française</nameLocal>
+    <scriptCode>Latn</scriptCode>
+    <script>Latin</script>
+    <scriptDirection>LTR</scriptDirection>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>FR</iso>
+      <name>France</name>
+      <nameLocal>France</nameLocal>
+    </country>
+  </countries>
+  <type>
+    <medium>video</medium>
+    <hasCharacters>false</hasCharacters>
+    <isTranslation>false</isTranslation>
+    <isExpression>true</isExpression>
+    <isConfidential>false</isConfidential>
+  </type>
+  <format>
+    <videoStream>
+      <codec>h264</codec>
+      <bitRate>5674</bitRate>
+      <frameRate>25</frameRate>
+      <screenResolution>720x576</screenResolution>
+    </videoStream>
+    <contentByChapter>false</contentByChapter>
+    <container>mpg</container>
+  </format>
+  <manifest>
+    <resource mimeType="video/mpeg" size="767246336" checksum="7dab7a93adec806503d73c769d92ebd5" uri="LUK/LUK_1.mpg"/>
+    <resource mimeType="video/mpeg" size="677756928" checksum="beb1bbd2b493ff276e66e484f853d4ab" uri="LUK/LUK_10.mpg"/>
+    <resource mimeType="video/mpeg" size="691744768" checksum="33dcac94bec5bf81373c270923fe2e6f" uri="LUK/LUK_11.mpg"/>
+    <resource mimeType="video/mpeg" size="845115392" checksum="d68cdff970d927f2f5317a1df7015bb6" uri="LUK/LUK_12.mpg"/>
+    <resource mimeType="video/mpeg" size="452595712" checksum="1762d737fb2ef9db9c759166e9b048af" uri="LUK/LUK_13.mpg"/>
+    <resource mimeType="video/mpeg" size="382185472" checksum="c8d3fcb9453b11485543a9ffd6b7638a" uri="LUK/LUK_14.mpg"/>
+    <resource mimeType="video/mpeg" size="361775104" checksum="0ae745fa10c5493aa2b41e571c43195c" uri="LUK/LUK_15.mpg"/>
+    <resource mimeType="video/mpeg" size="346812416" checksum="b404efcb5d9d88d0752dd072046572fb" uri="LUK/LUK_16.mpg"/>
+    <resource mimeType="video/mpeg" size="235720704" checksum="862493ebdf08c994c88d6fcb751af5fa" uri="LUK/LUK_17.mpg"/>
+    <resource mimeType="video/mpeg" size="294641664" checksum="97fed2faca23e5bb4e117769f2cbce62" uri="LUK/LUK_18.mpg"/>
+    <resource mimeType="video/mpeg" size="533256192" checksum="947affbb135467b4a68963b4430f4686" uri="LUK/LUK_19.mpg"/>
+    <resource mimeType="video/mpeg" size="405985280" checksum="14b9976297390c06c0669b20dc31a362" uri="LUK/LUK_2.mpg"/>
+    <resource mimeType="video/mpeg" size="670695424" checksum="364f32bcf594ddfe16000c9c17a03763" uri="LUK/LUK_20.mpg"/>
+    <resource mimeType="video/mpeg" size="428699648" checksum="9116d43371b3c93c69ceb95446f8de4a" uri="LUK/LUK_21.mpg"/>
+    <resource mimeType="video/mpeg" size="766781440" checksum="50290549a23d9760b6dbc88f45e3cd7a" uri="LUK/LUK_22.mpg"/>
+    <resource mimeType="video/mpeg" size="450291712" checksum="3e743c48b8cf1e578c7cd68b8c3a0260" uri="LUK/LUK_23.mpg"/>
+    <resource mimeType="video/mpeg" size="374806528" checksum="db1c7c2e70aab3e660e0bab161bb4e4f" uri="LUK/LUK_24.mpg"/>
+    <resource mimeType="video/mpeg" size="328286208" checksum="32ade75aa88f4c8d5fa07105b8a4f335" uri="LUK/LUK_3.mpg"/>
+    <resource mimeType="video/mpeg" size="420724736" checksum="3732c8f361ba6c2d64225f5e39d21c19" uri="LUK/LUK_4.mpg"/>
+    <resource mimeType="video/mpeg" size="425531392" checksum="f379fd33ca0eddfbf9c719b09c6f1f89" uri="LUK/LUK_5.mpg"/>
+    <resource mimeType="video/mpeg" size="621789184" checksum="196a5ebbdd65b1adc52b5a3341da95a0" uri="LUK/LUK_6.mpg"/>
+    <resource mimeType="video/mpeg" size="454045696" checksum="c9e2eaedf84c49dbcc30e4ba2f41f6e3" uri="LUK/LUK_7.mpg"/>
+    <resource mimeType="video/mpeg" size="483084288" checksum="dbfe25c34128808b378213ce721b763c" uri="LUK/LUK_8.mpg"/>
+    <resource mimeType="video/mpeg" size="797745152" checksum="dab67061322170681d8963c6c89cf34e" uri="LUK/LUK_9.mpg"/>
+    <resource mimeType="video/mpeg" size="56926208" checksum="491c4b36cf8b35e220223997f2e6abf7" uri="peripherals/name_abraham.mpg"/>
+    <resource mimeType="video/mpeg" size="77905920" checksum="909954a0aef4f626a289a1e70e5f500e" uri="peripherals/name_david.mpg"/>
+    <resource mimeType="video/mpeg" size="55296000" checksum="31e633b718a163b811faac90d3129980" uri="peripherals/name_elijah.mpg"/>
+    <resource mimeType="video/mpeg" size="32305152" checksum="77a88b78297e2bb4fc5bddd923bcffa6" uri="peripherals/name_isaac.mpg"/>
+    <resource mimeType="video/mpeg" size="37173248" checksum="662a6a791019cc461751e4f8e85bc0e5" uri="peripherals/name_isaiah.mpg"/>
+    <resource mimeType="video/mpeg" size="40900608" checksum="9f8d69d79d20480490538de8b5e42e92" uri="peripherals/name_jacob.mpg"/>
+    <resource mimeType="video/mpeg" size="29980672" checksum="c82e3dfc7a5cb08f4477884bf4a77fbe" uri="peripherals/name_james.mpg"/>
+    <resource mimeType="video/mpeg" size="48386048" checksum="3744c2d22c014d3516a2afb96edbad2f" uri="peripherals/name_john.mpg"/>
+    <resource mimeType="video/mpeg" size="61243392" checksum="b4798093ed01380080bae1455fa08140" uri="peripherals/name_john_the_baptist.mpg"/>
+    <resource mimeType="video/mpeg" size="31930368" checksum="d45ce3ee578d316d931cb22bf7f1b59f" uri="peripherals/name_joseph.mpg"/>
+    <resource mimeType="video/mpeg" size="35180544" checksum="d01eb10407ce60540087a1573ec9e299" uri="peripherals/name_luke.mpg"/>
+    <resource mimeType="video/mpeg" size="25053184" checksum="fd814ecb8e17c3101ecf8bf99e36b223" uri="peripherals/name_mary.mpg"/>
+    <resource mimeType="video/mpeg" size="80588800" checksum="c07bfe585d16427692aa08e8f617db55" uri="peripherals/name_moses.mpg"/>
+    <resource mimeType="video/mpeg" size="58148864" checksum="17cab40ef2b4781d3ad7cb0307ceae8f" uri="peripherals/name_peter.mpg"/>
+    <resource mimeType="video/mpeg" size="37996544" checksum="31c1b349ac13a74128af8383f8c2e897" uri="peripherals/name_pilate.mpg"/>
+    <resource mimeType="video/mpeg" size="15691776" checksum="90307f35b5d374c53b4307b26178d935" uri="peripherals/name_simon_of_cyrene.mpg"/>
+    <resource mimeType="video/mpeg" size="19087360" checksum="12e19a06066feffd06ce68b9755be50a" uri="peripherals/name_simon_peter.mpg"/>
+    <resource mimeType="video/mpeg" size="22628352" checksum="eca4437f2e901830f30e563a663d639b" uri="peripherals/name_simon_the_pharisee.mpg"/>
+    <resource mimeType="video/mpeg" size="32319488" checksum="3ab9507a0a09235437dd674edb9d1142" uri="peripherals/name_solomon.mpg"/>
+    <resource mimeType="video/mpeg" size="37787648" checksum="2721035de4b8ba787f4ee2a7505503df" uri="peripherals/name_zachariah.mpg"/>
+    <resource mimeType="video/mpeg" size="44494848" checksum="85ce55991ccf434c3871784f078b7700" uri="peripherals/place_bethany.mpg"/>
+    <resource mimeType="video/mpeg" size="30347264" checksum="bd9b38293d2fba08cb169a125449ab08" uri="peripherals/place_bethlehem.mpg"/>
+    <resource mimeType="video/mpeg" size="44597248" checksum="faa0a0d40923c831337135ef0af9d47a" uri="peripherals/place_capernaum.mpg"/>
+    <resource mimeType="video/mpeg" size="41617408" checksum="7176bdbe9f628eb91aadebc84f46d626" uri="peripherals/place_galilee.mpg"/>
+    <resource mimeType="video/mpeg" size="26079232" checksum="a0adfe2a9809b709fa0be59e9cb30e4c" uri="peripherals/place_golgotha.mpg"/>
+    <resource mimeType="video/mpeg" size="58177536" checksum="239aceb8ae37e41c0eef35aeda833cd5" uri="peripherals/place_israel.mpg"/>
+    <resource mimeType="video/mpeg" size="85198848" checksum="0693509e999c4ece7cce723302b87012" uri="peripherals/place_jericho.mpg"/>
+    <resource mimeType="video/mpeg" size="82214912" checksum="f595a1dcc71331fef1972114d0246f46" uri="peripherals/place_jerusalem.mpg"/>
+    <resource mimeType="video/mpeg" size="53258240" checksum="9add04dc0a41b1822d280c56bf65f5fb" uri="peripherals/place_jordan.mpg"/>
+    <resource mimeType="video/mpeg" size="25188352" checksum="b91164a9c09cee1fda1cc84a570d5093" uri="peripherals/place_judea.mpg"/>
+    <resource mimeType="video/mpeg" size="40411136" checksum="9aced138e2269f12ab759a567a7ea2ce" uri="peripherals/place_lake_galilee.mpg"/>
+    <resource mimeType="video/mpeg" size="32593920" checksum="a87f89b3e4333d0b06c5f31e7eea4f48" uri="peripherals/place_nazareth.mpg"/>
+    <resource mimeType="video/mpeg" size="65169408" checksum="c4e7ab4e9d1d2d672c87f5f9b383f708" uri="peripherals/place_rome.mpg"/>
+    <resource mimeType="video/mpeg" size="36900864" checksum="458390237b49d6a77a708efe9225a164" uri="peripherals/place_samaria.mpg"/>
+    <resource mimeType="video/mpeg" size="14800896" checksum="c8722b744ee5f26b89e71b07d18150d7" uri="peripherals/place_syria.mpg"/>
+    <resource mimeType="video/mpeg" size="42999808" checksum="82fd1be82ab0f85ec6258b3fecf61409" uri="peripherals/sign_angel.mpg"/>
+    <resource mimeType="video/mpeg" size="23207936" checksum="d9775a94285a606178f84c13519d456e" uri="peripherals/sign_apostles.mpg"/>
+    <resource mimeType="video/mpeg" size="36792320" checksum="127e82ed006adecd5598ed604776750c" uri="peripherals/sign_baptism.mpg"/>
+    <resource mimeType="video/mpeg" size="17829888" checksum="c2630f690b3f160db6f9f1fff254c804" uri="peripherals/sign_criminal.mpg"/>
+    <resource mimeType="video/mpeg" size="25438208" checksum="b3cd7144afedac8d68d2a440fe7a3efc" uri="peripherals/sign_disciple.mpg"/>
+    <resource mimeType="video/mpeg" size="35620864" checksum="1f311441b33ec99b31e3da07b0e66386" uri="peripherals/sign_elders.mpg"/>
+    <resource mimeType="video/mpeg" size="43327488" checksum="97ff7bc8ddf5f1bfc15069d4addff05b" uri="peripherals/sign_evil_spirit.mpg"/>
+    <resource mimeType="video/mpeg" size="21458944" checksum="abac355134704a1df2e316089000426f" uri="peripherals/sign_faith.mpg"/>
+    <resource mimeType="video/mpeg" size="26636288" checksum="4c12062db9eeef71af67eab6f9baa803" uri="peripherals/sign_fast.mpg"/>
+    <resource mimeType="video/mpeg" size="38803456" checksum="bdb0a54d4c9a740a6590f5a158d15e93" uri="peripherals/sign_glory.mpg"/>
+    <resource mimeType="video/mpeg" size="15271936" checksum="32a75f9ac104fc6f82734bf88ba54be4" uri="peripherals/sign_god.mpg"/>
+    <resource mimeType="video/mpeg" size="21985280" checksum="bdde68a0e17acc3266f3f52e512a0864" uri="peripherals/sign_heal.mpg"/>
+    <resource mimeType="video/mpeg" size="42448896" checksum="f305051c2c319d741714eb05eb3d9124" uri="peripherals/sign_high_priest.mpg"/>
+    <resource mimeType="video/mpeg" size="24786944" checksum="33571ce7c5738949d18f376d2bfd7163" uri="peripherals/sign_holy.mpg"/>
+    <resource mimeType="video/mpeg" size="50044928" checksum="cb738cd25757026afce4fcea7b33601f" uri="peripherals/sign_holy_of_holies.mpg"/>
+    <resource mimeType="video/mpeg" size="56870912" checksum="6a19a3c5d1f8338bc6f2c407ea221732" uri="peripherals/sign_holy_spirit.mpg"/>
+    <resource mimeType="video/mpeg" size="46737408" checksum="f7045611c3889dccf2c49d6412d4251f" uri="peripherals/sign_it_is_written.mpg"/>
+    <resource mimeType="video/mpeg" size="15056896" checksum="2eb97e307132d4a18e2fac5ee120d30a" uri="peripherals/sign_judas_iscariot.mpg"/>
+    <resource mimeType="video/mpeg" size="20887552" checksum="ae8bd6f8707c418507c1ce7dbf8c1da7" uri="peripherals/sign_just.mpg"/>
+    <resource mimeType="video/mpeg" size="54034432" checksum="d452841df0ab9a9cfb7de07826b72c87" uri="peripherals/sign_kingdom_of_god.mpg"/>
+    <resource mimeType="video/mpeg" size="28862464" checksum="03ccb062630a3170f6f2193e61a9ab34" uri="peripherals/sign_lord.mpg"/>
+    <resource mimeType="video/mpeg" size="46202880" checksum="ba4279a3b89bb698ebe52752ad087050" uri="peripherals/sign_messiah.mpg"/>
+    <resource mimeType="video/mpeg" size="37951488" checksum="763e4b5b0bfee53f44679a280c0a4c3e" uri="peripherals/sign_parable.mpg"/>
+    <resource mimeType="video/mpeg" size="45776896" checksum="bb2ccd86e97c0f324eb9d8c5a4bed601" uri="peripherals/sign_paradise.mpg"/>
+    <resource mimeType="video/mpeg" size="36655104" checksum="f8f21a74298cb96af11a842b198870f4" uri="peripherals/sign_passover.mpg"/>
+    <resource mimeType="video/mpeg" size="25556992" checksum="ac50e0be4cd61504583f066b94904791" uri="peripherals/sign_pharisee.mpg"/>
+    <resource mimeType="video/mpeg" size="28377088" checksum="79eeca8ae12e83c6554b2397625db55c" uri="peripherals/sign_place_of_the_dead.mpg"/>
+    <resource mimeType="video/mpeg" size="33218560" checksum="6bb2cbd330f0d8087bd42b8caaefcbb8" uri="peripherals/sign_power.mpg"/>
+    <resource mimeType="video/mpeg" size="35221504" checksum="d41e4f844edbe1ce765ae536dc637320" uri="peripherals/sign_prayer.mpg"/>
+    <resource mimeType="video/mpeg" size="33314816" checksum="f1d8c277d3a1e537d7f1903193f22523" uri="peripherals/sign_priest.mpg"/>
+    <resource mimeType="video/mpeg" size="19259392" checksum="9aaa92c6b58170f59e2bb2ee596c38d5" uri="peripherals/sign_prophet.mpg"/>
+    <resource mimeType="video/mpeg" size="25135104" checksum="bd19a6ca24d7d1e80fbe04fbbbf45ba0" uri="peripherals/sign_psalm.mpg"/>
+    <resource mimeType="video/mpeg" size="18485248" checksum="20584df446ad0db65a3db3db2efe7314" uri="peripherals/sign_religious_court.mpg"/>
+    <resource mimeType="video/mpeg" size="36974592" checksum="1db8c41e39df0288761c60b4578feef1" uri="peripherals/sign_repent.mpg"/>
+    <resource mimeType="video/mpeg" size="24498176" checksum="5812bc0c0ccd5f6c1eb6244d4e580fcd" uri="peripherals/sign_sabbath.mpg"/>
+    <resource mimeType="video/mpeg" size="43833344" checksum="a26078cc5492d07ac43c5917745f8439" uri="peripherals/sign_sacrifice.mpg"/>
+    <resource mimeType="video/mpeg" size="24694784" checksum="138900443f3debebdcd9143d5d1014a8" uri="peripherals/sign_sadducee.mpg"/>
+    <resource mimeType="video/mpeg" size="52015104" checksum="5eaccf72fa6443beefcfe67f58e73c3d" uri="peripherals/sign_satan.mpg"/>
+    <resource mimeType="video/mpeg" size="31711232" checksum="5f135122347425730da03a7931784dbd" uri="peripherals/sign_signs.mpg"/>
+    <resource mimeType="video/mpeg" size="50993152" checksum="2c3d7184a3eab5337da19c37bfb968ab" uri="peripherals/sign_sin.mpg"/>
+    <resource mimeType="video/mpeg" size="32585728" checksum="3643a2d132996cc674ad45d569762d31" uri="peripherals/sign_son_of_man.mpg"/>
+    <resource mimeType="video/mpeg" size="35840000" checksum="60d3a5c9ff1f09cdc6255a01ee3931d7" uri="peripherals/sign_synagogue.mpg"/>
+    <resource mimeType="video/mpeg" size="47554560" checksum="5073fedcae0d3563362669c818264981" uri="peripherals/sign_tax_collector.mpg"/>
+    <resource mimeType="video/mpeg" size="27045888" checksum="173614e73ec376cc86f68c83ac740570" uri="peripherals/sign_teacher_of_the_law.mpg"/>
+    <resource mimeType="video/mpeg" size="62490624" checksum="6d413678760cb8f3114d3c3cec769ff6" uri="peripherals/sign_temple.mpg"/>
+    <resource mimeType="video/mpeg" size="42924032" checksum="03c73588396da44261d969ae010d5bd0" uri="peripherals/sign_trials.mpg"/>
+    <resource mimeType="video/mpeg" size="25559040" checksum="28b658ad4fc86e997d07cc4a02e9e336" uri="peripherals/sign_unleavened_bread.mpg"/>
+    <resource mimeType="video/mpeg" size="41312256" checksum="020a71163160b5a5b12bf8bcea46c47c" uri="peripherals/sign_witness.mpg"/>
+    <resource mimeType="video/mpeg" size="23441408" checksum="00c7c5215ca896462ce65bc485c37bf2" uri="peripherals/sign_worship.mpg"/>
+    <resource mimeType="video/mpeg" size="19740672" checksum="3316c8c276ca86a52fcaa653717e3e86" uri="peripherals/name_simon_the_zealot.mpg"/>
+    <resource mimeType="video/mpeg" size="32270336" checksum="cf10bc95c432ea2a201eec9f214772fd" uri="peripherals/place_mount_of_olives.mpg"/>
+    <resource mimeType="video/mpeg" size="34500608" checksum="ceb7d70a2b1c9796c364e75ddaa4d613" uri="peripherals/name_herod_antipas.mpg"/>
+    <resource mimeType="video/mpeg" size="15056896" checksum="2eb97e307132d4a18e2fac5ee120d30a" uri="peripherals/name_judas_iscariot.mpg"/>
+  </manifest>
+  <names>
+    <name id="book-luk">
+      <short>Luc</short>
+    </name>
+    <name id="peripherals">
+      <short>définitions</short>
+    </name>
+    <name id="name-abraham">
+      <short>Abraham</short>
+    </name>
+    <name id="name-david">
+      <short>David</short>
+    </name>
+    <name id="name-elijah">
+      <short>Elie</short>
+    </name>
+    <name id="name-herod-antipas">
+      <short>Hérode Antipas</short>
+    </name>
+    <name id="name-isaac">
+      <short>Isaac</short>
+    </name>
+    <name id="name-isaiah">
+      <short>Esaïe</short>
+    </name>
+    <name id="name-jacob">
+      <short>Jacob</short>
+    </name>
+    <name id="name-james">
+      <short>Jacques</short>
+    </name>
+    <name id="name-john">
+      <short>Jean</short>
+    </name>
+    <name id="name-john-the-baptist">
+      <short>Jean-Baptiste</short>
+    </name>
+    <name id="name-joseph">
+      <short>Joseph</short>
+    </name>
+    <name id="name-luke">
+      <short>Luc</short>
+    </name>
+    <name id="name-mary">
+      <short>Marie</short>
+    </name>
+    <name id="name-moses">
+      <short>Moïse</short>
+    </name>
+    <name id="name-peter">
+      <short>Pierre</short>
+    </name>
+    <name id="name-pilate">
+      <short>Pilate</short>
+    </name>
+    <name id="name-simon-of-cyrene">
+      <short>Simon de Cyrène</short>
+    </name>
+    <name id="name-simon-peter">
+      <short>Simon-Pierre</short>
+    </name>
+    <name id="name-simon-the-pharisee">
+      <short>Simon le Pharisien</short>
+    </name>
+    <name id="name-simon-the-zealot">
+      <short>Simon le nationaliste</short>
+    </name>
+    <name id="name-solomon">
+      <short>Salomon</short>
+    </name>
+    <name id="name-zachariah">
+      <short>Zakarie</short>
+    </name>
+    <name id="place-bethany">
+      <short>Béthanie</short>
+    </name>
+    <name id="place-capernaum">
+      <short>Capernaüm</short>
+    </name>
+    <name id="place-galilee">
+      <short>Galilée</short>
+    </name>
+    <name id="place-golgotha">
+      <short>Lieu du crâne</short>
+    </name>
+    <name id="place-israel">
+      <short>Israël</short>
+    </name>
+    <name id="place-jericho">
+      <short>Jéricho</short>
+    </name>
+    <name id="place-jerusalem">
+      <short>Jérusalem</short>
+    </name>
+    <name id="place-jordan">
+      <short>Jourdain</short>
+    </name>
+    <name id="place-judea">
+      <short>Judée</short>
+    </name>
+    <name id="place-lake-galilee">
+      <short>Lac de Galilée</short>
+    </name>
+    <name id="place-rome">
+      <short>Rome</short>
+    </name>
+    <name id="place-samaria">
+      <short>Samarie</short>
+    </name>
+    <name id="place-syria">
+      <short>Syrie</short>
+    </name>
+    <name id="sign-angel">
+      <short>ange</short>
+    </name>
+    <name id="sign-apostles">
+      <short>apôtres</short>
+    </name>
+    <name id="sign-baptism">
+      <short>baptême</short>
+    </name>
+    <name id="sign-criminal">
+      <short>criminel</short>
+    </name>
+    <name id="sign-disciple">
+      <short>disciple</short>
+    </name>
+    <name id="sign-elders">
+      <short>anciens</short>
+    </name>
+    <name id="sign-evil-spirit">
+      <short>esprit mauvais</short>
+    </name>
+    <name id="sign-faith">
+      <short>foi</short>
+    </name>
+    <name id="sign-fast">
+      <short>jeûne</short>
+    </name>
+    <name id="sign-glory">
+      <short>gloire</short>
+    </name>
+    <name id="sign-god">
+      <short>Dieu</short>
+    </name>
+    <name id="sign-heal">
+      <short>guérir</short>
+    </name>
+    <name id="sign-high-priest">
+      <short>grand-prêtre</short>
+    </name>
+    <name id="sign-holy">
+      <short>saint</short>
+    </name>
+    <name id="sign-holy-of-holies">
+      <short>lieu saint</short>
+    </name>
+    <name id="sign-holy-spirit">
+      <short>Saint-Esprit</short>
+    </name>
+    <name id="sign-it-is-written">
+      <short>il est écrit</short>
+    </name>
+    <name id="sign-judas-iscariot">
+      <short>Judas Iscariote</short>
+    </name>
+    <name id="sign-just">
+      <short>juste</short>
+    </name>
+    <name id="sign-kingdom-of-god">
+      <short>Royaume de Dieu</short>
+    </name>
+    <name id="sign-lord">
+      <short>Seigneur</short>
+    </name>
+    <name id="sign-messiah">
+      <short>messie</short>
+    </name>
+    <name id="sign-parable">
+      <short>parabole</short>
+    </name>
+    <name id="sign-paradise">
+      <short>paradis</short>
+    </name>
+    <name id="sign-passover">
+      <short>pâque</short>
+    </name>
+    <name id="sign-pharisee">
+      <short>pharisien</short>
+    </name>
+    <name id="sign-place-of-the-dead">
+      <short>lieu des morts</short>
+    </name>
+    <name id="sign-power">
+      <short>puissance</short>
+    </name>
+    <name id="sign-prayer">
+      <short>prière</short>
+    </name>
+    <name id="sign-priest">
+      <short>prêtre</short>
+    </name>
+    <name id="sign-prophet">
+      <short>prophète</short>
+    </name>
+    <name id="sign-psalm">
+      <short>psaume</short>
+    </name>
+    <name id="sign-religious-court">
+      <short>tribunal religieux</short>
+    </name>
+    <name id="sign-repent">
+      <short>changer de vie</short>
+    </name>
+    <name id="sign-sabbath">
+      <short>sabbat</short>
+    </name>
+    <name id="sign-sacrifice">
+      <short>sacrifice</short>
+    </name>
+    <name id="sign-satan">
+      <short>satan</short>
+    </name>
+    <name id="sign-signs">
+      <short>signes</short>
+    </name>
+    <name id="sign-sin">
+      <short>péché</short>
+    </name>
+    <name id="sign-synagoge">
+      <short>synagoge</short>
+    </name>
+    <name id="sign-tax-collector">
+      <short>employé des impôts</short>
+    </name>
+    <name id="sign-teacher-of-the-law">
+      <short>maître de la loi</short>
+    </name>
+    <name id="sign-temple">
+      <short>temple</short>
+    </name>
+    <name id="sign-trials">
+      <short>epreuves</short>
+    </name>
+    <name id="sign-unleavened-bread">
+      <short>pain sans levain</short>
+    </name>
+    <name id="sign-witness">
+      <short>témoin</short>
+    </name>
+    <name id="sign-worship">
+      <short>adorer</short>
+    </name>
+    <name id="place-nazareth">
+      <short>place-nazareth</short>
+    </name>
+    <name id="sign-sadducee">
+      <short>sign-sadducee</short>
+    </name>
+    <name id="sign-son-of-man">
+      <short>sign-son-of-man</short>
+    </name>
+    <name id="place_mount_of_olives">
+      <short>Mont des Oliviers</short>
+    </name>
+    <name id="place_bethlehem">
+      <short>Bethléem</short>
+    </name>
+    <name id="place-bethlehem">
+      <short>place-bethlehem</short>
+    </name>
+    <name id="sign-synagogue">
+      <short>sign-synagogue</short>
+    </name>
+    <name id="place-mount-of-olives">
+      <short>place-mount-of-olives</short>
+    </name>
+    <name id="name-judas-iscariot">
+      <short>name-judas-iscariot</short>
+    </name>
+  </names>
+  <source/>
+  <publications>
+    <publication id="pt">
+      <canonicalContent>
+        <book code="LUK"/>
+      </canonicalContent>
+      <canonSpec type="OT, NT">
+        <component>westernOT</component>
+        <component>westernNT</component>
+      </canonSpec>
+      <structure>
+        <division role="LUK" name="book-luk">
+          <content src="LUK/LUK_1.mpg" role="LUK 1"/>
+          <content src="LUK/LUK_10.mpg" role="LUK 10"/>
+          <content src="LUK/LUK_11.mpg" role="LUK 11"/>
+          <content src="LUK/LUK_12.mpg" role="LUK 12"/>
+          <content src="LUK/LUK_13.mpg" role="LUK 13"/>
+          <content src="LUK/LUK_14.mpg" role="LUK 14"/>
+          <content src="LUK/LUK_15.mpg" role="LUK 15"/>
+          <content src="LUK/LUK_16.mpg" role="LUK 16"/>
+          <content src="LUK/LUK_17.mpg" role="LUK 17"/>
+          <content src="LUK/LUK_18.mpg" role="LUK 18"/>
+          <content src="LUK/LUK_19.mpg" role="LUK 19"/>
+          <content src="LUK/LUK_2.mpg" role="LUK 2"/>
+          <content src="LUK/LUK_20.mpg" role="LUK 20"/>
+          <content src="LUK/LUK_21.mpg" role="LUK 21"/>
+          <content src="LUK/LUK_22.mpg" role="LUK 22"/>
+          <content src="LUK/LUK_23.mpg" role="LUK 23"/>
+          <content src="LUK/LUK_24.mpg" role="LUK 24"/>
+          <content src="LUK/LUK_3.mpg" role="LUK 3"/>
+          <content src="LUK/LUK_4.mpg" role="LUK 4"/>
+          <content src="LUK/LUK_5.mpg" role="LUK 5"/>
+          <content src="LUK/LUK_6.mpg" role="LUK 6"/>
+          <content src="LUK/LUK_7.mpg" role="LUK 7"/>
+          <content src="LUK/LUK_8.mpg" role="LUK 8"/>
+          <content src="LUK/LUK_9.mpg" role="LUK 9"/>
+        </division>
+        <division role="peripherals" name="peripherals">
+          <content src="peripherals/name_abraham.mpg" role="name abraham" name="name-abraham"/>
+          <content src="peripherals/name_david.mpg" role="name david" name="name-david"/>
+          <content src="peripherals/name_elijah.mpg" role="name elijah" name="name-elijah"/>
+          <content src="peripherals/name_isaac.mpg" role="name isaac" name="name-isaac"/>
+          <content src="peripherals/name_isaiah.mpg" role="name isaiah" name="name-isaiah"/>
+          <content src="peripherals/name_jacob.mpg" role="name jacob" name="name-jacob"/>
+          <content src="peripherals/name_james.mpg" role="name james" name="name-james"/>
+          <content src="peripherals/name_john.mpg" role="name john" name="name-john"/>
+          <content src="peripherals/name_john_the_baptist.mpg" role="name john the baptist" name="name-john-the-baptist"/>
+          <content src="peripherals/name_joseph.mpg" role="name joseph" name="name-joseph"/>
+          <content src="peripherals/name_luke.mpg" role="name luke" name="name-luke"/>
+          <content src="peripherals/name_mary.mpg" role="name mary" name="name-mary"/>
+          <content src="peripherals/name_moses.mpg" role="name moses" name="name-moses"/>
+          <content src="peripherals/name_peter.mpg" role="name peter" name="name-peter"/>
+          <content src="peripherals/name_pilate.mpg" role="name pilate" name="name-pilate"/>
+          <content src="peripherals/name_simon_of_cyrene.mpg" role="name simon of cyrene" name="name-simon-of-cyrene"/>
+          <content src="peripherals/name_simon_peter.mpg" role="name simon peter" name="name-simon-peter"/>
+          <content src="peripherals/name_simon_the_pharisee.mpg" role="name simon the pharisee" name="name-simon-the-pharisee"/>
+          <content src="peripherals/name_solomon.mpg" role="name solomon" name="name-solomon"/>
+          <content src="peripherals/name_zachariah.mpg" role="name zachariah" name="name-zachariah"/>
+          <content src="peripherals/place_bethany.mpg" role="place bethany" name="place-bethany"/>
+          <content src="peripherals/place_bethlehem.mpg" role="place bethlehem" name="place-bethlehem"/>
+          <content src="peripherals/place_capernaum.mpg" role="place capernaum" name="place-capernaum"/>
+          <content src="peripherals/place_galilee.mpg" role="place galilee" name="place-galilee"/>
+          <content src="peripherals/place_golgotha.mpg" role="place golgotha" name="place-golgotha"/>
+          <content src="peripherals/place_israel.mpg" role="place israel" name="place-israel"/>
+          <content src="peripherals/place_jericho.mpg" role="place jericho" name="place-jericho"/>
+          <content src="peripherals/place_jerusalem.mpg" role="place jerusalem" name="place-jerusalem"/>
+          <content src="peripherals/place_jordan.mpg" role="place jordan" name="place-jordan"/>
+          <content src="peripherals/place_judea.mpg" role="place judea" name="place-judea"/>
+          <content src="peripherals/place_lake_galilee.mpg" role="place lake galilee" name="place-lake-galilee"/>
+          <content src="peripherals/place_nazareth.mpg" role="place nazareth" name="place-nazareth"/>
+          <content src="peripherals/place_rome.mpg" role="place rome" name="place-rome"/>
+          <content src="peripherals/place_samaria.mpg" role="place samaria" name="place-samaria"/>
+          <content src="peripherals/place_syria.mpg" role="place syria" name="place-syria"/>
+          <content src="peripherals/sign_angel.mpg" role="sign angel" name="sign-angel"/>
+          <content src="peripherals/sign_apostles.mpg" role="sign apostles" name="sign-apostles"/>
+          <content src="peripherals/sign_baptism.mpg" role="sign baptism" name="sign-baptism"/>
+          <content src="peripherals/sign_criminal.mpg" role="sign criminal" name="sign-criminal"/>
+          <content src="peripherals/sign_disciple.mpg" role="sign disciple" name="sign-disciple"/>
+          <content src="peripherals/sign_elders.mpg" role="sign elders" name="sign-elders"/>
+          <content src="peripherals/sign_evil_spirit.mpg" role="sign evil spirit" name="sign-evil-spirit"/>
+          <content src="peripherals/sign_faith.mpg" role="sign faith" name="sign-faith"/>
+          <content src="peripherals/sign_fast.mpg" role="sign fast" name="sign-fast"/>
+          <content src="peripherals/sign_glory.mpg" role="sign glory" name="sign-glory"/>
+          <content src="peripherals/sign_god.mpg" role="sign god" name="sign-god"/>
+          <content src="peripherals/sign_heal.mpg" role="sign heal" name="sign-heal"/>
+          <content src="peripherals/sign_high_priest.mpg" role="sign high priest" name="sign-high-priest"/>
+          <content src="peripherals/sign_holy.mpg" role="sign holy" name="sign-holy"/>
+          <content src="peripherals/sign_holy_of_holies.mpg" role="sign holy of holies" name="sign-holy-of-holies"/>
+          <content src="peripherals/sign_holy_spirit.mpg" role="sign holy spirit" name="sign-holy-spirit"/>
+          <content src="peripherals/sign_it_is_written.mpg" role="sign it is written" name="sign-it-is-written"/>
+          <content src="peripherals/sign_judas_iscariot.mpg" role="sign judas iscariot" name="sign-judas-iscariot"/>
+          <content src="peripherals/sign_just.mpg" role="sign just" name="sign-just"/>
+          <content src="peripherals/sign_kingdom_of_god.mpg" role="sign kingdom of god" name="sign-kingdom-of-god"/>
+          <content src="peripherals/sign_lord.mpg" role="sign lord" name="sign-lord"/>
+          <content src="peripherals/sign_messiah.mpg" role="sign messiah" name="sign-messiah"/>
+          <content src="peripherals/sign_parable.mpg" role="sign parable" name="sign-parable"/>
+          <content src="peripherals/sign_paradise.mpg" role="sign paradise" name="sign-paradise"/>
+          <content src="peripherals/sign_passover.mpg" role="sign passover" name="sign-passover"/>
+          <content src="peripherals/sign_pharisee.mpg" role="sign pharisee" name="sign-pharisee"/>
+          <content src="peripherals/sign_place_of_the_dead.mpg" role="sign place of the dead" name="sign-place-of-the-dead"/>
+          <content src="peripherals/sign_power.mpg" role="sign power" name="sign-power"/>
+          <content src="peripherals/sign_prayer.mpg" role="sign prayer" name="sign-prayer"/>
+          <content src="peripherals/sign_priest.mpg" role="sign priest" name="sign-priest"/>
+          <content src="peripherals/sign_prophet.mpg" role="sign prophet" name="sign-prophet"/>
+          <content src="peripherals/sign_psalm.mpg" role="sign psalm" name="sign-psalm"/>
+          <content src="peripherals/sign_religious_court.mpg" role="sign religious court" name="sign-religious-court"/>
+          <content src="peripherals/sign_repent.mpg" role="sign repent" name="sign-repent"/>
+          <content src="peripherals/sign_sabbath.mpg" role="sign sabbath" name="sign-sabbath"/>
+          <content src="peripherals/sign_sacrifice.mpg" role="sign sacrifice" name="sign-sacrifice"/>
+          <content src="peripherals/sign_sadducee.mpg" role="sign sadducee" name="sign-sadducee"/>
+          <content src="peripherals/sign_satan.mpg" role="sign satan" name="sign-satan"/>
+          <content src="peripherals/sign_signs.mpg" role="sign signs" name="sign-signs"/>
+          <content src="peripherals/sign_sin.mpg" role="sign sin" name="sign-sin"/>
+          <content src="peripherals/sign_son_of_man.mpg" role="sign son of man" name="sign-son-of-man"/>
+          <content src="peripherals/sign_synagogue.mpg" role="sign synagogue" name="sign-synagogue"/>
+          <content src="peripherals/sign_tax_collector.mpg" role="sign tax collector" name="sign-tax-collector"/>
+          <content src="peripherals/sign_teacher_of_the_law.mpg" role="sign teacher of the law" name="sign-teacher-of-the-law"/>
+          <content src="peripherals/sign_temple.mpg" role="sign temple" name="sign-temple"/>
+          <content src="peripherals/sign_trials.mpg" role="sign trials" name="sign-trials"/>
+          <content src="peripherals/sign_unleavened_bread.mpg" role="sign unleavened bread" name="sign-unleavened-bread"/>
+          <content src="peripherals/sign_witness.mpg" role="sign witness" name="sign-witness"/>
+          <content src="peripherals/sign_worship.mpg" role="sign worship" name="sign-worship"/>
+          <content src="peripherals/name_simon_the_zealot.mpg" role="name simon the zealot" name="name-simon-the-zealot"/>
+          <content src="peripherals/place_mount_of_olives.mpg" role="place mount of olives" name="place-mount-of-olives"/>
+          <content src="peripherals/name_herod_antipas.mpg" role="name herod antipas" name="name-herod-antipas"/>
+          <content src="peripherals/name_judas_iscariot.mpg" role="name judas iscariot" name="name-judas-iscariot"/>
+        </division>
+      </structure>
+    </publication>
+  </publications>
+  <archiveStatus>
+    <dateUpdated>2019-12-10T15:44:10.641544</dateUpdated>
+    <dateArchived>2019-11-27T15:22:25.917419</dateArchived>
+    <bundleCreatorName>Elbert Boot</bundleCreatorName>
+    <archivistName>Elbert Boot</archivistName>
+    <comments>First submit updated metadata and mpg files</comments>
+  </archiveStatus>
+  <copyright>
+    <fullStatement>
+      <statementContent type="plain">© 2019, L'Alliance biblique française</statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion/>
+</DBLMetadata>
