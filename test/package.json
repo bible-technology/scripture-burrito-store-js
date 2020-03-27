@@ -1,26 +1,26 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "Unit tests",
-  "main": "index.js",
-  "scripts": {
-    "testAll": "mocha test_all.js",
-    "testSmoke": "mocha test_smoke.js",
-    "testSchema": "mocha test_schema.js",
-    "testDbl": "mocha test_dbl_import.js",
-    "testDblOab": "mocha test_dbl_oab_import.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "babel-core": "^6.26.3",
-    "chai": "^4.2.0",
-    "deepcopy": "^2.0.0",
-    "esm": "^3.2.25",
-    "fs": "0.0.1-security",
-    "fs-extra": "^8.1.0",
-    "mocha": "^5.2.0",
-    "tape": "^4.12.1",
-    "xmldom": "^0.3.0"
-  }
+    "name": "test",
+    "version": "1.0.0",
+    "description": "Unit tests",
+    "main": "index.js",
+    "scripts": {
+        "testAll": "mocha test_all.js",
+        "testSmoke": "mocha test_smoke.js",
+        "testSchema": "mocha test_schema.js",
+        "testDbl": "mocha test_dbl_import.js",
+        "testDblOab": "mocha test_dbl_oab_import.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "babel-core": "^6.26.3",
+        "chai": "^4.2.0",
+        "deepcopy": "^2.0.0",
+        "esm": "^3.2.25",
+        "fs": "0.0.1-security",
+        "fs-extra": "^8.1.0",
+        "mocha": "^5.2.0",
+        "tape": "^4.12.1",
+        "xmldom": "^0.3.0"
+    }
 }

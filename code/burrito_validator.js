@@ -1,13 +1,13 @@
 /* Borrowed from Dan De Blois on Scripture Burrito, then hacked. */
 
-'use strict';
+"use strict";
 
-import * as fse from 'fs-extra';
-import * as path from 'path';
-import * as semver from 'semver';
-import Ajv from 'ajv';
-import schemaIndex from '../schema/sbs_index.js';
-import {BurritoError} from './burrito_error.js';
+import * as fse from "fs-extra";
+import * as path from "path";
+import * as semver from "semver";
+import Ajv from "ajv";
+import schemaIndex from "../schema/sbs_index.js";
+import { BurritoError } from "./burrito_error.js";
 
 /**
  * @type module:BurritoValidator
@@ -18,7 +18,7 @@ class BurritoValidator {
        Sets up schemas
     */
     constructor() {
-	this.schemas = new Ajv({schemas: schemaIndex.schemas});
+        this.schemas = new Ajv({ schemas: schemaIndex.schemas });
     }
 
     /**
@@ -28,24 +28,23 @@ class BurritoValidator {
        * @return {Object}
      */
     schemaValidate(schemaId, data) {
-	var validator = this.schemas.getSchema(schemaIndex.schemaIds[schemaId]);
-	if (validator(data)) {
-	    return {
-		"schemaId": schemaId,
-		"result": "accepted"
-	    };
-	} else {
-	    console.log(JSON.stringify(validator.errors));
-	    return {
-		"schemaId": schemaId,
-		"result": "rejected",
-		"reason": "SchemaInvalid",
-		"message": JSON.stringify(validator.errors),
-		"schemaErrors": validator.errors
-	    };
-	}
+        var validator = this.schemas.getSchema(schemaIndex.schemaIds[schemaId]);
+        if (validator(data)) {
+            return {
+                schemaId: schemaId,
+                result: "accepted"
+            };
+        } else {
+            console.log(JSON.stringify(validator.errors));
+            return {
+                schemaId: schemaId,
+                result: "rejected",
+                reason: "SchemaInvalid",
+                message: JSON.stringify(validator.errors),
+                schemaErrors: validator.errors
+            };
+        }
     }
-
 }
 
-export {BurritoValidator}
+export { BurritoValidator };

@@ -1,3 +1,3 @@
-describe('Schema Tests', function() {
-  require('./test_schema.js');
-  })
+describe("Schema Tests", function() {
+    require("./test_schema.js");
+});

@@ -1,40 +1,40 @@
-'use strict';
+"use strict";
 
-import {BurritoError} from './burrito_error.js';
+import { BurritoError } from "./burrito_error.js";
 
 class MetadataStore {
     /**
-    */
+     */
     constructor(burritoStore) {
-	this._burritoStore = burritoStore;
+        this._burritoStore = burritoStore;
     }
 
     /** Returns [idServer, id, revision] if exactly one systemID with a revision is found, otherwise returns [null, null, null].
-	* @param {Object} metadata - metadata for a Burrito
-	*@return {Array}
-	*/
+     * @param {Object} metadata - metadata for a Burrito
+     *@return {Array}
+     */
     idFromMetadataObject(metadata) {
-	try {
-	    const idServers = metadata.idServers;
-	    const systemIds = metadata.identification.systemId;
-	    var sysUrl, entryId, revisionId = null;
-	    Object.keys(systemIds).forEach(
-		function(systemAbbr) {
-		    const systemId = systemIds[systemAbbr];
-		    if ("revision" in systemId) {
-			if (sysUrl) {
-			    throw new BurritoError("UnableToFindMetadataId");
-			}
-			entryId = systemId.id;
-			revisionId = systemId.revision;
-			sysUrl = idServers[systemAbbr]["id"];
-		    }
-		}
-	    );
-	    return [sysUrl, entryId, revisionId];
-	} catch (err) {
-	    return [null, null, null];
-	}
+        try {
+            const idServers = metadata.idServers;
+            const systemIds = metadata.identification.systemId;
+            var sysUrl,
+                entryId,
+                revisionId = null;
+            Object.keys(systemIds).forEach(function(systemAbbr) {
+                const systemId = systemIds[systemAbbr];
+                if ("revision" in systemId) {
+                    if (sysUrl) {
+                        throw new BurritoError("UnableToFindMetadataId");
+                    }
+                    entryId = systemId.id;
+                    revisionId = systemId.revision;
+                    sysUrl = idServers[systemAbbr]["id"];
+                }
+            });
+            return [sysUrl, entryId, revisionId];
+        } catch (err) {
+            return [null, null, null];
+        }
     }
 
     /**
@@ -44,17 +44,17 @@ class MetadataStore {
        * @param {Object} metadata
        */
     addEntryRevisionVariant(metadata, variant) {
-	const [sysUrl, entryId, revisionId] = this.idFromMetadataObject(metadata);
-	if (!sysUrl) {
-	    throw new BurritoError("UnableToFindMetadataId");
-	}
-	this.touchEntryRevision(sysUrl, entryId, revisionId);
-	this.__addEntryRevisionVariant(sysUrl, entryId, revisionId, variant, metadata);
-	this.__updateIdServerRecordFromMetadata(metadata);
+        const [sysUrl, entryId, revisionId] = this.idFromMetadataObject(metadata);
+        if (!sysUrl) {
+            throw new BurritoError("UnableToFindMetadataId");
+        }
+        this.touchEntryRevision(sysUrl, entryId, revisionId);
+        this.__addEntryRevisionVariant(sysUrl, entryId, revisionId, variant, metadata);
+        this.__updateIdServerRecordFromMetadata(metadata);
     }
 
     __updateIdServerRecordFromMetadata(metadata) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     /**
@@ -64,55 +64,55 @@ class MetadataStore {
        * @param {string} revisionId
      */
     touchEntryRevision(sysUrl, entryId, revisionId) {
-	if (!this.__sysUrlRecord(sysUrl)) {
-	    this.__addSysUrlRecord(sysUrl);
-	}
-	if (!this.__entryRecord(sysUrl, entryId)) {
-	    this.__addEntryRecord(sysUrl, entryId);
-	}
-	if (!this.__revisionRecord(sysUrl, entryId, revisionId)) {
-	    this.__addRevisionRecord(sysUrl, entryId, revisionId);
-	}
+        if (!this.__sysUrlRecord(sysUrl)) {
+            this.__addSysUrlRecord(sysUrl);
+        }
+        if (!this.__entryRecord(sysUrl, entryId)) {
+            this.__addEntryRecord(sysUrl, entryId);
+        }
+        if (!this.__revisionRecord(sysUrl, entryId, revisionId)) {
+            this.__addRevisionRecord(sysUrl, entryId, revisionId);
+        }
     }
 
     /**
      */
     __idServerKeys() {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
-    
+
     /**
      */
     __idServersDetails() {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
-    
+
     __idServersEntries() {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     __idServerEntries(idServerId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     __idServerEntriesLatestRevision(idServerId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     __idServerEntriesRevisions(idServerId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     __idServerEntryRevisions(idServerId, entryId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     __idServerEntryRevisionsVariants(idServerId, entryId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     __idServerEntryRevisionVariants(idServerId, entryId, revisionId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     /**
@@ -120,7 +120,7 @@ class MetadataStore {
        * @param {string} sysUrl
      */
     __sysUrlRecord(sysUrl) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     /**
@@ -129,7 +129,7 @@ class MetadataStore {
        * @param {string} entryId
      */
     __entryRecord(sysUrl, entryId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     /**
@@ -139,11 +139,11 @@ class MetadataStore {
        * @param {string} revisionId
      */
     __revisionRecord(sysUrl, entryId, revisionId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     __variantMetadata(sysUrl, entryId, revisionId, variantId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     /**
@@ -151,7 +151,7 @@ class MetadataStore {
        * @param {string} sysUrl
      */
     __addSysUrlRecord(sysUrl) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     /**
@@ -160,7 +160,7 @@ class MetadataStore {
        * @param {string} entryId
      */
     __addEntryRecord(sysUrl, entryId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     /**
@@ -170,19 +170,18 @@ class MetadataStore {
        * @param {string} revisionId
      */
     __addRevisionRecord(sysUrl, entryId, revisionId) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     /**
-       * @param {string} sysUrl
-       * @param {string} entryId
-       * @param {string} revisionId
-       * @param {string} metadata
+     * @param {string} sysUrl
+     * @param {string} entryId
+     * @param {string} revisionId
+     * @param {string} metadata
      */
     __addEntryRevisionVariant(sysUrl, entryId, revisionId, metadata) {
-	throw new BurritoError("MethodNotOverriddenBySubclass");
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
-    
 }
 
-export {MetadataStore}
+export { MetadataStore };

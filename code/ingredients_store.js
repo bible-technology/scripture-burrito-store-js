@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-import {BurritoError} from './burrito_error.js';
+import { BurritoError } from "./burrito_error.js";
 
 class IngredientsStore {
     /**
-    */
+     */
     constructor(burritoStore) {
-	this._burritoStore = burritoStore;
+        this._burritoStore = burritoStore;
     }
 }
 
-export {IngredientsStore}
+export { IngredientsStore };

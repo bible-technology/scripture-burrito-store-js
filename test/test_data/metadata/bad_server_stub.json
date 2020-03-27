@@ -1,27 +1,27 @@
 {
-  "meta": {
-    "version": "0.2.0",
-    "variant": "source"
-  },
-  "type": {
-    "flavorType": {
-      "name": "scripture",
-      "flavor": {
-        "name": "TextTranslation"
-      }
+    "meta": {
+        "version": "0.2.0",
+        "variant": "source"
+    },
+    "type": {
+        "flavorType": {
+            "name": "scripture",
+            "flavor": {
+                "name": "TextTranslation"
+            }
+        }
+    },
+    "idServers": {
+        "notdbl": {
+            "id": "https://notthedigitalbiblelibrary.org"
+        }
+    },
+    "identification": {
+        "systemId": {
+            "notdbl": {
+                "id": "0123456789abcdef",
+                "revision": "23"
+            }
+        }
     }
-  },
-  "idServers": {
-    "notdbl": {
-      "id": "https://notthedigitalbiblelibrary.org"
-    }
-  },
-  "identification": {
-    "systemId": {
-      "notdbl": {
-        "id": "0123456789abcdef",
-        "revision": "23"
-      }
-    }
-  }
 }

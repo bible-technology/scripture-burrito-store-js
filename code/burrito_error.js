@@ -5,11 +5,11 @@ class BurritoError extends Error {
     * @require Error
     */
     constructor(msg, arg) {
-	super(msg);
-	if (arg) {
-	    this.arg = arg;
-	}
+        super(msg);
+        if (arg) {
+            this.arg = arg;
+        }
     }
 }
 
-export {BurritoError}
+export { BurritoError };

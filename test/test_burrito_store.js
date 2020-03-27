@@ -1,19 +1,16 @@
-'use strict';
+"use strict";
 
-require = require("esm")(module/*, options*/);
-const assert = require('chai').assert;
-const BurritoStore = require('../code/burrito_store.js').BurritoStore;
+require = require("esm")(module /*, options*/);
+const assert = require("chai").assert;
+const BurritoStore = require("../code/burrito_store.js").BurritoStore;
 
 describe("Burrito Class", function() {
-
     it("Exception when constructing directly", function() {
-	try {
-	    const b = new BurritoStore({});
-	    throw new Error("Too Far", {});
-	} catch (err) {
-	    assert.equal(err.message, "CannotConstructDirectly");
-	}
-
+        try {
+            const b = new BurritoStore({});
+            throw new Error("Too Far", {});
+        } catch (err) {
+            assert.equal(err.message, "CannotConstructDirectly");
+        }
     });
-
 });
