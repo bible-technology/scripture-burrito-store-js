@@ -30,6 +30,10 @@ describe("DBL Import", function() {
             fse.readFileSync(path.join(dblMetadataDir, "dbl_test_sl_entry.xml"), "utf8"),
             "text/xml"
         );
+        this.dblBrailleTestEntry = this.domParser.parseFromString(
+            fse.readFileSync(path.join(dblMetadataDir, "dbl_test_braille_entry.xml"), "utf8"),
+            "text/xml"
+        );
     });
 
     it("Convert DBL Test Text Entry", function() {
@@ -42,7 +46,7 @@ describe("DBL Import", function() {
 
     it("Convert DBL Test Audio Entry", function() {
         const converted = new DBLImport(this.dblAudioTestEntry);
-        console.log(JSON.stringify(converted.sbMetadata.relationships, null, 2));
+        // console.log(JSON.stringify(converted.sbMetadata.relationships, null, 2));
         const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
         // console.log(validationResult);
         assert.equal(validationResult.result, "accepted");
@@ -63,4 +67,13 @@ describe("DBL Import", function() {
         // console.log(validationResult);
         assert.equal(validationResult.result, "accepted");
     });
+
+    it("Convert DBL Test Braille Entry", function() {
+        const converted = new DBLImport(this.dblBrailleTestEntry);
+        console.log(JSON.stringify(converted.sbMetadata.type, null, 2));
+        const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sbMetadata);
+        // console.log(validationResult);
+        assert.equal(validationResult.result, "accepted");
+    });
+
 });

@@ -56,7 +56,8 @@ class DBLImport {
             text: "textTranslation",
             audio: "audioTranslation",
             print: "typesetScripture",
-            video: "signLanguageVideoTranslation"
+            video: "signLanguageVideoTranslation",
+            braille: "embossedBrailleScripture"
         };
         if (medium in lookup) {
             return lookup[medium];
@@ -355,6 +356,7 @@ class DBLImport {
             typeJson["flavorType"]["flavor"]["dramatization"] = "singleVoice";
         } else if (flavorName == "typesetScripture") {
         } else if (flavorName == "signLanguageVideoTranslation") {
+        } else if (flavorName == "embossedBrailleScripture") {
         } else {
             throw new Error("Unknown medium " + flavorName);
         }
