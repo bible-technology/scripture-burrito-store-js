@@ -1,0 +1,580 @@
+<DBLMetadata version="2.2" id="865ab834004f4186" revision="3">
+  <identification>
+    <name>DBL Test: World English Bible British Edition, John's Gospel Chapter 1 in Braille</name>
+    <nameLocal>WEBBE Braille</nameLocal>
+    <abbreviation>WEBBEBRL</abbreviation>
+    <abbreviationLocal>WEBBEBRL</abbreviationLocal>
+    <description>British/International spelling edition of the World English Bible in Braille</description>
+    <scope>Bible with Deuterocanon</scope>
+    <bundleProducer>nathanael/0.37.5</bundleProducer>
+  </identification>
+  <relationships>
+    <relation relationType="source" type="text" id="7142879509583d59" revision="9" publicationId="p4"/>
+  </relationships>
+  <agencies>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <finance>true</finance>
+      <qa>true</qa>
+      <uid>545d2cb0ae307afa44b390fc</uid>
+      <name>eBible.org</name>
+    </contributor>
+    <rightsHolder>
+      <uid>b78a0b882a8a372c837d68b7</uid>
+      <name>Compass Braille</name>
+      <nameLocal>Compass Braille</nameLocal>
+      <abbr>CB</abbr>
+      <url>https://www.compassbraille.org/</url>
+    </rightsHolder>
+    <contributor>
+      <uid>b78a0b882a8a372c837d68b7</uid>
+      <name>Compass Braille</name>
+      <content>true</content>
+      <finance>false</finance>
+      <qa>true</qa>
+      <publication>true</publication>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>en</ldml>
+    <rod>03222</rod>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>GB</iso>
+      <name>United Kingdom</name>
+    </country>
+  </countries>
+  <type>
+    <medium>braille</medium>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>false</isTranslation>
+    <isExpression>true</isExpression>
+    <isConfidential>false</isConfidential>
+  </type>
+  <format>
+    <liblouis>
+      <table>
+        <source>en-ueb-g2.ctb</source>
+        <name>Unified English Braille Grade 2</name>
+      </table>
+      <version>3.9.0</version>
+    </liblouis>
+    <numberSign>
+      <character>⠼</character>
+      <useInMargin>false</useInMargin>
+    </numberSign>
+    <content>
+      <chapterNumberStyle>upper</chapterNumberStyle>
+      <chapterHeadingsNumberFirst>false</chapterHeadingsNumberFirst>
+      <versedParagraphs>false</versedParagraphs>
+      <verseSeparator>⠀⠀</verseSeparator>
+      <includeIntros>true</includeIntros>
+    </content>
+    <page>
+      <charsPerLine>36</charsPerLine>
+      <linesPerPage>28</linesPerPage>
+      <defaultMarginWidth>3</defaultMarginWidth>
+      <versoLastLineBlank>false</versoLastLineBlank>
+      <carryLines>2</carryLines>
+    </page>
+    <isContracted>true</isContracted>
+  </format>
+  <manifest>
+    <resource mimeType="text/xml" size="13900" checksum="5e94b21782928836d83e5af9b271a125" uri="processing_resources/styles/stylesheet.xml"/>
+    <resource mimeType="text/xml" size="33906" checksum="7a4d35451e31dc9fb8a553e08ea8fa92" uri="source/BBM/JHN_1-1.bbm"/>
+    <resource mimeType="text/xml" size="21261" checksum="f00a9ed7f2aa146e2ff6a50cb12fa820" uri="release/PEF/JHN_1-1.pef"/>
+  </manifest>
+  <names>
+    <name id="i18n-contents">
+      <short>Contents</short>
+    </name>
+    <name id="i18n-psalm">
+      <short>Psalm</short>
+    </name>
+    <name id="i18n-chapter">
+      <short>Chapter</short>
+    </name>
+    <name id="i18n-chapters">
+      <short>Chapters</short>
+    </name>
+    <name id="i18n-braille_producer_statement">
+      <short>Produced in Braille by Compass Braille UK</short>
+    </name>
+    <name id="book-gen">
+      <abbr>Genesis</abbr>
+      <short>Genesis</short>
+      <long>The First Book of Moses, Commonly Called Genesis</long>
+    </name>
+    <name id="book-exo">
+      <abbr>Exodus</abbr>
+      <short>Exodus</short>
+      <long>The Second Book of Mosis, Commonly Called Exodus</long>
+    </name>
+    <name id="book-lev">
+      <abbr>Leviticus</abbr>
+      <short>Leviticus</short>
+      <long>The Third Book of Mosis, Commonly Called Leviticus</long>
+    </name>
+    <name id="book-num">
+      <abbr>Numbers</abbr>
+      <short>Numbers</short>
+      <long>The Fourth Book of Moses, Commonly Called Numbers</long>
+    </name>
+    <name id="book-deu">
+      <abbr>Deuteronomy</abbr>
+      <short>Deuteronomy</short>
+      <long>The Fifth Book of Moses, Commonly Called Deuteronomy</long>
+    </name>
+    <name id="book-jos">
+      <abbr>Joshua</abbr>
+      <short>Joshua</short>
+      <long>The Book of Joshua</long>
+    </name>
+    <name id="book-jdg">
+      <abbr>Judges</abbr>
+      <short>Judges</short>
+      <long>The Book of Judges</long>
+    </name>
+    <name id="book-rut">
+      <abbr>Ruth</abbr>
+      <short>Ruth</short>
+      <long>The Book of Ruth</long>
+    </name>
+    <name id="book-1sa">
+      <abbr>1 Samuel</abbr>
+      <short>1 Samuel</short>
+      <long>The First Book of Samuel</long>
+    </name>
+    <name id="book-2sa">
+      <abbr>2 Samuel</abbr>
+      <short>2 Samuel</short>
+      <long>The Second Book of Samuel</long>
+    </name>
+    <name id="book-1ki">
+      <abbr>1 Kings</abbr>
+      <short>1 Kings</short>
+      <long>The First Book of Kings</long>
+    </name>
+    <name id="book-2ki">
+      <abbr>2 Kings</abbr>
+      <short>2 Kings</short>
+      <long>The Second Book of Kings</long>
+    </name>
+    <name id="book-1ch">
+      <abbr>1 Chronicles</abbr>
+      <short>1 Chronicles</short>
+      <long>The First Book of Chronicles</long>
+    </name>
+    <name id="book-2ch">
+      <abbr>2 Chronicles</abbr>
+      <short>2 Chronicles</short>
+      <long>The Second Book of Chronicles</long>
+    </name>
+    <name id="book-ezr">
+      <abbr>Ezra</abbr>
+      <short>Ezra</short>
+      <long>The Book of Ezra</long>
+    </name>
+    <name id="book-neh">
+      <abbr>Nehemiah</abbr>
+      <short>Nehemiah</short>
+      <long>The Book of Nehemiah</long>
+    </name>
+    <name id="book-est">
+      <abbr>Esther</abbr>
+      <short>Esther</short>
+      <long>The Book of Esther</long>
+    </name>
+    <name id="book-job">
+      <abbr>Job</abbr>
+      <short>Job</short>
+      <long>The Book of Job</long>
+    </name>
+    <name id="book-psa">
+      <abbr>Psalm</abbr>
+      <short>Psalms</short>
+      <long>The Psalms</long>
+    </name>
+    <name id="book-pro">
+      <abbr>Proverbs</abbr>
+      <short>Proverbs</short>
+      <long>The Proverbs</long>
+    </name>
+    <name id="book-ecc">
+      <abbr>Ecclesiastes</abbr>
+      <short>Ecclesiastes</short>
+      <long>Ecclesiates or, The Preacher</long>
+    </name>
+    <name id="book-sng">
+      <abbr>Song of Solomon</abbr>
+      <short>Song of Solomon</short>
+      <long>The Song of Solomon</long>
+    </name>
+    <name id="book-isa">
+      <abbr>Isaiah</abbr>
+      <short>Isaiah</short>
+      <long>The Book of Isaiah</long>
+    </name>
+    <name id="book-jer">
+      <abbr>Jeremiah</abbr>
+      <short>Jeremiah</short>
+      <long>The Book of Jeremiah</long>
+    </name>
+    <name id="book-lam">
+      <abbr>Lamentations</abbr>
+      <short>Lamentations</short>
+      <long>The Lamentations of Jeremiah</long>
+    </name>
+    <name id="book-ezk">
+      <abbr>Ezekiel</abbr>
+      <short>Ezekiel</short>
+      <long>The Book of Ezekiel</long>
+    </name>
+    <name id="book-dan">
+      <abbr>Daniel</abbr>
+      <short>Daniel</short>
+      <long>The Book of Daniel</long>
+    </name>
+    <name id="book-hos">
+      <abbr>Hosea</abbr>
+      <short>Hosea</short>
+      <long>The Book of Hosea</long>
+    </name>
+    <name id="book-jol">
+      <abbr>Joel</abbr>
+      <short>Joel</short>
+      <long>The Book of Joel</long>
+    </name>
+    <name id="book-amo">
+      <abbr>Amos</abbr>
+      <short>Amos</short>
+      <long>The Book of Amos</long>
+    </name>
+    <name id="book-oba">
+      <abbr>Obadiah</abbr>
+      <short>Obadiah</short>
+      <long>The Book of Obadiah</long>
+    </name>
+    <name id="book-jon">
+      <abbr>Jonah</abbr>
+      <short>Jonah</short>
+      <long>The Book of Jonah</long>
+    </name>
+    <name id="book-mic">
+      <abbr>Micah</abbr>
+      <short>Micah</short>
+      <long>The Book of Micah</long>
+    </name>
+    <name id="book-nam">
+      <abbr>Nahum</abbr>
+      <short>Nahum</short>
+      <long>The Book of Nahum</long>
+    </name>
+    <name id="book-hab">
+      <abbr>Habakkuk</abbr>
+      <short>Habakkuk</short>
+      <long>The Book of Habakkuk</long>
+    </name>
+    <name id="book-zep">
+      <abbr>Zephaniah</abbr>
+      <short>Zephaniah</short>
+      <long>The Book of Zephaniah</long>
+    </name>
+    <name id="book-hag">
+      <abbr>Haggai</abbr>
+      <short>Haggai</short>
+      <long>The Book of Haggai</long>
+    </name>
+    <name id="book-zec">
+      <abbr>Zechariah</abbr>
+      <short>Zechariah</short>
+      <long>The Book of Zechariah</long>
+    </name>
+    <name id="book-mal">
+      <abbr>Malachi</abbr>
+      <short>Malachi</short>
+      <long>The Book of Malachi</long>
+    </name>
+    <name id="book-mat">
+      <abbr>Matthew</abbr>
+      <short>Matthew</short>
+      <long>The Good News According to Matthew</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mark</abbr>
+      <short>Mark</short>
+      <long>The Good News According to Mark</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Luke</abbr>
+      <short>Luke</short>
+      <long>The Good News According to Luke</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>John</abbr>
+      <short>John</short>
+      <long>The Good News According to John</long>
+    </name>
+    <name id="book-act">
+      <abbr>Acts</abbr>
+      <short>Acts</short>
+      <long>The Acts of the Apostles</long>
+    </name>
+    <name id="book-rom">
+      <abbr>Romans</abbr>
+      <short>Romans</short>
+      <long>Paul’s Letter to the Romans</long>
+    </name>
+    <name id="book-1co">
+      <abbr>1 Corinthians</abbr>
+      <short>1 Corinthians</short>
+      <long>Paul’s First Letter to the Corinthians</long>
+    </name>
+    <name id="book-2co">
+      <abbr>2 Corinthians</abbr>
+      <short>2 Corinthians</short>
+      <long>Paul’s Second Letter to the Corinthians</long>
+    </name>
+    <name id="book-gal">
+      <abbr>Galatians</abbr>
+      <short>Galatians</short>
+      <long>Paul’s Letter to the Galatians</long>
+    </name>
+    <name id="book-eph">
+      <abbr>Ephesians</abbr>
+      <short>Ephesians</short>
+      <long>Paul’s Letter to the Ephesians</long>
+    </name>
+    <name id="book-php">
+      <abbr>Philippians</abbr>
+      <short>Philippians</short>
+      <long>Paul’s Letter to the Philippians</long>
+    </name>
+    <name id="book-col">
+      <abbr>Colossians</abbr>
+      <short>Colossians</short>
+      <long>Paul’s Letter to the Colossians</long>
+    </name>
+    <name id="book-1th">
+      <abbr>1 Thessalonians</abbr>
+      <short>1 Thessalonians</short>
+      <long>Paul’s First Letter to the Thessalonians</long>
+    </name>
+    <name id="book-2th">
+      <abbr>2 Thessalonians</abbr>
+      <short>2 Thessalonians</short>
+      <long>Paul’s Second Letter to the Thessalonians</long>
+    </name>
+    <name id="book-1ti">
+      <abbr>1 Timothy</abbr>
+      <short>1 Timothy</short>
+      <long>Paul’s First Letter to Timothy</long>
+    </name>
+    <name id="book-2ti">
+      <abbr>2 Timothy</abbr>
+      <short>2 Timothy</short>
+      <long>Paul’s Second Letter to Timothy</long>
+    </name>
+    <name id="book-tit">
+      <abbr>Titus</abbr>
+      <short>Titus</short>
+      <long>Paul’s Letter to Titus</long>
+    </name>
+    <name id="book-phm">
+      <abbr>Philemon</abbr>
+      <short>Philemon</short>
+      <long>Paul’s Letter to Philemon</long>
+    </name>
+    <name id="book-heb">
+      <abbr>Hebrews</abbr>
+      <short>Hebrews</short>
+      <long>The Letter to the Hebrews</long>
+    </name>
+    <name id="book-jas">
+      <abbr>James</abbr>
+      <short>James</short>
+      <long>The Letter from James</long>
+    </name>
+    <name id="book-1pe">
+      <abbr>1 Peter</abbr>
+      <short>1 Peter</short>
+      <long>Peter’s First Letter</long>
+    </name>
+    <name id="book-2pe">
+      <abbr>2 Peter</abbr>
+      <short>2 Peter</short>
+      <long>Peter’s Second Letter</long>
+    </name>
+    <name id="book-1jn">
+      <abbr>1 John</abbr>
+      <short>1 John</short>
+      <long>John’s First Letter</long>
+    </name>
+    <name id="book-2jn">
+      <abbr>2 John</abbr>
+      <short>2 John</short>
+      <long>John’s Second Letter</long>
+    </name>
+    <name id="book-3jn">
+      <abbr>3 John</abbr>
+      <short>3 John</short>
+      <long>John’s Third Letter</long>
+    </name>
+    <name id="book-jud">
+      <abbr>Jude</abbr>
+      <short>Jude</short>
+      <long>The Letter from Jude</long>
+    </name>
+    <name id="book-rev">
+      <abbr>Revelation</abbr>
+      <short>Revelation</short>
+      <long>The Revelation to John</long>
+    </name>
+    <name id="book-tob">
+      <abbr>Tobit</abbr>
+      <short>Tobit</short>
+      <long>Tobit</long>
+    </name>
+    <name id="book-jdt">
+      <abbr>Judith</abbr>
+      <short>Judith</short>
+      <long>Judith</long>
+    </name>
+    <name id="book-esg">
+      <abbr>ESG</abbr>
+      <short>Esther (Greek)</short>
+      <long>Esther (Greek)</long>
+    </name>
+    <name id="book-wis">
+      <abbr>Wisdom</abbr>
+      <short>Wisdom of Solomon</short>
+      <long>The Wisdom of Solomon</long>
+    </name>
+    <name id="book-sir">
+      <abbr>Sirach</abbr>
+      <short>Sirach</short>
+      <long>The Wisdom of Jesus the Son of Sirach, or Ecclesiasticus</long>
+    </name>
+    <name id="book-bar">
+      <abbr>Baruch</abbr>
+      <short>Baruch</short>
+      <long>Baruch</long>
+    </name>
+    <name id="book-1ma">
+      <abbr>1Ma</abbr>
+      <short>1 Maccabees</short>
+      <long>The First Book of the Maccabees</long>
+    </name>
+    <name id="book-2ma">
+      <abbr>2Ma</abbr>
+      <short>2 Maccabees</short>
+      <long>The Second Book of the Maccabees</long>
+    </name>
+    <name id="book-3ma">
+      <abbr>3Ma</abbr>
+      <short>3 Maccabees</short>
+      <long>The Third Book of the Maccabees</long>
+    </name>
+    <name id="book-4ma">
+      <abbr>4Ma</abbr>
+      <short>4 Maccabees</short>
+      <long>The Fourth Book of the Maccabees</long>
+    </name>
+    <name id="book-1es">
+      <abbr>1Es</abbr>
+      <short>1 Esdras</short>
+      <long>1 Esdras</long>
+    </name>
+    <name id="book-2es">
+      <abbr>2Es</abbr>
+      <short>2 Esdras</short>
+      <long>2 Esdras</long>
+    </name>
+    <name id="book-man">
+      <abbr>Man</abbr>
+      <short>Prayer of Manasses</short>
+      <long>The Prayer of Manasses King of Judah when He was Held Captive in Babylon</long>
+    </name>
+    <name id="book-ps2">
+      <abbr>Ps151</abbr>
+      <short>Psalm 151</short>
+      <long>Psalm 151</long>
+    </name>
+    <name id="book-dag">
+      <abbr>DanielG</abbr>
+      <short>Daniel (Greek)</short>
+      <long>The Book of Daniel with Greek Portions</long>
+    </name>
+    <name id="section-jhn">
+      <abbr>⠠⠚⠕⠓⠝</abbr>
+      <short>John</short>
+      <long>The Good News According to John</long>
+    </name>
+    <name id="section-jhn_1">
+      <abbr>⠠⠚⠕⠓⠝ ⠼⠁</abbr>
+      <short>John 1</short>
+      <long>The Good News According to John Chapters 1</long>
+    </name>
+    <name id="section-jhn_1-1">
+      <abbr>⠠⠚⠕⠓⠝ ⠼⠁⠤⠼⠁</abbr>
+      <short>John 1-1</short>
+      <long>The Good News According to John Chapters 1-1</long>
+    </name>
+    <name id="section-jhn_2-2">
+      <abbr>⠠⠚⠕⠓⠝ ⠼⠃⠤⠼⠃</abbr>
+      <short>John 2-2</short>
+      <long>The Good News According to John Chapters 2-2</long>
+    </name>
+  </names>
+  <source>
+    <structure>
+      <content src="source/BBM/JHN_1-1.bbm"/>
+    </structure>
+    <canonicalContent>
+      <book code="JHN"/>
+    </canonicalContent>
+  </source>
+  <publications>
+    <publication id="bp1">
+      <canonicalContent>
+        <book code="JHN"/>
+      </canonicalContent>
+      <name>Braille Protestant</name>
+      <scope>New Testament</scope>
+      <canonSpec type="NT">
+        <component>westernNT</component>
+      </canonSpec>
+      <structure>
+        <content src="release/PEF/JHN_1-1.pef" role="JHN 1-1" name="section-jhn_1-1"/>
+      </structure>
+    </publication>
+  </publications>
+  <archiveStatus>
+    <bundleCreatorName>Jake Kyle</bundleCreatorName>
+    <archivistName>Jake Kyle</archivistName>
+    <comments>Braille test</comments>
+    <dateArchived>2019-07-08T10:06:18.827550</dateArchived>
+    <dateUpdated>2019-07-17T08:00:56.467963</dateUpdated>
+  </archiveStatus>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p><strong>PUBLIC DOMAIN</strong>. "World English Bible" is  trademark of <a href="https://eBible.org">eBible.org</a>.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>This public domain Bible translation is brought to you courtesy of <a href="https://eBible.org">eBible.org</a>.</p>
+    </promoVersionInfo>
+  </promotion>
+</DBLMetadata>
