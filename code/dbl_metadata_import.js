@@ -11,7 +11,7 @@ class DBLImport {
         this.processRoot();
         this.processLanguage();
         this.processIdentification();
-        //this.processRelationships();
+        this.processRelationships();
         this.processType();
         this.processAgencies();
         this.processCountries();
@@ -185,6 +185,32 @@ class DBLImport {
         const identification = this.childElementByName(this.root, "identification");
         assert.isNotNull(identification);
         this.addNamelike(identification, this.sbMetadata["identification"], ["name", "description", "abbreviation"]);
+    }
+
+    processRelationships() {
+        const self = this;
+        const relationships = this.childElementByName(this.root, "relationships");
+        assert.isNotNull(relationships);
+        const relationshipNodes = self.childElementsByName(relationships, "relation");
+        if (relationshipNodes.length > 0) {
+            self.sbMetadata["relationships"] = []
+            var relationshipJson = [];
+            for (var n = 0; n < relationshipNodes.length; n++) {
+                const relation = relationshipNodes.item(n);
+                const relationJson = {
+                    "relationType": relation.getAttribute("relationType"),
+                    "flavor": self.flavorName(relation.getAttribute("type")),
+                    "id": "dbl::" + relation.getAttribute("id")
+                };
+                if (relation.hasAttribute("revision")) {
+                    relationJson["revision"] = relation.getAttribute("revision");
+                }
+                if (relation.hasAttribute("publicationId")) {
+                    relationJson["variant"] = relation.getAttribute("publicationId");
+                }
+                self.sbMetadata["relationships"].push(relationJson);
+            }
+        }
     }
 
     processCountries() {
