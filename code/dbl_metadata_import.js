@@ -384,6 +384,8 @@ class DBLImport {
             this.processAudioTranslationFormat(format, typeJson);
         } else if (typeJson.name == "signLanguageVideoTranslation") {
             this.processSignLanguageVideoTranslationFormat(format, typeJson);
+        } else if (typeJson.name == "embossedBrailleScripture") {
+            this.processEmbossedBrailleScriptureFormat(format, typeJson);
         }
     }
 
@@ -517,6 +519,111 @@ class DBLImport {
         });
     }
 
+    processEmbossedBrailleScriptureFormat(format, typeJson) {
+        const self = this;
+        const isContracted = self.childElementByName(format, "isContracted");
+        assert.isNotNull(isContracted);
+        typeJson["isContracted"] = (isContracted.childNodes[0].nodeValue == "true");
+        typeJson["processor"] = {"name": "libLouis", "table": {}};
+        const libLouis = self.childElementByName(format, "liblouis");
+        assert.isNotNull(libLouis);
+        const libLouisVersion = self.childElementByName(libLouis, "version");
+        assert.isNotNull(libLouisVersion);
+        typeJson["processor"]["version"] = libLouisVersion.childNodes[0].nodeValue;
+        const libLouisTable = self.childElementByName(libLouis, "table");
+        assert.isNotNull(libLouisTable);
+        const libLouisSrc = self.childElementByName(libLouisTable, "source");
+        assert.isNotNull(libLouisSrc);
+        typeJson["processor"]["table"]["src"] = libLouisSrc.childNodes[0].nodeValue;        
+        const libLouisName = self.childElementByName(libLouisTable, "name");
+        assert.isNotNull(libLouisName);
+        typeJson["processor"]["table"]["name"] = libLouisName.childNodes[0].nodeValue;        
+        typeJson["numberSign"] = {};
+        const numberSign = self.childElementByName(format, "numberSign");
+        assert.isNotNull(numberSign);
+        const numberSignCharacter = self.childElementByName(numberSign, "character");
+        assert.isNotNull(numberSignCharacter);
+        typeJson["numberSign"]["character"] = numberSignCharacter.childNodes[0].nodeValue;
+        const numberSignMargin = self.childElementByName(numberSign, "useInMargin");
+        assert.isNotNull(numberSignMargin);
+        typeJson["numberSign"]["useInMargin"] = (numberSignMargin.childNodes[0].nodeValue == "true");
+        typeJson["content"] = {};
+        [
+            ["chapterNumberStyle", "string"],
+            ["chapterHeadingsNumberFirst", "boolean"],
+            ["versedParagraphs", "boolean"],
+            ["verseSeparator", "string"],
+            ["includeIntros", "boolean"]
+        ].forEach(function(fieldTuple) {
+            const [field, fieldType] = fieldTuple;
+            const fieldNode = self.childElementByName(format, field);
+            if (!fieldNode) {
+                return;
+            }
+            if (fieldType == "boolean") {
+                typeJson["content"][field] = fieldNode.childNodes[0].nodeValue == "true";
+            } else if (fieldType == "integer") {
+                typeJson["content"][field] = parseInt(fieldNode.childNodes[0].nodeValue);
+            } else if (fieldType == "ccString") {
+                const fieldValue = fieldNode.childNodes[0].nodeValue;
+                typeJson["content"][field] = fieldValue.substring(0, 1).toLowerCase() + fieldValue.substring(1);
+            } else if (fieldType == "lcString") {
+                const fieldValue = fieldNode.childNodes[0].nodeValue;
+                typeJson["content"][field] = fieldValue.toLowerCase();
+            } else {
+                typeJson["content"][field] = fieldNode.childNodes[0].nodeValue;
+            }
+        });
+        typeJson["page"] = {};
+        [
+            ["charsPerLine", "integer"],
+            ["linesPerPage", "integer"],
+            ["defaultMarginWidth", "integer"],
+            ["versoLastLineBlank", "boolean"],
+            ["carryLines", "integer"]
+        ].forEach(function(fieldTuple) {
+            const [field, fieldType] = fieldTuple;
+            const fieldNode = self.childElementByName(format, field);
+            if (!fieldNode) {
+                return;
+            }
+            if (fieldType == "boolean") {
+                typeJson["page"][field] = fieldNode.childNodes[0].nodeValue == "true";
+            } else if (fieldType == "integer") {
+                typeJson["page"][field] = parseInt(fieldNode.childNodes[0].nodeValue);
+            } else if (fieldType == "ccString") {
+                const fieldValue = fieldNode.childNodes[0].nodeValue;
+                typeJson["page"][field] = fieldValue.substring(0, 1).toLowerCase() + fieldValue.substring(1);
+            } else if (fieldType == "lcString") {
+                const fieldValue = fieldNode.childNodes[0].nodeValue;
+                typeJson["page"][field] = fieldValue.toLowerCase();
+            } else {
+                typeJson["page"][field] = fieldNode.childNodes[0].nodeValue;
+            }
+        });
+        // Fill out these section with test documents that include the elements
+        const hyphenationDictionary = self.childElementByName(format, "hyphenationDictionary");
+        if (hyphenationDictionary) {
+            typeJson["hyphenationDictionary"] = {};
+        }
+        const continuousPoetry = self.childElementByName(format, "continuousPoetry");
+        if (continuousPoetry) {
+            typeJson["continuousPoetry"] = {};
+        }
+        const footnotes = self.childElementByName(format, "footnotes");
+        if (footnotes) {
+            typeJson["footnotes"] = {};
+        }
+        const crossReferences = self.childElementByName(format, "crossReferences");
+        if (crossReferences) {
+            typeJson["crossReferences"] = {};
+        }
+        const characterStyles = self.childElementByName(format, "characterStyles");
+        if (characterStyles) {
+            typeJson["characterStyles"] = {};
+        }
+    }
+    
     processArchiveStatus() {
         const self = this;
         const aStatus = self.childElementByName(self.root, "archiveStatus");

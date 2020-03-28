@@ -96,7 +96,7 @@
     "relationships": [
         {
             "relationType": "expression",
-            "flavor": "scripturePrint",
+            "flavor": "typesetScripture",
             "id": "dbl::fedcba9876543210:2"
         },
         {
