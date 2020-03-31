@@ -10,7 +10,7 @@ class SB01Import {
         this.buildMeta();
         this.buildIdServers();
         this.buildIdentification();
-        // this.buildConfidentiality();
+        this.buildConfidentiality();
         // this.buildType();
         // this.buildRelationships();
         this.buildLanguages();
@@ -58,6 +58,10 @@ class SB01Import {
                 }
             }
         );
+    }
+
+    buildConfidentiality() {
+        this.sb02Metadata["confidentiality"] = this.sb01Metadata["type"]["confidentiality"];
     }
 
     buildLanguages() {
