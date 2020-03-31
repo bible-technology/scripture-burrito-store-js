@@ -58,7 +58,8 @@
   "ingredients": {
     "org_vrs.json": {
       "mimeType": "application/json",
-      "size": 123
+        "size": 123,
+      "checksum": "39e81428079f566e96a10827b1f57df5"
     }
   },
   "licenses": [

@@ -25,7 +25,8 @@ class SB01Import {
 
     flavorName(medium) {
         const lookup = {
-            glossedTextStory: "textStories"
+            glossedTextStory: "textStories",
+            peripheralVersification: "versification"
         };
         if (medium in lookup) {
             return lookup[medium];
@@ -76,26 +77,30 @@ class SB01Import {
     }
 
     buildType() {
-        this.sb02Metadata["type"] = {
+        const self = this;
+        const flavorType = self.sb01Metadata["type"]["flavorType"];
+        self.sb02Metadata["type"] = {
             "flavorType": {
-                "name": this.sb01Metadata["type"]["flavorType"],
+                "name": flavorType,
                 "flavor": {
-                    "name": this.flavorName(this.sb01Metadata["type"]["flavor"])
-                },
-                "canonType": [
-                    "ot",
-                    "nt"
-                ],
-                "canonSpec": {
-                    "ot": {
-                        "name": "western"
-                    },
-                    "nt": {
-                        "name": "western"
-                    }
-                },
-                "currentScope": {}
+                    "name": self.flavorName(self.sb01Metadata["type"]["flavor"])
+                }
             }
+        }
+        if ( flavorType == "scripture" || flavorType == "gloss") {
+            self.sb02Metadata["type"]["flavorType"]["canonType"] = [
+                "ot",
+                "nt"
+            ];
+            self.sb02Metadata["type"]["flavorType"]["canonSpec"] = {
+                "ot": {
+                    "name": "western"
+                },
+                "nt": {
+                    "name": "western"
+                }
+            };
+            self.sb02Metadata["type"]["flavorType"]["currentScope"] = {};
         }
     }
 
@@ -104,6 +109,10 @@ class SB01Import {
     }
     
     buildLanguages() {
+        if (!("languages" in this.sb01Metadata)) {
+            this.sb02Metadata["meta"]["defaultLanguage"] = "en";
+            return;
+        }
         this.sb02Metadata["languages"] = [
             {
                 "tag": this.sb01Metadata["languages"][0]["bcp47"],
@@ -114,6 +123,9 @@ class SB01Import {
     }
 
     buildTargetAreas() {
+        if (!("countries" in this.sb01Metadata)) {
+            return;
+        }
         this.sb02Metadata["targetAreas"] = [];
         for (const ta of this.sb01Metadata["countries"]) {
             this.sb02Metadata["targetAreas"].push(
@@ -126,6 +138,9 @@ class SB01Import {
     }
 
     buildAgencies() {
+        if (!("agencies" in this.sb01Metadata)) {
+            return;
+        }
         const self = this;
         this.sb02Metadata["agencies"] = [];
         for (const agency of this.sb01Metadata["agencies"]) {
@@ -160,6 +175,9 @@ class SB01Import {
     }
 
     buildCopyright() {
+        if (!("copyright" in this.sb01Metadata)) {
+            return;
+        }
         const self = this;
         self.sb02Metadata["copyright"] = {};
         for (const statement of self.sb01Metadata["copyright"]) {
