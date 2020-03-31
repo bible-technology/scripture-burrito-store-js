@@ -22,7 +22,7 @@ describe("Schema", function() {
             fse.removeSync(this.storagePath);
         }
     });
-    
+
     it("Accept test textTranslation document", function() {
         const b = new FSBurritoStore(
             {

@@ -75,5 +75,4 @@ describe("DBL Import", function() {
         // console.log(validationResult);
         assert.equal(validationResult.result, "accepted");
     });
-
 });

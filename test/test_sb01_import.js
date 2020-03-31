@@ -12,9 +12,15 @@ describe("SB01 Import", function() {
     before(function() {
         this.testDataDir = path.join(__dirname, "test_data");
         const sb01MetadataDir = path.join(this.testDataDir, "sb01_metadata");
-        this.glossedTextStory = JSON.parse(fse.readFileSync(path.join(sb01MetadataDir, "glossed_text_story.json"), "utf8"));
-        this.versification = JSON.parse(fse.readFileSync(path.join(sb01MetadataDir, "peripheral_versification.json"), "utf8"));
-        this.wordAlignment = JSON.parse(fse.readFileSync(path.join(sb01MetadataDir, "parascriptural_word_alignment.json"), "utf8"));
+        this.glossedTextStory = JSON.parse(
+            fse.readFileSync(path.join(sb01MetadataDir, "glossed_text_story.json"), "utf8")
+        );
+        this.versification = JSON.parse(
+            fse.readFileSync(path.join(sb01MetadataDir, "peripheral_versification.json"), "utf8")
+        );
+        this.wordAlignment = JSON.parse(
+            fse.readFileSync(path.join(sb01MetadataDir, "parascriptural_word_alignment.json"), "utf8")
+        );
     });
 
     it("Convert Glossed Text Story", function() {
@@ -40,5 +46,4 @@ describe("SB01 Import", function() {
         // console.log(validationResult);
         assert.equal(validationResult.result, "accepted");
     });
-
 });

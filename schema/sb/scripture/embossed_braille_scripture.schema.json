@@ -9,34 +9,27 @@
             "type": "string",
             "const": "embossedBrailleScripture"
         },
-        "isContracted": {"type": "boolean"},
+        "isContracted": { "type": "boolean" },
         "processor": {
             "properties": {
                 "name": {
                     "type": "string",
                     "const": "libLouis"
                 },
-                "version": {"type": "string"},
+                "version": { "type": "string" },
                 "table": {
                     "type": "object",
                     "properties": {
                         "src": {
                             "type": "string"
                         },
-                        "name": {"type": "string"}
+                        "name": { "type": "string" }
                     },
                     "additionalProperties": false,
-                    "required": [
-                        "src",
-                        "name"
-                    ]
+                    "required": ["src", "name"]
                 }
             },
-            "required": [
-                "name",
-                "version",
-                "table"
-            ],
+            "required": ["name", "version", "table"],
             "additionalProperties": false
         },
         "hyphenationDictionary": {
@@ -45,13 +38,10 @@
                 "src": {
                     "type": "string"
                 },
-                "name": {"type": "string"}
+                "name": { "type": "string" }
             },
             "additionalProperties": false,
-            "required": [
-                "src",
-                "name"
-            ]
+            "required": ["src", "name"]
         },
         "numberSign": {
             "type": "object",
@@ -60,12 +50,9 @@
                     "type": "string",
                     "pattern": "([⠀-⣿])*"
                 },
-                "useInMargin": {"type": "boolean"}
+                "useInMargin": { "type": "boolean" }
             },
-            "required": [
-                "character",
-                "useInMargin"
-            ],
+            "required": ["character", "useInMargin"],
             "additionalProperties": false
         },
         "continuousPoetry": {
@@ -89,9 +76,7 @@
                 }
             },
             "additionalProperties": false,
-            "required": [
-                "lineIndicatorSpaced"
-            ]
+            "required": ["lineIndicatorSpaced"]
         },
         "content": {
             "type": "object",
@@ -100,50 +85,46 @@
                     "type": "string",
                     "enum": ["upper", "lower"]
                 },
-                "chapterHeadingsNumberFirst": {"type": "boolean"},
-                "versedParagraphs": {"type": "boolean"},
+                "chapterHeadingsNumberFirst": { "type": "boolean" },
+                "versedParagraphs": { "type": "boolean" },
                 "verseSeparator": {
                     "type": "string",
-                    "pattern": "([⠀-⣿])*"                    
+                    "pattern": "([⠀-⣿])*"
                 },
-                "includeIntros": {"type": "boolean"},
+                "includeIntros": { "type": "boolean" },
                 "footnotes": {
                     "properties": {
                         "callerSymbol": {
                             "type": "string",
-                            "pattern": "([⠀-⣿])*"                    
+                            "pattern": "([⠀-⣿])*"
                         }
                     },
                     "additionalProperties": false,
-                    "required": [
-                        "callerSymbol"
-                    ]
+                    "required": ["callerSymbol"]
                 },
                 "characterStyles": {
                     "properties": {
                         "callerSymbol": {
                             "type": "string",
-                            "pattern": "([⠀-⣿])*"                    
+                            "pattern": "([⠀-⣿])*"
                         }
                     },
                     "additionalProperties": false,
-                    "required": [
-                        "callerSymbol"
-                    ]
+                    "required": ["callerSymbol"]
                 },
                 "crossReferences": {
                     "properties": {
                         "emphasizedWord": {
                             "type": "string",
-                            "pattern": "([⠀-⣿])*"                    
+                            "pattern": "([⠀-⣿])*"
                         },
                         "emphasizedPassageStart": {
                             "type": "string",
-                            "pattern": "([⠀-⣿])*"                    
+                            "pattern": "([⠀-⣿])*"
                         },
                         "emphasizedPassageEnd": {
                             "type": "string",
-                            "pattern": "([⠀-⣿])*"                    
+                            "pattern": "([⠀-⣿])*"
                         }
                     },
                     "additionalProperties": false,
@@ -177,20 +158,14 @@
                     "multipleOf": 1.0,
                     "min": 1
                 },
-                "versoLastLineBlank": {"type": "boolean"},
+                "versoLastLineBlank": { "type": "boolean" },
                 "carryLines": {
                     "type": "number",
                     "multipleOf": 1.0,
                     "min": 1
                 }
             },
-            "required": [
-                "charsPerLine",
-                "linesPerPage",
-                "defaultMarginWidth",
-                "versoLastLineBlank",
-                "carryLines"
-            ],
+            "required": ["charsPerLine", "linesPerPage", "defaultMarginWidth", "versoLastLineBlank", "carryLines"],
             "additionalProperties": false
         },
         "conventions": {
@@ -206,12 +181,6 @@
             }
         }
     },
-    "required": [
-        "isContracted",
-        "processor",
-        "numberSign",
-        "content",
-        "page"
-    ],
+    "required": ["isContracted", "processor", "numberSign", "content", "page"],
     "additionalProperties": false
 }

@@ -194,14 +194,14 @@ class DBLImport {
         assert.isNotNull(relationships);
         const relationshipNodes = self.childElementsByName(relationships, "relation");
         if (relationshipNodes.length > 0) {
-            self.sbMetadata["relationships"] = []
+            self.sbMetadata["relationships"] = [];
             var relationshipJson = [];
             for (var n = 0; n < relationshipNodes.length; n++) {
                 const relation = relationshipNodes.item(n);
                 const relationJson = {
-                    "relationType": relation.getAttribute("relationType"),
-                    "flavor": self.flavorName(relation.getAttribute("type")),
-                    "id": "dbl::" + relation.getAttribute("id")
+                    relationType: relation.getAttribute("relationType"),
+                    flavor: self.flavorName(relation.getAttribute("type")),
+                    id: "dbl::" + relation.getAttribute("id")
                 };
                 if (relation.hasAttribute("revision")) {
                     relationJson["revision"] = relation.getAttribute("revision");
@@ -523,8 +523,8 @@ class DBLImport {
         const self = this;
         const isContracted = self.childElementByName(format, "isContracted");
         assert.isNotNull(isContracted);
-        typeJson["isContracted"] = (isContracted.childNodes[0].nodeValue == "true");
-        typeJson["processor"] = {"name": "libLouis", "table": {}};
+        typeJson["isContracted"] = isContracted.childNodes[0].nodeValue == "true";
+        typeJson["processor"] = { name: "libLouis", table: {} };
         const libLouis = self.childElementByName(format, "liblouis");
         assert.isNotNull(libLouis);
         const libLouisVersion = self.childElementByName(libLouis, "version");
@@ -534,10 +534,10 @@ class DBLImport {
         assert.isNotNull(libLouisTable);
         const libLouisSrc = self.childElementByName(libLouisTable, "source");
         assert.isNotNull(libLouisSrc);
-        typeJson["processor"]["table"]["src"] = libLouisSrc.childNodes[0].nodeValue;        
+        typeJson["processor"]["table"]["src"] = libLouisSrc.childNodes[0].nodeValue;
         const libLouisName = self.childElementByName(libLouisTable, "name");
         assert.isNotNull(libLouisName);
-        typeJson["processor"]["table"]["name"] = libLouisName.childNodes[0].nodeValue;        
+        typeJson["processor"]["table"]["name"] = libLouisName.childNodes[0].nodeValue;
         typeJson["numberSign"] = {};
         const numberSign = self.childElementByName(format, "numberSign");
         assert.isNotNull(numberSign);
@@ -546,7 +546,7 @@ class DBLImport {
         typeJson["numberSign"]["character"] = numberSignCharacter.childNodes[0].nodeValue;
         const numberSignMargin = self.childElementByName(numberSign, "useInMargin");
         assert.isNotNull(numberSignMargin);
-        typeJson["numberSign"]["useInMargin"] = (numberSignMargin.childNodes[0].nodeValue == "true");
+        typeJson["numberSign"]["useInMargin"] = numberSignMargin.childNodes[0].nodeValue == "true";
         typeJson["content"] = {};
         [
             ["chapterNumberStyle", "string"],
@@ -623,7 +623,7 @@ class DBLImport {
             typeJson["characterStyles"] = {};
         }
     }
-    
+
     processArchiveStatus() {
         const self = this;
         const aStatus = self.childElementByName(self.root, "archiveStatus");
@@ -771,7 +771,7 @@ class DBLImport {
             }
         }
         self.sbMetadata.type.flavorType["currentScope"] = currentScopeJson;
-        
+
         // recipeSpecs
         self.sbMetadata["recipeSpecs"] = [];
 
