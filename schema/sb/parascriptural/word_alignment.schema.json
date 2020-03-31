@@ -6,8 +6,8 @@
     "description": "Schema of flavor field for word alignment flavor",
     "properties": {
         "name": {
-            "const": "word_alignment"
+            "const": "wordAlignment"
         }
     },
-    "additionalProperties": true
+    "additionalProperties": false
 }

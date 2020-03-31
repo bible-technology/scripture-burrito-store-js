@@ -26,7 +26,8 @@ class SB01Import {
     flavorName(medium) {
         const lookup = {
             glossedTextStory: "textStories",
-            peripheralVersification: "versification"
+            peripheralVersification: "versification",
+            parascripturalWordAlignment: "wordAlignment"
         };
         if (medium in lookup) {
             return lookup[medium];

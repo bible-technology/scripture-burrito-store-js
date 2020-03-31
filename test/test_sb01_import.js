@@ -14,6 +14,7 @@ describe("SB01 Import", function() {
         const sb01MetadataDir = path.join(this.testDataDir, "sb01_metadata");
         this.glossedTextStory = JSON.parse(fse.readFileSync(path.join(sb01MetadataDir, "glossed_text_story.json"), "utf8"));
         this.versification = JSON.parse(fse.readFileSync(path.join(sb01MetadataDir, "peripheral_versification.json"), "utf8"));
+        this.wordAlignment = JSON.parse(fse.readFileSync(path.join(sb01MetadataDir, "parascriptural_word_alignment.json"), "utf8"));
     });
 
     it("Convert Glossed Text Story", function() {
@@ -27,6 +28,14 @@ describe("SB01 Import", function() {
     it("Convert Versification", function() {
         const converted = new SB01Import(this.versification);
         // console.log(JSON.stringify(converted.sb02Metadata, null, 2));
+        const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sb02Metadata);
+        // console.log(validationResult);
+        assert.equal(validationResult.result, "accepted");
+    });
+
+    it("Convert Word Alignment", function() {
+        const converted = new SB01Import(this.wordAlignment);
+        console.log(JSON.stringify(converted.sb02Metadata, null, 2));
         const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sb02Metadata);
         // console.log(validationResult);
         assert.equal(validationResult.result, "accepted");
