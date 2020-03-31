@@ -14,8 +14,8 @@ class SB01Import {
         this.buildType();
         // this.buildRelationships();
         this.buildLanguages();
-        // this.buildTargetAreas();
-        // this.buildAgencies();
+        this.buildTargetAreas();
+        this.buildAgencies();
         // this.buildCopyright();
         this.buildIngredients();
         // this.buildNames();
@@ -98,6 +98,10 @@ class SB01Import {
             }
         }
     }
+
+    buildRelationships() {
+        throw new Error("Not Implemented");
+    }
     
     buildLanguages() {
         this.sb02Metadata["languages"] = [
@@ -107,6 +111,52 @@ class SB01Import {
             }
         ];
         this.sb02Metadata["meta"]["defaultLanguage"] = this.sb02Metadata["languages"][0]["tag"];
+    }
+
+    buildTargetAreas() {
+        this.sb02Metadata["targetAreas"] = [];
+        for (const ta of this.sb01Metadata["countries"]) {
+            this.sb02Metadata["targetAreas"].push(
+                {
+                    "name": ta["name"],
+                    "code": ta["iso"]
+                }
+            );
+        }
+    }
+
+    buildAgencies() {
+        const self = this;
+        this.sb02Metadata["agencies"] = [];
+        for (const agency of this.sb01Metadata["agencies"]) {
+            const aj = {
+                "id": agency["id"],
+                "url": agency["url"],
+                "name": agency["name"],
+                "roles": []
+            };
+            if ("abbr" in agency) {
+                aj["abbr"] = {};
+                aj["abbr"][self.sb02Metadata["meta"]["defaultLanguage"]] = agency["abbr"];
+            };
+            for (let
+                 [fromField, toField]
+                 of
+                 [
+                     ["isRightsHolder", "rightsHolder"],
+                     ["contributes_content", "content"],
+                     ["contributes_publication", "publication"],
+                     ["contributes_management", "management"],
+                     ["contributes_finance", "finance"],
+                     ["contributes_qa", "qa"]
+                 ]
+                ) {
+                if (fromField in agency && agency[fromField]) {
+                    aj["roles"].push(toField);
+                }
+            }
+            this.sb02Metadata["agencies"].push(aj);
+        }
     }
 
     buildIngredients() {
@@ -141,6 +191,19 @@ class SB01Import {
             }
         }
     }
+
+    buildNames() {
+        throw new Error("Not Implemented");
+    }
+    
+    buildRecipeSpecs() {
+        throw new Error("Not Implemented");
+    }
+
+    buildProgress() {
+        throw new Error("Not Implemented");
+    }
+
 }
 
 export { SB01Import };
