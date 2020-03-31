@@ -16,7 +16,7 @@ class SB01Import {
         this.buildLanguages();
         this.buildTargetAreas();
         this.buildAgencies();
-        // this.buildCopyright();
+        this.buildCopyright();
         this.buildIngredients();
         // this.buildNames();
         // this.buildRecipeSpecs();
@@ -159,6 +159,16 @@ class SB01Import {
         }
     }
 
+    buildCopyright() {
+        const self = this;
+        self.sb02Metadata["copyright"] = {};
+        for (const statement of self.sb01Metadata["copyright"]) {
+            const statementKey = statement["type"] + "Statement" + statement["format"].substring(0,1).toUpperCase() + statement["format"].substring(1);
+            self.sb02Metadata["copyright"][statementKey] = {};
+            self.sb02Metadata["copyright"][statementKey][statement["lang"]] = statement["content"];
+        }
+    }
+    
     buildIngredients() {
         const self = this;
         self.sb02Metadata["ingredients"] = {};
