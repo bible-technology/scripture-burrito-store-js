@@ -755,8 +755,23 @@ class DBLImport {
                 }
             }
         }
+        if (Object.keys(currentScopeJson).length == 0) {
+            for (var n = 0; n < publication.length; n++) {
+                const publicationItem = publication.item(n);
+                const canonical = self.childElementByName(publicationItem, "canonicalContent");
+                assert.isNotNull(canonical);
+                const books = self.childElementsByName(canonical, "book");
+                for (var n2 = 0; n2 < books.length; n2++) {
+                    const book = books.item(n2);
+                    const bookCode = book.getAttribute("code");
+                    if (!(bookCode in currentScopeJson)) {
+                        currentScopeJson[bookCode] = [];
+                    }
+                }
+            }
+        }
         self.sbMetadata.type.flavorType["currentScope"] = currentScopeJson;
-
+        
         // recipeSpecs
         self.sbMetadata["recipeSpecs"] = [];
 
