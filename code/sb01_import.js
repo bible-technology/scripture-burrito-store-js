@@ -103,6 +103,11 @@ class SB01Import {
                 }
             };
             self.sb02Metadata["type"]["flavorType"]["currentScope"] = {};
+        } else if (flavorType == "parascriptural") {
+            for (const prop of ["autoAlignerVersion", "stopWords", "stemmer", "manualAlignment"]) {
+                self.sb02Metadata["type"]["flavorType"]["flavor"][prop] =
+                    self.sb01Metadata["type"]["flavorDetails"][prop];
+            }
         }
     }
 

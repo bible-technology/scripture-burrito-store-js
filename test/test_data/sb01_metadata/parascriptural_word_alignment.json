@@ -122,13 +122,13 @@
       },
       "manualAlignment": {
         "user": "anil.john",
-        "reference": [
+        "references": [
           {
-            "start": "25535",
-            "end": "26415"
+            "start": 25535,
+            "end": 26415
           },
           {
-            "start": "29321"
+            "start": 29321
           }
         ]
       }
