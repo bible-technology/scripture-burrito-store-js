@@ -12,19 +12,22 @@ class SB01Import {
         this.buildIdentification();
         this.buildConfidentiality();
         this.buildType();
-        // this.buildRelationships();
+        this.buildRelationships();
         this.buildLanguages();
         this.buildTargetAreas();
         this.buildAgencies();
         this.buildCopyright();
         this.buildIngredients();
-        // this.buildNames();
         // this.buildRecipeSpecs();
-        // this.buildProgress();
     }
 
     flavorName(medium) {
         const lookup = {
+            scriptureText: "textTranslation",
+            scriptureAudio: "audioTranslation",
+            scripturePrint: "typesetScripture",
+            video: "signLanguageVideoTranslation",
+            braille: "embossedBrailleScripture",
             glossedTextStory: "textStories",
             peripheralVersification: "versification",
             parascripturalWordAlignment: "wordAlignment"
@@ -37,12 +40,19 @@ class SB01Import {
     }
 
     buildMeta() {
+        var softwareName = "SB01Import";
+        if (
+            "creation" in this.sb01Metadata.snapshot
+                &&
+                "software" in this.sb01Metadata.snapshot.creation) {
+            softwareName = this.sb01Metadata.snapshot.creation.software;
+        }
         this.sb02Metadata["meta"] = {
             "variant": "source",
             "version": "0.2.0",
             "dateCreated": "2020-03-31T09:04:10.3+02:00",
             "generator": {
-                "softwareName": "SB01Import",
+                "softwareName": softwareName,
                 "softwareVersion": "0.0.0",
             },
             "comments": [this.sb01Metadata.snapshot.comments]
@@ -106,7 +116,25 @@ class SB01Import {
     }
 
     buildRelationships() {
-        throw new Error("Not Implemented");
+        if (!("relationships" in this.sb01Metadata)) {
+            return;
+        }
+        const self = this;
+        self.sb02Metadata["relationships"] = [];
+        for (const relation of self.sb01Metadata["relationships"]) {
+            const rj = {
+                id: relation["id"],
+                flavor: this.flavorName(relation["flavor"]),
+                relationType: relation["relationType"]
+            };
+            if ("revision" in relation) {
+                rj["revision"] = relation["revision"];
+            }
+            if ("publicationId" in relation) {
+                rj["variant"] = relation["publicationId"];
+            }
+            self.sb02Metadata["relationships"].push(rj);
+        }
     }
     
     buildLanguages() {
