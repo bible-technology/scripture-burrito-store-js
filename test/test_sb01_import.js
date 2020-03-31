@@ -21,6 +21,9 @@ describe("SB01 Import", function() {
         this.wordAlignment = JSON.parse(
             fse.readFileSync(path.join(sb01MetadataDir, "parascriptural_word_alignment.json"), "utf8")
         );
+        this.xScripture = JSON.parse(
+            fse.readFileSync(path.join(sb01MetadataDir, "scripture_x.json"), "utf8")
+        );
     });
 
     it("Convert Glossed Text Story", function() {
@@ -46,4 +49,13 @@ describe("SB01 Import", function() {
         // console.log(validationResult);
         assert.equal(validationResult.result, "accepted");
     });
+
+    it("Convert X-Scripture", function() {
+        const converted = new SB01Import(this.xScripture);
+        console.log(JSON.stringify(converted.sb02Metadata, null, 2));
+        const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sb02Metadata);
+        // console.log(validationResult);
+        assert.equal(validationResult.result, "accepted");
+    });
+
 });

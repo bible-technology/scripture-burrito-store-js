@@ -78,7 +78,8 @@
     "myPainting.png": {
       "checksum": "01234567012345670123456701234567",
       "mimeType": "image/png",
-      "size": 1234
+        "size": 1234,
+        "scopeOrRole": "JHN 3:16"
     }
   },
   "licenses": [
