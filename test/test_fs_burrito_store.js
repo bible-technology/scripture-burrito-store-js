@@ -32,6 +32,7 @@ describe("FS Burrito Class", function() {
             badServerStub: JSON.parse(fse.readFileSync(path.join(metadataDir, "bad_server_stub.json"), "utf8")),
             bananaVariantStub: JSON.parse(fse.readFileSync(path.join(metadataDir, "banana_variant.json"), "utf8"))
         };
+        this.ingredientsPath = path.join(this.testDataDir, "ingredients", "GEN.usx");
     });
 
     afterEach(function() {
@@ -475,6 +476,19 @@ describe("FS Burrito Class", function() {
         } catch (err) {
             assert.equal(err.message, "VariantNotFoundInStore");
         }
+    });
+
+    it("Reads an ingredient into the ingredient buffer and lists it", function() {
+        const b = new FSBurritoStore(
+            {
+                storeClass: "FSBurritoStore",
+                validation: "burrito"
+            },
+            this.storagePath
+        );
+        b.bufferIngredientFromFilePath("release/GEN.usx", this.ingredientsPath);
+        const ingredients = b.bufferIngredients();
+        assert.equal(ingredients.length, 1);
     });
 
     /*

@@ -235,6 +235,12 @@ class BurritoStore {
         throw new BurritoError("MethodNotYetImplemented");
     }
 
+    /* Ingredient Buffer */
+
+    bufferIngredientFromFilePath(ingredientUrl, filePath) {
+        return this._ingredientBuffer.importFilePath(ingredientUrl, filePath);
+    }
+
     /* Add, Update, Remove, Cache Ingredients */
 
     cacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {

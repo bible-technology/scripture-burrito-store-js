@@ -1,5 +1,6 @@
 "use strict";
 import * as fse from "fs-extra";
+import { v4 as uuidv4 } from 'uuid';
 
 import { IngredientBuffer } from "./ingredient_buffer.js";
 
@@ -12,6 +13,8 @@ class FSIngredientBuffer extends IngredientBuffer {
             throw new BurritoError("StorageDirNotDefined");
         }
         super(burritoStore);
+        this.UuidUrls = {};
+        this.uuidChecksums = {};
         this.bufferDir = sDir + "/buffer";
         if (!fse.existsSync(this.bufferDir)) {
             fse.mkdirSync(this.bufferDir, { recursive: false });
@@ -24,9 +27,16 @@ class FSIngredientBuffer extends IngredientBuffer {
     }
 
     importFilePath(ingredientUrl, ingredientPath) {
+        const uuid = uuidv4();
+        const uuidPath = this.bufferDir + "/" + uuid;
+        fse.mkdirSync(uuidPath, { recursive: false });
+        fse.copyFileSync(ingredientPath, uuidPath + "/" + encodeURIComponent(ingredientUrl));
+        this.uuidUrls[uuid] = ingredientUrl;
+        return uuid;
     }
 
     list() {
+        return Object.keys(this.uuidUrls).map(decodeURIComponent);
     }
 
     read(ingredientId) {
