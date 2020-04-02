@@ -33,7 +33,8 @@ describe("FS Burrito Class", function() {
             badServerStub: JSON.parse(fse.readFileSync(path.join(metadataDir, "bad_server_stub.json"), "utf8")),
             bananaVariantStub: JSON.parse(fse.readFileSync(path.join(metadataDir, "banana_variant.json"), "utf8"))
         };
-        this.ingredientsPath = path.join(this.testDataDir, "ingredients", "GEN.usx");
+        this.usxPath = path.join(this.testDataDir, "ingredients", "GEN.usx");
+        this.mp3Path = path.join(this.testDataDir, "ingredients", "GEN_001.mp3");
     });
 
     afterEach(function() {
@@ -487,7 +488,7 @@ describe("FS Burrito Class", function() {
             },
             this.storagePath
         );
-        const ingredientUuid = b.bufferIngredientFromFilePath("release/GEN.usx", this.ingredientsPath);
+        const ingredientUuid = b.bufferIngredientFromFilePath("release/GEN.usx", this.usxPath);
         const ingredients = b.bufferIngredients();
         assert.equal(ingredients.length, 1);
         assert.equal(ingredients[0], ingredientUuid);
@@ -498,8 +499,9 @@ describe("FS Burrito Class", function() {
         assert.equal(crypto.createHash("MD5").update(ingredientContent).digest("hex"), ingredientStats["checksum"]["md5"]);
         b.deleteBufferIngredient(ingredientUuid);
         assert.equal(b.bufferIngredients().length, 0);
-        const ingredientUuid2 = b.bufferIngredientFromFilePath("release/GEN.usx", this.ingredientsPath);
+        const ingredientUuid2 = b.bufferIngredientFromFilePath("release/GEN_001.mp3", this.mp3Path);
         const ingredientStats2 = b.bufferIngredientStats(ingredientUuid2);
+        console.log(ingredientStats2);
         const ingredientContent2 = b.readBufferIngredient(ingredientUuid2);
         assert.equal(crypto.createHash("MD5").update(ingredientContent2).digest("hex"), ingredientStats2["checksum"]["md5"]);
         assert.equal(b.bufferIngredients().length, 1);
