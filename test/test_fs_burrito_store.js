@@ -7,6 +7,7 @@ const path = require("path");
 const assert = require("chai").assert;
 const expect = require("chai").expect;
 const FSBurritoStore = require("../fs_burrito_store.js").FSBurritoStore;
+const crypto = require("crypto");
 
 describe("FS Burrito Class", function() {
     before(function() {
@@ -478,7 +479,7 @@ describe("FS Burrito Class", function() {
         }
     });
 
-    it("Reads an ingredient into the ingredient buffer and lists it", function() {
+    it("Manipulates an ingredient in the ingredient buffer", function() {
         const b = new FSBurritoStore(
             {
                 storeClass: "FSBurritoStore",
@@ -486,9 +487,24 @@ describe("FS Burrito Class", function() {
             },
             this.storagePath
         );
-        b.bufferIngredientFromFilePath("release/GEN.usx", this.ingredientsPath);
+        const ingredientUuid = b.bufferIngredientFromFilePath("release/GEN.usx", this.ingredientsPath);
         const ingredients = b.bufferIngredients();
         assert.equal(ingredients.length, 1);
+        assert.equal(ingredients[0], ingredientUuid);
+        const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+        assert.equal(ingredientStats["id"], ingredientUuid);
+        assert.equal(ingredientStats["url"], "release/GEN.usx");
+        const ingredientContent = b.readBufferIngredient(ingredientUuid);
+        assert.equal(crypto.createHash("MD5").update(ingredientContent).digest("hex"), ingredientStats["checksum"]["md5"]);
+        b.deleteBufferIngredient(ingredientUuid);
+        assert.equal(b.bufferIngredients().length, 0);
+        const ingredientUuid2 = b.bufferIngredientFromFilePath("release/GEN.usx", this.ingredientsPath);
+        const ingredientStats2 = b.bufferIngredientStats(ingredientUuid2);
+        const ingredientContent2 = b.readBufferIngredient(ingredientUuid2);
+        assert.equal(crypto.createHash("MD5").update(ingredientContent2).digest("hex"), ingredientStats2["checksum"]["md5"]);
+        assert.equal(b.bufferIngredients().length, 1);
+        b.deleteAllBufferIngredients();
+        assert.equal(b.bufferIngredients().length, 0);
     });
 
     /*

@@ -241,6 +241,26 @@ class BurritoStore {
         return this._ingredientBuffer.importFilePath(ingredientUrl, filePath);
     }
 
+    bufferIngredients() {
+        return this._ingredientBuffer.list();
+    }
+
+    bufferIngredientStats(ingredientId) {
+        return this._ingredientBuffer.stats(ingredientId);
+    }
+    
+    readBufferIngredient(ingredientId) {
+        return this._ingredientBuffer.read(ingredientId);
+    }
+    
+    deleteBufferIngredient(ingredientId) {
+        return this._ingredientBuffer.delete(ingredientId);
+    }
+    
+    deleteAllBufferIngredients() {
+        return this._ingredientBuffer.deleteAll();
+    }
+    
     /* Add, Update, Remove, Cache Ingredients */
 
     cacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {
