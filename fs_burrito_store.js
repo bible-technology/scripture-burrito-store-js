@@ -4,6 +4,7 @@ import { BurritoError } from "./code/burrito_error.js";
 import { BurritoStore } from "./code/burrito_store.js";
 import { FSMetadataStore } from "./code/fs_metadata_store.js";
 import { FSIngredientsStore } from "./code/fs_ingredients_store.js";
+import { FSIngredientBuffer } from "./code/fs_ingredient_buffer.js";
 
 class FSBurritoStore extends BurritoStore {
     /**
@@ -21,6 +22,7 @@ class FSBurritoStore extends BurritoStore {
         }
         this._metadataStore = new FSMetadataStore(this, sDir);
         this._ingredientsStore = new FSIngredientsStore(this, sDir);
+        this._ingredientBuffer = new FSIngredientBuffer(this, sDir);
     }
 
     idServerName(idServerId, nameLang) {

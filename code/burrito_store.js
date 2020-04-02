@@ -25,6 +25,7 @@ class BurritoStore {
         }
         this._metadataStore = null;
         this._ingredientsStore = null;
+        this._ingredientBuffer = null;
     }
 
     /* Utilities */
@@ -237,18 +238,33 @@ class BurritoStore {
     /* Add, Update, Remove, Cache Ingredients */
 
     cacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {
-        throw new BurritoError("MethodNotYetImplemented");
+        const metadata = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
+        if (!metadata) {
+            throw new BurritoError("VariantNotFound");
+        }
+        // Calculate checksum of content, compare with metadata
+        // Write content (subclass dependent)
     }
 
     uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {
+        // Find metadata
+        // Check ingredient is in metadata
+        // Delete content (sublass dependent, no local ingredient is a no-op for cacheing)
         throw new BurritoError("MethodNotYetImplemented");
     }
 
     addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {
+        // Find metadata
+        // Checksum ingredient
+        // Add or update to metadata (subclass dependent)
+        // Write content (subclass dependent)
         throw new BurritoError("MethodNotYetImplemented");
     }
 
     deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {
+        // Find metadata
+        // Check ingredient is in metadata
+        // Delete content (sublass dependent, no local ingredient is an error)
         throw new BurritoError("MethodNotYetImplemented");
     }
 

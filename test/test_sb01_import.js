@@ -52,7 +52,7 @@ describe("SB01 Import", function() {
 
     it("Convert X-Scripture", function() {
         const converted = new SB01Import(this.xScripture);
-        console.log(JSON.stringify(converted.sb02Metadata, null, 2));
+        // console.log(JSON.stringify(converted.sb02Metadata, null, 2));
         const validationResult = new BurritoValidator().schemaValidate("metadata", converted.sb02Metadata);
         // console.log(validationResult);
         assert.equal(validationResult.result, "accepted");
