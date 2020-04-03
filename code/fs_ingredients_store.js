@@ -21,13 +21,32 @@ class FSIngredientsStore extends IngredientsStore {
         }
     }
 
+    ingredientDir(idServerId, entryId, ingredientUrl) {
+        return this.ingredientsDir + "/" + encodeURIComponent(idServerId) + "/" + entryId + "/" + encodeURIComponent(ingredientUrl);
+    }
+
     __writeIngredient(idServerId, entryId, ingredientStats) {
-        const ingredientDir = this.ingredientsDir + "/" + encodeURIComponent(idServerId) + "/" + entryId + "/" + encodeURIComponent(ingredientStats["url"]);
+        const ingredientDir = this.ingredientDir(idServerId, entryId, ingredientStats["url"]);
         if (!fse.existsSync(ingredientDir)) {
             fse.mkdirSync(ingredientDir, { recursive: true });
         }
-        const ingredientFilePath = ingredientDir + "/" + ingredientStats["checksum"];
+        const ingredientFilePath = ingredientDir + "/" + ingredientStats["checksum"]["md5"];
         this._burritoStore._ingredientBuffer.fsRenameIngredient(ingredientStats["id"], ingredientFilePath);
+    }
+
+    __listIngredients(idServerId, entryId, revisionId, variantId, metadata) {
+        const ret = {};
+        for (let [url, ingredientOb] of Object.entries(metadata.ingredients)) {
+            const ingredientDir = this.ingredientDir(idServerId, entryId, url);
+            ret[url] = fse.existsSync(ingredientDir + "/" + ingredientOb["checksum"]["md5"]);
+        }
+        return ret;
+    }
+
+    __ingredientContent(idServerId, entryId, revisionId, variantId, ingredientId, metadata) {
+        const ingredientChecksum = metadata.ingredients[ingredientId]["checksum"]["md5"];
+        const ingredientPath = this.ingredientDir(idServerId, entryId, ingredientId) + "/" + ingredientChecksum;
+        return fse.readFileSync(ingredientPath);
     }
 
 }

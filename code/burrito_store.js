@@ -193,11 +193,8 @@ class BurritoStore {
     }
 
     ingredients(idServerId, entryId, revisionId, variantId) {
-        throw new BurritoError("MethodNotYetImplemented");
-    }
-
-    ingredientsDetails(idServerId, entryId, revisionId, variantId) {
-        throw new BurritoError("MethodNotYetImplemented");
+        const metadata = this.metadataContent(idServerId, entryId, revisionId, variantId);
+        return this._ingredientsStore.__listIngredients(idServerId, entryId, revisionId, variantId, metadata);
     }
 
     /* Read Metadata */
@@ -213,12 +210,9 @@ class BurritoStore {
 
     /* Read Ingredients */
 
-    ingredientDetails(idServerId, entryId, revisionId, variantId, ingredientName) {
-        throw new BurritoError("MethodNotYetImplemented");
-    }
-
     ingredientContent(idServerId, entryId, revisionId, variantId, ingredientName) {
-        throw new BurritoError("MethodNotYetImplemented");
+        const md = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
+        return this._ingredientsStore.__ingredientContent(idServerId, entryId, revisionId, variantId, ingredientName, md);
     }
 
     ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientName) {

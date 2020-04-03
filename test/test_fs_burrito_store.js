@@ -524,6 +524,38 @@ describe("FS Burrito Class", function() {
         assert.equal(b.bufferIngredients().length, 0);
     });
 
+    it("Implements ingredients (list)", function() {
+        const b = new FSBurritoStore(
+            {
+                storeClass: "FSBurritoStore",
+                validation: "burrito"
+            },
+            this.storagePath
+        );
+        b.importFromObject(this.metadata["validAudioTranslation"]);
+        const ingredientUuid = b.bufferIngredientFromFilePath("release/audio/GEN/GEN_001.mp3", this.mp3Path);
+        const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+        b.cacheIngredient("https://thedigitalbiblelibrary.org", "6e0d81a24efbb679", "9", "source", ingredientStats);
+        const ingredients = b.ingredients("https://thedigitalbiblelibrary.org", "6e0d81a24efbb679", "9", "source");
+    });
+
+    it("Implements ingredientContent", function() {
+        const b = new FSBurritoStore(
+            {
+                storeClass: "FSBurritoStore",
+                validation: "burrito"
+            },
+            this.storagePath
+        );
+        b.importFromObject(this.metadata["validAudioTranslation"]);
+        const ingredientUuid = b.bufferIngredientFromFilePath("release/audio/GEN/GEN_001.mp3", this.mp3Path);
+        const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+        b.cacheIngredient("https://thedigitalbiblelibrary.org", "6e0d81a24efbb679", "9", "source", ingredientStats);
+        const content = b.ingredientContent("https://thedigitalbiblelibrary.org", "6e0d81a24efbb679", "9", "source", "release/audio/GEN/GEN_001.mp3");
+        assert.equal(crypto.createHash("MD5").update(content).digest("hex"), ingredientStats["checksum"]["md5"]);
+        
+    });
+
 
     /*
       it("Persistant metadata storage", function() {
