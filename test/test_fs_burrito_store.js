@@ -16,6 +16,7 @@ describe("FS Burrito Class", function() {
         const metadataDir = path.join(this.testDataDir, "metadata");
         this.metadata = {
             validTextTranslation: JSON.parse(fse.readFileSync(path.join(metadataDir, "textTranslation.json"), "utf8")),
+            validAudioTranslation: JSON.parse(fse.readFileSync(path.join(metadataDir, "audioTranslation.json"), "utf8")),
             validDerivedTextTranslation: JSON.parse(
                 fse.readFileSync(path.join(metadataDir, "textTranslation_derived.json"), "utf8")
             ),
@@ -502,12 +503,27 @@ describe("FS Burrito Class", function() {
         const ingredientUuid2 = b.bufferIngredientFromFilePath("release/GEN_001.mp3", this.mp3Path);
         const ingredientStats2 = b.bufferIngredientStats(ingredientUuid2);
         const ingredientContent2 = b.readBufferIngredient(ingredientUuid2);
-        console.log(ingredientStats2);
         assert.equal(crypto.createHash("MD5").update(ingredientContent2).digest("hex"), ingredientStats2["checksum"]["md5"]);
         assert.equal(b.bufferIngredients().length, 1);
         b.deleteAllBufferIngredients();
         assert.equal(b.bufferIngredients().length, 0);
     });
+
+    it("Implements cacheIngredient", function() {
+        const b = new FSBurritoStore(
+            {
+                storeClass: "FSBurritoStore",
+                validation: "burrito"
+            },
+            this.storagePath
+        );
+        b.importFromObject(this.metadata["validAudioTranslation"]);
+        const ingredientUuid = b.bufferIngredientFromFilePath("release/audio/GEN/GEN_001.mp3", this.mp3Path);
+        const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+        b.cacheIngredient("https://thedigitalbiblelibrary.org", "6e0d81a24efbb679", "9", "source", ingredientStats);
+        assert.equal(b.bufferIngredients().length, 0);
+    });
+
 
     /*
       it("Persistant metadata storage", function() {

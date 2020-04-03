@@ -1,8 +1,10 @@
 "use strict";
+
 import * as fse from "fs-extra";
 import { v4 as uuidv4 } from 'uuid';
 import * as md5 from 'md5-file';
 
+import { BurritoError } from "./burrito_error.js";
 import { IngredientBuffer } from "./ingredient_buffer.js";
 
 class FSIngredientBuffer extends IngredientBuffer {
@@ -83,7 +85,7 @@ class FSIngredientBuffer extends IngredientBuffer {
      */
     fsRenameIngredient(ingredientId, destination) {
         const ingredientPath = this.bufferDir + "/" + ingredientId + "/" + encodeURIComponent(this.uuidUrls[ingredientId]);
-        fse.rename(ingredientPath, destination);
+        fse.renameSync(ingredientPath, destination);
         delete this.uuidUrls[ingredientId];
     }
 }
