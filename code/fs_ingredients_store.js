@@ -49,6 +49,11 @@ class FSIngredientsStore extends IngredientsStore {
         return fse.readFileSync(ingredientPath);
     }
 
+    __ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientId, metadata) {
+        const ingredientChecksum = metadata.ingredients[ingredientId]["checksum"]["md5"];
+        return this.ingredientDir(idServerId, entryId, ingredientId) + "/" + ingredientChecksum;
+    }
+
 }
 
 export { FSIngredientsStore };

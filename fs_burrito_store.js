@@ -34,6 +34,12 @@ class FSBurritoStore extends BurritoStore {
             return idDetails["id"];
         }
     }
+
+    ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientName) {
+        const md = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
+        return this._ingredientsStore.__ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientName, md);
+    }
+
 }
 
 export { FSBurritoStore };

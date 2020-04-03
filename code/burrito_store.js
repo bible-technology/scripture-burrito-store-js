@@ -210,11 +210,17 @@ class BurritoStore {
 
     /* Read Ingredients */
 
+    /**
+       Returns the ingredient content as a JS buffer.
+     */
     ingredientContent(idServerId, entryId, revisionId, variantId, ingredientName) {
         const md = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
         return this._ingredientsStore.__ingredientContent(idServerId, entryId, revisionId, variantId, ingredientName, md);
     }
 
+    /**
+       Returns a direct, subclass-dependent handle or location fo the ingredient.
+     */
     ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientName) {
         throw new BurritoError("MethodNotYetImplemented");
     }

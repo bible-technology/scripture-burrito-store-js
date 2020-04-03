@@ -556,6 +556,21 @@ describe("FS Burrito Class", function() {
         
     });
 
+    it("Implements ingredientLocation", function() {
+        const b = new FSBurritoStore(
+            {
+                storeClass: "FSBurritoStore",
+                validation: "burrito"
+            },
+            this.storagePath
+        );
+        b.importFromObject(this.metadata["validAudioTranslation"]);
+        const ingredientUuid = b.bufferIngredientFromFilePath("release/audio/GEN/GEN_001.mp3", this.mp3Path);
+        const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+        b.cacheIngredient("https://thedigitalbiblelibrary.org", "6e0d81a24efbb679", "9", "source", ingredientStats);
+        const location = b.ingredientLocation("https://thedigitalbiblelibrary.org", "6e0d81a24efbb679", "9", "source", "release/audio/GEN/GEN_001.mp3");
+    });
+
 
     /*
       it("Persistant metadata storage", function() {
