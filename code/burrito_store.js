@@ -263,13 +263,24 @@ class BurritoStore {
     
     /* Add, Update, Remove, Cache Ingredients */
 
-    cacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {
+    /**
+       Adds an ingredient that is already in the metadata to the store.
+     */
+    cacheIngredient(idServerId, entryId, revisionId, variantId, ingredientBufferId) {
         const metadata = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
         if (!metadata) {
             throw new BurritoError("VariantNotFound");
         }
-        // Calculate checksum of content, compare with metadata
-        // Write content (subclass dependent)
+        const ingredientStats = this._ingredientBuffer.stats(ingredientBufferId);
+        const ingredientMetadata = metadata["ingredients"][ingredientStats["url"]];
+        if (!ingredientMetadata) {
+            throw new BurritoError("IngredientNotFoundInMetadata");
+        }
+        if (ingredientMetadata["checksum"] != ingredientStats["checksum"]) {
+            throw new BurritoError("IngredientChecksumMismatch");
+        }
+        this._ingredientsStore.__writeIngredient(idServerId, entryId, ingredientStats);
+        this._ingredientBuffer.delete(ingredientBufferId);
     }
 
     uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {

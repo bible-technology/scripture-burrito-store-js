@@ -502,6 +502,7 @@ describe("FS Burrito Class", function() {
         const ingredientUuid2 = b.bufferIngredientFromFilePath("release/GEN_001.mp3", this.mp3Path);
         const ingredientStats2 = b.bufferIngredientStats(ingredientUuid2);
         const ingredientContent2 = b.readBufferIngredient(ingredientUuid2);
+        console.log(ingredientStats2);
         assert.equal(crypto.createHash("MD5").update(ingredientContent2).digest("hex"), ingredientStats2["checksum"]["md5"]);
         assert.equal(b.bufferIngredients().length, 1);
         b.deleteAllBufferIngredients();

@@ -78,6 +78,14 @@ class FSIngredientBuffer extends IngredientBuffer {
         this.uuidUrls = {};
     }
 
+    /**
+       Fast, back end specific way to get a buffered ingredient into the store. FS constraints of rename apply here.
+     */
+    fsRenameIngredient(ingredientId, destination) {
+        const ingredientPath = this.bufferDir + "/" + ingredientId + "/" + encodeURIComponent(this.uuidUrls[ingredientId]);
+        fse.rename(ingredientPath, destination);
+        delete this.uuidUrls[ingredientId];
+    }
 }
 
 export { FSIngredientBuffer };
