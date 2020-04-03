@@ -192,6 +192,9 @@ class BurritoStore {
         throw new BurritoError("MethodNotYetImplemented");
     }
 
+    /**
+       Returns an object containing information about the ingredients for a variant.
+     */
     ingredients(idServerId, entryId, revisionId, variantId) {
         const metadata = this.metadataContent(idServerId, entryId, revisionId, variantId);
         return this._ingredientsStore.__listIngredients(idServerId, entryId, revisionId, variantId, metadata);
