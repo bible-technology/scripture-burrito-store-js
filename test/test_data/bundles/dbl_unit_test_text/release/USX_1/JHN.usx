@@ -1,0 +1,1129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.6">
+  <book code="JHN" style="id">English: Good News Translation 2nd Ed. 1992</book>
+  <para style="ide">Unicode (UTF8)</para>
+  <para style="rem">For any non-Paratext use of this text, permission must be obtained from the copyright holder.</para>
+  <para style="rem">CAP Information: checked/corrected 2008.</para>
+  <para style="h">John</para>
+  <para style="toc1">The Gospel according to JOHN</para>
+  <para style="toc2">John</para>
+  <para style="toc3">Jn</para>
+  <para style="mt2">The Gospel according to</para>
+  <para style="mt1">JOHN</para>
+  <para style="imt">Introduction</para>
+  <para style="ip">
+    <char style="bk">The Gospel according to John</char> presents Jesus as the eternal Word of God, who “became a human being and lived among us.” As the book itself says, this Gospel was written so that its readers might believe that Jesus is the promised Savior, the Son of God, and that through their faith in him they may have life (20.31).</para>
+  <para style="ip">After an introduction that identifies the eternal Word of God with Jesus, the first part of the Gospel presents various miracles which show that Jesus is the promised Savior, the Son of God. These are followed by discourses that explain what is revealed by the miracles. This part of the book tells how some people believed in Jesus and became his followers, while others opposed him and refused to believe. Chapters 13—17 record at length the close fellowship of Jesus with his disciples on the night of his arrest, and his words of preparation and encouragement to them on the eve of his crucifixion. The closing chapters tell of Jesus' arrest and trial, his crucifixion and resurrection, and his appearances to his disciples after the resurrection.</para>
+  <para style="ip">The story of the woman caught in adultery (8.1-11) is placed in brackets because many manuscripts and early translations omit it, while others include it in other places.</para>
+  <para style="ip">
+    <char style="bk">John</char> emphasizes the gift of eternal life through Christ, a gift which begins now and which comes to those who respond to Jesus as the way, the truth, and the life. A striking feature of <char style="bk">John</char> is the symbolic use of common things from everyday life to point to spiritual realities, such as water, bread, light, the shepherd and his sheep, and the grapevine and its fruit.</para>
+  <para style="iot">Outline of Contents</para>
+  <para style="io1">Prologue <char style="ior">(<ref loc="JHN 1:1-18">1.1-18</ref>)</char></para>
+  <para style="io1">John the Baptist and the first disciples of Jesus <char style="ior">(<ref loc="JHN 1:19-51">1.19-51</ref>)</char></para>
+  <para style="io1">Jesus' public ministry <char style="ior">(<ref loc="JHN 2:1-12:50">2.1–12.50</ref>)</char></para>
+  <para style="io1">The last days in and near Jerusalem <char style="ior">(<ref loc="JHN 13:1-19:42">13.1–19.42</ref>)</char></para>
+  <para style="io1">The resurrection and appearances of the Lord <char style="ior">(<ref loc="JHN 20:1-31">20.1-31</ref>)</char></para>
+  <para style="io1">Epilogue: another appearance in Galilee <char style="ior">(<ref loc="JHN 21:1-25">21.1-25</ref>)</char></para>
+  <chapter number="1" style="c" />
+  <para style="s">The Word of Life</para>
+  <para style="p">
+    <verse number="1" style="v" />In the beginning the Word already existed; the Word was with God, and the Word was God. <verse number="2" style="v" />From the very beginning the Word was with God. <verse number="3" style="v" />Through him God made all things; not one thing in all creation was made without him. <verse number="4" style="v" />The Word was the source of life, <note caller="+" style="f"><char style="fr" closed="false">1.4: </char><char style="fq" closed="false">The Word was the source of life; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">What was made had life in union with the Word.</char></note> and this life brought light to people. <verse number="5" style="v" />The light shines in the darkness, and the darkness has never put it out.</para>
+  <para style="p">
+    <verse number="6" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.6: </char>
+      <char style="xt" closed="false">
+        <ref loc="MAT 3:1">Mt 3.1</ref>; <ref loc="MRK 1:4">Mk 1.4</ref>; <ref loc="LUK 3:1">Lk 3.1</ref>,<ref loc="LUK 3:2">2</ref>.</char>
+    </note> God sent his messenger, a man named John, <verse number="7" style="v" />who came to tell people about the light, so that all should hear the message and believe. <verse number="8" style="v" />He himself was not the light; he came to tell about the light. <verse number="9" style="v" />This was the real light—the light that comes into the world and shines on all people.</para>
+  <para style="p">
+    <verse number="10" style="v" />The Word was in the world, and though God made the world through him, yet the world did not recognize him. <verse number="11" style="v" />He came to his own country, but his own people did not receive him. <verse number="12" style="v" />Some, however, did receive him and believed in him; so he gave them the right to become God's children. <verse number="13" style="v" />They did not become God's children by natural means, that is, by being born as the children of a human father; God himself was their Father.</para>
+  <para style="p">
+    <verse number="14" style="v" />The Word became a human being and, full of grace and truth, lived among us. We saw his glory, the glory which he received as the Father's only Son.</para>
+  <para style="p">
+    <verse number="15" style="v" />John spoke about him. He cried out, “This is the one I was talking about when I said, ‘He comes after me, but he is greater than I am, because he existed before I was born.’”</para>
+  <para style="p">
+    <verse number="16" style="v" />Out of the fullness of his grace he has blessed us all, giving us one blessing after another. <verse number="17" style="v" />God gave the Law through Moses, but grace and truth came through Jesus Christ. <verse number="18" style="v" />No one has ever seen God. The only Son, who is the same as God and is at the Father's side, he has made him known.</para>
+  <para style="s">John the Baptist's Message</para>
+  <para style="r">(<ref loc="MAT 3:1-12">Matthew 3.1-12</ref>; <ref loc="MRK 1:1-8">Mark 1.1-8</ref>; <ref loc="LUK 3:1-18">Luke 3.1-18</ref>)</para>
+  <para style="p">
+    <verse number="19" style="v" />The Jewish authorities in Jerusalem sent some priests and Levites to John to ask him, “Who are you?”</para>
+  <para style="p">
+    <verse number="20" style="v" />John did not refuse to answer, but spoke out openly and clearly, saying: “I am not the Messiah.”</para>
+  <para style="p">
+    <verse number="21" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.21: a </char>
+      <char style="xt" closed="false">
+        <ref loc="MAL 4:5">Ml 4.5</ref>; </char>
+      <char style="xo" closed="false">b </char>
+      <char style="xt" closed="false">Dt 18.15,18 </char>
+      <char style="xdc">; <ref loc="SIR 48:10">Si 48.10</ref>,<ref loc="SIR 48:11">11</ref></char>.</note> “Who are you, then?” they asked. “Are you Elijah?”</para>
+  <para style="p">“No, I am not,” John answered.</para>
+  <para style="p">“Are you the Prophet?” <note caller="+" style="f"><char style="fr" closed="false">1.21: </char><char style="fk" closed="false">the Prophet: </char><char style="ft" closed="false">The one who was expected to appear and announce the coming of the Messiah.</char></note> they asked.</para>
+  <para style="p">“No,” he replied.</para>
+  <para style="p">
+    <verse number="22" style="v" />“Then tell us who you are,” they said. “We have to take an answer back to those who sent us. What do you say about yourself?”</para>
+  <para style="p">
+    <verse number="23" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">1.23: </char>
+      <char style="xt" closed="false">
+        <ref loc="ISA 40:3">Is 40.3</ref> (LXX).</char>
+    </note> John answered by quoting the prophet Isaiah:</para>
+  <para style="q1">“I am ‘the voice of someone shouting in the desert:</para>
+  <para style="q2">Make a straight path for the Lord to travel!’”</para>
+  <para style="p">
+    <verse number="24" style="v" />The messengers, who had been sent by the Pharisees, <verse number="25" style="v" />then <note caller="+" style="f"><char style="fr" closed="false">1.25: </char><char style="fq" closed="false">The messengers, who had been sent by the Pharisees, then; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">Those who had been sent were Pharisees; they.</char></note> asked John, “If you are not the Messiah nor Elijah nor the Prophet, why do you baptize?”</para>
+  <para style="p">
+    <verse number="26" style="v" />John answered, “I baptize with water, but among you stands the one you do not know. <verse number="27" style="v" />He is coming after me, but I am not good enough even to untie his sandals.”</para>
+  <para style="p">
+    <verse number="28" style="v" />All this happened in Bethany on the east side of the Jordan River, where John was baptizing.</para>
+  <para style="s">The Lamb of God</para>
+  <para style="p">
+    <verse number="29" style="v" />The next day John saw Jesus coming to him, and said, “There is the Lamb of God, who takes away the sin of the world! <verse number="30" style="v" />This is the one I was talking about when I said, ‘A man is coming after me, but he is greater than I am, because he existed before I was born.’ <verse number="31" style="v" />I did not know who he would be, but I came baptizing with water in order to make him known to the people of Israel.”</para>
+  <para style="p">
+    <verse number="32" style="v" />And John gave this testimony: “I saw the Spirit come down like a dove from heaven and stay on him. <verse number="33" style="v" />I still did not know that he was the one, but God, who sent me to baptize with water, had said to me, ‘You will see the Spirit come down and stay on a man; he is the one who baptizes with the Holy Spirit.’ <verse number="34" style="v" />I have seen it,” said John, “and I tell you that he is the Son of God.”</para>
+  <para style="s">The First Disciples of Jesus</para>
+  <para style="p">
+    <verse number="35" style="v" />The next day John was standing there again with two of his disciples, <verse number="36" style="v" />when he saw Jesus walking by. “There is the Lamb of God!” he said.</para>
+  <para style="p">
+    <verse number="37" style="v" />The two disciples heard him say this and went with Jesus. <verse number="38" style="v" />Jesus turned, saw them following him, and asked, “What are you looking for?”</para>
+  <para style="p">They answered, “Where do you live, Rabbi?” (This word means “Teacher.”)</para>
+  <para style="p">
+    <verse number="39" style="v" />“Come and see,” he answered. (It was then about four o'clock in the afternoon.) So they went with him and saw where he lived, and spent the rest of that day with him.</para>
+  <para style="p">
+    <verse number="40" style="v" />One of them was Andrew, Simon Peter's brother. <verse number="41" style="v" />At once he found his brother Simon and told him, “We have found the Messiah.” (This word means “Christ.”) <verse number="42" style="v" />Then he took Simon to Jesus.</para>
+  <para style="p">Jesus looked at him and said, “Your name is Simon son of John, but you will be called Cephas.” (This is the same as Peter and means “a rock.”)</para>
+  <para style="s">Jesus Calls Philip and Nathanael</para>
+  <para style="p">
+    <verse number="43" style="v" />The next day Jesus decided to go to Galilee. He found Philip and said to him, “Come with me!” ( <verse number="44" style="v" />Philip was from Bethsaida, the town where Andrew and Peter lived.) <verse number="45" style="v" />Philip found Nathanael and told him, “We have found the one whom Moses wrote about in the book of the Law and whom the prophets also wrote about. He is Jesus son of Joseph, from Nazareth.”</para>
+  <para style="p">
+    <verse number="46" style="v" />“Can anything good come from Nazareth?” Nathanael asked.</para>
+  <para style="p">“Come and see,” answered Philip.</para>
+  <para style="p">
+    <verse number="47" style="v" />When Jesus saw Nathanael coming to him, he said about him, “Here is a real Israelite; there is nothing false in him!”</para>
+  <para style="p">
+    <verse number="48" style="v" />Nathanael asked him, “How do you know me?”</para>
+  <para style="p">Jesus answered, “I saw you when you were under the fig tree before Philip called you.”</para>
+  <para style="p">
+    <verse number="49" style="v" />“Teacher,” answered Nathanael, “you are the Son of God! You are the King of Israel!”</para>
+  <para style="p">
+    <verse number="50" style="v" />Jesus said, “Do you believe just because I told you I saw you when you were under the fig tree? You will see much greater things than this!” <verse number="51" style="v" /><note caller="-" style="x"><char style="xo" closed="false">1.51: </char><char style="xt" closed="false"><ref loc="GEN 28:12">Gn 28.12</ref>.</char></note> And he said to them, “I am telling you the truth: you will see heaven open and God's angels going up and coming down on the Son of Man.”</para>
+  <chapter number="2" style="c" />
+  <para style="s">The Wedding in Cana</para>
+  <para style="p">
+    <verse number="1" style="v" />Two days later there was a wedding in the town of Cana in Galilee. Jesus' mother was there, <verse number="2" style="v" />and Jesus and his disciples had also been invited to the wedding. <verse number="3" style="v" />When the wine had given out, Jesus' mother said to him, “They are out of wine.”</para>
+  <para style="p">
+    <verse number="4" style="v" />“You must not tell me what to do,” Jesus replied. “My time has not yet come.”</para>
+  <para style="p">
+    <verse number="5" style="v" />Jesus' mother then told the servants, “Do whatever he tells you.”</para>
+  <para style="p">
+    <verse number="6" style="v" />The Jews have rules about ritual washing, and for this purpose six stone water jars were there, each one large enough to hold between twenty and thirty gallons. <verse number="7" style="v" />Jesus said to the servants, “Fill these jars with water.” They filled them to the brim, <verse number="8" style="v" />and then he told them, “Now draw some water out and take it to the man in charge of the feast.” They took him the water, <verse number="9" style="v" />which now had turned into wine, and he tasted it. He did not know where this wine had come from (but, of course, the servants who had drawn out the water knew); so he called the bridegroom <verse number="10" style="v" />and said to him, “Everyone else serves the best wine first, and after the guests have drunk a lot, he serves the ordinary wine. But you have kept the best wine until now!”</para>
+  <para style="p">
+    <verse number="11" style="v" />Jesus performed this first miracle in Cana in Galilee; there he revealed his glory, and his disciples believed in him.</para>
+  <para style="p">
+    <verse number="12" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.12: </char>
+      <char style="xt" closed="false">
+        <ref loc="MAT 4:13">Mt 4.13</ref>.</char>
+    </note> After this, Jesus and his mother, brothers, and disciples went to Capernaum and stayed there a few days.</para>
+  <para style="s">Jesus Goes to the Temple</para>
+  <para style="r">(<ref loc="MAT 21:12">Matthew 21.12</ref>,<ref loc="MAT 21:13">13</ref>; <ref loc="MRK 11:15-17">Mark 11.15-17</ref>; <ref loc="LUK 19:45">Luke 19.45</ref>,<ref loc="LUK 19:46">46</ref>)</para>
+  <para style="p">
+    <verse number="13" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.13: </char>
+      <char style="xt" closed="false">
+        <ref loc="EXO 12:1-27">Ex 12.1-27</ref>.</char>
+    </note> It was almost time for the Passover Festival, so Jesus went to Jerusalem. <verse number="14" style="v" />There in the Temple he found people selling cattle, sheep, and pigeons, and also the moneychangers sitting at their tables. <verse number="15" style="v" />So he made a whip from cords and drove all the animals out of the Temple, both the sheep and the cattle; he overturned the tables of the moneychangers and scattered their coins; <verse number="16" style="v" />and he ordered those who sold the pigeons, “Take them out of here! Stop making my Father's house a marketplace!” <verse number="17" style="v" /><note caller="-" style="x"><char style="xo" closed="false">2.17: </char><char style="xt" closed="false"><ref loc="PSA 69:9">Ps 69.9</ref>.</char></note> His disciples remembered that the scripture says, “My devotion to your house, O God, burns in me like a fire.”</para>
+  <para style="p">
+    <verse number="18" style="v" />The Jewish authorities came back at him with a question, “What miracle can you perform to show us that you have the right to do this?”</para>
+  <para style="p">
+    <verse number="19" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">2.19: </char>
+      <char style="xt" closed="false">
+        <ref loc="MAT 26:61">Mt 26.61</ref>; <ref loc="MAT 27:40">27.40</ref>; <ref loc="MRK 14:58">Mk 14.58</ref>; <ref loc="MRK 15:29">15.29</ref>.</char>
+    </note> Jesus answered, “Tear down this Temple, and in three days I will build it again.”</para>
+  <para style="p">
+    <verse number="20" style="v" />“Are you going to build it again in three days?” they asked him. “It has taken forty-six years to build this Temple!”</para>
+  <para style="p">
+    <verse number="21" style="v" />But the temple Jesus was speaking about was his body. <verse number="22" style="v" />So when he was raised from death, his disciples remembered that he had said this, and they believed the scripture and what Jesus had said.</para>
+  <para style="s">Jesus' Knowledge of Human Nature</para>
+  <para style="p">
+    <verse number="23" style="v" />While Jesus was in Jerusalem during the Passover Festival, many believed in him as they saw the miracles he performed. <verse number="24" style="v" />But Jesus did not trust himself to them, because he knew them all. <verse number="25" style="v" />There was no need for anyone to tell him about them, because he himself knew what was in their hearts.</para>
+  <chapter number="3" style="c" />
+  <para style="s">Jesus and Nicodemus</para>
+  <para style="p">
+    <verse number="1" style="v" />There was a Jewish leader named Nicodemus, who belonged to the party of the Pharisees. <verse number="2" style="v" />One night he went to Jesus and said to him, “Rabbi, we know that you are a teacher sent by God. No one could perform the miracles you are doing unless God were with him.”</para>
+  <para style="p">
+    <verse number="3" style="v" />Jesus answered, “I am telling you the truth: no one can see the Kingdom of God without being born again.” <note caller="+" style="f"><char style="fr" closed="false">3.3: </char><char style="fq" closed="false">again; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">from above.</char></note></para>
+  <para style="p">
+    <verse number="4" style="v" />“How can a grown man be born again?” Nicodemus asked. “He certainly cannot enter his mother's womb and be born a second time!”</para>
+  <para style="p">
+    <verse number="5" style="v" />“I am telling you the truth,” replied Jesus, “that no one can enter the Kingdom of God without being born of water and the Spirit. <verse number="6" style="v" />A person is born physically of human parents, but is born spiritually of the Spirit. <verse number="7" style="v" />Do not be surprised because I tell you that you must all be born again. <note caller="+" style="f"><char style="fr" closed="false">3.7: </char><char style="fq" closed="false">again; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">from above.</char></note> <verse number="8" style="v" />The wind blows wherever it wishes; you hear the sound it makes, but you do not know where it comes from or where it is going. It is like that with everyone who is born of the Spirit.”</para>
+  <para style="p">
+    <verse number="9" style="v" />“How can this be?” asked Nicodemus.</para>
+  <para style="p">
+    <verse number="10" style="v" />Jesus answered, “You are a great teacher in Israel, and you don't know this? <verse number="11" style="v" />I am telling you the truth: we speak of what we know and report what we have seen, yet none of you is willing to accept our message. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.12: </char><char style="xdc" closed="false"><ref loc="WIS 9:16">Ws 9.16</ref>,<ref loc="WIS 9:17">17</ref>.</char></note> You do not believe me when I tell you about the things of this world; how will you ever believe me, then, when I tell you about the things of heaven? <verse number="13" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.13: </char><char style="xdc" closed="false"><ref loc="BAR 3:29">Ba 3.29</ref>.</char></note> And no one has ever gone up to heaven except the Son of Man, who came down from heaven.” <note caller="+" style="f"><char style="fr" closed="false">3.13: </char><char style="ft" closed="false">The quotation may continue through verse 21.</char></note></para>
+  <para style="p">
+    <verse number="14" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">3.14: </char>
+      <char style="xt" closed="false">Nu 21.9 </char>
+      <char style="xdc">; <ref loc="WIS 16:5-7">Ws 16.5-7</ref></char>.</note> As Moses lifted up the bronze snake on a pole in the desert, in the same way the Son of Man must be lifted up, <verse number="15" style="v" />so that everyone who believes in him may have eternal life. <verse number="16" style="v" />For God loved the world so much that he gave his only Son, so that everyone who believes in him may not die but have eternal life. <verse number="17" style="v" />For God did not send his Son into the world to be its judge, but to be its savior.</para>
+  <para style="p">
+    <verse number="18" style="v" />Those who believe in the Son are not judged; but those who do not believe have already been judged, because they have not believed in God's only Son. <verse number="19" style="v" />This is how the judgment works: the light has come into the world, but people love the darkness rather than the light, because their deeds are evil. <verse number="20" style="v" />Those who do evil things hate the light and will not come to the light, because they do not want their evil deeds to be shown up. <verse number="21" style="v" />But those who do what is true come to the light in order that the light may show that what they did was in obedience to God.</para>
+  <para style="s">Jesus and John</para>
+  <para style="p">
+    <verse number="22" style="v" />After this, Jesus and his disciples went to the province of Judea, where he spent some time with them and baptized. <verse number="23" style="v" />John also was baptizing in Aenon, not far from Salim, because there was plenty of water in that place. People were going to him, and he was baptizing them. ( <verse number="24" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.24: </char><char style="xt" closed="false"><ref loc="MAT 14:3">Mt 14.3</ref>; <ref loc="MRK 6:17">Mk 6.17</ref>; <ref loc="LUK 3:19">Lk 3.19</ref>,<ref loc="LUK 3:20">20</ref>.</char></note> This was before John had been put in prison.)</para>
+  <para style="p">
+    <verse number="25" style="v" />Some of John's disciples began arguing with a Jew <note caller="+" style="f"><char style="fr" closed="false">3.25: </char><char style="fq" closed="false">a Jew; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">some Jews.</char></note> about the matter of ritual washing. <verse number="26" style="v" />So they went to John and told him, “Teacher, you remember the man who was with you on the east side of the Jordan, the one you spoke about? Well, he is baptizing now, and everyone is going to him!”</para>
+  <para style="p">
+    <verse number="27" style="v" />John answered, “No one can have anything unless God gives it. <verse number="28" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.28: </char><char style="xt" closed="false"><ref loc="JHN 1:20">Jn 1.20</ref>.</char></note> You yourselves are my witnesses that I said, ‘I am not the Messiah, but I have been sent ahead of him.’ <verse number="29" style="v" />The bridegroom is the one to whom the bride belongs; but the bridegroom's friend, who stands by and listens, is glad when he hears the bridegroom's voice. This is how my own happiness is made complete. <verse number="30" style="v" />He must become more important while I become less important.”</para>
+  <para style="s">He Who Comes from Heaven</para>
+  <para style="p">
+    <verse number="31" style="v" />He who comes from above is greater than all. He who is from the earth belongs to the earth and speaks about earthly matters, but he who comes from heaven is above all. <verse number="32" style="v" />He tells what he has seen and heard, yet no one accepts his message. <verse number="33" style="v" />But whoever accepts his message confirms by this that God is truthful. <verse number="34" style="v" />The one whom God has sent speaks God's words, because God gives him the fullness of his Spirit. <verse number="35" style="v" /><note caller="-" style="x"><char style="xo" closed="false">3.35: </char><char style="xt" closed="false"><ref loc="MAT 11:27">Mt 11.27</ref>; <ref loc="LUK 10:22">Lk 10.22</ref>.</char></note> The Father loves his Son and has put everything in his power. <verse number="36" style="v" />Whoever believes in the Son has eternal life; whoever disobeys the Son will not have life, but will remain under God's punishment.</para>
+  <chapter number="4" style="c" />
+  <para style="s">Jesus and the Samaritan Woman</para>
+  <para style="p">
+    <verse number="1" style="v" />The Pharisees heard that Jesus was winning and baptizing more disciples than John. ( <verse number="2" style="v" />Actually, Jesus himself did not baptize anyone; only his disciples did.) <verse number="3" style="v" />So when Jesus heard what was being said, he left Judea and went back to Galilee; <verse number="4" style="v" />on his way there he had to go through Samaria.</para>
+  <para style="p">
+    <verse number="5" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">4.5: </char>
+      <char style="xt" closed="false">
+        <ref loc="GEN 33:19">Gn 33.19</ref>; <ref loc="JOS 24:32">Js 24.32</ref>.</char>
+    </note> In Samaria he came to a town named Sychar, which was not far from the field that Jacob had given to his son Joseph. <verse number="6" style="v" />Jacob's well was there, and Jesus, tired out by the trip, sat down by the well. It was about noon.</para>
+  <para style="p">
+    <verse number="7" style="v" />A Samaritan woman came to draw some water, and Jesus said to her, “Give me a drink of water.” ( <verse number="8" style="v" />His disciples had gone into town to buy food.)</para>
+  <para style="p">
+    <verse number="9" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">4.9: </char>
+      <char style="xt" closed="false">
+        <ref loc="EZR 4:1-5">Ezra 4.1-5</ref>; <ref loc="NEH 4:1">Ne 4.1</ref>,<ref loc="NEH 4:2">2</ref>.</char>
+    </note> The woman answered, “You are a Jew, and I am a Samaritan—so how can you ask me for a drink?” (Jews will not use the same cups and bowls that Samaritans use.) <note caller="+" style="f"><char style="fr" closed="false">4.9: </char><char style="fq" closed="false">Jews will not use the same cups and bowls that Samaritans use; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">Jews will have nothing to do with Samaritans.</char></note></para>
+  <para style="p">
+    <verse number="10" style="v" />Jesus answered, “If you only knew what God gives and who it is that is asking you for a drink, you would ask him, and he would give you life-giving water.”</para>
+  <para style="p">
+    <verse number="11" style="v" />“Sir,” the woman said, “you don't have a bucket, and the well is deep. Where would you get that life-giving water? <verse number="12" style="v" />It was our ancestor Jacob who gave us this well; he and his children and his flocks all drank from it. You don't claim to be greater than Jacob, do you?”</para>
+  <para style="p">
+    <verse number="13" style="v" />Jesus answered, “Those who drink this water will get thirsty again, <verse number="14" style="v" />but those who drink the water that I will give them will never be thirsty again. The water that I will give them will become in them a spring which will provide them with life-giving water and give them eternal life.”</para>
+  <para style="p">
+    <verse number="15" style="v" />“Sir,” the woman said, “give me that water! Then I will never be thirsty again, nor will I have to come here to draw water.”</para>
+  <para style="p">
+    <verse number="16" style="v" />“Go and call your husband,” Jesus told her, “and come back.”</para>
+  <para style="p">
+    <verse number="17" style="v" />“I don't have a husband,” she answered.</para>
+  <para style="p">Jesus replied, “You are right when you say you don't have a husband. <verse number="18" style="v" />You have been married to five men, and the man you live with now is not really your husband. You have told me the truth.”</para>
+  <para style="p">
+    <verse number="19" style="v" />“I see you are a prophet, sir,” the woman said. <verse number="20" style="v" />“My Samaritan ancestors worshiped God on this mountain, but you Jews say that Jerusalem is the place where we should worship God.”</para>
+  <para style="p">
+    <verse number="21" style="v" />Jesus said to her, “Believe me, woman, the time will come when people will not worship the Father either on this mountain or in Jerusalem. <verse number="22" style="v" />You Samaritans do not really know whom you worship; but we Jews know whom we worship, because it is from the Jews that salvation comes. <verse number="23" style="v" />But the time is coming and is already here, when by the power of God's Spirit people will worship the Father as he really is, offering him the true worship that he wants. <verse number="24" style="v" />God is Spirit, and only by the power of his Spirit can people worship him as he really is.”</para>
+  <para style="p">
+    <verse number="25" style="v" />The woman said to him, “I know that the Messiah will come, and when he comes, he will tell us everything.”</para>
+  <para style="p">
+    <verse number="26" style="v" />Jesus answered, “I am he, I who am talking with you.”</para>
+  <para style="p">
+    <verse number="27" style="v" />At that moment Jesus' disciples returned, and they were greatly surprised to find him talking with a woman. But none of them said to her, “What do you want?” or asked him, “Why are you talking with her?”</para>
+  <para style="p">
+    <verse number="28" style="v" />Then the woman left her water jar, went back to the town, and said to the people there, <verse number="29" style="v" />“Come and see the man who told me everything I have ever done. Could he be the Messiah?” <verse number="30" style="v" />So they left the town and went to Jesus.</para>
+  <para style="p">
+    <verse number="31" style="v" />In the meantime the disciples were begging Jesus, “Teacher, have something to eat!”</para>
+  <para style="p">
+    <verse number="32" style="v" />But he answered, “I have food to eat that you know nothing about.”</para>
+  <para style="p">
+    <verse number="33" style="v" />So the disciples started asking among themselves, “Could somebody have brought him food?”</para>
+  <para style="p">
+    <verse number="34" style="v" />“My food,” Jesus said to them, “is to obey the will of the one who sent me and to finish the work he gave me to do. <verse number="35" style="v" />You have a saying, ‘Four more months and then the harvest.’ But I tell you, take a good look at the fields; the crops are now ripe and ready to be harvested! <verse number="36" style="v" />The one who reaps the harvest is being paid and gathers the crops for eternal life; so the one who plants and the one who reaps will be glad together. <verse number="37" style="v" />For the saying is true, ‘Someone plants, someone else reaps.’ <verse number="38" style="v" />I have sent you to reap a harvest in a field where you did not work; others worked there, and you profit from their work.”</para>
+  <para style="p">
+    <verse number="39" style="v" />Many of the Samaritans in that town believed in Jesus because the woman had said, “He told me everything I have ever done.” <verse number="40" style="v" />So when the Samaritans came to him, they begged him to stay with them, and Jesus stayed there two days.</para>
+  <para style="p">
+    <verse number="41" style="v" />Many more believed because of his message, <verse number="42" style="v" />and they told the woman, “We believe now, not because of what you said, but because we ourselves have heard him, and we know that he really is the Savior of the world.”</para>
+  <para style="s">Jesus Heals an Official's Son</para>
+  <para style="p">
+    <verse number="43" style="v" />After spending two days there, Jesus left and went to Galilee. <verse number="44" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.44: </char><char style="xt" closed="false"><ref loc="MAT 13:57">Mt 13.57</ref>; <ref loc="MRK 6:4">Mk 6.4</ref>; <ref loc="LUK 4:24">Lk 4.24</ref>.</char></note> For he himself had said, “Prophets are not respected in their own country.” <verse number="45" style="v" /><note caller="-" style="x"><char style="xo" closed="false">4.45: </char><char style="xt" closed="false"><ref loc="JHN 2:23">Jn 2.23</ref>.</char></note> When he arrived in Galilee, the people there welcomed him, because they had gone to the Passover Festival in Jerusalem and had seen everything that he had done during the festival.</para>
+  <para style="p">
+    <verse number="46" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">4.46: </char>
+      <char style="xt" closed="false">
+        <ref loc="JHN 2:1-11">Jn 2.1-11</ref>.</char>
+    </note> Then Jesus went back to Cana in Galilee, where he had turned the water into wine. A government official was there whose son was sick in Capernaum. <verse number="47" style="v" />When he heard that Jesus had come from Judea to Galilee, he went to him and asked him to go to Capernaum and heal his son, who was about to die. <verse number="48" style="v" />Jesus said to him, “None of you will ever believe unless you see miracles and wonders.”</para>
+  <para style="p">
+    <verse number="49" style="v" />“Sir,” replied the official, “come with me before my child dies.”</para>
+  <para style="p">
+    <verse number="50" style="v" />Jesus said to him, “Go; your son will live!”</para>
+  <para style="p">The man believed Jesus' words and went. <verse number="51" style="v" />On his way home his servants met him with the news, “Your boy is going to live!”</para>
+  <para style="p">
+    <verse number="52" style="v" />He asked them what time it was when his son got better, and they answered, “It was one o'clock yesterday afternoon when the fever left him.” <verse number="53" style="v" />Then the father remembered that it was at that very hour when Jesus had told him, “Your son will live.” So he and all his family believed.</para>
+  <para style="p">
+    <verse number="54" style="v" />This was the second miracle that Jesus performed after coming from Judea to Galilee.</para>
+  <chapter number="5" style="c" />
+  <para style="s">The Healing at the Pool</para>
+  <para style="p">
+    <verse number="1" style="v" />After this, Jesus went to Jerusalem for a religious festival. <verse number="2" style="v" />Near the Sheep Gate in Jerusalem there is a pool <note caller="+" style="f"><char style="fr" closed="false">5.2: </char><char style="fq" closed="false">Near the Sheep Gate…a pool; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">Near the Sheep Pool…a place.</char></note> with five porches; in Hebrew it is called Bethzatha. <note caller="+" style="f"><char style="fr" closed="false">5.2: </char><char style="fq" closed="false">Bethzatha; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">Bethesda.</char></note> <verse number="3" style="v" />A large crowd of sick people were lying on the porches—the blind, the lame, and the paralyzed. <note caller="+" style="f"><char style="fr" closed="false">5.3: </char><char style="ft" closed="false">Some manuscripts add verses 3b-4: </char><char style="fq" closed="false">They were waiting for the water to move, </char><char style="fv">4</char> because every now and then an angel of the Lord went down into the pool and stirred up the water. The first sick person to go into the pool after the water was stirred up was healed from whatever disease he had.</note> <verse number="5" style="v" />A man was there who had been sick for thirty-eight years. <verse number="6" style="v" />Jesus saw him lying there, and he knew that the man had been sick for such a long time; so he asked him, “Do you want to get well?”</para>
+  <para style="p">
+    <verse number="7" style="v" />The sick man answered, “Sir, I don't have anyone here to put me in the pool when the water is stirred up; while I am trying to get in, somebody else gets there first.”</para>
+  <para style="p">
+    <verse number="8" style="v" />Jesus said to him, “Get up, pick up your mat, and walk.” <verse number="9" style="v" />Immediately the man got well; he picked up his mat and started walking.</para>
+  <para style="p">The day this happened was a Sabbath, <verse number="10" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.10: </char><char style="xt" closed="false"><ref loc="NEH 13:19">Ne 13.19</ref>; <ref loc="JER 17:21">Jr 17.21</ref>.</char></note> so the Jewish authorities told the man who had been healed, “This is a Sabbath, and it is against our Law for you to carry your mat.”</para>
+  <para style="p">
+    <verse number="11" style="v" />He answered, “The man who made me well told me to pick up my mat and walk.”</para>
+  <para style="p">
+    <verse number="12" style="v" />They asked him, “Who is the man who told you to do this?”</para>
+  <para style="p">
+    <verse number="13" style="v" />But the man who had been healed did not know who Jesus was, for there was a crowd in that place, and Jesus had slipped away.</para>
+  <para style="p">
+    <verse number="14" style="v" />Afterward, Jesus found him in the Temple and said, “Listen, you are well now; so stop sinning or something worse may happen to you.”</para>
+  <para style="p">
+    <verse number="15" style="v" />Then the man left and told the Jewish authorities that it was Jesus who had healed him. <verse number="16" style="v" />So they began to persecute Jesus, because he had done this healing on a Sabbath. <verse number="17" style="v" />Jesus answered them, “My Father is always working, and I too must work.”</para>
+  <para style="p">
+    <verse number="18" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">5.18: </char>
+      <char style="xdc" closed="false">
+        <ref loc="WIS 2:16">Ws 2.16</ref>.</char>
+    </note> This saying made the Jewish authorities all the more determined to kill him; not only had he broken the Sabbath law, but he had said that God was his own Father and in this way had made himself equal with God.</para>
+  <para style="s">The Authority of the Son</para>
+  <para style="p">
+    <verse number="19" style="v" />So Jesus answered them, “I tell you the truth: the Son can do nothing on his own; he does only what he sees his Father doing. What the Father does, the Son also does. <verse number="20" style="v" />For the Father loves the Son and shows him all that he himself is doing. He will show him even greater things to do than this, and you will all be amazed. <verse number="21" style="v" />Just as the Father raises the dead and gives them life, in the same way the Son gives life to those he wants to. <verse number="22" style="v" />Nor does the Father himself judge anyone. He has given his Son the full right to judge, <verse number="23" style="v" />so that all will honor the Son in the same way as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him.</para>
+  <para style="p">
+    <verse number="24" style="v" />“I am telling you the truth: those who hear my words and believe in him who sent me have eternal life. They will not be judged, but have already passed from death to life. <verse number="25" style="v" />I am telling you the truth: the time is coming—the time has already come—when the dead will hear the voice of the Son of God, and those who hear it will come to life. <verse number="26" style="v" />Just as the Father is himself the source of life, in the same way he has made his Son to be the source of life. <verse number="27" style="v" />And he has given the Son the right to judge, because he is the Son of Man. <verse number="28" style="v" />Do not be surprised at this; the time is coming when all the dead will hear his voice <verse number="29" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.29: </char><char style="xt" closed="false"><ref loc="DAN 12:2">Dn 12.2</ref>.</char></note> and come out of their graves: those who have done good will rise and live, and those who have done evil will rise and be condemned.</para>
+  <para style="s">Witnesses to Jesus</para>
+  <para style="p">
+    <verse number="30" style="v" />“I can do nothing on my own authority; I judge only as God tells me, so my judgment is right, because I am not trying to do what I want, but only what he who sent me wants.</para>
+  <para style="p">
+    <verse number="31" style="v" />“If I testify on my own behalf, what I say is not to be accepted as real proof. <verse number="32" style="v" />But there is someone else who testifies on my behalf, and I know that what he says about me is true. <verse number="33" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.33: </char><char style="xt" closed="false"><ref loc="JHN 1:19-27">Jn 1.19-27</ref>; <ref loc="JHN 3:27-30">3.27-30</ref>.</char></note> John is the one to whom you sent your messengers, and he spoke on behalf of the truth. <verse number="34" style="v" />It is not that I must have a human witness; I say this only in order that you may be saved. <verse number="35" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.35: </char><char style="xdc" closed="false"><ref loc="SIR 48:1">Si 48.1</ref>.</char></note> John was like a lamp, burning and shining, and you were willing for a while to enjoy his light. <verse number="36" style="v" />But I have a witness on my behalf which is even greater than the witness that John gave: what I do, that is, the deeds my Father gave me to do, these speak on my behalf and show that the Father has sent me. <verse number="37" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.37: </char><char style="xt" closed="false"><ref loc="MAT 3:17">Mt 3.17</ref>; <ref loc="MRK 1:11">Mk 1.11</ref>; <ref loc="LUK 3:22">Lk 3.22</ref>.</char></note> And the Father, who sent me, also testifies on my behalf. You have never heard his voice or seen his face, <verse number="38" style="v" />and you do not keep his message in your hearts, for you do not believe in the one whom he sent. <verse number="39" style="v" /><note caller="-" style="x"><char style="xo" closed="false">5.39: </char><char style="xdc" closed="false"><ref loc="BAR 4:1">Ba 4.1</ref>.</char></note> You study the Scriptures, because you think that in them you will find eternal life. And these very Scriptures speak about me! <verse number="40" style="v" />Yet you are not willing to come to me in order to have life.</para>
+  <para style="p">
+    <verse number="41" style="v" />“I am not looking for human praise. <verse number="42" style="v" />But I know what kind of people you are, and I know that you have no love for God in your hearts. <verse number="43" style="v" />I have come with my Father's authority, but you have not received me; when, however, someone comes with his own authority, you will receive him. <verse number="44" style="v" />You like to receive praise from one another, but you do not try to win praise from the one who alone is God; how, then, can you believe me? <verse number="45" style="v" />Do not think, however, that I am the one who will accuse you to my Father. Moses, in whom you have put your hope, is the very one who will accuse you. <verse number="46" style="v" />If you had really believed Moses, you would have believed me, because he wrote about me. <verse number="47" style="v" />But since you do not believe what he wrote, how can you believe what I say?”</para>
+  <chapter number="6" style="c" />
+  <para style="s">Jesus Feeds Five Thousand</para>
+  <para style="r">(<ref loc="MAT 14:13-21">Matthew 14.13-21</ref>; <ref loc="MRK 6:30-44">Mark 6.30-44</ref>; <ref loc="LUK 9:10-17">Luke 9.10-17</ref>)</para>
+  <para style="p">
+    <verse number="1" style="v" />After this, Jesus went across Lake Galilee (or, Lake Tiberias, as it is also called). <verse number="2" style="v" />A large crowd followed him, because they had seen his miracles of healing the sick. <verse number="3" style="v" />Jesus went up a hill and sat down with his disciples. <verse number="4" style="v" />The time for the Passover Festival was near. <verse number="5" style="v" />Jesus looked around and saw that a large crowd was coming to him, so he asked Philip, “Where can we buy enough food to feed all these people?” ( <verse number="6" style="v" />He said this to test Philip; actually he already knew what he would do.)</para>
+  <para style="p">
+    <verse number="7" style="v" />Philip answered, “For everyone to have even a little, it would take more than two hundred silver coins <note caller="+" style="f"><char style="fr" closed="false">6.7: </char><char style="fk" closed="false">silver coins: </char><char style="ft" closed="false">A silver coin was the daily wage of a rural worker (see Mt 20.2).</char></note> to buy enough bread.”</para>
+  <para style="p">
+    <verse number="8" style="v" />Another one of his disciples, Andrew, who was Simon Peter's brother, said, <verse number="9" style="v" />“There is a boy here who has five loaves of barley bread and two fish. But they will certainly not be enough for all these people.”</para>
+  <para style="p">
+    <verse number="10" style="v" />“Make the people sit down,” Jesus told them. (There was a lot of grass there.) So all the people sat down; there were about five thousand men. <verse number="11" style="v" />Jesus took the bread, gave thanks to God, and distributed it to the people who were sitting there. He did the same with the fish, and they all had as much as they wanted. <verse number="12" style="v" />When they were all full, he said to his disciples, “Gather the pieces left over; let us not waste a bit.” <verse number="13" style="v" />So they gathered them all and filled twelve baskets with the pieces left over from the five barley loaves which the people had eaten.</para>
+  <para style="p">
+    <verse number="14" style="v" />Seeing this miracle that Jesus had performed, the people there said, “Surely this is the Prophet <note caller="+" style="f"><char style="fr" closed="false">6.14: </char><char style="fk" closed="false">the Prophet: </char><char style="ft" closed="false">See 1.21.</char></note> who was to come into the world!” <verse number="15" style="v" />Jesus knew that they were about to come and seize him in order to make him king by force; so he went off again to the hills by himself.</para>
+  <para style="s">Jesus Walks on the Water</para>
+  <para style="r">(<ref loc="MAT 14:22-33">Matthew 14.22-33</ref>; <ref loc="MRK 6:45-52">Mark 6.45-52</ref>)</para>
+  <para style="p">
+    <verse number="16" style="v" />When evening came, Jesus' disciples went down to the lake, <verse number="17" style="v" />got into a boat, and went back across the lake toward Capernaum. Night came on, and Jesus still had not come to them. <verse number="18" style="v" />By then a strong wind was blowing and stirring up the water. <verse number="19" style="v" />The disciples had rowed about three or four miles when they saw Jesus walking on the water, coming near the boat, and they were terrified. <verse number="20" style="v" />“Don't be afraid,” Jesus told them, “it is I!” <verse number="21" style="v" />Then they willingly took him into the boat, and immediately the boat reached land at the place they were heading for.</para>
+  <para style="s">The People Seek Jesus</para>
+  <para style="p">
+    <verse number="22" style="v" />Next day the crowd which had stayed on the other side of the lake realized that there had been only one boat there. They knew that Jesus had not gone in it with his disciples, but that they had left without him. <verse number="23" style="v" />Other boats, which were from Tiberias, came to shore near the place where the crowd had eaten the bread after the Lord had given thanks. <verse number="24" style="v" />When the crowd saw that Jesus was not there, nor his disciples, they got into those boats and went to Capernaum, looking for him.</para>
+  <para style="s">Jesus the Bread of Life</para>
+  <para style="p">
+    <verse number="25" style="v" />When the people found Jesus on the other side of the lake, they said to him, “Teacher, when did you get here?”</para>
+  <para style="p">
+    <verse number="26" style="v" />Jesus answered, “I am telling you the truth: you are looking for me because you ate the bread and had all you wanted, not because you understood my miracles. <verse number="27" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.27: </char><char style="xdc" closed="false"><ref loc="SIR 24:19-22">Si 24.19-22</ref>.</char></note> Do not work for food that spoils; instead, work for the food that lasts for eternal life. This is the food which the Son of Man will give you, because God, the Father, has put his mark of approval on him.”</para>
+  <para style="p">
+    <verse number="28" style="v" />So they asked him, “What can we do in order to do what God wants us to do?”</para>
+  <para style="p">
+    <verse number="29" style="v" />Jesus answered, “What God wants you to do is to believe in the one he sent.”</para>
+  <para style="p">
+    <verse number="30" style="v" />They replied, “What miracle will you perform so that we may see it and believe you? What will you do? <verse number="31" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.31: </char><char style="xt" closed="false"><ref loc="EXO 16:4">Ex 16.4</ref>,<ref loc="EXO 16:15">15</ref>; Ps 78.24 </char><char style="xdc">; <ref loc="WIS 16:20">Ws 16.20</ref>,<ref loc="WIS 16:21">21</ref></char>.</note> Our ancestors ate manna in the desert, just as the scripture says, ‘He gave them bread from heaven to eat.’”</para>
+  <para style="p">
+    <verse number="32" style="v" />“I am telling you the truth,” Jesus said. “What Moses gave you was not <note caller="+" style="f"><char style="fr" closed="false">6.32: </char><char style="fq" closed="false">What Moses gave you was not; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">It was not Moses who gave you.</char></note> the bread from heaven; it is my Father who gives you the real bread from heaven. <verse number="33" style="v" />For the bread that God gives is he who comes down from heaven and gives life to the world.”</para>
+  <para style="p">
+    <verse number="34" style="v" />“Sir,” they asked him, “give us this bread always.”</para>
+  <para style="p">
+    <verse number="35" style="v" />“I am the bread of life,” Jesus told them. “Those who come to me will never be hungry; those who believe in me will never be thirsty. <verse number="36" style="v" />Now, I told you that you have seen me but will not believe. <verse number="37" style="v" />Everyone whom my Father gives me will come to me. I will never turn away anyone who comes to me, <verse number="38" style="v" />because I have come down from heaven to do not my own will but the will of him who sent me. <verse number="39" style="v" />And it is the will of him who sent me that I should not lose any of all those he has given me, but that I should raise them all to life on the last day. <verse number="40" style="v" />For what my Father wants is that all who see the Son and believe in him should have eternal life. And I will raise them to life on the last day.”</para>
+  <para style="p">
+    <verse number="41" style="v" />The people started grumbling about him, because he said, “I am the bread that came down from heaven.” <verse number="42" style="v" />So they said, “This man is Jesus son of Joseph, isn't he? We know his father and mother. How, then, does he now say he came down from heaven?”</para>
+  <para style="p">
+    <verse number="43" style="v" />Jesus answered, “Stop grumbling among yourselves. <verse number="44" style="v" />People cannot come to me unless the Father who sent me draws them to me; and I will raise them to life on the last day. <verse number="45" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.45: </char><char style="xt" closed="false"><ref loc="ISA 54:13">Is 54.13</ref>.</char></note> The prophets wrote, ‘Everyone will be taught by God.’ Anyone who hears the Father and learns from him comes to me. <verse number="46" style="v" />This does not mean that anyone has seen the Father; he who is from God is the only one who has seen the Father. <verse number="47" style="v" />I am telling you the truth: he who believes has eternal life. <verse number="48" style="v" />I am the bread of life. <verse number="49" style="v" />Your ancestors ate manna in the desert, but they died. <verse number="50" style="v" />But the bread that comes down from heaven is of such a kind that whoever eats it will not die. <verse number="51" style="v" />I am the living bread that came down from heaven. If you eat this bread, you will live forever. The bread that I will give you is my flesh, which I give so that the world may live.”</para>
+  <para style="p">
+    <verse number="52" style="v" />This started an angry argument among them. “How can this man give us his flesh to eat?” they asked.</para>
+  <para style="p">
+    <verse number="53" style="v" />Jesus said to them, “I am telling you the truth: if you do not eat the flesh of the Son of Man and drink his blood, you will not have life in yourselves. <verse number="54" style="v" />Those who eat my flesh and drink my blood have eternal life, and I will raise them to life on the last day. <verse number="55" style="v" />For my flesh is the real food; my blood is the real drink. <verse number="56" style="v" />Those who eat my flesh and drink my blood live in me, and I live in them. <verse number="57" style="v" />The living Father sent me, and because of him I live also. In the same way whoever eats me will live because of me. <verse number="58" style="v" />This, then, is the bread that came down from heaven; it is not like the bread that your ancestors ate, but then later died. Those who eat this bread will live forever.”</para>
+  <para style="p">
+    <verse number="59" style="v" />Jesus said this as he taught in the synagogue in Capernaum.</para>
+  <para style="s">The Words of Eternal Life</para>
+  <para style="p">
+    <verse number="60" style="v" />Many of his followers heard this and said, “This teaching is too hard. Who can listen to it?”</para>
+  <para style="p">
+    <verse number="61" style="v" />Without being told, Jesus knew that they were grumbling about this, so he said to them, “Does this make you want to give up? <verse number="62" style="v" />Suppose, then, that you should see the Son of Man go back up to the place where he was before? <verse number="63" style="v" /><note caller="-" style="x"><char style="xo" closed="false">6.63: </char><char style="xdc" closed="false"><ref loc="WIS 9:13-18">Ws 9.13-18</ref>.</char></note> What gives life is God's Spirit; human power is of no use at all. The words I have spoken to you bring God's life-giving Spirit. <verse number="64" style="v" />Yet some of you do not believe.” (Jesus knew from the very beginning who were the ones that would not believe and which one would betray him.) <verse number="65" style="v" />And he added, “This is the very reason I told you that no people can come to me unless the Father makes it possible for them to do so.”</para>
+  <para style="p">
+    <verse number="66" style="v" />Because of this, many of Jesus' followers turned back and would not go with him any more. <verse number="67" style="v" />So he asked the twelve disciples, “And you—would you also like to leave?”</para>
+  <para style="p">
+    <verse number="68" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">6.68,69: </char>
+      <char style="xt" closed="false">
+        <ref loc="MAT 16:16">Mt 16.16</ref>; <ref loc="MRK 8:29">Mk 8.29</ref>; <ref loc="LUK 9:20">Lk 9.20</ref>.</char>
+    </note> Simon Peter answered him, “Lord, to whom would we go? You have the words that give eternal life. <verse number="69" style="v" />And now we believe and know that you are the Holy One who has come from God.”</para>
+  <para style="p">
+    <verse number="70" style="v" />Jesus replied, “I chose the twelve of you, didn't I? Yet one of you is a devil!” <verse number="71" style="v" />He was talking about Judas, the son of Simon Iscariot. For Judas, even though he was one of the twelve disciples, was going to betray him.</para>
+  <chapter number="7" style="c" />
+  <para style="s">Jesus and His Brothers</para>
+  <para style="p">
+    <verse number="1" style="v" />After this, Jesus traveled in Galilee; he did not want to travel in Judea, because the Jewish authorities there were wanting to kill him. <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.2: </char><char style="xt" closed="false"><ref loc="LEV 23:34">Lv 23.34</ref>; <ref loc="DEU 16:13">Dt 16.13</ref>.</char></note> The time for the Festival of Shelters was near, <verse number="3" style="v" />so Jesus' brothers said to him, “Leave this place and go to Judea, so that your followers will see the things that you are doing. <verse number="4" style="v" />People don't hide what they are doing if they want to be well known. Since you are doing these things, let the whole world know about you!” ( <verse number="5" style="v" />Not even his brothers believed in him.)</para>
+  <para style="p">
+    <verse number="6" style="v" />Jesus said to them, “The right time for me has not yet come. Any time is right for you. <verse number="7" style="v" />The world cannot hate you, but it hates me, because I keep telling it that its ways are bad. <verse number="8" style="v" />You go on to the festival. I am not going <note caller="+" style="f"><char style="fr" closed="false">7.8: </char><char style="fq" closed="false">I am not going; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">I am not yet going.</char></note> to this festival, because the right time has not come for me.” <verse number="9" style="v" />He said this and then stayed on in Galilee.</para>
+  <para style="s">Jesus at the Festival of Shelters</para>
+  <para style="p">
+    <verse number="10" style="v" />After his brothers had gone to the festival, Jesus also went; however, he did not go openly, but secretly. <verse number="11" style="v" />The Jewish authorities were looking for him at the festival. “Where is he?” they asked.</para>
+  <para style="p">
+    <verse number="12" style="v" />There was much whispering about him in the crowd. “He is a good man,” some people said. “No,” others said, “he fools the people.” <verse number="13" style="v" />But no one talked about him openly, because they were afraid of the Jewish authorities.</para>
+  <para style="p">
+    <verse number="14" style="v" />The festival was nearly half over when Jesus went to the Temple and began teaching. <verse number="15" style="v" />The Jewish authorities were greatly surprised and said, “How does this man know so much when he has never been to school?”</para>
+  <para style="p">
+    <verse number="16" style="v" />Jesus answered, “What I teach is not my own teaching, but it comes from God, who sent me. <verse number="17" style="v" />Whoever is willing to do what God wants will know whether what I teach comes from God or whether I speak on my own authority. <verse number="18" style="v" />Those who speak on their own authority are trying to gain glory for themselves. But he who wants glory for the one who sent him is honest, and there is nothing false in him. <verse number="19" style="v" />Moses gave you the Law, didn't he? But not one of you obeys the Law. Why are you trying to kill me?”</para>
+  <para style="p">
+    <verse number="20" style="v" />“You have a demon in you!” the crowd answered. “Who is trying to kill you?”</para>
+  <para style="p">
+    <verse number="21" style="v" />Jesus answered, “I performed one miracle, and you were all surprised. <verse number="22" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.22: a </char><char style="xt" closed="false"><ref loc="LEV 12:3">Lv 12.3</ref>; </char><char style="xo" closed="false">b </char><char style="xt" closed="false"><ref loc="GEN 17:10">Gn 17.10</ref>.</char></note> Moses ordered you to circumcise your sons (although it was not Moses but your ancestors who started it), and so you circumcise a boy on the Sabbath. <verse number="23" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.23: </char><char style="xt" closed="false"><ref loc="JHN 5:9">Jn 5.9</ref>.</char></note> If a boy is circumcised on the Sabbath so that Moses' Law is not broken, why are you angry with me because I made a man completely well on the Sabbath? <verse number="24" style="v" />Stop judging by external standards, and judge by true standards.”</para>
+  <para style="s">Is He the Messiah?</para>
+  <para style="p">
+    <verse number="25" style="v" />Some of the people of Jerusalem said, “Isn't this the man the authorities are trying to kill? <verse number="26" style="v" />Look! He is talking in public, and they say nothing against him! Can it be that they really know that he is the Messiah? <verse number="27" style="v" />But when the Messiah comes, no one will know where he is from. And we all know where this man comes from.”</para>
+  <para style="p">
+    <verse number="28" style="v" />As Jesus taught in the Temple, he said in a loud voice, “Do you really know me and know where I am from? I have not come on my own authority. He who sent me, however, is truthful. You do not know him, <verse number="29" style="v" />but I know him, because I come from him and he sent me.”</para>
+  <para style="p">
+    <verse number="30" style="v" />Then they tried to seize him, but no one laid a hand on him, because his hour had not yet come. <verse number="31" style="v" />But many in the crowd believed in him and said, “When the Messiah comes, will he perform more miracles than this man has?”</para>
+  <para style="s">Guards Are Sent to Arrest Jesus</para>
+  <para style="p">
+    <verse number="32" style="v" />The Pharisees heard the crowd whispering these things about Jesus, so they and the chief priests sent some guards to arrest him. <verse number="33" style="v" />Jesus said, “I shall be with you a little while longer, and then I shall go away to him who sent me. <verse number="34" style="v" />You will look for me, but you will not find me, because you cannot go where I will be.”</para>
+  <para style="p">
+    <verse number="35" style="v" />The Jewish authorities said among themselves, “Where is he about to go so that we shall not find him? Will he go to the Greek cities where our people live, and teach the Greeks? <verse number="36" style="v" />He says that we will look for him but will not find him, and that we cannot go where he will be. What does he mean?”</para>
+  <para style="s">Streams of Life-Giving Water</para>
+  <para style="p">
+    <verse number="37" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">7.37: </char>
+      <char style="xt" closed="false">
+        <ref loc="LEV 23:36">Lv 23.36</ref>.</char>
+    </note> On the last and most important day of the festival Jesus stood up and said in a loud voice, “Whoever is thirsty should come to me, and <verse number="38" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.38: </char><char style="xt" closed="false"><ref loc="EZK 47:1">Ez 47.1</ref>; <ref loc="ZEC 14:8">Zec 14.8</ref>.</char></note> whoever believes in me should drink. As the scripture says, ‘Streams of life-giving water will pour out from his side.’” <note caller="+" style="f"><char style="fr" closed="false">7.38: </char><char style="ft" closed="false">Jesus' words in verses 37-38 may be translated: </char><char style="fq" closed="false">“Whoever is thirsty should come to me and drink. </char><char style="fv">38</char> As the scripture says, ‘Streams of life-giving water will pour out from within anyone who believes in me.’”</note> <verse number="39" style="v" />Jesus said this about the Spirit, which those who believed in him were going to receive. At that time the Spirit had not yet been given, because Jesus had not been raised to glory.</para>
+  <para style="s">Division among the People</para>
+  <para style="p">
+    <verse number="40" style="v" />Some of the people in the crowd heard him say this and said, “This man is really the Prophet!” <note caller="+" style="f"><char style="fr" closed="false">7.40: </char><char style="fk" closed="false">the Prophet: </char><char style="ft" closed="false">See 1.21.</char></note></para>
+  <para style="p">
+    <verse number="41" style="v" />Others said, “He is the Messiah!”</para>
+  <para style="p">But others said, “The Messiah will not come from Galilee! <verse number="42" style="v" /><note caller="-" style="x"><char style="xo" closed="false">7.42: </char><char style="xt" closed="false"><ref loc="2SA 7:12">2 S 7.12</ref>; <ref loc="MIC 5:2">Mic 5.2</ref>.</char></note> The scripture says that the Messiah will be a descendant of King David and will be born in Bethlehem, the town where David lived.” <verse number="43" style="v" />So there was a division in the crowd because of Jesus. <verse number="44" style="v" />Some wanted to seize him, but no one laid a hand on him.</para>
+  <para style="s">The Unbelief of the Jewish Authorities</para>
+  <para style="p">
+    <verse number="45" style="v" />When the guards went back, the chief priests and Pharisees asked them, “Why did you not bring him?”</para>
+  <para style="p">
+    <verse number="46" style="v" />The guards answered, “Nobody has ever talked the way this man does!”</para>
+  <para style="p">
+    <verse number="47" style="v" />“Did he fool you, too?” the Pharisees asked them. <verse number="48" style="v" />“Have you ever known one of the authorities or one Pharisee to believe in him? <verse number="49" style="v" />This crowd does not know the Law of Moses, so they are under God's curse!”</para>
+  <para style="p">
+    <verse number="50" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">7.50: </char>
+      <char style="xt" closed="false">
+        <ref loc="JHN 3:1">Jn 3.1</ref>,<ref loc="JHN 3:2">2</ref>.</char>
+    </note> One of the Pharisees there was Nicodemus, the man who had gone to see Jesus before. He said to the others, <verse number="51" style="v" />“According to our Law we cannot condemn people before hearing them and finding out what they have done.”</para>
+  <para style="p">
+    <verse number="52" style="v" />“Well,” they answered, “are you also from Galilee? Study the Scriptures and you will learn that no prophet ever comes <note caller="+" style="f"><char style="fr" closed="false">7.52: </char><char style="fq" closed="false">no prophet ever comes; </char><char style="ft" closed="false">one manuscript has </char><char style="fq" closed="false">the Prophet will not come.</char></note> from Galilee.”</para>
+  <chapter number="8" style="c" />
+  <para style="s">The Woman Caught in Adultery</para>
+  <para style="p">[ <verse number="1" style="v" />Then everyone went home, but Jesus went to the Mount of Olives. <verse number="2" style="v" />Early the next morning he went back to the Temple. All the people gathered around him, and he sat down and began to teach them. <verse number="3" style="v" />The teachers of the Law and the Pharisees brought in a woman who had been caught committing adultery, and they made her stand before them all. <verse number="4" style="v" />“Teacher,” they said to Jesus, “this woman was caught in the very act of committing adultery. <verse number="5" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.5: </char><char style="xt" closed="false"><ref loc="LEV 20:10">Lv 20.10</ref>; <ref loc="DEU 22:22-24">Dt 22.22-24</ref>.</char></note> In our Law Moses commanded that such a woman must be stoned to death. Now, what do you say?” <verse number="6" style="v" />They said this to trap Jesus, so that they could accuse him. But he bent over and wrote on the ground with his finger. <verse number="7" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.7: </char><char style="xdc" closed="false"><ref loc="SUS 1:34">Su 34</ref>.</char></note> As they stood there asking him questions, he straightened up and said to them, “Whichever one of you has committed no sin may throw the first stone at her.” <verse number="8" style="v" />Then he bent over again and wrote on the ground. <verse number="9" style="v" />When they heard this, they all left, one by one, the older ones first. Jesus was left alone, with the woman still standing there. <verse number="10" style="v" />He straightened up and said to her, “Where are they? Is there no one left to condemn you?”</para>
+  <para style="p">
+    <verse number="11" style="v" />“No one, sir,” she answered.</para>
+  <para style="p">“Well, then,” Jesus said, “I do not condemn you either. Go, but do not sin again.”] <note caller="+" style="f"><char style="fr" closed="false">8.11: </char><char style="ft" closed="false">Many manuscripts and early translations do not have this passage (8.1-11); others have it after Jn 21.24; others have it after Lk 21.38; one manuscript has it after Jn 7.36.</char></note></para>
+  <para style="s">Jesus the Light of the World</para>
+  <para style="p">
+    <verse number="12" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">8.12: </char>
+      <char style="xdc" closed="false">
+        <ref loc="WIS 7:26">Ws 7.26</ref>; </char>
+      <char style="xt" closed="false">
+        <ref loc="MAT 5:14">Mt 5.14</ref>; <ref loc="JHN 9:5">Jn 9.5</ref>.</char>
+    </note> Jesus spoke to the Pharisees again. “I am the light of the world,” he said. “Whoever follows me will have the light of life and will never walk in darkness.”</para>
+  <para style="p">
+    <verse number="13" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">8.13: </char>
+      <char style="xt" closed="false">
+        <ref loc="JHN 5:31">Jn 5.31</ref>.</char>
+    </note> The Pharisees said to him, “Now you are testifying on your own behalf; what you say proves nothing.”</para>
+  <para style="p">
+    <verse number="14" style="v" />“No,” Jesus answered, “even though I do testify on my own behalf, what I say is true, because I know where I came from and where I am going. You do not know where I came from or where I am going. <verse number="15" style="v" />You make judgments in a purely human way; I pass judgment on no one. <verse number="16" style="v" />But if I were to do so, my judgment would be true, because I am not alone in this; the Father who sent me is with me. <verse number="17" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.17: </char><char style="xt" closed="false"><ref loc="DEU 19:15">Dt 19.15</ref>.</char></note> It is written in your Law that when two witnesses agree, what they say is true. <verse number="18" style="v" />I testify on my own behalf, and the Father who sent me also testifies on my behalf.”</para>
+  <para style="p">
+    <verse number="19" style="v" />“Where is your father?” they asked him.</para>
+  <para style="p">“You know neither me nor my Father,” Jesus answered. “If you knew me, you would know my Father also.”</para>
+  <para style="p">
+    <verse number="20" style="v" />Jesus said all this as he taught in the Temple, in the room where the offering boxes were placed. And no one arrested him, because his hour had not come.</para>
+  <para style="s">You Cannot Go Where I Am Going</para>
+  <para style="p">
+    <verse number="21" style="v" />Again Jesus said to them, “I will go away; you will look for me, but you will die in your sins. You cannot go where I am going.”</para>
+  <para style="p">
+    <verse number="22" style="v" />So the Jewish authorities said, “He says that we cannot go where he is going. Does this mean that he will kill himself?”</para>
+  <para style="p">
+    <verse number="23" style="v" />Jesus answered, “You belong to this world here below, but I come from above. You are from this world, but I am not from this world. <verse number="24" style="v" />That is why I told you that you will die in your sins. And you will die in your sins if you do not believe that ‘I Am Who I Am’.”</para>
+  <para style="p">
+    <verse number="25" style="v" />“Who are you?” they asked him.</para>
+  <para style="p">Jesus answered, “What I have told you from the very beginning. <note caller="+" style="f"><char style="fr" closed="false">8.25: </char><char style="fq" closed="false">What I have told you from the very beginning; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">Why should I speak to you at all?</char></note> <verse number="26" style="v" />I have much to say about you, much to condemn you for. The one who sent me, however, is truthful, and I tell the world only what I have heard from him.”</para>
+  <para style="p">
+    <verse number="27" style="v" />They did not understand that Jesus was talking to them about the Father. <verse number="28" style="v" />So he said to them, “When you lift up the Son of Man, you will know that ‘I Am Who I Am’; then you will know that I do nothing on my own authority, but I say only what the Father has instructed me to say. <verse number="29" style="v" />And he who sent me is with me; he has not left me alone, because I always do what pleases him.”</para>
+  <para style="p">
+    <verse number="30" style="v" />Many who heard Jesus say these things believed in him.</para>
+  <para style="s">The Truth Will Set You Free</para>
+  <para style="p">
+    <verse number="31" style="v" />So Jesus said to those who believed in him, “If you obey my teaching, you are really my disciples; <verse number="32" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.32: </char><char style="xdc" closed="false"><ref loc="1ES 4:38">1 Esd 4.38</ref>.</char></note> you will know the truth, and the truth will set you free.”</para>
+  <para style="p">
+    <verse number="33" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">8.33: </char>
+      <char style="xt" closed="false">
+        <ref loc="MAT 3:9">Mt 3.9</ref>; <ref loc="LUK 3:8">Lk 3.8</ref>.</char>
+    </note> “We are the descendants of Abraham,” they answered, “and we have never been anybody's slaves. What do you mean, then, by saying, ‘You will be free’?”</para>
+  <para style="p">
+    <verse number="34" style="v" />Jesus said to them, “I am telling you the truth: everyone who sins is a slave of sin. <verse number="35" style="v" />A slave does not belong to a family permanently, but a son belongs there forever. <verse number="36" style="v" />If the Son sets you free, then you will be really free. <verse number="37" style="v" />I know you are Abraham's descendants. Yet you are trying to kill me, because you will not accept my teaching. <verse number="38" style="v" />I talk about what my Father has shown me, but you do what your father has told you.”</para>
+  <para style="p">
+    <verse number="39" style="v" />They answered him, “Our father is Abraham.”</para>
+  <para style="p">“If you really were Abraham's children,” Jesus replied, “you would do <note caller="+" style="f"><char style="fr" closed="false">8.39: </char><char style="fq" closed="false">If you really were…you would do; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">If you are…do.</char></note> the same things that he did. <verse number="40" style="v" />All I have ever done is to tell you the truth I heard from God, yet you are trying to kill me. Abraham did nothing like this! <verse number="41" style="v" />You are doing what your father did.”</para>
+  <para style="p">“God himself is the only Father we have,” they answered, “and we are his true children.”</para>
+  <para style="p">
+    <verse number="42" style="v" />Jesus said to them, “If God really were your Father, you would love me, because I came from God and now I am here. I did not come on my own authority, but he sent me. <verse number="43" style="v" />Why do you not understand what I say? It is because you cannot bear to listen to my message. <verse number="44" style="v" /><note caller="-" style="x"><char style="xo" closed="false">8.44: </char><char style="xdc" closed="false"><ref loc="WIS 1:13">Ws 1.13</ref>; <ref loc="WIS 2:24">2.24</ref>.</char></note> You are the children of your father, the Devil, and you want to follow your father's desires. From the very beginning he was a murderer and has never been on the side of truth, because there is no truth in him. When he tells a lie, he is only doing what is natural to him, because he is a liar and the father of all lies. <verse number="45" style="v" />But I tell the truth, and that is why you do not believe me. <verse number="46" style="v" />Which one of you can prove that I am guilty of sin? If I tell the truth, then why do you not believe me? <verse number="47" style="v" />He who comes from God listens to God's words. You, however, are not from God, and that is why you will not listen.”</para>
+  <para style="s">Jesus and Abraham</para>
+  <para style="p">
+    <verse number="48" style="v" />They asked Jesus, “Were we not right in saying that you are a Samaritan and have a demon in you?”</para>
+  <para style="p">
+    <verse number="49" style="v" />“I have no demon,” Jesus answered. “I honor my Father, but you dishonor me. <verse number="50" style="v" />I am not seeking honor for myself. But there is one who is seeking it and who judges in my favor. <verse number="51" style="v" />I am telling you the truth: whoever obeys my teaching will never die.”</para>
+  <para style="p">
+    <verse number="52" style="v" />They said to him, “Now we know for sure that you have a demon! Abraham died, and the prophets died, yet you say that whoever obeys your teaching will never die. <verse number="53" style="v" />Our father Abraham died; you do not claim to be greater than Abraham, do you? And the prophets also died. Who do you think you are?”</para>
+  <para style="p">
+    <verse number="54" style="v" />Jesus answered, “If I were to honor myself, that honor would be worth nothing. The one who honors me is my Father—the very one you say is your God. <verse number="55" style="v" />You have never known him, but I know him. If I were to say that I do not know him, I would be a liar like you. But I do know him, and I obey his word. <verse number="56" style="v" />Your father Abraham rejoiced that he was to see the time of my coming; he saw it and was glad.”</para>
+  <para style="p">
+    <verse number="57" style="v" />They said to him, “You are not even fifty years old—and you have seen Abraham?” <note caller="+" style="f"><char style="fr" closed="false">8.57: </char><char style="fq" closed="false">you have seen Abraham?; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">has Abraham seen you?</char></note></para>
+  <para style="p">
+    <verse number="58" style="v" />“I am telling you the truth,” Jesus replied. “Before Abraham was born, ‘I Am’.”</para>
+  <para style="p">
+    <verse number="59" style="v" />Then they picked up stones to throw at him, but Jesus hid himself and left the Temple.</para>
+  <chapter number="9" style="c" />
+  <para style="s">Jesus Heals a Man Born Blind</para>
+  <para style="p">
+    <verse number="1" style="v" />As Jesus was walking along, he saw a man who had been born blind. <verse number="2" style="v" />His disciples asked him, “Teacher, whose sin caused him to be born blind? Was it his own or his parents' sin?”</para>
+  <para style="p">
+    <verse number="3" style="v" />Jesus answered, “His blindness has nothing to do with his sins or his parents' sins. He is blind so that God's power might be seen at work in him. <verse number="4" style="v" />As long as it is day, we must do the work of him who sent me; night is coming when no one can work. <verse number="5" style="v" /><note caller="-" style="x"><char style="xo" closed="false">9.5: </char><char style="xt" closed="false"><ref loc="MAT 5:14">Mt 5.14</ref>; <ref loc="JHN 8:12">Jn 8.12</ref>.</char></note> While I am in the world, I am the light for the world.”</para>
+  <para style="p">
+    <verse number="6" style="v" />After he said this, Jesus spat on the ground and made some mud with the spittle; he rubbed the mud on the man's eyes <verse number="7" style="v" />and told him, “Go and wash your face in the Pool of Siloam.” (This name means “Sent.”) So the man went, washed his face, and came back seeing.</para>
+  <para style="p">
+    <verse number="8" style="v" />His neighbors, then, and the people who had seen him begging before this, asked, “Isn't this the man who used to sit and beg?”</para>
+  <para style="p">
+    <verse number="9" style="v" />Some said, “He is the one,” but others said, “No he isn't; he just looks like him.”</para>
+  <para style="p">So the man himself said, “I am the man.”</para>
+  <para style="p">
+    <verse number="10" style="v" />“How is it that you can now see?” they asked him.</para>
+  <para style="p">
+    <verse number="11" style="v" />He answered, “The man called Jesus made some mud, rubbed it on my eyes, and told me to go to Siloam and wash my face. So I went, and as soon as I washed, I could see.”</para>
+  <para style="p">
+    <verse number="12" style="v" />“Where is he?” they asked.</para>
+  <para style="p">“I don't know,” he answered.</para>
+  <para style="s">The Pharisees Investigate the Healing</para>
+  <para style="p">
+    <verse number="13" style="v" />Then they took to the Pharisees the man who had been blind. <verse number="14" style="v" />The day that Jesus made the mud and cured him of his blindness was a Sabbath. <verse number="15" style="v" />The Pharisees, then, asked the man again how he had received his sight. He told them, “He put some mud on my eyes; I washed my face, and now I can see.”</para>
+  <para style="p">
+    <verse number="16" style="v" />Some of the Pharisees said, “The man who did this cannot be from God, for he does not obey the Sabbath law.”</para>
+  <para style="p">Others, however, said, “How could a man who is a sinner perform such miracles as these?” And there was a division among them.</para>
+  <para style="p">
+    <verse number="17" style="v" />So the Pharisees asked the man once more, “You say he cured you of your blindness—well, what do you say about him?”</para>
+  <para style="p">“He is a prophet,” the man answered.</para>
+  <para style="p">
+    <verse number="18" style="v" />The Jewish authorities, however, were not willing to believe that he had been blind and could now see, until they called his parents <verse number="19" style="v" />and asked them, “Is this your son? You say that he was born blind; how is it, then, that he can now see?”</para>
+  <para style="p">
+    <verse number="20" style="v" />His parents answered, “We know that he is our son, and we know that he was born blind. <verse number="21" style="v" />But we do not know how it is that he is now able to see, nor do we know who cured him of his blindness. Ask him; he is old enough, and he can answer for himself!” <verse number="22" style="v" />His parents said this because they were afraid of the Jewish authorities, who had already agreed that anyone who said he believed that Jesus was the Messiah would be expelled from the synagogue. <verse number="23" style="v" />That is why his parents said, “He is old enough; ask him!”</para>
+  <para style="p">
+    <verse number="24" style="v" />A second time they called back the man who had been born blind, and said to him, “Promise before God that you will tell the truth! We know that this man who cured you is a sinner.”</para>
+  <para style="p">
+    <verse number="25" style="v" />“I do not know if he is a sinner or not,” the man replied. “One thing I do know: I was blind, and now I see.”</para>
+  <para style="p">
+    <verse number="26" style="v" />“What did he do to you?” they asked. “How did he cure you of your blindness?”</para>
+  <para style="p">
+    <verse number="27" style="v" />“I have already told you,” he answered, “and you would not listen. Why do you want to hear it again? Maybe you, too, would like to be his disciples?”</para>
+  <para style="p">
+    <verse number="28" style="v" />They insulted him and said, “You are that fellow's disciple; but we are Moses' disciples. <verse number="29" style="v" />We know that God spoke to Moses; as for that fellow, however, we do not even know where he comes from!”</para>
+  <para style="p">
+    <verse number="30" style="v" />The man answered, “What a strange thing that is! You do not know where he comes from, but he cured me of my blindness! <verse number="31" style="v" />We know that God does not listen to sinners; he does listen to people who respect him and do what he wants them to do. <verse number="32" style="v" />Since the beginning of the world nobody has ever heard of anyone giving sight to a person born blind. <verse number="33" style="v" />Unless this man came from God, he would not be able to do a thing.”</para>
+  <para style="p">
+    <verse number="34" style="v" />They answered, “You were born and brought up in sin—and you are trying to teach us?” And they expelled him from the synagogue.</para>
+  <para style="s">Spiritual Blindness</para>
+  <para style="p">
+    <verse number="35" style="v" />When Jesus heard what had happened, he found the man and asked him, “Do you believe in the Son of Man?”</para>
+  <para style="p">
+    <verse number="36" style="v" />The man answered, “Tell me who he is, sir, so that I can believe in him!”</para>
+  <para style="p">
+    <verse number="37" style="v" />Jesus said to him, “You have already seen him, and he is the one who is talking with you now.”</para>
+  <para style="p">
+    <verse number="38" style="v" />“I believe, Lord!” the man said, and knelt down before Jesus.</para>
+  <para style="p">
+    <verse number="39" style="v" />Jesus said, “I came to this world to judge, so that the blind should see and those who see should become blind.”</para>
+  <para style="p">
+    <verse number="40" style="v" />Some Pharisees who were there with him heard him say this and asked him, “Surely you don't mean that we are blind, too?”</para>
+  <para style="p">
+    <verse number="41" style="v" />Jesus answered, “If you were blind, then you would not be guilty; but since you claim that you can see, this means that you are still guilty.”</para>
+  <chapter number="10" style="c" />
+  <para style="s">The Parable of the Shepherd</para>
+  <para style="p">
+    <verse number="1" style="v" />Jesus said, “I am telling you the truth: the man who does not enter the sheep pen by the gate, but climbs in some other way, is a thief and a robber. <verse number="2" style="v" />The man who goes in through the gate is the shepherd of the sheep. <verse number="3" style="v" />The gatekeeper opens the gate for him; the sheep hear his voice as he calls his own sheep by name, and he leads them out. <verse number="4" style="v" />When he has brought them out, he goes ahead of them, and the sheep follow him, because they know his voice. <verse number="5" style="v" />They will not follow someone else; instead, they will run away from such a person, because they do not know his voice.”</para>
+  <para style="p">
+    <verse number="6" style="v" />Jesus told them this parable, but they did not understand what he meant.</para>
+  <para style="s">Jesus the Good Shepherd</para>
+  <para style="p">
+    <verse number="7" style="v" />So Jesus said again, “I am telling you the truth: I am the gate for the sheep. <verse number="8" style="v" />All others who came before me are thieves and robbers, but the sheep did not listen to them. <verse number="9" style="v" />I am the gate. Those who come in by me will be saved; they will come in and go out and find pasture. <verse number="10" style="v" />The thief comes only in order to steal, kill, and destroy. I have come in order that you might have life—life in all its fullness.</para>
+  <para style="p">
+    <verse number="11" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.11: </char>
+      <char style="xdc" closed="false">
+        <ref loc="SIR 18:13">Si 18.13</ref>.</char>
+    </note> “I am the good shepherd, who is willing to die for the sheep. <verse number="12" style="v" />When the hired man, who is not a shepherd and does not own the sheep, sees a wolf coming, he leaves the sheep and runs away; so the wolf snatches the sheep and scatters them. <verse number="13" style="v" />The hired man runs away because he is only a hired man and does not care about the sheep. <verse number="14-15" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.15: </char><char style="xt" closed="false"><ref loc="MAT 11:27">Mt 11.27</ref>; <ref loc="LUK 10:22">Lk 10.22</ref>.</char></note> I am the good shepherd. As the Father knows me and I know the Father, in the same way I know my sheep and they know me. And I am willing to die for them. <verse number="16" style="v" />There are other sheep which belong to me that are not in this sheep pen. I must bring them, too; they will listen to my voice, and they will become <note caller="+" style="f"><char style="fr" closed="false">10.16: </char><char style="fq" closed="false">they will become; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">there will be.</char></note> one flock with one shepherd.</para>
+  <para style="p">
+    <verse number="17" style="v" />“The Father loves me because I am willing to give up my life, in order that I may receive it back again. <verse number="18" style="v" />No one takes my life away from me. I give it up of my own free will. I have the right to give it up, and I have the right to take it back. This is what my Father has commanded me to do.”</para>
+  <para style="p">
+    <verse number="19" style="v" />Again there was a division among the people because of these words. <verse number="20" style="v" />Many of them were saying, “He has a demon! He is crazy! Why do you listen to him?”</para>
+  <para style="p">
+    <verse number="21" style="v" />But others were saying, “A man with a demon could not talk like this! How could a demon give sight to blind people?”</para>
+  <para style="s">Jesus Is Rejected</para>
+  <para style="p">
+    <verse number="22" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.22: </char>
+      <char style="xdc" closed="false">
+        <ref loc="1MA 4:36">1 Macc 4.36</ref>,<ref loc="1MA 4:52-59">52-59</ref>; <ref loc="2MA 1:18">2 Macc 1.18</ref>; <ref loc="2MA 10:5">10.5</ref>.</char>
+    </note> It was winter, and the Festival of the Dedication of the Temple was being celebrated in Jerusalem. <verse number="23" style="v" />Jesus was walking in Solomon's Porch in the Temple, <verse number="24" style="v" />when the people gathered around him and asked, “How long are you going to keep us in suspense? Tell us the plain truth: are you the Messiah?”</para>
+  <para style="p">
+    <verse number="25" style="v" />Jesus answered, “I have already told you, but you would not believe me. The deeds I do by my Father's authority speak on my behalf; <verse number="26" style="v" />but you will not believe, for you are not my sheep. <verse number="27" style="v" />My sheep listen to my voice; I know them, and they follow me. <verse number="28" style="v" />I give them eternal life, and they shall never die. No one can snatch them away from me. <verse number="29" style="v" /><note caller="-" style="x"><char style="xo" closed="false">10.29: </char><char style="xdc" closed="false"><ref loc="WIS 3:1">Ws 3.1</ref>.</char></note> What my Father has given me is greater <note caller="+" style="f"><char style="fr" closed="false">10.29: </char><char style="fq" closed="false">What my Father has given me is greater; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">My Father, who gave them to me, is greater.</char></note> than everything, and no one can snatch them away from the Father's care. <verse number="30" style="v" />The Father and I are one.”</para>
+  <para style="p">
+    <verse number="31" style="v" />Then the people again picked up stones to throw at him. <verse number="32" style="v" />Jesus said to them, “I have done many good deeds in your presence which the Father gave me to do; for which one of these do you want to stone me?”</para>
+  <para style="p">
+    <verse number="33" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.33: </char>
+      <char style="xt" closed="false">
+        <ref loc="LEV 24:16">Lv 24.16</ref>.</char>
+    </note> They answered, “We do not want to stone you because of any good deeds, but because of your blasphemy! You are only a man, but you are trying to make yourself God!”</para>
+  <para style="p">
+    <verse number="34" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.34: </char>
+      <char style="xt" closed="false">
+        <ref loc="PSA 82:6">Ps 82.6</ref>.</char>
+    </note> Jesus answered, “It is written in your own Law that God said, ‘You are gods.’ <verse number="35" style="v" />We know that what the scripture says is true forever; and God called those people gods, the people to whom his message was given. <verse number="36" style="v" />As for me, the Father chose me and sent me into the world. How, then, can you say that I blaspheme because I said that I am the Son of God? <verse number="37" style="v" />Do not believe me, then, if I am not doing the things my Father wants me to do. <verse number="38" style="v" />But if I do them, even though you do not believe me, you should at least believe my deeds, in order that you may know once and for all that the Father is in me and that I am in the Father.”</para>
+  <para style="p">
+    <verse number="39" style="v" />Once more they tried to seize Jesus, but he slipped out of their hands.</para>
+  <para style="p">
+    <verse number="40" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">10.40: </char>
+      <char style="xt" closed="false">
+        <ref loc="JHN 1:28">Jn 1.28</ref>.</char>
+    </note> Jesus then went back again across the Jordan River to the place where John had been baptizing, and he stayed there. <verse number="41" style="v" />Many people came to him. “John performed no miracles,” they said, “but everything he said about this man was true.” <verse number="42" style="v" />And many people there believed in him.</para>
+  <chapter number="11" style="c" />
+  <para style="s">The Death of Lazarus</para>
+  <para style="p">
+    <verse number="1" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.1: </char>
+      <char style="xt" closed="false">
+        <ref loc="LUK 10:38">Lk 10.38</ref>,<ref loc="LUK 10:39">39</ref>.</char>
+    </note> A man named Lazarus, who lived in Bethany, became sick. Bethany was the town where Mary and her sister Martha lived. ( <verse number="2" style="v" /><note caller="-" style="x"><char style="xo" closed="false">11.2: </char><char style="xt" closed="false"><ref loc="JHN 12:3">Jn 12.3</ref>.</char></note> This Mary was the one who poured the perfume on the Lord's feet and wiped them with her hair; it was her brother Lazarus who was sick.) <verse number="3" style="v" />The sisters sent Jesus a message: “Lord, your dear friend is sick.”</para>
+  <para style="p">
+    <verse number="4" style="v" />When Jesus heard it, he said, “The final result of this sickness will not be the death of Lazarus; this has happened in order to bring glory to God, and it will be the means by which the Son of God will receive glory.”</para>
+  <para style="p">
+    <verse number="5" style="v" />Jesus loved Martha and her sister and Lazarus. <verse number="6" style="v" />Yet when he received the news that Lazarus was sick, he stayed where he was for two more days. <verse number="7" style="v" />Then he said to the disciples, “Let us go back to Judea.”</para>
+  <para style="p">
+    <verse number="8" style="v" />“Teacher,” the disciples answered, “just a short time ago the people there wanted to stone you; and are you planning to go back?”</para>
+  <para style="p">
+    <verse number="9" style="v" />Jesus said, “A day has twelve hours, doesn't it? So those who walk in broad daylight do not stumble, for they see the light of this world. <verse number="10" style="v" />But if they walk during the night they stumble, because they have no light.” <verse number="11" style="v" />Jesus said this and then added, “Our friend Lazarus has fallen asleep, but I will go and wake him up.”</para>
+  <para style="p">
+    <verse number="12" style="v" />The disciples answered, “If he is asleep, Lord, he will get well.”</para>
+  <para style="p">
+    <verse number="13" style="v" />Jesus meant that Lazarus had died, but they thought he meant natural sleep. <verse number="14" style="v" />So Jesus told them plainly, “Lazarus is dead, <verse number="15" style="v" />but for your sake I am glad that I was not with him, so that you will believe. Let us go to him.”</para>
+  <para style="p">
+    <verse number="16" style="v" />Thomas (called the Twin) said to his fellow disciples, “Let us all go along with the Teacher, so that we may die with him!”</para>
+  <para style="s">Jesus the Resurrection and the Life</para>
+  <para style="p">
+    <verse number="17" style="v" />When Jesus arrived, he found that Lazarus had been buried four days before. <verse number="18" style="v" />Bethany was less than two miles from Jerusalem, <verse number="19" style="v" />and many Judeans had come to see Martha and Mary to comfort them about their brother's death.</para>
+  <para style="p">
+    <verse number="20" style="v" />When Martha heard that Jesus was coming, she went out to meet him, but Mary stayed in the house. <verse number="21" style="v" />Martha said to Jesus, “If you had been here, Lord, my brother would not have died! <verse number="22" style="v" />But I know that even now God will give you whatever you ask him for.”</para>
+  <para style="p">
+    <verse number="23" style="v" />“Your brother will rise to life,” Jesus told her.</para>
+  <para style="p">
+    <verse number="24" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">11.24: </char>
+      <char style="xdc" closed="false">
+        <ref loc="2MA 7:22">2 Macc 7.22</ref>,<ref loc="2MA 7:23">23</ref>; <ref loc="2MA 12:44">12.44</ref>.</char>
+    </note> “I know,” she replied, “that he will rise to life on the last day.”</para>
+  <para style="p">
+    <verse number="25" style="v" />Jesus said to her, “I am the resurrection and the life. Those who believe in me will live, even though they die; <verse number="26" style="v" />and those who live and believe in me will never die. Do you believe this?”</para>
+  <para style="p">
+    <verse number="27" style="v" />“Yes, Lord!” she answered. “I do believe that you are the Messiah, the Son of God, who was to come into the world.”</para>
+  <para style="s">Jesus Weeps</para>
+  <para style="p">
+    <verse number="28" style="v" />After Martha said this, she went back and called her sister Mary privately. “The Teacher is here,” she told her, “and is asking for you.” <verse number="29" style="v" />When Mary heard this, she got up and hurried out to meet him. ( <verse number="30" style="v" />Jesus had not yet arrived in the village, but was still in the place where Martha had met him.) <verse number="31" style="v" />The people who were in the house with Mary comforting her followed her when they saw her get up and hurry out. They thought that she was going to the grave to weep there.</para>
+  <para style="p">
+    <verse number="32" style="v" />Mary arrived where Jesus was, and as soon as she saw him, she fell at his feet. “Lord,” she said, “if you had been here, my brother would not have died!”</para>
+  <para style="p">
+    <verse number="33" style="v" />Jesus saw her weeping, and he saw how the people with her were weeping also; his heart was touched, and he was deeply moved. <verse number="34" style="v" />“Where have you buried him?” he asked them.</para>
+  <para style="p">“Come and see, Lord,” they answered.</para>
+  <para style="p">
+    <verse number="35" style="v" />Jesus wept. <verse number="36" style="v" />“See how much he loved him!” the people said.</para>
+  <para style="p">
+    <verse number="37" style="v" />But some of them said, “He gave sight to the blind man, didn't he? Could he not have kept Lazarus from dying?”</para>
+  <para style="s">Lazarus Is Brought to Life</para>
+  <para style="p">
+    <verse number="38" style="v" />Deeply moved once more, Jesus went to the tomb, which was a cave with a stone placed at the entrance. <verse number="39" style="v" />“Take the stone away!” Jesus ordered.</para>
+  <para style="p">Martha, the dead man's sister, answered, “There will be a bad smell, Lord. He has been buried four days!”</para>
+  <para style="p">
+    <verse number="40" style="v" />Jesus said to her, “Didn't I tell you that you would see God's glory if you believed?” <verse number="41" style="v" />They took the stone away. Jesus looked up and said, “I thank you, Father, that you listen to me. <verse number="42" style="v" />I know that you always listen to me, but I say this for the sake of the people here, so that they will believe that you sent me.” <verse number="43" style="v" />After he had said this, he called out in a loud voice, “Lazarus, come out!” <verse number="44" style="v" />He came out, his hands and feet wrapped in grave cloths, and with a cloth around his face. “Untie him,” Jesus told them, “and let him go.”</para>
+  <para style="s">The Plot against Jesus</para>
+  <para style="r">(<ref loc="MAT 26:1-5">Matthew 26.1-5</ref>; <ref loc="MRK 14:1">Mark 14.1</ref>,<ref loc="MRK 14:2">2</ref>; <ref loc="LUK 22:1">Luke 22.1</ref>,<ref loc="LUK 22:2">2</ref>)</para>
+  <para style="p">
+    <verse number="45" style="v" />Many of the people who had come to visit Mary saw what Jesus did, and they believed in him. <verse number="46" style="v" />But some of them returned to the Pharisees and told them what Jesus had done. <verse number="47" style="v" />So the Pharisees and the chief priests met with the Council and said, “What shall we do? Look at all the miracles this man is performing! <verse number="48" style="v" />If we let him go on in this way, everyone will believe in him, and the Roman authorities will take action and destroy our Temple and our nation!”</para>
+  <para style="p">
+    <verse number="49" style="v" />One of them, named Caiaphas, who was High Priest that year, said, “What fools you are! <verse number="50" style="v" />Don't you realize that it is better for you to have one man die for the people, instead of having the whole nation destroyed?” <verse number="51" style="v" />Actually, he did not say this of his own accord; rather, as he was High Priest that year, he was prophesying that Jesus was going to die for the Jewish people, <verse number="52" style="v" />and not only for them, but also to bring together into one body all the scattered people of God.</para>
+  <para style="p">
+    <verse number="53" style="v" />From that day on the Jewish authorities made plans to kill Jesus. <verse number="54" style="v" />So Jesus did not travel openly in Judea, but left and went to a place near the desert, to a town named Ephraim, where he stayed with the disciples.</para>
+  <para style="p">
+    <verse number="55" style="v" />The time for the Passover Festival was near, and many people went up from the country to Jerusalem to perform the ritual of purification before the festival. <verse number="56" style="v" />They were looking for Jesus, and as they gathered in the Temple, they asked one another, “What do you think? Surely he will not come to the festival, will he?” <verse number="57" style="v" />The chief priests and the Pharisees had given orders that if anyone knew where Jesus was, he must report it, so that they could arrest him.</para>
+  <chapter number="12" style="c" />
+  <para style="s">Jesus Is Anointed at Bethany</para>
+  <para style="r">(<ref loc="MAT 26:6-13">Matthew 26.6-13</ref>; <ref loc="MRK 14:3-9">Mark 14.3-9</ref>)</para>
+  <para style="p">
+    <verse number="1" style="v" />Six days before the Passover, Jesus went to Bethany, the home of Lazarus, the man he had raised from death. <verse number="2" style="v" />They prepared a dinner for him there, which Martha helped serve; Lazarus was one of those who were sitting at the table with Jesus. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.3: </char><char style="xt" closed="false"><ref loc="LUK 7:37">Lk 7.37</ref>,<ref loc="LUK 7:38">38</ref>.</char></note> Then Mary took a whole pint of a very expensive perfume made of pure nard, poured it on Jesus' feet, and wiped them with her hair. The sweet smell of the perfume filled the whole house. <verse number="4" style="v" />One of Jesus' disciples, Judas Iscariot—the one who was going to betray him—said, <verse number="5" style="v" />“Why wasn't this perfume sold for three hundred silver coins <note caller="+" style="f"><char style="fr" closed="false">12.5: </char><char style="fk" closed="false">silver coins: </char><char style="ft" closed="false">See 6.7.</char></note> and the money given to the poor?” <verse number="6" style="v" />He said this, not because he cared about the poor, but because he was a thief. He carried the money bag and would help himself from it.</para>
+  <para style="p">
+    <verse number="7" style="v" />But Jesus said, “Leave her alone! Let her keep what she has for the day of my burial. <verse number="8" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.8: </char><char style="xt" closed="false"><ref loc="DEU 15:11">Dt 15.11</ref>.</char></note> You will always have poor people with you, but you will not always have me.”</para>
+  <para style="s">The Plot against Lazarus</para>
+  <para style="p">
+    <verse number="9" style="v" />A large number of people heard that Jesus was in Bethany, so they went there, not only because of Jesus but also to see Lazarus, whom Jesus had raised from death. <verse number="10" style="v" />So the chief priests made plans to kill Lazarus too, <verse number="11" style="v" />because on his account many Jews were rejecting them and believing in Jesus.</para>
+  <para style="s">The Triumphant Entry into Jerusalem</para>
+  <para style="r">(<ref loc="MAT 21:1-11">Matthew 21.1-11</ref>; <ref loc="MRK 11:1-11">Mark 11.1-11</ref>; <ref loc="LUK 19:28-40">Luke 19.28-40</ref>)</para>
+  <para style="p">
+    <verse number="12" style="v" />The next day the large crowd that had come to the Passover Festival heard that Jesus was coming to Jerusalem. <verse number="13" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.13: </char><char style="xt" closed="false">Ps 118.25,26 </char><char style="xdc">; <ref loc="1MA 13:51">1 Macc 13.51</ref></char>.</note> So they took branches of palm trees and went out to meet him, shouting, “Praise God! God bless him who comes in the name of the Lord! God bless the King of Israel!”</para>
+  <para style="p">
+    <verse number="14" style="v" />Jesus found a donkey and rode on it, just as the scripture says,</para>
+  <para style="q1">
+    <verse number="15" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">12.15: </char>
+      <char style="xt" closed="false">
+        <ref loc="ZEC 9:9">Zec 9.9</ref>.</char>
+    </note> “Do not be afraid, city of Zion!</para>
+  <para style="q1">Here comes your king,</para>
+  <para style="q2">riding on a young donkey.”</para>
+  <para style="p">
+    <verse number="16" style="v" />His disciples did not understand this at the time; but when Jesus had been raised to glory, they remembered that the scripture said this about him and that they had done this for him.</para>
+  <para style="p">
+    <verse number="17" style="v" />The people who had been with Jesus when he called Lazarus out of the grave and raised him from death had reported what had happened. <verse number="18" style="v" />That was why the crowd met him—because they heard that he had performed this miracle. <verse number="19" style="v" />The Pharisees then said to one another, “You see, we are not succeeding at all! Look, the whole world is following him!”</para>
+  <para style="s">Some Greeks Seek Jesus</para>
+  <para style="p">
+    <verse number="20" style="v" />Some Greeks were among those who had gone to Jerusalem to worship during the festival. <verse number="21" style="v" />They went to Philip (he was from Bethsaida in Galilee) and said, “Sir, we want to see Jesus.”</para>
+  <para style="p">
+    <verse number="22" style="v" />Philip went and told Andrew, and the two of them went and told Jesus. <verse number="23" style="v" />Jesus answered them, “The hour has now come for the Son of Man to receive great glory. <verse number="24" style="v" />I am telling you the truth: a grain of wheat remains no more than a single grain unless it is dropped into the ground and dies. If it does die, then it produces many grains. <verse number="25" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.25: </char><char style="xt" closed="false"><ref loc="MAT 10:39">Mt 10.39</ref>; <ref loc="MAT 16:25">16.25</ref>; <ref loc="MRK 8:35">Mk 8.35</ref>; <ref loc="LUK 9:24">Lk 9.24</ref>; <ref loc="LUK 17:33">17.33</ref>.</char></note> Those who love their own life will lose it; those who hate their own life in this world will keep it for life eternal. <verse number="26" style="v" />Whoever wants to serve me must follow me, so that my servant will be with me where I am. And my Father will honor anyone who serves me.</para>
+  <para style="s">Jesus Speaks about His Death</para>
+  <para style="p">
+    <verse number="27" style="v" />“Now my heart is troubled—and what shall I say? Shall I say, ‘Father, do not let this hour come upon me’? But that is why I came—so that I might go through this hour of suffering. <verse number="28" style="v" />Father, bring glory to your name!”</para>
+  <para style="p">Then a voice spoke from heaven, “I have brought glory to it, and I will do so again.”</para>
+  <para style="p">
+    <verse number="29" style="v" />The crowd standing there heard the voice, and some of them said it was thunder, while others said, “An angel spoke to him!”</para>
+  <para style="p">
+    <verse number="30" style="v" />But Jesus said to them, “It was not for my sake that this voice spoke, but for yours. <verse number="31" style="v" />Now is the time for this world to be judged; now the ruler of this world will be overthrown. <verse number="32" style="v" />When I am lifted up from the earth, I will draw everyone to me.” ( <verse number="33" style="v" />In saying this he indicated the kind of death he was going to suffer.)</para>
+  <para style="p">
+    <verse number="34" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">12.34: </char>
+      <char style="xt" closed="false">
+        <ref loc="PSA 110:4">Ps 110.4</ref>; <ref loc="ISA 9:7">Is 9.7</ref>; <ref loc="EZK 37:25">Ez 37.25</ref>; <ref loc="DAN 7:14">Dn 7.14</ref>.</char>
+    </note> The crowd answered, “Our Law tells us that the Messiah will live forever. How, then, can you say that the Son of Man must be lifted up? Who is this Son of Man?”</para>
+  <para style="p">
+    <verse number="35" style="v" />Jesus answered, “The light will be among you a little longer. Continue on your way while you have the light, so that the darkness will not come upon you; for the one who walks in the dark does not know where he is going. <verse number="36" style="v" />Believe in the light, then, while you have it, so that you will be the people of the light.”</para>
+  <para style="s">The Unbelief of the People</para>
+  <para style="p">After Jesus said this, he went off and hid himself from them. <verse number="37" style="v" />Even though he had performed all these miracles in their presence, they did not believe in him, <verse number="38" style="v" /><note caller="-" style="x"><char style="xo" closed="false">12.38: </char><char style="xt" closed="false"><ref loc="ISA 53:1">Is 53.1</ref> (LXX).</char></note> so that what the prophet Isaiah had said might come true:</para>
+  <para style="q1">“Lord, who believed the message we told?</para>
+  <para style="q2">To whom did the Lord reveal his power?”</para>
+  <para style="p">
+    <verse number="39" style="v" />And so they were not able to believe, because Isaiah also said,</para>
+  <para style="q1">
+    <verse number="40" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">12.40: </char>
+      <char style="xt" closed="false">
+        <ref loc="ISA 6:10">Is 6.10</ref> (LXX).</char>
+    </note> “God has blinded their eyes</para>
+  <para style="q2">and closed their minds,</para>
+  <para style="q1">so that their eyes would not see,</para>
+  <para style="q2">and their minds would not understand,</para>
+  <para style="q2">and they would not turn to me, says God,</para>
+  <para style="q2">for me to heal them.”</para>
+  <para style="p">
+    <verse number="41" style="v" />Isaiah said this because he saw Jesus' glory and spoke about him.</para>
+  <para style="p">
+    <verse number="42" style="v" />Even then, many Jewish authorities believed in Jesus; but because of the Pharisees they did not talk about it openly, so as not to be expelled from the synagogue. <verse number="43" style="v" />They loved human approval rather than the approval of God.</para>
+  <para style="s">Judgment by Jesus' Words</para>
+  <para style="p">
+    <verse number="44" style="v" />Jesus said in a loud voice, “Whoever believes in me believes not only in me but also in him who sent me. <verse number="45" style="v" />Whoever sees me sees also him who sent me. <verse number="46" style="v" />I have come into the world as light, so that everyone who believes in me should not remain in the darkness. <verse number="47" style="v" />If people hear my message and do not obey it, I will not judge them. I came, not to judge the world, but to save it. <verse number="48" style="v" />Those who reject me and do not accept my message have one who will judge them. The words I have spoken will be their judge on the last day! <verse number="49" style="v" />This is true, because I have not spoken on my own authority, but the Father who sent me has commanded me what I must say and speak. <verse number="50" style="v" />And I know that his command brings eternal life. What I say, then, is what the Father has told me to say.”</para>
+  <chapter number="13" style="c" />
+  <para style="s">Jesus Washes His Disciples' Feet</para>
+  <para style="p">
+    <verse number="1" style="v" />It was now the day before the Passover Festival. Jesus knew that the hour had come for him to leave this world and go to the Father. He had always loved those in the world who were his own, and he loved them to the very end.</para>
+  <para style="p">
+    <verse number="2" style="v" />Jesus and his disciples were at supper. The Devil had already put into the heart of Judas, the son of Simon Iscariot, the thought of betraying Jesus. <note caller="+" style="f"><char style="fr" closed="false">13.2: </char><char style="fq" closed="false">The Devil…betraying Jesus; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">The Devil had already decided that Judas, the son of Simon Iscariot, would betray Jesus.</char></note> <verse number="3" style="v" />Jesus knew that the Father had given him complete power; he knew that he had come from God and was going to God. <verse number="4" style="v" />So he rose from the table, took off his outer garment, and tied a towel around his waist. <verse number="5" style="v" />Then he poured some water into a washbasin and began to wash the disciples' feet and dry them with the towel around his waist. <verse number="6" style="v" />He came to Simon Peter, who said to him, “Are you going to wash my feet, Lord?”</para>
+  <para style="p">
+    <verse number="7" style="v" />Jesus answered him, “You do not understand now what I am doing, but you will understand later.”</para>
+  <para style="p">
+    <verse number="8" style="v" />Peter declared, “Never at any time will you wash my feet!”</para>
+  <para style="p">“If I do not wash your feet,” Jesus answered, “you will no longer be my disciple.”</para>
+  <para style="p">
+    <verse number="9" style="v" />Simon Peter answered, “Lord, do not wash only my feet, then! Wash my hands and head, too!”</para>
+  <para style="p">
+    <verse number="10" style="v" />Jesus said, “Those who have taken a bath are completely clean and do not have to wash themselves, except for their feet. <note caller="+" style="f"><char style="fr" closed="false">13.10: </char><char style="ft" closed="false">Some manuscripts do not have </char><char style="fq" closed="false">except for their feet.</char></note> All of you are clean—all except one.” ( <verse number="11" style="v" />Jesus already knew who was going to betray him; that is why he said, “All of you, except one, are clean.”)</para>
+  <para style="p">
+    <verse number="12" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">13.12-15: </char>
+      <char style="xt" closed="false">
+        <ref loc="LUK 22:27">Lk 22.27</ref>.</char>
+    </note> After Jesus had washed their feet, he put his outer garment back on and returned to his place at the table. “Do you understand what I have just done to you?” he asked. <verse number="13" style="v" />“You call me Teacher and Lord, and it is right that you do so, because that is what I am. <verse number="14" style="v" />I, your Lord and Teacher, have just washed your feet. You, then, should wash one another's feet. <verse number="15" style="v" />I have set an example for you, so that you will do just what I have done for you. <verse number="16" style="v" /><note caller="-" style="x"><char style="xo" closed="false">13.16: </char><char style="xt" closed="false"><ref loc="MAT 10:24">Mt 10.24</ref>; <ref loc="LUK 6:40">Lk 6.40</ref>; <ref loc="JHN 15:20">Jn 15.20</ref>.</char></note> I am telling you the truth: no slaves are greater than their master, and no messengers are greater than the one who sent them. <verse number="17" style="v" />Now that you know this truth, how happy you will be if you put it into practice!</para>
+  <para style="p">
+    <verse number="18" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">13.18: </char>
+      <char style="xt" closed="false">
+        <ref loc="PSA 41:9">Ps 41.9</ref>.</char>
+    </note> “I am not talking about all of you; I know those I have chosen. But the scripture must come true that says, ‘The man who shared my food turned against me.’ <verse number="19" style="v" />I tell you this now before it happens, so that when it does happen, you will believe that ‘I Am Who I Am.’ <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">13.20: </char><char style="xt" closed="false"><ref loc="MAT 10:40">Mt 10.40</ref>; <ref loc="MRK 9:37">Mk 9.37</ref>; <ref loc="LUK 9:48">Lk 9.48</ref>; <ref loc="LUK 10:16">10.16</ref>.</char></note> I am telling you the truth: whoever receives anyone I send receives me also; and whoever receives me receives him who sent me.”</para>
+  <para style="s">Jesus Predicts His Betrayal</para>
+  <para style="r">(<ref loc="MAT 26:20-25">Matthew 26.20-25</ref>; <ref loc="MRK 14:17-21">Mark 14.17-21</ref>; <ref loc="LUK 22:21-23">Luke 22.21-23</ref>)</para>
+  <para style="p">
+    <verse number="21" style="v" />After Jesus had said this, he was deeply troubled and declared openly, “I am telling you the truth: one of you is going to betray me.”</para>
+  <para style="p">
+    <verse number="22" style="v" />The disciples looked at one another, completely puzzled about whom he meant. <verse number="23" style="v" />One of the disciples, the one whom Jesus loved, was sitting next to Jesus. <verse number="24" style="v" />Simon Peter motioned to him and said, “Ask him whom he is talking about.”</para>
+  <para style="p">
+    <verse number="25" style="v" />So that disciple moved closer to Jesus' side and asked, “Who is it, Lord?”</para>
+  <para style="p">
+    <verse number="26" style="v" />Jesus answered, “I will dip some bread in the sauce and give it to him; he is the man.” So he took a piece of bread, dipped it, and gave it to Judas, the son of Simon Iscariot. <verse number="27" style="v" />As soon as Judas took the bread, Satan entered into him. Jesus said to him, “Hurry and do what you must!” <verse number="28" style="v" />None of the others at the table understood why Jesus said this to him. <verse number="29" style="v" />Since Judas was in charge of the money bag, some of the disciples thought that Jesus had told him to go and buy what they needed for the festival, or to give something to the poor.</para>
+  <para style="p">
+    <verse number="30" style="v" />Judas accepted the bread and went out at once. It was night.</para>
+  <para style="s">The New Commandment</para>
+  <para style="p">
+    <verse number="31" style="v" />After Judas had left, Jesus said, “Now the Son of Man's glory is revealed; now God's glory is revealed through him. <verse number="32" style="v" />And if God's glory is revealed through him, then God will reveal the glory of the Son of Man in himself, and he will do so at once. <verse number="33" style="v" /><note caller="-" style="x"><char style="xo" closed="false">13.33: </char><char style="xt" closed="false"><ref loc="JHN 7:34">Jn 7.34</ref>.</char></note> My children, I shall not be with you very much longer. You will look for me; but I tell you now what I told the Jewish authorities, ‘You cannot go where I am going.’ <verse number="34" style="v" /><note caller="-" style="x"><char style="xo" closed="false">13.34: </char><char style="xt" closed="false"><ref loc="JHN 15:12">Jn 15.12</ref>,<ref loc="JHN 15:17">17</ref>; <ref loc="1JN 3:23">1 Jn 3.23</ref>; <ref loc="2JN 1:5">2 Jn 5</ref>.</char></note> And now I give you a new commandment: love one another. As I have loved you, so you must love one another. <verse number="35" style="v" />If you have love for one another, then everyone will know that you are my disciples.”</para>
+  <para style="s">Jesus Predicts Peter's Denial</para>
+  <para style="r">(<ref loc="MAT 26:31-35">Matthew 26.31-35</ref>; <ref loc="MRK 14:27-31">Mark 14.27-31</ref>; <ref loc="LUK 22:31-34">Luke 22.31-34</ref>)</para>
+  <para style="p">
+    <verse number="36" style="v" />“Where are you going, Lord?” Simon Peter asked him.</para>
+  <para style="p">“You cannot follow me now where I am going,” answered Jesus; “but later you will follow me.”</para>
+  <para style="p">
+    <verse number="37" style="v" />“Lord, why can't I follow you now?” asked Peter. “I am ready to die for you!”</para>
+  <para style="p">
+    <verse number="38" style="v" />Jesus answered, “Are you really ready to die for me? I am telling you the truth: before the rooster crows you will say three times that you do not know me.</para>
+  <chapter number="14" style="c" />
+  <para style="s">Jesus the Way to the Father</para>
+  <para style="p">
+    <verse number="1" style="v" />“Do not be worried and upset,” Jesus told them. “Believe <note caller="+" style="f"><char style="fr" closed="false">14.1: </char><char style="fq" closed="false">Believe; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">You believe.</char></note> in God and believe also in me. <verse number="2" style="v" />There are many rooms in my Father's house, and I am going to prepare a place for you. I would not tell you this if it were not so. <note caller="+" style="f"><char style="fr" closed="false">14.2: </char><char style="fq" closed="false">There are…were not so; </char><char style="ft" closed="false">or </char><char style="fq" closed="false">There are many rooms in my Father's house; if it were not so, would I tell you that I am going to prepare a place for you?</char></note> <verse number="3" style="v" />And after I go and prepare a place for you, I will come back and take you to myself, so that you will be where I am. <verse number="4" style="v" />You know the way that leads to the place where I am going.”</para>
+  <para style="p">
+    <verse number="5" style="v" />Thomas said to him, “Lord, we do not know where you are going; so how can we know the way to get there?”</para>
+  <para style="p">
+    <verse number="6" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">14.6: </char>
+      <char style="xdc" closed="false">
+        <ref loc="BAR 3:13">Ba 3.13</ref>,<ref loc="BAR 3:14">14</ref>.</char>
+    </note> Jesus answered him, “I am the way, the truth, and the life; no one goes to the Father except by me. <verse number="7" style="v" />Now that you have known me,” he said to them, “you will know <note caller="+" style="f"><char style="fr" closed="false">14.7: </char><char style="fq" closed="false">Now that you have known me…you will know; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">If you had known me…you would know.</char></note> my Father also, and from now on you do know him and you have seen him.”</para>
+  <para style="p">
+    <verse number="8" style="v" />Philip said to him, “Lord, show us the Father; that is all we need.”</para>
+  <para style="p">
+    <verse number="9" style="v" />Jesus answered, “For a long time I have been with you all; yet you do not know me, Philip? Whoever has seen me has seen the Father. Why, then, do you say, ‘Show us the Father’? <verse number="10" style="v" />Do you not believe, Philip, that I am in the Father and the Father is in me? The words that I have spoken to you,” Jesus said to his disciples, “do not come from me. The Father, who remains in me, does his own work. <verse number="11" style="v" />Believe me when I say that I am in the Father and the Father is in me. If not, believe because of the things I do. <verse number="12" style="v" />I am telling you the truth: those who believe in me will do what I do—yes, they will do even greater things, because I am going to the Father. <verse number="13" style="v" />And I will do whatever you ask for in my name, so that the Father's glory will be shown through the Son. <verse number="14" style="v" />If you ask me <note caller="+" style="f"><char style="fr" closed="false">14.14: </char><char style="ft" closed="false">Some manuscripts do not have </char><char style="fq" closed="false">me.</char></note> for anything in my name, I will do it.</para>
+  <para style="s">The Promise of the Holy Spirit</para>
+  <para style="p">
+    <verse number="15" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">14.15: </char>
+      <char style="xdc" closed="false">
+        <ref loc="WIS 6:18">Ws 6.18</ref>.</char>
+    </note> “If you love me, you will obey my commandments. <verse number="16" style="v" />I will ask the Father, and he will give you another Helper, who will stay with you forever. <verse number="17" style="v" />He is the Spirit, who reveals the truth about God. The world cannot receive him, because it cannot see him or know him. But you know him, because he remains with you and is <note caller="+" style="f"><char style="fr" closed="false">14.17: </char><char style="fq" closed="false">is; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">will be.</char></note> in you.</para>
+  <para style="p">
+    <verse number="18" style="v" />“When I go, you will not be left all alone; I will come back to you. <verse number="19" style="v" />In a little while the world will see me no more, but you will see me; and because I live, you also will live. <verse number="20" style="v" />When that day comes, you will know that I am in my Father and that you are in me, just as I am in you.</para>
+  <para style="p">
+    <verse number="21" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">14.21: </char>
+      <char style="xdc" closed="false">
+        <ref loc="WIS 6:12">Ws 6.12</ref>,<ref loc="WIS 6:18">18</ref>; <ref loc="SIR 4:14">Si 4.14</ref>.</char>
+    </note> “Those who accept my commandments and obey them are the ones who love me. My Father will love those who love me; I too will love them and reveal myself to them.”</para>
+  <para style="p">
+    <verse number="22" style="v" />Judas (not Judas Iscariot) said, “Lord, how can it be that you will reveal yourself to us and not to the world?”</para>
+  <para style="p">
+    <verse number="23" style="v" />Jesus answered him, “Those who love me will obey my teaching. My Father will love them, and my Father and I will come to them and live with them. <verse number="24" style="v" />Those who do not love me do not obey my teaching. And the teaching you have heard is not mine, but comes from the Father, who sent me.</para>
+  <para style="p">
+    <verse number="25" style="v" />“I have told you this while I am still with you. <verse number="26" style="v" />The Helper, the Holy Spirit, whom the Father will send in my name, will teach you everything and make you remember all that I have told you.</para>
+  <para style="p">
+    <verse number="27" style="v" />“Peace is what I leave with you; it is my own peace that I give you. I do not give it as the world does. Do not be worried and upset; do not be afraid. <verse number="28" style="v" />You heard me say to you, ‘I am leaving, but I will come back to you.’ If you loved me, you would be glad that I am going to the Father; for he is greater than I. <verse number="29" style="v" />I have told you this now before it all happens, so that when it does happen, you will believe. <verse number="30" style="v" />I cannot talk with you much longer, because the ruler of this world is coming. He has no power over me, <verse number="31" style="v" />but the world must know that I love the Father; that is why I do everything as he commands me.</para>
+  <para style="p">“Come, let us go from this place.</para>
+  <chapter number="15" style="c" />
+  <para style="s">Jesus the Real Vine</para>
+  <para style="p">
+    <verse number="1" style="v" />“I am the real vine, and my Father is the gardener. <verse number="2" style="v" />He breaks off every branch in me that does not bear fruit, and he prunes every branch that does bear fruit, so that it will be clean and bear more fruit. <verse number="3" style="v" />You have been made clean already by the teaching I have given you. <verse number="4" style="v" />Remain united to me, and I will remain united to you. A branch cannot bear fruit by itself; it can do so only if it remains in the vine. In the same way you cannot bear fruit unless you remain in me.</para>
+  <para style="p">
+    <verse number="5" style="v" />“I am the vine, and you are the branches. Those who remain in me, and I in them, will bear much fruit; for you can do nothing without me. <verse number="6" style="v" />Those who do not remain in me are thrown out like a branch and dry up; such branches are gathered up and thrown into the fire, where they are burned. <verse number="7" style="v" />If you remain in me and my words remain in you, then you will ask for anything you wish, and you shall have it. <verse number="8" style="v" />My Father's glory is shown by your bearing much fruit; and in this way you become my disciples. <verse number="9" style="v" />I love you just as the Father loves me; remain in my love. <verse number="10" style="v" />If you obey my commands, you will remain in my love, just as I have obeyed my Father's commands and remain in his love.</para>
+  <para style="p">
+    <verse number="11" style="v" />“I have told you this so that my joy may be in you and that your joy may be complete. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">15.12: </char><char style="xt" closed="false"><ref loc="JHN 13:34">Jn 13.34</ref>; <ref loc="JHN 15:17">15.17</ref>; <ref loc="1JN 3:23">1 Jn 3.23</ref>; <ref loc="2JN 1:5">2 Jn 5</ref>.</char></note> My commandment is this: love one another, just as I love you. <verse number="13" style="v" />The greatest love you can have for your friends is to give your life for them. <verse number="14" style="v" />And you are my friends if you do what I command you. <verse number="15" style="v" />I do not call you servants any longer, because servants do not know what their master is doing. Instead, I call you friends, because I have told you everything I heard from my Father. <verse number="16" style="v" />You did not choose me; I chose you and appointed you to go and bear much fruit, the kind of fruit that endures. And so the Father will give you whatever you ask of him in my name. <verse number="17" style="v" />This, then, is what I command you: love one another.</para>
+  <para style="s">The World's Hatred</para>
+  <para style="p">
+    <verse number="18" style="v" />“If the world hates you, just remember that it has hated me first. <verse number="19" style="v" />If you belonged to the world, then the world would love you as its own. But I chose you from this world, and you do not belong to it; that is why the world hates you. <verse number="20" style="v" /><note caller="-" style="x"><char style="xo" closed="false">15.20: </char><char style="xt" closed="false"><ref loc="MAT 10:24">Mt 10.24</ref>; <ref loc="LUK 6:40">Lk 6.40</ref>; <ref loc="JHN 13:16">Jn 13.16</ref>.</char></note> Remember what I told you: ‘Slaves are not greater than their master.’ If people persecuted me, they will persecute you too; if they obeyed my teaching, they will obey yours too. <verse number="21" style="v" />But they will do all this to you because you are mine; for they do not know the one who sent me. <verse number="22" style="v" />They would not have been guilty of sin if I had not come and spoken to them; as it is, they no longer have any excuse for their sin. <verse number="23" style="v" />Whoever hates me hates my Father also. <verse number="24" style="v" />They would not have been guilty of sin if I had not done among them the things that no one else ever did; as it is, they have seen what I did, and they hate both me and my Father. <verse number="25" style="v" /><note caller="-" style="x"><char style="xo" closed="false">15.25: </char><char style="xt" closed="false"><ref loc="PSA 35:19">Ps 35.19</ref>; <ref loc="PSA 69:4">69.4</ref>.</char></note> This, however, was bound to happen so that what is written in their Law may come true: ‘They hated me for no reason at all.’</para>
+  <para style="p">
+    <verse number="26" style="v" />“The Helper will come—the Spirit, who reveals the truth about God and who comes from the Father. I will send him to you from the Father, and he will speak about me. <verse number="27" style="v" />And you, too, will speak about me, because you have been with me from the very beginning.</para>
+  <chapter number="16" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />“I have told you this, so that you will not give up your faith. <verse number="2" style="v" />You will be expelled from the synagogues, and the time will come when those who kill you will think that by doing this they are serving God. <verse number="3" style="v" />People will do these things to you because they have not known either the Father or me. <verse number="4" style="v" />But I have told you this, so that when the time comes for them to do these things, you will remember what I told you.</para>
+  <para style="s">The Work of the Holy Spirit</para>
+  <para style="p">“I did not tell you these things at the beginning, for I was with you. <verse number="5" style="v" />But now I am going to him who sent me, yet none of you asks me where I am going. <verse number="6" style="v" />And now that I have told you, your hearts are full of sadness. <verse number="7" style="v" />But I am telling you the truth: it is better for you that I go away, because if I do not go, the Helper will not come to you. But if I do go away, then I will send him to you. <verse number="8" style="v" />And when he comes, he will prove to the people of the world that they are wrong about sin and about what is right and about God's judgment. <verse number="9" style="v" />They are wrong about sin, because they do not believe in me; <verse number="10" style="v" />they are wrong about what is right, because I am going to the Father and you will not see me any more; <verse number="11" style="v" />and they are wrong about judgment, because the ruler of this world has already been judged.</para>
+  <para style="p">
+    <verse number="12" style="v" />“I have much more to tell you, but now it would be too much for you to bear. <verse number="13" style="v" /><note caller="-" style="x"><char style="xo" closed="false">16.13: </char><char style="xdc" closed="false"><ref loc="WIS 9:11">Ws 9.11</ref>.</char></note> When, however, the Spirit comes, who reveals the truth about God, he will lead you into all the truth. He will not speak on his own authority, but he will speak of what he hears and will tell you of things to come. <verse number="14" style="v" />He will give me glory, because he will take what I say and tell it to you. <verse number="15" style="v" />All that my Father has is mine; that is why I said that the Spirit will take what I give him and tell it to you.</para>
+  <para style="s">Sadness and Gladness</para>
+  <para style="p">
+    <verse number="16" style="v" />“In a little while you will not see me any more, and then a little while later you will see me.”</para>
+  <para style="p">
+    <verse number="17" style="v" />Some of his disciples asked among themselves, “What does this mean? He tells us that in a little while we will not see him, and then a little while later we will see him; and he also says, ‘It is because I am going to the Father.’ <verse number="18" style="v" />What does this ‘a little while’ mean? We don't know what he is talking about!”</para>
+  <para style="p">
+    <verse number="19" style="v" />Jesus knew that they wanted to question him, so he said to them, “I said, ‘In a little while you will not see me, and then a little while later you will see me.’ Is this what you are asking about among yourselves? <verse number="20" style="v" />I am telling you the truth: you will cry and weep, but the world will be glad; you will be sad, but your sadness will turn into gladness. <verse number="21" style="v" />When a woman is about to give birth, she is sad because her hour of suffering has come; but when the baby is born, she forgets her suffering, because she is happy that a baby has been born into the world. <verse number="22" style="v" />That is how it is with you: now you are sad, but I will see you again, and your hearts will be filled with gladness, the kind of gladness that no one can take away from you.</para>
+  <para style="p">
+    <verse number="23" style="v" />“When that day comes, you will not ask me for anything. I am telling you the truth: the Father will give you whatever you ask of him in my name. <note caller="+" style="f"><char style="fr" closed="false">16.23: </char><char style="fq" closed="false">the Father will give you whatever you ask of him in my name; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">if you ask the Father for anything, he will give it to you in my name.</char></note> <verse number="24" style="v" />Until now you have not asked for anything in my name; ask and you will receive, so that your happiness may be complete.</para>
+  <para style="s">Victory over the World</para>
+  <para style="p">
+    <verse number="25" style="v" />“I have used figures of speech to tell you these things. But the time will come when I will not use figures of speech, but will speak to you plainly about the Father. <verse number="26" style="v" />When that day comes, you will ask him in my name; and I do not say that I will ask him on your behalf, <verse number="27" style="v" />for the Father himself loves you. He loves you because you love me and have believed that I came from God. <verse number="28" style="v" />I did come from the Father, and I came into the world; and now I am leaving the world and going to the Father.”</para>
+  <para style="p">
+    <verse number="29" style="v" />Then his disciples said to him, “Now you are speaking plainly, without using figures of speech. <verse number="30" style="v" />We know now that you know everything; you do not need to have someone ask you questions. This makes us believe that you came from God.”</para>
+  <para style="p">
+    <verse number="31" style="v" />Jesus answered them, “Do you believe now? <verse number="32" style="v" />The time is coming, and is already here, when all of you will be scattered, each of you to your own home, and I will be left all alone. But I am not really alone, because the Father is with me. <verse number="33" style="v" />I have told you this so that you will have peace by being united to me. The world will make you suffer. But be brave! I have defeated the world!”</para>
+  <chapter number="17" style="c" />
+  <para style="s">Jesus Prays for His Disciples</para>
+  <para style="p">
+    <verse number="1" style="v" />After Jesus finished saying this, he looked up to heaven and said, “Father, the hour has come. Give glory to your Son, so that the Son may give glory to you. <verse number="2" style="v" />For you gave him authority over all people, so that he might give eternal life to all those you gave him. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">17.3: </char><char style="xdc" closed="false"><ref loc="WIS 15:3">Ws 15.3</ref>.</char></note> And eternal life means to know you, the only true God, and to know Jesus Christ, whom you sent. <verse number="4" style="v" />I have shown your glory on earth; I have finished the work you gave me to do. <verse number="5" style="v" />Father! Give me glory in your presence now, the same glory I had with you before the world was made.</para>
+  <para style="p">
+    <verse number="6" style="v" />“I have made you known to those you gave me out of the world. They belonged to you, and you gave them to me. They have obeyed your word, <verse number="7" style="v" />and now they know that everything you gave me comes from you. <verse number="8" style="v" />I gave them the message that you gave me, and they received it; they know that it is true that I came from you, and they believe that you sent me.</para>
+  <para style="p">
+    <verse number="9" style="v" />“I pray for them. I do not pray for the world but for those you gave me, for they belong to you. <verse number="10" style="v" />All I have is yours, and all you have is mine; and my glory is shown through them. <verse number="11" style="v" />And now I am coming to you; I am no longer in the world, but they are in the world. Holy Father! Keep them safe by the power of your name, the name you gave me, <note caller="+" style="f"><char style="fr" closed="false">17.11: </char><char style="fq" closed="false">Keep them safe by the power of your name, the name you gave me; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">By the power of your name keep safe those you have given me.</char></note> so that they may be one just as you and I are one. <verse number="12" style="v" /><note caller="-" style="x"><char style="xo" closed="false">17.12: </char><char style="xt" closed="false"><ref loc="PSA 41:9">Ps 41.9</ref>; </char><char style="xdc" closed="false"><ref loc="2ES 2:26">2 Esd 2.26</ref>; </char><char style="xt" closed="false"><ref loc="JHN 13:18">Jn 13.18</ref>.</char></note> While I was with them, I kept them safe by the power of your name, the name you gave me. <note caller="+" style="f"><char style="fr" closed="false">17.12: </char><char style="fq" closed="false">I kept them safe by the power of your name, the name you gave me; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">By the power of your name I kept safe those you have given me.</char></note> I protected them, and not one of them was lost, except the man who was bound to be lost—so that the scripture might come true. <verse number="13" style="v" />And now I am coming to you, and I say these things in the world so that they might have my joy in their hearts in all its fullness. <verse number="14" style="v" />I gave them your message, and the world hated them, because they do not belong to the world, just as I do not belong to the world. <verse number="15" style="v" />I do not ask you to take them out of the world, but I do ask you to keep them safe from the Evil One. <verse number="16" style="v" />Just as I do not belong to the world, they do not belong to the world. <verse number="17" style="v" />Dedicate them to yourself by means of the truth; your word is truth. <verse number="18" style="v" />I sent them into the world, just as you sent me into the world. <verse number="19" style="v" />And for their sake I dedicate myself to you, in order that they, too, may be truly dedicated to you.</para>
+  <para style="p">
+    <verse number="20" style="v" />“I pray not only for them, but also for those who believe in me because of their message. <verse number="21" style="v" />I pray that they may all be one. Father! May they be in us, just as you are in me and I am in you. May they be one, so that the world will believe that you sent me. <verse number="22" style="v" />I gave them the same glory you gave me, so that they may be one, just as you and I are one: <verse number="23" style="v" />I in them and you in me, so that they may be completely one, in order that the world may know that you sent me and that you love them as you love me.</para>
+  <para style="p">
+    <verse number="24" style="v" />“Father! You have given them to me, and I want them to be with me where I am, so that they may see my glory, the glory you gave me; for you loved me before the world was made. <verse number="25" style="v" />Righteous Father! The world does not know you, but I know you, and these know that you sent me. <verse number="26" style="v" />I made you known to them, and I will continue to do so, in order that the love you have for me may be in them, and so that I also may be in them.”</para>
+  <chapter number="18" style="c" />
+  <para style="s">The Arrest of Jesus</para>
+  <para style="r">(<ref loc="MAT 26:47-56">Matthew 26.47-56</ref>; <ref loc="MRK 14:43-50">Mark 14.43-50</ref>; <ref loc="LUK 22:47-53">Luke 22.47-53</ref>)</para>
+  <para style="p">
+    <verse number="1" style="v" />After Jesus had said this prayer, he left with his disciples and went across Kidron Brook. There was a garden in that place, and Jesus and his disciples went in. <verse number="2" style="v" />Judas, the traitor, knew where it was, because many times Jesus had met there with his disciples. <verse number="3" style="v" />So Judas went to the garden, taking with him a group of Roman soldiers, and some Temple guards sent by the chief priests and the Pharisees; they were armed and carried lanterns and torches. <verse number="4" style="v" />Jesus knew everything that was going to happen to him, so he stepped forward and asked them, “Who is it you are looking for?”</para>
+  <para style="p">
+    <verse number="5" style="v" />“Jesus of Nazareth,” they answered.</para>
+  <para style="p">“I am he,” he said.</para>
+  <para style="p">Judas, the traitor, was standing there with them. <verse number="6" style="v" />When Jesus said to them, “I am he,” they moved back and fell to the ground. <verse number="7" style="v" />Again Jesus asked them, “Who is it you are looking for?”</para>
+  <para style="p">“Jesus of Nazareth,” they said.</para>
+  <para style="p">
+    <verse number="8" style="v" />“I have already told you that I am he,” Jesus said. “If, then, you are looking for me, let these others go.” ( <verse number="9" style="v" />He said this so that what he had said might come true: “Father, I have not lost even one of those you gave me.”)</para>
+  <para style="p">
+    <verse number="10" style="v" />Simon Peter, who had a sword, drew it and struck the High Priest's slave, cutting off his right ear. The name of the slave was Malchus. <verse number="11" style="v" /><note caller="-" style="x"><char style="xo" closed="false">18.11: </char><char style="xt" closed="false"><ref loc="MAT 26:39">Mt 26.39</ref>; <ref loc="MRK 14:36">Mk 14.36</ref>; <ref loc="LUK 22:42">Lk 22.42</ref>.</char></note> Jesus said to Peter, “Put your sword back in its place! Do you think that I will not drink the cup of suffering which my Father has given me?”</para>
+  <para style="s">Jesus before Annas</para>
+  <para style="p">
+    <verse number="12" style="v" />Then the Roman soldiers with their commanding officer and the Jewish guards arrested Jesus, tied him up, <verse number="13" style="v" />and took him first to Annas. He was the father-in-law of Caiaphas, who was High Priest that year. <verse number="14" style="v" /><note caller="-" style="x"><char style="xo" closed="false">18.14: </char><char style="xt" closed="false"><ref loc="JHN 11:49">Jn 11.49</ref>,<ref loc="JHN 11:50">50</ref>.</char></note> It was Caiaphas who had advised the Jewish authorities that it was better that one man should die for all the people.</para>
+  <para style="s">Peter Denies Jesus</para>
+  <para style="r">(<ref loc="MAT 26:69">Matthew 26.69</ref>,<ref loc="MAT 26:70">70</ref>; <ref loc="MRK 14:66-68">Mark 14.66-68</ref>; <ref loc="LUK 22:55-57">Luke 22.55-57</ref>)</para>
+  <para style="p">
+    <verse number="15" style="v" />Simon Peter and another disciple followed Jesus. That other disciple was well known to the High Priest, so he went with Jesus into the courtyard of the High Priest's house, <verse number="16" style="v" />while Peter stayed outside by the gate. Then the other disciple went back out, spoke to the girl at the gate, and brought Peter inside. <verse number="17" style="v" />The girl at the gate said to Peter, “Aren't you also one of the disciples of that man?”</para>
+  <para style="p">“No, I am not,” answered Peter.</para>
+  <para style="p">
+    <verse number="18" style="v" />It was cold, so the servants and guards had built a charcoal fire and were standing around it, warming themselves. So Peter went over and stood with them, warming himself.</para>
+  <para style="s">The High Priest Questions Jesus</para>
+  <para style="r">(<ref loc="MAT 26:59-66">Matthew 26.59-66</ref>; <ref loc="MRK 14:55-64">Mark 14.55-64</ref>; <ref loc="LUK 22:66-71">Luke 22.66-71</ref>)</para>
+  <para style="p">
+    <verse number="19" style="v" />The High Priest questioned Jesus about his disciples and about his teaching. <verse number="20" style="v" />Jesus answered, “I have always spoken publicly to everyone; all my teaching was done in the synagogues and in the Temple, where all the people come together. I have never said anything in secret. <verse number="21" style="v" />Why, then, do you question me? Question the people who heard me. Ask them what I told them—they know what I said.”</para>
+  <para style="p">
+    <verse number="22" style="v" />When Jesus said this, one of the guards there slapped him and said, “How dare you talk like that to the High Priest!”</para>
+  <para style="p">
+    <verse number="23" style="v" />Jesus answered him, “If I have said anything wrong, tell everyone here what it was. But if I am right in what I have said, why do you hit me?”</para>
+  <para style="p">
+    <verse number="24" style="v" />Then Annas sent him, still tied up, to Caiaphas the High Priest.</para>
+  <para style="s">Peter Denies Jesus Again</para>
+  <para style="r">(<ref loc="MAT 26:71-75">Matthew 26.71-75</ref>; <ref loc="MRK 14:69-72">Mark 14.69-72</ref>; <ref loc="LUK 22:58-62">Luke 22.58-62</ref>)</para>
+  <para style="p">
+    <verse number="25" style="v" />Peter was still standing there keeping himself warm. So the others said to him, “Aren't you also one of the disciples of that man?”</para>
+  <para style="p">But Peter denied it. “No, I am not,” he said.</para>
+  <para style="p">
+    <verse number="26" style="v" />One of the High Priest's slaves, a relative of the man whose ear Peter had cut off, spoke up. “Didn't I see you with him in the garden?” he asked.</para>
+  <para style="p">
+    <verse number="27" style="v" />Again Peter said “No”—and at once a rooster crowed.</para>
+  <para style="s">Jesus before Pilate</para>
+  <para style="r">(<ref loc="MAT 27:1">Matthew 27.1</ref>,<ref loc="MAT 27:2">2</ref>,<ref loc="MAT 27:11-14">11-14</ref>; <ref loc="MRK 15:1-5">Mark 15.1-5</ref>; <ref loc="LUK 23:1-5">Luke 23.1-5</ref>)</para>
+  <para style="p">
+    <verse number="28" style="v" />Early in the morning Jesus was taken from Caiaphas' house to the governor's palace. The Jewish authorities did not go inside the palace, for they wanted to keep themselves ritually clean, in order to be able to eat the Passover meal. <verse number="29" style="v" />So Pilate went outside to them and asked, “What do you accuse this man of?”</para>
+  <para style="p">
+    <verse number="30" style="v" />Their answer was, “We would not have brought him to you if he had not committed a crime.”</para>
+  <para style="p">
+    <verse number="31" style="v" />Pilate said to them, “Then you yourselves take him and try him according to your own law.”</para>
+  <para style="p">They replied, “We are not allowed to put anyone to death.” ( <verse number="32" style="v" /><note caller="-" style="x"><char style="xo" closed="false">18.32: </char><char style="xt" closed="false"><ref loc="JHN 3:14">Jn 3.14</ref>; <ref loc="JHN 12:32">12.32</ref>.</char></note> This happened in order to make come true what Jesus had said when he indicated the kind of death he would die.)</para>
+  <para style="p">
+    <verse number="33" style="v" />Pilate went back into the palace and called Jesus. “Are you the king of the Jews?” he asked him.</para>
+  <para style="p">
+    <verse number="34" style="v" />Jesus answered, “Does this question come from you or have others told you about me?”</para>
+  <para style="p">
+    <verse number="35" style="v" />Pilate replied, “Do you think I am a Jew? It was your own people and the chief priests who handed you over to me. What have you done?”</para>
+  <para style="p">
+    <verse number="36" style="v" />Jesus said, “My kingdom does not belong to this world; if my kingdom belonged to this world, my followers would fight to keep me from being handed over to the Jewish authorities. No, my kingdom does not belong here!”</para>
+  <para style="p">
+    <verse number="37" style="v" />So Pilate asked him, “Are you a king, then?”</para>
+  <para style="p">Jesus answered, “You say that I am a king. I was born and came into the world for this one purpose, to speak about the truth. Whoever belongs to the truth listens to me.”</para>
+  <para style="p">
+    <verse number="38" style="v" />“And what is truth?” Pilate asked.</para>
+  <para style="s">Jesus Is Sentenced to Death</para>
+  <para style="r">(<ref loc="MAT 27:15-31">Matthew 27.15-31</ref>; <ref loc="MRK 15:6-20">Mark 15.6-20</ref>; <ref loc="LUK 23:13-25">Luke 23.13-25</ref>)</para>
+  <para style="p">Then Pilate went back outside to the people and said to them, “I cannot find any reason to condemn him. <verse number="39" style="v" />But according to the custom you have, I always set free a prisoner for you during the Passover. Do you want me to set free for you the king of the Jews?”</para>
+  <para style="p">
+    <verse number="40" style="v" />They answered him with a shout, “No, not him! We want Barabbas!” (Barabbas was a bandit.)</para>
+  <chapter number="19" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Then Pilate took Jesus and had him whipped. <verse number="2" style="v" />The soldiers made a crown out of thorny branches and put it on his head; then they put a purple robe on him <verse number="3" style="v" />and came to him and said, “Long live the King of the Jews!” And they went up and slapped him.</para>
+  <para style="p">
+    <verse number="4" style="v" />Pilate went back out once more and said to the crowd, “Look, I will bring him out here to you to let you see that I cannot find any reason to condemn him.” <verse number="5" style="v" />So Jesus came out, wearing the crown of thorns and the purple robe. Pilate said to them, “Look! Here is the man!”</para>
+  <para style="p">
+    <verse number="6" style="v" />When the chief priests and the Temple guards saw him, they shouted, “Crucify him! Crucify him!”</para>
+  <para style="p">Pilate said to them, “You take him, then, and crucify him. I find no reason to condemn him.”</para>
+  <para style="p">
+    <verse number="7" style="v" />The crowd answered back, “We have a law that says he ought to die, because he claimed to be the Son of God.”</para>
+  <para style="p">
+    <verse number="8" style="v" />When Pilate heard this, he was even more afraid. <verse number="9" style="v" />He went back into the palace and asked Jesus, “Where do you come from?”</para>
+  <para style="p">But Jesus did not answer. <verse number="10" style="v" />Pilate said to him, “You will not speak to me? Remember, I have the authority to set you free and also to have you crucified.”</para>
+  <para style="p">
+    <verse number="11" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">19.11: </char>
+      <char style="xdc" closed="false">
+        <ref loc="WIS 6:3">Ws 6.3</ref>.</char>
+    </note> Jesus answered, “You have authority over me only because it was given to you by God. So the man who handed me over to you is guilty of a worse sin.”</para>
+  <para style="p">
+    <verse number="12" style="v" />When Pilate heard this, he tried to find a way to set Jesus free. But the crowd shouted back, “If you set him free, that means that you are not the Emperor's friend! Anyone who claims to be a king is a rebel against the Emperor!”</para>
+  <para style="p">
+    <verse number="13" style="v" />When Pilate heard these words, he took Jesus outside and sat down on the judge's seat in the place called “The Stone Pavement.” (In Hebrew the name is “Gabbatha.”) <verse number="14" style="v" />It was then almost noon of the day before the Passover. Pilate said to the people, “Here is your king!”</para>
+  <para style="p">
+    <verse number="15" style="v" />They shouted back, “Kill him! Kill him! Crucify him!”</para>
+  <para style="p">Pilate asked them, “Do you want me to crucify your king?”</para>
+  <para style="p">The chief priests answered, “The only king we have is the Emperor!”</para>
+  <para style="p">
+    <verse number="16" style="v" />Then Pilate handed Jesus over to them to be crucified.</para>
+  <para style="s">Jesus Is Crucified</para>
+  <para style="r">(<ref loc="MAT 27:32-44">Matthew 27.32-44</ref>; <ref loc="MRK 15:21-32">Mark 15.21-32</ref>; <ref loc="LUK 23:26-43">Luke 23.26-43</ref>)</para>
+  <para style="p">So they took charge of Jesus. <verse number="17" style="v" />He went out, carrying his cross, and came to “The Place of the Skull,” as it is called. (In Hebrew it is called “Golgotha.”) <verse number="18" style="v" />There they crucified him; and they also crucified two other men, one on each side, with Jesus between them. <verse number="19" style="v" />Pilate wrote a notice and had it put on the cross. “Jesus of Nazareth, the King of the Jews,” is what he wrote. <verse number="20" style="v" />Many people read it, because the place where Jesus was crucified was not far from the city. The notice was written in Hebrew, Latin, and Greek. <verse number="21" style="v" />The chief priests said to Pilate, “Do not write ‘The King of the Jews,’ but rather, ‘This man said, I am the King of the Jews.’”</para>
+  <para style="p">
+    <verse number="22" style="v" />Pilate answered, “What I have written stays written.”</para>
+  <para style="p">
+    <verse number="23" style="v" />After the soldiers had crucified Jesus, they took his clothes and divided them into four parts, one part for each soldier. They also took the robe, which was made of one piece of woven cloth without any seams in it. <verse number="24" style="v" /><note caller="-" style="x"><char style="xo" closed="false">19.24: </char><char style="xt" closed="false"><ref loc="PSA 22:18">Ps 22.18</ref>.</char></note> The soldiers said to one another, “Let's not tear it; let's throw dice to see who will get it.” This happened in order to make the scripture come true:</para>
+  <para style="q1">“They divided my clothes among themselves</para>
+  <para style="q2">and gambled for my robe.”</para>
+  <para style="b" />
+  <para style="m">And this is what the soldiers did.</para>
+  <para style="p">
+    <verse number="25" style="v" />Standing close to Jesus' cross were his mother, his mother's sister, Mary the wife of Clopas, and Mary Magdalene. <verse number="26" style="v" />Jesus saw his mother and the disciple he loved standing there; so he said to his mother, “He is your son.”</para>
+  <para style="p">
+    <verse number="27" style="v" />Then he said to the disciple, “She is your mother.” From that time the disciple took her to live in his home.</para>
+  <para style="s">The Death of Jesus</para>
+  <para style="r">(<ref loc="MAT 27:45-56">Matthew 27.45-56</ref>; <ref loc="MRK 15:33-41">Mark 15.33-41</ref>; <ref loc="LUK 23:44-49">Luke 23.44-49</ref>)</para>
+  <para style="p">
+    <verse number="28" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">19.28: </char>
+      <char style="xt" closed="false">
+        <ref loc="PSA 69:21">Ps 69.21</ref>; <ref loc="PSA 22:15">22.15</ref>.</char>
+    </note> Jesus knew that by now everything had been completed; and in order to make the scripture come true, he said, “I am thirsty.”</para>
+  <para style="p">
+    <verse number="29" style="v" />A bowl was there, full of cheap wine; so a sponge was soaked in the wine, put on a stalk of hyssop, and lifted up to his lips. <verse number="30" style="v" />Jesus drank the wine and said, “It is finished!”</para>
+  <para style="p">Then he bowed his head and gave up his spirit.</para>
+  <para style="s">Jesus' Side Is Pierced</para>
+  <para style="p">
+    <verse number="31" style="v" />Then the Jewish authorities asked Pilate to allow them to break the legs of the men who had been crucified, and to take the bodies down from the crosses. They requested this because it was Friday, and they did not want the bodies to stay on the crosses on the Sabbath, since the coming Sabbath was especially holy. <verse number="32" style="v" />So the soldiers went and broke the legs of the first man and then of the other man who had been crucified with Jesus. <verse number="33" style="v" />But when they came to Jesus, they saw that he was already dead, so they did not break his legs. <verse number="34" style="v" />One of the soldiers, however, plunged his spear into Jesus' side, and at once blood and water poured out. ( <verse number="35" style="v" />The one who saw this happen has spoken of it, so that you also may believe. <note caller="+" style="f"><char style="fr" closed="false">19.35: </char><char style="fq" closed="false">believe; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">continue to believe.</char></note> What he said is true, and he knows that he speaks the truth.) <verse number="36" style="v" /><note caller="-" style="x"><char style="xo" closed="false">19.36: </char><char style="xt" closed="false"><ref loc="EXO 12:46">Ex 12.46</ref>; <ref loc="NUM 9:12">Nu 9.12</ref>; <ref loc="PSA 34:20">Ps 34.20</ref>.</char></note> This was done to make the scripture come true: “Not one of his bones will be broken.” <verse number="37" style="v" /><note caller="-" style="x"><char style="xo" closed="false">19.37: </char><char style="xt" closed="false"><ref loc="ZEC 12:10">Zec 12.10</ref>; <ref loc="REV 1:7">Rev 1.7</ref>.</char></note> And there is another scripture that says, “People will look at him whom they pierced.”</para>
+  <para style="s">The Burial of Jesus</para>
+  <para style="r">(<ref loc="MAT 27:57-61">Matthew 27.57-61</ref>; <ref loc="MRK 15:42-47">Mark 15.42-47</ref>; <ref loc="LUK 23:50-56">Luke 23.50-56</ref>)</para>
+  <para style="p">
+    <verse number="38" style="v" />After this, Joseph, who was from the town of Arimathea, asked Pilate if he could take Jesus' body. (Joseph was a follower of Jesus, but in secret, because he was afraid of the Jewish authorities.) Pilate told him he could have the body, so Joseph went and took it away. <verse number="39" style="v" /><note caller="-" style="x"><char style="xo" closed="false">19.39: </char><char style="xt" closed="false"><ref loc="JHN 3:1">Jn 3.1</ref>,<ref loc="JHN 3:2">2</ref>.</char></note> Nicodemus, who at first had gone to see Jesus at night, went with Joseph, taking with him about one hundred pounds of spices, a mixture of myrrh and aloes. <verse number="40" style="v" />The two men took Jesus' body and wrapped it in linen cloths with the spices according to the Jewish custom of preparing a body for burial. <verse number="41" style="v" />There was a garden in the place where Jesus had been put to death, and in it there was a new tomb where no one had ever been buried. <verse number="42" style="v" />Since it was the day before the Sabbath and because the tomb was close by, they placed Jesus' body there.</para>
+  <chapter number="20" style="c" />
+  <para style="s">The Empty Tomb</para>
+  <para style="r">(<ref loc="MAT 28:1-8">Matthew 28.1-8</ref>; <ref loc="MRK 16:1-8">Mark 16.1-8</ref>; <ref loc="LUK 24:1-12">Luke 24.1-12</ref>)</para>
+  <para style="p">
+    <verse number="1" style="v" />Early on Sunday morning, while it was still dark, Mary Magdalene went to the tomb and saw that the stone had been taken away from the entrance. <verse number="2" style="v" />She went running to Simon Peter and the other disciple, whom Jesus loved, and told them, “They have taken the Lord from the tomb, and we don't know where they have put him!”</para>
+  <para style="p">
+    <verse number="3" style="v" />Then Peter and the other disciple went to the tomb. <verse number="4" style="v" />The two of them were running, but the other disciple ran faster than Peter and reached the tomb first. <verse number="5" style="v" />He bent over and saw the linen cloths, but he did not go in. <verse number="6" style="v" />Behind him came Simon Peter, and he went straight into the tomb. He saw the linen cloths lying there <verse number="7" style="v" />and the cloth which had been around Jesus' head. It was not lying with the linen cloths but was rolled up by itself. <verse number="8" style="v" />Then the other disciple, who had reached the tomb first, also went in; he saw and believed. ( <verse number="9" style="v" />They still did not understand the scripture which said that he must rise from death.) <verse number="10" style="v" />Then the disciples went back home.</para>
+  <para style="s">Jesus Appears to Mary Magdalene</para>
+  <para style="r">(<ref loc="MAT 28:9">Matthew 28.9</ref>,<ref loc="MAT 28:10">10</ref>; <ref loc="MRK 16:9-11">Mark 16.9-11</ref>)</para>
+  <para style="p">
+    <verse number="11" style="v" />Mary stood crying outside the tomb. While she was still crying, she bent over and looked in the tomb <verse number="12" style="v" />and saw two angels there dressed in white, sitting where the body of Jesus had been, one at the head and the other at the feet. <verse number="13" style="v" />“Woman, why are you crying?” they asked her.</para>
+  <para style="p">She answered, “They have taken my Lord away, and I do not know where they have put him!”</para>
+  <para style="p">
+    <verse number="14" style="v" />Then she turned around and saw Jesus standing there; but she did not know that it was Jesus. <verse number="15" style="v" />“Woman, why are you crying?” Jesus asked her. “Who is it that you are looking for?”</para>
+  <para style="p">She thought he was the gardener, so she said to him, “If you took him away, sir, tell me where you have put him, and I will go and get him.”</para>
+  <para style="p">
+    <verse number="16" style="v" />Jesus said to her, “Mary!”</para>
+  <para style="p">She turned toward him and said in Hebrew, “Rabboni!” (This means “Teacher.”)</para>
+  <para style="p">
+    <verse number="17" style="v" />“Do not hold on to me,” Jesus told her, “because I have not yet gone back up to the Father. But go to my brothers and tell them that I am returning to him who is my Father and their Father, my God and their God.”</para>
+  <para style="p">
+    <verse number="18" style="v" />So Mary Magdalene went and told the disciples that she had seen the Lord and related to them what he had told her.</para>
+  <para style="s">Jesus Appears to His Disciples</para>
+  <para style="r">(<ref loc="MAT 28:16-20">Matthew 28.16-20</ref>; <ref loc="MRK 16:14-18">Mark 16.14-18</ref>; <ref loc="LUK 24:36-49">Luke 24.36-49</ref>)</para>
+  <para style="p">
+    <verse number="19" style="v" />It was late that Sunday evening, and the disciples were gathered together behind locked doors, because they were afraid of the Jewish authorities. Then Jesus came and stood among them. “Peace be with you,” he said. <verse number="20" style="v" />After saying this, he showed them his hands and his side. The disciples were filled with joy at seeing the Lord. <verse number="21" style="v" />Jesus said to them again, “Peace be with you. As the Father sent me, so I send you.” <verse number="22" style="v" />Then he breathed on them and said, “Receive the Holy Spirit. <verse number="23" style="v" /><note caller="-" style="x"><char style="xo" closed="false">20.23: </char><char style="xt" closed="false"><ref loc="MAT 16:19">Mt 16.19</ref>; <ref loc="MAT 18:18">18.18</ref>.</char></note> If you forgive people's sins, they are forgiven; if you do not forgive them, they are not forgiven.”</para>
+  <para style="s">Jesus and Thomas</para>
+  <para style="p">
+    <verse number="24" style="v" />One of the twelve disciples, Thomas (called the Twin), was not with them when Jesus came. <verse number="25" style="v" />So the other disciples told him, “We have seen the Lord!”</para>
+  <para style="p">Thomas said to them, “Unless I see the scars of the nails in his hands and put my finger on those scars and my hand in his side, I will not believe.”</para>
+  <para style="p">
+    <verse number="26" style="v" />A week later the disciples were together again indoors, and Thomas was with them. The doors were locked, but Jesus came and stood among them and said, “Peace be with you.” <verse number="27" style="v" />Then he said to Thomas, “Put your finger here, and look at my hands; then reach out your hand and put it in my side. Stop your doubting, and believe!”</para>
+  <para style="p">
+    <verse number="28" style="v" />Thomas answered him, “My Lord and my God!”</para>
+  <para style="p">
+    <verse number="29" style="v" />Jesus said to him, “Do you believe because you see me? How happy are those who believe without seeing me!”</para>
+  <para style="s">The Purpose of This Book</para>
+  <para style="p">
+    <verse number="30" style="v" />In his disciples' presence Jesus performed many other miracles which are not written down in this book. <verse number="31" style="v" />But these have been written in order that you may believe <note caller="+" style="f"><char style="fr" closed="false">20.31: </char><char style="fq" closed="false">believe; </char><char style="ft" closed="false">some manuscripts have </char><char style="fq" closed="false">continue to believe.</char></note> that Jesus is the Messiah, the Son of God, and that through your faith in him you may have life.</para>
+  <chapter number="21" style="c" />
+  <para style="s">Jesus Appears to Seven Disciples</para>
+  <para style="p">
+    <verse number="1" style="v" />After this, Jesus appeared once more to his disciples at Lake Tiberias. This is how it happened. <verse number="2" style="v" />Simon Peter, Thomas (called the Twin), Nathanael (the one from Cana in Galilee), the sons of Zebedee, and two other disciples of Jesus were all together. <verse number="3" style="v" /><note caller="-" style="x"><char style="xo" closed="false">21.3: </char><char style="xt" closed="false"><ref loc="LUK 5:5">Lk 5.5</ref>.</char></note> Simon Peter said to the others, “I am going fishing.”</para>
+  <para style="p">“We will come with you,” they told him. So they went out in a boat, but all that night they did not catch a thing. <verse number="4" style="v" />As the sun was rising, Jesus stood at the water's edge, but the disciples did not know that it was Jesus. <verse number="5" style="v" />Then he asked them, “Young men, haven't you caught anything?”</para>
+  <para style="p">“Not a thing,” they answered.</para>
+  <para style="p">
+    <verse number="6" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">21.6: </char>
+      <char style="xt" closed="false">
+        <ref loc="LUK 5:6">Lk 5.6</ref>.</char>
+    </note> He said to them, “Throw your net out on the right side of the boat, and you will catch some.” So they threw the net out and could not pull it back in, because they had caught so many fish.</para>
+  <para style="p">
+    <verse number="7" style="v" />The disciple whom Jesus loved said to Peter, “It is the Lord!” When Peter heard that it was the Lord, he wrapped his outer garment around him (for he had taken his clothes off) and jumped into the water. <verse number="8" style="v" />The other disciples came to shore in the boat, pulling the net full of fish. They were not very far from land, about a hundred yards away. <verse number="9" style="v" />When they stepped ashore, they saw a charcoal fire there with fish on it and some bread. <verse number="10" style="v" />Then Jesus said to them, “Bring some of the fish you have just caught.”</para>
+  <para style="p">
+    <verse number="11" style="v" />Simon Peter went aboard and dragged the net ashore full of big fish, a hundred and fifty-three in all; even though there were so many, still the net did not tear. <verse number="12" style="v" />Jesus said to them, “Come and eat.” None of the disciples dared ask him, “Who are you?” because they knew it was the Lord. <verse number="13" style="v" />So Jesus went over, took the bread, and gave it to them; he did the same with the fish.</para>
+  <para style="p">
+    <verse number="14" style="v" />This, then, was the third time Jesus appeared to the disciples after he was raised from death.</para>
+  <para style="s">Jesus and Peter</para>
+  <para style="p">
+    <verse number="15" style="v" />After they had eaten, Jesus said to Simon Peter, “Simon son of John, do you love me more than these others do?”</para>
+  <para style="p">“Yes, Lord,” he answered, “you know that I love you.”</para>
+  <para style="p">Jesus said to him, “Take care of my lambs.” <verse number="16" style="v" />A second time Jesus said to him, “Simon son of John, do you love me?”</para>
+  <para style="p">“Yes, Lord,” he answered, “you know that I love you.”</para>
+  <para style="p">Jesus said to him, “Take care of my sheep.” <verse number="17" style="v" />A third time Jesus said, “Simon son of John, do you love me?”</para>
+  <para style="p">Peter became sad because Jesus asked him the third time, “Do you love me?” and so he said to him, “Lord, you know everything; you know that I love you!”</para>
+  <para style="p">Jesus said to him, “Take care of my sheep. <verse number="18" style="v" />I am telling you the truth: when you were young, you used to get ready and go anywhere you wanted to; but when you are old, you will stretch out your hands and someone else will tie you up and take you where you don't want to go.” <verse number="19" style="v" />(In saying this, Jesus was indicating the way in which Peter would die and bring glory to God.) Then Jesus said to him, “Follow me!”</para>
+  <para style="s">Jesus and the Other Disciple</para>
+  <para style="p">
+    <verse number="20" style="v" />
+    <note caller="-" style="x">
+      <char style="xo" closed="false">21.20: </char>
+      <char style="xt" closed="false">
+        <ref loc="JHN 13:25">Jn 13.25</ref>.</char>
+    </note> Peter turned around and saw behind him that other disciple, whom Jesus loved—the one who had leaned close to Jesus at the meal and had asked, “Lord, who is going to betray you?” <verse number="21" style="v" />When Peter saw him, he asked Jesus, “Lord, what about this man?”</para>
+  <para style="p">
+    <verse number="22" style="v" />Jesus answered him, “If I want him to live until I come, what is that to you? Follow me!”</para>
+  <para style="p">
+    <verse number="23" style="v" />So a report spread among the followers of Jesus that this disciple would not die. But Jesus did not say he would not die; he said, “If I want him to live until I come, what is that to you?”</para>
+  <para style="p">
+    <verse number="24" style="v" />He is the disciple who spoke of these things, the one who also wrote them down; and we know that what he said is true.</para>
+  <para style="s">Conclusion</para>
+  <para style="p">
+    <verse number="25" style="v" />Now, there are many other things that Jesus did. If they were all written down one by one, I suppose that the whole world could not hold the books that would be written.</para>
+</usx>

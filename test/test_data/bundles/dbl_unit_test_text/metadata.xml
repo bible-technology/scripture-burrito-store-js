@@ -1,0 +1,130 @@
+<DBLMetadata id="2881c78491b2f8cf" revision="24" version="2.2.1">
+  <identification>
+    <name>DBL Unit Test Gospels</name>
+    <abbreviation>DBLUTG</abbreviation>
+    <description>English: DBL Unit Test Version with Gospels Only</description>
+    <scope>Portions</scope>
+    <dateCompleted>2017-12-01</dateCompleted>
+    <bundleProducer>Electron/4.2.0</bundleProducer>
+  </identification>
+  <relationships/>
+  <agencies>
+    <rightsHolder>
+      <abbr>DBLUnitTest</abbr>
+      <url>http://www.thedigitalbiblelibrary.org/#</url>
+      <uid>d41b7b7e1c41d27efc13f05f</uid>
+      <name>DBL Unit Test Organization</name>
+    </rightsHolder>
+    <contributor>
+      <content>true</content>
+      <publication>true</publication>
+      <management>true</management>
+      <qa>true</qa>
+      <uid>54650cd05117ad67b3826e99</uid>
+      <name>American Bible Society</name>
+    </contributor>
+  </agencies>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <script>Latin</script>
+    <scriptCode>Latn</scriptCode>
+    <scriptDirection>LTR</scriptDirection>
+    <ldml>en</ldml>
+    <numerals>Arabic</numerals>
+  </language>
+  <countries>
+    <country>
+      <iso>US</iso>
+      <name>United States</name>
+    </country>
+  </countries>
+  <type>
+    <medium>text</medium>
+    <isConfidential>false</isConfidential>
+    <hasCharacters>true</hasCharacters>
+    <isTranslation>true</isTranslation>
+    <isExpression>true</isExpression>
+    <translationType>Revision</translationType>
+    <audience>Common</audience>
+  </type>
+  <format>
+    <usxVersion>3.0</usxVersion>
+    <versedParagraphs>false</versedParagraphs>
+  </format>
+  <manifest>
+    <resource checksum="d18bbee39a1bc150decaac420c7f59da" mimeType="text/plain" size="1032" uri="release/English.lds"/>
+    <resource checksum="9b97f202763742c7c7bebbca033d30e5" mimeType="text/xml" size="182920" uri="release/USX_1/JHN.usx"/>
+    <resource checksum="897a1837fd5b2d93fbc32aaac568b331" mimeType="text/xml" size="260086" uri="release/USX_1/LUK.usx"/>
+    <resource checksum="7b83fe339a1bc524ae3d9ada7aff4186" mimeType="text/xml" size="266875" uri="release/USX_1/MAT.usx"/>
+    <resource checksum="aba3aa68f053b806fb4b63f90bfc0799" mimeType="text/xml" size="162871" uri="release/USX_1/MRK.usx"/>
+    <resource checksum="ccb9e8ad79b308b7e19a05c0a53f5523" mimeType="text/plain" size="2840" uri="release/eng_en.ldml"/>
+    <resource checksum="e00a89c1847307a345ea9c3d0946321c" mimeType="text/xml" size="82781" uri="release/styles.xml"/>
+    <resource checksum="eb38c438b44651425898b0bcfd7217e8" mimeType="text/plain" size="13845" uri="release/versification.vrs"/>
+  </manifest>
+  <names>
+    <name id="book-mat">
+      <abbr>Mt</abbr>
+      <short>Matthew</short>
+      <long>The Gospel according to Matthew</long>
+    </name>
+    <name id="book-mrk">
+      <abbr>Mk</abbr>
+      <short>Mark</short>
+      <long>The Gospel according to Mark</long>
+    </name>
+    <name id="book-luk">
+      <abbr>Lk</abbr>
+      <short>Luke</short>
+      <long>The Gospel according to Luke</long>
+    </name>
+    <name id="book-jhn">
+      <abbr>Jn</abbr>
+      <short>John</short>
+      <long>The Gospel according to John</long>
+    </name>
+  </names>
+  <source/>
+  <publications>
+    <publication default="true" id="p1">
+      <description>Gospels</description>
+      <descriptionLocal>Four Gospels</descriptionLocal>
+      <canonicalContent>
+        <book code="MAT"/>
+        <book code="MRK"/>
+        <book code="LUK"/>
+        <book code="JHN"/>
+      </canonicalContent>
+      <canonSpec type="OT, NT">
+        <component>westernOT</component>
+        <component>westernNT</component>
+      </canonSpec>
+      <structure>
+        <content src="release/USX_1/MAT.usx" role="MAT" name="book-mat"/>
+        <content src="release/USX_1/MRK.usx" role="MRK" name="book-mrk"/>
+        <content src="release/USX_1/LUK.usx" role="LUK" name="book-luk"/>
+        <content src="release/USX_1/JHN.usx" role="JHN" name="book-jhn"/>
+      </structure>
+    </publication>
+  </publications>
+  <archiveStatus>
+    <dateArchived>2017-12-01T17:51:32.7907868+00:00</dateArchived>
+    <dateUpdated>2019-10-04T22:02:07.499932</dateUpdated>
+    <bundleCreatorName>Eric Pyle</bundleCreatorName>
+    <archivistName>Eric Pyle</archivistName>
+    <comments>upload JHN.usx 2.6 with format usxVersion 3.0</comments>
+  </archiveStatus>
+  <copyright>
+    <fullStatement>
+      <statementContent type="xhtml">
+        <p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>
+      </statementContent>
+    </fullStatement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>Good News Translation with Deuterocanonicals/Apocrypha. Scripture taken from the Good News Translation (r) (Today's English Version, Second Edition). Copyright (c) 1992 American Bible Society. Used by permission.</p>
+      <p>This is a Digital Bible Library demonstration bundle. It should NOT BE USED for any publication purposes</p>
+    </promoVersionInfo>
+  </promotion>
+</DBLMetadata>
