@@ -1,0 +1,4 @@
+*       text=auto
+*.lds   text eol=lf
+*.usx   text eol=lf
+*.usfm  text eol=lf
