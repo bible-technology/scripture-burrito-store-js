@@ -26,7 +26,11 @@ class FSIngredientsStore extends IngredientsStore {
     }
 
     __writeIngredient(idServerId, entryId, ingredientStats) {
-        const ingredientDir = this.ingredientDir(idServerId, entryId, ingredientStats["url"]);
+        const ingredientDir = this.ingredientDir(
+            idServerId,
+            entryId,
+            ingredientStats["url"]
+        );
         if (!fse.existsSync(ingredientDir)) {
             fse.mkdirSync(ingredientDir, { recursive: true });
         }

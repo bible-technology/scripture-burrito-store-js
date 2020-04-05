@@ -1,4 +1,5 @@
 import * as fse from "fs-extra";
+import * as path from "path";
 
 import { BurritoError } from "./code/burrito_error.js";
 import { BurritoStore } from "./code/burrito_store.js";
@@ -33,6 +34,11 @@ class FSBurritoStore extends BurritoStore {
         } else {
             return idDetails["id"];
         }
+    }
+
+    __metadataFromBundlePath(bundlePath) {
+        const metadataPath = path.join(bundlePath, "metadata.json");
+        return JSON.parse(fse.readFileSync(metadataPath));
     }
 
     ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientName) {

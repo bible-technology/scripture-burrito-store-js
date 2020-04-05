@@ -9,7 +9,7 @@ const xmldom = require("xmldom");
 const DBLImport = require("../code/dbl_metadata_import.js").DBLImport;
 const BurritoValidator = require("../code/burrito_validator.js").BurritoValidator;
 
-describe("DBL Import", function() {
+describe("DBL Open Access Burrito Metadata Import", function() {
     before(function() {});
 
     const self = this;

@@ -8,7 +8,7 @@ const fse = require("fs-extra");
 const SB01Import = require("../code/sb01_import.js").SB01Import;
 const BurritoValidator = require("../code/burrito_validator.js").BurritoValidator;
 
-describe("SB01 Import", function() {
+describe("SB01 Metadata Import", function() {
     before(function() {
         this.testDataDir = path.join(__dirname, "test_data");
         const sb01MetadataDir = path.join(this.testDataDir, "sb01_metadata");

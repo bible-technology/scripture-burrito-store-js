@@ -2,6 +2,7 @@
 
 import * as fse from "fs-extra";
 import deepEqual from "deep-equal";
+import * as path from "path";
 
 import { BurritoError } from "./burrito_error.js";
 import { MetadataStore } from "./metadata_store.js";

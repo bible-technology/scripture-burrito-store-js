@@ -9,7 +9,7 @@ const xmldom = require("xmldom");
 const DBLImport = require("../code/dbl_metadata_import.js").DBLImport;
 const BurritoValidator = require("../code/burrito_validator.js").BurritoValidator;
 
-describe("DBL Import", function() {
+describe("DBL Metadata Import", function() {
     before(function() {
         this.testDataDir = path.join(__dirname, "test_data");
         const dblMetadataDir = path.join(this.testDataDir, "dbl_metadata");

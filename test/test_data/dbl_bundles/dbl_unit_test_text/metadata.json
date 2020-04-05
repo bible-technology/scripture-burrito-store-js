@@ -1,0 +1,277 @@
+{
+    "meta": {
+        "version": "0.2.0",
+        "variant": "source",
+        "generator": {
+            "softwareName": "DBLImport",
+            "softwareVersion": "0.0.0",
+            "userName": "Eric Pyle"
+        },
+        "defaultLanguage": "en",
+        "dateCreated": "2019-10-04T22:02:07.499932+00:00",
+        "comments": [
+            "upload JHN.usx 2.6 with format usxVersion 3.0"
+        ]
+    },
+    "idServers": {
+        "dbl": {
+            "id": "https://thedigitalbiblelibrary.org",
+            "name": {
+                "en": "The Digital Bible Library"
+            }
+        }
+    },
+    "identification": {
+        "systemId": {
+            "dbl": {
+                "id": "2881c78491b2f8cf",
+                "revision": "24"
+            }
+        },
+        "idServer": "dbl",
+        "name": {
+            "en": "DBL Unit Test Gospels"
+        },
+        "description": {
+            "en": "English: DBL Unit Test Version with Gospels Only"
+        },
+        "abbreviation": {
+            "en": "DBLUTG"
+        }
+    },
+    "languages": [
+        {
+            "tag": "en",
+            "name": {
+                "en": "English"
+            }
+        }
+    ],
+    "type": {
+        "flavorType": {
+            "name": "scripture",
+            "flavor": {
+                "name": "textTranslation",
+                "usfmVersion": "3.0",
+                "translationType": "revision",
+                "audience": "common",
+                "projectType": "standard"
+            },
+            "canonType": [
+                "ot",
+                "nt"
+            ],
+            "canonSpec": {
+                "ot": {
+                    "name": "western"
+                },
+                "nt": {
+                    "name": "western"
+                }
+            },
+            "currentScope": {
+                "MAT": [],
+                "MRK": [],
+                "LUK": [],
+                "JHN": []
+            }
+        }
+    },
+    "confidentiality": {
+        "metadata": "unrestricted",
+        "source": "private",
+        "publications": "restricted"
+    },
+    "agencies": [
+        {
+            "id": "dbl::d41b7b7e1c41d27efc13f05f",
+            "roles": [
+                "rightsHolder"
+            ],
+            "url": "http://www.thedigitalbiblelibrary.org/#",
+            "name": {
+                "en": "DBL Unit Test Organization"
+            },
+            "abbr": {
+                "en": "DBLUnitTest"
+            }
+        },
+        {
+            "id": "dbl::54650cd05117ad67b3826e99",
+            "roles": [
+                "content",
+                "publication",
+                "management",
+                "qa"
+            ],
+            "name": {
+                "en": "American Bible Society"
+            }
+        }
+    ],
+    "targetAreas": [
+        {
+            "code": "US",
+            "name": {
+                "en": "United States"
+            }
+        }
+    ],
+    "names": {
+        "book-mat": {
+            "abbr": {
+                "en": "Mt"
+            },
+            "short": {
+                "en": "Matthew"
+            },
+            "long": {
+                "en": "The Gospel according to Matthew"
+            }
+        },
+        "book-mrk": {
+            "abbr": {
+                "en": "Mk"
+            },
+            "short": {
+                "en": "Mark"
+            },
+            "long": {
+                "en": "The Gospel according to Mark"
+            }
+        },
+        "book-luk": {
+            "abbr": {
+                "en": "Lk"
+            },
+            "short": {
+                "en": "Luke"
+            },
+            "long": {
+                "en": "The Gospel according to Luke"
+            }
+        },
+        "book-jhn": {
+            "abbr": {
+                "en": "Jn"
+            },
+            "short": {
+                "en": "John"
+            },
+            "long": {
+                "en": "The Gospel according to John"
+            }
+        }
+    },
+    "ingredients": {
+        "release/English.lds": {
+            "checksum": {
+                "md5": "d18bbee39a1bc150decaac420c7f59da"
+            },
+            "mimeType": "text/plain",
+            "size": 1032
+        },
+        "release/USX_1/JHN.usx": {
+            "checksum": {
+                "md5": "9b97f202763742c7c7bebbca033d30e5"
+            },
+            "mimeType": "text/xml",
+            "size": 182920,
+            "scope": {
+                "JHN": []
+            }
+        },
+        "release/USX_1/LUK.usx": {
+            "checksum": {
+                "md5": "897a1837fd5b2d93fbc32aaac568b331"
+            },
+            "mimeType": "text/xml",
+            "size": 260086,
+            "scope": {
+                "LUK": []
+            }
+        },
+        "release/USX_1/MAT.usx": {
+            "checksum": {
+                "md5": "7b83fe339a1bc524ae3d9ada7aff4186"
+            },
+            "mimeType": "text/xml",
+            "size": 266875,
+            "scope": {
+                "MAT": []
+            }
+        },
+        "release/USX_1/MRK.usx": {
+            "checksum": {
+                "md5": "aba3aa68f053b806fb4b63f90bfc0799"
+            },
+            "mimeType": "text/xml",
+            "size": 162871,
+            "scope": {
+                "MRK": []
+            }
+        },
+        "release/eng_en.ldml": {
+            "checksum": {
+                "md5": "ccb9e8ad79b308b7e19a05c0a53f5523"
+            },
+            "mimeType": "text/plain",
+            "size": 2840
+        },
+        "release/styles.xml": {
+            "checksum": {
+                "md5": "e00a89c1847307a345ea9c3d0946321c"
+            },
+            "mimeType": "text/xml",
+            "size": 82781
+        },
+        "release/versification.vrs": {
+            "checksum": {
+                "md5": "eb38c438b44651425898b0bcfd7217e8"
+            },
+            "mimeType": "text/plain",
+            "size": 13845
+        }
+    },
+    "recipeSpecs": [
+        {
+            "id": "p1",
+            "metadata": {
+                "recipe": {
+                    "content": [
+                        {
+                            "type": "element",
+                            "ingredient": "release/USX_1/MAT.usx",
+                            "nameId": "book-mat"
+                        },
+                        {
+                            "type": "element",
+                            "ingredient": "release/USX_1/MRK.usx",
+                            "nameId": "book-mrk"
+                        },
+                        {
+                            "type": "element",
+                            "ingredient": "release/USX_1/LUK.usx",
+                            "nameId": "book-luk"
+                        },
+                        {
+                            "type": "element",
+                            "ingredient": "release/USX_1/JHN.usx",
+                            "nameId": "book-jhn"
+                        }
+                    ]
+                },
+                "identification": {
+                    "description": {
+                        "en": "Four Gospels"
+                    }
+                }
+            }
+        }
+    ],
+    "copyright": {
+        "fullStatementRich": {
+            "en": "<p>Good News Translation (Today’s English Version, Second Edition) © 1992 American Bible Society. All rights reserved.</p>"
+        }
+    }
+}

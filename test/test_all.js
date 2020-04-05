@@ -6,4 +6,5 @@ describe("All Tests", function() {
     require("./test_dbl_import.js");
     require("./test_dbl_oab_import.js");
     require("./test_sb01_import.js");
+    require("./test_bundle_import.js");
 });

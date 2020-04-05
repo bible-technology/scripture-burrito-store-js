@@ -27,6 +27,13 @@ class IngredientBuffer {
     }
 
     /**
+       Imports an ingredient from a bundle, given a subclass-dependent bundle path and the ingredient URL.
+     */
+    importBundleIngredient(ingredientUrl, ingredientPath) {
+        throw new BurritoError("MethodNotOverriddenBySubclass");
+    }
+
+    /**
        Lists the uuids of ingredients.
      */
     list() {

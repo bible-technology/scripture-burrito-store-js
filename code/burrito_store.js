@@ -52,9 +52,12 @@ class BurritoStore {
     /**
        Creates a new variant (and, if necessary, a new revision and entry) using the provided metadata.
        * @param {Object} metadata - Scripture Burrito metadata as a JS object
-       * @return {undefined}
+       * @return [sysUrl, entryId, entryRevision, variant]
        */
     importFromObject(metadata) {
+        if (!metadata) {
+            throw new BurritoError("NoMetadataSupplied");
+        }
         const [sysUrl, entryId, entryRevision] = this._metadataStore.idFromMetadataObject(metadata);
         if (!sysUrl) {
             throw new BurritoError("UnableToFindMetadataId");
@@ -69,11 +72,30 @@ class BurritoStore {
             /* console.log(schemaValidationResult.message); */
             throw new BurritoError("ImportedMetadataNotSchemaValid", schemaValidationResult.schemaErrors);
         }
-        this._metadataStore.addEntryRevisionVariant(metadata, this._metadataVariant(metadata));
+        const variant = this._metadataVariant(metadata);
+        this._metadataStore.addEntryRevisionVariant(metadata, variant);
+        return [sysUrl, entryId, entryRevision, variant];
     }
 
-    importFromDir(path) {
-        throw new BurritoError("MethodNotYetImplemented");
+    /**
+       Needs revisiting once we start implementing the proper processing model - using cacheIngredient for now.
+     */
+    importFromDir(bundlePath) {
+        const self = this;
+        const bundleMetadata = this.__metadataFromBundlePath(bundlePath);
+        const [sysUrl, entryId, entryRevision, variant] = this.importFromObject(bundleMetadata);
+        for (const ingredientUrl of Object.keys(bundleMetadata.ingredients)) {
+            const ingredientUuid = this._ingredientBuffer.importBundleIngredient(
+                ingredientUrl,
+                bundlePath
+            );
+            const ingredientStats = this.bufferIngredientStats(ingredientUuid);
+            self.cacheIngredient(sysUrl, entryId, entryRevision, variant, ingredientStats);
+        }
+    }
+
+    __metadataFromBundlePath(path) {
+        throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 
     importFromZip(path) {
@@ -279,13 +301,13 @@ class BurritoStore {
             throw new BurritoError("IngredientNotFoundInMetadata");
         }
         if (ingredientMetadata["checksum"]["md5"] != ingredientStats["checksum"]["md5"]) {
-            // console.log(JSON.stringify(ingredientMetadata) + "/" + JSON.stringify(ingredientStats));
+            console.log(JSON.stringify(ingredientMetadata) + "/" + JSON.stringify(ingredientStats));
             throw new BurritoError("IngredientChecksumMismatch");
         }
         this._ingredientsStore.__writeIngredient(idServerId, entryId, ingredientStats);
         this._ingredientBuffer.delete(ingredientStats["id"]);
     }
-
+    
     uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {
         // Find metadata
         // Check ingredient is in metadata

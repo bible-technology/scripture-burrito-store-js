@@ -3,6 +3,7 @@
 import * as fse from "fs-extra";
 import { v4 as uuidv4 } from 'uuid';
 import * as md5 from 'md5-file';
+import * as path from 'path';
 
 import { BurritoError } from "./burrito_error.js";
 import { IngredientBuffer } from "./ingredient_buffer.js";
@@ -35,6 +36,10 @@ class FSIngredientBuffer extends IngredientBuffer {
         fse.copyFileSync(ingredientPath, uuidPath + "/" + encodeURIComponent(ingredientUrl));
         this.uuidUrls[uuid] = ingredientUrl;
         return uuid;
+    }
+
+    importBundleIngredient(ingredientUrl, ingredientPath) {
+        return this.importFilePath(ingredientUrl, path.join(ingredientPath, ingredientUrl));
     }
 
     list() {
