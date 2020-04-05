@@ -92,9 +92,32 @@ class BurritoStore {
             const ingredientStats = this.bufferIngredientStats(ingredientUuid);
             self.cacheIngredient(sysUrl, entryId, entryRevision, variant, ingredientStats);
         }
+        return [sysUrl, entryId, entryRevision, variant];
+    }
+
+    /**
+       Needs revisiting once we start implementing the proper processing model - using cacheIngredient for now.
+     */
+    importFromDblDir(bundlePath) {
+        const self = this;
+        const bundleMetadata = this.__metadataFromDblBundlePath(bundlePath);
+        const [sysUrl, entryId, entryRevision, variant] = this.importFromObject(bundleMetadata);
+        for (const ingredientUrl of Object.keys(bundleMetadata.ingredients)) {
+            const ingredientUuid = this._ingredientBuffer.importBundleIngredient(
+                ingredientUrl,
+                bundlePath
+            );
+            const ingredientStats = this.bufferIngredientStats(ingredientUuid);
+            self.cacheIngredient(sysUrl, entryId, entryRevision, variant, ingredientStats);
+        }
+        return [sysUrl, entryId, entryRevision, variant];
     }
 
     __metadataFromBundlePath(path) {
+        throw new BurritoError("MethodNotOverriddenBySubclass");
+    }
+
+    __metadataFromDblBundlePath(path) {
         throw new BurritoError("MethodNotOverriddenBySubclass");
     }
 

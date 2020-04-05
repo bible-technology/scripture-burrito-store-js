@@ -32,7 +32,19 @@ describe("Bundle Import", function() {
             },
             this.storagePath
         );
-        b.importFromDir(this.bundleDir);
+        const [sysUrl, entryId, entryRevision, variant] = b.importFromDir(this.bundleDir);
+        assert.equal(Object.keys(b.ingredients(sysUrl, entryId, entryRevision, variant)).length, 8);
+    });
+
+    it("Import DBL Unit Test Text Entry using Stored DBL Metadata", function() {
+        const b = new FSBurritoStore(
+            {
+                storeClass: "FSBurritoStore",
+                validation: "burrito"
+            },
+            this.storagePath
+        );
+        const [sysUrl, entryId, entryRevision, variant] = b.importFromDblDir(this.bundleDir);
     });
 
 });
