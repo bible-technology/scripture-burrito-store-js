@@ -5,9 +5,9 @@
         2,
         120
       ],
-      "no-underscore-dangle": "off"
+      "no-underscore-dangle": "off",
+      "no-restricted-syntax": "off" // allows for-of https://github.com/airbnb/javascript/issues/1271
       /*
-      "no-restricted-syntax": "off", // allows for-of https://github.com/airbnb/javascript/issues/1271
       "import/prefer-default-export": "off"
       */
     }
