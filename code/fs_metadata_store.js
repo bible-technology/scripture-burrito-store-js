@@ -355,4 +355,4 @@ class FSMetadataStore extends MetadataStore {
   }
 }
 
-export { FSMetadataStore };
+export { FSMetadataStore as default };
