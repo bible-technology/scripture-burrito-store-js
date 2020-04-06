@@ -1,7 +1,3 @@
-/* eslint-disable max-len */ // max-len: 100
-/* eslint-disable no-restricted-syntax */ // no for-of https://github.com/airbnb/javascript/issues/1271
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable import/prefer-default-export */ // https://github.com/benmosher/eslint-plugin-import/blob/v2.20.2/docs/rules/prefer-default-export.md
 import * as fse from 'fs-extra';
 import deepEqual from 'deep-equal';
 
@@ -134,7 +130,8 @@ class FSMetadataStore extends MetadataStore {
           const variantB = 'default' in b ? b.default : Object.values(b)[0];
           return Date(variantA.meta.dateCreated) > Date(variantB.meta.dateCreated);
         });
-        const latestRevisionVariant = 'default' in latestRevision ? latestRevision.default : Object.values(latestRevision)[0];
+        const latestRevisionVariant = 'default' in latestRevision
+          ? latestRevision.default : Object.values(latestRevision)[0];
         ret[entryKey] = {
           id:
                         latestRevisionVariant.identification.systemId[latestRevisionVariant.identification.idServer]
