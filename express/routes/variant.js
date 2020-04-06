@@ -11,6 +11,8 @@ router.get('/', function(req, res, next) {
     const revision = req.query.revision;
     const variant = req.query.variant;
     const metadata = store.metadataContent(idServer, entry, revision, variant);
+    const ingredientEntries = Object.entries(store.ingredients(idServer, entry, revision, variant));
+    const localIngredients = ingredientEntries.filter(function([k, v]) { return v });
     res.render('variant', {
 	title: 'Variant ' + variant + " of " + idServer + " / " + entry + " / " + revision,
 	idServer: idServer,
@@ -18,7 +20,9 @@ router.get('/', function(req, res, next) {
 	entry: entry,
 	revision: revision,
 	variant: variant,
-	metadata: metadata
+	metadata: metadata,
+        localIngredients: localIngredients.length,
+        allIngredients: ingredientEntries.length
     });
 });
 
