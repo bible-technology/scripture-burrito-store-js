@@ -5,7 +5,7 @@ import * as xmldom from "xmldom";
 
 import { BurritoError } from "./code/burrito_error.js";
 import { BurritoStore } from "./code/burrito_store.js";
-import { FSMetadataStore } from "./code/fs_metadata_store.js";
+import FSMetadataStore from './code/fs_metadata_store';
 import { FSIngredientsStore } from "./code/fs_ingredients_store.js";
 import { FSIngredientBuffer } from "./code/fs_ingredient_buffer.js";
 import { DBLImport } from "./code/dbl_metadata_import.js";
