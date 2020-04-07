@@ -12,6 +12,7 @@ const crypto = require("crypto");
 describe("FS Burrito Class", function() {
     before(function() {
         this.storagePath = path.join(__dirname, "test_temp_storage");
+        this.bundleWritePath = path.join(__dirname, "test_temp_bundles");
         this.testDataDir = path.join(__dirname, "test_data");
         const metadataDir = path.join(this.testDataDir, "metadata");
         this.metadata = {
@@ -41,6 +42,9 @@ describe("FS Burrito Class", function() {
     afterEach(function() {
         if (fse.existsSync(this.storagePath)) {
             fse.removeSync(this.storagePath);
+        }
+        if (fse.existsSync(this.bundleWritePath)) {
+            fse.removeSync(this.bundleWritePath);
         }
     });
 
@@ -479,6 +483,23 @@ describe("FS Burrito Class", function() {
         } catch (err) {
             assert.equal(err.message, "VariantNotFoundInStore");
         }
+    });
+
+    it("Implements exportToDir", function() {
+        const b = new FSBurritoStore(
+            {
+                storeClass: "FSBurritoStore",
+                validation: "burrito"
+            },
+            this.storagePath
+        );
+        b.importFromObject(this.metadata["validAudioTranslation"]);
+        const ingredientUuid = b.bufferIngredientFromFilePath("release/audio/GEN/GEN_001.mp3", this.mp3Path);
+        const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+        b.cacheIngredient("https://thedigitalbiblelibrary.org", "6e0d81a24efbb679", "9", "source", ingredientStats);
+        b.exportToDir("https://thedigitalbiblelibrary.org",  "6e0d81a24efbb679", "9", "source", this.bundleWritePath);
+        assert.isTrue(fse.existsSync(path.join(this.bundleWritePath, "metadata.json")));
+        assert.isTrue(fse.existsSync(path.join(this.bundleWritePath, "release", "audio", "GEN", "GEN_001.mp3")));
     });
 
     it("Manipulates an ingredient in the ingredient buffer", function() {
