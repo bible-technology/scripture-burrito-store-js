@@ -138,7 +138,7 @@ class BurritoStore {
     }
 
     exportToDir(idServerId, entryId, revisionId, variantId, toPath) {
-        throw new BurritoError("MethodNotYetImplemented");
+        throw new BurritoError("MethodNotYetImplemented");        
     }
 
     exportToZip(idServerId, entryId, revisionId, variantId, toPath) {
