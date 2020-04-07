@@ -330,15 +330,15 @@ class FSMetadataStore extends MetadataStore {
       }
     } else {
       this._urls[sysUrl][entryId][revisionId][variant] = metadata;
-      const variantDir = `${this.metadataDir
-      }/${
-        encodeURIComponent(sysUrl)
-      }/${
-        encodeURIComponent(entryId)
-      }/${
-        encodeURIComponent(revisionId)
-      }/${
-        encodeURIComponent(variant)}`;
+      const variantDir = this.metadataDir
+                + '/'
+                + encodeURIComponent(sysUrl)
+                + '/'
+                + encodeURIComponent(entryId)
+                + '/'
+                + encodeURIComponent(revisionId)
+                + '/'
+                + encodeURIComponent(variant);
       if (fse.existsSync(variantDir)) {
         throw new BurritoError('newRevisionDirAlreadyExists');
       } else {
