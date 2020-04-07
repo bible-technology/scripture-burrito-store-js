@@ -302,13 +302,13 @@ class FSMetadataStore extends MetadataStore {
      */
   __addRevisionRecord(sysUrl, entryId, revisionId) {
     this._urls[sysUrl][entryId][revisionId] = {};
-    const revisionDir = `${this.metadataDir
-    }/${
-      encodeURIComponent(sysUrl)
-    }/${
-      encodeURIComponent(entryId)
-    }/${
-      encodeURIComponent(revisionId)}`;
+    const revisionDir = this.metadataDir
+      + '/'
+      + encodeURIComponent(sysUrl)
+      + '/'
+      + encodeURIComponent(entryId)
+      + '/'
+      + encodeURIComponent(revisionId);
     if (fse.existsSync(revisionDir)) {
       throw new BurritoError('newRevisionDirAlreadyExists');
     } else {
