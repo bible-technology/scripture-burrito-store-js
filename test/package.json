@@ -27,5 +27,18 @@
         "tape": "^4.12.1",
         "uuid": "^7.0.3",
         "xmldom": "^0.3.0"
+    },
+    "eslintConfig": {
+        "plugins": [
+            "mocha"
+        ],
+        "extends": [
+          "plugin:mocha/recommended"
+        ],
+        "rules" : {
+          "mocha/no-mocha-arrows": "warn",
+          "no-undef": "off",
+          "func-names": "off"
+        }
     }
 }
