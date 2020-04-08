@@ -1,5 +1,3 @@
-/* eslint-disable mocha/no-mocha-arrows */
-/* eslint-disable no-undef */
 require = require('esm')(module /* , options */);
 const deepcopy = require('deepcopy');
 const fse = require('fs-extra');
@@ -10,6 +8,7 @@ const crypto = require('crypto');
 const FSBurritoStore = require('../fs_burrito_store.js').FSBurritoStore;
 
 
+// eslint-disable-next-line mocha/no-mocha-arrows
 describe('FS Burrito Class', () => {
   before(function () {
     this.storagePath = path.join(__dirname, 'test_temp_storage');
@@ -614,25 +613,23 @@ describe('FS Burrito Class', () => {
     const location = b.ingredientLocation('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', 'release/audio/GEN/GEN_001.mp3');
   });
 
-
-  /*
-      it("Persistant metadata storage", function() {
-	const b = new FSBurritoStore(
-	    {
-		"storeClass": "FSBurritoStore",
-		"validation": "burrito"
-	    },
-	    this.storagePath
-	);
-      b.importFromObject(this.metadata["validTextTranslation"]);
-      const b2 = new FSBurritoStore(
-	{
-	  "storeClass": "FSBurritoStore",
-	  "validation": "burrito"
-	},
-	this.storagePath
-      );
-      assert.equal(b2.entryRevisionVariants("https://thedigitalbiblelibrary.org", "2880c78491b2f8ce", "91").length, 1);
-    });
-    */
+  // eslint-disable-next-line mocha/no-skipped-tests
+  it.skip('Persistant metadata storage', function () {
+    const b = new FSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      this.storagePath,
+    );
+    b.importFromObject(this.metadata.validTextTranslation);
+    const b2 = new FSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      this.storagePath,
+    );
+    assert.equal(b2.entryRevisionVariants('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91').length, 1);
+  });
 });
