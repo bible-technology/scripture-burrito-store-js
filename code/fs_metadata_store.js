@@ -16,6 +16,10 @@ class FSMetadataStore extends MetadataStore {
     this._urls = {};
     this._idServers = {};
     this.metadataDir = `${sDir}/metadata`;
+    this.afterCreate();
+  }
+
+  afterCreate() {
     if (fse.existsSync(this.metadataDir)) {
       this.loadEntries();
     } else {
@@ -25,27 +29,27 @@ class FSMetadataStore extends MetadataStore {
 
   /**
      */
-  async loadEntries() {
+  loadEntries() {
     const self = this;
     try {
-      const urls = await fse.readdir(self.metadataDir);
+      const urls = fse.readdirSync(self.metadataDir);
       urls.forEach(async (url) => {
         const decodedUrl = decodeURIComponent(url);
         self._urls[decodedUrl] = {};
         const urlDir = `${self.metadataDir}/${url}`;
-        const entries = await fse.readdir(urlDir);
+        const entries = fse.readdirSync(urlDir);
         entries.forEach(async (entry) => {
           const decodedEntry = decodeURIComponent(entry);
           self._urls[decodedUrl][decodedEntry] = {};
           const entryDir = `${urlDir}/${entry}`;
           try {
-            const revisions = fse.readdir(entryDir);
+            const revisions = fse.readdirSync(entryDir);
             revisions.forEach(async (revision) => {
               const decodedRevision = decodeURIComponent(revision);
               self._urls[decodedUrl][decodedEntry][decodedRevision] = {};
               const revisionDir = `${entryDir}/${revision}`;
               try {
-                const variants = await fse.readdir(revisionDir);
+                const variants = fse.readdirSync(revisionDir);
                 variants.forEach((variant) => {
                   const decodedVariant = decodeURIComponent(variant);
                   const variantDir = `${revisionDir}/${variant}/metadata.json`;
