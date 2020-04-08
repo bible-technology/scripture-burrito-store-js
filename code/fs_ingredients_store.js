@@ -58,6 +58,17 @@ class FSIngredientsStore extends IngredientsStore {
         return this.ingredientDir(idServerId, entryId, ingredientId) + "/" + ingredientChecksum;
     }
 
+  __deleteIngredientContent(idServerId, entryId, ingredientUrl) {
+        const ingredientDir = this.ingredientDir(
+            idServerId,
+            entryId,
+            ingredientUrl
+        );
+        if (fse.existsSync(ingredientDir)) {
+            fse.removeSync(ingredientDir);
+        }
+  }
+  
 }
 
 export { FSIngredientsStore };

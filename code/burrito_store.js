@@ -138,7 +138,7 @@ class BurritoStore {
     }
 
     exportToDir(idServerId, entryId, revisionId, variantId, toPath) {
-        throw new BurritoError("MethodNotYetImplemented");
+        throw new BurritoError("MethodNotYetImplemented");        
     }
 
     exportToZip(idServerId, entryId, revisionId, variantId, toPath) {
@@ -331,11 +331,16 @@ class BurritoStore {
         this._ingredientBuffer.delete(ingredientStats["id"]);
     }
     
-    uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {
-        // Find metadata
-        // Check ingredient is in metadata
-        // Delete content (sublass dependent, no local ingredient is a no-op for cacheing)
-        throw new BurritoError("MethodNotYetImplemented");
+    uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientUrl) {
+        const metadata = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
+        if (!metadata) {
+            throw new BurritoError("VariantNotFound");
+        }
+        const ingredientMetadata = ingredientUrl;
+        if (!ingredientMetadata) {
+            throw new BurritoError("IngredientNotFoundInMetadata");
+        }
+        this._ingredientsStore.__deleteIngredientContent(idServerId, entryId, ingredientUrl);      
     }
 
     addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {
