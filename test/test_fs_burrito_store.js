@@ -622,7 +622,6 @@ describe('FS Burrito Class', () => {
       },
       this.storagePath,
     );
-    // await b.afterCreate();
     b.importFromObject(this.metadata.validTextTranslation);
     const b2 = new FSBurritoStore(
       {
@@ -631,7 +630,6 @@ describe('FS Burrito Class', () => {
       },
       this.storagePath,
     );
-    // await b2.afterCreate();
     assert.equal(b2.entryRevisionVariants('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91').length, 1);
   });
 });
