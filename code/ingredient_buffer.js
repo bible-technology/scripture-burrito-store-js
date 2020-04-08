@@ -1,73 +1,71 @@
-"use strict";
 
-import { BurritoError } from "./burrito_error.js";
+import { BurritoError } from './burrito_error.js';
 
 class IngredientBuffer {
-    /**
+  /**
        A class that provides a back end independent signature for first contact with ingredients.
 
        Subclasses should override all methods here, and may also provide back end specific methods.
      */
-    constructor(burritoStore) {
-        this._burritoStore = burritoStore;
-    }
+  constructor(burritoStore) {
+    this._burritoStore = burritoStore;
+  }
 
-    /**
+  /**
        Imports a buffer as an ingredient, tagged with the ingredient URL.
      */
-    importJSBuffer(ingredientUrl, ingredientContent) {
-        throw new BurritoError("MethodNotOverriddenBySubclass");
-    }
+  importJSBuffer(ingredientUrl, ingredientContent) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
 
-    /**
+  /**
        Imports a file as an ingredient, tagged with the ingredient URL.
      */
-    importFilePath(ingredientUrl, ingredientPath) {
-        throw new BurritoError("MethodNotOverriddenBySubclass");
-    }
+  importFilePath(ingredientUrl, ingredientPath) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
 
-    /**
+  /**
        Imports an ingredient from a bundle, given a subclass-dependent bundle path and the ingredient URL.
      */
-    importBundleIngredient(ingredientUrl, ingredientPath) {
-        throw new BurritoError("MethodNotOverriddenBySubclass");
-    }
+  importBundleIngredient(ingredientUrl, ingredientPath) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
 
-    /**
+  /**
        Lists the uuids of ingredients.
      */
-    list() {
-        throw new BurritoError("MethodNotOverriddenBySubclass");
-    }
+  list() {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
 
-    /**
+  /**
        Returns a buffer containing the ingredient contents.
      */
-    read(ingredientId) {
-        throw new BurritoError("MethodNotOverriddenBySubclass");
-    }
+  read(ingredientId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
 
-    /**
+  /**
        Returns a JSON object containing information about the ingredient.
      */
-    stats(ingredientId) {
-        throw new BurritoError("MethodNotOverriddenBySubclass");
-    }
+  stats(ingredientId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
 
-    /**
+  /**
        deletes an ingredient.
      */
-    delete(ingredientId) {
-        throw new BurritoError("MethodNotOverriddenBySubclass");
-    }
+  delete(ingredientId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
 
-    /**
+  /**
        deletes all ingredients.
      */
-    deleteAll() {
-        throw new BurritoError("MethodNotOverriddenBySubclass");
-    }
-
+  deleteAll() {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
 }
 
 export { IngredientBuffer };
