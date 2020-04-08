@@ -25,56 +25,51 @@ class FSMetadataStore extends MetadataStore {
 
   /**
      */
-  loadEntries() {
+  async loadEntries() {
     const self = this;
-    fse.readdir(self.metadataDir, (err, urls) => {
-      if (err) {
-        console.log(err);
-        throw new BurritoError('loadEntriesUrls');
-      }
-      urls.forEach((url) => {
+    try {
+      const urls = await fse.readdir(self.metadataDir);
+      urls.forEach(async (url) => {
         const decodedUrl = decodeURIComponent(url);
         self._urls[decodedUrl] = {};
         const urlDir = `${self.metadataDir}/${url}`;
-        fse.readdir(urlDir, (errReaddir, entries) => {
-          if (errReaddir) {
-            console.log(errReaddir);
-            throw new BurritoError('loadEntriesEntries');
-          }
-          entries.forEach((entry) => {
-            const decodedEntry = decodeURIComponent(entry);
-            self._urls[decodedUrl][decodedEntry] = {};
-            const entryDir = `${urlDir}/${entry}`;
-            fse.readdir(entryDir, (errForEntry, revisions) => {
-              if (errForEntry) {
-                console.log(errForEntry);
-                throw new BurritoError('loadEntriesRevisions');
-              }
-              revisions.forEach((revision) => {
-                const decodedRevision = decodeURIComponent(revision);
-                self._urls[decodedUrl][decodedEntry][decodedRevision] = {};
-                const revisionDir = `${entryDir}/${revision}`;
-                fse.readdir(revisionDir, (errForRevision, variants) => {
-                  if (errForRevision) {
-                    console.log(errForRevision);
-                    throw new BurritoError('loadEntriesVariants');
-                  }
-                  variants.forEach((variant) => {
-                    const decodedVariant = decodeURIComponent(variant);
-                    const variantDir = `${revisionDir}/${variant}/metadata.json`;
-                    const metadata = JSON.parse(fse.readFileSync(variantDir));
-                    self._urls[decodedUrl][decodedEntry][decodedRevision][
-                      decodedVariant
-                    ] = metadata;
-                    self.__updateIdServerRecordFromMetadata(metadata);
-                  });
+        const entries = await fse.readdir(urlDir);
+        entries.forEach(async (entry) => {
+          const decodedEntry = decodeURIComponent(entry);
+          self._urls[decodedUrl][decodedEntry] = {};
+          const entryDir = `${urlDir}/${entry}`;
+          try {
+            const revisions = fse.readdir(entryDir);
+            revisions.forEach(async (revision) => {
+              const decodedRevision = decodeURIComponent(revision);
+              self._urls[decodedUrl][decodedEntry][decodedRevision] = {};
+              const revisionDir = `${entryDir}/${revision}`;
+              try {
+                const variants = await fse.readdir(revisionDir);
+                variants.forEach((variant) => {
+                  const decodedVariant = decodeURIComponent(variant);
+                  const variantDir = `${revisionDir}/${variant}/metadata.json`;
+                  const metadata = JSON.parse(fse.readFileSync(variantDir));
+                  self._urls[decodedUrl][decodedEntry][decodedRevision][
+                    decodedVariant
+                  ] = metadata;
+                  self.__updateIdServerRecordFromMetadata(metadata);
                 });
-              });
+              } catch (errForRevision) {
+                console.log(errForRevision);
+                throw new BurritoError('loadEntriesVariants');
+              }
             });
-          });
+          } catch (errForEntry) {
+            console.log(errForEntry);
+            throw new BurritoError('loadEntriesRevisions');
+          }
         });
       });
-    });
+    } catch (err) {
+      console.log(err);
+      throw new BurritoError('loadEntriesUrls');
+    }
   }
 
   /**

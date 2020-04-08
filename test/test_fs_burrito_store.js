@@ -614,7 +614,7 @@ describe('FS Burrito Class', () => {
   });
 
   // eslint-disable-next-line mocha/no-skipped-tests
-  it.skip('Persistant metadata storage', function () {
+  it('Persistant metadata storage', function () {
     const b = new FSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
