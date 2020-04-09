@@ -6,10 +6,13 @@
     "main": "run_burrito.js",
     "dependencies": {
         "ajv": "^6.10.2",
+        "babel-core": "^6.26.3",
         "chai": "^4.2.0",
         "crypto-js": "^4.0.0",
         "deep-equal": "^2.0.1",
+        "deepcopy": "^2.0.0",
         "esm": "^3.2.25",
+        "fs": "0.0.1-security",
         "fs-extra": "^8.1.0",
         "md5-file": "^4.0.0",
         "minimalist": "^1.0.0",
@@ -24,7 +27,9 @@
         "eslint-config-airbnb-base": "^14.1.0",
         "eslint-formatter-pretty": "^3.0.1",
         "eslint-plugin-import": "^2.20.2",
+        "mocha": "^7.1.1",
         "prettier": "^1.19.1",
-        "pretty-format": "^25.3.0"
+        "pretty-format": "^25.3.0",
+        "tape": "^4.13.2"
     }
 }
