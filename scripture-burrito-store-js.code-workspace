@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+	},
+	"extensions": {
+		"recommendations": [
+			"eg2.vscode-npm-script",
+			"dbaeumer.vscode-eslint",
+			"christian-kohler.npm-intellisense",
+			"christian-kohler.path-intellisense",
+			"maty.vscode-mocha-sidebar",
+		]
+	}
+}
