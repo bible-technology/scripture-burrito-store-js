@@ -5,6 +5,8 @@
 		}
 	],
 	"settings": {
+		"eslint.alwaysShowStatus": true,
+		"eslint.format.enable": true
 	},
 	"extensions": {
 		"recommendations": [
