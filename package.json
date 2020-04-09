@@ -28,5 +28,18 @@
     "eslint-formatter-pretty": "^3.0.1",
     "prettier": "^1.19.1",
     "pretty-format": "^25.3.0"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "mocha"
+    ],
+    "extends": [
+      "plugin:mocha/recommended"
+    ],
+    "rules": {
+      "mocha/no-mocha-arrows": "warn",
+      "no-undef": "off",
+      "func-names": "off"
+    }
   }
 }
