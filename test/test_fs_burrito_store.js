@@ -5,17 +5,24 @@ const path = require('path');
 const assert = require('chai').assert;
 const expect = require('chai').expect;
 const crypto = require('crypto');
-const FSBurritoStore = require('../fs_burrito_store.js').FSBurritoStore;
+const { createFSBurritoStore } = require('../fs_burrito_store.js');
 
 
-// eslint-disable-next-line mocha/no-mocha-arrows
 describe('FS Burrito Class', () => {
-  before(function () {
-    this.storagePath = path.join(__dirname, 'test_temp_storage');
-    this.bundleWritePath = path.join(__dirname, 'test_temp_bundles');
-    this.testDataDir = path.join(__dirname, 'test_data');
-    const metadataDir = path.join(this.testDataDir, 'metadata');
-    this.metadata = {
+  let storagePath;
+  let bundleWritePath;
+  let testDataDir;
+  let metadataDir;
+  let metadata;
+  let usxPath;
+  let mp3Path;
+
+  before(async () => {
+    storagePath = path.join(__dirname, 'test_temp_storage');
+    bundleWritePath = path.join(__dirname, 'test_temp_bundles');
+    testDataDir = path.join(__dirname, 'test_data');
+    metadataDir = path.join(testDataDir, 'metadata');
+    metadata = {
       validTextTranslation: JSON.parse(fse.readFileSync(path.join(metadataDir, 'textTranslation.json'), 'utf8')),
       validAudioTranslation: JSON.parse(fse.readFileSync(path.join(metadataDir, 'audioTranslation.json'), 'utf8')),
       validDerivedTextTranslation: JSON.parse(
@@ -35,16 +42,16 @@ describe('FS Burrito Class', () => {
       badServerStub: JSON.parse(fse.readFileSync(path.join(metadataDir, 'bad_server_stub.json'), 'utf8')),
       bananaVariantStub: JSON.parse(fse.readFileSync(path.join(metadataDir, 'banana_variant.json'), 'utf8')),
     };
-    this.usxPath = path.join(this.testDataDir, 'ingredients', 'GEN.usx');
-    this.mp3Path = path.join(this.testDataDir, 'ingredients', 'GEN_001.mp3');
+    usxPath = path.join(testDataDir, 'ingredients', 'GEN.usx');
+    mp3Path = path.join(testDataDir, 'ingredients', 'GEN_001.mp3');
   });
 
-  afterEach(function () {
-    if (fse.existsSync(this.storagePath)) {
-      fse.removeSync(this.storagePath);
+  afterEach(async () => {
+    if (fse.existsSync(storagePath)) {
+      fse.removeSync(storagePath);
     }
-    if (fse.existsSync(this.bundleWritePath)) {
-      fse.removeSync(this.bundleWritePath);
+    if (fse.existsSync(bundleWritePath)) {
+      fse.removeSync(bundleWritePath);
     }
   });
 
@@ -53,14 +60,14 @@ describe('FS Burrito Class', () => {
     return [ingredientEntries.length, ingredientEntries.filter(([x, y]) => y).length];
   };
 
-  it('Constructs successfully', function () {
-    const b = new FSBurritoStore(
+  it('Constructs successfully', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
         subclassSettings: { foo: 'baa' },
       },
-      this.storagePath,
+      storagePath,
     );
     assert.exists(b);
     assert.equal(b._config.storeClass, 'FSBurritoStore');
@@ -70,13 +77,13 @@ describe('FS Burrito Class', () => {
     assert.equal(b._config.subclassSettings.foo, 'baa');
   });
 
-  it('Requires storeClass to match class', function () {
+  it('Requires storeClass to match class', async () => {
     try {
-      const b = new FSBurritoStore(
+      await createFSBurritoStore(
         {
           storeClass: 'banana',
         },
-        this.storagePath,
+        storagePath,
       );
       throw Error('Too Far');
     } catch (err) {
@@ -84,14 +91,14 @@ describe('FS Burrito Class', () => {
     }
   });
 
-  it('Throws error on invalid config', function () {
+  it('Throws error on invalid config', async () => {
     try {
-      const b = new FSBurritoStore(
+      await createFSBurritoStore(
         {
           storeClass: 'FSBurrito',
           foo: 'baa',
         },
-        this.storagePath,
+        storagePath,
       );
       throw Error('Too Far');
     } catch (err) {
@@ -103,55 +110,55 @@ describe('FS Burrito Class', () => {
     }
   });
 
-  it('Implements importFromObject', function () {
-    const b = new FSBurritoStore(
+  it('Implements importFromObject', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
         subclassSettings: { foo: 'baa' },
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
   });
 
-  it('Imports derived variant', function () {
-    const b = new FSBurritoStore(
+  it('Imports derived variant', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
         acceptedDerivedVariants: ['derived_foo'],
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validDerivedTextTranslation);
+    b.importFromObject(metadata.validDerivedTextTranslation);
   });
 
-  it('Allow import of identical metadata twice', function () {
-    const b = new FSBurritoStore(
+  it('Allow import of identical metadata twice', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
         subclassSettings: { foo: 'baa' },
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validTextTranslation);
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
   });
 
-  it('Do not allow import of different metadata for existing variant', function () {
-    const b = new FSBurritoStore(
+  it('Do not allow import of different metadata for existing variant', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
         subclassSettings: { foo: 'baa' },
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.validTextTranslation);
-      const modifiedMetadata = deepcopy(this.metadata.validTextTranslation);
+      b.importFromObject(metadata.validTextTranslation);
+      const modifiedMetadata = deepcopy(metadata.validTextTranslation);
       modifiedMetadata.meta.generator.userName = 'John Doe';
       b.importFromObject(modifiedMetadata);
       throw Error('Too Far');
@@ -160,17 +167,17 @@ describe('FS Burrito Class', () => {
     }
   });
 
-  it('Throws exception from importFromObject on multiple revisions', function () {
-    const b = new FSBurritoStore(
+  it('Throws exception from importFromObject on multiple revisions', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
         subclassSettings: { foo: 'baa' },
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.scriptureTextDupRevision);
+      b.importFromObject(metadata.scriptureTextDupRevision);
       assert.exists(b);
       throw Error('Too Far');
     } catch (err) {
@@ -178,17 +185,17 @@ describe('FS Burrito Class', () => {
     }
   });
 
-  it('Throws exception from importFromObject on no revision', function () {
-    const b = new FSBurritoStore(
+  it('Throws exception from importFromObject on no revision', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
         subclassSettings: { foo: 'baa' },
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.scriptureTextNoRevision);
+      b.importFromObject(metadata.scriptureTextNoRevision);
       assert.exists(b);
       throw Error('Too Far');
     } catch (err) {
@@ -196,16 +203,16 @@ describe('FS Burrito Class', () => {
     }
   });
 
-  it('Raises exception on adding variant with unsupported version', function () {
-    const b = new FSBurritoStore(
+  it('Raises exception on adding variant with unsupported version', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         acceptedVersion: '0.2',
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.obsoleteStub);
+      b.importFromObject(metadata.obsoleteStub);
       throw new Error('Too Far', {});
     } catch (err) {
       assert.equal(err.message, 'ImportedMetadataNotConfigCompatible');
@@ -213,15 +220,15 @@ describe('FS Burrito Class', () => {
     }
   });
 
-  it('Raises exception on adding variant with x-flavor when not configured to accept', function () {
-    const b = new FSBurritoStore(
+  it('Raises exception on adding variant with x-flavor when not configured to accept', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.xStub);
+      b.importFromObject(metadata.xStub);
       throw new Error('Too Far', {});
     } catch (err) {
       assert.equal(err.message, 'ImportedMetadataNotConfigCompatible');
@@ -229,33 +236,33 @@ describe('FS Burrito Class', () => {
     }
   });
 
-  it('Accepts variant with x-flavor when configured to accept', function () {
+  it('Accepts variant with x-flavor when configured to accept', async () => {
     /* Schema invalid because metadata is stub */
-    const b = new FSBurritoStore(
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         allowXFlavors: true,
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.xStub);
+      b.importFromObject(metadata.xStub);
       throw new Error('Too Far', {});
     } catch (err) {
       assert.equal(err.message, 'ImportedMetadataNotSchemaValid');
     }
   });
 
-  it('Raises exception on adding variant with no accepted id', function () {
-    const b = new FSBurritoStore(
+  it('Raises exception on adding variant with no accepted id', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         acceptedIdServers: ['https://thedigitalbiblelibrary.org'],
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.badServerStub);
+      b.importFromObject(metadata.badServerStub);
       throw new Error('Too Far', {});
     } catch (err) {
       assert.equal(err.message, 'ImportedMetadataNotConfigCompatible');
@@ -263,28 +270,28 @@ describe('FS Burrito Class', () => {
     }
   });
 
-  it('Accepts variant with explicit ID Server config', function () {
-    const b = new FSBurritoStore(
+  it('Accepts variant with explicit ID Server config', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         acceptedIdServers: ['https://thedigitalbiblelibrary.org'],
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     assert.exists(b);
   });
 
-  it('Raises exception on adding unknown variant', function () {
-    const b = new FSBurritoStore(
+  it('Raises exception on adding unknown variant', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         acceptedIdServers: ['https://thedigitalbiblelibrary.org'],
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.bananaVariantStub);
+      b.importFromObject(metadata.bananaVariantStub);
       throw new Error('Too Far', {});
     } catch (err) {
       assert.equal(err.message, 'ImportedMetadataNotConfigCompatible');
@@ -292,62 +299,62 @@ describe('FS Burrito Class', () => {
     }
   });
 
-  it('Accepts derived variant with * config', function () {
-    const b = new FSBurritoStore(
+  it('Accepts derived variant with * config', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         acceptedIdServers: ['https://thedigitalbiblelibrary.org'],
         acceptedDerivedVariants: ['*'],
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.bananaVariantStub);
+      b.importFromObject(metadata.bananaVariantStub);
       throw new Error('Too Far', {});
     } catch (err) {
       assert.equal(err.message, 'ImportedMetadataNotSchemaValid');
     }
   });
 
-  it('Accepts derived variant with explicit config', function () {
-    const b = new FSBurritoStore(
+  it('Accepts derived variant with explicit config', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         acceptedIdServers: ['https://thedigitalbiblelibrary.org'],
         acceptedDerivedVariants: ['derived_banana'],
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.bananaVariantStub);
+      b.importFromObject(metadata.bananaVariantStub);
       throw new Error('Too Far', {});
     } catch (err) {
       assert.equal(err.message, 'ImportedMetadataNotSchemaValid');
     }
   });
 
-  it('Implements idServers()', function () {
-    const b = new FSBurritoStore(
+  it('Implements idServers()', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.equal(b.idServers().length, 0);
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     assert.equal(b.idServers().length, 1);
     assert.equal(b.idServers()[0], 'https://thedigitalbiblelibrary.org');
   });
 
-  it('Implements idServersDetails()', function () {
-    const b = new FSBurritoStore(
+  it('Implements idServersDetails()', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.equal(Object.keys(b.idServersDetails()).length, 0);
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     assert.equal(Object.keys(b.idServersDetails()).length, 1);
     assert.equal(Object.keys(b.idServersDetails())[0], 'https://thedigitalbiblelibrary.org');
     assert.equal(
@@ -356,66 +363,66 @@ describe('FS Burrito Class', () => {
     );
   });
 
-  it('Implements idServersEntries()', function () {
-    const b = new FSBurritoStore(
+  it('Implements idServersEntries()', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.equal(Object.keys(b.idServersEntries()).length, 0);
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     assert.equal(Object.keys(b.idServersEntries()).length, 1);
     assert.equal(b.idServersEntries()['https://thedigitalbiblelibrary.org'].length, 1);
   });
 
-  it('Implements entries()', function () {
-    const b = new FSBurritoStore(
+  it('Implements entries()', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.isNull(b.entries('https://thedigitalbiblelibrary.org'));
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 1);
   });
 
-  it('Implements entriesRevisions()', function () {
-    const b = new FSBurritoStore(
+  it('Implements entriesRevisions()', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.isNull(b.entriesRevisions('https://thedigitalbiblelibrary.org'));
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     const entryKeys = Object.keys(b.entriesRevisions('https://thedigitalbiblelibrary.org'));
     assert.equal(entryKeys.length, 1);
     assert.equal(b.entriesRevisions('https://thedigitalbiblelibrary.org')[entryKeys[0]].length, 1);
   });
 
-  it('Implements entryRevisions()', function () {
-    const b = new FSBurritoStore(
+  it('Implements entryRevisions()', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.isNull(b.entryRevisions('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce'));
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     assert.equal(b.entryRevisions('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce').length, 1);
   });
 
-  it('Implements entryRevisionsVariants()', function () {
-    const b = new FSBurritoStore(
+  it('Implements entryRevisionsVariants()', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.isNull(b.entryRevisionsVariants('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce'));
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     const revisionKeys = Object.keys(
       b.entryRevisionsVariants('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce'),
     );
@@ -426,15 +433,15 @@ describe('FS Burrito Class', () => {
     );
   });
 
-  it('Implements entriesLatestRevision()', function () {
-    const b = new FSBurritoStore(
+  it('Implements entriesLatestRevision()', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.isNull(b.entriesLatestRevision('https://thedigitalbiblelibrary.org'));
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     const entryRecord = b.entriesLatestRevision('https://thedigitalbiblelibrary.org')['2880c78491b2f8ce'];
     expect(entryRecord).to.have.keys(
       'abbreviation',
@@ -447,75 +454,75 @@ describe('FS Burrito Class', () => {
     );
   });
 
-  it('Implements entryRevisionVariants()', function () {
-    const b = new FSBurritoStore(
+  it('Implements entryRevisionVariants()', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.isNull(b.entryRevisionVariants('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91'));
-    b.importFromObject(this.metadata.validTextTranslation);
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     assert.equal(b.entryRevisionVariants('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91').length, 1);
   });
 
-  it('Implements exportToObject', function () {
-    const b = new FSBurritoStore(
+  it('Implements exportToObject', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validTextTranslation);
+    b.importFromObject(metadata.validTextTranslation);
     const md = b.exportToObject('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91', 'source');
     assert.isObject(md);
   });
 
-  it('exportToObject raises exception if variant not found', function () {
-    const b = new FSBurritoStore(
+  it('exportToObject raises exception if variant not found', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.metadata.validTextTranslation);
-      const md = b.exportToObject('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '99', 'source');
+      b.importFromObject(metadata.validTextTranslation);
+      b.exportToObject('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '99', 'source');
       throw new Error('Too Far', {});
     } catch (err) {
       assert.equal(err.message, 'VariantNotFoundInStore');
     }
   });
 
-  it('Implements exportToDir', function () {
-    const b = new FSBurritoStore(
+  it('Implements exportToDir', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validAudioTranslation);
-    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
     const ingredientStats = b.bufferIngredientStats(ingredientUuid);
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
-    b.exportToDir('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', this.bundleWritePath);
-    assert.isTrue(fse.existsSync(path.join(this.bundleWritePath, 'metadata.json')));
-    assert.isTrue(fse.existsSync(path.join(this.bundleWritePath, 'release', 'audio', 'GEN', 'GEN_001.mp3')));
+    b.exportToDir('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', bundleWritePath);
+    assert.isTrue(fse.existsSync(path.join(bundleWritePath, 'metadata.json')));
+    assert.isTrue(fse.existsSync(path.join(bundleWritePath, 'release', 'audio', 'GEN', 'GEN_001.mp3')));
   });
 
-  it('Manipulates an ingredient in the ingredient buffer', function () {
-    const b = new FSBurritoStore(
+  it('Manipulates an ingredient in the ingredient buffer', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
-    const ingredientUuid = b.bufferIngredientFromFilePath('release/GEN.usx', this.usxPath);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/GEN.usx', usxPath);
     const ingredients = b.bufferIngredients();
     assert.equal(ingredients.length, 1);
     assert.equal(ingredients[0], ingredientUuid);
@@ -526,7 +533,7 @@ describe('FS Burrito Class', () => {
     assert.equal(crypto.createHash('MD5').update(ingredientContent).digest('hex'), ingredientStats.checksum.md5);
     b.deleteBufferIngredient(ingredientUuid);
     assert.equal(b.bufferIngredients().length, 0);
-    const ingredientUuid2 = b.bufferIngredientFromFilePath('release/GEN_001.mp3', this.mp3Path);
+    const ingredientUuid2 = b.bufferIngredientFromFilePath('release/GEN_001.mp3', mp3Path);
     const ingredientStats2 = b.bufferIngredientStats(ingredientUuid2);
     const ingredientContent2 = b.readBufferIngredient(ingredientUuid2);
     assert.equal(crypto.createHash('MD5').update(ingredientContent2).digest('hex'), ingredientStats2.checksum.md5);
@@ -535,31 +542,31 @@ describe('FS Burrito Class', () => {
     assert.equal(b.bufferIngredients().length, 0);
   });
 
-  it('Implements cacheIngredient', function () {
-    const b = new FSBurritoStore(
+  it('Implements cacheIngredient', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validAudioTranslation);
-    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
     const ingredientStats = b.bufferIngredientStats(ingredientUuid);
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
     assert.equal(b.bufferIngredients().length, 0);
   });
 
-  it('Implements uncacheIngredient', function () {
-    const b = new FSBurritoStore(
+  it('Implements uncacheIngredient', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validAudioTranslation);
-    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
     const ingredientStats = b.bufferIngredientStats(ingredientUuid);
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
     assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/1');
@@ -567,68 +574,68 @@ describe('FS Burrito Class', () => {
     assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/0');
   });
 
-  it('Implements ingredients (list)', function () {
-    const b = new FSBurritoStore(
+  it('Implements ingredients (list)', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validAudioTranslation);
-    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
     const ingredientStats = b.bufferIngredientStats(ingredientUuid);
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
     const ingredients = b.ingredients('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source');
   });
 
-  it('Implements ingredientContent', function () {
-    const b = new FSBurritoStore(
+  it('Implements ingredientContent', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validAudioTranslation);
-    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
     const ingredientStats = b.bufferIngredientStats(ingredientUuid);
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
     const content = b.ingredientContent('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', 'release/audio/GEN/GEN_001.mp3');
     assert.equal(crypto.createHash('MD5').update(content).digest('hex'), ingredientStats.checksum.md5);
   });
 
-  it('Implements ingredientLocation', function () {
-    const b = new FSBurritoStore(
+  it('Implements ingredientLocation', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validAudioTranslation);
-    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
     const ingredientStats = b.bufferIngredientStats(ingredientUuid);
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
     const location = b.ingredientLocation('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', 'release/audio/GEN/GEN_001.mp3');
   });
 
   // eslint-disable-next-line mocha/no-skipped-tests
-  it('Persistant metadata storage', function () {
-    const b = new FSBurritoStore(
+  it('Persistant metadata storage', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
-    b.importFromObject(this.metadata.validTextTranslation);
-    const b2 = new FSBurritoStore(
+    b.importFromObject(metadata.validTextTranslation);
+    const b2 = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
         validation: 'burrito',
       },
-      this.storagePath,
+      storagePath,
     );
     assert.equal(b2.entryRevisionVariants('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91').length, 1);
   });

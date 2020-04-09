@@ -16,11 +16,10 @@ class FSBurritoStore extends BurritoStore {
        Metadata is loaded into working memory but cached using the filesystem.
        Ingredients are stored using the filesystem.
     */
-  constructor(configJson, sDir) {
+  async initializeIngredientsAndMetadataStores(sDir) {
     if (!sDir) {
       throw new BurritoError('StorageDirNotDefined');
     }
-    super(configJson);
     if (!fse.existsSync(sDir)) {
       fse.mkdirSync(sDir, { recursive: false });
     }
@@ -98,4 +97,10 @@ class FSBurritoStore extends BurritoStore {
   }
 }
 
-export { FSBurritoStore };
+async function createFSBurritoStore(configJson, sDir) {
+  const fsBurritoStore = new FSBurritoStore(configJson);
+  await fsBurritoStore.initializeIngredientsAndMetadataStores(sDir);
+  return fsBurritoStore;
+}
+
+export { FSBurritoStore, createFSBurritoStore };

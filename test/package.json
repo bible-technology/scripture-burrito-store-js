@@ -36,7 +36,7 @@
           "plugin:mocha/recommended"
         ],
         "rules" : {
-          "mocha/no-mocha-arrows": "warn",
+          "mocha/no-mocha-arrows": "off",
           "no-undef": "off",
           "func-names": "off"
         }
