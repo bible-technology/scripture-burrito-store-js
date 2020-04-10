@@ -1,3 +1,6 @@
+import * as xmldom from 'xmldom';
+import { default as AdmZip } from 'adm-zip';
+
 import { BurritoError } from './burrito_error.js';
 import { ConfigReader } from './config_reader.js';
 import { BurritoValidator } from './burrito_validator.js';
@@ -121,8 +124,54 @@ class BurritoStore {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 
-  importFromZip(path) {
-    throw new BurritoError('MethodNotYetImplemented');
+  /**
+     Imports a variant from a DBL-style ZIP archive, referenced by FS path, using metadata.json.
+     Checks that zip contents are in metadata.
+   */
+  importFromZipfile(path) {
+    const zipArchive = new AdmZip(path);
+    const entriesLookup = {};
+    for (const entry of zipArchive.getEntries()) {
+      entriesLookup[entry.entryName] = entry;
+    }
+    const bundleMetadata = JSON.parse(zipArchive.readAsText(entriesLookup['metadata.json']));
+    const [sysUrl, entryId, entryRevision, variant] = this.importFromObject(bundleMetadata);
+    const metadataIngredients = Object.keys(bundleMetadata.ingredients);
+    for (const entry of Object.values(entriesLookup)) {
+      if (metadataIngredients.includes(entry.entryName)) {
+        const ingredientUuid = this.bufferIngredientFromJSBuffer(entry.entryName, zipArchive.readFile(entry));
+        const ingredientStats = this.bufferIngredientStats(ingredientUuid);
+        this.cacheIngredient(sysUrl, entryId, entryRevision, variant, ingredientStats);
+      }
+    }
+    return [sysUrl, entryId, entryRevision, variant];
+  }
+
+  /**
+     Imports a variant from a DBL-style ZIP archive, referenced by FS path, using metadata.xml.
+     Checks that zip contents are in metadata.
+   */
+  importFromDblZipfile(path) {
+    const zipArchive = new AdmZip(path);
+    const entriesLookup = {};
+    for (const entry of zipArchive.getEntries()) {
+      entriesLookup[entry.entryName] = entry;
+    }
+    const metadataDom = new xmldom.DOMParser().parseFromString(
+      zipArchive.readAsText(entriesLookup['metadata.xml']),
+      'text/xml',
+    );
+    const bundleMetadata = new DBLImport(metadataDom).sbMetadata;
+    const [sysUrl, entryId, entryRevision, variant] = this.importFromObject(bundleMetadata);
+    const metadataIngredients = Object.keys(bundleMetadata.ingredients);
+    for (const entry of Object.values(entriesLookup)) {
+      if (metadataIngredients.includes(entry.entryName)) {
+        const ingredientUuid = this.bufferIngredientFromJSBuffer(entry.entryName, zipArchive.readFile(entry));
+        const ingredientStats = this.bufferIngredientStats(ingredientUuid);
+        this.cacheIngredient(sysUrl, entryId, entryRevision, variant, ingredientStats);
+      }
+    }
+    return [sysUrl, entryId, entryRevision, variant];
   }
 
   /**
@@ -140,7 +189,7 @@ class BurritoStore {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 
-  exportToZip(idServerId, entryId, revisionId, variantId, toPath) {
+  exportToZipfile(idServerId, entryId, revisionId, variantId, toPath) {
     throw new BurritoError('MethodNotYetImplemented');
   }
 
@@ -285,6 +334,10 @@ class BurritoStore {
 
   bufferIngredientFromFilePath(ingredientUrl, filePath) {
     return this._ingredientBuffer.importFilePath(ingredientUrl, filePath);
+  }
+
+  bufferIngredientFromJSBuffer(ingredientUrl, jsBuffer) {
+    return this._ingredientBuffer.importJSBuffer(ingredientUrl, jsBuffer);
   }
 
   bufferIngredients() {

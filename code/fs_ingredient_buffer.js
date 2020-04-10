@@ -26,6 +26,12 @@ class FSIngredientBuffer extends IngredientBuffer {
   }
 
   importJSBuffer(ingredientUrl, ingredientContent) {
+    const uuid = uuidv4();
+    const uuidPath = this.bufferDir + '/' + uuid;
+    fse.mkdirSync(uuidPath, { recursive: false });
+    fse.writeFileSync(uuidPath + '/' + encodeURIComponent(ingredientUrl), ingredientContent);
+    this.uuidUrls[uuid] = ingredientUrl;
+    return uuid;
   }
 
   importFilePath(ingredientUrl, ingredientPath) {

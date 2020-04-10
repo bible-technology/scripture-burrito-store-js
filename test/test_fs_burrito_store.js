@@ -533,6 +533,10 @@ describe('FS Burrito Class', () => {
     assert.equal(b.bufferIngredients().length, 1);
     b.deleteAllBufferIngredients();
     assert.equal(b.bufferIngredients().length, 0);
+    const ingredientUuid3 = b.bufferIngredientFromJSBuffer('release/GEN_001.mp3', fse.readFileSync(this.mp3Path));
+    const ingredientStats3 = b.bufferIngredientStats(ingredientUuid3);
+    const ingredientContent3 = b.readBufferIngredient(ingredientUuid3);
+    assert.equal(crypto.createHash('MD5').update(ingredientContent3).digest('hex'), ingredientStats3.checksum.md5);
   });
 
   it('Implements cacheIngredient', function () {
