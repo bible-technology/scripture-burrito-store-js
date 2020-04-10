@@ -137,7 +137,7 @@ class BurritoStore {
   }
 
   exportToDir(idServerId, entryId, revisionId, variantId, toPath) {
-    throw new BurritoError('MethodNotYetImplemented');
+    throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 
   exportToZip(idServerId, entryId, revisionId, variantId, toPath) {
