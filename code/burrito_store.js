@@ -383,18 +383,6 @@ class BurritoStore {
     this._ingredientBuffer.delete(ingredientStats.id);
   }
 
-  uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientUrl) {
-    const metadata = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
-    if (!metadata) {
-      throw new BurritoError('VariantNotFound');
-    }
-    const ingredientMetadata = ingredientUrl;
-    if (!ingredientMetadata) {
-      throw new BurritoError('IngredientNotFoundInMetadata');
-    }
-    this._ingredientsStore.__deleteIngredientContent(idServerId, entryId, ingredientUrl);
-  }
-
   /**
      Adds or updates an ingredient, both in the ingredients store and in the variant metadata.
      Looks for optional mimeType, role and scope in ingredientStats.
@@ -420,11 +408,23 @@ class BurritoStore {
     this._ingredientBuffer.delete(ingredientStats.id);
   }
 
-  deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {
-    // Find metadata
-    // Check ingredient is in metadata
-    // Delete content (sublass dependent, no local ingredient is an error)
-    throw new BurritoError('MethodNotYetImplemented');
+  /**
+     Deletes an ingredient from metadata.
+   */
+  deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientUrl) {
+    const metadata = JSON.parse(
+      JSON.stringify(
+        this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId)
+      )
+    );
+    if (!metadata) {
+      throw new BurritoError('VariantNotFound');
+    }
+    const ingredientMetadata = metadata.ingredients[ingredientUrl];
+    if (ingredientMetadata) {
+      delete metadata.ingredients[ingredientUrl];
+      this._metadataStore.__updateVariantMetadata(idServerId, entryId, revisionId, variantId, metadata);
+    }
   }
 
   /* Validation */

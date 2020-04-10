@@ -556,23 +556,6 @@ describe('FS Burrito Class', () => {
     assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/1');
   });
 
-  it('Implements uncacheIngredient', function () {
-    const b = new FSBurritoStore(
-      {
-        storeClass: 'FSBurritoStore',
-        validation: 'burrito',
-      },
-      this.storagePath,
-    );
-    b.importFromObject(this.metadata.validAudioTranslation);
-    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
-    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
-    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
-    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/1');
-    b.uncacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats.url);
-    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/0');
-  });
-
   it('Implements addOrUpdateIngredient', function () {
     const b = new FSBurritoStore(
       {
@@ -599,6 +582,23 @@ describe('FS Burrito Class', () => {
     md = b.metadataContent('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91', 'source');
     assert.equal(md.ingredients[ingredientUrl]["mimeType"], "audio/mpeg");
     assert.equal(md.ingredients[ingredientUrl]["scope"]["GEN"][0], "1");
+  });
+
+  it('Implements deleteIngredient', function () {
+    const b = new FSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      this.storagePath,
+    );
+    b.importFromObject(this.metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/1');
+    b.deleteIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats.url);
+    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '5/0');
   });
 
   it('Implements ingredients (list)', function () {
