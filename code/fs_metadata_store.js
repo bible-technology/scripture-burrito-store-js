@@ -266,6 +266,30 @@ class FSMetadataStore extends MetadataStore {
   }
 
   /**
+       Updates variant metadata, returns that metadata or null
+       * @param {string} sysUrl
+       * @param {string} entryId
+       * @param {string} revisionId
+       * @param {string} variantId
+     */
+  __updateVariantMetadata(sysUrl, entryId, revisionId, variantId, newMetadata) {
+    if (
+      sysUrl in this._urls
+            && entryId in this._urls[sysUrl]
+            && revisionId in this._urls[sysUrl][entryId]
+            && variantId in this._urls[sysUrl][entryId][revisionId]
+    ) {
+      const schemaValidationResult = this._burritoStore._validator.schemaValidate('metadata', newMetadata);
+      if (schemaValidationResult.result != 'accepted') {
+        throw new BurritoError('ImportedMetadataNotSchemaValid', schemaValidationResult.schemaErrors);
+      }
+      this._urls[sysUrl][entryId][revisionId][variantId] = newMetadata;
+      return newMetadata;
+    }
+    return null;
+  }
+
+  /**
        Adds a Url record
        * @param {string} sysUrl
      */

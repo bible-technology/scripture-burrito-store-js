@@ -169,6 +169,7 @@ class BurritoStore {
         const ingredientUuid = this.bufferIngredientFromJSBuffer(entry.entryName, zipArchive.readFile(entry));
         const ingredientStats = this.bufferIngredientStats(ingredientUuid);
         this.cacheIngredient(sysUrl, entryId, entryRevision, variant, ingredientStats);
+        this._ingredientBuffer.delete(ingredientStats.id);
       }
     }
     return [sysUrl, entryId, entryRevision, variant];
@@ -394,12 +395,29 @@ class BurritoStore {
     this._ingredientsStore.__deleteIngredientContent(idServerId, entryId, ingredientUrl);
   }
 
-  addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {
-    // Find metadata
-    // Checksum ingredient
-    // Add or update to metadata (subclass dependent)
-    // Write content (subclass dependent)
-    throw new BurritoError('MethodNotYetImplemented');
+  /**
+     Adds or updates an ingredient, both in the ingredients store and in the variant metadata.
+     Looks for optional mimeType, role and scope in ingredientStats.
+   */
+  addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientStats) {
+    const metadata = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
+    if (!metadata) {
+      throw new BurritoError('VariantNotFound');
+    }
+    const ingredientMetadata = {
+      "checksum": ingredientStats["checksum"],
+      "size": ingredientStats["size"],
+      "mimeType": ingredientStats["mimeType"] || "application/octet-stream"
+    }
+    for (const statsKey of ["role", "scope"]) {
+      if (statsKey in ingredientStats) {
+        ingredientMetadata[statsKey] = ingredientStats[statsKey];
+      }
+    }
+    metadata.ingredients[ingredientStats.url] = ingredientMetadata;
+    this._metadataStore.__updateVariantMetadata(idServerId, entryId, revisionId, variantId, metadata);
+    this._ingredientsStore.__writeIngredient(idServerId, entryId, ingredientStats);
+    this._ingredientBuffer.delete(ingredientStats.id);
   }
 
   deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {
