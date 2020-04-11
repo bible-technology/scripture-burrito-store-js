@@ -448,15 +448,18 @@ class BurritoStore {
   /* Delete */
 
   deleteEntry(idServerId, entryId) {
-    throw new BurritoError('MethodNotYetImplemented');
+    this._ingredientsStore.__deleteEntry(idServerId, entryId);
+    this._metadataStore.__deleteEntry(idServerId, entryId);
   }
 
   deleteEntryRevision(idServerId, entryId, revisionId) {
-    throw new BurritoError('MethodNotYetImplemented');
+    this._ingredientsStore.__deleteEntryRevision(idServerId, entryId, revisionId);
+    this._metadataStore.__deleteEntryRevision(idServerId, entryId, revisionId);
   }
 
   deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
-    throw new BurritoError('MethodNotYetImplemented');
+    this._ingredientsStore.__deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId);
+    this._metadataStore.__deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId);
   }
 
   /* Utility methods */

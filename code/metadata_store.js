@@ -185,6 +185,20 @@ class MetadataStore {
   __addEntryRevisionVariant(sysUrl, entryId, revisionId, metadata) {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
+
+  __deleteEntry(idServerId, entryId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
+
+  __deleteEntryRevision(idServerId, entryId, revisionId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
+
+  __deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
+
+
 }
 
 export { MetadataStore };

@@ -377,6 +377,25 @@ class FSMetadataStore extends MetadataStore {
     const idServerRecord = metadata.idServers[idServer];
     this._idServers[idServerRecord.id] = idServerRecord;
   }
+
+  __deleteEntry(idServerId, entryId) {
+    delete this._urls[idServerId][entryId];
+  }
+
+  __deleteEntryRevision(idServerId, entryId, revisionId) {
+    delete this._urls[idServerId][entryId][revisionId];
+    if (Object.keys(this._urls[idServerId][entryId]).length === 0) {
+      this.__deleteEntry(idServerId, entryId);
+    }
+  }
+
+  __deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
+    delete this._urls[idServerId][entryId][revisionId][variantId];
+    if (Object.keys(this._urls[idServerId][entryId][revisionId]).length === 0) {
+      this.__deleteEntryRevision(idServerId, entryId, revisionId);
+    }
+  }
+
 }
 
 export { FSMetadataStore as default };

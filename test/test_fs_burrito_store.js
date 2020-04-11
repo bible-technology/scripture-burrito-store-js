@@ -651,6 +651,57 @@ describe('FS Burrito Class', () => {
     const location = b.ingredientLocation('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', 'release/audio/GEN/GEN_001.mp3');
   });
 
+  it('Implements deleteEntryRevisionVariant', function () {
+    const b = new FSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      this.storagePath,
+    );
+    b.importFromObject(this.metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 1);
+    b.deleteEntryRevisionVariant('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source');
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 0);
+  });
+
+  it('Implements deleteEntryRevision', function () {
+    const b = new FSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      this.storagePath,
+    );
+    b.importFromObject(this.metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 1);
+    b.deleteEntryRevision('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9');
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 0);
+  });
+
+  it('Implements deleteEntry', function () {
+    const b = new FSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      this.storagePath,
+    );
+    b.importFromObject(this.metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
+    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 1);
+    b.deleteEntry('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679');
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 0);
+  });
+
   // Tests for persistant stores only (currently fs_burrito_store)
 
   it('Implements Garbage Collection for One Entry', function () {
