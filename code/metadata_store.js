@@ -1,4 +1,3 @@
-
 import { BurritoError } from './burrito_error.js';
 
 class MetadataStore {

@@ -1,4 +1,5 @@
 import * as fse from 'fs-extra';
+import * as path from 'path';
 import deepEqual from 'deep-equal';
 
 import { BurritoError } from './burrito_error';
@@ -15,7 +16,7 @@ class FSMetadataStore extends MetadataStore {
     super(burritoStore);
     this._urls = {};
     this._idServers = {};
-    this.metadataDir = `${sDir}/metadata`;
+    this.metadataDir = path.join(sDir, "metadata");
     if (fse.existsSync(this.metadataDir)) {
       this.loadEntries();
     } else {
@@ -35,7 +36,7 @@ class FSMetadataStore extends MetadataStore {
       urls.forEach((url) => {
         const decodedUrl = decodeURIComponent(url);
         self._urls[decodedUrl] = {};
-        const urlDir = `${self.metadataDir}/${url}`;
+        const urlDir = path.join(self.metadataDir, url);
         fse.readdir(urlDir, (errReaddir, entries) => {
           if (errReaddir) {
             console.log(errReaddir);
@@ -44,7 +45,7 @@ class FSMetadataStore extends MetadataStore {
           entries.forEach((entry) => {
             const decodedEntry = decodeURIComponent(entry);
             self._urls[decodedUrl][decodedEntry] = {};
-            const entryDir = `${urlDir}/${entry}`;
+            const entryDir = path.join(urlDir, entry);
             fse.readdir(entryDir, (errForEntry, revisions) => {
               if (errForEntry) {
                 console.log(errForEntry);
@@ -53,7 +54,7 @@ class FSMetadataStore extends MetadataStore {
               revisions.forEach((revision) => {
                 const decodedRevision = decodeURIComponent(revision);
                 self._urls[decodedUrl][decodedEntry][decodedRevision] = {};
-                const revisionDir = `${entryDir}/${revision}`;
+                const revisionDir = path.join(entryDir, revision);
                 fse.readdir(revisionDir, (errForRevision, variants) => {
                   if (errForRevision) {
                     console.log(errForRevision);
@@ -61,7 +62,7 @@ class FSMetadataStore extends MetadataStore {
                   }
                   variants.forEach((variant) => {
                     const decodedVariant = decodeURIComponent(variant);
-                    const variantDir = `${revisionDir}/${variant}/metadata.json`;
+                    const variantDir = path.join(revisionDir, variant, "metadata.json");
                     const metadata = JSON.parse(fse.readFileSync(variantDir));
                     self._urls[decodedUrl][decodedEntry][decodedRevision][
                       decodedVariant
@@ -295,7 +296,7 @@ class FSMetadataStore extends MetadataStore {
      */
   __addSysUrlRecord(sysUrl) {
     this._urls[sysUrl] = {};
-    const urlDir = `${this.metadataDir}/${encodeURIComponent(sysUrl)}`;
+    const urlDir = path.join(this.metadataDir, encodeURIComponent(sysUrl));
     if (fse.existsSync(urlDir)) {
       throw new BurritoError('newUrlDirAlreadyExists');
     } else {
@@ -310,7 +311,7 @@ class FSMetadataStore extends MetadataStore {
      */
   __addEntryRecord(sysUrl, entryId) {
     this._urls[sysUrl][entryId] = {};
-    const entryDir = `${this.metadataDir}/${encodeURIComponent(sysUrl)}/${encodeURIComponent(entryId)}`;
+    const entryDir = path.join(this.metadataDir, encodeURIComponent(sysUrl), encodeURIComponent(entryId));
     if (fse.existsSync(entryDir)) {
       throw new BurritoError('newEntryDirAlreadyExists');
     } else {
@@ -354,20 +355,18 @@ class FSMetadataStore extends MetadataStore {
       }
     } else {
       this._urls[sysUrl][entryId][revisionId][variant] = metadata;
-      const variantDir = this.metadataDir
-                + '/'
-                + encodeURIComponent(sysUrl)
-                + '/'
-                + encodeURIComponent(entryId)
-                + '/'
-                + encodeURIComponent(revisionId)
-                + '/'
-                + encodeURIComponent(variant);
+      const variantDir = path.join(
+        this.metadataDir,
+        encodeURIComponent(sysUrl),
+        encodeURIComponent(entryId),
+        encodeURIComponent(revisionId),
+        encodeURIComponent(variant)
+      );
       if (fse.existsSync(variantDir)) {
         throw new BurritoError('newRevisionDirAlreadyExists');
       } else {
         fse.mkdirSync(variantDir, { recursive: false });
-        fse.writeFileSync(`${variantDir}/metadata.json`, JSON.stringify(metadata));
+        fse.writeFileSync(path.join(variantDir, "metadata.json"), JSON.stringify(metadata));
       }
     }
   }
@@ -380,10 +379,23 @@ class FSMetadataStore extends MetadataStore {
 
   __deleteEntry(idServerId, entryId) {
     delete this._urls[idServerId][entryId];
+    const entryDir = path.join(
+      this.metadataDir,
+      encodeURIComponent(idServerId),
+      encodeURIComponent(entryId)
+    );
+    fse.remove(entryDir);    
   }
 
   __deleteEntryRevision(idServerId, entryId, revisionId) {
     delete this._urls[idServerId][entryId][revisionId];
+    const revisionDir = path.join(
+      this.metadataDir,
+      encodeURIComponent(idServerId),
+      encodeURIComponent(entryId),
+      encodeURIComponent(revisionId)
+    );
+    fse.remove(revisionDir);
     if (Object.keys(this._urls[idServerId][entryId]).length === 0) {
       this.__deleteEntry(idServerId, entryId);
     }
@@ -391,6 +403,14 @@ class FSMetadataStore extends MetadataStore {
 
   __deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
     delete this._urls[idServerId][entryId][revisionId][variantId];
+    const variantDir = path.join(
+      this.metadataDir,
+      encodeURIComponent(idServerId),
+      encodeURIComponent(entryId),
+      encodeURIComponent(revisionId),
+      encodeURIComponent(variantId)
+    );
+    fse.remove(variantDir);
     if (Object.keys(this._urls[idServerId][entryId][revisionId]).length === 0) {
       this.__deleteEntryRevision(idServerId, entryId, revisionId);
     }
