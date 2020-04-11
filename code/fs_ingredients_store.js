@@ -21,8 +21,25 @@ class FSIngredientsStore extends IngredientsStore {
     }
   }
 
+  entryDir(idServerId, entryId) {
+    return this.ingredientsDir + '/' + encodeURIComponent(idServerId) + '/' + entryId;
+  }
+  
   ingredientDir(idServerId, entryId, ingredientUrl) {
-    return this.ingredientsDir + '/' + encodeURIComponent(idServerId) + '/' + entryId + '/' + encodeURIComponent(ingredientUrl);
+    return this.entryDir(idServerId, entryId) + '/' + encodeURIComponent(ingredientUrl);
+  }
+
+  entryIngredientChecksums(idServerId, entryId) {
+    const ret = {};
+    const ingredients = fse.readdirSync(this.entryDir(idServerId, entryId)).map((n) => decodeURIComponent(n));
+    for (const ingredient of ingredients) {
+      ret[ingredient] = {};
+      const checksums = fse.readdirSync(this.ingredientDir(idServerId, entryId, ingredient));
+      for (const checksum of checksums) {
+        ret[ingredient][checksum] = 0;
+      }
+    }
+    return ret;
   }
 
   __writeIngredient(idServerId, entryId, ingredientStats) {

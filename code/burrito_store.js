@@ -388,7 +388,11 @@ class BurritoStore {
      Looks for optional mimeType, role and scope in ingredientStats.
    */
   addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientStats) {
-    const metadata = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
+    const metadata = JSON.parse(
+      JSON.stringify(
+        this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId)
+      )
+    );
     if (!metadata) {
       throw new BurritoError('VariantNotFound');
     }

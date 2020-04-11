@@ -96,6 +96,51 @@ class FSBurritoStore extends BurritoStore {
       );
     }
   }
+
+  gcMark(idServerId, entryId) {
+    const ingredientChecksumCounts = this._ingredientsStore.entryIngredientChecksums(idServerId, entryId);
+    const revisionsVariants = this._metadataStore.__idServerEntryRevisionsVariants(idServerId, entryId);
+    for (const revisionId of Object.keys(revisionsVariants)) {
+      for (const variantId of revisionsVariants[revisionId]) {
+        for (
+          let [ingredientUrl, ingredientProps] of
+          Object.entries(this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId).ingredients)
+        ) {
+          if (ingredientUrl in ingredientChecksumCounts) {
+            const ingredientChecksum = ingredientProps.checksum.md5;
+            if (ingredientChecksum in ingredientChecksumCounts[ingredientUrl]) {
+              ingredientChecksumCounts[ingredientUrl][ingredientChecksum] += 1;
+            }
+          }
+        }
+      }
+    }
+    return ingredientChecksumCounts;
+  }
+
+  gc(idServer, entry) {
+    const markReport = this.gcMark(idServer, entry);
+    for (const [ingredient, checksums] of Object.entries(markReport)) {
+      const ingredientPath = this._ingredientsStore.ingredientDir(idServer, entry, ingredient);
+      for (const [checksum, markCount] of Object.entries(checksums)) {
+        if (markCount == 0) {
+          const checksumPath = path.join(ingredientPath, encodeURIComponent(checksum));
+          fse.removeSync(checksumPath);
+        }
+      }
+      if (fse.readdirSync(ingredientPath).length == 0) {
+        fse.removeSync(ingredientPath);
+      }
+    }
+  }
+
+  gcAll() {
+    for (const [idServer, entries] of Object.entries(this._metadataStore.__idServersEntries())) {
+      for (const entry of entries) {
+        this.gc(idServer, entry);
+      }
+    }
+  }
 }
 
 export { FSBurritoStore };
