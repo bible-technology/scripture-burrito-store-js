@@ -261,7 +261,7 @@ class FSMetadataStore extends MetadataStore {
             && revisionId in this._urls[sysUrl][entryId]
             && variantId in this._urls[sysUrl][entryId][revisionId]
     ) {
-      return this._urls[sysUrl][entryId][revisionId][variantId];
+      return JSON.parse(JSON.stringify(this._urls[sysUrl][entryId][revisionId][variantId]));
     }
     return null;
   }
@@ -284,7 +284,7 @@ class FSMetadataStore extends MetadataStore {
       if (schemaValidationResult.result !== 'accepted') {
         throw new BurritoError('ImportedMetadataNotSchemaValid', schemaValidationResult.schemaErrors);
       }
-      this._urls[sysUrl][entryId][revisionId][variantId] = newMetadata;
+      this._urls[sysUrl][entryId][revisionId][variantId] = JSON.parse(JSON.stringify(newMetadata));
       return newMetadata;
     }
     return null;
@@ -354,7 +354,7 @@ class FSMetadataStore extends MetadataStore {
         throw new BurritoError('CannotModifyExistingVariant');
       }
     } else {
-      this._urls[sysUrl][entryId][revisionId][variant] = metadata;
+      this._urls[sysUrl][entryId][revisionId][variant] = JSON.parse(JSON.stringify(metadata));
       const variantDir = path.join(
         this.metadataDir,
         encodeURIComponent(sysUrl),
