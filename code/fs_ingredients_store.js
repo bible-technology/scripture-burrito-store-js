@@ -24,7 +24,7 @@ class FSIngredientsStore extends IngredientsStore {
   entryDir(idServerId, entryId) {
     return path.join(this.ingredientsDir, encodeURIComponent(idServerId), encodeURIComponent(entryId));
   }
-  
+
   ingredientDir(idServerId, entryId, ingredientUrl) {
     return path.join(this.entryDir(idServerId, entryId), encodeURIComponent(ingredientUrl));
   }
@@ -82,7 +82,6 @@ class FSIngredientsStore extends IngredientsStore {
   __deleteEntryRevision(idServerId, entryId, revisionId) {}
 
   __deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {}
-
 }
 
 export { FSIngredientsStore };

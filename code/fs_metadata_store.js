@@ -16,7 +16,7 @@ class FSMetadataStore extends MetadataStore {
     super(burritoStore);
     this._urls = {};
     this._idServers = {};
-    this.metadataDir = path.join(sDir, "metadata");
+    this.metadataDir = path.join(sDir, 'metadata');
     if (fse.existsSync(this.metadataDir)) {
       this.loadEntries();
     } else {
@@ -62,7 +62,7 @@ class FSMetadataStore extends MetadataStore {
                   }
                   variants.forEach((variant) => {
                     const decodedVariant = decodeURIComponent(variant);
-                    const variantDir = path.join(revisionDir, variant, "metadata.json");
+                    const variantDir = path.join(revisionDir, variant, 'metadata.json');
                     const metadata = JSON.parse(fse.readFileSync(variantDir));
                     self._urls[decodedUrl][decodedEntry][decodedRevision][
                       decodedVariant
@@ -281,7 +281,7 @@ class FSMetadataStore extends MetadataStore {
             && variantId in this._urls[sysUrl][entryId][revisionId]
     ) {
       const schemaValidationResult = this._burritoStore._validator.schemaValidate('metadata', newMetadata);
-      if (schemaValidationResult.result != 'accepted') {
+      if (schemaValidationResult.result !== 'accepted') {
         throw new BurritoError('ImportedMetadataNotSchemaValid', schemaValidationResult.schemaErrors);
       }
       this._urls[sysUrl][entryId][revisionId][variantId] = newMetadata;
@@ -360,13 +360,13 @@ class FSMetadataStore extends MetadataStore {
         encodeURIComponent(sysUrl),
         encodeURIComponent(entryId),
         encodeURIComponent(revisionId),
-        encodeURIComponent(variant)
+        encodeURIComponent(variant),
       );
       if (fse.existsSync(variantDir)) {
         throw new BurritoError('newRevisionDirAlreadyExists');
       } else {
         fse.mkdirSync(variantDir, { recursive: false });
-        fse.writeFileSync(path.join(variantDir, "metadata.json"), JSON.stringify(metadata));
+        fse.writeFileSync(path.join(variantDir, 'metadata.json'), JSON.stringify(metadata));
       }
     }
   }
@@ -382,9 +382,9 @@ class FSMetadataStore extends MetadataStore {
     const entryDir = path.join(
       this.metadataDir,
       encodeURIComponent(idServerId),
-      encodeURIComponent(entryId)
+      encodeURIComponent(entryId),
     );
-    fse.remove(entryDir);    
+    fse.remove(entryDir);
   }
 
   __deleteEntryRevision(idServerId, entryId, revisionId) {
@@ -393,7 +393,7 @@ class FSMetadataStore extends MetadataStore {
       this.metadataDir,
       encodeURIComponent(idServerId),
       encodeURIComponent(entryId),
-      encodeURIComponent(revisionId)
+      encodeURIComponent(revisionId),
     );
     fse.remove(revisionDir);
     if (Object.keys(this._urls[idServerId][entryId]).length === 0) {
@@ -408,14 +408,13 @@ class FSMetadataStore extends MetadataStore {
       encodeURIComponent(idServerId),
       encodeURIComponent(entryId),
       encodeURIComponent(revisionId),
-      encodeURIComponent(variantId)
+      encodeURIComponent(variantId),
     );
     fse.remove(variantDir);
     if (Object.keys(this._urls[idServerId][entryId][revisionId]).length === 0) {
       this.__deleteEntryRevision(idServerId, entryId, revisionId);
     }
   }
-
 }
 
 export { FSMetadataStore as default };

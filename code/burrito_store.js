@@ -18,12 +18,12 @@ class BurritoStore {
        * @param {Object} configJson - A JSON object containing config options
        */
   constructor(configJson) {
-    if (new.target == BurritoStore) {
+    if (new.target === BurritoStore) {
       throw new BurritoError('CannotConstructDirectly');
     }
     this._validator = new BurritoValidator();
     this._config = new ConfigReader(this, configJson);
-    if (this._config.storeClass != new.target.name) {
+    if (this._config.storeClass !== new.target.name) {
       throw new BurritoError('ConfigJsonForWrongClass');
     }
     this._metadataStore = null;
@@ -66,12 +66,12 @@ class BurritoStore {
       throw new BurritoError('UnableToFindMetadataId');
     }
     const configCompatibleResult = this._config.metadataCompatible(metadata);
-    if (configCompatibleResult.result != 'accepted') {
+    if (configCompatibleResult.result !== 'accepted') {
       /* console.log(configCompatibleResult); */
       throw new BurritoError('ImportedMetadataNotConfigCompatible', configCompatibleResult.reason);
     }
     const schemaValidationResult = this._validator.schemaValidate('metadata', metadata);
-    if (schemaValidationResult.result != 'accepted') {
+    if (schemaValidationResult.result !== 'accepted') {
       /* console.log(schemaValidationResult.message); */
       throw new BurritoError('ImportedMetadataNotSchemaValid', schemaValidationResult.schemaErrors);
     }
@@ -390,18 +390,18 @@ class BurritoStore {
   addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientStats) {
     const metadata = JSON.parse(
       JSON.stringify(
-        this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId)
-      )
+        this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId),
+      ),
     );
     if (!metadata) {
       throw new BurritoError('VariantNotFound');
     }
     const ingredientMetadata = {
-      "checksum": ingredientStats["checksum"],
-      "size": ingredientStats["size"],
-      "mimeType": ingredientStats["mimeType"] || "application/octet-stream"
-    }
-    for (const statsKey of ["role", "scope"]) {
+      checksum: ingredientStats.checksum,
+      size: ingredientStats.size,
+      mimeType: ingredientStats.mimeType || 'application/octet-stream',
+    };
+    for (const statsKey of ['role', 'scope']) {
       if (statsKey in ingredientStats) {
         ingredientMetadata[statsKey] = ingredientStats[statsKey];
       }
@@ -418,8 +418,8 @@ class BurritoStore {
   deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientUrl) {
     const metadata = JSON.parse(
       JSON.stringify(
-        this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId)
-      )
+        this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId),
+      ),
     );
     if (!metadata) {
       throw new BurritoError('VariantNotFound');

@@ -7,7 +7,8 @@ class MetadataStore {
     this._burritoStore = burritoStore;
   }
 
-  /** Returns [idServer, id, revision] if exactly one systemID with a revision is found, otherwise returns [null, null, null].
+  /** Returns [idServer, id, revision] if exactly one systemID with a revision is found,
+      otherwise returns [null, null, null].
      * @param {Object} metadata - metadata for a Burrito
      *@return {Array}
      */
@@ -196,8 +197,6 @@ class MetadataStore {
   __deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
-
-
 }
 
 export { MetadataStore };

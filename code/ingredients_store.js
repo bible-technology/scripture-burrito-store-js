@@ -40,7 +40,6 @@ class IngredientsStore {
   __deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
-
 }
 
 export { IngredientsStore };

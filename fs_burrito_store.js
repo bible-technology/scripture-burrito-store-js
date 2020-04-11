@@ -68,14 +68,14 @@ class FSBurritoStore extends BurritoStore {
     }
     fse.mkdirSync(toPath, { recursive: false });
     fse.writeFileSync(path.join(toPath, 'metadata.json'), JSON.stringify(md));
-    for (const [ingredientUrl, _] of Object.entries(
+    for (const [ingredientUrl] of Object.entries(
       this.ingredients(
         idServerId,
         entryId,
         revisionId,
         variantId,
       ),
-    ).filter(([x, y]) => y)
+    ).filter((xy) => xy[1])
     ) {
       const ingredientDir = path.join(toPath, path.dirname(ingredientUrl));
       if (!fse.existsSync(ingredientDir)) {
@@ -103,7 +103,7 @@ class FSBurritoStore extends BurritoStore {
     for (const revisionId of Object.keys(revisionsVariants)) {
       for (const variantId of revisionsVariants[revisionId]) {
         for (
-          let [ingredientUrl, ingredientProps] of
+          const [ingredientUrl, ingredientProps] of
           Object.entries(this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId).ingredients)
         ) {
           if (ingredientUrl in ingredientChecksumCounts) {
@@ -123,12 +123,12 @@ class FSBurritoStore extends BurritoStore {
     for (const [ingredient, checksums] of Object.entries(markReport)) {
       const ingredientPath = this._ingredientsStore.ingredientDir(idServer, entry, ingredient);
       for (const [checksum, markCount] of Object.entries(checksums)) {
-        if (markCount == 0) {
+        if (markCount === 0) {
           const checksumPath = path.join(ingredientPath, encodeURIComponent(checksum));
           fse.removeSync(checksumPath);
         }
       }
-      if (fse.readdirSync(ingredientPath).length == 0) {
+      if (fse.readdirSync(ingredientPath).length === 0) {
         fse.removeSync(ingredientPath);
       }
     }
