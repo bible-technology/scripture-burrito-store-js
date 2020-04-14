@@ -1,25 +1,25 @@
-require = require("esm")(module/*, options*/);
+require = require('esm')(module/* , options */);
 
-var createError = require('http-errors');
-var express = require('express');
-var fileUpload = require('express-fileupload');
-var hbs = require('hbs');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const fileUpload = require('express-fileupload');
+const hbs = require('hbs');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var entriesRouter = require('./routes/entries');
-var revisionsRouter = require('./routes/revisions');
-var variantsRouter = require('./routes/variants');
-var variantRouter = require('./routes/variant');
-var metadataRouter = require('./routes/metadata');
-var uploadMetadataRouter = require('./routes/upload/metadata');
-var twoLevelRouter = require('./routes/twolevel');
-var revisionsvariantsRouter = require("./routes/revisionsvariants");
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const entriesRouter = require('./routes/entries');
+const revisionsRouter = require('./routes/revisions');
+const variantsRouter = require('./routes/variants');
+const variantRouter = require('./routes/variant');
+const metadataRouter = require('./routes/metadata');
+const uploadMetadataRouter = require('./routes/upload/metadata');
+const twoLevelRouter = require('./routes/twolevel');
+const revisionsvariantsRouter = require('./routes/revisionsvariants');
+const usersRouter = require('./routes/users');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -46,12 +46,12 @@ app.use('/upload/metadata', uploadMetadataRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use((err, req, res, next) => {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -62,43 +62,43 @@ app.use(function(err, req, res, next) {
 });
 
 // Burrito setup
-const fse = require('fs-extra');
+const { createFSBurritoStore } = require('../fs_burrito_store.js');
 
-const bs = require("../fs_burrito_store.js");
-app.__burrito = {
-  "store": new bs.FSBurritoStore(
-    {
-	"storeClass": "FSBurritoStore"
-    },
-    "some_burritos"
-  )};
+(async () => {
+  try {
+    app.__burrito = {
+      store: await createFSBurritoStore(
+        {
+          storeClass: 'FSBurritoStore',
+        },
+        'some_burritos',
+      ),
+    };
+  } catch (e) {
+    // Deal with the fact the chain failed
+  }
+})();
 
 hbs.registerHelper(
-    "keysInObject",
-    function(ob) {
-	return ob.length > 0;
-    }
+  'keysInObject',
+  (ob) => ob.length > 0,
 );
-hbs.registerHelper("uriencode", encodeURIComponent);
+hbs.registerHelper('uriencode', encodeURIComponent);
 hbs.registerHelper(
-    "idServerNameOrId",
-    function(idDetails, nameLang) {
-	const lang = nameLang ? nameLang : "en";
-	console.log(nameLang);
-	if ("name" in idDetails) {
-	    return idDetails["name"]["en"];
-	} else {
-	    return idDetails["id"];
-	}
+  'idServerNameOrId',
+  (idDetails, nameLang) => {
+    const lang = nameLang || 'en';
+    console.log(nameLang);
+    if ('name' in idDetails) {
+      return idDetails.name.en;
     }
+    return idDetails.id;
+  },
 );
 hbs.registerHelper(
-    "nameInLang",
-    function(namesOb, lang) {
-	return namesOb[lang];
-    }
+  'nameInLang',
+  (namesOb, lang) => namesOb[lang],
 );
+
 //
-
 module.exports = app;
-
