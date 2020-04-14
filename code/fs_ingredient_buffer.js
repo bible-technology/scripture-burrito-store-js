@@ -11,11 +11,16 @@ class FSIngredientBuffer extends IngredientBuffer {
   /**
      * @param {string} sDir a path at which to use or create storage
      */
-  constructor(burritoStore, sDir) {
+  static async create(burritoStore, sDir) {
+    const fsIngredientBuffer = new FSIngredientBuffer(burritoStore);
+    await fsIngredientBuffer.init(sDir);
+    return fsIngredientBuffer;
+  }
+
+  async init(sDir) {
     if (!sDir) {
       throw new BurritoError('StorageDirNotDefined');
     }
-    super(burritoStore);
     this.uuidUrls = {};
     this.bufferDir = sDir + '/buffer';
     if (!fse.existsSync(this.bufferDir)) {

@@ -31,8 +31,8 @@ class FSBurritoStore extends BurritoStore {
       fse.mkdirSync(sDir, { recursive: false });
     }
     this._metadataStore = await FSMetadataStore.create(this, sDir);
-    this._ingredientsStore = new FSIngredientsStore(this, sDir);
-    this._ingredientBuffer = new FSIngredientBuffer(this, sDir);
+    this._ingredientsStore = await FSIngredientsStore.create(this, sDir);
+    this._ingredientBuffer = await FSIngredientBuffer.create(this, sDir);
   }
 
   idServerName(idServerId, nameLang) {
