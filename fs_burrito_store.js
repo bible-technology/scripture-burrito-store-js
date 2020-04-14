@@ -28,6 +28,12 @@ class FSBurritoStore extends BurritoStore {
     this._ingredientBuffer = new FSIngredientBuffer(this, sDir);
   }
 
+  static async create(configJson, sDir) {
+    const fsBurritoStore = new FSBurritoStore(configJson);
+    await fsBurritoStore.initializeIngredientsAndMetadataStores(sDir);
+    return fsBurritoStore;
+  }
+
   idServerName(idServerId, nameLang) {
     const lang = nameLang || 'en';
     const idDetails = this._metadataStore._idServers[idServerId];
@@ -98,9 +104,7 @@ class FSBurritoStore extends BurritoStore {
 }
 
 async function createFSBurritoStore(configJson, sDir) {
-  const fsBurritoStore = new FSBurritoStore(configJson);
-  await fsBurritoStore.initializeIngredientsAndMetadataStores(sDir);
-  return fsBurritoStore;
+  return FSBurritoStore.create(configJson, sDir);
 }
 
 export { FSBurritoStore, createFSBurritoStore };
