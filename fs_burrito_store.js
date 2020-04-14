@@ -1,14 +1,15 @@
+/* eslint-disable class-methods-use-this */
 import * as fse from 'fs-extra';
 import * as path from 'path';
 import * as xmldom from 'xmldom';
 
 
-import { BurritoError } from './code/burrito_error.js';
-import { BurritoStore } from './code/burrito_store.js';
+import { BurritoError } from './code/burrito_error';
+import { BurritoStore } from './code/burrito_store';
 import FSMetadataStore from './code/fs_metadata_store';
-import { FSIngredientsStore } from './code/fs_ingredients_store.js';
-import { FSIngredientBuffer } from './code/fs_ingredient_buffer.js';
-import { DBLImport } from './code/dbl_metadata_import.js';
+import { FSIngredientsStore } from './code/fs_ingredients_store';
+import { FSIngredientBuffer } from './code/fs_ingredient_buffer';
+import { DBLImport } from './code/dbl_metadata_import';
 
 class FSBurritoStore extends BurritoStore {
   /**
@@ -73,14 +74,14 @@ class FSBurritoStore extends BurritoStore {
     }
     fse.mkdirSync(toPath, { recursive: false });
     fse.writeFileSync(path.join(toPath, 'metadata.json'), JSON.stringify(md));
-    for (const [ingredientUrl, _] of Object.entries(
+    for (const [ingredientUrl] of Object.entries(
       this.ingredients(
         idServerId,
         entryId,
         revisionId,
         variantId,
       ),
-    ).filter(([x, y]) => y)
+    ).filter(([, y]) => y)
     ) {
       const ingredientDir = path.join(toPath, path.dirname(ingredientUrl));
       if (!fse.existsSync(ingredientDir)) {
