@@ -1,9 +1,13 @@
 {
   "name": "scripture-burrito-store",
   "version": "0.0.0",
-  "description": "",
+  "description": "A Javascript implementation of the Scripture Burrito processing model. ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bible-technology/scripture-burrito-store-js.git"
+  },
   "license": "Apache-2.0",
-  "main": "run_burrito.js",
+  "main": "code/burrito_store.js",
   "scripts": {
     "start": "node express/bin/www",
     "express": "node express/bin/www",
@@ -34,7 +38,6 @@
     "http-error": "0.0.6",
     "http-errors": "^1.7.3",
     "md5-file": "^4.0.0",
-    "minimalist": "^1.0.0",
     "morgan": "^1.10.0",
     "optimist": "^0.6.1",
     "readdirp": "^3.4.0",
