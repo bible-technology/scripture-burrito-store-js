@@ -1,4 +1,3 @@
-
 import * as fse from 'fs-extra';
 import { v4 as uuidv4 } from 'uuid';
 import * as md5 from 'md5-file';
@@ -26,13 +25,19 @@ class FSIngredientBuffer extends IngredientBuffer {
   }
 
   importJSBuffer(ingredientUrl, ingredientContent) {
+    const uuid = uuidv4();
+    const uuidPath = path.join(this.bufferDir, uuid);
+    fse.mkdirSync(uuidPath, { recursive: false });
+    fse.writeFileSync(path.join(uuidPath, encodeURIComponent(ingredientUrl)), ingredientContent);
+    this.uuidUrls[uuid] = ingredientUrl;
+    return uuid;
   }
 
   importFilePath(ingredientUrl, ingredientPath) {
     const uuid = uuidv4();
-    const uuidPath = this.bufferDir + '/' + uuid;
+    const uuidPath = path.join(this.bufferDir, uuid);
     fse.mkdirSync(uuidPath, { recursive: false });
-    fse.copyFileSync(ingredientPath, uuidPath + '/' + encodeURIComponent(ingredientUrl));
+    fse.copyFileSync(ingredientPath, path.join(uuidPath, encodeURIComponent(ingredientUrl)));
     this.uuidUrls[uuid] = ingredientUrl;
     return uuid;
   }
@@ -49,7 +54,7 @@ class FSIngredientBuffer extends IngredientBuffer {
     if (!(ingredientId in this.uuidUrls)) {
       throw new BurritoError('IngredientNotInBuffer');
     }
-    const ingredientPath = this.bufferDir + '/' + ingredientId + '/' + encodeURIComponent(this.uuidUrls[ingredientId]);
+    const ingredientPath = path.join(this.bufferDir, ingredientId, encodeURIComponent(this.uuidUrls[ingredientId]));
     const content = fse.readFileSync(ingredientPath);
     return content;
   }
@@ -58,7 +63,7 @@ class FSIngredientBuffer extends IngredientBuffer {
     if (!(ingredientId in this.uuidUrls)) {
       throw new BurritoError('IngredientNotInBuffer');
     }
-    const ingredientPath = this.bufferDir + '/' + ingredientId + '/' + encodeURIComponent(this.uuidUrls[ingredientId]);
+    const ingredientPath = path.join(this.bufferDir, ingredientId, encodeURIComponent(this.uuidUrls[ingredientId]));
     const fsStats = fse.statSync(ingredientPath);
     const statsRecord = {
       id: ingredientId,
@@ -72,7 +77,7 @@ class FSIngredientBuffer extends IngredientBuffer {
 
   delete(ingredientId) {
     if (ingredientId in this.uuidUrls) {
-      const ingredientDirPath = this.bufferDir + '/' + ingredientId;
+      const ingredientDirPath = path.join(this.bufferDir, ingredientId);
       fse.removeSync(ingredientDirPath);
       delete this.uuidUrls[ingredientId];
     }
@@ -88,7 +93,7 @@ class FSIngredientBuffer extends IngredientBuffer {
        Fast, back end specific way to get a buffered ingredient into the store. FS constraints of rename apply here.
      */
   fsRenameIngredient(ingredientId, destination) {
-    const ingredientPath = this.bufferDir + '/' + ingredientId + '/' + encodeURIComponent(this.uuidUrls[ingredientId]);
+    const ingredientPath = path.join(this.bufferDir, ingredientId, encodeURIComponent(this.uuidUrls[ingredientId]));
     fse.renameSync(ingredientPath, destination);
     delete this.uuidUrls[ingredientId];
   }

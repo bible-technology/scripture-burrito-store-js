@@ -29,7 +29,15 @@ class IngredientsStore {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 
-  __deleteIngredientContent(idServerId, entryId, ingredientUrl) {
+  __deleteEntry(idServerId, entryId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
+
+  __deleteEntryRevision(idServerId, entryId, revisionId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
+
+  __deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 }

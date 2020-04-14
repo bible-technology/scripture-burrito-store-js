@@ -1,3 +1,6 @@
+import * as xmldom from 'xmldom';
+import { default as AdmZip } from 'adm-zip';
+
 import { BurritoError } from './burrito_error.js';
 import { ConfigReader } from './config_reader.js';
 import { BurritoValidator } from './burrito_validator.js';
@@ -15,12 +18,12 @@ class BurritoStore {
        * @param {Object} configJson - A JSON object containing config options
        */
   constructor(configJson) {
-    if (new.target == BurritoStore) {
+    if (new.target === BurritoStore) {
       throw new BurritoError('CannotConstructDirectly');
     }
     this._validator = new BurritoValidator();
     this._config = new ConfigReader(this, configJson);
-    if (this._config.storeClass != new.target.name) {
+    if (this._config.storeClass !== new.target.name) {
       throw new BurritoError('ConfigJsonForWrongClass');
     }
     this._metadataStore = null;
@@ -63,12 +66,12 @@ class BurritoStore {
       throw new BurritoError('UnableToFindMetadataId');
     }
     const configCompatibleResult = this._config.metadataCompatible(metadata);
-    if (configCompatibleResult.result != 'accepted') {
+    if (configCompatibleResult.result !== 'accepted') {
       /* console.log(configCompatibleResult); */
       throw new BurritoError('ImportedMetadataNotConfigCompatible', configCompatibleResult.reason);
     }
     const schemaValidationResult = this._validator.schemaValidate('metadata', metadata);
-    if (schemaValidationResult.result != 'accepted') {
+    if (schemaValidationResult.result !== 'accepted') {
       /* console.log(schemaValidationResult.message); */
       throw new BurritoError('ImportedMetadataNotSchemaValid', schemaValidationResult.schemaErrors);
     }
@@ -121,8 +124,55 @@ class BurritoStore {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 
-  importFromZip(path) {
-    throw new BurritoError('MethodNotYetImplemented');
+  /**
+     Imports a variant from a DBL-style ZIP archive, referenced by FS path, using metadata.json.
+     Checks that zip contents are in metadata.
+   */
+  importFromZipfile(path) {
+    const zipArchive = new AdmZip(path);
+    const entriesLookup = {};
+    for (const entry of zipArchive.getEntries()) {
+      entriesLookup[entry.entryName] = entry;
+    }
+    const bundleMetadata = JSON.parse(zipArchive.readAsText(entriesLookup['metadata.json']));
+    const [sysUrl, entryId, entryRevision, variant] = this.importFromObject(bundleMetadata);
+    const metadataIngredients = Object.keys(bundleMetadata.ingredients);
+    for (const entry of Object.values(entriesLookup)) {
+      if (metadataIngredients.includes(entry.entryName)) {
+        const ingredientUuid = this.bufferIngredientFromJSBuffer(entry.entryName, zipArchive.readFile(entry));
+        const ingredientStats = this.bufferIngredientStats(ingredientUuid);
+        this.cacheIngredient(sysUrl, entryId, entryRevision, variant, ingredientStats);
+      }
+    }
+    return [sysUrl, entryId, entryRevision, variant];
+  }
+
+  /**
+     Imports a variant from a DBL-style ZIP archive, referenced by FS path, using metadata.xml.
+     Checks that zip contents are in metadata.
+   */
+  importFromDblZipfile(path) {
+    const zipArchive = new AdmZip(path);
+    const entriesLookup = {};
+    for (const entry of zipArchive.getEntries()) {
+      entriesLookup[entry.entryName] = entry;
+    }
+    const metadataDom = new xmldom.DOMParser().parseFromString(
+      zipArchive.readAsText(entriesLookup['metadata.xml']),
+      'text/xml',
+    );
+    const bundleMetadata = new DBLImport(metadataDom).sbMetadata;
+    const [sysUrl, entryId, entryRevision, variant] = this.importFromObject(bundleMetadata);
+    const metadataIngredients = Object.keys(bundleMetadata.ingredients);
+    for (const entry of Object.values(entriesLookup)) {
+      if (metadataIngredients.includes(entry.entryName)) {
+        const ingredientUuid = this.bufferIngredientFromJSBuffer(entry.entryName, zipArchive.readFile(entry));
+        const ingredientStats = this.bufferIngredientStats(ingredientUuid);
+        this.cacheIngredient(sysUrl, entryId, entryRevision, variant, ingredientStats);
+        this._ingredientBuffer.delete(ingredientStats.id);
+      }
+    }
+    return [sysUrl, entryId, entryRevision, variant];
   }
 
   /**
@@ -137,10 +187,10 @@ class BurritoStore {
   }
 
   exportToDir(idServerId, entryId, revisionId, variantId, toPath) {
-    throw new BurritoError('MethodNotYetImplemented');
+    throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 
-  exportToZip(idServerId, entryId, revisionId, variantId, toPath) {
+  exportToZipfile(idServerId, entryId, revisionId, variantId, toPath) {
     throw new BurritoError('MethodNotYetImplemented');
   }
 
@@ -287,6 +337,10 @@ class BurritoStore {
     return this._ingredientBuffer.importFilePath(ingredientUrl, filePath);
   }
 
+  bufferIngredientFromJSBuffer(ingredientUrl, jsBuffer) {
+    return this._ingredientBuffer.importJSBuffer(ingredientUrl, jsBuffer);
+  }
+
   bufferIngredients() {
     return this._ingredientBuffer.list();
   }
@@ -329,31 +383,52 @@ class BurritoStore {
     this._ingredientBuffer.delete(ingredientStats.id);
   }
 
-  uncacheIngredient(idServerId, entryId, revisionId, variantId, ingredientUrl) {
-    const metadata = this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId);
+  /**
+     Adds or updates an ingredient, both in the ingredients store and in the variant metadata.
+     Looks for optional mimeType, role and scope in ingredientStats.
+   */
+  addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientStats) {
+    const metadata = JSON.parse(
+      JSON.stringify(
+        this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId),
+      ),
+    );
     if (!metadata) {
       throw new BurritoError('VariantNotFound');
     }
-    const ingredientMetadata = ingredientUrl;
-    if (!ingredientMetadata) {
-      throw new BurritoError('IngredientNotFoundInMetadata');
+    const ingredientMetadata = {
+      checksum: ingredientStats.checksum,
+      size: ingredientStats.size,
+      mimeType: ingredientStats.mimeType || 'application/octet-stream',
+    };
+    for (const statsKey of ['role', 'scope']) {
+      if (statsKey in ingredientStats) {
+        ingredientMetadata[statsKey] = ingredientStats[statsKey];
+      }
     }
-    this._ingredientsStore.__deleteIngredientContent(idServerId, entryId, ingredientUrl);
+    metadata.ingredients[ingredientStats.url] = ingredientMetadata;
+    this._metadataStore.__updateVariantMetadata(idServerId, entryId, revisionId, variantId, metadata);
+    this._ingredientsStore.__writeIngredient(idServerId, entryId, ingredientStats);
+    this._ingredientBuffer.delete(ingredientStats.id);
   }
 
-  addOrUpdateIngredient(idServerId, entryId, revisionId, variantId, ingredientName, ingredientContent) {
-    // Find metadata
-    // Checksum ingredient
-    // Add or update to metadata (subclass dependent)
-    // Write content (subclass dependent)
-    throw new BurritoError('MethodNotYetImplemented');
-  }
-
-  deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientName) {
-    // Find metadata
-    // Check ingredient is in metadata
-    // Delete content (sublass dependent, no local ingredient is an error)
-    throw new BurritoError('MethodNotYetImplemented');
+  /**
+     Deletes an ingredient from metadata.
+   */
+  deleteIngredient(idServerId, entryId, revisionId, variantId, ingredientUrl) {
+    const metadata = JSON.parse(
+      JSON.stringify(
+        this._metadataStore.__variantMetadata(idServerId, entryId, revisionId, variantId),
+      ),
+    );
+    if (!metadata) {
+      throw new BurritoError('VariantNotFound');
+    }
+    const ingredientMetadata = metadata.ingredients[ingredientUrl];
+    if (ingredientMetadata) {
+      delete metadata.ingredients[ingredientUrl];
+      this._metadataStore.__updateVariantMetadata(idServerId, entryId, revisionId, variantId, metadata);
+    }
   }
 
   /* Validation */
@@ -373,15 +448,18 @@ class BurritoStore {
   /* Delete */
 
   deleteEntry(idServerId, entryId) {
-    throw new BurritoError('MethodNotYetImplemented');
+    this._ingredientsStore.__deleteEntry(idServerId, entryId);
+    this._metadataStore.__deleteEntry(idServerId, entryId);
   }
 
   deleteEntryRevision(idServerId, entryId, revisionId) {
-    throw new BurritoError('MethodNotYetImplemented');
+    this._ingredientsStore.__deleteEntryRevision(idServerId, entryId, revisionId);
+    this._metadataStore.__deleteEntryRevision(idServerId, entryId, revisionId);
   }
 
   deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
-    throw new BurritoError('MethodNotYetImplemented');
+    this._ingredientsStore.__deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId);
+    this._metadataStore.__deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId);
   }
 
   /* Utility methods */

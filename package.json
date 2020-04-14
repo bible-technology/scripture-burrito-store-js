@@ -5,6 +5,7 @@
     "license": "Apache-2.0",
     "main": "run_burrito.js",
     "dependencies": {
+        "adm-zip": "^0.4.14",
         "ajv": "^6.10.2",
         "chai": "^4.2.0",
         "crypto-js": "^4.0.0",

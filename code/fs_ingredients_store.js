@@ -1,5 +1,5 @@
-
 import * as fse from 'fs-extra';
+import * as path from 'path';
 
 import { BurritoError } from './burrito_error.js';
 import { IngredientsStore } from './ingredients_store.js';
@@ -15,14 +15,31 @@ class FSIngredientsStore extends IngredientsStore {
       throw new BurritoError('StorageDirNotDefined');
     }
     super(burritoStore);
-    this.ingredientsDir = sDir + '/ingredients';
+    this.ingredientsDir = path.join(sDir, 'ingredients');
     if (!fse.existsSync(this.ingredientsDir)) {
       fse.mkdirSync(this.ingredientsDir, { recursive: false });
     }
   }
 
+  entryDir(idServerId, entryId) {
+    return path.join(this.ingredientsDir, encodeURIComponent(idServerId), encodeURIComponent(entryId));
+  }
+
   ingredientDir(idServerId, entryId, ingredientUrl) {
-    return this.ingredientsDir + '/' + encodeURIComponent(idServerId) + '/' + entryId + '/' + encodeURIComponent(ingredientUrl);
+    return path.join(this.entryDir(idServerId, entryId), encodeURIComponent(ingredientUrl));
+  }
+
+  entryIngredientChecksums(idServerId, entryId) {
+    const ret = {};
+    const ingredients = fse.readdirSync(this.entryDir(idServerId, entryId)).map((n) => decodeURIComponent(n));
+    for (const ingredient of ingredients) {
+      ret[ingredient] = {};
+      const checksums = fse.readdirSync(this.ingredientDir(idServerId, entryId, ingredient));
+      for (const checksum of checksums) {
+        ret[ingredient][checksum] = 0;
+      }
+    }
+    return ret;
   }
 
   __writeIngredient(idServerId, entryId, ingredientStats) {
@@ -34,7 +51,7 @@ class FSIngredientsStore extends IngredientsStore {
     if (!fse.existsSync(ingredientDir)) {
       fse.mkdirSync(ingredientDir, { recursive: true });
     }
-    const ingredientFilePath = ingredientDir + '/' + ingredientStats.checksum.md5;
+    const ingredientFilePath = path.join(ingredientDir, ingredientStats.checksum.md5);
     this._burritoStore._ingredientBuffer.fsRenameIngredient(ingredientStats.id, ingredientFilePath);
   }
 
@@ -42,32 +59,29 @@ class FSIngredientsStore extends IngredientsStore {
     const ret = {};
     for (const [url, ingredientOb] of Object.entries(metadata.ingredients)) {
       const ingredientDir = this.ingredientDir(idServerId, entryId, url);
-      ret[url] = fse.existsSync(ingredientDir + '/' + ingredientOb.checksum.md5);
+      ret[url] = fse.existsSync(path.join(ingredientDir, ingredientOb.checksum.md5));
     }
     return ret;
   }
 
   __ingredientContent(idServerId, entryId, revisionId, variantId, ingredientId, metadata) {
     const ingredientChecksum = metadata.ingredients[ingredientId].checksum.md5;
-    const ingredientPath = this.ingredientDir(idServerId, entryId, ingredientId) + '/' + ingredientChecksum;
+    const ingredientPath = path.join(this.ingredientDir(idServerId, entryId, ingredientId), ingredientChecksum);
     return fse.readFileSync(ingredientPath);
   }
 
   __ingredientLocation(idServerId, entryId, revisionId, variantId, ingredientId, metadata) {
     const ingredientChecksum = metadata.ingredients[ingredientId].checksum.md5;
-    return this.ingredientDir(idServerId, entryId, ingredientId) + '/' + ingredientChecksum;
+    return path.join(this.ingredientDir(idServerId, entryId, ingredientId), ingredientChecksum);
   }
 
-  __deleteIngredientContent(idServerId, entryId, ingredientUrl) {
-    const ingredientDir = this.ingredientDir(
-      idServerId,
-      entryId,
-      ingredientUrl,
-    );
-    if (fse.existsSync(ingredientDir)) {
-      fse.removeSync(ingredientDir);
-    }
+  __deleteEntry(idServerId, entryId) {
+    fse.removeSync(this.entryDir(idServerId, entryId));
   }
+
+  __deleteEntryRevision(idServerId, entryId, revisionId) {}
+
+  __deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {}
 }
 
 export { FSIngredientsStore };

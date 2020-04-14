@@ -1,4 +1,3 @@
-
 import { BurritoError } from './burrito_error.js';
 
 class MetadataStore {
@@ -8,7 +7,8 @@ class MetadataStore {
     this._burritoStore = burritoStore;
   }
 
-  /** Returns [idServer, id, revision] if exactly one systemID with a revision is found, otherwise returns [null, null, null].
+  /** Returns [idServer, id, revision] if exactly one systemID with a revision is found,
+      otherwise returns [null, null, null].
      * @param {Object} metadata - metadata for a Burrito
      *@return {Array}
      */
@@ -145,6 +145,10 @@ class MetadataStore {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 
+  __updateVariantMetadata(sysUrl, entryId, revisionId, variantId, newMetadata) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
+
   /**
        Returns record for sysUrl or null
        * @param {string} sysUrl
@@ -179,6 +183,18 @@ class MetadataStore {
      * @param {string} metadata
      */
   __addEntryRevisionVariant(sysUrl, entryId, revisionId, metadata) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
+
+  __deleteEntry(idServerId, entryId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
+
+  __deleteEntryRevision(idServerId, entryId, revisionId) {
+    throw new BurritoError('MethodNotOverriddenBySubclass');
+  }
+
+  __deleteEntryRevisionVariant(idServerId, entryId, revisionId, variantId) {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 }
