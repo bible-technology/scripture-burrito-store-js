@@ -8,18 +8,19 @@ class FSMetadataStore extends MetadataStore {
   /**
      * @param {string} sDir a path at which to use or create storage
      */
-  constructor(burritoStore, sDir) {
+  static async create(burritoStore, sDir) {
+    const fsMetadataStore = new FSMetadataStore(burritoStore);
+    await fsMetadataStore.init(sDir);
+    return fsMetadataStore;
+  }
+
+  async init(sDir) {
     if (!sDir) {
       throw new BurritoError('StorageDirNotDefined');
     }
-    super(burritoStore);
     this._urls = {};
     this._idServers = {};
     this.metadataDir = `${sDir}/metadata`;
-    this.afterCreate();
-  }
-
-  afterCreate() {
     if (fse.existsSync(this.metadataDir)) {
       this.loadEntries();
     } else {
