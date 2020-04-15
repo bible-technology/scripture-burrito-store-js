@@ -3,12 +3,16 @@
     "path": "."
   }],
   "settings": {
-    "eslint.alwaysShowStatus": true,
-    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.fixAll.eslint": true
+    },
     "eslint.lintTask.options": "-c .eslintrc.json",
     "eslint.options": {
       "configFile": ".eslintrc.json"
-    }
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true
   },
   "launch": {
     "configurations": [{
@@ -36,5 +40,5 @@
       "christian-kohler.path-intellisense",
       "maty.vscode-mocha-sidebar",
     ]
-  }
+  },
 }
