@@ -4,7 +4,11 @@
   }],
   "settings": {
     "eslint.alwaysShowStatus": true,
-    "eslint.format.enable": true
+    "eslint.format.enable": true,
+    "eslint.lintTask.options": "-c .eslintrc.json",
+    "eslint.options": {
+      "configFile": ".eslintrc.json"
+    }
   },
   "extensions": {
     "recommendations": [
