@@ -71,7 +71,7 @@ const { createFSBurritoStore } = require('../fs_burrito_store.js');
         {
           storeClass: 'FSBurritoStore',
         },
-        'some_burritos',
+        path.join(__dirname, 'some_burritos'),
       ),
     };
   } catch (e) {
