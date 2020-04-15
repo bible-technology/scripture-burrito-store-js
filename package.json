@@ -17,6 +17,7 @@
         "prettier": "^1.19.1",
         "pretty-format": "^25.2.6",
         "readdirp": "^3.4.0",
+        "recursive-readdir-async": "^1.1.6",
         "semver": "^6.3.0",
         "sha3": "^2.1.1",
         "uuid": "^7.0.3",
