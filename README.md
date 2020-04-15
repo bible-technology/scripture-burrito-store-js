@@ -1,4 +1,5 @@
 # scripture-burrito-store-js
+
 A Javascript implementation of the Scripture Burrito processing model.
 
 ## Project Structure
@@ -15,18 +16,10 @@ A Javascript implementation of the Scripture Burrito processing model.
 
 ## Running the Tests
 
-```
-cd test
-npm run testAll
-```
+The unit tests are written with mocha as the test executor. The module provides several scripts to run some or all tests. In order to run all tests, use `npm test`.
+
+Mocha is required to be installed, so run `npm install mocha; npm test` for all tests. Other targets are "testSmoke", "testSchema", "testDbl", "testBundleImport", "testDblOab", "testSB01"
 
 ## Running Express
 
-```
-cd build
-node setup_burrito_store.js some_burritos
-cp -fr some_burritos ../express/some_burritos
-cd ../express
-npm start
-# Connect on localhost:3000
-```
+The module comes with a demo web-app launched using the express framework. In order to run the app, invoke `npm start`, which will launch a web server running on <http://localhost:3000/>
