@@ -59,7 +59,7 @@ const MegaSchema = class MegaSchema {
       }
       this.subSchema[this.currentFile] = {
         "url": v,
-        "internalPath": this.topSchema === this.currentSchema ? "" : this.internalPath(this.currentFile),
+        "internalPath": this.topSchema === this.currentSchema ? null : this.internalPath(this.currentFile),
         "fragments": {}
       };
     } else if (k === "$ref") {
