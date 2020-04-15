@@ -19,17 +19,51 @@ const MegaSchema = class MegaSchema {
   
   init(schemaPath) {
     this.currentFile = path.resolve(schemaPath);
-    this.scan(JSON.parse(fse.readFileSync(this.currentFile)));
+    this.scanFile(JSON.parse(fse.readFileSync(this.currentFile)));
+    this.collectSubSchema();
+  }
+
+  rewriteRefs(internalPath, thing) {
+    const self = this;
+    if (Array.isArray(thing)) {
+      thing.forEach(v => self.rewriteRefs(internalPath, v));
+    } else if (typeof(thing) === "object" && thing !== null) {
+      self.rewriteObject(internalPath, thing);
+    }
+  }
+
+  rewriteObject(internalPath, thing) {
+    const self = this;
+    for (const [k, v] of Object.entries(thing)) {
+      if (k === "$ref") {
+        thing[k] = this.newRef(internalPath, v);
+      } else {
+          self.rewriteRefs(internalPath, v);  
+      }
+    }
+  }
+
+  newRef(internalPath, oldRef) {
+    var ret;
+    if (oldRef.includes("#")) {
+      const refParts = oldRef.split("#");
+      ret = "#" + internalPath + refParts[1];
+    } else {
+      ret = "#" + this.internalPath(oldRef);
+    }
+    return ret;
+  }
+
+  scanFile(thing) {
+    this.scan(thing);
   }
   
-  scan (thing) {
+  scan(thing) {
     const self = this;
     if (Array.isArray(thing)) {
       thing.forEach(v => self.scan(v));
     } else if (typeof(thing) === "object" && thing !== null) {
       Object.entries(thing).forEach(function([k, v]) {self.scanTuple(k, v)});
-    } else {
-      return thing;
     }
   }
 
@@ -48,7 +82,7 @@ const MegaSchema = class MegaSchema {
     if (fragment) {
       ret += fragment;
     }
-    return ret
+    return ret;
   }
   
   scanTuple(k, v) {
@@ -81,8 +115,28 @@ const MegaSchema = class MegaSchema {
     }
   }
 
+  collectSubSchema() {
+    this.megaSchema["subSchema"] = {};
+    for (const [ssPath, ssProps] of Object.entries(this.subSchema)) {
+      if (ssProps["internalPath"] == null) {
+        const mainSchema = Object.entries(JSON.parse(fse.readFileSync(ssPath)));
+        this.rewriteRefs("/subSchema", mainSchema);
+        for (const [k, v] of mainSchema) {
+          this.megaSchema[k] = v;
+        }
+      } else {
+        const subSchemaKey = ssProps["internalPath"].split("/")[2];
+        this.megaSchema["subSchema"][subSchemaKey] = JSON.parse(fse.readFileSync(ssPath));
+        delete this.megaSchema["subSchema"][subSchemaKey]["$schema"];
+        delete this.megaSchema["subSchema"][subSchemaKey]["$id"];
+        delete this.megaSchema["subSchema"][subSchemaKey]["$$target"];
+        this.rewriteRefs(ssProps["internalPath"], this.megaSchema["subSchema"][subSchemaKey]);
+      }
+    }
+  }
+  
 }
 
 const m = new MegaSchema();
 m.init("../../schema/sb/metadata.schema.json");
-console.log(JSON.stringify(m.subSchema, null, 2));
+console.log(JSON.stringify(m.megaSchema, null, 2));
