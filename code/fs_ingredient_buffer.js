@@ -24,7 +24,7 @@ class FSIngredientBuffer extends IngredientBuffer {
     this.uuidUrls = {};
     this.bufferDir = sDir + '/buffer';
     if (!fse.existsSync(this.bufferDir)) {
-      fse.mkdirSync(this.bufferDir, { recursive: false });
+      await fse.mkdir(this.bufferDir, { recursive: false });
     } else {
       this.deleteAll();
     }

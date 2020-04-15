@@ -16,13 +16,13 @@ class FSIngredientsStore extends IngredientsStore {
     return fsIngredientsStore;
   }
 
-  init(sDir) {
+  async init(sDir) {
     if (!sDir) {
       throw new BurritoError('StorageDirNotDefined');
     }
     this.ingredientsDir = sDir + '/ingredients';
     if (!fse.existsSync(this.ingredientsDir)) {
-      fse.mkdirSync(this.ingredientsDir, { recursive: false });
+      await fse.mkdir(this.ingredientsDir, { recursive: false });
     }
   }
 
