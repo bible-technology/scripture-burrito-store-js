@@ -11,6 +11,26 @@ class IngredientBuffer {
     this._burritoStore = burritoStore;
   }
 
+  /*
+    subclasses should implement their own version to call await init(sDir)
+    to do any file operations to complete initialization.
+    * @param {string} sDir a path at which to use or create storage
+    * @return {Object} new IngredientBufferSubClass
+    */
+  static async create(burritoStore, sDir) {
+    throw new BurritoError('MethodNotOverriddenBySubclass', burritoStore, sDir);
+  }
+
+  /*
+    subclasses should call await init(sDir)
+    to do any file operations to complete initialization in create().
+    * @param {string} sDir a path at which to use or create storage
+    */
+  // eslint-disable-next-line class-methods-use-this
+  async init(sDir) {
+    throw new BurritoError('MethodNotOverriddenBySubclass', sDir);
+  }
+
   /**
        Imports a buffer as an ingredient, tagged with the ingredient URL.
      */
