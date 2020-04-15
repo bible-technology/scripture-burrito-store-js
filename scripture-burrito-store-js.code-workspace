@@ -23,7 +23,8 @@
         "request": "launch",
         "name": "Setup Burrito Store for Express",
         "skipFiles": [],
-        "program": "${workspaceFolder}/build/setup_burrito_store.js ${workspaceFolder}/express"
+        "program": "${workspaceFolder}/build/setup_burrito_store.js",
+        "args": ["${workspaceFolder}/express"]
       }
     ]
   },
