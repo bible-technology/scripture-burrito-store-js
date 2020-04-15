@@ -1,5 +1,5 @@
 import * as xmldom from 'xmldom';
-import { default as AdmZip } from 'adm-zip';
+import AdmZip from 'adm-zip';
 
 import { BurritoError } from './burrito_error.js';
 import { ConfigReader } from './config_reader.js';
@@ -33,8 +33,7 @@ class BurritoStore {
 
   /* Utilities */
 
-  /**
-     */
+  /** */
   idServerName(idServerId) {
     throw new BurritoError('MethodNotYetImplemented');
   }
@@ -191,7 +190,18 @@ class BurritoStore {
   }
 
   exportToZipfile(idServerId, entryId, revisionId, variantId, toPath) {
-    throw new BurritoError('MethodNotYetImplemented');
+    const zip = new AdmZip();
+    zip.addFile(
+      'metadata.json',
+      JSON.stringify(
+        this.metadataContent(idServerId, entryId, revisionId, variantId), null, 2,
+      ),
+    );
+    zip.writeZip(toPath, (error) => {
+      if (error) {
+        throw new BurritoError(`Error writing zip to '${toPath}', message '${error.message}'`);
+      }
+    });
   }
 
   /* toTemplate */
