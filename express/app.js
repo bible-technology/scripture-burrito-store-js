@@ -70,7 +70,7 @@ app.__burrito = {
     {
 	"storeClass": "FSBurritoStore"
     },
-    "some_burritos"
+    [__dirname, 'some_burritos'].join('/')
   )};
 
 hbs.registerHelper(
