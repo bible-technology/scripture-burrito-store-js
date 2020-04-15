@@ -10,6 +10,23 @@
       "configFile": ".eslintrc.json"
     }
   },
+  "launch": {
+    "configurations": [{
+        "type": "node",
+        "request": "launch",
+        "name": "Run Express",
+        "skipFiles": [],
+        "program": "${workspaceFolder}/express/bin/www"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Setup Burrito Store for Express",
+        "skipFiles": [],
+        "program": "${workspaceFolder}/build/setup_burrito_store.js ${workspaceFolder}/express"
+      }
+    ]
+  },
   "extensions": {
     "recommendations": [
       "eg2.vscode-npm-script",
