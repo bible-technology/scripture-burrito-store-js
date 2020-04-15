@@ -1,0 +1,40 @@
+{
+  "folders": [{
+    "path": "."
+  }],
+  "settings": {
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.options": "-c .eslintrc.json",
+    "eslint.options": {
+      "configFile": ".eslintrc.json"
+    }
+  },
+  "launch": {
+    "configurations": [{
+        "type": "node",
+        "request": "launch",
+        "name": "Run Express",
+        "skipFiles": [],
+        "program": "${workspaceFolder}/express/bin/www"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Setup Burrito Store for Express",
+        "skipFiles": [],
+        "program": "${workspaceFolder}/build/setup_burrito_store.js",
+        "args": ["${workspaceFolder}/express/some_burritos"]
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "eg2.vscode-npm-script",
+      "dbaeumer.vscode-eslint",
+      "christian-kohler.npm-intellisense",
+      "christian-kohler.path-intellisense",
+      "maty.vscode-mocha-sidebar",
+    ]
+  }
+}
