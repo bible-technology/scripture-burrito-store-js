@@ -1,6 +1,8 @@
+![Logo](./logo_s.png)
+
 # Contributing to the Project
 
-__scripture-burrito-store-js__ is a collaborative project led by Mark Howe. There are many ways to contribute.
+[scripture-burrito-store-js](../../README.md) is a collaborative project led by Mark Howe. There are many ways to contribute.
 
 ## Are you in the right place?
 
