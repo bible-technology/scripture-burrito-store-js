@@ -1,4 +1,4 @@
-![Logo](./logo_s.png)
+![Logo](./logo_xs.png)
 
 # Working with the Code
 

@@ -1,4 +1,4 @@
-![Logo](./build/readme/logo_s.png)
+![Logo](./build/readme/logo_xs.png)
 
 # scripture-burrito-store-js
 
