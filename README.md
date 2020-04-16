@@ -1,6 +1,6 @@
 # scripture-burrito-store-js
 
-A Javascript implementation of the Scripture Burrito processing model.
+A Javascript implementation of a [Scripture Burrito](http://burrito.bible) processing model.
 
 ## Project Structure
 
