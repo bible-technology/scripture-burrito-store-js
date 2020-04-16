@@ -61,14 +61,12 @@ app.use((err, req, res, next) => {
   res.render('error');
 });
 
-// Burrito setup
+// cache the app's Burrito store
 const createAppBurritoStore = require('./create_app_burrito_store').default;
 
 (async () => {
   try {
-    app.__burrito = {
-      store: await createAppBurritoStore(),
-    };
+    await createAppBurritoStore();
   } catch (e) {
     // Deal with the fact the chain failed
   }
