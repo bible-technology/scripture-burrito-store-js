@@ -1,3 +1,5 @@
+![Logo](logo_s.png)
+
 # scripture-burrito-store-js
 
 A Javascript implementation of a [Scripture Burrito](http://burrito.bible) processing model.

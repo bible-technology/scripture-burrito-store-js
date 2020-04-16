@@ -1,3 +1,5 @@
+![Logo](logo_s.png)
+
 # Working with the Code
 
 Developers working on this codebase use Linux, Windows and OSX, so the code ought to be deployable on many systems. We do not have the resources or, frankly, the inclination to try to test on every possible system.
