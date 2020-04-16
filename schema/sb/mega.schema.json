@@ -140,7 +140,7 @@
           "description": "The version of the program used."
         },
         "userId": {
-          "$ref": "#/subSchema/software_and_user_info/definitions/prefixedId",
+          "$ref": "#/subSchema/common/definitions/prefixedId",
           "description": "A system-specific user identifier."
         },
         "userName": {
@@ -389,7 +389,7 @@
     },
     "meta_default_language": {
       "title": "Scripture Burrito Meta Default Language",
-      "$ref": "#/subSchema/meta_default_language/definitions/languageTag",
+      "$ref": "#/subSchema/common/definitions/languageTag",
       "description": "The BCP47 code of the language that should be displayed, if a default is required, and for which localization is required in all name fields specified for 'catalog' validation."
     },
     "meta_comments": {
@@ -408,14 +408,14 @@
         "type": "object",
         "properties": {
           "id": {
-            "$ref": "#/subSchema/id_servers/definitions/url"
+            "$ref": "#/subSchema/common/definitions/url"
           },
           "name": {
-            "$ref": "#/subSchema/id_servers/definitions/localizedText"
+            "$ref": "#/subSchema/common/definitions/localizedText"
           }
         },
         "propertyNames": {
-          "$ref": "#/subSchema/id_servers/definitions/idServerLabel"
+          "$ref": "#/subSchema/common/definitions/idServerLabel"
         },
         "minItems": 1
       }
@@ -449,13 +449,13 @@
       },
       "properties": {
         "name": {
-          "$ref": "#/subSchema/identification/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "description": {
-          "$ref": "#/subSchema/identification/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "abbreviation": {
-          "$ref": "#/subSchema/identification/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "systemId": {
           "type": "object",
@@ -463,10 +463,10 @@
             "type": "object",
             "properties": {
               "id": {
-                "$ref": "#/subSchema/identification/definitions/bareId"
+                "$ref": "#/subSchema/common/definitions/bareId"
               },
               "revision": {
-                "$ref": "#/subSchema/identification/definitions/revisionString"
+                "$ref": "#/subSchema/common/definitions/revisionString"
               }
             },
             "required": [
@@ -477,7 +477,7 @@
           "description": "Contains identifiers in each system declared by the top-level idServers element."
         },
         "idServer": {
-          "$ref": "#/subSchema/identification/definitions/idServerLabel"
+          "$ref": "#/subSchema/common/definitions/idServerLabel"
         }
       },
       "required": [
@@ -695,28 +695,28 @@
       ],
       "allOf": [
         {
-          "$ref": "#/subSchema/type/definitions/OTConstraint"
+          "$ref": "#/subSchema/canon_constraints/definitions/OTConstraint"
         },
         {
-          "$ref": "#/subSchema/type/definitions/OTPlusConstraint"
+          "$ref": "#/subSchema/canon_constraints/definitions/OTPlusConstraint"
         },
         {
-          "$ref": "#/subSchema/type/definitions/DCConstraint"
+          "$ref": "#/subSchema/canon_constraints/definitions/DCConstraint"
         },
         {
-          "$ref": "#/subSchema/type/definitions/NTConstraint"
+          "$ref": "#/subSchema/canon_constraints/definitions/NTConstraint"
         },
         {
-          "$ref": "#/subSchema/type/definitions/OTConstraint"
+          "$ref": "#/subSchema/canon_constraints/definitions/OTConstraint"
         },
         {
-          "$ref": "#/subSchema/type/definitions/OTDCConstraint"
+          "$ref": "#/subSchema/canon_constraints/definitions/OTDCConstraint"
         },
         {
-          "$ref": "#/subSchema/type/definitions/NTConstraint2"
+          "$ref": "#/subSchema/canon_constraints/definitions/NTConstraint2"
         },
         {
-          "$ref": "#/subSchema/type/definitions/OTNTConstraint"
+          "$ref": "#/subSchema/canon_constraints/definitions/OTNTConstraint"
         }
       ]
     },
@@ -777,7 +777,7 @@
             "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
             "oneOf": [
               {
-                "$ref": "#/subSchema/text_translation/definitions/xToken"
+                "$ref": "#/subSchema/common/definitions/xToken"
               },
               {
                 "enum": [
@@ -833,7 +833,7 @@
               "type": "integer"
             },
             "timingDir": {
-              "$ref": "#/subSchema/audio_translation/definitions/path"
+              "$ref": "#/subSchema/common/definitions/path"
             }
           },
           "required": [
@@ -874,7 +874,7 @@
             "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
             "oneOf": [
               {
-                "$ref": "#/subSchema/audio_translation/definitions/xToken"
+                "$ref": "#/subSchema/common/definitions/xToken"
               },
               {
                 "enum": [
@@ -1005,7 +1005,7 @@
             "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
             "oneOf": [
               {
-                "$ref": "#/subSchema/typeset_scripture/definitions/xToken"
+                "$ref": "#/subSchema/common/definitions/xToken"
               },
               {
                 "enum": [
@@ -1257,7 +1257,7 @@
             "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
             "oneOf": [
               {
-                "$ref": "#/subSchema/embossed_braille_scripture/definitions/xToken"
+                "$ref": "#/subSchema/common/definitions/xToken"
               }
             ]
           }
@@ -1377,7 +1377,7 @@
             "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
             "oneOf": [
               {
-                "$ref": "#/subSchema/sign_language_video_translation/definitions/xToken"
+                "$ref": "#/subSchema/common/definitions/xToken"
               },
               {
                 "enum": [
@@ -1433,7 +1433,7 @@
         ]
       },
       "propertyNames": {
-        "$ref": "#/subSchema/scope/definitions/bookId"
+        "$ref": "#/subSchema/common/definitions/bookId"
       },
       "minProperties": 1
     },
@@ -1622,12 +1622,12 @@
           "title": "Custom Canon Component",
           "properties": {
             "name": {
-              "$ref": "#/subSchema/canon_spec/definitions/xToken"
+              "$ref": "#/subSchema/common/definitions/xToken"
             },
             "books": {
               "type": "array",
               "items": {
-                "$ref": "#/subSchema/canon_spec/definitions/bookId"
+                "$ref": "#/subSchema/common/definitions/bookId"
               },
               "uniqueItems": true,
               "minItems": 1
@@ -2141,7 +2141,7 @@
             "properties": {
               "bookScope": {
                 "propertyNames": {
-                  "$ref": "#/subSchema/canon_constraints/definitions/bookOT"
+                  "$ref": "#/subSchema/canon_spec/definitions/bookOT"
                 }
               }
             }
@@ -2171,7 +2171,7 @@
             "properties": {
               "bookScope": {
                 "propertyNames": {
-                  "$ref": "#/subSchema/canon_constraints/definitions/bookOTDC"
+                  "$ref": "#/subSchema/canon_spec/definitions/bookOTDC"
                 }
               }
             }
@@ -2191,7 +2191,7 @@
             "properties": {
               "bookScope": {
                 "propertyNames": {
-                  "$ref": "#/subSchema/canon_constraints/definitions/bookNT"
+                  "$ref": "#/subSchema/canon_spec/definitions/bookNT"
                 }
               }
             }
@@ -2218,7 +2218,7 @@
             "properties": {
               "bookScope": {
                 "propertyNames": {
-                  "$ref": "#/subSchema/canon_constraints/definitions/bookOTNT"
+                  "$ref": "#/subSchema/canon_spec/definitions/bookOTNT"
                 }
               }
             }
@@ -2273,10 +2273,10 @@
           "minLength": 1
         },
         "id": {
-          "$ref": "#/subSchema/relationship/definitions/prefixedId"
+          "$ref": "#/subSchema/common/definitions/prefixedId"
         },
         "revision": {
-          "$ref": "#/subSchema/relationship/definitions/revisionString"
+          "$ref": "#/subSchema/common/definitions/revisionString"
         },
         "variant": {
           "type": "string",
@@ -2360,20 +2360,20 @@
       "description": "Language section.",
       "properties": {
         "tag": {
-          "$ref": "#/subSchema/language/definitions/languageTag",
+          "$ref": "#/subSchema/common/definitions/languageTag",
           "examples": [
             "hi",
             "es-419"
           ]
         },
         "name": {
-          "$ref": "#/subSchema/language/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "numberingSystem": {
           "$ref": "#/subSchema/numbering_system"
         },
         "rod": {
-          "$ref": "#/subSchema/language/definitions/rodCode"
+          "$ref": "#/subSchema/common/definitions/rodCode"
         },
         "scriptDirection": {
           "type": "string",
@@ -2500,7 +2500,7 @@
         "code": {
           "oneOf": [
             {
-              "$ref": "#/subSchema/target_area/definitions/countryCode"
+              "$ref": "#/subSchema/common/definitions/countryCode"
             },
             {
               "$ref": "#/subSchema/unm49"
@@ -2508,7 +2508,7 @@
           ]
         },
         "name": {
-          "$ref": "#/subSchema/target_area/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         }
       },
       "required": [
@@ -2576,16 +2576,16 @@
       "description": "Describes a particular agency that is involved with or related to the contents of the burrito.",
       "properties": {
         "id": {
-          "$ref": "#/subSchema/agency/definitions/prefixedId"
+          "$ref": "#/subSchema/common/definitions/prefixedId"
         },
         "name": {
-          "$ref": "#/subSchema/agency/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "abbr": {
-          "$ref": "#/subSchema/agency/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "url": {
-          "$ref": "#/subSchema/agency/definitions/url"
+          "$ref": "#/subSchema/common/definitions/url"
         },
         "roles": {
           "type": "array",
@@ -2624,10 +2624,10 @@
             "type": "object",
             "properties": {
               "url": {
-                "$ref": "#/subSchema/copyright/definitions/url"
+                "$ref": "#/subSchema/common/definitions/url"
               },
               "ingredient": {
-                "$ref": "#/subSchema/copyright/definitions/path"
+                "$ref": "#/subSchema/common/definitions/path"
               }
             },
             "oneOf": [
@@ -2651,16 +2651,16 @@
           "description": "If set to true, the contents of this burrito are dedicated to the public domain."
         },
         "shortStatementPlain": {
-          "$ref": "#/subSchema/copyright/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "shortStatementRich": {
-          "$ref": "#/subSchema/copyright/definitions/localizedRichText"
+          "$ref": "#/subSchema/common/definitions/localizedRichText"
         },
         "fullStatementPlain": {
-          "$ref": "#/subSchema/copyright/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "fullStatementRich": {
-          "$ref": "#/subSchema/copyright/definitions/localizedRichText"
+          "$ref": "#/subSchema/common/definitions/localizedRichText"
         }
       },
       "additionalProperties": false
@@ -2672,7 +2672,7 @@
         "$ref": "#/subSchema/ingredient"
       },
       "propertyNames": {
-        "$ref": "#/subSchema/ingredients/definitions/path"
+        "$ref": "#/subSchema/common/definitions/path"
       },
       "minProperties": 1,
       "description": "Describes the various files contained by the burrito, keyed by the canonical forward-slashed pathname of the file."
@@ -2688,7 +2688,7 @@
           "description": "The number of bytes that this ingredient takes up on disk."
         },
         "mimeType": {
-          "$ref": "#/subSchema/ingredient/definitions/mimeType"
+          "$ref": "#/subSchema/common/definitions/mimeType"
         },
         "checksum": {
           "type": "object",
@@ -2806,13 +2806,13 @@
       "description": "Contains localized names for books, etc.",
       "properties": {
         "short": {
-          "$ref": "#/subSchema/name/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "long": {
-          "$ref": "#/subSchema/name/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "abbr": {
-          "$ref": "#/subSchema/name/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         }
       },
       "required": [
@@ -2828,15 +2828,15 @@
         "type": "object",
         "properties": {
           "id": {
-            "$ref": "#/subSchema/recipe_specs/definitions/trimmedText"
+            "$ref": "#/subSchema/common/definitions/trimmedText"
           },
           "href": {
             "oneOf": [
               {
-                "$ref": "#/subSchema/recipe_specs/definitions/path"
+                "$ref": "#/subSchema/common/definitions/path"
               },
               {
-                "$ref": "#/subSchema/recipe_specs/definitions/url"
+                "$ref": "#/subSchema/common/definitions/url"
               }
             ]
           },
@@ -2855,10 +2855,10 @@
       "type": "object",
       "properties": {
         "dateStarted": {
-          "$ref": "#/subSchema/progress/definitions/timestamp"
+          "$ref": "#/subSchema/common/definitions/timestamp"
         },
         "dateCompleted": {
-          "$ref": "#/subSchema/progress/definitions/timestamp"
+          "$ref": "#/subSchema/common/definitions/timestamp"
         }
       },
       "minProperties": 1,
@@ -2988,10 +2988,10 @@
       "description": "Contains promotional statements for the burrito.",
       "properties": {
         "statementPlain": {
-          "$ref": "#/subSchema/promotion/definitions/localizedText"
+          "$ref": "#/subSchema/common/definitions/localizedText"
         },
         "statementRich": {
-          "$ref": "#/subSchema/promotion/definitions/localizedRichText"
+          "$ref": "#/subSchema/common/definitions/localizedRichText"
         }
       },
       "required": [],
@@ -3008,7 +3008,7 @@
               "type": "object",
               "properties": {
                 "path": {
-                  "$ref": "#/subSchema/recipe/definitions/path"
+                  "$ref": "#/subSchema/common/definitions/path"
                 }
               }
             },
@@ -3016,13 +3016,13 @@
               "type": "object",
               "properties": {
                 "idServer": {
-                  "$ref": "#/subSchema/recipe/definitions/idServerLabel"
+                  "$ref": "#/subSchema/common/definitions/idServerLabel"
                 },
                 "id": {
-                  "$ref": "#/subSchema/recipe/definitions/bareId"
+                  "$ref": "#/subSchema/common/definitions/bareId"
                 },
                 "revision": {
-                  "$ref": "#/subSchema/recipe/definitions/revisionString"
+                  "$ref": "#/subSchema/common/definitions/revisionString"
                 }
               },
               "required": [
@@ -3060,7 +3060,7 @@
           "const": "section"
         },
         "nameId": {
-          "$ref": "#/subSchema/recipe_section/definitions/bareId"
+          "$ref": "#/subSchema/common/definitions/bareId"
         },
         "content": {
           "type": "array",
@@ -3093,10 +3093,10 @@
           "const": "element"
         },
         "nameId": {
-          "$ref": "#/subSchema/recipe_element/definitions/bareId"
+          "$ref": "#/subSchema/common/definitions/bareId"
         },
         "ingredient": {
-          "$ref": "#/subSchema/recipe_element/definitions/path"
+          "$ref": "#/subSchema/common/definitions/path"
         }
       },
       "required": [

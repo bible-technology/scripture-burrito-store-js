@@ -46,8 +46,12 @@ const MegaSchema = class MegaSchema {
   newRef(internalPath, oldRef) {
     var ret;
     if (oldRef.includes("#")) {
-      const refParts = oldRef.split("#");
-      ret = "#" + internalPath + refParts[1];
+      const [refFile, refFrag] = oldRef.split("#");
+      if (refFile == "") {
+        ret = "#" + internalPath + refFrag;
+      } else {
+        ret = "#" + this.internalPath(refFile) + refFrag;
+      }
     } else {
       ret = "#" + this.internalPath(oldRef);
     }
@@ -119,9 +123,10 @@ const MegaSchema = class MegaSchema {
     this.megaSchema["subSchema"] = {};
     for (const [ssPath, ssProps] of Object.entries(this.subSchema)) {
       if (ssProps["internalPath"] == null) {
-        const mainSchema = Object.entries(JSON.parse(fse.readFileSync(ssPath)));
+        const mainSchema = JSON.parse(fse.readFileSync(ssPath));
+        mainSchema["$id"] = "https://burrito.bible/schema/mega.schema.json";
         this.rewriteRefs("/subSchema", mainSchema);
-        for (const [k, v] of mainSchema) {
+        for (const [k, v] of Object.entries(mainSchema)) {
           this.megaSchema[k] = v;
         }
       } else {
