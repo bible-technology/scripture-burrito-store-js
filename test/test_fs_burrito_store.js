@@ -43,15 +43,14 @@ describe('FS Burrito Class', () => {
       path.join(this.testDataDir, 'ingredients', 'JHN_003_gnt.mp3'),
       path.join(this.testDataDir, 'ingredients', 'JHN_003_kjv.mp3'),
     ];
+    // create the storagePath and bundleWritePath directories.
+    fse.emptydirSync(this.storagePath);
+    fse.emptydirSync(this.bundleWritePath);
   });
 
   afterEach(function () {
-    if (fse.existsSync(this.storagePath)) {
-      fse.removeSync(this.storagePath);
-    }
-    if (fse.existsSync(this.bundleWritePath)) {
-      fse.removeSync(this.bundleWritePath);
-    }
+    fse.emptydirSync(this.storagePath);
+    fse.emptydirSync(this.bundleWritePath);
   });
 
   const ingredientCounts = function (store, idServer, entry, revision, variant) {
@@ -428,36 +427,43 @@ describe('FS Burrito Class', () => {
     const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
     const ingredientStats = b.bufferIngredientStats(ingredientUuid);
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
-    b.exportToDir('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', this.bundleWritePath);
-    assert.isTrue(fse.existsSync(path.join(this.bundleWritePath, 'metadata.json')));
-    assert.isTrue(fse.existsSync(path.join(this.bundleWritePath, 'release', 'audio', 'GEN', 'GEN_001.mp3')));
+    const toPath = path.join(this.bundleWritePath, 'export');
+    b.exportToDir('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', toPath);
+    assert.isTrue(fse.existsSync(path.join(toPath, 'metadata.json')));
+    assert.isTrue(fse.existsSync(path.join(toPath, 'release', 'audio', 'GEN', 'GEN_001.mp3')));
   });
 
   it('Implements exportToZipfile', function () {
-    const b = new FSBurritoStore({
-      storeClass: 'FSBurritoStore',
-      validation: 'burrito',
-    },
-    this.storagePath);
-    b.importFromObject(this.metadata.validAudioTranslation);
-    if (!fse.existsSync(this.bundleWritePath)) {
-      fse.mkdirSync(this.bundleWritePath, { recursive: false });
-    }
+    // setup
+    const burritoStore = new FSBurritoStore(
+      { storeClass: 'FSBurritoStore', validation: 'burrito' }, this.storagePath,
+    );
+    burritoStore.importFromObject(this.metadata.validAudioTranslation);
+    const ingredientUuid = burritoStore.bufferIngredientFromFilePath(
+      'release/audio/GEN/GEN_001.mp3',
+      this.mp3Path,
+    );
+    const ingredientStats = burritoStore.bufferIngredientStats(ingredientUuid);
+    burritoStore.cacheIngredient(
+      'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats,
+    );
+
+    // do it
     const toPath = path.join(this.bundleWritePath, '6e0d81a24efbb679.zip');
-    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', this.mp3Path);
-    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
-    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
-    b.exportToZipfile(
+    burritoStore.exportToZipfile(
       'https://thedigitalbiblelibrary.org',
       '6e0d81a24efbb679',
       '9',
       'source',
       toPath,
     );
+
+    // check results (this depends on what was added to the cache above.)
     assert.isTrue(fse.existsSync(toPath));
     const zip = new AdmZip(toPath);
-    const zipContents = zip.getEntries().map((each) => each.name);
+    const zipContents = zip.getEntries().map((each) => each.entryName);
     assert.include(zipContents, 'metadata.json', 'zip includes metadata');
+    assert.include(zipContents, ingredientStats.url, 'zip includes mp3');
   });
 
   it('Manipulates an ingredient in the ingredient buffer', function () {
