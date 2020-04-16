@@ -62,17 +62,12 @@ app.use((err, req, res, next) => {
 });
 
 // Burrito setup
-const { createFSBurritoStore } = require('../fs_burrito_store.js');
+const createAppBurritoStore = require('./create_app_burrito_store').default;
 
 (async () => {
   try {
     app.__burrito = {
-      store: await createFSBurritoStore(
-        {
-          storeClass: 'FSBurritoStore',
-        },
-        path.join(__dirname, 'some_burritos'),
-      ),
+      store: await createAppBurritoStore(),
     };
   } catch (e) {
     // Deal with the fact the chain failed
