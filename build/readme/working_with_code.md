@@ -2,7 +2,7 @@
 
 # Working with the Code
 
-Developers working on this codebase use Linux, Windows and OSX, so the code ought to be deployable on many systems. We do not have the resources or, frankly, the inclination to try to test on every possible system.
+Developers working on [this codebase](../../README.md) use Linux, Windows and OSX, so the code ought to be deployable on many systems. We do not have the resources or, frankly, the inclination to try to test on every possible system.
 
 Clone the repo, follow the instructions below and, if all goes well, you should see running tests and applications.
 
