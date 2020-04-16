@@ -109,3 +109,6 @@ dist
 
 # burrito store
 some_burritos
+
+# MacOS detritus 
+.DS_Store

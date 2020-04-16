@@ -1,32 +1,9 @@
+![Logo](./build/readme/logo_xs.png)
+
 # scripture-burrito-store-js
-A Javascript implementation of the Scripture Burrito processing model.
 
-## Project Structure
+A Javascript implementation of a [Scripture Burrito](http://burrito.bible) processing model.
 
-* **build**: Scripts and resources to make documentation and anything else that needs making
+- [Working with the code](build/readme/working_with_code.md)
 
-* **schema**: jsonschema schema
-
-* **test**: Unit tests
-
-* **doc**: Built documentation
-
-* **code**: The JS!
-
-## Running the Tests
-
-```
-cd test
-npm run testAll
-```
-
-## Running Express
-
-```
-cd build
-node setup_burrito_store.js some_burritos
-cp -fr some_burritos ../express/some_burritos
-cd ../express
-npm start
-# Connect on localhost:3000
-```
+- [Contributing to the Project](build/readme/contribute.md)

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg4516"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="C:\Users\Mark\Source\Repos\scripture-burrito-store-js\build\readme\logo_s.png"
+   inkscape:export-xdpi="299.47"
+   inkscape:export-ydpi="299.47">
+  <defs
+     id="defs4510" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.8397436"
+     inkscape:cx="384.28571"
+     inkscape:cy="794.28571"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-5"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4513">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.53917694px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.59521902"
+       x="46.763714"
+       y="93.359444"
+       id="text5077"><tspan
+         sodipodi:role="line"
+         id="tspan5075"
+         x="46.763714"
+         y="93.359444"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Archivo Narrow';-inkscape-font-specification:'Archivo Narrow Bold';fill:#cccccc;stroke-width:1.59521902">JS</tspan></text>
+    <g
+       id="g5112"
+       transform="translate(0.02581182,-1.6520479)">
+      <g
+         transform="matrix(1.0518446,0,0,1.0518446,-3.524974,1.4645749)"
+         id="g5102">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.08768559px;line-height:1.25;font-family:Brandish;-inkscape-font-specification:Brandish;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.30328822"
+           x="49.145687"
+           y="70.337997"
+           id="text5063"><tspan
+             sodipodi:role="line"
+             id="tspan5061"
+             x="49.145687"
+             y="70.337997"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Brandish;-inkscape-font-specification:Brandish;fill:#333333;stroke-width:0.30328822">scripture</tspan><tspan
+             sodipodi:role="line"
+             x="49.145687"
+             y="80.447601"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Brandish;-inkscape-font-specification:Brandish;fill:#333333;stroke-width:0.30328822"
+             id="tspan5065" /></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.08768559px;line-height:1.25;font-family:Brandish;-inkscape-font-specification:Brandish;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.30328822"
+           x="49.240044"
+           y="78.52108"
+           id="text5069"><tspan
+             sodipodi:role="line"
+             id="tspan5067"
+             x="49.240044"
+             y="78.52108"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Brandish;-inkscape-font-specification:Brandish;fill:#333333;stroke-width:0.30328822">burrito</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.08768559px;line-height:1.25;font-family:Brandish;-inkscape-font-specification:Brandish;letter-spacing:0px;word-spacing:0px;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.30328822"
+           x="49.145687"
+           y="86.468262"
+           id="text5073"><tspan
+             sodipodi:role="line"
+             id="tspan5071"
+             x="49.145687"
+             y="86.468262"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Brandish;-inkscape-font-specification:Brandish;fill:#800000;stroke-width:0.30328822">store</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

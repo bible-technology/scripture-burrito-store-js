@@ -16,6 +16,7 @@ describe('FS Burrito Class', () => {
   let metadata;
   let usxPath;
   let mp3Path;
+  let jhn3Mp3Paths;
 
   before(async () => {
     storagePath = path.join(__dirname, 'test_temp_storage');
@@ -44,6 +45,10 @@ describe('FS Burrito Class', () => {
     };
     usxPath = path.join(testDataDir, 'ingredients', 'GEN.usx');
     mp3Path = path.join(testDataDir, 'ingredients', 'GEN_001.mp3');
+    jhn3Mp3Paths = [
+      path.join(testDataDir, 'ingredients', 'JHN_003_gnt.mp3'),
+      path.join(testDataDir, 'ingredients', 'JHN_003_kjv.mp3')
+      ];
   });
 
   afterEach(async () => {
@@ -540,6 +545,10 @@ describe('FS Burrito Class', () => {
     assert.equal(b.bufferIngredients().length, 1);
     b.deleteAllBufferIngredients();
     assert.equal(b.bufferIngredients().length, 0);
+    const ingredientUuid3 = b.bufferIngredientFromJSBuffer('release/GEN_001.mp3', fse.readFileSync(mp3Path));
+    const ingredientStats3 = b.bufferIngredientStats(ingredientUuid3);
+    const ingredientContent3 = b.readBufferIngredient(ingredientUuid3);
+    assert.equal(crypto.createHash('MD5').update(ingredientContent3).digest('hex'), ingredientStats3.checksum.md5);
   });
 
   it('Implements cacheIngredient', async () => {
@@ -551,10 +560,40 @@ describe('FS Burrito Class', () => {
       storagePath,
     );
     b.importFromObject(metadata.validAudioTranslation);
+    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/0');
     const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
     const ingredientStats = b.bufferIngredientStats(ingredientUuid);
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
     assert.equal(b.bufferIngredients().length, 0);
+    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/1');
+  });
+
+  it('Implements addOrUpdateIngredient', async () => {
+    const b = await createFSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      storagePath,
+    );
+    b.importFromObject(metadata.validTextTranslation);
+    var ingredientUrl = 'release/audio/GEN/GEN_001.mp3';
+    var ingredientUuid = b.bufferIngredientFromFilePath(ingredientUrl, mp3Path);
+    var ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.addOrUpdateIngredient('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91', 'source', ingredientStats);
+    assert.equal(b.bufferIngredients().length, 0);
+    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91', 'source').join('/'), '179/1');
+    var md = b.metadataContent('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91', 'source');
+    assert.equal(md.ingredients[ingredientUrl]["mimeType"], "application/octet-stream");
+    ingredientUuid = b.bufferIngredientFromFilePath(ingredientUrl, mp3Path);
+    ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    ingredientStats["mimeType"] = "audio/mpeg";
+    ingredientStats["scope"] = {"GEN": ["1"]};
+    b.addOrUpdateIngredient('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91', 'source', ingredientStats);
+    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91', 'source').join('/'), '179/1');
+    md = b.metadataContent('https://thedigitalbiblelibrary.org', '2880c78491b2f8ce', '91', 'source');
+    assert.equal(md.ingredients[ingredientUrl]["mimeType"], "audio/mpeg");
+    assert.equal(md.ingredients[ingredientUrl]["scope"]["GEN"][0], "1");
   });
 
   it('Implements uncacheIngredient', async () => {
@@ -570,8 +609,8 @@ describe('FS Burrito Class', () => {
     const ingredientStats = b.bufferIngredientStats(ingredientUuid);
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
     assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/1');
-    b.uncacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats.url);
-    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '6/0');
+    b.deleteIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats.url);
+    assert.equal(ingredientCounts(b, 'https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source').join('/'), '5/0');
   });
 
   it('Implements ingredients (list)', async () => {
@@ -619,6 +658,109 @@ describe('FS Burrito Class', () => {
     b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
     const location = b.ingredientLocation('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', 'release/audio/GEN/GEN_001.mp3');
   });
+
+  it('Implements deleteEntryRevisionVariant', async () => {
+    const b = await createFSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      storagePath,
+    );
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
+    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 1);
+    b.deleteEntryRevisionVariant('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source');
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 0);
+  });
+
+  it('Implements deleteEntryRevision', async () => {
+    const b = await createFSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      storagePath,
+    );
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
+    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 1);
+    b.deleteEntryRevision('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9');
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 0);
+  });
+
+  it('Implements deleteEntry', async () => {
+    const b = await createFSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      storagePath,
+    );
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
+    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 1);
+    b.deleteEntry('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679');
+    assert.equal(b.entries('https://thedigitalbiblelibrary.org').length, 0);
+  });
+
+  // Tests for persistant stores only (currently fs_burrito_store)
+
+  it('Implements Garbage Collection for One Entry', async () => {
+    const b = await createFSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      storagePath,
+    );
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
+    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    jhn3Mp3Paths.forEach(function (jhn3path) {
+      var ingredientUuid = b.bufferIngredientFromFilePath('release/audio/JHN/JHN_003.mp3', jhn3path);
+      var ingredientStats = b.bufferIngredientStats(ingredientUuid);
+      b.addOrUpdateIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    });
+    var jhn3Report = b.gcMark('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679')["release/audio/JHN/JHN_003.mp3"];
+    assert.equal(Object.keys(jhn3Report).length, 2);
+    b.gc('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679');
+    jhn3Report = b.gcMark('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679')["release/audio/JHN/JHN_003.mp3"];
+    assert.equal(Object.keys(jhn3Report).length, 1);
+  });
+
+
+  it('Implements Garbage Collection for Whole Store', async () => {
+    const b = await createFSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      storagePath,
+    );
+    b.importFromObject(metadata.validAudioTranslation);
+    const ingredientUuid = b.bufferIngredientFromFilePath('release/audio/GEN/GEN_001.mp3', mp3Path);
+    const ingredientStats = b.bufferIngredientStats(ingredientUuid);
+    b.cacheIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    jhn3Mp3Paths.forEach(function (jhn3path) {
+      var ingredientUuid = b.bufferIngredientFromFilePath('release/audio/JHN/JHN_003.mp3', jhn3path);
+      var ingredientStats = b.bufferIngredientStats(ingredientUuid);
+      b.addOrUpdateIngredient('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679', '9', 'source', ingredientStats);
+    });
+    var jhn3Report = b.gcMark('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679')["release/audio/JHN/JHN_003.mp3"];
+    assert.equal(Object.keys(jhn3Report).length, 2);
+    b.gcAll();
+    jhn3Report = b.gcMark('https://thedigitalbiblelibrary.org', '6e0d81a24efbb679')["release/audio/JHN/JHN_003.mp3"];
+    assert.equal(Object.keys(jhn3Report).length, 1);
+  });
+
 
   // eslint-disable-next-line mocha/no-skipped-tests
   it('Persistant metadata storage', async () => {

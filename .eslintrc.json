@@ -6,6 +6,22 @@
     "no-restricted-syntax": "off", // allows for-of https://github.com/airbnb/javascript/issues/1271
     "no-extra-parens": "off",
     "prefer-destructuring": "off",
-    "prefer-template": "off"
+    "prefer-template": "off",
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": "always",
+        "ObjectPattern": {
+          "multiline": true
+        },
+        "ImportDeclaration": "never",
+        "ExportDeclaration": {
+          "multiline": true,
+          "minProperties": 2
+        }
+      }
+    ],
+    "function-call-argument-newline": ["error", "consistent"],
+    "array-element-newline": ["error", "consistent"]
   }
 }

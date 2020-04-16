@@ -11,11 +11,13 @@ describe('Bundle Import', () => {
   let storagePath;
   let testDataDir;
   let bundleDir;
+  let zip;
 
   before(async () => {
     storagePath = path.join(__dirname, 'test_temp_storage');
     testDataDir = path.join(__dirname, 'test_data');
     bundleDir = path.join(testDataDir, 'dbl_bundles', 'dbl_unit_test_text');
+    zip = path.join(testDataDir, 'zips', 'dbl_unit_test_text.zip');
   });
 
   afterEach(async () => {
@@ -24,7 +26,19 @@ describe('Bundle Import', () => {
     }
   });
 
-  it('Import DBL Unit Test Text Entry using Stored SB Metadata', async () => {
+  it('Imports DBL Unit Test Text Entry from Zipfile using metadata.json', async () => {
+    const b = await createFSBurritoStore(
+      {
+        storeClass: 'FSBurritoStore',
+        validation: 'burrito',
+      },
+      storagePath,
+    );
+    const [sysUrl, entryId, entryRevision, variant] = b.importFromZipfile(zip);
+    assert.equal(Object.keys(b.ingredients(sysUrl, entryId, entryRevision, variant)).length, 8);
+  });
+
+  it('Imports DBL Unit Test Text Entry using Stored SB Metadata', async () => {
     const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
