@@ -1,4 +1,4 @@
-![Logo](logo_s.png)
+![Logo](./logo_s.png)
 
 # Contributing to the Project
 
