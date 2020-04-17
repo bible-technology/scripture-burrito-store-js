@@ -1,36 +1,42 @@
-
 require = require('esm')(module /* , options */);
 const assert = require('chai').assert;
 const path = require('path');
 const fse = require('fs-extra');
 
-const FSBurritoStore = require('../fs_burrito_store.js').FSBurritoStore;
+const { createFSBurritoStore } = require('../fs_burrito_store.js');
 
-describe('Schema', function() {
-  before(function () {
-    this.testDataDir = path.join(__dirname, 'test_data');
-    this.storagePath = path.join(__dirname, 'test_temp_storage');
-    const metadataDir = path.join(this.testDataDir, 'metadata');
-    this.validTextTranslation = JSON.parse(
+describe('Schema', () => {
+  let testDataDir;
+  let storagePath;
+  let metadataDir;
+  let validTextTranslation;
+
+  // eslint-disable-next-line mocha/no-hooks-for-single-case
+  before(async () => {
+    testDataDir = path.join(__dirname, 'test_data');
+    storagePath = path.join(__dirname, 'test_temp_storage');
+    metadataDir = path.join(testDataDir, 'metadata');
+    validTextTranslation = JSON.parse(
       fse.readFileSync(path.join(metadataDir, 'textTranslation.json'), 'utf8'),
     );
   });
 
-  afterEach(function () {
-    if (fse.existsSync(this.storagePath)) {
-      fse.removeSync(this.storagePath);
+  // eslint-disable-next-line mocha/no-hooks-for-single-case
+  afterEach(async () => {
+    if (fse.existsSync(storagePath)) {
+      fse.removeSync(storagePath);
     }
   });
 
-  it('Accept test textTranslation document', function () {
-    const b = new FSBurritoStore(
+  it('Accept test textTranslation document', async () => {
+    const b = await createFSBurritoStore(
       {
         storeClass: 'FSBurritoStore',
       },
-      this.storagePath,
+      storagePath,
     );
     try {
-      b.importFromObject(this.validTextTranslation);
+      b.importFromObject(validTextTranslation);
     } catch (err) {
       console.log(err.message);
       console.log(err.arg);

@@ -1,8 +1,8 @@
 import * as fse from 'fs-extra';
 import * as path from 'path';
 
-import { BurritoError } from './burrito_error.js';
-import { IngredientsStore } from './ingredients_store.js';
+import { BurritoError } from './burrito_error';
+import { IngredientsStore } from './ingredients_store';
 
 class FSIngredientsStore extends IngredientsStore {
   /**
@@ -10,14 +10,19 @@ class FSIngredientsStore extends IngredientsStore {
        Dir structure is idServer/entryId/ingredientId/checksum
        * @param {string} sDir a path at which to use or create storage
        */
-  constructor(burritoStore, sDir) {
+  static async create(burritoStore, sDir) {
+    const fsIngredientsStore = new FSIngredientsStore(burritoStore);
+    await fsIngredientsStore.init(sDir);
+    return fsIngredientsStore;
+  }
+
+  async init(sDir) {
     if (!sDir) {
       throw new BurritoError('StorageDirNotDefined');
     }
-    super(burritoStore);
     this.ingredientsDir = path.join(sDir, 'ingredients');
     if (!fse.existsSync(this.ingredientsDir)) {
-      fse.mkdirSync(this.ingredientsDir, { recursive: false });
+      await fse.mkdir(this.ingredientsDir, { recursive: false });
     }
   }
 

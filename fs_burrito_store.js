@@ -1,14 +1,15 @@
+/* eslint-disable class-methods-use-this */
 import * as fse from 'fs-extra';
 import * as path from 'path';
 import * as xmldom from 'xmldom';
 
 
-import { BurritoError } from './code/burrito_error.js';
-import { BurritoStore } from './code/burrito_store.js';
+import { BurritoError } from './code/burrito_error';
+import { BurritoStore } from './code/burrito_store';
 import FSMetadataStore from './code/fs_metadata_store';
-import { FSIngredientsStore } from './code/fs_ingredients_store.js';
-import { FSIngredientBuffer } from './code/fs_ingredient_buffer.js';
-import { DBLImport } from './code/dbl_metadata_import.js';
+import { FSIngredientsStore } from './code/fs_ingredients_store';
+import { FSIngredientBuffer } from './code/fs_ingredient_buffer';
+import { DBLImport } from './code/dbl_metadata_import';
 
 class FSBurritoStore extends BurritoStore {
   /**
@@ -16,17 +17,22 @@ class FSBurritoStore extends BurritoStore {
        Metadata is loaded into working memory but cached using the filesystem.
        Ingredients are stored using the filesystem.
     */
-  constructor(configJson, sDir) {
+  static async create(configJson, sDir) {
+    const fsBurritoStore = new FSBurritoStore(configJson);
+    await fsBurritoStore.init(sDir);
+    return fsBurritoStore;
+  }
+
+  async init(sDir) {
     if (!sDir) {
       throw new BurritoError('StorageDirNotDefined');
     }
-    super(configJson);
     if (!fse.existsSync(sDir)) {
       fse.mkdirSync(sDir, { recursive: false });
     }
-    this._metadataStore = new FSMetadataStore(this, sDir);
-    this._ingredientsStore = new FSIngredientsStore(this, sDir);
-    this._ingredientBuffer = new FSIngredientBuffer(this, sDir);
+    this._metadataStore = await FSMetadataStore.create(this, sDir);
+    this._ingredientsStore = await FSIngredientsStore.create(this, sDir);
+    this._ingredientBuffer = await FSIngredientBuffer.create(this, sDir);
   }
 
   idServerName(idServerId, nameLang) {
@@ -143,4 +149,8 @@ class FSBurritoStore extends BurritoStore {
   }
 }
 
-export { FSBurritoStore };
+async function createFSBurritoStore(configJson, sDir) {
+  return FSBurritoStore.create(configJson, sDir);
+}
+
+export { FSBurritoStore, createFSBurritoStore };

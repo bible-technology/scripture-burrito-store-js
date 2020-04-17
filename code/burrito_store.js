@@ -31,6 +31,26 @@ class BurritoStore {
     this._ingredientBuffer = null;
   }
 
+  /*
+    subclasses should implement their own version to call await init(sDir)
+    to do any file operations to complete initialization.
+    * @param {Object} configJson - A JSON object containing config options
+    * @param {string} sDir a path at which to use or create storage
+    * @return {Object} new BurritoStoreSubClass
+    */
+  static async create(configJson, sDir) {
+    throw new BurritoError('MethodNotYetImplemented', configJson, sDir);
+  }
+
+  /*
+    subclasses should call await init(sDir)
+    to do any file operations to complete initialization in create().
+    * @param {string} sDir a path at which to use or create storage
+    */
+  // eslint-disable-next-line class-methods-use-this
+  async init(sDir) {
+    throw new BurritoError('MethodNotYetImplemented', sDir);
+  }
   /* Utilities */
 
   /**

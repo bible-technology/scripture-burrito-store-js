@@ -1,24 +1,45 @@
 import * as fse from 'fs-extra';
-import * as path from 'path';
 import deepEqual from 'deep-equal';
+import rra from 'recursive-readdir-async';
+import path from 'path';
 
 import { BurritoError } from './burrito_error';
 import { MetadataStore } from './metadata_store';
+
+function pushMultiKeyValue(dict, keys, value) {
+  return keys.reduce((acc, key, i, a) => {
+    if (i === a.length - 1) {
+      acc[key] = value;
+      return dict;
+    }
+    const newContainer = {};
+    const nextContainer = acc[key] || newContainer;
+    if (nextContainer === newContainer) {
+      acc[key] = newContainer;
+    }
+    return nextContainer;
+  }, dict);
+}
 
 class FSMetadataStore extends MetadataStore {
   /**
      * @param {string} sDir a path at which to use or create storage
      */
-  constructor(burritoStore, sDir) {
+  static async create(burritoStore, sDir) {
+    const fsMetadataStore = new FSMetadataStore(burritoStore);
+    await fsMetadataStore.init(sDir);
+    return fsMetadataStore;
+  }
+
+  async init(sDir) {
     if (!sDir) {
       throw new BurritoError('StorageDirNotDefined');
     }
-    super(burritoStore);
     this._urls = {};
     this._idServers = {};
     this.metadataDir = path.join(sDir, 'metadata');
     if (fse.existsSync(this.metadataDir)) {
-      this.loadEntries();
+      await this.loadEntries();
     } else {
       fse.mkdirSync(this.metadataDir, { recursive: false });
     }
@@ -26,56 +47,44 @@ class FSMetadataStore extends MetadataStore {
 
   /**
      */
-  loadEntries() {
+  async loadEntries() {
     const self = this;
-    fse.readdir(self.metadataDir, (err, urls) => {
-      if (err) {
-        console.log(err);
-        throw new BurritoError('loadEntriesUrls');
-      }
-      urls.forEach((url) => {
-        const decodedUrl = decodeURIComponent(url);
-        self._urls[decodedUrl] = {};
-        const urlDir = path.join(self.metadataDir, url);
-        fse.readdir(urlDir, (errReaddir, entries) => {
-          if (errReaddir) {
-            console.log(errReaddir);
-            throw new BurritoError('loadEntriesEntries');
-          }
-          entries.forEach((entry) => {
-            const decodedEntry = decodeURIComponent(entry);
-            self._urls[decodedUrl][decodedEntry] = {};
-            const entryDir = path.join(urlDir, entry);
-            fse.readdir(entryDir, (errForEntry, revisions) => {
-              if (errForEntry) {
-                console.log(errForEntry);
-                throw new BurritoError('loadEntriesRevisions');
-              }
-              revisions.forEach((revision) => {
-                const decodedRevision = decodeURIComponent(revision);
-                self._urls[decodedUrl][decodedEntry][decodedRevision] = {};
-                const revisionDir = path.join(entryDir, revision);
-                fse.readdir(revisionDir, (errForRevision, variants) => {
-                  if (errForRevision) {
-                    console.log(errForRevision);
-                    throw new BurritoError('loadEntriesVariants');
-                  }
-                  variants.forEach((variant) => {
-                    const decodedVariant = decodeURIComponent(variant);
-                    const variantDir = path.join(revisionDir, variant, 'metadata.json');
-                    const metadata = JSON.parse(fse.readFileSync(variantDir));
-                    self._urls[decodedUrl][decodedEntry][decodedRevision][
-                      decodedVariant
-                    ] = metadata;
-                    self.__updateIdServerRecordFromMetadata(metadata);
-                  });
-                });
-              });
-            });
-          });
-        });
-      });
-    });
+    try {
+      const options = {
+        mode: rra.LIST,
+        recursive: true,
+        stats: false,
+        ignoreFolders: true,
+        extensions: true,
+        deep: false,
+        realPath: true,
+        normalizePath: true,
+        include: ['metadata.json'],
+        exclude: [],
+        readContent: true,
+        encoding: 'utf8',
+      };
+      const list = await rra.list(self.metadataDir, options);
+      const normalizedMetadataDir = path.normalize(self.metadataDir).replace('\\', '/');
+      const { urlTree, metadataList} = list.reduce((acc, currentValue) => {
+        const relativePath = currentValue.path.substr(normalizedMetadataDir.length);
+        const [,
+          decodedUrl,
+          decodedEntry,
+          decodedRevision,
+          decodedVariant,
+        ] = relativePath.split('/').map(decodeURIComponent);
+        const metadataJson = JSON.parse(currentValue.data);
+        pushMultiKeyValue(acc.urlTree, [decodedUrl, decodedEntry, decodedRevision, decodedVariant], metadataJson);
+        acc.metadataList.push(metadataJson);
+        return acc;
+      }, { urlTree: {}, metadataList: [] });
+      self._urls = urlTree;
+      Object.values(metadataList).forEach((metadataJson) => self.__updateIdServerRecordFromMetadata(metadataJson));
+    } catch (err) {
+      console.log(err);
+      throw new BurritoError('loadEntriesUrls');
+    }
   }
 
   /**
