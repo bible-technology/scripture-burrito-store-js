@@ -1,0 +1,3122 @@
+{
+  "subSchema": {
+    "source_metadata": {
+      "title": "Scripture Burrito Metadata (Default)",
+      "type": "object",
+      "description": "Scripture Burrito source kinda-variant root.",
+      "properties": {
+        "meta": {
+          "$ref": "#/subSchema/source_meta"
+        },
+        "idServers": {
+          "$ref": "#/subSchema/id_servers"
+        },
+        "identification": {
+          "$ref": "#/subSchema/identification"
+        },
+        "confidentiality": {
+          "$ref": "#/subSchema/confidentiality"
+        },
+        "type": {
+          "$ref": "#/subSchema/type"
+        },
+        "relationships": {
+          "$ref": "#/subSchema/relationships"
+        },
+        "languages": {
+          "$ref": "#/subSchema/languages"
+        },
+        "targetAreas": {
+          "$ref": "#/subSchema/target_areas"
+        },
+        "agencies": {
+          "$ref": "#/subSchema/agencies"
+        },
+        "copyright": {
+          "$ref": "#/subSchema/copyright"
+        },
+        "ingredients": {
+          "$ref": "#/subSchema/ingredients"
+        },
+        "names": {
+          "$ref": "#/subSchema/names"
+        },
+        "recipeSpecs": {
+          "$ref": "#/subSchema/recipe_specs"
+        },
+        "progress": {
+          "$ref": "#/subSchema/progress"
+        }
+      },
+      "required": [
+        "meta",
+        "idServers",
+        "identification",
+        "confidentiality",
+        "type"
+      ],
+      "additionalProperties": false,
+      "if": {
+        "properties": {
+          "type": {
+            "properties": {
+              "flavorType": {
+                "enum": [
+                  "scripture",
+                  "gloss"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "languages",
+          "names"
+        ]
+      }
+    },
+    "source_meta": {
+      "title": "Scripture Burrito Meta (Default)",
+      "type": "object",
+      "description": "Information about the Scripture Burrito metadata file (default variant).",
+      "properties": {
+        "variant": {
+          "type": "string",
+          "const": "source",
+          "description": "The type of variant represented in the burrito (which must be source which we pretend is not a variant even though it kinda is really)."
+        },
+        "dateCreated": {
+          "$ref": "#/subSchema/meta_date_created"
+        },
+        "version": {
+          "$ref": "#/subSchema/meta_version"
+        },
+        "generator": {
+          "$ref": "#/subSchema/software_and_user_info",
+          "description": "Information about the program and user who generated this burrito."
+        },
+        "uploader": {
+          "$ref": "#/subSchema/software_and_user_info",
+          "description": "Information about the program and user who uploaded this burrito."
+        },
+        "defaultLanguage": {
+          "$ref": "#/subSchema/meta_default_language"
+        },
+        "comments": {
+          "$ref": "#/subSchema/meta_comments"
+        }
+      },
+      "required": [
+        "version",
+        "variant",
+        "dateCreated",
+        "defaultLanguage"
+      ],
+      "additionalProperties": false
+    },
+    "meta_date_created": {
+      "title": "Scripture Burrito Meta Date created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "meta_version": {
+      "title": "Scripture Burrito Meta Version",
+      "type": "string",
+      "pattern": "^[0-9]+(\\.[0-9]+)*$",
+      "description": "Version of the Scripture Burrito specification this file follows."
+    },
+    "software_and_user_info": {
+      "title": "Scripture Burrito Software and User Info",
+      "type": "object",
+      "properties": {
+        "softwareName": {
+          "type": "string",
+          "description": "The name of the program used."
+        },
+        "softwareVersion": {
+          "type": "string",
+          "description": "The version of the program used."
+        },
+        "userId": {
+          "$ref": "#/subSchema/common/definitions/prefixedId",
+          "description": "A system-specific user identifier."
+        },
+        "userName": {
+          "type": "string",
+          "description": "The user's full name, if known."
+        }
+      },
+      "required": [
+        "softwareName",
+        "softwareVersion"
+      ],
+      "additionalProperties": false
+    },
+    "common": {
+      "title": "Scripture Burrito Common Definitions",
+      "description": "Common definitions for use by other parts of the schema.",
+      "definitions": {
+        "timestamp": {
+          "type": "string",
+          "pattern": "^[12][0-9]{3}(-[01][0-9](-[0123][0-9])?)?$"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^((http(s)?|ftp)://)[^\\s$]+$",
+          "minLength": 1,
+          "description": "A valid **Uniform Resource Locator**.",
+          "examples": [
+            "https://example.com"
+          ]
+        },
+        "xToken": {
+          "type": "string",
+          "pattern": "^x-[a-z][A-za-z0-9]*$",
+          "description": "User-defined token, prefixed with x-"
+        },
+        "idServerLabel": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9\\-]*[a-z0-9]$",
+          "description": "A Label for an ID server (internal to the document)"
+        },
+        "bareId": {
+          "type": "string",
+          "pattern": "^\\S+$",
+          "description": "Opaque system-specific identifier, without prefix."
+        },
+        "prefixedId": {
+          "type": "string",
+          "pattern": "^[0-9a-zA-Z][0-9a-zA-Z\\-]{1,31}::\\S+$",
+          "description": "Opaque system-specific identifier, prefixed with the name of the system as declared in idServers."
+        },
+        "revisionString": {
+          "type": "string",
+          "pattern": "^[0-9A-Za-z]([0-9A-Za-z_.:\\-]{0,62}[0-9A-Za-z])?$",
+          "description": "Opaque system-specific revision identifier."
+        },
+        "languageTag": {
+          "type": "string",
+          "pattern": "^(((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang))|((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+))$",
+          "minLength": 2,
+          "description": "A valid IETF language tag as specified by BCP 47."
+        },
+        "countryCode": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z]$",
+          "minLength": 2,
+          "maxLength": 2,
+          "description": "The upper-case ISO 3166-2 code for the country."
+        },
+        "rodCode": {
+          "type": "string",
+          "pattern": "^[0-9]{5}$",
+          "minLength": 5,
+          "maxLength": 5,
+          "description": "A five-digit code from the Registry of Dialects."
+        },
+        "trimmedText": {
+          "type": "string",
+          "pattern": "^\\S(.*\\S)?$",
+          "description": "A string without surrounding whitespace characters."
+        },
+        "localizedText": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/subSchema/common/definitions/trimmedText"
+          },
+          "propertyNames": {
+            "$ref": "#/subSchema/common/definitions/languageTag"
+          },
+          "minProperties": 1,
+          "description": "A textual string specified in one or multiple languages, indexed by IETF language tag."
+        },
+        "simplifiedXHTML": {
+          "type": "string",
+          "contentMediaType": "text/xml",
+          "minLength": 4,
+          "allOf": [
+            {
+              "$comment": "Check top-level block elements. This is imperfect and is liable to skip over tags if a <li> or nested <blockquote> is present, but fully validating XML using RegEx is impossible, and this suffices for the common case of simple formatted text.",
+              "pattern": "^((<(p|h1|h2|h3)\\s*/>|<p\\s*>([^<]|<[^p])*</p\\s*>|<h1\\s*>([^<]|<[^h])*</h1\\s*>|<h2\\s*>([^<]|<[^h])*</h2\\s*>|<h3\\s*>([^<]|<[^h])*</h3\\s*>|<ol\\s*>\\s*((<li\\s*/>|<li\\s*>.*</li\\s*>)\\s*)+</ol\\s*>|<ul\\s*>\\s*((<li\\s*/>|<li\\s*>.*</li\\s*>)\\s*)+</ul\\s*>|<blockquote\\s*>(<(p|h1|h2|h3)\\s*/>|<(p|h[123])\\s*>([^<]|<[^ph])*</(p|h[123])\\s*>|<ol\\s*>(<li\\s*/>|<li\\s*>.*</li\\s*>)+</ol\\s*>|<ul\\s*>(<li\\s*/>|<li\\s*>.*</li\\s*>)+</ul\\s*>|<blockquote\\s*>.+</blockquote\\s*>)+</blockquote\\s*>)\\s*)+$"
+            },
+            {
+              "$comment": "Ensure that no invalid tags are present, check inline markup in <p> and <h#> (noting that <li> may contain pretty much anything), and prevent improper nesting of <li> tags.",
+              "pattern": "^([^<]|<(p|h[123]|a|br|strong|b|em|i)\\s*/>|</?(a|br|strong|b|em|i|blockquote)\\s*>|<(p|h[123])\\s*>([^<]|<img(\\s+(alt|src)=(\"[^<\"]*\"|'[^<']*'))+\\s*(/>|>\\s*</img\\s*>)|<a\\s+href=(\"[^<\"]+\"|'[^<']+')\\s*/?>|</?(a|br|strong|b|em|i)\\s*/?>)*</(p|h[123])\\s*>|<[ou]l\\s*>(\\s|<li\\s*/>)*<li\\s*/?>|</li\\s*>(\\s|<li\\s*/>)*(<li\\s*>|</[ou]l\\s*>))+$"
+            }
+          ],
+          "description": "A rich text string specified in a limited subset of XHTML."
+        },
+        "localizedRichText": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/subSchema/common/definitions/simplifiedXHTML"
+          },
+          "propertyNames": {
+            "$ref": "#/subSchema/common/definitions/languageTag"
+          },
+          "minProperties": 1,
+          "description": "A simplified XHTML string specified in one or multiple languages, indexed by IETF language tag."
+        },
+        "bookId": {
+          "type": "string",
+          "pattern": "^[A-Z0-9]{3}$",
+          "minLength": 3,
+          "maxLength": 3,
+          "enum": [
+            "GEN",
+            "EXO",
+            "LEV",
+            "NUM",
+            "DEU",
+            "JOS",
+            "JDG",
+            "RUT",
+            "1SA",
+            "2SA",
+            "1KI",
+            "2KI",
+            "1CH",
+            "2CH",
+            "EZR",
+            "NEH",
+            "EST",
+            "JOB",
+            "PSA",
+            "PRO",
+            "ECC",
+            "SNG",
+            "ISA",
+            "JER",
+            "LAM",
+            "EZK",
+            "DAN",
+            "HOS",
+            "JOL",
+            "AMO",
+            "OBA",
+            "JON",
+            "MIC",
+            "NAM",
+            "HAB",
+            "ZEP",
+            "HAG",
+            "ZEC",
+            "MAL",
+            "MAT",
+            "MRK",
+            "LUK",
+            "JHN",
+            "ACT",
+            "ROM",
+            "1CO",
+            "2CO",
+            "GAL",
+            "EPH",
+            "PHP",
+            "COL",
+            "1TH",
+            "2TH",
+            "1TI",
+            "2TI",
+            "TIT",
+            "PHM",
+            "HEB",
+            "JAS",
+            "1PE",
+            "2PE",
+            "1JN",
+            "2JN",
+            "3JN",
+            "JUD",
+            "REV",
+            "TOB",
+            "JDT",
+            "ESG",
+            "WIS",
+            "SIR",
+            "BAR",
+            "LJE",
+            "S3Y",
+            "SUS",
+            "BEL",
+            "1MA",
+            "2MA",
+            "3MA",
+            "4MA",
+            "1ES",
+            "2ES",
+            "MAN",
+            "PS2",
+            "ODA",
+            "PSS",
+            "JSA",
+            "JDB",
+            "TBS",
+            "SST",
+            "DNT",
+            "BLT",
+            "EZA",
+            "5EZ",
+            "6EZ",
+            "DAG",
+            "PS3",
+            "2BA",
+            "LBA",
+            "JUB",
+            "ENO",
+            "1MQ",
+            "2MQ",
+            "3MQ",
+            "REP",
+            "4BA",
+            "LAO"
+          ],
+          "description": "A standard book code consisting of three uppercase alphanumerics."
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^[^\\/:?*\"><|]+(/[^\\/:?*\"><|]+)*$",
+          "description": "A file path, delimited by forward slashes."
+        },
+        "mimeType": {
+          "type": "string",
+          "pattern": "^[\\-a-z0-9]+/[\\-a-z0-9+]+$",
+          "description": "An IANA media type (also known as MIME type)"
+        }
+      }
+    },
+    "meta_default_language": {
+      "title": "Scripture Burrito Meta Default Language",
+      "$ref": "#/subSchema/common/definitions/languageTag",
+      "description": "The BCP47 code of the language that should be displayed, if a default is required, and for which localization is required in all name fields specified for 'catalog' validation."
+    },
+    "meta_comments": {
+      "title": "Scripture Burrito Meta Comments",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Arbitrary text strings attached by users with no effect on the interpretation of the Scripture Burrito."
+    },
+    "id_servers": {
+      "title": "Scripture Burrito idServers",
+      "type": "object",
+      "description": "Declares one or more identity servers which may later be referred to using identifier prefixes.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "$ref": "#/subSchema/common/definitions/url"
+          },
+          "name": {
+            "$ref": "#/subSchema/common/definitions/localizedText"
+          }
+        },
+        "propertyNames": {
+          "$ref": "#/subSchema/common/definitions/idServerLabel"
+        },
+        "minItems": 1
+      }
+    },
+    "identification": {
+      "title": "Identification",
+      "type": "object",
+      "description": "Identification section.",
+      "definitions": {
+        "trimmedText": {
+          "type": "string",
+          "pattern": "^\\S(.+\\S)?$"
+        },
+        "abbreviationString": {
+          "type": "string",
+          "pattern": "^\\w+$"
+        },
+        "looseDate": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "idString": {
+          "type": "string",
+          "pattern": "^[0-9a-zA-Z][0-9a-zA-Z\\-]{1,31}::\\S+$",
+          "minLength": 1
+        },
+        "revisionString": {
+          "type": "string",
+          "pattern": "^[0-9A-Za-z]([0-9A-Za-z_.:\\-]{0,62}[0-9A-Za-z])?$"
+        }
+      },
+      "properties": {
+        "name": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "description": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "abbreviation": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "systemId": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$ref": "#/subSchema/common/definitions/bareId"
+              },
+              "revision": {
+                "$ref": "#/subSchema/common/definitions/revisionString"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "minItems": 1,
+          "description": "Contains identifiers in each system declared by the top-level idServers element."
+        },
+        "idServer": {
+          "$ref": "#/subSchema/common/definitions/idServerLabel"
+        }
+      },
+      "required": [
+        "name",
+        "systemId",
+        "idServer"
+      ],
+      "additionalProperties": false
+    },
+    "confidentiality": {
+      "title": "Confidentiality",
+      "type": "object",
+      "description": "Describes the sensitivity of the information in various aspects of the burrito, indicating how it may or may not be shared.",
+      "definitions": {
+        "confidentialityEnum": {
+          "type": "string",
+          "enum": [
+            "unrestricted",
+            "restricted",
+            "private"
+          ]
+        }
+      },
+      "properties": {
+        "metadata": {
+          "$ref": "#/subSchema/confidentiality/definitions/confidentialityEnum"
+        },
+        "source": {
+          "$ref": "#/subSchema/confidentiality/definitions/confidentialityEnum"
+        },
+        "publications": {
+          "$ref": "#/subSchema/confidentiality/definitions/confidentialityEnum"
+        }
+      },
+      "required": [
+        "metadata"
+      ],
+      "additionalProperties": false
+    },
+    "type": {
+      "title": "Type",
+      "type": "object",
+      "description": "Contains properties describing the burrito flavor type.",
+      "oneOf": [
+        {
+          "properties": {
+            "flavorType": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "const": "scripture"
+                },
+                "flavor": {
+                  "type": "object",
+                  "oneOf": [
+                    {
+                      "$ref": "#/subSchema/text_translation"
+                    },
+                    {
+                      "$ref": "#/subSchema/audio_translation"
+                    },
+                    {
+                      "$ref": "#/subSchema/typeset_scripture"
+                    },
+                    {
+                      "$ref": "#/subSchema/embossed_braille_scripture"
+                    },
+                    {
+                      "$ref": "#/subSchema/sign_language_video_translation"
+                    },
+                    {
+                      "$ref": "#/subSchema/x_flavor"
+                    }
+                  ]
+                },
+                "currentScope": {
+                  "$ref": "#/subSchema/scope"
+                },
+                "canonType": {
+                  "$ref": "#/subSchema/canon_type"
+                },
+                "canonSpec": {
+                  "$ref": "#/subSchema/canon_spec"
+                }
+              },
+              "required": [
+                "name",
+                "flavor",
+                "currentScope",
+                "canonType",
+                "canonSpec"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "properties": {
+            "flavorType": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "const": "gloss"
+                },
+                "flavor": {
+                  "type": "object",
+                  "oneOf": [
+                    {
+                      "$ref": "#/subSchema/text_stories"
+                    },
+                    {
+                      "$ref": "#/subSchema/x_flavor"
+                    }
+                  ]
+                },
+                "currentScope": {
+                  "$ref": "#/subSchema/scope"
+                },
+                "canonType": {
+                  "$ref": "#/subSchema/canon_type"
+                },
+                "canonSpec": {
+                  "$ref": "#/subSchema/canon_spec"
+                }
+              },
+              "required": [
+                "name",
+                "flavor",
+                "currentScope",
+                "canonType",
+                "canonSpec"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "properties": {
+            "flavorType": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "const": "parascriptural"
+                },
+                "flavor": {
+                  "type": "object",
+                  "oneOf": [
+                    {
+                      "$ref": "#/subSchema/word_alignment"
+                    },
+                    {
+                      "$ref": "#/subSchema/x_flavor"
+                    }
+                  ]
+                },
+                "currentScope": {
+                  "$ref": "#/subSchema/scope"
+                },
+                "canonType": {
+                  "$ref": "#/subSchema/canon_type"
+                },
+                "canonSpec": {
+                  "$ref": "#/subSchema/canon_spec"
+                }
+              },
+              "required": [
+                "name",
+                "flavor"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "properties": {
+            "flavorType": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "const": "peripheral"
+                },
+                "flavor": {
+                  "type": "object",
+                  "oneOf": [
+                    {
+                      "$ref": "#/subSchema/versification"
+                    },
+                    {
+                      "$ref": "#/subSchema/x_flavor"
+                    }
+                  ]
+                },
+                "currentScope": {
+                  "$ref": "#/subSchema/scope"
+                },
+                "canonType": {
+                  "$ref": "#/subSchema/canon_type"
+                },
+                "canonSpec": {
+                  "$ref": "#/subSchema/canon_spec"
+                }
+              },
+              "required": [
+                "name",
+                "flavor"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      ],
+      "allOf": [
+        {
+          "$ref": "#/subSchema/canon_constraints/definitions/OTConstraint"
+        },
+        {
+          "$ref": "#/subSchema/canon_constraints/definitions/OTPlusConstraint"
+        },
+        {
+          "$ref": "#/subSchema/canon_constraints/definitions/DCConstraint"
+        },
+        {
+          "$ref": "#/subSchema/canon_constraints/definitions/NTConstraint"
+        },
+        {
+          "$ref": "#/subSchema/canon_constraints/definitions/OTConstraint"
+        },
+        {
+          "$ref": "#/subSchema/canon_constraints/definitions/OTDCConstraint"
+        },
+        {
+          "$ref": "#/subSchema/canon_constraints/definitions/NTConstraint2"
+        },
+        {
+          "$ref": "#/subSchema/canon_constraints/definitions/OTNTConstraint"
+        }
+      ]
+    },
+    "text_translation": {
+      "title": "Flavor Details: scripture/textTranslation",
+      "type": "object",
+      "description": "Schema of flavor field for textTranslation flavor",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "textTranslation"
+        },
+        "projectType": {
+          "type": "string",
+          "enum": [
+            "standard",
+            "daughter",
+            "studyBible",
+            "studyBibleAdditions",
+            "backTranslation",
+            "auxiliary",
+            "transliterationManual",
+            "transliterationWithEncoder"
+          ]
+        },
+        "translationType": {
+          "type": "string",
+          "enum": [
+            "firstTranslation",
+            "newTranslation",
+            "revision",
+            "studyOrHelpMaterial"
+          ]
+        },
+        "audience": {
+          "type": "string",
+          "enum": [
+            "basic",
+            "common",
+            "common-literary",
+            "literary",
+            "liturgical",
+            "children"
+          ]
+        },
+        "usfmVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+(\\..+)?$"
+        },
+        "conventions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^\\d+[.]\\d+([.].+)?$"
+          },
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
+            "oneOf": [
+              {
+                "$ref": "#/subSchema/common/definitions/xToken"
+              },
+              {
+                "enum": [
+                  "usxRefs",
+                  "usxDirs",
+                  "typesetAsVersedParagraphs"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "projectType",
+        "translationType",
+        "audience",
+        "usfmVersion"
+      ],
+      "additionalProperties": false
+    },
+    "audio_translation": {
+      "title": "Flavor Details: Audio Translation",
+      "type": "object",
+      "description": "Schema of flavor field of scripture/audioTranslation flavor",
+      "definitions": {
+        "format": {
+          "type": "object",
+          "properties": {
+            "compression": {
+              "type": "string",
+              "enum": [
+                "mp3",
+                "wav"
+              ]
+            },
+            "trackConfiguration": {
+              "type": "string",
+              "enum": [
+                "1/0 (Mono)",
+                "Dual mono",
+                "2/0 (Stereo)",
+                "5.1 Surround"
+              ]
+            },
+            "bitRate": {
+              "type": "integer"
+            },
+            "bitDepth": {
+              "type": "integer"
+            },
+            "samplingRate": {
+              "type": "integer"
+            },
+            "timingDir": {
+              "$ref": "#/subSchema/common/definitions/path"
+            }
+          },
+          "required": [
+            "compression"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "properties": {
+        "name": {
+          "const": "audioTranslation"
+        },
+        "dramatization": {
+          "type": "string",
+          "enum": [
+            "dramatized",
+            "nonDramatized",
+            "singleVoice"
+          ]
+        },
+        "formats": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/subSchema/audio_translation/definitions/format"
+          },
+          "propertyNames": {
+            "type": "string"
+          }
+        },
+        "conventions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^\\d+[.]\\d+([.].+)?$"
+          },
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
+            "oneOf": [
+              {
+                "$ref": "#/subSchema/common/definitions/xToken"
+              },
+              {
+                "enum": [
+                  "contentResourcesByChapter",
+                  "bookDirs"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "dramatization",
+        "formats"
+      ],
+      "additionalProperties": false
+    },
+    "typeset_scripture": {
+      "title": "Flavor Details: Scripture: Print Publication",
+      "type": "object",
+      "description": "Schema of flavor field for scripture/printPublication flavor",
+      "definitions": {
+        "measurementString": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]{0,4}mm$"
+        },
+        "percentageString": {
+          "type": "string",
+          "pattern": "[1-9][0-9]{1,3}%"
+        },
+        "orientation": {
+          "type": "string",
+          "enum": [
+            "portrait",
+            "landscape"
+          ]
+        },
+        "colorSpace": {
+          "type": "string",
+          "enum": [
+            "cmyk",
+            "rgb"
+          ]
+        },
+        "fontType": {
+          "type": "string",
+          "enum": [
+            "openType",
+            "bitmap",
+            "trueType",
+            "type1"
+          ]
+        }
+      },
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "typesetScripture"
+        },
+        "contentType": {
+          "type": "string",
+          "const": "pdf"
+        },
+        "pod": {
+          "type": "boolean"
+        },
+        "pageCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "width": {
+          "$ref": "#/subSchema/typeset_scripture/definitions/measurementString"
+        },
+        "height": {
+          "$ref": "#/subSchema/typeset_scripture/definitions/measurementString"
+        },
+        "scale": {
+          "$ref": "#/subSchema/typeset_scripture/definitions/percentageString"
+        },
+        "orientation": {
+          "$ref": "#/subSchema/typeset_scripture/definitions/orientation"
+        },
+        "colorSpace": {
+          "$ref": "#/subSchema/typeset_scripture/definitions/colorSpace"
+        },
+        "edgeSpace": {
+          "type": "object",
+          "properties": {
+            "top": {
+              "$ref": "#/subSchema/typeset_scripture/definitions/measurementString"
+            },
+            "bottom": {
+              "$ref": "#/subSchema/typeset_scripture/definitions/measurementString"
+            },
+            "inside": {
+              "$ref": "#/subSchema/typeset_scripture/definitions/measurementString"
+            },
+            "outside": {
+              "$ref": "#/subSchema/typeset_scripture/definitions/measurementString"
+            }
+          },
+          "additionalProperties": false
+        },
+        "fonts": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": [
+              {
+                "type": "string"
+              },
+              {
+                "$ref": "#/subSchema/typeset_scripture/definitions/fontType"
+              }
+            ],
+            "additionalItems": false
+          },
+          "additionalItems": false
+        },
+        "conventions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^\\d+[.]\\d+([.].+)?$"
+          },
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
+            "oneOf": [
+              {
+                "$ref": "#/subSchema/common/definitions/xToken"
+              },
+              {
+                "enum": [
+                  "contentResourcesByChapter"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "contentType",
+        "pod",
+        "pageCount",
+        "height",
+        "width",
+        "scale",
+        "colorSpace"
+      ],
+      "additionalProperties": false
+    },
+    "embossed_braille_scripture": {
+      "title": "Flavor Details: Scripture: Braille Publication",
+      "type": "object",
+      "description": "Schema of flavor field for scripture/brailleScripturePublication flavor",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "embossedBrailleScripture"
+        },
+        "isContracted": {
+          "type": "boolean"
+        },
+        "processor": {
+          "properties": {
+            "name": {
+              "type": "string",
+              "const": "libLouis"
+            },
+            "version": {
+              "type": "string"
+            },
+            "table": {
+              "type": "object",
+              "properties": {
+                "src": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "src",
+                "name"
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "version",
+            "table"
+          ],
+          "additionalProperties": false
+        },
+        "hyphenationDictionary": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "src",
+            "name"
+          ]
+        },
+        "numberSign": {
+          "type": "object",
+          "properties": {
+            "character": {
+              "type": "string",
+              "pattern": "([⠀-⣿])*"
+            },
+            "useInMargin": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "character",
+            "useInMargin"
+          ],
+          "additionalProperties": false
+        },
+        "continuousPoetry": {
+          "type": "object",
+          "properties": {
+            "lineIndicatorSpaced": {
+              "type": "string",
+              "enum": [
+                "never",
+                "always",
+                "sometimes"
+              ]
+            },
+            "startIndicator": {
+              "type": "string",
+              "pattern": "([⠀-⣿])*"
+            },
+            "lineIndicator": {
+              "type": "string",
+              "pattern": "([⠀-⣿])*"
+            },
+            "endIndicator": {
+              "type": "string",
+              "pattern": "([⠀-⣿])*"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "lineIndicatorSpaced"
+          ]
+        },
+        "content": {
+          "type": "object",
+          "properties": {
+            "chapterNumberStyle": {
+              "type": "string",
+              "enum": [
+                "upper",
+                "lower"
+              ]
+            },
+            "chapterHeadingsNumberFirst": {
+              "type": "boolean"
+            },
+            "versedParagraphs": {
+              "type": "boolean"
+            },
+            "verseSeparator": {
+              "type": "string",
+              "pattern": "([⠀-⣿])*"
+            },
+            "includeIntros": {
+              "type": "boolean"
+            },
+            "footnotes": {
+              "properties": {
+                "callerSymbol": {
+                  "type": "string",
+                  "pattern": "([⠀-⣿])*"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "callerSymbol"
+              ]
+            },
+            "characterStyles": {
+              "properties": {
+                "callerSymbol": {
+                  "type": "string",
+                  "pattern": "([⠀-⣿])*"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "callerSymbol"
+              ]
+            },
+            "crossReferences": {
+              "properties": {
+                "emphasizedWord": {
+                  "type": "string",
+                  "pattern": "([⠀-⣿])*"
+                },
+                "emphasizedPassageStart": {
+                  "type": "string",
+                  "pattern": "([⠀-⣿])*"
+                },
+                "emphasizedPassageEnd": {
+                  "type": "string",
+                  "pattern": "([⠀-⣿])*"
+                }
+              },
+              "additionalProperties": false,
+              "minProperties": 1
+            }
+          },
+          "required": [
+            "chapterNumberStyle",
+            "chapterHeadingsNumberFirst",
+            "versedParagraphs",
+            "verseSeparator",
+            "includeIntros"
+          ],
+          "additionalProperties": false
+        },
+        "page": {
+          "type": "object",
+          "properties": {
+            "charsPerLine": {
+              "type": "number",
+              "multipleOf": 1,
+              "min": 1
+            },
+            "linesPerPage": {
+              "type": "number",
+              "multipleOf": 1,
+              "min": 1
+            },
+            "defaultMarginWidth": {
+              "type": "number",
+              "multipleOf": 1,
+              "min": 1
+            },
+            "versoLastLineBlank": {
+              "type": "boolean"
+            },
+            "carryLines": {
+              "type": "number",
+              "multipleOf": 1,
+              "min": 1
+            }
+          },
+          "required": [
+            "charsPerLine",
+            "linesPerPage",
+            "defaultMarginWidth",
+            "versoLastLineBlank",
+            "carryLines"
+          ],
+          "additionalProperties": false
+        },
+        "conventions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^\\d+[.]\\d+([.].+)?$"
+          },
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
+            "oneOf": [
+              {
+                "$ref": "#/subSchema/common/definitions/xToken"
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "isContracted",
+        "processor",
+        "numberSign",
+        "content",
+        "page"
+      ],
+      "additionalProperties": false
+    },
+    "sign_language_video_translation": {
+      "title": "Flavor Details: Scripture: Sign Language Video Translation",
+      "type": "object",
+      "description": "Schema of flavor field for signLanguageVideoTranslation flavor",
+      "definitions": {
+        "format": {
+          "type": "object",
+          "properties": {
+            "container": {
+              "type": "string",
+              "enum": [
+                "mp4",
+                "mpg"
+              ]
+            },
+            "videoStream": {
+              "properties": {
+                "bitRate": {
+                  "type": "integer"
+                },
+                "frameRate": {
+                  "type": "integer"
+                },
+                "screenResolution": {
+                  "type": "string",
+                  "pattern": "^\\d+x\\d+$"
+                }
+              },
+              "required": [
+                "bitRate",
+                "frameRate",
+                "screenResolution"
+              ],
+              "additionalProperties": false
+            },
+            "audioStream": {
+              "properties": {
+                "compression": {
+                  "type": "string",
+                  "enum": [
+                    "mp3",
+                    "wav"
+                  ]
+                },
+                "trackConfiguration": {
+                  "type": "string",
+                  "enum": [
+                    "1/0 (Mono)",
+                    "Dual mono",
+                    "2/0 (Stereo)",
+                    "5.1 Surround"
+                  ]
+                },
+                "bitRate": {
+                  "type": "integer"
+                },
+                "bitDepth": {
+                  "type": "integer"
+                },
+                "samplingRate": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "compression"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "container",
+            "videoStream"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "signLanguageVideoTranslation"
+        },
+        "contentByChapter": {
+          "type": "boolean"
+        },
+        "formats": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/subSchema/sign_language_video_translation/definitions/format"
+          },
+          "propertyNames": {
+            "type": "string"
+          },
+          "minProperties": 1
+        },
+        "conventions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^\\d+[.]\\d+([.].+)?$"
+          },
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^(x-)?[a-z][A-za-z0-9]*$",
+            "oneOf": [
+              {
+                "$ref": "#/subSchema/common/definitions/xToken"
+              },
+              {
+                "enum": [
+                  "bookDirs",
+                  "rolesInUris"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "contentByChapter",
+        "formats"
+      ],
+      "additionalProperties": false
+    },
+    "x_flavor": {
+      "title": "Flavor Details: X-Flavor",
+      "description": "Schema of flavor field for xFlavor",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^x-[a-z][a-zA-Z0-9]*$"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": true
+    },
+    "scope": {
+      "title": "Scripture Burrito Scope",
+      "type": "object",
+      "description": "Scope specification, used for the whole burrito and for specific ingredients. In both cases it describes the actual content, not future translation goals.",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[1-9][0-9]*$|^[1-9][0-9]*-[1-9][0-9]*$|^[1-9][0-9]*:[1-9][0-9]*(-[1-9][0-9]*)?$|^[1-9][0-9]*:[1-9][0-9]*-[1-9][0-9]*:[1-9][0-9]*$"
+            },
+            "minItems": 1,
+            "unique": true
+          },
+          {
+            "type": "array",
+            "maxItems": 0
+          }
+        ]
+      },
+      "propertyNames": {
+        "$ref": "#/subSchema/common/definitions/bookId"
+      },
+      "minProperties": 1
+    },
+    "canon_type": {
+      "title": "Scripture Burrito Canon Type",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ot",
+          "otdc",
+          "dc",
+          "nt"
+        ]
+      },
+      "allOf": [
+        {
+          "not": {
+            "allOf": [
+              {
+                "contains": {
+                  "const": "ot"
+                }
+              },
+              {
+                "contains": {
+                  "const": "otdc"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "not": {
+            "allOf": [
+              {
+                "contains": {
+                  "const": "dc"
+                }
+              },
+              {
+                "contains": {
+                  "const": "otdc"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "canon_spec": {
+      "title": "Scripture Burrito Canon Spec",
+      "type": "object",
+      "definitions": {
+        "canonComponentOT": {
+          "$$target": [
+            "type.schema.json#/definitions/canonComponentOT",
+            "#/definitions/canonComponentOT"
+          ],
+          "title": "Old Testament Canon Component",
+          "properties": {
+            "name": {
+              "type": "string",
+              "enum": [
+                "ethiopianProtestant",
+                "syriac",
+                "tanakh",
+                "western"
+              ]
+            }
+          },
+          "not": {
+            "required": [
+              "books"
+            ]
+          }
+        },
+        "canonComponentOTDC": {
+          "$$target": [
+            "type.schema.json#/definitions/canonComponentOTDC",
+            "#/definitions/canonComponentOTDC"
+          ],
+          "title": "Old Testament+ Canon Component",
+          "properties": {
+            "name": {
+              "type": "string",
+              "enum": [
+                "armenianApostolic",
+                "armenianApostolic2",
+                "armenianClassical",
+                "catholicLxx",
+                "catholicVulgate",
+                "ethiopianOrthodox",
+                "georgianOrthodox",
+                "georgianOrthodox2",
+                "greekOrthodox",
+                "romanianOrthodox",
+                "russianOrthodox",
+                "russianProtestant"
+              ]
+            }
+          },
+          "not": {
+            "required": [
+              "books"
+            ]
+          },
+          "$comment": "OTDC is OT with interleaved DC"
+        },
+        "canonComponentDC": {
+          "$$target": [
+            "type.schema.json#/definitions/canonComponentDC",
+            "#/definitions/canonComponentDC"
+          ],
+          "title": "Deuterocanon Component",
+          "properties": {
+            "name": {
+              "type": "string",
+              "enum": [
+                "armenianApostolic",
+                "catholicAndAnglican",
+                "catholicLxx",
+                "catholicLxxSeparated",
+                "catholicPlusLutheran",
+                "catholicVulgate",
+                "catholicVulgateSeparated",
+                "czechKralicka",
+                "danishLutheran",
+                "ethiopianOrthodox",
+                "georgianOrthodox",
+                "georgianSynodal",
+                "germanLutheran",
+                "greekOrthodox",
+                "kjv",
+                "kjvNon",
+                "paratext",
+                "romanianOrthodox",
+                "russianOrthodox",
+                "russianSynodal",
+                "turkishInterconfessional",
+                "westernInterconfessional",
+                "westernInterconfessional2"
+              ]
+            }
+          },
+          "not": {
+            "required": [
+              "books"
+            ]
+          }
+        },
+        "canonComponentNT": {
+          "$$target": [
+            "type.schema.json#/definitions/canonComponentNT",
+            "#/definitions/canonComponentNT"
+          ],
+          "title": "New Testament Canon Component",
+          "properties": {
+            "name": {
+              "type": "string",
+              "enum": [
+                "armenian",
+                "ethiopianOrthodox",
+                "ethiopianProtestant",
+                "lutheran",
+                "russian",
+                "syriac",
+                "western"
+              ]
+            }
+          },
+          "not": {
+            "required": [
+              "books"
+            ]
+          }
+        },
+        "canonComponentCustom": {
+          "$$target": [
+            "type.schema.json#/definitions/canonComponentCustom",
+            "#/definitions/canonComponentCustom"
+          ],
+          "title": "Custom Canon Component",
+          "properties": {
+            "name": {
+              "$ref": "#/subSchema/common/definitions/xToken"
+            },
+            "books": {
+              "type": "array",
+              "items": {
+                "$ref": "#/subSchema/common/definitions/bookId"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            }
+          },
+          "required": [
+            "name",
+            "books"
+          ]
+        },
+        "bookOT": {
+          "$$target": [
+            "type.schema.json#/definitions/bookOT",
+            "#/definitions/bookOT"
+          ],
+          "title": "Old Testament Books",
+          "enum": [
+            "GEN",
+            "EXO",
+            "LEV",
+            "NUM",
+            "DEU",
+            "JOS",
+            "JDG",
+            "RUT",
+            "1SA",
+            "2SA",
+            "1KI",
+            "2KI",
+            "1CH",
+            "2CH",
+            "EZR",
+            "NEH",
+            "EST",
+            "JOB",
+            "PSA",
+            "PRO",
+            "ECC",
+            "SNG",
+            "ISA",
+            "JER",
+            "LAM",
+            "EZK",
+            "DAN",
+            "HOS",
+            "JOL",
+            "AMO",
+            "OBA",
+            "JON",
+            "MIC",
+            "NAM",
+            "HAB",
+            "ZEP",
+            "HAG",
+            "ZEC",
+            "MAL"
+          ]
+        },
+        "bookDC": {
+          "$$target": [
+            "type.schema.json#/definitions/bookDC",
+            "#/definitions/bookDC"
+          ],
+          "title": "Deutercanonical Books",
+          "enum": [
+            "TOB",
+            "JDT",
+            "ESG",
+            "WIS",
+            "SIR",
+            "BAR",
+            "LJE",
+            "S3Y",
+            "SUS",
+            "BEL",
+            "1MA",
+            "2MA",
+            "3MA",
+            "4MA",
+            "1ES",
+            "2ES",
+            "MAN",
+            "PS2",
+            "ODA",
+            "PSS",
+            "JSA",
+            "JDB",
+            "TBS",
+            "SST",
+            "DNT",
+            "BLT",
+            "EZA",
+            "5EZ",
+            "6EZ",
+            "DAG",
+            "PS3",
+            "2BA",
+            "LBA",
+            "JUB",
+            "ENO",
+            "1MQ",
+            "2MQ",
+            "3MQ",
+            "REP",
+            "4BA",
+            "LAO"
+          ]
+        },
+        "bookNT": {
+          "$$target": [
+            "type.schema.json#/definitions/bookNT",
+            "#/definitions/bookNT"
+          ],
+          "title": "New Testament Books",
+          "enum": [
+            "MAT",
+            "MRK",
+            "LUK",
+            "JHN",
+            "ACT",
+            "ROM",
+            "1CO",
+            "2CO",
+            "GAL",
+            "EPH",
+            "PHP",
+            "COL",
+            "1TH",
+            "2TH",
+            "1TI",
+            "2TI",
+            "TIT",
+            "PHM",
+            "HEB",
+            "JAS",
+            "1PE",
+            "2PE",
+            "1JN",
+            "2JN",
+            "3JN",
+            "JUD",
+            "REV"
+          ]
+        },
+        "bookOTDC": {
+          "oneOf": [
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/bookOT"
+            },
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/bookDC"
+            }
+          ]
+        },
+        "bookOTNT": {
+          "oneOf": [
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/bookOT"
+            },
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/bookNT"
+            }
+          ]
+        }
+      },
+      "properties": {
+        "ot": {
+          "type": "object",
+          "properties": {
+            "books": {
+              "items": {
+                "$ref": "#/subSchema/canon_spec/definitions/bookOT"
+              }
+            }
+          },
+          "oneOf": [
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/canonComponentOT"
+            },
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/canonComponentCustom"
+            }
+          ],
+          "required": [
+            "name"
+          ]
+        },
+        "otdc": {
+          "type": "object",
+          "properties": {
+            "books": {
+              "items": {
+                "$ref": "#/subSchema/canon_spec/definitions/bookOTDC"
+              }
+            }
+          },
+          "oneOf": [
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/canonComponentOTDC"
+            },
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/canonComponentCustom"
+            }
+          ],
+          "required": [
+            "name"
+          ]
+        },
+        "dc": {
+          "type": "object",
+          "properties": {
+            "books": {
+              "items": {
+                "$ref": "#/subSchema/canon_spec/definitions/bookDC"
+              }
+            }
+          },
+          "oneOf": [
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/canonComponentDC"
+            },
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/canonComponentCustom"
+            }
+          ],
+          "required": [
+            "name"
+          ]
+        },
+        "nt": {
+          "type": "object",
+          "properties": {
+            "books": {
+              "items": {
+                "$ref": "#/subSchema/canon_spec/definitions/bookNT"
+              }
+            }
+          },
+          "oneOf": [
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/canonComponentNT"
+            },
+            {
+              "$ref": "#/subSchema/canon_spec/definitions/canonComponentCustom"
+            }
+          ],
+          "required": [
+            "name"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1,
+      "allOf": [
+        {
+          "not": {
+            "required": [
+              "ot",
+              "otdc"
+            ]
+          }
+        },
+        {
+          "not": {
+            "required": [
+              "dc",
+              "otdc"
+            ]
+          }
+        }
+      ],
+      "$comment": "ot or dc may not be specified if otdc is present."
+    },
+    "text_stories": {
+      "title": "Flavor Details: Glossed Text Stories",
+      "type": "object",
+      "description": "Schema of flavor field for textStories flavor",
+      "properties": {
+        "name": {
+          "const": "textStories"
+        }
+      },
+      "additionalProperties": false
+    },
+    "word_alignment": {
+      "title": "Flavor Details: Parascriptural Word Alignment",
+      "type": "object",
+      "description": "Schema of flavor field for word alignment flavor",
+      "properties": {
+        "name": {
+          "const": "wordAlignment"
+        },
+        "autoAlignerVersion": {
+          "type": "string"
+        },
+        "stopWords": {
+          "type": "boolean"
+        },
+        "stemmer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "affixes": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "manualAlignment": {
+          "type": "object",
+          "properties": {
+            "user": {
+              "type": "string"
+            },
+            "references": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "start": {
+                    "type": "number",
+                    "min": 0,
+                    "multipleOf": 1
+                  },
+                  "end": {
+                    "type": "number",
+                    "min": 0,
+                    "multipleOf": 1
+                  }
+                },
+                "required": [
+                  "start"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "additionalItems": false
+            }
+          },
+          "required": [
+            "user",
+            "references"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "name",
+        "autoAlignerVersion",
+        "stopWords",
+        "stemmer",
+        "manualAlignment"
+      ],
+      "additionalProperties": false
+    },
+    "versification": {
+      "title": "Flavor Details: Peripheral Versification",
+      "type": "object",
+      "description": "Schema of flavor field for versification flavor",
+      "properties": {
+        "name": {
+          "const": "versification"
+        }
+      },
+      "additionalProperties": false
+    },
+    "canon_constraints": {
+      "title": "Canon Constraints",
+      "type": "object",
+      "definitions": {
+        "OTConstraint": {
+          "if": {
+            "properties": {
+              "canonType": {
+                "contains": {
+                  "const": "OT"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "canonSpec": {
+                "required": [
+                  "OT"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "canonSpec": {
+                "not": {
+                  "required": [
+                    "OT"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "OTPlusConstraint": {
+          "if": {
+            "properties": {
+              "canonType": {
+                "contains": {
+                  "const": "OT+"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "canonSpec": {
+                "required": [
+                  "OT+"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "canonSpec": {
+                "not": {
+                  "required": [
+                    "OT+"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "DCConstraint": {
+          "if": {
+            "properties": {
+              "canonType": {
+                "contains": {
+                  "const": "DC"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "canonSpec": {
+                "required": [
+                  "DC"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "canonSpec": {
+                "not": {
+                  "required": [
+                    "DC"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "NTConstraint": {
+          "if": {
+            "properties": {
+              "canonType": {
+                "contains": {
+                  "const": "NT"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "canonSpec": {
+                "required": [
+                  "NT"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "canonSpec": {
+                "not": {
+                  "required": [
+                    "NT"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "OTContraint2": {
+          "if": {
+            "properties": {
+              "canonType": {
+                "const": [
+                  "OT"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "bookScope": {
+                "propertyNames": {
+                  "$ref": "#/subSchema/canon_spec/definitions/bookOT"
+                }
+              }
+            }
+          }
+        },
+        "OTDCConstraint": {
+          "if": {
+            "properties": {
+              "canonType": {
+                "enum": [
+                  [
+                    "OT+"
+                  ],
+                  [
+                    "OT",
+                    "DC"
+                  ],
+                  [
+                    "DC",
+                    "OT"
+                  ]
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "bookScope": {
+                "propertyNames": {
+                  "$ref": "#/subSchema/canon_spec/definitions/bookOTDC"
+                }
+              }
+            }
+          }
+        },
+        "NTConstraint2": {
+          "if": {
+            "properties": {
+              "canonType": {
+                "const": [
+                  "NT"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "bookScope": {
+                "propertyNames": {
+                  "$ref": "#/subSchema/canon_spec/definitions/bookNT"
+                }
+              }
+            }
+          }
+        },
+        "OTNTConstraint": {
+          "if": {
+            "properties": {
+              "canonType": {
+                "enum": [
+                  [
+                    "OT",
+                    "NT"
+                  ],
+                  [
+                    "NT",
+                    "OT"
+                  ]
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "bookScope": {
+                "propertyNames": {
+                  "$ref": "#/subSchema/canon_spec/definitions/bookOTNT"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "relationships": {
+      "title": "Scripture Burrito Relationships",
+      "type": "array",
+      "items": {
+        "$ref": "#/subSchema/relationship"
+      },
+      "minItems": 1,
+      "additionalItems": false,
+      "description": "Describes a relationship to another burrito that may be obtained from an indicated server."
+    },
+    "relationship": {
+      "title": "Relationship",
+      "type": "object",
+      "description": "Describes a relationship to a different burrito that can be obtained from an indicated server.",
+      "properties": {
+        "relationType": {
+          "type": "string",
+          "enum": [
+            "source",
+            "target",
+            "expression",
+            "parascriptural",
+            "peripheral"
+          ],
+          "minLength": 1
+        },
+        "flavor": {
+          "type": "string",
+          "oneOf": [
+            {
+              "enum": [
+                "textTranslation",
+                "audioTranslation",
+                "typesetScripture",
+                "signLanguageVideoTranslation",
+                "embossedBrailleScripture",
+                "glossedTextStory",
+                "parascripturalWordAlignment"
+              ]
+            },
+            {
+              "pattern": "^x-[a-z][A-za-z0-9]*$"
+            }
+          ],
+          "minLength": 1
+        },
+        "id": {
+          "$ref": "#/subSchema/common/definitions/prefixedId"
+        },
+        "revision": {
+          "$ref": "#/subSchema/common/definitions/revisionString"
+        },
+        "variant": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_\\-]{0,31}$"
+        }
+      },
+      "required": [
+        "relationType",
+        "flavor",
+        "id"
+      ],
+      "additionalProperties": false,
+      "oneOf": [
+        {
+          "properties": {
+            "flavor": {
+              "pattern": "^x-[a-z][A-za-z0-9]*$"
+            }
+          },
+          "$comment": "Custom flavors can be used with any relationType."
+        },
+        {
+          "properties": {
+            "relationType": {
+              "const": "source"
+            },
+            "flavor": {
+              "enum": [
+                "textTranslation",
+                "audioTranslation"
+              ]
+            }
+          }
+        },
+        {
+          "properties": {
+            "relationType": {
+              "const": "target"
+            },
+            "flavor": {}
+          }
+        },
+        {
+          "properties": {
+            "relationType": {
+              "const": "expression"
+            },
+            "flavor": {
+              "not": {
+                "const": "scriptureText"
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "relationType": {
+              "const": "parascriptural"
+            },
+            "flavor": {
+              "enum": [
+                "parascripturalWordAlignment"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "languages": {
+      "title": "Scripture Burrito Languages",
+      "type": "array",
+      "items": {
+        "$ref": "#/subSchema/language"
+      },
+      "minItems": 1,
+      "description": "A list of all the languages of the contents of this burrito."
+    },
+    "language": {
+      "title": "Language",
+      "type": "object",
+      "description": "Language section.",
+      "properties": {
+        "tag": {
+          "$ref": "#/subSchema/common/definitions/languageTag",
+          "examples": [
+            "hi",
+            "es-419"
+          ]
+        },
+        "name": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "numberingSystem": {
+          "$ref": "#/subSchema/numbering_system"
+        },
+        "rod": {
+          "$ref": "#/subSchema/common/definitions/rodCode"
+        },
+        "scriptDirection": {
+          "type": "string",
+          "allowedValues": [
+            "ltr",
+            "rtl"
+          ]
+        }
+      },
+      "required": [
+        "tag",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "numbering_system": {
+      "title": "Numbering System",
+      "type": "string",
+      "description": "Numbering System",
+      "enum": [
+        "adlm",
+        "ahom",
+        "arab",
+        "arabext",
+        "armn",
+        "armnlow",
+        "bali",
+        "beng",
+        "bhks",
+        "brah",
+        "cakm",
+        "cham",
+        "cyrl",
+        "deva",
+        "ethi",
+        "finance",
+        "fullwide",
+        "geor",
+        "gong",
+        "gonm",
+        "grek",
+        "greklow",
+        "gujr",
+        "guru",
+        "hanidays",
+        "hanidec",
+        "hans",
+        "hansfin",
+        "hant",
+        "hantfin",
+        "hebr",
+        "hmng",
+        "hmnp",
+        "java",
+        "jpan",
+        "jpanfin",
+        "jpanyear",
+        "kali",
+        "khmr",
+        "knda",
+        "lana",
+        "lanatham",
+        "laoo",
+        "latn",
+        "lepc",
+        "limb",
+        "mathbold",
+        "mathdbl",
+        "mathmono",
+        "mathsanb",
+        "mathsans",
+        "mlym",
+        "modi",
+        "mong",
+        "mroo",
+        "mtei",
+        "mymr",
+        "mymrshan",
+        "mymrtlng",
+        "native",
+        "newa",
+        "nkoo",
+        "olck",
+        "orya",
+        "osma",
+        "rohg",
+        "roman",
+        "romanlow",
+        "saur",
+        "shrd",
+        "sind",
+        "sinh",
+        "sora",
+        "sund",
+        "takr",
+        "talu",
+        "taml",
+        "tamldec",
+        "telu",
+        "thai",
+        "tirh",
+        "tibt",
+        "traditio",
+        "vaii",
+        "wara",
+        "wcho"
+      ],
+      "additionalProperties": false
+    },
+    "target_areas": {
+      "title": "Scripture Burrito Target Areas",
+      "type": "array",
+      "items": {
+        "$ref": "#/subSchema/target_area"
+      },
+      "minItems": 1,
+      "description": "A list of areas of the primary target audience of this burrito."
+    },
+    "target_area": {
+      "title": "Scripture Burrito Target Area",
+      "type": "object",
+      "description": "An area that is a primary target audience of this burrito.",
+      "properties": {
+        "code": {
+          "oneOf": [
+            {
+              "$ref": "#/subSchema/common/definitions/countryCode"
+            },
+            {
+              "$ref": "#/subSchema/unm49"
+            }
+          ]
+        },
+        "name": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        }
+      },
+      "required": [
+        "code",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "unm49": {
+      "title": "UNM49 enum",
+      "type": "string",
+      "description": "UNM49 region code enum",
+      "enum": [
+        "001",
+        "002",
+        "003",
+        "005",
+        "009",
+        "011",
+        "013",
+        "014",
+        "015",
+        "017",
+        "018",
+        "019",
+        "021",
+        "024",
+        "029",
+        "030",
+        "034",
+        "035",
+        "039",
+        "053",
+        "054",
+        "057",
+        "061",
+        "142",
+        "143",
+        "145",
+        "150",
+        "151",
+        "154",
+        "155",
+        "202",
+        "419",
+        "496",
+        "554",
+        "591",
+        "756",
+        "830"
+      ]
+    },
+    "agencies": {
+      "title": "Scripture Burrito Agencies",
+      "type": "array",
+      "items": {
+        "$ref": "#/subSchema/agency"
+      },
+      "minItems": 1,
+      "description": "A list of agencies involved with the contents of the burrito or the work it is derived from."
+    },
+    "agency": {
+      "title": "Agency",
+      "type": "object",
+      "description": "Describes a particular agency that is involved with or related to the contents of the burrito.",
+      "properties": {
+        "id": {
+          "$ref": "#/subSchema/common/definitions/prefixedId"
+        },
+        "name": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "abbr": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "url": {
+          "$ref": "#/subSchema/common/definitions/url"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "rightsAdmin",
+              "rightsHolder",
+              "content",
+              "publication",
+              "management",
+              "finance",
+              "qa"
+            ],
+            "uniqueItems": true
+          },
+          "description": "A list of roles indicating in which respects this agency was involved with the production of this burrito.",
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "roles"
+      ],
+      "additionalProperties": false
+    },
+    "copyright": {
+      "title": "Copyright and License Information",
+      "type": "object",
+      "description": "Describes the copyright holders and license terms of the burrito.",
+      "properties": {
+        "licenses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "$ref": "#/subSchema/common/definitions/url"
+              },
+              "ingredient": {
+                "$ref": "#/subSchema/common/definitions/path"
+              }
+            },
+            "oneOf": [
+              {
+                "required": [
+                  "url"
+                ]
+              },
+              {
+                "required": [
+                  "ingredient"
+                ]
+              }
+            ],
+            "additionalProperties": false
+          },
+          "description": "The licenses, which state under which terms the burrito may be used, can be specified either as URL or as path to an ingredient."
+        },
+        "publicDomain": {
+          "type": "boolean",
+          "description": "If set to true, the contents of this burrito are dedicated to the public domain."
+        },
+        "shortStatementPlain": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "shortStatementRich": {
+          "$ref": "#/subSchema/common/definitions/localizedRichText"
+        },
+        "fullStatementPlain": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "fullStatementRich": {
+          "$ref": "#/subSchema/common/definitions/localizedRichText"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ingredients": {
+      "title": "Scripture Burrito Ingredients",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/subSchema/ingredient"
+      },
+      "propertyNames": {
+        "$ref": "#/subSchema/common/definitions/path"
+      },
+      "minProperties": 1,
+      "description": "Describes the various files contained by the burrito, keyed by the canonical forward-slashed pathname of the file."
+    },
+    "ingredient": {
+      "title": "Scripture Burrito Ingredient",
+      "type": "object",
+      "description": "Describes an individual ingredient, which is a file contained within the burrito.",
+      "properties": {
+        "size": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "The number of bytes that this ingredient takes up on disk."
+        },
+        "mimeType": {
+          "$ref": "#/subSchema/common/definitions/mimeType"
+        },
+        "checksum": {
+          "type": "object",
+          "properties": {
+            "md5": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{32}$"
+            },
+            "sha3-256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "sha3-512": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{128}$"
+            }
+          },
+          "required": [
+            "md5"
+          ],
+          "maxProperties": 2,
+          "additionalProperties": false
+        },
+        "scope": {
+          "$ref": "#/subSchema/scope"
+        },
+        "role": {
+          "type": "string",
+          "anyOf": [
+            {
+              "description": "A peripheral name, derived from the USFM 3 specification, eg \"maps\"",
+              "enum": [
+                "abbreviations",
+                "alphacontents",
+                "chron",
+                "cnc",
+                "contents",
+                "cover",
+                "foreword",
+                "glo",
+                "halftitle",
+                "imprimatur",
+                "lxxquotes",
+                "maps",
+                "measures",
+                "ndx",
+                "preface",
+                "promo",
+                "pubdata",
+                "spine",
+                "tdx",
+                "title"
+              ]
+            },
+            {
+              "pattern": "^int(bible|dc|epistles|gospels|hist|nt|ot|pent|poetry|prophecy)$"
+            },
+            {
+              "description": "int<bookCode>, eg \"intMAT\", to denote the introduction to a book.",
+              "pattern": "^int(GEN|EXO|LEV|NUM|DEU|JOS|JDG|RUT|1SA|2SA|1KI|2KI|1CH|2CH|EZR|NEH|EST|JOB|PSA|PRO|ECC|SNG|ISA|JER|LAM|EZK|DAN|HOS|JOL|AMO|OBA|JON|MIC|NAM|HAB|ZEP|HAG|ZEC|MAL|MAT|MRK|LUK|JHN|ACT|ROM|1CO|2CO|GAL|EPH|PHP|COL|1TH|2TH|1TI|2TI|TIT|PHM|HEB|JAS|1PE|2PE|1JN|2JN|3JN|JUD|REV|TOB|JDT|ESG|WIS|SIR|BAR|LJE|S3Y|SUS|BEL|1MA|2MA|3MA|4MA|1ES|2ES|MAN|PS2|ODA|PSS|JSA|JDB|TBS|SST|DNT|BLT|EZA|5EZ|6EZ|DAG|PS3|2BA|LBA|JUB|ENO|1MQ|2MQ|3MQ|REP|4BA|LAO)$"
+            },
+            {
+              "enum": [
+                "printBody",
+                "printCover",
+                "printThumbnail",
+                "printFlowable"
+              ]
+            },
+            {
+              "enum": [
+                "timing",
+                "credits"
+              ]
+            },
+            {
+              "pattern": "^(name|sign|concept|place)(\\s.*\\S)?$"
+            }
+          ]
+        }
+      },
+      "required": [
+        "size",
+        "mimeType"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "scope"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "role"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "names": {
+      "title": "Scripture Burrito Names",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/subSchema/name"
+      },
+      "description": "The names property is required for scripture and gloss flavorTypes and optional for other flavorTypes."
+    },
+    "name": {
+      "title": "Name",
+      "type": "object",
+      "description": "Contains localized names for books, etc.",
+      "properties": {
+        "short": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "long": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "abbr": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        }
+      },
+      "required": [
+        "short"
+      ],
+      "additionalProperties": false
+    },
+    "recipe_specs": {
+      "title": "Scripture Burrito Recipe Specs",
+      "type": "array",
+      "description": "Scripture Burrito recipe specs.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "$ref": "#/subSchema/common/definitions/trimmedText"
+          },
+          "href": {
+            "oneOf": [
+              {
+                "$ref": "#/subSchema/common/definitions/path"
+              },
+              {
+                "$ref": "#/subSchema/common/definitions/url"
+              }
+            ]
+          },
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "progress": {
+      "title": "Scripture Burrito Progress",
+      "type": "object",
+      "properties": {
+        "dateStarted": {
+          "$ref": "#/subSchema/common/definitions/timestamp"
+        },
+        "dateCompleted": {
+          "$ref": "#/subSchema/common/definitions/timestamp"
+        }
+      },
+      "minProperties": 1,
+      "additionalProperties": false
+    },
+    "derived_metadata": {
+      "title": "Scripture Burrito Metadata (Derived)",
+      "type": "object",
+      "description": "Scripture Burrito derived variant root.",
+      "properties": {
+        "meta": {
+          "$ref": "#/subSchema/derived_meta"
+        },
+        "idServers": {
+          "$ref": "#/subSchema/id_servers"
+        },
+        "identification": {
+          "$ref": "#/subSchema/identification"
+        },
+        "confidentiality": {
+          "$ref": "#/subSchema/confidentiality"
+        },
+        "type": {
+          "$ref": "#/subSchema/type"
+        },
+        "relationships": {
+          "$ref": "#/subSchema/relationships"
+        },
+        "languages": {
+          "$ref": "#/subSchema/languages"
+        },
+        "targetAreas": {
+          "$ref": "#/subSchema/target_areas"
+        },
+        "agencies": {
+          "$ref": "#/subSchema/agencies"
+        },
+        "copyright": {
+          "$ref": "#/subSchema/copyright"
+        },
+        "promotion": {
+          "$ref": "#/subSchema/promotion"
+        },
+        "ingredients": {
+          "$ref": "#/subSchema/ingredients"
+        },
+        "names": {
+          "$ref": "#/subSchema/names"
+        },
+        "recipe": {
+          "$ref": "#/subSchema/recipe"
+        }
+      },
+      "required": [
+        "meta",
+        "idServers",
+        "identification",
+        "confidentiality",
+        "copyright",
+        "type",
+        "recipe"
+      ],
+      "additionalProperties": false,
+      "if": {
+        "properties": {
+          "type": {
+            "properties": {
+              "flavorType": {
+                "enum": [
+                  "scripture",
+                  "gloss"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "languages",
+          "names"
+        ]
+      }
+    },
+    "derived_meta": {
+      "title": "Scripture Burrito Meta (Derived)",
+      "type": "object",
+      "description": "Information about the Scripture Burrito metadata file.",
+      "properties": {
+        "variant": {
+          "type": "string",
+          "pattern": "^derived_[A-Za-z][A-Za-z0-9]*$",
+          "description": "The type of derived variant represented in the burrito"
+        },
+        "dateCreated": {
+          "$ref": "#/subSchema/meta_date_created"
+        },
+        "version": {
+          "$ref": "#/subSchema/meta_version"
+        },
+        "generator": {
+          "$ref": "#/subSchema/software_and_user_info",
+          "description": "Information about the program and user who generated this burrito."
+        },
+        "uploader": {
+          "$ref": "#/subSchema/software_and_user_info",
+          "description": "Information about the program and user who uploaded this burrito."
+        },
+        "defaultLanguage": {
+          "$ref": "#/subSchema/meta_default_language"
+        },
+        "comments": {
+          "$ref": "#/subSchema/meta_comments"
+        }
+      },
+      "required": [
+        "version",
+        "variant",
+        "dateCreated",
+        "defaultLanguage"
+      ],
+      "additionalProperties": false
+    },
+    "promotion": {
+      "title": "Promotional Statements",
+      "type": "object",
+      "description": "Contains promotional statements for the burrito.",
+      "properties": {
+        "statementPlain": {
+          "$ref": "#/subSchema/common/definitions/localizedText"
+        },
+        "statementRich": {
+          "$ref": "#/subSchema/common/definitions/localizedRichText"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "recipe": {
+      "title": "Scripture Burrito Recipes",
+      "type": "object",
+      "description": "Scripture Burrito recipes.",
+      "properties": {
+        "spec": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "$ref": "#/subSchema/common/definitions/path"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "properties": {
+                "idServer": {
+                  "$ref": "#/subSchema/common/definitions/idServerLabel"
+                },
+                "id": {
+                  "$ref": "#/subSchema/common/definitions/bareId"
+                },
+                "revision": {
+                  "$ref": "#/subSchema/common/definitions/revisionString"
+                }
+              },
+              "required": [
+                "idServer",
+                "id",
+                "revision"
+              ]
+            }
+          ]
+        },
+        "content": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/subSchema/recipe_section"
+              },
+              {
+                "$ref": "#/subSchema/recipe_element"
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "content"
+      ]
+    },
+    "recipe_section": {
+      "title": "Scripture Burrito Recipe Section",
+      "type": "object",
+      "description": "Scripture Burrito recipe section.",
+      "properties": {
+        "type": {
+          "const": "section"
+        },
+        "nameId": {
+          "$ref": "#/subSchema/common/definitions/bareId"
+        },
+        "content": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/subSchema/recipe_section"
+              },
+              {
+                "$ref": "#/subSchema/recipe_element"
+              }
+            ]
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "type",
+        "nameId",
+        "content"
+      ],
+      "additionalProperties": false
+    },
+    "recipe_element": {
+      "title": "Scripture Burrito Recipe Element",
+      "type": "object",
+      "description": "Scripture Burrito recipe element.",
+      "properties": {
+        "type": {
+          "const": "element"
+        },
+        "nameId": {
+          "$ref": "#/subSchema/common/definitions/bareId"
+        },
+        "ingredient": {
+          "$ref": "#/subSchema/common/definitions/path"
+        }
+      },
+      "required": [
+        "type",
+        "ingredient"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://burrito.bible/schema/mega.schema.json",
+  "title": "Scripture Burrito Metadata",
+  "type": "object",
+  "description": "Scripture Burrito root metadata object.",
+  "oneOf": [
+    {
+      "$ref": "#/subSchema/source_metadata"
+    },
+    {
+      "$ref": "#/subSchema/derived_metadata"
+    }
+  ]
+}

@@ -70,7 +70,7 @@ class BurritoStore {
       /* console.log(configCompatibleResult); */
       throw new BurritoError('ImportedMetadataNotConfigCompatible', configCompatibleResult.reason);
     }
-    const schemaValidationResult = this._validator.schemaValidate('metadata', metadata);
+    const schemaValidationResult = this._validator.schemaValidate('mega', metadata);
     if (schemaValidationResult.result !== 'accepted') {
       /* console.log(schemaValidationResult.message); */
       throw new BurritoError('ImportedMetadataNotSchemaValid', schemaValidationResult.schemaErrors);

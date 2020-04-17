@@ -1,9 +1,11 @@
 module.exports = {
-    schemaIds: {
+  schemaIds: {
+    mega: "https://burrito.bible/schema/mega.schema.json",
         metadata: "https://burrito.bible/schema/metadata.schema.json",
         recipeSpec: "https://burrito.bible/schema/ingredients/recipe_spec.schema.json"
     },
     schemas: [
+        require("./mega.schema.json"),
         require("./agencies.schema.json"),
         require("./agency.schema.json"),
         require("./canon_constraints.schema.json"),
