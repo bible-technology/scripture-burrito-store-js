@@ -34,20 +34,16 @@ class FSMetadataStore extends MetadataStore {
   loadEntriesSync() {
     return new Promise(
       resolve => {
-        for (const url of fse.readdirSync(this.metadataDir)) {
-          const decodedUrl = decodeURIComponent(url);
+        for (const [url, decodedUrl] of fse.readdirSync(this.metadataDir).map(i => [i, decodeURIComponent(i)])) {
           this._urls[decodedUrl] = {};
           const urlDir = path.join(this.metadataDir, url);
-          for (const entry of fse.readdirSync(urlDir)) {
-            const decodedEntry = decodeURIComponent(entry);
+          for (const [entry, decodedEntry] of fse.readdirSync(urlDir).map(i => [i, decodeURIComponent(i)])) {
             this._urls[decodedUrl][decodedEntry] = {};
             const entryDir = path.join(urlDir, entry);
-            for (const revision of fse.readdirSync(entryDir)) {
-              const decodedRevision = decodeURIComponent(revision);
+            for (const [revision, decodedRevision] of fse.readdirSync(entryDir).map(i => [i, decodeURIComponent(i)])) {
               this._urls[decodedUrl][decodedEntry][decodedRevision] = {};
               const revisionDir = path.join(entryDir, revision);
-              for (const variant of fse.readdirSync(revisionDir)) {
-                const decodedVariant = decodeURIComponent(variant);
+              for (const [variant, decodedVariant] of fse.readdirSync(revisionDir).map(i => [i, decodeURIComponent(i)])) {
                 const variantDir = path.join(revisionDir, variant, 'metadata.json');
                 const metadata = JSON.parse(fse.readFileSync(variantDir));
                 this._urls[decodedUrl][decodedEntry][decodedRevision][decodedVariant] = metadata;
