@@ -1,5 +1,5 @@
 import * as xmldom from 'xmldom';
-import { default as AdmZip } from 'adm-zip';
+import AdmZip from 'adm-zip';
 
 import { BurritoError } from './burrito_error.js';
 import { ConfigReader } from './config_reader.js';
@@ -33,8 +33,7 @@ class BurritoStore {
 
   /* Utilities */
 
-  /**
-     */
+  /** */
   idServerName(idServerId) {
     throw new BurritoError('MethodNotYetImplemented');
   }
@@ -190,8 +189,40 @@ class BurritoStore {
     throw new BurritoError('MethodNotOverriddenBySubclass');
   }
 
+  /**
+   * write a zip of the variant contents to the file specified by toPath. The
+   * directory containing the toPath is expected to be writable and toPath must
+   * not yet exist.
+   *
+   * @param {*} idServerId
+   * @param {*} entryId
+   * @param {*} revisionId
+   * @param {*} variantId
+   * @param {*} toPath
+   */
   exportToZipfile(idServerId, entryId, revisionId, variantId, toPath) {
-    throw new BurritoError('MethodNotYetImplemented');
+    const zip = new AdmZip();
+    // for each ingredient we have, write the content to the zip.
+    for (const [ingredient, existsLocally] of Object.entries(
+      this.ingredients(idServerId, entryId, revisionId, variantId),
+    )) {
+      if (existsLocally) {
+        zip.addFile(ingredient, this.ingredientContent(idServerId, entryId, revisionId, variantId, ingredient));
+      }
+    }
+    // write metadata as last entry.
+    zip.addFile(
+      'metadata.json',
+      JSON.stringify(
+        this.metadataContent(idServerId, entryId, revisionId, variantId), null, 2,
+      ),
+    );
+    // finalize the zip file.
+    zip.writeZip(toPath, (error) => {
+      if (error) {
+        throw new BurritoError(`Error writing zip to '${toPath}', message '${error.message}'`);
+      }
+    });
   }
 
   /* toTemplate */
