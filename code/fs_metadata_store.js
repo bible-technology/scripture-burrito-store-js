@@ -25,41 +25,37 @@ class FSMetadataStore extends MetadataStore {
   }
 
   async loadEntries() {
-    this.loadEntriesSync();
+    await this.loadEntries1();
   }
 
 
   /**
      Helper method for async method loadEntries(). This method does all the work, synchronously.
      */
-  loadEntriesSync() {
-    return new Promise(
-      (resolve, reject) => {
-        for (const [url, decodedUrl, urlDir] of
-             fse.readdirSync(this.metadataDir)
-             .map(i => [i, decodeURIComponent(i), path.join(this.metadataDir, i)])) {
-          this._urls[decodedUrl] = {};
-          for (const [entry, decodedEntry, entryDir] of
-               fse.readdirSync(urlDir)
-               .map(i => [i, decodeURIComponent(i), path.join(urlDir, i)])) {
-            this._urls[decodedUrl][decodedEntry] = {};
-            for (const [revision, decodedRevision, revisionDir]
-                 of fse.readdirSync(entryDir)
-                 .map(i => [i, decodeURIComponent(i), path.join(entryDir, i)])) {
-              this._urls[decodedUrl][decodedEntry][decodedRevision] = {};
-              for (const [variant, decodedVariant, variantDir] of
-                   fse.readdirSync(revisionDir)
-                   .map(i => [i, decodeURIComponent(i), path.join(revisionDir, i, 'metadata.json')])) {
-                const metadata = JSON.parse(fse.readFileSync(variantDir));
-                this._urls[decodedUrl][decodedEntry][decodedRevision][decodedVariant] = metadata;
-                this.__updateIdServerRecordFromMetadata(metadata);
-              }
-            }
+  loadEntries1() {
+    throw new BurritoError("foo");
+    for (const [url, decodedUrl, urlDir] of
+         fse.readdirSync(this.metadataDir)
+         .map(i => [i, decodeURIComponent(i), path.join(this.metadataDir, i)])) {
+      this._urls[decodedUrl] = {};
+      for (const [entry, decodedEntry, entryDir] of
+           fse.readdirSync(urlDir)
+           .map(i => [i, decodeURIComponent(i), path.join(urlDir, i)])) {
+        this._urls[decodedUrl][decodedEntry] = {};
+        for (const [revision, decodedRevision, revisionDir]
+             of fse.readdirSync(entryDir)
+             .map(i => [i, decodeURIComponent(i), path.join(entryDir, i)])) {
+          this._urls[decodedUrl][decodedEntry][decodedRevision] = {};
+          for (const [variant, decodedVariant, variantDir] of
+               fse.readdirSync(revisionDir)
+               .map(i => [i, decodeURIComponent(i), path.join(revisionDir, i, 'metadata.json')])) {
+            const metadata = JSON.parse(fse.readFileSync(variantDir));
+            this._urls[decodedUrl][decodedEntry][decodedRevision][decodedVariant] = metadata;
+            this.__updateIdServerRecordFromMetadata(metadata);
           }
-          resolve(null);
         }
       }
-    );
+    }
   }
 
   /**
