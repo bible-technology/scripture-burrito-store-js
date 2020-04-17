@@ -25,36 +25,41 @@ class FSMetadataStore extends MetadataStore {
   }
 
   async loadEntries() {
-    await this.loadEntriesSync();
+    this.loadEntriesSync();
   }
-  
+
+
   /**
      Helper method for async method loadEntries(). This method does all the work, synchronously.
      */
   loadEntriesSync() {
     return new Promise(
-      resolve => {
-        for (const [url, decodedUrl] of fse.readdirSync(this.metadataDir).map(i => [i, decodeURIComponent(i)])) {
+      (resolve, reject) => {
+        for (const [url, decodedUrl, urlDir] of
+             fse.readdirSync(this.metadataDir)
+             .map(i => [i, decodeURIComponent(i), path.join(this.metadataDir, i)])) {
           this._urls[decodedUrl] = {};
-          const urlDir = path.join(this.metadataDir, url);
-          for (const [entry, decodedEntry] of fse.readdirSync(urlDir).map(i => [i, decodeURIComponent(i)])) {
+          for (const [entry, decodedEntry, entryDir] of
+               fse.readdirSync(urlDir)
+               .map(i => [i, decodeURIComponent(i), path.join(urlDir, i)])) {
             this._urls[decodedUrl][decodedEntry] = {};
-            const entryDir = path.join(urlDir, entry);
-            for (const [revision, decodedRevision] of fse.readdirSync(entryDir).map(i => [i, decodeURIComponent(i)])) {
+            for (const [revision, decodedRevision, revisionDir]
+                 of fse.readdirSync(entryDir)
+                 .map(i => [i, decodeURIComponent(i), path.join(entryDir, i)])) {
               this._urls[decodedUrl][decodedEntry][decodedRevision] = {};
-              const revisionDir = path.join(entryDir, revision);
-              for (const [variant, decodedVariant] of fse.readdirSync(revisionDir).map(i => [i, decodeURIComponent(i)])) {
-                const variantDir = path.join(revisionDir, variant, 'metadata.json');
+              for (const [variant, decodedVariant, variantDir] of
+                   fse.readdirSync(revisionDir)
+                   .map(i => [i, decodeURIComponent(i), path.join(revisionDir, i, 'metadata.json')])) {
                 const metadata = JSON.parse(fse.readFileSync(variantDir));
                 this._urls[decodedUrl][decodedEntry][decodedRevision][decodedVariant] = metadata;
                 this.__updateIdServerRecordFromMetadata(metadata);
               }
             }
           }
+          resolve(null);
         }
-        resolve(null);
       }
-    )
+    );
   }
 
   /**
