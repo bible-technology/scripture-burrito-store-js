@@ -24,16 +24,10 @@ class FSMetadataStore extends MetadataStore {
     }
   }
 
-  async loadEntries() {
-    await this.loadEntries1();
-  }
-
-
   /**
-     Helper method for async method loadEntries(). This method does all the work, synchronously.
-     */
-  loadEntries1() {
-    throw new BurritoError("foo");
+     Loads variants into 
+   */
+  loadEntries() {
     for (const [url, decodedUrl, urlDir] of
          fse.readdirSync(this.metadataDir)
          .map(i => [i, decodeURIComponent(i), path.join(this.metadataDir, i)])) {
