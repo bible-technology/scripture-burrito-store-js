@@ -25,7 +25,7 @@ class FSMetadataStore extends MetadataStore {
   }
 
   /**
-     Loads variants into 
+     Loads variants from an existing metadata store directory structure
    */
   loadEntries() {
     for (const [url, decodedUrl, urlDir] of
