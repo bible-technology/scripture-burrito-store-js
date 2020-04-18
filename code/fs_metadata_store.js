@@ -1,6 +1,6 @@
 import * as fse from 'fs-extra';
 import deepEqual from 'deep-equal';
-import rra from 'recursive-readdir-async';
+import recursiveReadDir from 'fs-readdir-recursive';
 import path from 'path';
 
 import { BurritoError } from './burrito_error';
@@ -50,35 +50,24 @@ class FSMetadataStore extends MetadataStore {
   async loadEntries() {
     const self = this;
     try {
-      const options = {
-        mode: rra.LIST,
-        recursive: true,
-        stats: false,
-        ignoreFolders: true,
-        extensions: true,
-        deep: false,
-        realPath: true,
-        normalizePath: true,
-        include: ['metadata.json'],
-        exclude: [],
-        readContent: true,
-        encoding: 'utf8',
-      };
-      const list = await rra.list(self.metadataDir, options);
-      const normalizedMetadataDir = path.normalize(self.metadataDir).replace('\\', '/');
-      const { urlTree, metadataList} = list.reduce((acc, currentValue) => {
-        const relativePath = currentValue.path.substr(normalizedMetadataDir.length);
-        const [,
+      const list = recursiveReadDir(self.metadataDir);
+      const { urlTree, metadataList } = list.reduce((acc, currentValue) => {
+        const relativePath = currentValue;
+        const [
           decodedUrl,
           decodedEntry,
           decodedRevision,
           decodedVariant,
-        ] = relativePath.split('/').map(decodeURIComponent);
-        const metadataJson = JSON.parse(currentValue.data);
+        ] = relativePath.replace(/\\/g, '/').split('/').map(decodeURIComponent);
+        const metadataJson = fse.readJSONSync(path.join(self.metadataDir, relativePath));
         pushMultiKeyValue(acc.urlTree, [decodedUrl, decodedEntry, decodedRevision, decodedVariant], metadataJson);
         acc.metadataList.push(metadataJson);
         return acc;
-      }, { urlTree: {}, metadataList: [] });
+      }, {
+        urlTree: {
+        },
+        metadataList: [],
+      });
       self._urls = urlTree;
       Object.values(metadataList).forEach((metadataJson) => self.__updateIdServerRecordFromMetadata(metadataJson));
     } catch (err) {
