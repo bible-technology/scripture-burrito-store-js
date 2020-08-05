@@ -31,7 +31,7 @@
     "deepcopy": "^2.0.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.7-alpha.3",
+    "express-fileupload": "^1.1.9",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
     "hbs": "^4.1.1",
