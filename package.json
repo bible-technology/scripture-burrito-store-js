@@ -44,7 +44,7 @@
     "semver": "^6.3.0",
     "sha3": "^2.1.1",
     "uuid": "^7.0.3",
-    "xmldom": "^0.3.0"
+    "xmldom": "^0.5.0"
   },
   "devDependencies": {
     "debug": "^4.1.1",
