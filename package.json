@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "adm-zip": "^0.4.14",
-    "ajv": "^6.10.2",
+    "ajv": "^6.12.3",
     "babel-core": "^6.26.3",
     "chai": "^4.2.0",
     "cookie-parser": "^1.4.5",
